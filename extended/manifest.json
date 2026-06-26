@@ -1,0 +1,3455 @@
+{
+ "schema": "corpus-manifest/v3",
+ "description": "Machine-readable index of the ISO/IEC 27001:2022 Annex A reference corpus in this repository. Consumers locate, cite, and render items from this file.",
+ "standard": {
+  "id": "iso-27001",
+  "label": {
+   "ko": "ISO/IEC 27001:2022 Annex A",
+   "en": "ISO/IEC 27001:2022 Annex A"
+  },
+  "blurb": {
+   "ko": "ISO/IEC 27001:2022 Annex A는 4개 테마(조직적/인적/물리적/기술적) 93개 정보보안 통제 목록입니다.",
+   "en": "ISO/IEC 27001:2022 Annex A is a list of 93 information security controls across four themes (Organizational, People, Physical, Technological)."
+  },
+  "nav": "themes",
+  "langs": [
+   "ko",
+   "en"
+  ],
+  "sections": [
+   {
+    "id": "organizational",
+    "slug": "A.5-organizational",
+    "no": "A.5",
+    "label": {
+     "ko": "조직적 통제",
+     "en": "Organizational controls"
+    },
+    "count": {
+     "ko": 37,
+     "en": 37
+    }
+   },
+   {
+    "id": "people",
+    "slug": "A.6-people",
+    "no": "A.6",
+    "label": {
+     "ko": "인적 통제",
+     "en": "People controls"
+    },
+    "count": {
+     "ko": 8,
+     "en": 8
+    }
+   },
+   {
+    "id": "physical",
+    "slug": "A.7-physical",
+    "no": "A.7",
+    "label": {
+     "ko": "물리적 통제",
+     "en": "Physical controls"
+    },
+    "count": {
+     "ko": 14,
+     "en": 14
+    }
+   },
+   {
+    "id": "technological",
+    "slug": "A.8-technological",
+    "no": "A.8",
+    "label": {
+     "ko": "기술적 통제",
+     "en": "Technological controls"
+    },
+    "count": {
+     "ko": 34,
+     "en": 34
+    }
+   }
+  ],
+  "source": {
+   "ko": "Control numbers/titles/four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. Korean titles are this collection's translation.",
+   "en": "Control numbers/titles/four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. Korean titles are this collection's translation."
+  },
+  "provenance": {
+   "ko": "통제 번호/명칭/테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 설명 본문은 본 자료집이 새로 작성한 원저작이며 ISO 표준 원문의 규범 텍스트가 아닙니다. 정본 대조는 라이선스된 표준 원문으로 하십시오.",
+   "en": "Control numbers, titles, and theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. The explanatory text is original material and is not the normative text of the ISO standard. For an authoritative check, use a licensed copy of the standard."
+  },
+  "itemSections": {
+   "ko": [
+    "통제 목적",
+    "주요 확인사항",
+    "이행 지침",
+    "관련 통제 및 속성",
+    "증적자료",
+    "부적합 사례"
+   ],
+   "en": [
+    "Control objective",
+    "Key checkpoints",
+    "Implementation guidance",
+    "Related controls and attributes",
+    "Evidence",
+    "Nonconformity examples"
+   ]
+  }
+ },
+ "counts": {
+  "ko": 93,
+  "en": 93,
+  "total": 186
+ },
+ "items": [
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.1",
+   "name": "정보보안 정책",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.1.md",
+   "counts": {
+    "checkpoints": 4,
+    "evidence": 4,
+    "defects": 4,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.2",
+   "name": "정보보안 역할 및 책임",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.2.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.3",
+   "name": "직무 분리",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.3.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.4",
+   "name": "경영진 책임",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.5",
+   "name": "관계 당국과의 연락",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.5.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.6",
+   "name": "전문가 그룹과의 연락",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.6.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.7",
+   "name": "위협 인텔리전스",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.7.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.8",
+   "name": "프로젝트 관리에서의 정보보안",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.8.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.9",
+   "name": "정보 및 관련 자산 목록",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.9.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.10",
+   "name": "정보 및 관련 자산의 허용된 사용",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.10.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.11",
+   "name": "자산 반납",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.11.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.12",
+   "name": "정보 분류",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.12.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.13",
+   "name": "정보 레이블링",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.13.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.14",
+   "name": "정보 전송",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.14.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.15",
+   "name": "접근통제",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.15.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.16",
+   "name": "아이덴티티 관리",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.16.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.17",
+   "name": "인증 정보",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.17.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.18",
+   "name": "접근 권한",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.18.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.19",
+   "name": "공급자 관계에서의 정보보안",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.19.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 5,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.20",
+   "name": "공급자 계약 내 정보보안 반영",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.20.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.21",
+   "name": "ICT 공급망 정보보안 관리",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.21.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.22",
+   "name": "공급자 서비스의 모니터링, 검토 및 변경관리",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.22.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.23",
+   "name": "클라우드 서비스 이용 정보보안",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.23.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.24",
+   "name": "정보보안 사고관리 계획 및 준비",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.24.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.25",
+   "name": "정보보안 이벤트 평가 및 결정",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.25.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.26",
+   "name": "정보보안 사고 대응",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.26.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.27",
+   "name": "정보보안 사고로부터의 학습",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.27.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.28",
+   "name": "증거 수집",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.28.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.29",
+   "name": "중단 상황에서의 정보보안",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.29.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.30",
+   "name": "사업연속성을 위한 ICT 준비",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.30.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.31",
+   "name": "법률, 법령, 규제 및 계약 요구사항",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.31.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.32",
+   "name": "지식재산권",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.32.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.33",
+   "name": "기록 보호",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.33.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.34",
+   "name": "프라이버시 및 개인식별정보(PII) 보호",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.34.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.35",
+   "name": "정보보안 독립적 검토",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.35.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.36",
+   "name": "정보보안 정책, 규칙 및 표준 준수",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.36.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "organizational",
+   "no": "A.5.37",
+   "name": "문서화된 운영 절차",
+   "groupNo": "A.5",
+   "group": "조직적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.5-organizational/A.5.37.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.1",
+   "name": "채용 심사(신원 확인)",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.1.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.2",
+   "name": "고용 조건",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.2.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.3",
+   "name": "정보보안 인식제고, 교육 및 훈련",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.3.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.4",
+   "name": "징계 절차",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.5",
+   "name": "고용 종료 또는 변경 후 책임",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.5.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.6",
+   "name": "기밀유지 또는 비밀유지 협약",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.6.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.7",
+   "name": "원격 근무",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.7.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "people",
+   "no": "A.6.8",
+   "name": "정보보안 이벤트 보고",
+   "groupNo": "A.6",
+   "group": "인적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.6-people/A.6.8.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.1",
+   "name": "물리적 보안 경계",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.1.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.2",
+   "name": "물리적 출입",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.2.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.3",
+   "name": "사무실, 공간 및 설비 보안",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.3.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.4",
+   "name": "물리적 보안 모니터링",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.5",
+   "name": "물리적 및 환경적 위협 대비",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.5.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.6",
+   "name": "보안구역 내 작업",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.6.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.7",
+   "name": "클린 데스크 및 클린 스크린",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.7.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.8",
+   "name": "장비 배치 및 보호",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.8.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.9",
+   "name": "사외 자산 보안",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.9.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.10",
+   "name": "저장 매체",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.10.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.11",
+   "name": "지원 유틸리티",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.11.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.12",
+   "name": "케이블 보안",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.12.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.13",
+   "name": "장비 유지보수",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.13.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "physical",
+   "no": "A.7.14",
+   "name": "장비의 안전한 폐기 또는 재사용",
+   "groupNo": "A.7",
+   "group": "물리적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.7-physical/A.7.14.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.1",
+   "name": "사용자 엔드포인트 기기",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.1.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.2",
+   "name": "특권 접근 권한",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.2.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.3",
+   "name": "정보 접근 제한",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.3.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.4",
+   "name": "소스코드 접근",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.5",
+   "name": "보안 인증",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.5.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.6",
+   "name": "용량 관리",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.6.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.7",
+   "name": "악성코드 대응",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.7.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.8",
+   "name": "기술적 취약점 관리",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.8.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 5,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.9",
+   "name": "구성 관리",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.9.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.10",
+   "name": "정보 삭제",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.10.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.11",
+   "name": "데이터 마스킹",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.11.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.12",
+   "name": "데이터 유출 방지",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.12.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.13",
+   "name": "정보 백업",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.13.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.14",
+   "name": "정보처리시설 이중화",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.14.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.15",
+   "name": "로깅",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.15.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.16",
+   "name": "모니터링 활동",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.16.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.17",
+   "name": "시각 동기화",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.17.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.18",
+   "name": "특권 유틸리티 프로그램 사용",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.18.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.19",
+   "name": "운영 시스템 소프트웨어 설치",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.19.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.20",
+   "name": "네트워크 보안",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.20.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.21",
+   "name": "네트워크 서비스 보안",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.21.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.22",
+   "name": "네트워크 분리",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.22.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.23",
+   "name": "웹 필터링",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.23.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.24",
+   "name": "암호화 사용",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.24.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.25",
+   "name": "보안 개발 생명주기",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.25.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.26",
+   "name": "애플리케이션 보안 요구사항",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.26.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.27",
+   "name": "보안 시스템 아키텍처 및 엔지니어링 원칙",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.27.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.28",
+   "name": "시큐어 코딩",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.28.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.29",
+   "name": "개발 및 인수 단계 보안 시험",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.29.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.30",
+   "name": "외주 개발",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.30.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.31",
+   "name": "개발, 시험, 운영 환경 분리",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.31.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.32",
+   "name": "변경 관리",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.32.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.33",
+   "name": "시험 정보",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.33.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "ko",
+   "section": "technological",
+   "no": "A.8.34",
+   "name": "감사 시험 중 정보시스템 보호",
+   "groupNo": "A.8",
+   "group": "기술적 통제",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/ko/A.8-technological/A.8.34.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.1",
+   "name": "Policies for information security",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.1.md",
+   "counts": {
+    "checkpoints": 4,
+    "evidence": 4,
+    "defects": 4,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.2",
+   "name": "Information security roles and responsibilities",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.2.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.3",
+   "name": "Segregation of duties",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.3.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.4",
+   "name": "Management responsibilities",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.5",
+   "name": "Contact with authorities",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.5.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.6",
+   "name": "Contact with special interest groups",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.6.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.7",
+   "name": "Threat intelligence",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.7.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.8",
+   "name": "Information security in project management",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.8.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.9",
+   "name": "Inventory of information and other associated assets",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.9.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.10",
+   "name": "Acceptable use of information and other associated assets",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.10.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.11",
+   "name": "Return of assets",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.11.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.12",
+   "name": "Classification of information",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.12.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.13",
+   "name": "Labelling of information",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.13.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.14",
+   "name": "Information transfer",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.14.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.15",
+   "name": "Access control",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.15.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.16",
+   "name": "Identity management",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.16.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.17",
+   "name": "Authentication information",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.17.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.18",
+   "name": "Access rights",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.18.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.19",
+   "name": "Information security in supplier relationships",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.19.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 5,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.20",
+   "name": "Addressing information security within supplier agreements",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.20.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.21",
+   "name": "Managing information security in the ICT supply chain",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.21.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.22",
+   "name": "Monitoring, review and change management of supplier services",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.22.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.23",
+   "name": "Information security for use of cloud services",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.23.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.24",
+   "name": "Information security incident management planning and preparation",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.24.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.25",
+   "name": "Assessment and decision on information security events",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.25.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.26",
+   "name": "Response to information security incidents",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.26.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.27",
+   "name": "Learning from information security incidents",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.27.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.28",
+   "name": "Collection of evidence",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.28.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.29",
+   "name": "Information security during disruption",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.29.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.30",
+   "name": "ICT readiness for business continuity",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.30.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.31",
+   "name": "Legal, statutory, regulatory and contractual requirements",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.31.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.32",
+   "name": "Intellectual property rights",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.32.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.33",
+   "name": "Protection of records",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.33.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.34",
+   "name": "Privacy and protection of PII",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.34.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.35",
+   "name": "Independent review of information security",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.35.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.36",
+   "name": "Compliance with policies, rules and standards for information security",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.36.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "organizational",
+   "no": "A.5.37",
+   "name": "Documented operating procedures",
+   "groupNo": "A.5",
+   "group": "Organizational controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.5-organizational/A.5.37.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.1",
+   "name": "Screening",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.1.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.2",
+   "name": "Terms and conditions of employment",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.2.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.3",
+   "name": "Information security awareness, education and training",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.3.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.4",
+   "name": "Disciplinary process",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.5",
+   "name": "Responsibilities after termination or change of employment",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.5.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.6",
+   "name": "Confidentiality or non-disclosure agreements",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.6.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.7",
+   "name": "Remote working",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.7.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "people",
+   "no": "A.6.8",
+   "name": "Information security event reporting",
+   "groupNo": "A.6",
+   "group": "People controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.6-people/A.6.8.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.1",
+   "name": "Physical security perimeters",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.1.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.2",
+   "name": "Physical entry",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.2.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.3",
+   "name": "Securing offices, rooms and facilities",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.3.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.4",
+   "name": "Physical security monitoring",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.5",
+   "name": "Protecting against physical and environmental threats",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.5.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.6",
+   "name": "Working in secure areas",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.6.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.7",
+   "name": "Clear desk and clear screen",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.7.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.8",
+   "name": "Equipment siting and protection",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.8.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.9",
+   "name": "Security of assets off-premises",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.9.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.10",
+   "name": "Storage media",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.10.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.11",
+   "name": "Supporting utilities",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.11.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.12",
+   "name": "Cabling security",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.12.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.13",
+   "name": "Equipment maintenance",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.13.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "physical",
+   "no": "A.7.14",
+   "name": "Secure disposal or re-use of equipment",
+   "groupNo": "A.7",
+   "group": "Physical controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.7-physical/A.7.14.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.1",
+   "name": "User endpoint devices",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.1.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.2",
+   "name": "Privileged access rights",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.2.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.3",
+   "name": "Information access restriction",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.3.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.4",
+   "name": "Access to source code",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.4.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.5",
+   "name": "Secure authentication",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.5.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.6",
+   "name": "Capacity management",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.6.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.7",
+   "name": "Protection against malware",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.7.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 5,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.8",
+   "name": "Management of technical vulnerabilities",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.8.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 5,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.9",
+   "name": "Configuration management",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.9.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.10",
+   "name": "Information deletion",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.10.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.11",
+   "name": "Data masking",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.11.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.12",
+   "name": "Data leakage prevention",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.12.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.13",
+   "name": "Information backup",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.13.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.14",
+   "name": "Redundancy of information processing facilities",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.14.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.15",
+   "name": "Logging",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.15.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.16",
+   "name": "Monitoring activities",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.16.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.17",
+   "name": "Clock synchronization",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.17.md",
+   "counts": {
+    "checkpoints": 5,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.18",
+   "name": "Use of privileged utility programs",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.18.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.19",
+   "name": "Installation of software on operational systems",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.19.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.20",
+   "name": "Networks security",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.20.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.21",
+   "name": "Security of network services",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.21.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.22",
+   "name": "Segregation of networks",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.22.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.23",
+   "name": "Web filtering",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.23.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.24",
+   "name": "Use of cryptography",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.24.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.25",
+   "name": "Secure development life cycle",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.25.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.26",
+   "name": "Application security requirements",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.26.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.27",
+   "name": "Secure system architecture and engineering principles",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.27.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.28",
+   "name": "Secure coding",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.28.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 5,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.29",
+   "name": "Security testing in development and acceptance",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.29.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.30",
+   "name": "Outsourced development",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.30.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 7,
+    "defects": 7,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.31",
+   "name": "Separation of development, test and production environments",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.31.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.32",
+   "name": "Change management",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.32.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.33",
+   "name": "Test information",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.33.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  },
+  {
+   "lang": "en",
+   "section": "technological",
+   "no": "A.8.34",
+   "name": "Protection of information systems during audit testing",
+   "groupNo": "A.8",
+   "group": "Technological controls",
+   "subgroupNo": "",
+   "subgroup": "",
+   "appliesTo": [],
+   "path": "docs/en/A.8-technological/A.8.34.md",
+   "counts": {
+    "checkpoints": 6,
+    "evidence": 6,
+    "defects": 6,
+    "hasLaws": false
+   }
+  }
+ ]
+}
