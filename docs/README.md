@@ -68,7 +68,8 @@ catalog and this directory cannot silently drift apart.
 Every control document carries a metadata table, then the same six sections in the same order, then
 the source and limitation notice:
 
-`통제 목적` → `주요 확인사항` → `이행 지침` → `관련 통제 및 속성` → `증적자료` → `부적합 사례`
+`Control objective` → `Key checkpoints` → `Implementation guidance` →
+`Related controls and attributes` → `Evidence` → `Nonconformity examples`
 
 `check_corpus.py` fails when a document is missing a section or reorders them, so the structure is
 safe to depend on.

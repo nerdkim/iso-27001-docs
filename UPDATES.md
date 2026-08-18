@@ -19,7 +19,7 @@ Last checked: 2026-07.
 | Part of the corpus | Basis | Edition |
 |---|---|---|
 | Control numbers, titles, and theme classification (`extended/catalog/controls.json`) | the **public** list of ISO/IEC 27001:2022 Annex A | 2022 |
-| 통제 목적, 주요 확인사항, 이행 지침, 관련 통제 및 속성, 증적자료, 부적합 사례 | **original material** written by this project for practical reference | not an upstream edition |
+| Control objective, Key checkpoints, Implementation guidance, Related controls and attributes, Evidence, Nonconformity examples | **original material** written by this project for practical reference | not an upstream edition |
 | The English documents under `docs/en/` | this project's own English edition | see 2.2 |
 
 The 93 controls across four themes (A.5 organizational 37, A.6 people 8, A.7 physical 14,

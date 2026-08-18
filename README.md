@@ -31,15 +31,16 @@ maintained.
 
 | Theme | Controls per language |
 |---|---|
-| A.5 조직적 통제(Organizational) | 37 |
-| A.6 인적 통제(People) | 8 |
-| A.7 물리적 통제(Physical) | 14 |
-| A.8 기술적 통제(Technological) | 34 |
+| A.5 Organizational controls | 37 |
+| A.6 People controls | 8 |
+| A.7 Physical controls | 14 |
+| A.8 Technological controls | 34 |
 | **Total** | **93 per language** (186 documents) |
 
 Every control document keeps the same six sections:
 
-`통제 목적` → `주요 확인사항` → `이행 지침` → `관련 통제 및 속성` → `증적자료` → `부적합 사례`
+`Control objective` → `Key checkpoints` → `Implementation guidance` →
+`Related controls and attributes` → `Evidence` → `Nonconformity examples`
 
 ## Layout
 

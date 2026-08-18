@@ -16,10 +16,12 @@ manifest.json                       machine-readable index of every document (sc
                                     corpus-manifest/v3). The published contract: this is what the
                                     web viewer and any other consumer reads.
 index/control-index.csv             flat index for spreadsheet or human review
-index/nonconformity-rulebook.json   the Korean 부적합 사례 of all 93 controls, keyed by control
-                                    number. Check rules for self-assessment and internal audit prep.
-index/evidence-dictionary.json      the Korean 증적자료 of all 93 controls, keyed by control number.
-                                    Reference dictionary for evidence-to-control mapping.
+index/nonconformity-rulebook.json   the Korean Nonconformity examples (부적합 사례) of all 93
+                                    controls, keyed by control number. Check rules for
+                                    self-assessment and internal audit prep.
+index/evidence-dictionary.json      the Korean Evidence (증적자료) of all 93 controls, keyed by
+                                    control number. Reference dictionary for evidence-to-control
+                                    mapping.
 ```
 
 Regenerate everything with `python3 tools/build_index.py` from the repository root. The build is
@@ -36,7 +38,7 @@ These are the rules a consuming agent must follow. Reflect them into the consumi
 2. **Manifest-first routing.** Read `manifest.json` first and narrow to the relevant control
    numbers and `path` values. Then read only those documents. Do not grep across all of `docs/`.
 3. **Cite every claim.** Attach the `docs/` path and the section name to each statement, in the
-   form `[Source: docs/ko/A.5-organizational/A.5.1.md > 주요 확인사항]`. If you cannot produce a
+   form `[Source: docs/en/A.5-organizational/A.5.1.md > Key checkpoints]`. If you cannot produce a
    citation, do not assert; say that the corpus does not cover it.
 4. **Stay inside the corpus.** The authoritative sources for this repository are the 186 `.md`
    documents, `manifest.json`, `index/*`, and `catalog/controls.json`. Do not assert control
@@ -55,7 +57,7 @@ A question such as "what evidence proves access control is operating?" resolves 
 
 1. In `manifest.json`, find controls whose `name` relates to access control (the A.8.2 to A.8.5
    range and A.5.15).
-2. Read only those documents and pull their `증적자료` and `부적합 사례` sections, or read the same
-   content directly out of `index/evidence-dictionary.json` and `index/nonconformity-rulebook.json`
-   when only the lists are needed.
+2. Read only those documents and pull their `Evidence` and `Nonconformity examples` sections, or
+   read the same content directly out of `index/evidence-dictionary.json` and
+   `index/nonconformity-rulebook.json` when only the lists are needed.
 3. Answer with a citation per item, and mark anything the corpus does not cover as unverified.
