@@ -15,10 +15,11 @@ catalog/controls.json               Annex A 공개 통제 목록: 번호, 테마
 manifest.json                       모든 문서의 기계가독 색인(schema corpus-manifest/v3). 공개
                                     계약이며 웹 뷰어를 비롯한 소비자가 읽는 파일입니다.
 index/control-index.csv             스프레드시트나 사람 검토용 평탄 색인
-index/nonconformity-rulebook.json   93개 통제의 한국어 부적합 사례를 통제 번호로 색인. 셀프 진단과
-                                    내부 심사 준비용 점검 규칙입니다.
-index/evidence-dictionary.json      93개 통제의 한국어 증적자료를 통제 번호로 색인. 증적을 통제에
-                                    mapping할 때 쓰는 참고 사전입니다.
+index/nonconformity-rulebook.json   93개 통제의 부적합 사례를 통제 번호로 색인. 셀프 진단과
+index/nonconformity-rulebook.en.json 내부 심사 준비용 점검 규칙입니다. 접미사 없는 파일이
+                                    한국어, '.en'이 영어이며 각각 "lang" 필드를 갖습니다.
+index/evidence-dictionary.json      93개 통제의 증적자료를 통제 번호로 색인. 증적을 통제에
+index/evidence-dictionary.en.json   mapping할 때 쓰는 참고 사전입니다. 언어 규칙은 위와 같습니다.
 ```
 
 repository 루트에서 `python3 tools/build_index.py`로 전부 재생성합니다. 빌드는 결정적이며, commit된

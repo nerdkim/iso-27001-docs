@@ -1,5 +1,6 @@
 {
  "schema": "iso-27001-nonconformity-rulebook/v1",
+ "lang": "ko",
  "description": "Nonconformity-case rulebook for the 93 Annex A controls. Source of check rules for self-assessment and internal audit preparation. Original material, not the standard.",
  "total_nonconformity_cases": 540,
  "items": {

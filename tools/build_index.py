@@ -323,60 +323,63 @@ def main():
                     ]
                 )
 
-    ko = per_lang["ko"]
-    rulebook = {
-        "schema": "iso-27001-nonconformity-rulebook/v1",
-        "description": (
-            "Nonconformity-case rulebook for the 93 Annex A controls. Source of check rules for "
-            "self-assessment and internal audit preparation. Original material, not the standard."
-        ),
-        "total_nonconformity_cases": sum(len(it["_defects"]) for it in ko),
-        "items": {
-            it["no"]: {
-                "name": it["name"],
-                "theme": f"{it['groupNo']} {it['group']}",
-                "path": it["path"],
-                "cases": it["_defects"],
-            }
-            for it in ko
-        },
-    }
-    evidence = {
-        "schema": "iso-27001-evidence-dictionary/v1",
-        "description": (
-            "Evidence-example dictionary for the 93 Annex A controls. Reference dictionary for "
-            "evidence-to-control mapping. Original material, not the standard."
-        ),
-        "total_evidence_examples": sum(len(it["_evidence"]) for it in ko),
-        "items": {
-            it["no"]: {
-                "name": it["name"],
-                "theme": f"{it['groupNo']} {it['group']}",
-                "path": it["path"],
-                "evidence": it["_evidence"],
-            }
-            for it in ko
-        },
-    }
-    for name, payload in (
-        ("nonconformity-rulebook.json", rulebook),
-        ("evidence-dictionary.json", evidence),
-    ):
-        with open(os.path.join(IDX, name), "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=1)
-            f.write("\n")
+    # One rulebook and one dictionary per language. Korean keeps the original file names so
+    # existing consumers are unaffected; every other language gets a '.<lang>' suffix.
+    def entry(it, key, field):
+        return {
+            "name": it["name"],
+            "theme": f"{it['groupNo']} {it['group']}",
+            "path": it["path"],
+            field: it[key],
+        }
+
+    for lang in LANGS:
+        items = per_lang[lang]
+        suffix = "" if lang == "ko" else f".{lang}"
+        payloads = (
+            (
+                f"nonconformity-rulebook{suffix}.json",
+                {
+                    "schema": "iso-27001-nonconformity-rulebook/v1",
+                    "lang": lang,
+                    "description": (
+                        "Nonconformity-case rulebook for the 93 Annex A controls. Source of check "
+                        "rules for self-assessment and internal audit preparation. Original "
+                        "material, not the standard."
+                    ),
+                    "total_nonconformity_cases": sum(len(it["_defects"]) for it in items),
+                    "items": {it["no"]: entry(it, "_defects", "cases") for it in items},
+                },
+            ),
+            (
+                f"evidence-dictionary{suffix}.json",
+                {
+                    "schema": "iso-27001-evidence-dictionary/v1",
+                    "lang": lang,
+                    "description": (
+                        "Evidence-example dictionary for the 93 Annex A controls. Reference "
+                        "dictionary for evidence-to-control mapping. Original material, not the "
+                        "standard."
+                    ),
+                    "total_evidence_examples": sum(len(it["_evidence"]) for it in items),
+                    "items": {it["no"]: entry(it, "_evidence", "evidence") for it in items},
+                },
+            ),
+        )
+        for name, payload in payloads:
+            with open(os.path.join(IDX, name), "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=1)
+                f.write("\n")
 
     written = [build_docs_index(per_lang[lang], lang, themes) for lang in LANGS]
 
     print(f"manifest v3: {counts['total']} items  {json.dumps(counts, ensure_ascii=False)}")
-    print(
-        f"nonconformity-rulebook: {rulebook['total_nonconformity_cases']} cases / {len(ko)} "
-        "controls (ko)"
-    )
-    print(
-        f"evidence-dictionary: {evidence['total_evidence_examples']} examples / {len(ko)} "
-        "controls (ko)"
-    )
+    for lang in LANGS:
+        items = per_lang[lang]
+        cases = sum(len(it["_defects"]) for it in items)
+        examples = sum(len(it["_evidence"]) for it in items)
+        print(f"nonconformity-rulebook: {cases} cases / {len(items)} controls ({lang})")
+        print(f"evidence-dictionary: {examples} examples / {len(items)} controls ({lang})")
     for w in written:
         print("wrote", w)
 
