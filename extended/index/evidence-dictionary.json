@@ -1,5 +1,6 @@
 {
  "schema": "iso-27001-evidence-dictionary/v1",
+ "lang": "ko",
  "description": "Evidence-example dictionary for the 93 Annex A controls. Reference dictionary for evidence-to-control mapping. Original material, not the standard.",
  "total_evidence_examples": 556,
  "items": {

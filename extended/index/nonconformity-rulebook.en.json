@@ -1,0 +1,1199 @@
+{
+ "schema": "iso-27001-nonconformity-rulebook/v1",
+ "lang": "en",
+ "description": "Nonconformity-case rulebook for the 93 Annex A controls. Source of check rules for self-assessment and internal audit preparation. Original material, not the standard.",
+ "total_nonconformity_cases": 540,
+ "items": {
+  "A.5.1": {
+   "name": "Policies for information security",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.1.md",
+   "cases": [
+    "An information security policy exists as a document but there is no evidence of formal management approval.",
+    "Only a top-level policy exists; topic-specific policies such as access control or cryptography are not defined, leaving no operational basis for practice.",
+    "The policy was established but has not been reviewed or updated for years, so it no longer matches the current organization and systems.",
+    "The policy is shared only with a specific department and is not communicated or published to personnel and external parties.",
+    "A policy exception is granted verbally only, with no record of its rationale, approver, or validity period, so the exception status cannot be determined.",
+    "A policy is revised but the superseded version remains on the intranet and in department shared folders, so both are used in practice."
+   ]
+  },
+  "A.5.2": {
+   "name": "Information security roles and responsibilities",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.2.md",
+   "cases": [
+    "A security organization chart exists, but the concrete responsibilities and authorities of each role are not defined, so the actual performer is unclear.",
+    "The chief officer is designated only nominally, without real authority, resources, or reporting lines.",
+    "Some information systems/assets have no designated owner or responsible person, creating a gap in protection responsibility.",
+    "After a departure or role change, roles and responsibilities are not reallocated, so certain tasks are left unattended or privileges are not revoked.",
+    "Roles and responsibilities rely only on an individual's informal practice and are not documented, so work stops when that person is absent."
+   ]
+  },
+  "A.5.3": {
+   "name": "Segregation of duties",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.3.md",
+   "cases": [
+    "One person requests, approves, grants, and reviews access rights, so no mutual check operates.",
+    "Developers access and change production systems/databases directly, with no separation between development and operations.",
+    "No matrix or criteria identify conflicting duties, so there is no basis to judge which privilege combinations are risky.",
+    "In a small organization where combined roles are unavoidable, operations run without compensating controls such as dual approval or independent log review.",
+    "Access-rights reviews are performed only as a formality, so conflicting privileges accumulated in one individual are not detected or corrected."
+   ]
+  },
+  "A.5.4": {
+   "name": "Management responsibilities",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.4.md",
+   "cases": [
+    "An information security policy exists, but there is no record of management requiring, approving, or announcing compliance, so its effectiveness cannot be confirmed.",
+    "There is no procedure to brief new joiners on their security responsibilities, so awareness varies from person to person.",
+    "No budget or staff is allocated for security training, so planned training/activities go unperformed for a long time.",
+    "Policy violations recur, but there is no action or direction for preventing recurrence at the management level.",
+    "There is no channel to report security concerns or violations, or fear of disadvantage means it does not work in practice.",
+    "With no reporting line to management, major security issues never reach top management."
+   ]
+  },
+  "A.5.5": {
+   "name": "Contact with authorities",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.5.md",
+   "cases": [
+    "An incident or personal data breach occurred, but the bodies to report to and the statutory deadlines were not defined in advance, so reporting was delayed or omitted.",
+    "The authority contact list is outdated and does not reflect changes of person/contact details, so contact cannot be made when needed.",
+    "The incident response plan does not include a procedure for reporting to authorities, so at incident time staff do not know whom to report to or how.",
+    "Only a single contact person is designated, so emergency contact and reporting are impossible during their absence or leave.",
+    "Reporting is made past the statutory deadline (for example, the breach notification/reporting deadline), or the fact and history of reporting are not recorded."
+   ]
+  },
+  "A.5.6": {
+   "name": "Contact with special interest groups",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.6.md",
+   "cases": [
+    "Participation in special interest groups relies on an individual's informal network, so the contact relationship is severed when that person leaves or is absent.",
+    "External forums/newsletters are only subscribed to, but the threat/vulnerability information obtained is not reflected in risk assessment or patch management at all.",
+    "Internal system configuration/asset details are exposed without review while sharing information with external groups.",
+    "The list of groups and the responsible person designation are not documented, so actual activity cannot be verified.",
+    "An early warning of a new vulnerability is received, but there is no internal dissemination/response procedure, so remediation is delayed."
+   ]
+  },
+  "A.5.7": {
+   "name": "Threat intelligence",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.7.md",
+   "cases": [
+    "Threat information is only collected, with no analysis or use procedure, so it is never reflected in safeguards or detection rules.",
+    "Threat information collection and analysis rely solely on one individual's capability, with no documented sources or procedures, so the work is not reproducible.",
+    "External threat feeds are subscribed to but applied as-is without evaluating organizational relevance or reliability, causing a large volume of false positives.",
+    "Information about an actively exploited new vulnerability is obtained but is not reflected in vulnerability remediation priorities.",
+    "Threat intelligence results are not shared with the incident response/monitoring teams, so they cannot be used for actual detection and response."
+   ]
+  },
+  "A.5.8": {
+   "name": "Information security in project management",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.8.md",
+   "cases": [
+    "The project management process does not define information security activities, so whether security is considered depends on each project owner's discretion.",
+    "Security requirements are reviewed only just before system go-live/transition, causing rework and schedule delays.",
+    "Security procedures are applied only to development projects and not to non-development projects such as reorganizations, data migrations, or cloud transitions.",
+    "The early project risk assessment is performed only as a formality, and the identified risks are not reflected in the project plan or treatment actions.",
+    "At project closure, residual risks and security deliverables are not handed over to the operations organization, creating a security management gap in the operations phase."
+   ]
+  },
+  "A.5.9": {
+   "name": "Inventory of information and other associated assets",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.9.md",
+   "cases": [
+    "An inventory exists, but a recently acquired server or cloud service is missing, so it does not match the actual operating environment.",
+    "No owner or custodian is assigned to assets, so accountability for classification, access approval, and inventory updates is unclear.",
+    "Disposed or returned assets are not cleared from the inventory, so nonexistent assets remain under management.",
+    "The inventory lacks criticality/classification levels, so it cannot serve as the basis for prioritizing risk assessment and safeguards.",
+    "The inventory is not updated after its initial creation and no periodic reconciliation is performed, so currency is not maintained."
+   ]
+  },
+  "A.5.10": {
+   "name": "Acceptable use of information and other associated assets",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.10.md",
+   "cases": [
+    "Rules for acceptable use of assets do not exist in documented form, or they exist but are not linked to asset classification levels.",
+    "The rules apply only to employees and are not communicated to or applied to external users such as outsourced or dispatched staff.",
+    "There are no criteria permitting or prohibiting removal of business information via removable media or personal cloud/messengers, so it goes uncontrolled.",
+    "Assets are granted without any security pledge or use agreement, so users are not aware of the scope of their responsibilities.",
+    "Even when a violation is confirmed, no handling procedure or responsibility is defined, so no meaningful follow-up action is taken."
+   ]
+  },
+  "A.5.11": {
+   "name": "Return of assets",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.11.md",
+   "cases": [
+    "A laptop/storage media returned by a leaver is reissued or left unattended without wiping, so the previous user's information remains.",
+    "A return procedure is documented, but no actual return confirmation records exist, so recovery of issued assets cannot be evidenced.",
+    "The access card/account of an external party whose contract has ended is not revoked, so physical/logical access remains possible after termination.",
+    "No deletion procedure exists for customer information/business materials stored on BYOD devices, so work information remains on personal devices after departure.",
+    "On a job change, the privileges/tokens used for the previous role are not revoked, so unnecessary privileges accumulate."
+   ]
+  },
+  "A.5.12": {
+   "name": "Classification of information",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.12.md",
+   "cases": [
+    "Classification levels are defined, but actual assets carry no level, so most information is left unclassified.",
+    "The class definitions cover only confidentiality and do not reflect integrity/availability or legal requirements (such as personal data).",
+    "The asset inventory and the classification scheme are not linked, so owners and levels are not kept current.",
+    "Restricted documents carry no label, so no level-based control is applied when they are taken outside or sent by email.",
+    "No reclassification/declassification procedure exists, so aged confidential information stays over-protected or, conversely, is left unreviewed.",
+    "No classification-mapping basis is agreed with external partners, so a counterpart handles the information at a lower level of protection than intended."
+   ]
+  },
+  "A.5.13": {
+   "name": "Labelling of information",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.13.md",
+   "cases": [
+    "A classification scheme exists, but there is no labelling procedure or criteria, so classification levels are not marked on assets.",
+    "Restricted/confidential documents carry no classification marking, so handlers do not recognize their sensitivity and treat them like ordinary documents.",
+    "Labels are applied to paper documents, but there are no marking rules for other forms such as electronic files, email, and storage media, resulting in inconsistency.",
+    "A classification level is raised, but the existing label is not updated, so the marking no longer matches the actual sensitivity.",
+    "There is no training on the meaning of labels and the handling rules per level, so employees neither recognize nor comply with the labels.",
+    "The labelling status is not reviewed, leaving many assets unlabelled or mislabelled."
+   ]
+  },
+  "A.5.14": {
+   "name": "Information transfer",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.14.md",
+   "cases": [
+    "A transfer policy exists but lacks procedures for physical media transport or verbal transfer, being limited to electronic transfer only.",
+    "Sensitive or personal information is sent to external parties by email in plaintext without encryption.",
+    "Information is regularly transferred to external organizations without concluding a transfer agreement that sets out security requirements and responsibilities.",
+    "A large-file transfer service shares links without expiry or access controls, allowing an unspecified number of people to download.",
+    "Email auto-forwarding rules continuously send internal information to personal external accounts without control or monitoring.",
+    "Data is taken out on removable storage media without handover records or media encryption."
+   ]
+  },
+  "A.5.15": {
+   "name": "Access control",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.15.md",
+   "cases": [
+    "No documented access control policy exists, or one exists but does not reflect core principles such as least privilege and segregation of duties.",
+    "The same access rights are granted uniformly regardless of asset classification or risk level, leaving access uncontrolled.",
+    "Network service access is open by default, allowing access beyond the scope authorized for business needs.",
+    "Rights are granted, modified, or revoked arbitrarily without an approval procedure or records.",
+    "Existing access rights are not revoked after a role change or resignation, so unnecessary rights remain.",
+    "Access rights reviews are not performed, so the policy and the actual system configuration are inconsistent."
+   ]
+  },
+  "A.5.16": {
+   "name": "Identity management",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.16.md",
+   "cases": [
+    "Identities of leavers or terminated contractors are left active for long periods without deactivation.",
+    "Multiple people share a single common identity without approval or logging, making individual actions untraceable.",
+    "Service accounts and system accounts have no designated owner, creating management blind spots.",
+    "No approval or request rationale is recorded when identities are created or changed.",
+    "No reconciliation is performed between the active identity list and actual employment status, leaving numerous orphaned accounts."
+   ]
+  },
+  "A.5.17": {
+   "name": "Authentication information",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.17.md",
+   "cases": [
+    "New accounts are issued the same initial password for all users and a first-login change is not forced.",
+    "User passwords are stored in the database in plaintext or simple encoding (base64).",
+    "A database access password is hardcoded in application source/configuration files and committed to version control.",
+    "User passwords can be viewed in plaintext from the administrator screen.",
+    "Password validity/complexity policy exists in documents but is not applied in the actual systems.",
+    "Authentication information is not reset even after an incident where its leakage was suspected."
+   ]
+  },
+  "A.5.18": {
+   "name": "Access rights",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.18.md",
+   "cases": [
+    "Access rights are provisioned/modified at the operator's discretion without the asset owner's approval.",
+    "On a job change, the rights of the previous role are not revoked and accumulate alongside the new rights, leaving excessive rights in place.",
+    "The access rights of a leaver/contract-terminated party are not revoked, so access remains possible after the status change.",
+    "Periodic access-right review is not performed, or the review is a formality (signature only) that leaves unnecessary rights untouched.",
+    "Privileged (administrator) rights are over-granted to many users and managed without separate approval or records.",
+    "Policy rights and actual system configuration are not reconciled, so unauthorized rights exist."
+   ]
+  },
+  "A.5.19": {
+   "name": "Information security in supplier relationships",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.19.md",
+   "cases": [
+    "A maintenance vendor that accesses the organization's information systems exists but is not registered in the supplier inventory.",
+    "A supplier security policy exists, but no differentiated requirements are defined by supplier type or risk level, so identical wording is applied to all suppliers.",
+    "Contracts with new suppliers are concluded without any security due diligence or risk assessment.",
+    "Subcontracting (further outsourcing) occurs, but there is no procedure to propagate security requirements to lower-tier suppliers or to approve such arrangements.",
+    "After a supplier relationship has ended, the vendor's accounts and access rights are not revoked and remain active.",
+    "The supplier inventory is outdated, so the vendors actually accessing systems do not match the inventory records."
+   ]
+  },
+  "A.5.20": {
+   "name": "Addressing information security within supplier agreements",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.20.md",
+   "cases": [
+    "A contract with a supplier that processes sensitive information omits confidentiality and security requirement clauses.",
+    "The contract has no incident notification deadline or procedure, delaying awareness and response to incidents on the supplier side.",
+    "The supplier's subcontracting is done without prior approval, and security obligations are not flowed down to the sub-supplier.",
+    "Supplier accounts and access rights are retained rather than revoked after contract termination.",
+    "There is no audit/inspection right clause, so there is no way to confirm whether the supplier meets its security obligations.",
+    "A personal data processing outsourcing agreement does not reflect the safeguards or restrictions on further outsourcing required by law."
+   ]
+  },
+  "A.5.21": {
+   "name": "Managing information security in the ICT supply chain",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.21.md",
+   "cases": [
+    "ICT products/services are contracted without identifying supply chain risks or defining security requirements.",
+    "Security requirements are imposed only on the directly contracted supplier, with no flow-down to sub-suppliers (subcontractors).",
+    "No software bill of materials (SBOM) is obtained for adopted software, so the impact scope of open-source vulnerabilities (CVEs) cannot be determined.",
+    "Hardware/software is adopted without authenticity/integrity verification (genuineness, signature, hash), exposing the organization to tampering/counterfeiting risk.",
+    "A critical ICT product remains in operation past its end of support (EoS) with no replacement or migration plan."
+   ]
+  },
+  "A.5.22": {
+   "name": "Monitoring, review and change management of supplier services",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.22.md",
+   "cases": [
+    "Security requirements are agreed only at contract signing, with no periodic monitoring or review of compliance thereafter.",
+    "A supplier adds sub-suppliers (subcontracting) or changes the service configuration without notifying the organization and without any risk re-assessment.",
+    "SLA/security performance reports are not obtained from the supplier, or are received but merely filed without review or verification.",
+    "Deficiencies are identified during review, but no improvement request, corrective action, or re-verification is recorded, so closure cannot be confirmed.",
+    "Security incidents on the supplier side are not reported to the organization, or contractual response requirements are not defined."
+   ]
+  },
+  "A.5.23": {
+   "name": "Information security for use of cloud services",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.23.md",
+   "cases": [
+    "A team adopts a SaaS to store customer data without approval, and it is omitted from the organization's management scope.",
+    "Misunderstanding the shared responsibility model, the customer assumes the provider performs data encryption/access control that are in fact the customer's responsibility.",
+    "Cloud storage is configured as public and exposed to the internet.",
+    "The contract lacks clauses on data storage location and destruction on termination, leaving no clear basis for transfer or disposal.",
+    "The cloud management console account has no MFA applied and no access logs are collected for administrative actions."
+   ]
+  },
+  "A.5.24": {
+   "name": "Information security incident management planning and preparation",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.24.md",
+   "cases": [
+    "An incident response procedure document exists, but roles/responsibilities and the emergency contact list are not kept current, so the actual responsible person cannot be identified.",
+    "No criteria distinguish events from incidents and no severity ratings exist, so the timing of reporting and escalation depends on the individual handler's discretion.",
+    "No reporting channel is provided, so personnel who notice incident indicators do not know where or how to report them.",
+    "Legal notification duties and deadlines (e.g., for personal data breaches) are not reflected in the procedure, creating a risk of delayed notification.",
+    "No exercise has ever been conducted after the plan was established, so the effectiveness of the procedures has not been validated.",
+    "The logs, tools, and external-body contact arrangements needed for response were not secured in advance, delaying first response during an incident."
+   ]
+  },
+  "A.5.25": {
+   "name": "Assessment and decision on information security events",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.25.md",
+   "cases": [
+    "With no criteria for classifying events as incidents, judgments vary by individual and the response is delayed.",
+    "The basis for assessing/deciding on received events is not recorded, so the reasoning cannot be verified after the fact.",
+    "An event that is in fact an incident is misjudged as minor, and the response and notification deadlines are missed.",
+    "An event is decided to be an incident but is not assigned a grade/priority, so response resources are not allocated.",
+    "False positives recur but the classification criteria/thresholds are not reviewed, so a real incident is buried in noise."
+   ]
+  },
+  "A.5.26": {
+   "name": "Response to information security incidents",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.26.md",
+   "cases": [
+    "Response procedures exist but lack severity levels/escalation criteria, so the level of response varies from incident to incident.",
+    "Recovery is started without containment, so the incident recurs while the attacker remains present.",
+    "Logs are arbitrarily deleted or overwritten during response, destroying evidence needed for root-cause analysis and legal action.",
+    "A personal data breach is recognized but regulator/data-subject notification is not made within the statutory deadline.",
+    "An incident is handled but the outcome and cause are not recorded, so it does not lead to recurrence prevention or lessons learned."
+   ]
+  },
+  "A.5.27": {
+   "name": "Learning from information security incidents",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.27.md",
+   "cases": [
+    "Incidents are only recovered and closed, with no root cause analysis or post-incident review performed at all.",
+    "Lessons are captured in a post-incident review but are not registered or tracked as improvement items, so they never lead to actual control improvement.",
+    "The same type of incident recurs, yet there is no trend analysis or measure to prevent recurrence.",
+    "Incident data is recorded sporadically without a taxonomy, making aggregation and metrics by type/cause impossible.",
+    "No record exists of management reporting or of the basis for improvement priorities for major incidents.",
+    "Incident lessons are not shared with relevant staff or training, so they do not translate into organization-wide response capability."
+   ]
+  },
+  "A.5.28": {
+   "name": "Collection of evidence",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.28.md",
+   "cases": [
+    "Evidence collection procedures are not documented, so during an incident staff collect evidence at their own discretion.",
+    "The original disk is opened/analyzed directly, changing timestamps and compromising evidence integrity.",
+    "No chain-of-custody record exists, so the handling history of the evidence cannot be traced and its validity cannot be demonstrated in legal or disciplinary proceedings.",
+    "Hashes are not generated/verified, so the collected copy cannot be proven identical to the original.",
+    "The evidence store has no access control, allowing many people to access the evidence without authorization.",
+    "Evidence containing personal data is collected excessively without limits on purpose/scope, breaching privacy requirements."
+   ]
+  },
+  "A.5.29": {
+   "name": "Information security during disruption",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.29.md",
+   "cases": [
+    "A BCP/DRP exists but does not embed information security requirements, so the security level to maintain during alternative operation is undefined.",
+    "The alternative site is configured with weaker access control/encryption/logging than the primary site, degrading the security level during disruption.",
+    "Emergency privileges granted during a crisis are neither logged nor revoked, so excessive privileges persist after return to normal.",
+    "Temporary workarounds introduced during disruption are not reversed on return to normal and remain as vulnerabilities.",
+    "The related plans are never validated through exercises, so whether security controls hold during an actual disruption cannot be confirmed.",
+    "Contracts with alternative service/cloud providers omit obligations to maintain security and notification requirements during disruption, leaving responsibility unclear."
+   ]
+  },
+  "A.5.30": {
+   "name": "ICT readiness for business continuity",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.30.md",
+   "cases": [
+    "ICT recovery targets (RTO/RPO) are not defined because no BIA was performed, so there is no basis for recovery priorities or resource allocation.",
+    "A disaster recovery strategy/plan exists but is outdated and inconsistent with the current infrastructure/configuration, with no update history.",
+    "Backups are performed but restore testing has never been done, so recoverability in an actual disaster is unverified.",
+    "After the recovery plan was established, no periodic test or post-significant-change test is performed at all.",
+    "Configuration information, documents, licenses, and access means needed for recovery exist only at the primary site, so they are inaccessible during a disaster.",
+    "Recovery procedures depend on specific individuals, with no backup personnel or training, so recovery is impossible when the owner is absent.",
+    "RTO/RPO shortfalls were identified in testing but were left unaddressed rather than managed as improvement items."
+   ]
+  },
+  "A.5.31": {
+   "name": "Legal, statutory, regulatory and contractual requirements",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.31.md",
+   "cases": [
+    "No register of applicable legal/regulatory/contractual requirements exists, or it has not been updated for years so current legislation is not reflected.",
+    "Requirements are listed but no responsible owner or satisfying control is mapped, so compliance cannot be verified.",
+    "New or amended regulations (for example, amendments to privacy legislation) are not monitored and so are not reflected in the management system.",
+    "Foreign business/services are operated without identifying the legal requirements of those jurisdictions or the cross-border data transfer conditions.",
+    "Cryptographic technology is adopted and used without any review of the related legal restrictions (import/export/use regulation).",
+    "Security/privacy requirements stated in contracts are not identified and so do not translate into actual implementation or evidence."
+   ]
+  },
+  "A.5.32": {
+   "name": "Intellectual property rights",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.32.md",
+   "cases": [
+    "There is no software license register, or the number of copies actually installed exceeds the number of licenses held.",
+    "There is no control over install privileges on workstations, so employees can freely install illegal or unauthorized software.",
+    "Software continues to be used after license expiry without renewal, or licenses assigned to leavers are not reclaimed or reassigned.",
+    "Open source is adopted/distributed without reviewing its license terms (attribution, source disclosure, etc.), breaching the obligations.",
+    "Fonts/images/documents obtained from public networks are used commercially without checking the usage terms.",
+    "Ownership of outsourced development deliverables and source code is not stated in the contract, leaving the intellectual property rights unclear."
+   ]
+  },
+  "A.5.33": {
+   "name": "Protection of records",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.33.md",
+   "cases": [
+    "Retention periods per record type are undefined, so legally required records are deleted at will or kept far longer than necessary.",
+    "Legally retained records such as accounting/transaction records are left in shared folders without access control or integrity assurance, exposing them to tampering.",
+    "No provision is made against media degradation and format obsolescence of long-term records, so records cannot be read within their retention period.",
+    "Records containing personal data whose retention period has expired are not disposed of and remain in storage.",
+    "Audit logs are stored without change-prevention measures, so whether they were tampered with cannot be demonstrated afterward.",
+    "No indexing/retrieval scheme exists to respond to a regulator's request to produce records, so they cannot be produced within the required period."
+   ]
+  },
+  "A.5.34": {
+   "name": "Privacy and protection of PII",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.34.md",
+   "cases": [
+    "The types and flows of PII the organization processes are not identified, so it cannot determine what personal data exists and where.",
+    "No policy or guideline on privacy/PII protection exists, or where one exists it is not communicated to the personnel/processors who actually handle PII.",
+    "No privacy officer or point of contact is appointed, so responsibility for responding to data subject inquiries and rights requests is unclear.",
+    "The applicable privacy laws or cross-border transfer requirements are not identified, so legal requirements are not met.",
+    "PII whose retention period has expired is not disposed of but retained, or it is used/provided beyond the notified purpose.",
+    "No procedure exists to receive and handle data subject rights requests such as access and deletion, so requests cannot be answered.",
+    "No privacy risk assessment is performed for large-scale PII processing or the introduction of new systems."
+   ]
+  },
+  "A.5.35": {
+   "name": "Independent review of information security",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.35.md",
+   "cases": [
+    "No plan/procedure exists for performing independent reviews of the information security approach and implementation, so reviews are conducted only arbitrarily and irregularly.",
+    "The review is performed by the very unit that operates and is responsible for the area under review, so independence is not ensured.",
+    "Despite significant changes such as reorganization, a major security incident, or a major system change, no review is performed in response.",
+    "The review only checks whether documents exist, and so fails to confirm the actual implementation of controls and operational compliance.",
+    "Shortcomings are identified in the review but are not connected to management reporting or action plans, so no improvement takes place.",
+    "Findings raised in a previous review are not confirmed in a subsequent review, so the same issue recurs."
+   ]
+  },
+  "A.5.36": {
+   "name": "Compliance with policies, rules and standards for information security",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.36.md",
+   "cases": [
+    "Information security policies/standards are established, but no checking activity is performed to verify actual compliance.",
+    "Compliance checks are done only once at a specific point in time, with no frequency, owner, or method defined as a procedure.",
+    "No technical compliance check (verification against security settings/configuration baselines) exists, so system settings run differently from the standard.",
+    "Non-compliance is found in a check, but it is merely recorded and left unaddressed without root-cause analysis or corrective action.",
+    "The same non-compliance recurs, yet it is never linked to fundamental improvement such as policy revision or training.",
+    "Technical compliance checks are run on operational systems without prior approval/planning, causing incidents or adverse impact."
+   ]
+  },
+  "A.5.37": {
+   "name": "Documented operating procedures",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.37.md",
+   "cases": [
+    "Key operational tasks such as backup or incident response depend solely on an individual's knowledge, with no documented procedure.",
+    "Operating procedures exist but are left out of date, diverging from how operations are actually performed.",
+    "After a system or configuration change, related operating procedures are not updated, so documentation and operations are inconsistent.",
+    "Procedures are accessible only to a specific individual, so they cannot be used during shift work or when the person is absent or in an emergency.",
+    "Procedures lack version/approval management, so the current version cannot be identified.",
+    "Procedures omit error/exception handling or escalation contacts, delaying response during an incident."
+   ]
+  },
+  "A.6.1": {
+   "name": "Screening",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.1.md",
+   "cases": [
+    "Hiring proceeds with no documented screening procedure, so identity/career verification is left to individual discretion or not performed at all.",
+    "People in sensitive roles (privileged/administrator accounts, personal data handlers) are placed without background verification proportionate to the risk.",
+    "Screening is applied only to full-time employees and not to contractors/dispatched workers who hold equivalent access.",
+    "Background/personal information is collected without candidate consent or beyond what is necessary, breaching personal data protection law.",
+    "No screening records are kept, so it cannot be evidenced at audit time that screening was actually performed.",
+    "No re-screening or review is carried out even when someone moves into a role with a higher risk level."
+   ]
+  },
+  "A.6.2": {
+   "name": "Terms and conditions of employment",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.2.md",
+   "cases": [
+    "The employment contract has no clause on information security responsibilities or confidentiality obligations, so there is no basis for action on a violation.",
+    "The duration of confidentiality obligations is not stated, so the scope of obligations after departure is unclear.",
+    "Only some new joiners complete a security pledge while others are missed, so awareness/acceptance records are inconsistent.",
+    "Only permanent staff sign a pledge, while fixed-term and dispatched personnel are not subject to equivalent security terms.",
+    "Additional security obligations required of key-duty personnel or personal data handlers are not reflected in the contract or pledge.",
+    "Pledges are collected but not stored or managed, so whether a specific person signed cannot be confirmed."
+   ]
+  },
+  "A.6.3": {
+   "name": "Information security awareness, education and training",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.3.md",
+   "cases": [
+    "A training plan exists, but there are no delivery records or only some personnel completed it, so organization-wide awareness cannot be confirmed.",
+    "New joiners are put to work for a long period without security training and do not know basic security rules.",
+    "The same material is used every year, so current threats or policy/legal revisions are not reflected at all.",
+    "Only general training is delivered, with no role-specific training for high-risk roles such as developers and system administrators.",
+    "Only completion is tracked formally, with no confirmation of comprehension or remedial action for those who did not complete.",
+    "There is no effectiveness measurement such as phishing simulations, so the value of awareness activities cannot be confirmed or improved."
+   ]
+  },
+  "A.6.4": {
+   "name": "Disciplinary process",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.4.md",
+   "cases": [
+    "There is no documented formal disciplinary process for information security breaches, so cases are handled arbitrarily on an individual basis.",
+    "The disciplinary process is not communicated to personnel in advance, so they are unaware of the consequences of a breach.",
+    "Similar breaches are handled inconsistently because severity, intent, and other factors are not taken into account.",
+    "The process proceeds without fact-finding or giving the individual an opportunity to respond, so fairness/lawfulness is not ensured.",
+    "A clear security breach occurs but the matter is closed with no action or record at all.",
+    "Disciplinary cases are not linked to cause analysis or recurrence-prevention measures, so the same breach keeps recurring."
+   ]
+  },
+  "A.6.5": {
+   "name": "Responsibilities after termination or change of employment",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.5.md",
+   "cases": [
+    "A leaver is not informed that the confidentiality obligation persists, so no acknowledgement signature record exists.",
+    "After a role change, access rights granted for the previous department/role are not revoked and remain in place.",
+    "Contracts/undertakings do not include information security responsibility clauses that remain valid after termination.",
+    "On termination, asset return and account deactivation are delayed, so employment-level privileges persist for a period.",
+    "There are no response/sanction criteria to apply when surviving obligations are breached, so breaches cannot be acted upon."
+   ]
+  },
+  "A.6.6": {
+   "name": "Confidentiality or non-disclosure agreements",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.6.md",
+   "cases": [
+    "A non-disclosure agreement template exists, but there are no actual signature records or only some parties signed, so implementation cannot be confirmed.",
+    "External parties are granted access to information without securing a non-disclosure agreement or a relevant clause in the contract.",
+    "The agreement does not state the scope of protected information or responsibilities for breach, so it is ineffective.",
+    "Confidentiality obligations that persist after employment/contract termination and their duration are not stated in the agreement.",
+    "The agreement template has not been reviewed/updated for years despite legal or organizational changes, so it does not reflect current requirements.",
+    "Signatures were obtained, but the individuals processed them as a formality without understanding the agreement or their confidentiality obligations."
+   ]
+  },
+  "A.6.7": {
+   "name": "Remote working",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.7.md",
+   "cases": [
+    "Remote working is widely practiced, but there is no governing policy or approval process, so no control basis can be confirmed.",
+    "Internal systems are accessed from remote locations in cleartext or with single-factor authentication, without VPN or multi-factor authentication.",
+    "Remote devices have no disk encryption or screen lock, so information leakage is not controlled if a device is lost or stolen.",
+    "Personally owned devices (BYOD) are used for work without separate conditions or consent, and data is stored/retained on personal devices.",
+    "Access logs of remote workers are not collected or monitored, so anomalous access cannot be detected.",
+    "After remote working ends, access rights are not reclaimed and issued devices/data are left unreturned."
+   ]
+  },
+  "A.6.8": {
+   "name": "Information security event reporting",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.8.md",
+   "cases": [
+    "Reporting channels exist but are not communicated to employees/external parties, so people do not actually know where or how to report.",
+    "There are no event types, criteria, or examples for what should be reported, so the decision to report is left entirely to individual judgment.",
+    "Even when events are reported, they are not routed into the assessment/classification/response procedure and are left unattended after intake.",
+    "No reporter-protection policy exists, so fear of adverse consequences leads to concealment and under-reporting.",
+    "No reporting channel is offered to external parties/suppliers/users, so events noticed outside the organization cannot be received.",
+    "Reporting deadlines and required fields are not defined, so intake time and content are not recorded and the response is delayed."
+   ]
+  },
+  "A.7.1": {
+   "name": "Physical security perimeters",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.1.md",
+   "cases": [
+    "The server room sits in the same space as general offices with no separate perimeter, so no physical separation exists.",
+    "The same minimal level of control is applied to all areas, with no grading of protected zones.",
+    "An emergency exit on the perimeter is left open or can be opened easily from outside, allowing bypass entry.",
+    "Bypass routes such as windows, vents, and ceiling voids are omitted from identification and inspection.",
+    "The protected-area floor plan does not match the actual facility and no change history is maintained.",
+    "No reception or staffed control point exists, so visitor entry through the perimeter is not identified or recorded."
+   ]
+  },
+  "A.7.2": {
+   "name": "Physical entry",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.2.md",
+   "cases": [
+    "The same entry control mechanism is applied to sensitive areas (such as computer rooms) and general offices, so no differential control by level exists.",
+    "Visitors are admitted without identity verification or prior approval, or move unaccompanied in sensitive areas without escort/supervision.",
+    "Entry rights are not revoked after a transfer or resignation, so unnecessary entry rights remain.",
+    "Entry records are not generated, or are not retained/reviewed, making later tracing and identification of abnormal entry impossible.",
+    "No controls exist against tailgating or bypass entry through emergency exits/rear doors.",
+    "Delivery/loading areas are not separated from internal protected areas, allowing outsiders to enter the interior without control."
+   ]
+  },
+  "A.7.3": {
+   "name": "Securing offices, rooms and facilities",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.3.md",
+   "cases": [
+    "The server room sits directly beside the lobby/reception, so outsiders are constantly nearby and it is not separated from general space.",
+    "Floor directories and door signs label rooms as \"data center\" or \"server room\", disclosing their location and purpose externally.",
+    "Work screens and documents can be observed from outside through a large street-facing glass wall, with no screening in place.",
+    "Document stores and work rooms are left unlocked out of hours and there is no procedure to check locking status.",
+    "Critical facilities are located in a basement with a history of flooding, with no water-leak or fire detection considered.",
+    "After an office relocation the security requirement level was not reassessed and floor plans were not updated, so documentation does not match reality."
+   ]
+  },
+  "A.7.4": {
+   "name": "Physical security monitoring",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.4.md",
+   "cases": [
+    "No cameras cover the server room interior or its doors, so there is no means to detect or trace unauthorized access when it occurs.",
+    "Cameras are installed but do not record, or the retention period has lapsed, so no footage remains for the time of an incident.",
+    "An intrusion alarm notifies only a single person, but no response procedure or accountable owner is defined, so the alarm is left unattended.",
+    "The monitoring record store is located inside the monitored area itself, so an intruder can easily remove the records.",
+    "Camera fields of view leave many blind spots, omitting key entry routes from coverage.",
+    "Camera operation lacks installation signage and controls on footage viewing, so personal data protection requirements are not met."
+   ]
+  },
+  "A.7.5": {
+   "name": "Protecting against physical and environmental threats",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.5.md",
+   "cases": [
+    "The server room sits in the building's lowest level, beneath plumbing, or against an outer wall, exposing it to flooding/leak risk, yet no mitigating measures are in place.",
+    "Fire detection/suppression, leak detection, and precision cooling exist but are not inspected or operationally tested, so it cannot be confirmed they actually work.",
+    "No physical or environmental threat identification has been performed with regard to geographic location or surroundings (flooding history, adjacent hazardous facilities, etc.).",
+    "UPS/emergency generation capacity or runtime does not meet the actual load or recovery objectives, or fuel/battery condition is not checked.",
+    "No alarm or notification scheme exists for temperature/humidity, leak, or power anomalies, so events are not recognized early even when they occur.",
+    "Threats from adjacent premises or external factors such as leaks from upper floors or nearby construction are omitted from identification and treatment."
+   ]
+  },
+  "A.7.6": {
+   "name": "Working in secure areas",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.6.md",
+   "cases": [
+    "A maintenance contractor enters the computer room and performs work without a prior request/approval.",
+    "An external worker enters and works alone in the server room without escort/supervision by a responsible person.",
+    "The work request has no record of the laptop/storage media brought in, so removal cannot be confirmed when work ends.",
+    "A firewall rule opened temporarily or an account right granted during work is not reverted after completion.",
+    "A rule prohibiting photography in secure areas exists, but a worker's mobile phone photography is not actually controlled.",
+    "Lone work is carried out unattended during late-night hours with no control to restrict or supervise it."
+   ]
+  },
+  "A.7.7": {
+   "name": "Clear desk and clear screen",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.7.md",
+   "cases": [
+    "Sensitive contracts or printouts containing personal data are left on desks even after staff have gone home.",
+    "Automatic screen locking is not configured, or the idle time is set excessively long, so screens are exposed while workstations are unattended.",
+    "Printouts containing personal data accumulate uncollected on a shared multifunction device for extended periods.",
+    "Sticky notes with account passwords are attached to monitors or partitions.",
+    "No lockable storage is provided, so sensitive documents are kept in open desk drawers.",
+    "No clear desk and clear screen rules exist for remote/shared-seating environments, so documents and screens are exposed without control."
+   ]
+  },
+  "A.7.8": {
+   "name": "Equipment siting and protection",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.8.md",
+   "cases": [
+    "Servers or network devices sit in unlocked open spaces or common corridors, so anyone can access them physically.",
+    "Screens displaying sensitive information face doors, windows, or corridors, so unauthorized people can easily shoulder surf.",
+    "Printers and multifunction devices lack secure print, so printouts are left unattended and can be collected by third parties.",
+    "Critical equipment is placed in high-threat spots such as under piping, by windows, or in vibration- and dust-prone locations, with no mitigation applied.",
+    "Unused network or console ports in common areas remain active, allowing unauthorized connection.",
+    "After equipment is moved or relocated, no recheck confirms that protection criteria (locking, line-of-sight blocking) are still in place."
+   ]
+  },
+  "A.7.9": {
+   "name": "Security of assets off-premises",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.9.md",
+   "cases": [
+    "Laptops or mobile devices are taken off-site without authorization or registration, so no removal history can be confirmed.",
+    "Devices used off-premises lack disk encryption or remote lock/wipe, leaving information exposed if lost or stolen.",
+    "No asset-handling guidance or accountability exists for teleworkers, so the level of protection relies on individual judgment.",
+    "Equipment is sent off-site for repair without prior deletion or encryption of the data on its storage media.",
+    "No reporting or response procedure exists for loss or theft of off-premises assets, so remediation is delayed.",
+    "Return of removed assets is not tracked, so unreturned assets are left unaccounted for."
+   ]
+  },
+  "A.7.10": {
+   "name": "Storage media",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.10.md",
+   "cases": [
+    "No control policy exists for removable media, so staff freely use personal USB drives for work.",
+    "Hard disks scheduled for disposal are handed to a recycling vendor after only a quick format, leaving data in a recoverable state.",
+    "No disposal/sanitization certificate is retained, so whether and how media were destroyed cannot be tracked or verified.",
+    "Media holding sensitive information are shipped off-site by ordinary courier without encryption, leaving exposure risk unaddressed if lost.",
+    "SSDs are processed by degaussing only, so the data is not actually erased before re-use or disposal.",
+    "Removable media are not identified or registered as assets, so their location and holdings cannot be established."
+   ]
+  },
+  "A.7.11": {
+   "name": "Supporting utilities",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.11.md",
+   "cases": [
+    "A UPS is installed, but its battery runtime or transfer operation has never been tested, so uninterrupted transfer fails during an actual outage.",
+    "The server-room precision cooling unit is a single unit with no standby, and its failure alert is not delivered to responsible staff.",
+    "The standby generator's fuel level is not managed, so its runtime is insufficient during a prolonged outage.",
+    "A temperature or humidity threshold alert is raised, but no responsible person or procedure is defined, so it is left unaddressed.",
+    "A preventive maintenance plan for supporting utilities exists, but actual execution and result records are missing.",
+    "Power or telecommunications is provisioned over a single path, leaving a single point of failure, yet no redundancy review has been done."
+   ]
+  },
+  "A.7.12": {
+   "name": "Cabling security",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.12.md",
+   "cases": [
+    "Telecommunications or power cables are exposed on floors, ceilings, or corridors without protection, leaving them vulnerable to physical damage or unauthorized access.",
+    "Power and telecommunications lines run adjacent to each other, causing signal degradation or errors from electromagnetic interference.",
+    "Wiring rooms or frames are left open without locks, so anyone can reach cable junction points.",
+    "Cables and ports are unlabeled and the cabling diagram is outdated and inconsistent with the actual wiring, so miswiring or unauthorized connection cannot be identified.",
+    "Unused network ports or cables remain active, allowing unauthorized device connection or attachment of tapping devices.",
+    "Critical circuits are routed over a single path only, so a cable cut or damage causes a full service outage."
+   ]
+  },
+  "A.7.13": {
+   "name": "Equipment maintenance",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.13.md",
+   "cases": [
+    "No maintenance cycle is defined for critical equipment, or preventive servicing is chronically delayed, leaving the risk of failure or performance degradation unmanaged.",
+    "Maintenance history is not recorded, or actions taken and parts replaced are omitted, so servicing cannot be traced.",
+    "External technicians access equipment without attendance or supervision, creating a risk that stored sensitive information is exposed.",
+    "Equipment is taken off site for repair without backing up or removing data on the storage media, creating a risk of information leakage.",
+    "Remote maintenance uses shared accounts or leaves sessions unlogged, so it is impossible to confirm who did what.",
+    "Equipment whose warranty or SLA has expired is left in place without renewal or replacement, making timely recovery difficult when a fault occurs."
+   ]
+  },
+  "A.7.14": {
+   "name": "Secure disposal or re-use of equipment",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.14.md",
+   "cases": [
+    "Storage in PCs or servers due for disposal is only file-deleted or quick-formatted before it is removed or sold, so data can be recovered.",
+    "Only HDD-style overwriting is applied to SSD or flash media, so residual data is not actually erased.",
+    "The internal hard disk of multifunction devices or printers is omitted from scope when the units are returned from lease or disposed of.",
+    "Disposal is outsourced without obtaining a destruction certificate or processing evidence, so destruction cannot be proven.",
+    "Re-used equipment is reassigned with the previous user's accounts, credentials, or licensed software still present.",
+    "There is no verification step after deletion or destruction and disposal history is not reflected in the asset inventory, so records do not match reality."
+   ]
+  },
+  "A.8.1": {
+   "name": "User endpoint devices",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.1.md",
+   "cases": [
+    "A laptop holding sensitive data is not encrypted, so information is exposed if it is lost or stolen.",
+    "Endpoint devices are not registered/identified, so unmanaged devices access organizational information.",
+    "There is no remote lock/wipe capability, and the lost-device reporting procedure is undefined or not followed.",
+    "BYOD devices access business data with no separation from personal areas and no user consent procedure.",
+    "Endpoint patching and malware protection are not applied consistently, leaving devices unpatched for a long time.",
+    "Users are granted local administrator rights and install unauthorized software freely, neutralizing the baseline."
+   ]
+  },
+  "A.8.2": {
+   "name": "Privileged access rights",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.2.md",
+   "cases": [
+    "Privileged rights are used without approval or a documented basis, or no expiry/revocation procedure exists.",
+    "Multiple administrators share a common root/administrator account, so individual actions cannot be traced.",
+    "Multi-factor authentication is not applied to privileged access, so a simple password alone grants access.",
+    "Privileged account activity is not logged, or logs are collected but never reviewed.",
+    "Privileged rights of leavers/role-changers are not revoked and remain active.",
+    "Default system administrator accounts/passwords are left at their initial values and still in use."
+   ]
+  },
+  "A.8.3": {
+   "name": "Information access restriction",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.3.md",
+   "cases": [
+    "Menus are only hidden in the UI while server-side authorization is absent, so unauthorized functions/data can be reached via direct URL/API calls.",
+    "Broad query/download permissions are granted by default regardless of duty, so least privilege is not upheld.",
+    "The application connects with an over-privileged database administrator account and can access all tables.",
+    "There is no restriction, approval, or logging for bulk queries/downloads of personal data.",
+    "The permission matrix is not kept current, so actual granted permissions differ from defined ones."
+   ]
+  },
+  "A.8.4": {
+   "name": "Access to source code",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.4.md",
+   "cases": [
+    "Least privilege is not applied, for example all developers hold admin/write access to the source code repository.",
+    "A shared account is used to access the repository, so the author of a change cannot be traced.",
+    "Original source code is left on operational servers, creating a risk of unauthorized viewing/modification.",
+    "Direct changes to a protected branch (such as force-push) are possible without code review/merge approval.",
+    "Repository access rights of leavers or role-changed staff are not revoked and remain active.",
+    "Credentials/keys are committed hardcoded in the source code but are not checked for."
+   ]
+  },
+  "A.8.5": {
+   "name": "Secure authentication",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.5.md",
+   "cases": [
+    "The administrator console/privileged accounts are accessible with a single password and no multi-factor authentication is applied.",
+    "Login error messages specifically reveal whether the ID or the password was wrong.",
+    "There is no account lockout/attempt limit, so unlimited login attempts (brute force) are possible.",
+    "Credentials are transmitted in cleartext (HTTP) or stored in cleartext or with weak hashes.",
+    "Multiple users share a single privileged account, so individual authentication is not performed."
+   ]
+  },
+  "A.8.6": {
+   "name": "Capacity management",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.6.md",
+   "cases": [
+    "Managed resources and thresholds are not defined, so utilization is not noticed until it reaches saturation.",
+    "Log collection/backup halts due to insufficient storage, but with no early-warning scheme it is discovered only after the fact.",
+    "No capacity sizing is performed when introducing a new service, causing performance degradation/outage right after launch.",
+    "Cloud auto-scaling bounds are misconfigured: a too-low upper bound causes an outage during a traffic surge, or the absence of one leads to excessive cost.",
+    "Demand forecasting is performed but procurement lead time is not considered, so the timing of expansion does not match actual demand."
+   ]
+  },
+  "A.8.7": {
+   "name": "Protection against malware",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.7.md",
+   "cases": [
+    "Defense solutions are missing or excepted on some servers/endpoints, leaving blind spots in management.",
+    "A defense solution is installed but its engine/signatures have not been updated for a long time, so new malware is not detected.",
+    "Real-time monitoring is turned off, or scheduled full scans are not performed.",
+    "Malware detection logs are only collected but not reviewed, so repeated infection/spread goes unnoticed.",
+    "Privileges are left unmanaged so users can stop the defense solution at will."
+   ]
+  },
+  "A.8.8": {
+   "name": "Management of technical vulnerabilities",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.8.md",
+   "cases": [
+    "The asset inventory is not kept current, so some systems are excluded from vulnerability management.",
+    "No owner or channel collects vulnerability information, so vulnerabilities disclosed long ago go unnoticed.",
+    "Priorities and deadlines are not set because severity is not assessed, leaving high-risk vulnerabilities unaddressed for a long time.",
+    "Remediation of findings from assessments is not tracked or verified, so unremediated conditions recur.",
+    "Vulnerabilities that cannot be patched immediately are left without any mitigation or residual-risk acceptance decision.",
+    "A patch is deployed to production without testing or change management, causing an outage."
+   ]
+  },
+  "A.8.9": {
+   "name": "Configuration management",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.9.md",
+   "cases": [
+    "No secure configuration baseline is defined, so settings differ from server to server and whether hardening was applied cannot be confirmed.",
+    "Systems are found running with default administrator accounts/passwords still unchanged.",
+    "With no procedure to check for configuration drift, unauthorized setting changes go unaddressed for a long time.",
+    "The CMDB is not kept current, so the actual configuration does not match the documented configuration.",
+    "Database passwords/API keys are hardcoded in plaintext in configuration files and exposed in the repository.",
+    "A baseline is established only once at the start and is never updated to reflect changes in threats/vulnerabilities."
+   ]
+  },
+  "A.8.10": {
+   "name": "Information deletion",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.10.md",
+   "cases": [
+    "Data past its retention period is left in operational systems for a long time with no deletion criteria in place.",
+    "Only a simple file delete is performed on SSD/cloud storage, without making the data unrecoverable (overwriting/cryptographic erasure).",
+    "Operational data is deleted, but the same information remains in backups/snapshots/logs and is omitted from the deletion scope.",
+    "After a cloud/outsourcing contract ends, deletion of the processor's data is neither confirmed nor supported by any proof.",
+    "Deletion is claimed but cannot be confirmed as complete because there is no verifying evidence such as deletion logs or certificates."
+   ]
+  },
+  "A.8.11": {
+   "name": "Data masking",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.11.md",
+   "cases": [
+    "A production database is copied as-is and real data is used in the development/test environment.",
+    "Masking is applied on screen, but plaintext is still exposed in API responses, downloaded files, and logs.",
+    "With no masking criteria, application varies by field at the discretion of individual staff, resulting in inconsistency.",
+    "Data is treated as fully anonymized even though re-identification is possible through combinations of quasi-identifiers.",
+    "Unmasking (viewing originals) privileges are granted broadly and viewing history is not recorded.",
+    "After pseudonymization, the mapping table (additional information) is stored on the same system as the original without separation."
+   ]
+  },
+  "A.8.12": {
+   "name": "Data leakage prevention",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.12.md",
+   "cases": [
+    "Types of data to be protected are not defined, so DLP rules are set only nominally and fail to detect actual sensitive information.",
+    "DLP is applied only to the email channel, while major leakage paths such as web upload, cloud, and removable media are not controlled.",
+    "Violation events occur in large volumes, but no reviewer/responder is assigned and they are left unattended.",
+    "Exceptions are granted indefinitely without an approval process, effectively nullifying the control.",
+    "The system runs only in detection (monitoring) mode, failing to block actual leakage attempts, with no plan to transition to blocking policies.",
+    "Retention period/access control for DLP event logs is inadequate, so they cannot be used for later investigation and root-cause analysis."
+   ]
+  },
+  "A.8.13": {
+   "name": "Information backup",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.13.md",
+   "cases": [
+    "Backups are performed but recovery has never been tested, so actual restorability cannot be demonstrated.",
+    "Backup copies are stored on the same network/storage as the source, so a ransomware infection encrypts the backups as well.",
+    "The backup cycle for a critical system exceeds the defined RPO, so more data is lost during an incident than the tolerated amount.",
+    "Backup media are stored without encryption or access control, exposing them to unauthorized removal/leakage.",
+    "There is no monitoring/alerting for backup failures, so missed backups go unnoticed for several days.",
+    "Retention period/generation management is not defined, so data from a required point in time cannot be restored."
+   ]
+  },
+  "A.8.14": {
+   "name": "Redundancy of information processing facilities",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.14.md",
+   "cases": [
+    "Only some equipment is made redundant without defined availability requirements, while other layers such as power/links remain single, leaving SPOFs.",
+    "Redundancy is configured but failover has never been tested, so switchover fails during a real incident.",
+    "The standby node lacks capacity/performance, so the service cannot run normally after switchover.",
+    "Replication lag is not managed, causing data loss/inconsistency after switchover.",
+    "Redundant components run different configuration/firmware versions, causing malfunction at switchover.",
+    "There is no monitoring/alerting on redundancy status, so a degraded state (one side already failed) goes unnoticed.",
+    "Redundancy exists only within the same data center/same power feed, so a wide-area disaster brings everything down at once."
+   ]
+  },
+  "A.8.15": {
+   "name": "Logging",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.15.md",
+   "cases": [
+    "Logging is disabled on key servers/security devices, or critical events (privilege changes, access failures, and so on) are not recorded.",
+    "Clocks are not synchronized across systems, making log correlation and time-based tracing impossible during an incident.",
+    "Administrators can arbitrarily delete/modify logs on individual servers, so log integrity is not assured.",
+    "The log retention period falls short of a legal requirement (for example, a mandatory access-record retention period) or logs are deleted prematurely.",
+    "Sensitive information such as passwords or resident registration numbers is recorded in logs in plaintext.",
+    "A collection failure or storage exhaustion goes undetected, leaving logs missing for a considerable period without anyone noticing."
+   ]
+  },
+  "A.8.16": {
+   "name": "Monitoring activities",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.16.md",
+   "cases": [
+    "Logs are collected but left unattended without real-time/periodic analysis, so signs of compromise are not detected.",
+    "Anomaly detection rules/baselines are never updated after initial setup, so they fail to reflect new attacks or environmental changes.",
+    "A high volume of alerts is generated but, with no severity classification/handling procedure, genuine threat alerts are buried among false positives.",
+    "New environments such as cloud/SaaS and remote work are omitted from the monitoring scope, creating visibility blind spots.",
+    "Escalation from an alert into the incident response process is not defined, so the response is delayed.",
+    "Monitoring logs/alert data have no access control, so an administrator or an attacker can delete traces at will."
+   ]
+  },
+  "A.8.17": {
+   "name": "Clock synchronization",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.17.md",
+   "cases": [
+    "Systems are set to inconsistent time zones or local times with no common baseline, making log correlation impossible.",
+    "Some devices (network/security appliances, legacy servers) are not synchronized and are left with significant clock drift.",
+    "The internal time server itself is not synchronized to a reliable external reference, or it is a single point with no redundancy.",
+    "Synchronization status is not monitored, so drift/failures go unnoticed for extended periods.",
+    "The time source is open to arbitrary external NTP with no restriction/authentication, exposing it to spoofing.",
+    "Log timestamps are inaccurate, weakening incident investigation and the admissibility of evidence."
+   ]
+  },
+  "A.8.18": {
+   "name": "Use of privileged utility programs",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.18.md",
+   "cases": [
+    "The organization cannot identify or manage which utilities capable of bypassing system controls are installed.",
+    "Personnel install/use privileged utilities at their own discretion with no approval procedure.",
+    "Shared administration tools are used jointly without individual identification, so the acting user cannot be determined.",
+    "No usage logs are kept for privileged utilities, so misuse cannot be verified after the fact.",
+    "Diagnostic/debugging tools are left on operational systems after a project ends and are accessible to anyone.",
+    "Despite application access controls, data is arbitrarily modified by bypassing the controls with a direct database editing tool."
+   ]
+  },
+  "A.8.19": {
+   "name": "Installation of software on operational systems",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.19.md",
+   "cases": [
+    "Installation privileges on operational systems are permanently granted to many people and are not controlled.",
+    "Software is installed directly into the operational environment without testing/approval, causing an outage.",
+    "Installation/change history is not recorded, so it is impossible to tell when, by whom, and what was deployed.",
+    "There is no previous-version backup or rollback plan, so service recovery is delayed when a deployment fails.",
+    "End-of-life supplier software continues to run in the operational environment without replacement or mitigation.",
+    "Unapproved software installation on user endpoints is not controlled, allowing risky software to enter."
+   ]
+  },
+  "A.8.20": {
+   "name": "Networks security",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.20.md",
+   "cases": [
+    "Areas of differing trust level are not separated, so externally reachable systems and internal core systems coexist on the same network.",
+    "The firewall policy contains overly permissive (any-any) rules with unclear purpose/justification and is not periodically reviewed.",
+    "Default accounts/passwords on network devices are unchanged, or unnecessary management services are exposed externally.",
+    "Remote/wireless access segments lack encryption or strengthened authentication, creating a risk of eavesdropping/unauthorized access.",
+    "Network device logs are not collected/monitored, so intrusion attempts or anomalous traffic cannot be detected.",
+    "Security requirements/service levels for external network services are not defined in the contract, so fulfillment cannot be verified."
+   ]
+  },
+  "A.8.21": {
+   "name": "Security of network services",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.21.md",
+   "cases": [
+    "The security features/requirements of the network services the organization uses are not identified, so what security characteristics each service needs is undefined.",
+    "The contract/SLA with an external supplier does not state security features or service levels, so fulfillment cannot be verified.",
+    "Defined security features (for example transport encryption, access filtering) are not reflected in the actual service configuration.",
+    "Availability/performance and security feature fulfillment of network services are not monitored, so degradation or non-delivery goes unnoticed.",
+    "The external supplier's subcontracting, breach/outage notification obligations, and responsibility boundaries are not specified, leaving no basis for response when an incident occurs.",
+    "A new network service is connected without a security requirement review at introduction, creating an uncontrolled path."
+   ]
+  },
+  "A.8.22": {
+   "name": "Segregation of networks",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.22.md",
+   "cases": [
+    "Public-facing servers reside in the same segment as the internal business network with no DMZ zone.",
+    "Firewall policy contains any-any allow rules, effectively nullifying segmentation.",
+    "The development/test network is not separated from production, so test traffic reaches production systems.",
+    "Management traffic is carried over the general business network with no dedicated management network/bastion.",
+    "A cloud security group exposes management ports (22/3389) to 0.0.0.0/0.",
+    "Inter-zone firewall rules are not reviewed periodically, leaving rules for departed staff or decommissioned systems in place."
+   ]
+  },
+  "A.8.23": {
+   "name": "Web filtering",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.23.md",
+   "cases": [
+    "There is no allow/block policy for internet access, or it is undocumented, so unrestricted access to any site is possible.",
+    "A web filtering capability is deployed, but the category/reputation database is not updated for a long time, so newly emerging malicious/phishing sites are not blocked.",
+    "Filtering is applied on the corporate network but not on remote-work/mobile devices, allowing access to be bypassed.",
+    "Block/bypass-attempt logs are only collected and never reviewed, so attempts to reach malicious sites go unnoticed.",
+    "Blocks are lifted arbitrarily without an exception-approval procedure, or the exception list is not maintained."
+   ]
+  },
+  "A.8.24": {
+   "name": "Use of cryptography",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.24.md",
+   "cases": [
+    "A cryptography policy exists but lacks the scope of application and minimum key length criteria, so cryptography is applied inconsistently across systems.",
+    "Personal data is stored in plaintext in the database or stored using weak hashes (plain MD5/SHA-1).",
+    "Legacy TLS (1.0/1.1) and weak cipher suites remain enabled on production servers.",
+    "Cryptographic keys are hardcoded in plaintext within application source code, configuration files, or repositories.",
+    "No key rotation period is defined, so the same key has been used for years, and there is no destruction/re-issuance procedure on compromise.",
+    "An unvalidated in-house cryptographic algorithm is used, or the requirement for nationally approved algorithms is not met."
+   ]
+  },
+  "A.8.25": {
+   "name": "Secure development life cycle",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.25.md",
+   "cases": [
+    "An SDLC policy exists, but in actual projects security checks are performed only just before deployment after development is complete.",
+    "Secure coding standards do not exist, or exist but are not shared/taught to developers and so are not actually followed.",
+    "Security testing is not integrated into the CI/CD pipeline, so vulnerable code is deployed automatically without verification.",
+    "Open source/third-party components are adopted without verifying their known vulnerabilities and licenses.",
+    "Deployment is approved even though defects found in vulnerability assessment have not been remediated.",
+    "The outsourced development contract has no security requirements, and no security verification is performed at acceptance.",
+    "Development/test/production environments and source code access privileges are not separated/controlled."
+   ]
+  },
+  "A.8.26": {
+   "name": "Application security requirements",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.26.md",
+   "cases": [
+    "Applications are developed/acquired using only functional requirements, without separately defining security requirements.",
+    "Transactions over public networks have no defined requirements for transport encryption/transaction integrity/non-repudiation.",
+    "Vulnerability-handling requirements such as input validation/injection prevention are absent, so the same class of vulnerability recurs.",
+    "Legal requirements for processing personal data/payment data are not reflected in the security requirements.",
+    "The product is released without the defined security requirements being confirmed during the testing/verification stage.",
+    "An acquired (purchased/SaaS) application is adopted without its security features being assessed for conformance to requirements."
+   ]
+  },
+  "A.8.27": {
+   "name": "Secure system architecture and engineering principles",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.27.md",
+   "cases": [
+    "Security architecture/engineering principles are not documented, so the security level varies from project to project at the designer's discretion.",
+    "Principles exist, but there is no procedure to verify their application to new designs and significant changes, so they are not actually reflected.",
+    "Systems are designed to rely on a single control (for example, a perimeter firewall) without defense in depth, so a single breach fully exposes the interior.",
+    "Least privilege/segregation of duties is not reflected in the design, so service accounts/administrative rights are granted excessively.",
+    "When adopting new technologies such as cloud/containers, the existing principles are not made concrete, so systems are deployed with insecure default settings.",
+    "Exceptions to the principles are allowed arbitrarily without risk assessment/approval, and compensating controls are not managed."
+   ]
+  },
+  "A.8.28": {
+   "name": "Secure coding",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.28.md",
+   "cases": [
+    "Secure coding standards exist but are not applied to actual development or the pipeline, remaining as formal documents only.",
+    "High/medium severity vulnerabilities from SAST results are left unremediated for a long period with no exception approval justification.",
+    "An outdated version of an open source library with known vulnerabilities (CVEs) is deployed to production as is.",
+    "API keys and database passwords are hardcoded in source code and committed to the version control repository.",
+    "A code review procedure is defined, but reviews are performed with a focus on functionality only, without security check items."
+   ]
+  },
+  "A.8.29": {
+   "name": "Security testing in development and acceptance",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.29.md",
+   "cases": [
+    "Only functional testing is performed without a security testing plan, and the system is transferred to operations.",
+    "There are no test cases linked to security requirements, so requirements are released without being verified.",
+    "High-risk defects found in vulnerability assessment/penetration testing are moved to production without remediation/re-testing.",
+    "Acceptance (transfer-to-operations) pass criteria are not defined in advance, so approval decisions are made arbitrarily.",
+    "Purchased/externally sourced products are adopted without reviewing their security test results.",
+    "Live production/personal data is used for security testing without controls."
+   ]
+  },
+  "A.8.30": {
+   "name": "Outsourced development",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.30.md",
+   "cases": [
+    "The outsourced development contract lacks security requirements and acceptance criteria, so deliverables are accepted with a lower level of security than in-house development.",
+    "No security testing/vulnerability assessment is performed before acceptance, so vulnerabilities or hardcoded credentials are carried into production.",
+    "Production data is provided to the supplier for development without pseudonymization/anonymization, exposing personal and confidential information.",
+    "The contract has no restriction on sub-contracting, so a secondary supplier the organization was unaware of processes the source code.",
+    "Source code/development environment access privileges granted to the supplier are not revoked and remain after the contract ends.",
+    "Source code ownership/escrow and maintenance responsibility are not stipulated in the contract, making maintenance impossible when the supplier withdraws.",
+    "There is no right to audit/inspection over the development process, so requirement fulfillment cannot be verified."
+   ]
+  },
+  "A.8.31": {
+   "name": "Separation of development, test and production environments",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.31.md",
+   "cases": [
+    "Development/test/production run on the same server or same network segment without separation.",
+    "Developers hold standing access privileges to production databases/servers.",
+    "Production data is copied into test environments and used without masking/pseudonymization.",
+    "Developers apply source code or configuration directly to production (hotfix) without change management approval.",
+    "Compilers/debugging tools/source code remain in production, expanding the attack surface.",
+    "In the cloud, development and production share the same account/VPC or use common secrets/credentials."
+   ]
+  },
+  "A.8.32": {
+   "name": "Change management",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.32.md",
+   "cases": [
+    "No change management procedure exists, or it does not apply to certain systems (for example network devices or cloud configuration), so changes are applied without control.",
+    "A change is applied directly to production without impact/risk assessment or approval, causing an outage or introducing a vulnerability.",
+    "A change is applied to production without validation in a test environment, or the requester approves their own change.",
+    "After handling an emergency change, no post-implementation review/approval/record is kept, so the change cannot be verified.",
+    "There is no pre-change backup or rollback plan, so service recovery is delayed when a change fails.",
+    "After a change, configuration documents, access rights, or security policies are not updated, so the actual configuration and the documentation are inconsistent."
+   ]
+  },
+  "A.8.33": {
+   "name": "Test information",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.33.md",
+   "cases": [
+    "An operational database is copied into the test environment without masking/pseudonymization and used for development/testing.",
+    "Staff take out and use operational data at their own discretion without any approval process for test data use.",
+    "The access control/encryption level of the test environment is markedly lower than production, leaving personal data exposed to risk.",
+    "Masking is applied but is insufficient (only some fields processed, reversible), so individuals can still be identified.",
+    "After testing ends, copies of operational data remain on test servers, developer PCs, or shared storage.",
+    "The use/copying of operational data for testing is not logged, so it cannot be traced which data was used where."
+   ]
+  },
+  "A.8.34": {
+   "name": "Protection of information systems during audit testing",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.34.md",
+   "cases": [
+    "Vulnerability assessment or penetration testing on operational systems is carried out without prior agreement/approval, causing a service outage.",
+    "Temporary accounts issued or testing tools installed for a test remain on operational systems because they were not revoked/removed after the test.",
+    "Excessive write/change privileges on operational data are granted during testing, resulting in data corruption.",
+    "Access and activity during testing are not logged, so what was tested cannot be verified afterward.",
+    "A load-inducing test is run during business hours without impact assessment, causing performance degradation or a service outage.",
+    "Operational data/results obtained from testing are stored without access control or not disposed of, leaving a risk of leakage."
+   ]
+  }
+ }
+}

@@ -1,0 +1,1215 @@
+{
+ "schema": "iso-27001-evidence-dictionary/v1",
+ "lang": "en",
+ "description": "Evidence-example dictionary for the 93 Annex A controls. Reference dictionary for evidence-to-control mapping. Original material, not the standard.",
+ "total_evidence_examples": 556,
+ "items": {
+  "A.5.1": {
+   "name": "Policies for information security",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.1.md",
+   "evidence": [
+    "Top-level information security policy approved by management (including version and approval date)",
+    "List and documents of topic-specific policies/guidelines",
+    "Records of policy publication/communication (intranet postings, training/pledge records)",
+    "Policy review/revision history and review meeting minutes",
+    "Policy exception requests and approvals, and an exception register including validity periods",
+    "Version control register for policy documents, and records of withdrawing or retiring superseded versions"
+   ]
+  },
+  "A.5.2": {
+   "name": "Information security roles and responsibilities",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.2.md",
+   "evidence": [
+    "Policy/regulation or role description (such as a RACI matrix) defining information security roles and responsibilities",
+    "Designation document for the chief officer (CISO/CPO) and the organization chart",
+    "List of owners/responsible persons per asset, system, and personal data processing activity",
+    "Job descriptions or a specification of security responsibilities per role",
+    "Records of role reallocation/privilege transfer following reorganization or personnel movement"
+   ]
+  },
+  "A.5.3": {
+   "name": "Segregation of duties",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.3.md",
+   "evidence": [
+    "Segregation-of-duties (SoD) matrix or a policy/regulation defining the separation criteria",
+    "Privilege-grant register per duty, with grant/approval records",
+    "Access-rights review results and SoD breach check records",
+    "Records of combined-role operation and compensating controls (dual approval logs, independent log review records)",
+    "Organization chart, job descriptions, and documentation of development/operations separation"
+   ]
+  },
+  "A.5.4": {
+   "name": "Management responsibilities",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.4.md",
+   "evidence": [
+    "Direction/announcement under management's name requiring compliance with information security (email, internal notice, and so on)",
+    "Information security policy and records of distribution/acknowledgement by personnel",
+    "Briefing materials and confirmation records on security responsibilities for new joiners/role changers",
+    "Information security training plan and completion status",
+    "Approval documents or management decision records for security budget/staff allocation",
+    "Management review minutes and security status reports presented to management"
+   ]
+  },
+  "A.5.5": {
+   "name": "Contact with authorities",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.5.md",
+   "evidence": [
+    "Contact list/register of relevant authorities (regulators/supervisory bodies, the data protection authority, incident response bodies, law enforcement, emergency services)",
+    "Incident response procedure or emergency contact scheme stating the reporting scope/deadline/method per situation",
+    "Records of reporting to authorities when a personal data breach/security incident occurs (report forms, acknowledgement of receipt)",
+    "Designation document for authority contact persons and their backups",
+    "Periodic verification/update history of contact details, and contact history such as assistance requests/guidance received"
+   ]
+  },
+  "A.5.6": {
+   "name": "Contact with special interest groups",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.6.md",
+   "evidence": [
+    "List of special interest groups/security forums/ISACs/associations participated in, and the responsible person designation document",
+    "Proof of membership/subscription and participation history (meeting minutes, newsletter receipt, forum activity records)",
+    "Records showing externally obtained threat/vulnerability information reflected in internal handling (risk assessment/patch/vulnerability remediation)",
+    "Records of review/approval and scope control when sharing information",
+    "History of internal dissemination and response actions after receiving an early warning"
+   ]
+  },
+  "A.5.7": {
+   "name": "Threat intelligence",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.7.md",
+   "evidence": [
+    "Threat intelligence collection/analysis procedure and role/responsibility definition document",
+    "List of threat information sources and status of subscriptions/contracts/community participation",
+    "Periodic threat intelligence reports (strategic/tactical/operational levels)",
+    "Records of threat information applied (detection rule change history, blocked IOC lists, risk assessment update records)",
+    "Records of threat information sharing (internal distribution history, sends/receives with external sharing communities)"
+   ]
+  },
+  "A.5.8": {
+   "name": "Information security in project management",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.8.md",
+   "evidence": [
+    "Project management process/methodology/checklists that incorporate information security activities",
+    "Per-project information security risk assessment results and risk treatment plans",
+    "Project security requirement definitions/specifications (including privacy and regulatory requirements)",
+    "Stage-by-stage security review/gate approval records and meeting minutes",
+    "Project closure reports and residual-risk/security-deliverable handover documents"
+   ]
+  },
+  "A.5.9": {
+   "name": "Inventory of information and other associated assets",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.9.md",
+   "evidence": [
+    "Asset identification criteria and asset management procedure (including owner assignment, update cycle, and reconciliation method)",
+    "Inventory of information assets and other associated assets (with attributes such as identifier, type, location, owner, criticality)",
+    "History of asset acquisition/change/disposal and records of linkage with change management",
+    "Results of periodic inventory reconciliation/review and records of actions taken on discrepancies",
+    "Evidence of linkage between the inventory and the results of risk assessment/asset classification"
+   ]
+  },
+  "A.5.10": {
+   "name": "Acceptable use of information and other associated assets",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.10.md",
+   "evidence": [
+    "Rules for acceptable use of information and associated assets (policy/guideline/handling procedure)",
+    "Documented handling/storage/transfer/disposal criteria by information classification level",
+    "Security pledges or asset use agreement records",
+    "Approval and management records for remote work/BYOD/removable media use",
+    "Records of rule communication/training and of actions taken for violations"
+   ]
+  },
+  "A.5.11": {
+   "name": "Return of assets",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.11.md",
+   "evidence": [
+    "Asset return procedure/guideline and retirement/job-change/contract-termination checklist",
+    "Per-individual asset issuance/return ledger and return confirmation forms (signed)",
+    "Records of account/privilege revocation (disable logs, access-right deletion records)",
+    "Records of BYOD/mobile device remote wipe/selective wipe results",
+    "Risk assessment and compensating control records for delayed/non-returnable assets",
+    "Records of wiping/data deletion inspection performed on returned assets before reissue"
+   ]
+  },
+  "A.5.12": {
+   "name": "Classification of information",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.12.md",
+   "evidence": [
+    "Classification criteria and class definition document, and handling rules per class (policy/guideline)",
+    "Information asset inventory (including owner, classification level, and last review date per asset)",
+    "Labelling examples (document header/footer, file properties, email classification tags)",
+    "Reclassification and declassification approval records",
+    "Training material and completion records related to information classification",
+    "DLP/document security policy configuration screens (basis for mapping controls to each class)"
+   ]
+  },
+  "A.5.13": {
+   "name": "Labelling of information",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.13.md",
+   "evidence": [
+    "Labelling procedure linked to the classification scheme (notation, labelling targets, methods per form)",
+    "Label standards per level (color/header/watermark/metadata tag, and so on) and document/mail templates",
+    "Examples of labels applied to actual assets (documents, email, storage media, screen/printout captures)",
+    "Configuration and applied-result records of automated labelling/classification tools",
+    "Labelling-related training materials and completion records for employees and external parties",
+    "Results of labelling status reviews/inspections and records of remediation for mislabelling/omissions"
+   ]
+  },
+  "A.5.14": {
+   "name": "Information transfer",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.14.md",
+   "evidence": [
+    "Information transfer policy/procedure (covering electronic, physical, and verbal transfer) and transfer guidance per classification",
+    "Data transfer agreements/contracts with external parties (including security requirement clauses)",
+    "Encryption configuration records for electronic transfer (TLS, mail encryption, SFTP setup)",
+    "Handover logs for physical media transport, and sealing/packaging and media-encryption records",
+    "Email security settings (external-send warning, DLP rules, auto-forward restriction) and approval history for large/sensitive sends",
+    "Transfer-related training materials and completion records for employees and external parties, plus transfer logs/review results"
+   ]
+  },
+  "A.5.15": {
+   "name": "Access control",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.15.md",
+   "evidence": [
+    "Access control policy/guideline documents (including principles, scope, and authorization model)",
+    "Access rule definitions linked to asset classification/criticality (such as a role-based permission matrix)",
+    "Records of requesting/approving/granting/modifying/revoking access rights",
+    "Network and network service access approvals and configurations (firewall/access control lists, etc.)",
+    "Results of periodic access rights reviews and records of resulting actions",
+    "Records of access control policy communication/training"
+   ]
+  },
+  "A.5.16": {
+   "name": "Identity management",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.16.md",
+   "evidence": [
+    "Identity/account management policy and procedures (including life-cycle stages and defined approvers)",
+    "Identity inventory (a consolidated list of personnel accounts and non-human identities such as services, systems, and devices)",
+    "Records of identity creation, change, deactivation, and deletion requests and approvals",
+    "Approval forms and usage history for shared identities, plus owner-designation documents",
+    "HR integration processing records (joiner/leaver/role change) and evidence of leaver account revocation",
+    "Results of periodic reconciliation of active identities and records of cleaned-up unused accounts"
+   ]
+  },
+  "A.5.17": {
+   "name": "Authentication information",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.17.md",
+   "evidence": [
+    "Authentication information management policy/procedure (covering issuance, delivery, storage, disposal)",
+    "Password policy configuration (complexity, minimum length, validity period, reuse limits, account lockout)",
+    "Evidence of the forced password change setting on first login",
+    "Records confirming the password storage method (hash/salt) and encryption settings for the transmission path",
+    "Operation records of the secrets vault and the secret rotation history",
+    "User security acknowledgements and training records on handling authentication information"
+   ]
+  },
+  "A.5.18": {
+   "name": "Access rights",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.18.md",
+   "evidence": [
+    "Access-right management procedure (including provisioning/modification/revocation/review steps and approver definitions)",
+    "Per-role access profiles and privilege matrix (RBAC definition document)",
+    "Records of access-right provisioning/modification/revocation requests and approvals",
+    "Approval forms for privileged-account/sensitive-asset rights, with use-justification and grant-period records",
+    "Results of periodic access-right review (recertification) and records of actions taken (revoke/reduce)",
+    "Reconciliation results between policy rights and actual system configuration, with discrepancy-handling records",
+    "HR-linked processing records (rights adjustment and revocation on job change/retirement)"
+   ]
+  },
+  "A.5.19": {
+   "name": "Information security in supplier relationships",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.19.md",
+   "evidence": [
+    "Policy and procedure documents for information security in supplier relationships",
+    "Supplier inventory (including access scope, owner, contract period)",
+    "Records of supplier security due diligence/risk assessment and selection approval documents",
+    "Security requirement baselines and due diligence checklists by supplier type",
+    "Approval records for initiation/termination of supplier relationships and records of access revocation/asset return"
+   ]
+  },
+  "A.5.20": {
+   "name": "Addressing information security within supplier agreements",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.20.md",
+   "evidence": [
+    "Supplier contracts and supplementary security agreements (NDA, personal data processing outsourcing agreement, security schedule, and similar)",
+    "Supplier security requirements definition/checklist",
+    "Records of pre-contract risk assessment and supplier due diligence results",
+    "SLA and security control level agreement documents",
+    "Records of prior approval for subcontracting and notification history",
+    "Data disposal/return confirmation and access rights revocation records at contract termination"
+   ]
+  },
+  "A.5.21": {
+   "name": "Managing information security in the ICT supply chain",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.21.md",
+   "evidence": [
+    "ICT acquisition policy/procedures that include supply chain security requirements",
+    "List of critical ICT products/services and suppliers, plus documentation mapping supply chain tiers/subcontracting",
+    "Contracts/agreements specifying security requirements (flow-down to sub-suppliers, SBOM provision, vulnerability notification)",
+    "Records of component authenticity/integrity verification (signature/hash checks, genuineness confirmation)",
+    "Software bill of materials (SBOM) and a register tracking vulnerabilities/licenses/end-of-support",
+    "Pre-adoption security verification results and in-operation monitoring/action records",
+    "Alternative-supplier assessments for critical components and continuity/migration plans"
+   ]
+  },
+  "A.5.22": {
+   "name": "Monitoring, review and change management of supplier services",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.22.md",
+   "evidence": [
+    "Supplier management (monitoring/review/change) policy and procedures, and supplier tiering criteria",
+    "Per-supplier periodic review/inspection plans and results (minutes, performance reports, checklists)",
+    "Supplier-submitted service reports, independent audit results, vulnerability/penetration test results, and valid certificates",
+    "Assessments of SLA and security-requirement compliance, deficiency improvement plans, and evidence of completed actions",
+    "Supplier service change notifications, and records of the resulting risk re-assessment and control adjustments",
+    "History of supplier-related security incident/vulnerability notifications and handling, and sub-supplier (subcontracting) approval and management records"
+   ]
+  },
+  "A.5.23": {
+   "name": "Information security for use of cloud services",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.23.md",
+   "evidence": [
+    "Cloud adoption/use policy and adoption approval records",
+    "Shared responsibility matrix per service type",
+    "Cloud contract/SLA (including data storage location, incident notification, exit clauses)",
+    "Cloud configuration review reports and remediation records for risky configurations",
+    "Cloud administrator account privilege/MFA settings and access logs",
+    "Data return/destruction confirmation on service termination or migration"
+   ]
+  },
+  "A.5.24": {
+   "name": "Information security incident management planning and preparation",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.24.md",
+   "evidence": [
+    "Information security incident response policy/procedure, incident type and severity classification criteria",
+    "Incident response organization chart, roles and responsibilities (RACI), emergency contact list, escalation scheme",
+    "Response playbooks by incident type, first-action checklists, reporting channel guidance",
+    "Summary table of legal or regulatory notification requirements and deadlines, external communication guidelines",
+    "Exercise plans and result reports, procedure revision history",
+    "Contracts or cooperation arrangements with external specialists (forensics, legal, etc.)"
+   ]
+  },
+  "A.5.25": {
+   "name": "Assessment and decision on information security events",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.25.md",
+   "evidence": [
+    "Event/incident classification criteria and priority definitions",
+    "Event intake/assessment log (including assessment result, incident decision, and rationale)",
+    "Assessment/decision records in the incident management system (tickets)",
+    "Escalation/notification criteria and actual notification history",
+    "Classification criteria review/revision history and false-positive/reclassification analysis reports"
+   ]
+  },
+  "A.5.26": {
+   "name": "Response to information security incidents",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.26.md",
+   "evidence": [
+    "Incident response procedures and severity level/escalation criteria",
+    "Response organization chart and role/responsibility (RACI) definitions",
+    "Records of individual incidents (incident log, containment/recovery actions, timeline)",
+    "Evidence collection and chain-of-custody records",
+    "External notification/reporting documents to regulators/data subjects and proof of dispatch",
+    "Incident closure reports and records of reporting to management"
+   ]
+  },
+  "A.5.27": {
+   "name": "Learning from information security incidents",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.27.md",
+   "evidence": [
+    "Incident management policy/procedures covering post-incident review and lessons-learned capture",
+    "Post-incident review minutes/reports and root cause analysis (RCA) results for each incident",
+    "Lessons-based improvement item list (owner/deadline/status) and evidence of completion (policy revisions, control changes, risk assessment update history)",
+    "Incident statistics/trend analysis (metrics such as volume by type, response time, loss magnitude)",
+    "Management reports and review records for major/recurring incidents",
+    "Incident case/lesson sharing materials and the awareness training/response exercises that incorporate them"
+   ]
+  },
+  "A.5.28": {
+   "name": "Collection of evidence",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.28.md",
+   "evidence": [
+    "Evidence collection/preservation procedures and the standard chain-of-custody record form",
+    "Chain-of-custody records completed during actual incidents, evidence item lists, and sealing/unsealing records",
+    "Forensic imaging logs and hash generation/verification records",
+    "Evidence store access logs, retention management registers, and disposal records",
+    "Cooperation contracts or agreements with forensic specialists/law enforcement and emergency contact arrangements",
+    "Designation documents for evidence-handling personnel and related training records"
+   ]
+  },
+  "A.5.29": {
+   "name": "Information security during disruption",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.29.md",
+   "evidence": [
+    "BCP/DRP with embedded information security requirements, and the minimum security control baseline per disruption type",
+    "Security configuration records for the alternative site/emergency operating environment (access control, encryption, backup, logging settings)",
+    "Break-glass emergency access procedure and approval/usage/revocation records",
+    "Security roles and responsibilities (RACI), emergency contact list, and escalation scheme for disruption",
+    "Return-to-normal procedure and records of temporary-control removal/restoration",
+    "Exercise/test plans and result reports, and plan revision history"
+   ]
+  },
+  "A.5.30": {
+   "name": "ICT readiness for business continuity",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.30.md",
+   "evidence": [
+    "Business impact analysis (BIA) results and the RTO/RPO definition for each critical ICT service",
+    "ICT continuity/recovery strategy document and architecture diagrams (redundancy, alternate processing facilities, backup architecture, etc.)",
+    "ICT disaster recovery plan (DRP)/recovery procedures (including invocation criteria, recovery stages, roles/responsibilities, emergency contact lists)",
+    "Recovery test plan and test result reports (RTO/RPO achievement, identified gaps, and improvement follow-up)",
+    "Records of offsite storage of backups and configuration/documents, and recoverability verification (restore testing)",
+    "Recovery-related training/exercise history and the designation of primary/backup personnel",
+    "Recovery-related contracts/SLAs with external suppliers/telecom/cloud providers"
+   ]
+  },
+  "A.5.31": {
+   "name": "Legal, statutory, regulatory and contractual requirements",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.31.md",
+   "evidence": [
+    "Register of legal/statutory/regulatory/contractual requirements relevant to information security and privacy (including jurisdiction, source clause, owner, responding control, compliance status)",
+    "Records of legal monitoring/regulatory trend review and the register's update history",
+    "Legal requirements compliance review reports and records of corrective action for non-compliance",
+    "Review material on legal restrictions relating to the use and import/export of cryptographic technology",
+    "Basis for legal review/action on cross-border data transfers such as transfer of personal data abroad",
+    "Security/privacy requirement clauses in customer/supplier contracts and the related implementation/evidence"
+   ]
+  },
+  "A.5.32": {
+   "name": "Intellectual property rights",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.32.md",
+   "evidence": [
+    "Intellectual property rights and software license management policy/procedures",
+    "Software asset register (licenses held, installation status, usage) and periodic reconciliation/audit results",
+    "License agreements, purchase records, certificates, and expiry/renewal management records",
+    "Results of unauthorized/illegal software detection (asset scanning/inventory) and remediation records",
+    "Open source usage review sheets, SBOM, and evidence of meeting license obligations (attribution notices, etc.)",
+    "IPR awareness training materials/undertakings, and intellectual property ownership and confidentiality clauses in contracts"
+   ]
+  },
+  "A.5.33": {
+   "name": "Protection of records",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.33.md",
+   "evidence": [
+    "Records retention schedule and records management policy (retention period, legal basis, and disposal point per type)",
+    "Access rights list and access logs for record stores, and encryption/WORM/integrity-verification configuration records",
+    "Media/format migration plan and legibility check records for long-term records",
+    "Disposal plan and disposal confirmations/disposal register for records with expired retention",
+    "Protection settings and retention-period application records for backups and archives",
+    "Record retrieval and production history in response to audit/regulatory requests"
+   ]
+  },
+  "A.5.34": {
+   "name": "Privacy and protection of PII",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.34.md",
+   "evidence": [
+    "PII processing inventory (processing items/purposes/retention periods/processing locations/third-party provision and outsourcing status, including flow diagrams)",
+    "Privacy and PII protection policy/guideline and records of its communication/training to employees and processors",
+    "Appointment document for the privacy officer and point of contact, and a definition of roles and responsibilities",
+    "Results of privacy (impact) assessments and records of follow-up action",
+    "Personal information processing policy and records of data subject notices/consent",
+    "Register of receipt and handling of data subject rights requests (access, correction, deletion, suspension of processing)",
+    "Evidence of applied PII safeguards (encryption/pseudonymization/access privileges/access logs/disposal records)"
+   ]
+  },
+  "A.5.35": {
+   "name": "Independent review of information security",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.35.md",
+   "evidence": [
+    "Independent review plan (including cadence, target scope, reviewing party, trigger criteria)",
+    "Basis confirming the reviewing party's independence/competence (internal audit charter, external body contract/qualification material)",
+    "Independent information security review reports (including findings, risk levels, improvement recommendations)",
+    "Records of reporting review results to management and of feeding them into the management review",
+    "Action plans (owner/deadline) for improvement recommendations and their implementation/completion tracking records",
+    "Records of the actions taken on prior review findings and their re-confirmation in subsequent reviews"
+   ]
+  },
+  "A.5.36": {
+   "name": "Compliance with policies, rules and standards for information security",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.36.md",
+   "evidence": [
+    "Compliance-check plans and checklists for information security policies/rules/standards",
+    "Records of manager self-assessments and compliance verification results",
+    "Technical compliance check reports (checks against configuration baselines, automated tool scans)",
+    "Register of non-compliances and records of corrective action/recurrence prevention",
+    "Management reporting on compliance-check results and follow-up improvement items",
+    "Basis for improvement activities such as policy revision/training triggered by non-compliance"
+   ]
+  },
+  "A.5.37": {
+   "name": "Documented operating procedures",
+   "theme": "A.5 Organizational controls",
+   "path": "docs/en/A.5-organizational/A.5.37.md",
+   "evidence": [
+    "Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, etc.)",
+    "Version/revision history and author/reviewer/approver records for the procedures",
+    "Distribution and access status of operating procedures (access permission lists, publication locations)",
+    "Records of procedure updates linked to change management records",
+    "Results of periodic procedure reviews and related improvement/correction records",
+    "Records of procedures used in onboarding training and shift handover"
+   ]
+  },
+  "A.6.1": {
+   "name": "Screening",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.1.md",
+   "evidence": [
+    "Screening policy/procedure document",
+    "Per-candidate screening checklists and records (identity verification, results of education/qualification/career verification)",
+    "Candidate consent forms for background checks and personal data collection",
+    "Reference-check records and, where legally permitted, criminal-record/credit-check records",
+    "Contract clauses requiring screening of external personnel and supplier confirmations that screening was performed",
+    "Re-screening records for key-duty personnel, and records of secure storage and access control for screening results"
+   ]
+  },
+  "A.6.2": {
+   "name": "Terms and conditions of employment",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.2.md",
+   "evidence": [
+    "Standard employment contract template that includes information security responsibility clauses",
+    "Security pledge or non-disclosure pledge signed by personnel",
+    "Records of policy and rules-of-conduct briefing and consent at hiring/assignment",
+    "Additional security obligation pledges by role/authority (key-duty personnel, personal data handlers, and so on)",
+    "Documents applying security terms to fixed-term/dispatched/outsourced personnel",
+    "Register for storage/renewal of pledges and contract documents"
+   ]
+  },
+  "A.6.3": {
+   "name": "Information security awareness, education and training",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.3.md",
+   "evidence": [
+    "Annual information security training/awareness plan and management approval document",
+    "Training content such as course materials, curricula, and slides",
+    "Delivery records: attendance sheets, completion status, online course history",
+    "Role-specific training materials (developers, administrators, personal data handlers) and completion records",
+    "Phishing simulation scenarios and result reports",
+    "Effectiveness measurement materials (assessment results, incident trend analysis, satisfaction surveys) and records of improvements applied"
+   ]
+  },
+  "A.6.4": {
+   "name": "Disciplinary process",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.4.md",
+   "evidence": [
+    "Disciplinary process/regulation document applied to information security breaches, and record of management approval",
+    "Action criteria by violation type (e.g., a table for deciding the level of action) and documents linking to work rules/internal regulations",
+    "Breach investigation reports, the individual's response materials, and deliberation/decision records",
+    "Notification documents of disciplinary outcomes and records of follow-up actions such as revocation of access rights",
+    "Training materials and security agreements used to make the disciplinary process known",
+    "Records of cause analysis of disciplinary cases and of recurrence-prevention measures (policy revision, additional training)"
+   ]
+  },
+  "A.6.5": {
+   "name": "Responsibilities after termination or change of employment",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.5.md",
+   "evidence": [
+    "Employment contract/security undertaking templates containing post-termination clauses (confidentiality/non-disclosure)",
+    "Termination/role-change procedure documents and checklists",
+    "Asset return confirmations, access revocation/account deactivation records",
+    "Exit briefing/surviving-obligation re-notification confirmations (signed by the individual)",
+    "Personnel-change notification records between HR and information security, and work handover documents"
+   ]
+  },
+  "A.6.6": {
+   "name": "Confidentiality or non-disclosure agreements",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.6.md",
+   "evidence": [
+    "Standard confidentiality/non-disclosure agreement templates (for personnel and for external parties)",
+    "Signed security pledges/non-disclosure agreements per individual and a signature register",
+    "Confidentiality clauses within external party (processor, partner) contracts or separate NDAs and their signature records",
+    "Review/revision history of agreement templates and documents stating reasons for revision",
+    "Records of identifying unsigned parties and follow-up actions",
+    "Notification and confirmation documents on confidentiality obligations at employment/contract termination"
+   ]
+  },
+  "A.6.7": {
+   "name": "Remote working",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.7.md",
+   "evidence": [
+    "Remote working policy/procedure and management approval document",
+    "Remote working application/approval records and list of approved personnel",
+    "VPN/multi-factor authentication configuration and remote access logs",
+    "Remote device security baselines and check results (encryption, anti-malware, patch status)",
+    "BYOD conditions, user consent forms, and access-scope configuration",
+    "Security training materials for remote workers and completion records",
+    "Access-rights reclamation and asset-return records at end of remote working"
+   ]
+  },
+  "A.6.8": {
+   "name": "Information security event reporting",
+   "theme": "A.6 People controls",
+   "path": "docs/en/A.6-people/A.6.8.md",
+   "evidence": [
+    "Information security event reporting procedure/guidance and reporting form",
+    "Configuration of reporting channels (hotline, dedicated mailbox, portal, ticketing system) and the notice announcing them",
+    "Event intake/handling log, ticket history, and records of routing into the incident management procedure",
+    "Reporter-protection policy documents (confidentiality/no retaliation/anonymous reporting)",
+    "Training materials on reporting methods for employees/external parties and completion records",
+    "Results and improvement records of reporting exercises such as phishing simulations",
+    "Acknowledgement and outcome feedback records sent to reporters"
+   ]
+  },
+  "A.7.1": {
+   "name": "Physical security perimeters",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.1.md",
+   "evidence": [
+    "Policy or guideline for designating protected areas and assigning protection grades",
+    "Facility floor plans showing perimeter boundaries and entry points, plus a protected-area inventory",
+    "Physical perimeter inspection checklist and records of periodic inspections",
+    "Review and approval records for perimeter and protected-area changes",
+    "Status records of door/emergency-exit locking and protection of openings",
+    "Operating records for the reception or staffed control point"
+   ]
+  },
+  "A.7.2": {
+   "name": "Physical entry",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.2.md",
+   "evidence": [
+    "Definitions of entry control levels and control mechanisms per area",
+    "Records of requesting/approving/granting/modifying/revoking entry rights (rights register)",
+    "Visitor management log (identity verification, visit purpose, badge issuance/return, escort records)",
+    "Entry control system logs (entry/exit records) and results of periodic reviews",
+    "Operation and integration records of monitoring means such as CCTV/alarms",
+    "Inspection/receipt records of incoming goods in delivery/loading areas",
+    "Records of access card/key issuance, return, and loss response"
+   ]
+  },
+  "A.7.3": {
+   "name": "Securing offices, rooms and facilities",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.3.md",
+   "evidence": [
+    "Guideline defining the physical security requirement level and protective measures per space",
+    "Facility floor plans showing the location of critical facilities and their separation from general space, plus a space/facility inventory",
+    "Standard and status records for signage, directory, and door-sign entries",
+    "Status of exposure-prevention measures such as window/glass-wall screening, soundproofing, and partitions",
+    "Locking inspection checklist and records for offices and facilities during unattended periods",
+    "Reassessment and approval records for security requirement levels when spaces are established, relocated, or repurposed"
+   ]
+  },
+  "A.7.4": {
+   "name": "Physical security monitoring",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.4.md",
+   "evidence": [
+    "Physical monitoring policy or guideline (monitored areas, monitoring means, record retention criteria)",
+    "Camera and sensor placement plans and a list of monitoring points",
+    "Records for retention period and access-right management of monitoring records (video/alarm)",
+    "Alarm response procedure documents and records of actual alarms and responses",
+    "Results of periodic inspection and testing of the monitoring system and fault response records",
+    "Camera installation signage and records of controls on viewing and disclosure of image data"
+   ]
+  },
+  "A.7.5": {
+   "name": "Protecting against physical and environmental threats",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.5.md",
+   "evidence": [
+    "Physical and environmental threat identification and risk assessment results per site",
+    "Inventory and layout of protection facilities such as fire detection/suppression, leak detection, precision cooling, and UPS/emergency power",
+    "Plans and records of periodic inspection and operational testing of protection facilities",
+    "Environmental monitoring (temperature/humidity, leak, power) records and alarm history",
+    "Physical/environmental event response procedures and documentation of the authority-notification and escalation scheme",
+    "Records of threat reviews for adjacent premises and external factors, and of advice from specialists or authorities"
+   ]
+  },
+  "A.7.6": {
+   "name": "Working in secure areas",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.6.md",
+   "evidence": [
+    "Work control procedure/guideline for secure areas (permitted work, approving authority, rules, etc.)",
+    "Work request/approval records (including electronic approval) and work completion confirmations",
+    "Identity verification materials for external workers, temporary badge issuance/return register, escort/supervision records",
+    "Register of equipment and storage media brought in and out during work",
+    "CCTV footage of the work area, entry logs, and approval records for work during vulnerable windows",
+    "Records of temporary rights/configuration grants and confirmation of their reversion"
+   ]
+  },
+  "A.7.7": {
+   "name": "Clear desk and clear screen",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.7.md",
+   "evidence": [
+    "Clear desk and clear screen policy/procedure document",
+    "Screen automatic-lock policy settings/configuration values (idle-time basis)",
+    "Secure printing (release after user authentication) configuration and operating records",
+    "Status of provided storage means such as lockable drawers/cabinets/safes",
+    "Walk-through/self-inspection checklists and inspection results",
+    "Awareness training materials and violation-response records",
+    "Document disposal (shredding, etc.) procedure and disposal records"
+   ]
+  },
+  "A.7.8": {
+   "name": "Equipment siting and protection",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.8.md",
+   "evidence": [
+    "Equipment siting criteria or policy (importance tiers, environmental threat mitigation criteria, line-of-sight blocking criteria)",
+    "Equipment layout plans for server rooms and offices, and a list of critical equipment",
+    "Status of physical protection measures such as rack and cabinet locking, port disabling, and cable fixing",
+    "Records of exposure-prevention measures such as secure print and screen shielding",
+    "Rules and notices restricting actions inside processing areas (food, photography, and the like)",
+    "Approval records for equipment movement, relocation, transfer, or disposal, and recheck records after location changes"
+   ]
+  },
+  "A.7.9": {
+   "name": "Security of assets off-premises",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.9.md",
+   "evidence": [
+    "Approval records and register for off-premises removal of assets",
+    "Device encryption/MDM/EMM policy and deployment status (configuration screens, enrolled device list)",
+    "Remote and telework security guidelines and training/acknowledgement records",
+    "Data deletion/encryption confirmation and outsourcing contracts for equipment sent off-site for repair",
+    "Records of loss/theft reporting and response (remote lock/wipe, credential revocation)",
+    "Return confirmation records for assets removed off-site"
+   ]
+  },
+  "A.7.10": {
+   "name": "Storage media",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.10.md",
+   "evidence": [
+    "Storage media management procedure/guideline (type classification, handling/storage/disposal criteria)",
+    "Removable media asset register/registration log and media in/out log",
+    "Media disposal/sanitization certificates and destruction certificates (with contract and processing-result report where outsourced)",
+    "Handover/receipt-confirmation records and sealing/tracking history for off-site transport",
+    "Media encryption status and policy/solution configuration screens",
+    "Media storage-environment (access control, temperature/humidity) management records"
+   ]
+  },
+  "A.7.11": {
+   "name": "Supporting utilities",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.11.md",
+   "evidence": [
+    "List of supporting utilities and capacity sizing or load calculation documents",
+    "UPS and standby generator specifications, and automatic transfer and load test records",
+    "Temperature/humidity, power, and leakage monitoring dashboards, and alert and response history",
+    "Periodic preventive maintenance plans, inspection checklists, and result reports",
+    "Utility supply contracts or SLAs, emergency contact lists, and recovery procedures",
+    "Battery and fuel level inspection records and replacement history"
+   ]
+  },
+  "A.7.12": {
+   "name": "Cabling security",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.12.md",
+   "evidence": [
+    "Cabling diagram, and labeling and management register for cables, ports, and patch panels",
+    "Status of access control and locking for wiring rooms (MDF/IDF) and frames, and access records",
+    "Records of power/telecommunications line separation and shielding/conduit application (photos, installation and inspection records)",
+    "Records of removal or disabling of unused cables and ports",
+    "Cable inspection and tap detection records and follow-up actions",
+    "Configuration and test records for cabling redundancy (alternate routes) on critical segments"
+   ]
+  },
+  "A.7.13": {
+   "name": "Equipment maintenance",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.13.md",
+   "evidence": [
+    "Inventory of equipment subject to maintenance and the maintenance plan or schedule (including preventive servicing cycles)",
+    "Maintenance logs, work orders, and inspection checklists (performer, actions taken, parts replaced)",
+    "Maintenance contracts and SLAs, warranty documents, and non-disclosure agreements (NDAs) with external technicians",
+    "Entry and attendance records for external technicians and approval records for access scope",
+    "Approval records and session logs for remote maintenance",
+    "Records confirming data backup and removal before off-site repair, and recheck records of normal operation and security settings after maintenance"
+   ]
+  },
+  "A.7.14": {
+   "name": "Secure disposal or re-use of equipment",
+   "theme": "A.7 Physical controls",
+   "path": "docs/en/A.7-physical/A.7.14.md",
+   "evidence": [
+    "Equipment disposal and re-use procedure (deletion and destruction methods per media type, verification and recording criteria)",
+    "Data deletion and destruction records (target asset, media serial number, method, operator, date and time, verification result)",
+    "Records of secure erase, crypto erase, or physical destruction, with supporting evidence such as destruction photos or video",
+    "Contract with security requirements and destruction certificates for outsourced work",
+    "Checklist for handling built-in storage in multifunction devices, network equipment, and similar",
+    "Asset inventory change history before and after disposal (status, disposal reason, date)"
+   ]
+  },
+  "A.8.1": {
+   "name": "User endpoint devices",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.1.md",
+   "evidence": [
+    "Endpoint device security policy / acceptable use policy and user acknowledgment (signature) records",
+    "Endpoint/device inventory (including BYOD) with ownership type and assignment status",
+    "MDM/UEM configuration screens: encryption, screen lock, patch status, application control",
+    "Loss/theft reporting records and remote lock/wipe execution logs",
+    "Records of secure erasure/return and access revocation on end of use/offboarding",
+    "BYOD agreements addressing separation of business/personal areas, privacy, and intellectual property/licensing"
+   ]
+  },
+  "A.8.2": {
+   "name": "Privileged access rights",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.2.md",
+   "evidence": [
+    "Privileged access request forms and approval/change history",
+    "Privileged account inventory and holdings (account, scope of rights, reason for grant, expiry date)",
+    "Authentication configuration for privileged access (multi-factor authentication) and PAM/bastion policy screens",
+    "Privileged account activity logs and periodic review records",
+    "Privileged credential storage/rotation history and evidence of default-account disablement",
+    "Periodic access review results and records of revoking unnecessary rights"
+   ]
+  },
+  "A.8.3": {
+   "name": "Information access restriction",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.3.md",
+   "evidence": [
+    "Access control policy and per-role/per-duty permission matrix",
+    "Application menu/function permission configuration screens and user-to-role mapping status",
+    "Server-side authorization logic/configuration (for example, permission-check code, policy files)",
+    "Bulk-query/download restriction and approval records",
+    "Application-to-database service account grant records and access rights review results"
+   ]
+  },
+  "A.8.4": {
+   "name": "Access to source code",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.4.md",
+   "evidence": [
+    "Access permission list and role/permission configuration screens of the configuration management system",
+    "Repository access/commit/merge/permission-change logs",
+    "Code review and merge approval records, protected-branch policy settings",
+    "Periodic review records and revocation history of source code access rights",
+    "Access-control contracts/confidentiality undertakings for external developers and evidence of scoped access assignment",
+    "Results of secret scanning / pre-commit checks"
+   ]
+  },
+  "A.8.5": {
+   "name": "Secure authentication",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.5.md",
+   "evidence": [
+    "Authentication policy/standard defining authentication methods per classification/risk",
+    "MFA configuration screens for privileged/remote/critical access",
+    "Account lockout/login attempt limit configuration screens",
+    "Evidence of credential storage method (hash/salt) and transmission encryption settings",
+    "Access warning banner and session timeout configuration screens",
+    "Authentication success/failure logs and abnormal authentication monitoring/alert records"
+   ]
+  },
+  "A.8.6": {
+   "name": "Capacity management",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.6.md",
+   "evidence": [
+    "Capacity management policy/procedure and the list of managed resources/performance metrics",
+    "Resource utilization monitoring dashboards/reports and threshold configuration records",
+    "Capacity/demand forecast reports and periodic capacity review meeting minutes",
+    "Resource expansion/adjustment history (change management records, order/procurement documents)",
+    "Cloud auto-scaling and budget alert configuration screens",
+    "Threshold-exceeded alerts and response action records"
+   ]
+  },
+  "A.8.7": {
+   "name": "Protection against malware",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.7.md",
+   "evidence": [
+    "Deployment status of defense solutions (anti-malware/EDR) and policy configuration screens",
+    "Engine/signature update history and full-scan execution records",
+    "Malware detection/remediation/quarantine logs and review records",
+    "Malware prevention training/notice materials for users",
+    "Infection incident response procedure and response records"
+   ]
+  },
+  "A.8.8": {
+   "name": "Management of technical vulnerabilities",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.8.md",
+   "evidence": [
+    "List of assets subject to vulnerability management and their configuration details",
+    "Vulnerability information sources/frequency and collection records",
+    "Vulnerability assessment (scanning/penetration test) reports and remediation plans",
+    "Records of vulnerability remediation (patch/mitigation) and re-test results",
+    "Mitigation and residual-risk acceptance approval records for vulnerabilities that cannot be fixed immediately"
+   ]
+  },
+  "A.8.9": {
+   "name": "Configuration management",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.9.md",
+   "evidence": [
+    "Secure configuration baseline/hardening standard documents per asset type",
+    "Configuration management tool/IaC code, golden images/templates, and deployment records",
+    "Configuration drift check results and corrective action records",
+    "CMDB/configuration repository records of configuration items/versions/dependencies",
+    "Configuration change approvals and change-management linkage records",
+    "Periodic review/revision history of configuration baselines"
+   ]
+  },
+  "A.8.10": {
+   "name": "Information deletion",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.10.md",
+   "evidence": [
+    "Information retention/deletion policy and procedure, and a retention-period table by information type",
+    "Records of identifying and deleting data past its retention period (deletion logs, deletion register)",
+    "Secure-deletion/destruction confirmation or destruction certificates for storage media",
+    "Key-destruction records and key management register where cryptographic erasure is used",
+    "Deletion clauses in cloud/outsourcing contracts and proof of deletion upon contract termination",
+    "Deletion-completeness verification results (recovery-attempt outcomes, sample check records)"
+   ]
+  },
+  "A.8.11": {
+   "name": "Data masking",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.11.md",
+   "evidence": [
+    "Data masking policy/standard and the list of target fields",
+    "Masking rule definitions and captures of applied screens/query results (including exposure differentiated by privilege)",
+    "Non-production data generation procedures and records of pseudonymized/synthetic data output",
+    "Re-identification risk assessment reports",
+    "Approval and exception-handling logs for unmasking (viewing originals)",
+    "Configuration values such as dynamic masking policies in the DBMS/security solution"
+   ]
+  },
+  "A.8.12": {
+   "name": "Data leakage prevention",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.12.md",
+   "evidence": [
+    "DLP policy/operating procedure and the classification criteria for data to be protected",
+    "Detection/blocking rule configuration screens and policy lists by channel",
+    "DLP violation event logs and alert/response handling history",
+    "Exception approval requests/records and a validity-period management register",
+    "Policy-effectiveness review (false positive/negative analysis) results and detection-rule improvement history",
+    "Employee notice/consent and legal/HR review materials related to monitoring"
+   ]
+  },
+  "A.8.13": {
+   "name": "Information backup",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.13.md",
+   "evidence": [
+    "Backup policy/procedure (defining backup scope, frequency, retention period, and owner)",
+    "Backup schedule and backup job logs/success-failure reports",
+    "Recovery test plan and test result reports (including restore time and data consistency)",
+    "Access-rights list and access logs for backup repositories/media",
+    "Evidence of backup encryption settings and of off-site/immutable/offline storage configuration",
+    "Backup media register and disposal records"
+   ]
+  },
+  "A.8.14": {
+   "name": "Redundancy of information processing facilities",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.14.md",
+   "evidence": [
+    "Per-service availability requirements and redundancy design (including architecture diagrams)",
+    "SPOF analysis/removal records and infrastructure diagrams (server/storage/network/power/link)",
+    "Failover/failback procedures and role definitions",
+    "Redundancy switchover test plans/result reports (including switchover time and data-loss measurement)",
+    "Data replication settings and replication-lag/consistency check records",
+    "Redundancy status monitoring dashboards/alert settings and event logs",
+    "Capacity sizing basis and load-test results"
+   ]
+  },
+  "A.8.15": {
+   "name": "Logging",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.15.md",
+   "evidence": [
+    "Logging policy/standard (systems in scope, events recorded, mandatory fields, retention periods defined)",
+    "Log configuration screens or configuration files for key systems/security devices, plus samples of actually collected logs",
+    "Central log store (SIEM/log server) architecture diagram and log forwarding/collection status",
+    "Log access-permission list and evidence of integrity protection (hashing/signatures/append-only)",
+    "Log retention and disposal history, and monitoring records for storage capacity/collection status",
+    "Privileged/administrator activity logs and evidence of separation of duties for log management"
+   ]
+  },
+  "A.8.16": {
+   "name": "Monitoring activities",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.16.md",
+   "evidence": [
+    "Monitoring policy/procedure (defining targets, collected items, baseline, alert criteria, and responsibilities)",
+    "SIEM/monitoring tool configuration and the list of detection rules/correlation rules",
+    "Alert generation and handling history (triage results, escalation records)",
+    "Monitoring dashboards/operations reports (daily/weekly reports, and so on)",
+    "History of detection-rule tuning and baseline updates, and false-positive/false-negative review records",
+    "Access-rights list for monitoring logs and evidence of retention/integrity settings"
+   ]
+  },
+  "A.8.17": {
+   "name": "Clock synchronization",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.17.md",
+   "evidence": [
+    "Clock synchronization policy/standard (reference source, time baseline, synchronization interval, allowed drift)",
+    "NTP architecture diagram and time server configuration values",
+    "Synchronization configuration captures on servers/network/security devices/endpoints",
+    "Synchronization status monitoring/alert records and drift remediation history",
+    "Log samples showing consistent time across systems",
+    "Access control/authentication settings for the time source"
+   ]
+  },
+  "A.8.18": {
+   "name": "Use of privileged utility programs",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.18.md",
+   "evidence": [
+    "Inventory identifying and managing privileged utility programs",
+    "Approval requests and records for installing/using privileged utilities",
+    "Records of granting/revoking usage rights and periodic rights reviews",
+    "Privileged utility usage logs and monitoring/alert records",
+    "Records of removing/disabling unused utilities",
+    "Approval/session records for privileged tool use by external maintenance personnel"
+   ]
+  },
+  "A.8.19": {
+   "name": "Installation of software on operational systems",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.19.md",
+   "evidence": [
+    "Operational software installation/transfer procedures and assignment of installation privileges",
+    "Software testing/acceptance and deployment approval records",
+    "Software installation/update history (version/date/time/performer/approver)",
+    "Previous-version backups and rollback procedures/execution records",
+    "Supplier software supported-version register (including EOL status)",
+    "Configuration records of software installation restrictions (allowlist/deployment tools) on endpoints/servers"
+   ]
+  },
+  "A.8.20": {
+   "name": "Networks security",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.20.md",
+   "evidence": [
+    "Network diagrams and network asset/zone inventories",
+    "Firewall/ACL policies and policy review (periodic re-review) records",
+    "Network device security configuration standards and applied configuration records (snapshots/inspection results)",
+    "Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, etc.)",
+    "Log collection and monitoring/alerting configuration for network/security devices, and anomaly detection/response records",
+    "External network service contracts/SLAs and fulfillment review results"
+   ]
+  },
+  "A.8.21": {
+   "name": "Security of network services",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.21.md",
+   "evidence": [
+    "Network service inventory and per-service security feature/requirement definitions",
+    "Documentation of service levels (availability/bandwidth/recovery time, etc.) and security characteristics",
+    "External network service contracts/SLAs and the security requirements stated therein (including subcontracting/notification/audit clauses)",
+    "Security feature implementation verification records (configuration snapshots for VPN/firewall/DNS, etc., and inspection results)",
+    "Service level/security feature monitoring reports and corrective-request/escalation records for shortfalls",
+    "Security review and change management records for the introduction/change of network services"
+   ]
+  },
+  "A.8.22": {
+   "name": "Segregation of networks",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.22.md",
+   "evidence": [
+    "Network diagrams and zone design documents (trust zones, IP ranges, VLAN configuration)",
+    "Firewall/ACL rule lists and default deny configuration screens",
+    "Results of periodic firewall policy reviews and records of unused/excessive rule cleanup",
+    "Management network/bastion configuration and access control settings",
+    "Cloud VPC/subnet/security group/network ACL configuration details",
+    "Change management records (approvals for zone/rule changes)"
+   ]
+  },
+  "A.8.23": {
+   "name": "Web filtering",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.23.md",
+   "evidence": [
+    "Web filtering/internet access control policy and allow/block category criteria",
+    "Secure web gateway/proxy/DNS filter configuration screens and block-policy settings",
+    "Update history of threat intelligence/reputation/category databases",
+    "Block-event logs, bypass-attempt logs, and periodic review/inspection records",
+    "Policy-exception (allow) request/approval records and the exception list",
+    "Filtering coverage status for remote/mobile devices and SSL-inspection exception documentation"
+   ]
+  },
+  "A.8.24": {
+   "name": "Use of cryptography",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.24.md",
+   "evidence": [
+    "Cryptography policy/guideline documents and the approved algorithm/minimum key length reference table",
+    "A status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)",
+    "Key management procedures and the key lifecycle register (generation/rotation/destruction history)",
+    "HSM/KMS access privilege lists and access/operation logs",
+    "TLS configuration review results (evidence of disabling weak versions/cipher suites) and vulnerability assessment reports",
+    "Records of the review of compliance with cryptography-related laws/regulations"
+   ]
+  },
+  "A.8.25": {
+   "name": "Secure development life cycle",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.25.md",
+   "evidence": [
+    "Secure development life cycle (SDLC) policy/standard and procedures",
+    "Per-stage security activity checklists and security gate pass records",
+    "Secure coding standard documents and developer security training records",
+    "Threat modeling/security architecture review deliverables",
+    "SAST/DAST/SCA scan results and remediation records",
+    "Pre-deployment security testing (code review, vulnerability assessment, penetration testing) reports and deployment approval records",
+    "Outsourced development contracts (including security requirements) and acceptance verification results"
+   ]
+  },
+  "A.8.26": {
+   "name": "Application security requirements",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.26.md",
+   "evidence": [
+    "Application security requirements specification/checklist and approval records",
+    "Risk assessment and data classification results underpinning the requirements",
+    "Authentication/authorization/access control/session management design documents",
+    "Specification and applied records for public-network/electronic-transaction requirements (transport encryption, transaction integrity, non-repudiation, etc.)",
+    "Test/verification results for security requirements (design reviews, security test reports)",
+    "Supplier security requirement conformance assessment and approval documents for acquired applications"
+   ]
+  },
+  "A.8.27": {
+   "name": "Secure system architecture and engineering principles",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.27.md",
+   "evidence": [
+    "Secure system architecture and engineering principles document (policy/standard) with approval/sharing records",
+    "Reference architectures, secure design patterns, and a list of standard security components",
+    "Security architecture design documents for new/changed systems (trust boundaries, data flows, control placement)",
+    "Design review/threat modeling results and records of principle-compliance checks",
+    "Technology-specific security baselines (hardening/cloud/container/API) documents",
+    "Risk assessment/approval/compensating-control records for exceptions to the principles",
+    "Change history of periodic reviews/updates of the architecture principles"
+   ]
+  },
+  "A.8.28": {
+   "name": "Secure coding",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.28.md",
+   "evidence": [
+    "Secure coding standard/guideline documents and their revision history",
+    "SAST/SCA tool scan results and vulnerability remediation records",
+    "Code review records and merge/release approval logs (PR approval history)",
+    "Developer secure coding training plans and completion status",
+    "SBOM and open source vulnerability management register",
+    "Vulnerability remediation tracking tickets/issue records and exception approval justifications"
+   ]
+  },
+  "A.8.29": {
+   "name": "Security testing in development and acceptance",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.29.md",
+   "evidence": [
+    "Security testing plan (scope/methods/timing/responsible parties) and a traceability matrix between requirements and test cases",
+    "Static/dynamic analysis, vulnerability assessment, and penetration test reports, plus CI pipeline security scan logs",
+    "Acceptance test pass criteria and acceptance/transfer-to-operations approval records",
+    "Records of vulnerability remediation, re-test results, and residual-risk acceptance approvals",
+    "Review of supplier security test/certification results and adoption approval documents for purchased/acquired products",
+    "Test data controls (use of pseudonymized/synthetic data) and evidence of test record retention"
+   ]
+  },
+  "A.8.30": {
+   "name": "Outsourced development",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.30.md",
+   "evidence": [
+    "Outsourced development contracts/RFP and security requirement specifications (including secure coding, acceptance criteria, right to audit, sub-contracting clauses)",
+    "Supplier security capability assessment and selection review records",
+    "Phase-based security check/oversight records and progress reports",
+    "Acceptance-stage security testing/vulnerability assessment/source code review/malware check reports and defect remediation records",
+    "Acceptance approval records and deliverable lists",
+    "Source code escrow agreements and license/intellectual property documents",
+    "Confirmation of return or destruction of assets/data/access privileges at contract termination"
+   ]
+  },
+  "A.8.31": {
+   "name": "Separation of development, test and production environments",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.31.md",
+   "evidence": [
+    "Development/test/production environment separation policy/procedures and network diagrams",
+    "Per-environment access privilege lists and access privilege review records",
+    "Cross-environment promotion/deployment approval records (linked to change management) and rollback procedure documents",
+    "Test data masking/pseudonymization records and usage approval records",
+    "Cloud/IaC environment separation configuration evidence (account/VPC/namespace/secret separation)",
+    "Production minimal-configuration review results (confirmation that compilers/development tools/source code are removed)"
+   ]
+  },
+  "A.8.32": {
+   "name": "Change management",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.32.md",
+   "evidence": [
+    "Change management procedure and documentation defining change types (standard/routine/emergency)",
+    "Change request/approval records (including impact/risk assessment and rollback plan)",
+    "Change test/acceptance results and production deployment records",
+    "Emergency change handling and post-implementation review/approval records",
+    "Pre-change backup and rollback execution/verification records",
+    "Change advisory board minutes or approval history, and records of configuration/operating document updates arising from the change"
+   ]
+  },
+  "A.8.33": {
+   "name": "Test information",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.33.md",
+   "evidence": [
+    "Test data management policy/procedure and test data selection/use criteria",
+    "Approval requests/records for the use of operational data in testing (owner/data protection officer approval)",
+    "Masking/pseudonymization/transformation processing records and before/after samples or verification records",
+    "Test environment access privilege lists and access/usage logs",
+    "Records of copying/transferring operational data into test environments (timing/target/handler)",
+    "Confirmation of deletion/disposal of test data after testing and disposal history"
+   ]
+  },
+  "A.8.34": {
+   "name": "Protection of information systems during audit testing",
+   "theme": "A.8 Technological controls",
+   "path": "docs/en/A.8-technological/A.8.34.md",
+   "evidence": [
+    "Audit/test plans and records of scope/schedule/access-rights agreement with the system owner",
+    "Temporary test account issuance/privilege grant and post-test revocation/deletion records",
+    "Access/activity logs and monitoring records during testing",
+    "Impact assessment and approval records for load-inducing/change-inducing tests",
+    "List of testing tools and confirmation of tool removal after testing",
+    "Test result reports and records of obtained-data storage/disposal"
+   ]
+  }
+ }
+}

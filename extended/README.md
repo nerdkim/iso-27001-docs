@@ -17,12 +17,13 @@ manifest.json                       machine-readable index of every document (sc
                                     corpus-manifest/v3). The published contract: this is what the
                                     web viewer and any other consumer reads.
 index/control-index.csv             flat index for spreadsheet or human review
-index/nonconformity-rulebook.json   the Korean Nonconformity examples (부적합 사례) of all 93
-                                    controls, keyed by control number. Check rules for
-                                    self-assessment and internal audit prep.
-index/evidence-dictionary.json      the Korean Evidence (증적자료) of all 93 controls, keyed by
-                                    control number. Reference dictionary for evidence-to-control
-                                    mapping.
+index/nonconformity-rulebook.json   the Nonconformity examples of all 93 controls, keyed by
+index/nonconformity-rulebook.en.json control number. Check rules for self-assessment and internal
+                                    audit prep. The unsuffixed file is Korean; '.en' is English.
+                                    Each carries a "lang" field.
+index/evidence-dictionary.json      the Evidence lists of all 93 controls, keyed by control
+index/evidence-dictionary.en.json   number. Reference dictionary for evidence-to-control mapping.
+                                    Same language convention as the rulebook above.
 ```
 
 Regenerate everything with `python3 tools/build_index.py` from the repository root. The build is
