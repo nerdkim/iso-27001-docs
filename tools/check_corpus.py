@@ -12,9 +12,12 @@ Checks
       from the manifest, and every control in the catalog has a document in both languages
   [7] the Korean and English documents for a control carry the same number of items in each
       counted section, so a structural one-language edit cannot land on its own
-  [8] every 'A.x.y (title)' cross-reference reproduces that control's title from the catalog
+  [8] every 'A.x.y (title)' cross-reference reproduces that control's title from the catalog,
+      and carries the parenthesised title form so that it cannot escape that comparison
   [9] the metadata table carries the expected rows, and the control-type and security-property
       values agree between the two languages
+ [10] every ISO main-body clause citation carries a parenthesised clause title, and one clause
+      number is cited under one title across the whole corpus, per language
 
 Exit code 0 when the corpus is intact, 1 otherwise.
 
@@ -84,6 +87,9 @@ def check_document(path, lang):
     if not re.search(r"(?m)^---\s*\n>\s*\S", text):
         fail(f"{rel}: missing the trailing source/limitation footer ('---' followed by a '>' line)")
 
+    # [10] ISO main-body clause citations: uniform form, and one title per clause number.
+    check_clause_citations(rel, lang, text)
+
 
 COUNTED_SECTIONS = {
     "ko": ["주요 확인사항", "이행 지침", "증적자료", "부적합 사례"],
@@ -95,6 +101,15 @@ META_ROWS = {
            "Security properties (ref.)", "ISMS-P mapping", "2013 mapping"],
 }
 XREF_MARKER = {"ko": "인접 Annex A:", "en": "Adjacent Annex A:"}
+CLAUSE_MARKER = {"ko": "ISO 27001 본문 연계:", "en": "ISO 27001 clauses:"}
+# One clause number, or a slash-joined group of them, followed by a parenthesised clause title.
+CLAUSE_CITE_RE = re.compile(r"\d+(?:\.\d+){0,2}(?:\s*/\s*\d+(?:\.\d+){0,2})*\s*[(（]")
+# A clause number not preceded or followed by a word char or dot, so the 'A.7.10' of an Annex A
+# reference in a trailing note is never mistaken for main-body clause 7.10.
+CLAUSE_NO_RE = re.compile(r"(?<![\w.])\d+(?:\.\d+){0,2}(?![\w.])")
+# lang -> clause number -> title -> the documents citing it that way. Filled per document, judged
+# once at the end, because a title can only be inconsistent relative to the rest of the corpus.
+clause_titles = {"ko": {}, "en": {}}
 TYPE_KO = {"예방적": "Preventive", "탐지적": "Detective", "교정적": "Corrective"}
 PROP_KO = {"기밀성": "Confidentiality", "무결성": "Integrity", "가용성": "Availability"}
 # A range such as "A.5.24~A.5.28(...)" carries a group label, not one control's title.
@@ -135,6 +150,43 @@ def close_paren(s, i):
     return None
 
 
+def check_clause_citations(rel, lang, text):
+    """[10] every ISO main-body clause citation names the clause, in one uniform form.
+
+    The parenthesis is the clause-title slot and carries the title alone. Without the form rule a
+    citation could be written bare ('9.1 Monitoring, measurement, analysis and evaluation'), which
+    is ambiguous in a comma-separated list and is how three documents came to cite a clause under
+    the wrong title. Glosses go in the body of the document, not in this slot.
+    """
+    for line in text.split("\n"):
+        if CLAUSE_MARKER[lang] not in line:
+            continue
+        body = line.split(CLAUSE_MARKER[lang], 1)[1]
+        chars = list(body)
+        pos = 0
+        while True:
+            m = CLAUSE_CITE_RE.search(body, pos)
+            if not m:
+                break
+            end = close_paren(body, m.end() - 1)
+            if end is None:
+                fail(f"{rel}: unbalanced parenthesis in an ISO clause citation")
+                break
+            nos = [x.strip() for x in body[m.start():m.end() - 1].split("/") if x.strip()]
+            title = body[m.end():end]
+            # A slash-joined group carries one combined label for the pair, so it is not comparable
+            # with the title of either clause on its own.
+            if len(nos) == 1:
+                clause_titles[lang].setdefault(nos[0], {}).setdefault(title, set()).add(rel)
+            for i in range(m.start(), end + 1):
+                chars[i] = " "
+            pos = end + 1
+        for leftover in CLAUSE_NO_RE.findall("".join(chars)):
+            fail(f"{rel}: ISO clause citation {leftover} carries no parenthesised clause title. "
+                 f"Write '{leftover}(<clause title>)' so the citation names the clause it points "
+                 "at and the list stays unambiguous.")
+
+
 def check_pair(no, paths, catalog_by_no):
     """Checks [7], [8] and [9] for one control across both languages."""
     text = {lang: read(paths[lang]) for lang in LANGS}
@@ -170,6 +222,15 @@ def check_pair(no, paths, catalog_by_no):
             if XREF_MARKER[lang] not in line:
                 continue
             body = RANGE_RE.sub("", line.split(XREF_MARKER[lang], 1)[1])
+            # The parenthesised form is mandatory, because the title check below only sees a label
+            # that is wrapped in parentheses. A reference written as bare 'A.5.24 <title>' slipped
+            # past it entirely, and six Korean documents carried abbreviated or invented titles that
+            # way while this check still reported PASS. Requiring the form closes that fail-open.
+            for m in re.finditer(r"(A\.\d+\.\d+)\s*([(（])?", body):
+                if m.group(2) is None:
+                    fail(f"{rel[lang]}: cross-reference {m.group(1)} carries no parenthesised "
+                         "title, so its label is never checked against the catalog. Write "
+                         "'A.x.y(<catalog title>)'.")
             for m in re.finditer(r"(A\.\d+\.\d+)\s*[(（]", body):
                 ref = m.group(1)
                 if ref not in catalog_by_no:
@@ -249,6 +310,22 @@ def main():
                  for lang in LANGS}
         if all(os.path.exists(paths[lang]) for lang in LANGS):
             check_pair(no, paths, catalog_by_no)
+
+    # [10] one clause number, one title. Judged here rather than per document, because a title is
+    # only inconsistent relative to how the rest of the corpus cites the same clause.
+    for lang in LANGS:
+        for clause, titles in sorted(clause_titles[lang].items()):
+            if len(titles) < 2:
+                continue
+            shown = []
+            for title, files in sorted(titles.items()):
+                where = sorted(files)[0]
+                if len(files) > 1:
+                    where += f" and {len(files) - 1} more"
+                shown.append(f'"{title}" ({where})')
+            fail(f"ISO clause {clause} is cited under {len(titles)} different titles in {lang}: "
+                 + "; ".join(shown)
+                 + ". One clause number carries one title across the corpus.")
 
     if problems:
         for p in problems:

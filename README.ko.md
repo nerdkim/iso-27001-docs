@@ -93,7 +93,7 @@ harness/
     "lang": "ko", "section": "organizational", "no": "A.5.1", "name": "정보보안 정책",
     "groupNo": "A.5", "group": "조직적 통제", "subgroupNo": "", "subgroup": "",
     "appliesTo": [], "path": "docs/ko/A.5-organizational/A.5.1.md",
-    "counts": { "checkpoints": 4, "evidence": 4, "defects": 4, "hasLaws": false }
+    "counts": { "checkpoints": 6, "evidence": 6, "defects": 6, "hasLaws": false }
   }]
 }
 ```
@@ -111,8 +111,9 @@ harness/
 bash harness/install-hooks.sh
 ```
 
-여러 번 실행해도 안전하고, `.git/config` 밖에는 아무것도 쓰지 않습니다. `pre-commit`(문서 규약),
-`commit-msg`(commit message 규칙), `pre-push`(master 직접 push 차단)를 활성화합니다. hook은 우회 가능한
+여러 번 실행해도 안전하고, hook 파일 세 개에 실행 권한을 주는 것 말고는 `.git/config` 밖에
+아무것도 쓰지 않습니다. `pre-commit`(문서 규약), `commit-msg`(commit message 규칙),
+`pre-push`(master 직접 push 차단)를 활성화합니다. hook은 우회 가능한
 편의 guardrail이고, 정본 게이트는 같은 검사기를 돌리는 CI(`.github/workflows/docs.yml`)입니다.
 
 나머지는 Python 3(표준 라이브러리만)와 bash만 있으면 됩니다.
@@ -125,7 +126,7 @@ python3 tools/check_corpus.py   # 읽기 전용 무결성 검사
 bash harness/check-conventions.sh
 ```
 
-둘 다 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, commit된 색인은 항상
+`build_index.py`는 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, commit된 색인은 항상
 자료집과 일치합니다.
 
 통제를 추가/수정/삭제할 때는 **같은 commit에서 반대 언어 문서도 함께 고칩니다**. 대응 관계는 통제

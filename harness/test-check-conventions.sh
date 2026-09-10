@@ -161,6 +161,22 @@ d="$(new_repo)"
 printf '# conduct\n\n응대는 자연스러운 한국어로 배포와 빌드를 쓴다.\n' > "$d/docs/agent-conduct.md"
 assert_repo "agent-conduct.md skips transliteration [2]" "$d" 0 "RESULT: PASS"
 
+# 19) harness/conventions-exclude waives the LANGUAGE checks [2][3][4][5] for its paths.
+d="$(new_repo)"
+mkdir -p "$d/harness" "$d/docs/corpus"
+printf 'docs/corpus/\n' > "$d/harness/conventions-exclude"
+printf '# corpus\n\n자연스러운 한국어로 배포와 빌드를 쓴다.\n' > "$d/docs/corpus/x.md"
+assert_repo "conventions-exclude waives transliteration [2]" "$d" 0 "RESULT: PASS"
+
+# 20) but it must NOT be able to waive [1]: forbidden unicode is language-neutral (docs/16 s4.2).
+# Regression guard. Applying the per-repo exclusion to [1] as well was a fail-open that hid a
+# middle dot in an excluded corpus while the checker still reported PASS.
+d="$(new_repo)"
+mkdir -p "$d/harness" "$d/docs/corpus"
+printf 'docs/corpus/\n' > "$d/harness/conventions-exclude"
+printf '# corpus\n\nA%sB\n' "$EM_DASH" > "$d/docs/corpus/x.md"
+assert_repo "conventions-exclude cannot waive forbidden unicode [1]" "$d" 1 "[1] forbidden unicode"
+
 echo
 echo "RESULT: $pass passed, $fail failed."
 [ "$fail" -eq 0 ] || exit 1

@@ -25,14 +25,15 @@
 <!-- The hard rule of this repository. Control numbers, titles, and theme classification come
      from the PUBLIC list of ISO/IEC 27001:2022 Annex A. Everything else here is original
      material written for practical reference. -->
-- [ ] no normative text, implementation guidance, or attribute table of ISO/IEC 27001:2022 is reproduced, paraphrased close to the source, or translated in this change
+- [ ] no normative text, implementation guidance, or attribute table of ISO/IEC 27001:2022 or ISO/IEC 27002:2022 is reproduced, paraphrased close to the source, or translated in this change
 - [ ] each touched document still carries its source and limitation notice at the bottom
 - [ ] N/A (this PR touches no control content)
 
 ## Verification
 <!-- The exact commands you ran and their results; make it reproducible (playbook docs/20 5). -->
 - `python3 tools/check_corpus.py` → result:
-- `python3 tools/build_index.py` then `git diff --exit-code -- extended docs` → result:
+- `python3 tools/build_index.py` then `git status --porcelain -- extended docs` (must print nothing) → result:
+- `bash harness/test-check-conventions.sh` → result:
 - `bash harness/check-conventions.sh` → result:
 
 ## Consumer impact (the manifest contract)

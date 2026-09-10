@@ -21,6 +21,7 @@ Last checked: 2026-09.
 | Control numbers, titles, and theme classification (`extended/catalog/controls.json`) | the **public** list of ISO/IEC 27001:2022 Annex A | 2022, not touched by Amd 1:2024 |
 | Control objective, Key checkpoints, Implementation guidance, Related controls and attributes, Evidence, Nonconformity examples | **original material** written by this project for practical reference | not an upstream edition |
 | The English documents under `docs/en/` | this project's own English edition | see 2.2 |
+| ISMS-P item numbers and names in the metadata tables and `Related controls and attributes` | the **public** item list of the Korean ISMS-P 인증기준 | the 101-item set of the 2023.11 인증기준 안내서 |
 
 The 93 controls across four themes (A.5 organizational 37, A.6 people 8, A.7 physical 14,
 A.8 technological 34) follow the 2022 revision, which restructured Annex A from the 114 controls of
@@ -32,9 +33,10 @@ explains why.
 
 ### 2.1 The copyright boundary is also the update boundary
 
-The normative text of ISO/IEC 27001:2022, its implementation guidance, and its attribute tables are
-**not reproduced, paraphrased close to the source, or translated here**. Only the control numbers,
-titles, and theme classification come from the public list. Everything else is original.
+The normative text of ISO/IEC 27001:2022, and the implementation guidance and attribute tables of
+ISO/IEC 27002:2022, are **not reproduced, paraphrased close to the source, or translated here**.
+Only the control numbers, titles, and theme classification come from the public list. Everything
+else is original.
 
 This has a direct consequence for updates: there is no upstream text to re-sync against. A change
 in the standard's wording does not mechanically propagate into these documents, because these
@@ -85,6 +87,7 @@ Every row below was verified on the check date at the top of this document.
 | ISO/IEC 27002 | Still the 2022 edition, unamended. The climate amendment applied to management system standards; 27002 is guidance, not one. Not used as a source here in any case. |
 | ISO/IEC 27000 | Sixth edition published July 2026, retitled from "Overview and vocabulary" to "Overview", and no longer the vocabulary reference for the ISMS family. It does not change Annex A and is not a source for this corpus. |
 | 2013 transition | Closed. Certificates issued against the 2013 edition expired on 31 October 2025. |
+| ISMS-P 인증기준 | The 101-item set of the 2023.11 안내서 is still in force. The 2023.11 revision removed 3.4.3 휴면 이용자 관리, taking the set from 102 items to 101, so a mapping written against the 2022.4 안내서 is identifiable by that item. The 2026 certification reform changes the audit model and the mandatory scope, not the item numbering. |
 
 ## 3. Operating principle
 
