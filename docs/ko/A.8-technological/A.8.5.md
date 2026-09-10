@@ -1,11 +1,11 @@
-# A.8.5 보안 인증 (Secure authentication)
+# A.8.5 보안 인증(Secure authentication)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.8 기술적 통제 (Technological controls) |
+| 테마 | A.8 기술적 통제(Technological controls) |
 | 통제 | A.8.5 보안 인증 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 |
 | ISMS-P 대응 | 2.5.3 사용자 인증 |
 | 2013 대응 | A.9.4.2 |

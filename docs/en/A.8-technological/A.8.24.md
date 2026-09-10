@@ -16,12 +16,12 @@ This control requires the organization to define through policy, and operate con
 
 ## Key checkpoints
 
-1. Is an organization-wide policy on the use of cryptography established, specifying the scope of application (data at rest, data in transit, authentication data, etc.) and the approved algorithms/minimum key lengths?
+1. Is an organization-wide policy on the use of cryptography established, specifying the scope of application (data at rest, data in transit, authentication data, and so on) and the approved algorithms/minimum key lengths?
 2. Do the algorithms and key lengths in use meet current recommended levels, and are weak or to-be-retired algorithms (legacy hashes/block ciphers) identified with a replacement plan in place?
 3. Are management procedures and responsibilities defined for the entire key lifecycle: generation/distribution/storage/use/rotation/destruction/recovery?
 4. Is important information such as personal data and authentication data encrypted at rest and in transit, and are approvals and justifications recorded when exceptions apply?
 5. Are legal/regulatory cryptography requirements (nationally approved algorithms, import/export rules, contractual requirements) identified and complied with?
-6. Is access to cryptographic modules/key stores (HSM, KMS, etc.) controlled, and are related activities logged and reviewed?
+6. Is access to cryptographic modules/key stores (HSM, KMS, and so on) controlled, and are related activities logged and reviewed?
 
 ## Implementation guidance
 
@@ -42,7 +42,7 @@ This control requires the organization to define through policy, and operate con
 ## Evidence
 
 - Cryptography policy/guideline documents and the approved algorithm/minimum key length reference table
-- A status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)
+- Status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)
 - Key management procedures and the key lifecycle register (generation/rotation/destruction history)
 - HSM/KMS access privilege lists and access/operation logs
 - TLS configuration review results (evidence of disabling weak versions/cipher suites) and vulnerability assessment reports

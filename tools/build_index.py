@@ -223,13 +223,21 @@ def write(path, text):
 def build_docs_index(items, lang, themes):
     base = f"docs/{lang}"
     heading = "ISO/IEC 27001:2022 Annex A" + (" (한국어)" if lang == "ko" else " (English)")
+    # Counted from the items, never hardcoded: a hardcoded 37/8/14/34 would keep reporting the old
+    # split after an ISO revision changed the control list, while the total beside it moved.
+    n = {key: sum(1 for it in items if it["section"] == key) for key in THEME_ORDER}
     if lang == "ko":
-        total_line = f"총 {len(items)}개 통제 (조직 37 / 인적 8 / 물리 14 / 기술 34)."
+        # No space before an opening paren after Hangul (playbook docs/16 s4.3).
+        total_line = (
+            f"총 {len(items)}개 통제(조직 {n['organizational']} / 인적 {n['people']} / "
+            f"물리 {n['physical']} / 기술 {n['technological']})."
+        )
         note = "> 통제 번호/명칭/테마는 공개 목록 근거. 설명 본문은 원저작이며 표준 원문이 아닙니다."
     else:
         total_line = (
-            f"{len(items)} controls in total (Organizational 37 / People 8 / Physical 14 / "
-            "Technological 34)."
+            f"{len(items)} controls in total (Organizational {n['organizational']} / "
+            f"People {n['people']} / Physical {n['physical']} / "
+            f"Technological {n['technological']})."
         )
         note = (
             "> Numbers/titles/themes are from the public list. Explanatory text is original "
@@ -242,7 +250,8 @@ def build_docs_index(items, lang, themes):
             continue
         theme = themes[key]
         label = theme["label_ko" if lang == "ko" else "label_en"]
-        lines += [f"## {theme['no']} {label} ({len(lst)})", ""]
+        count = f"({len(lst)})" if lang == "ko" else f" ({len(lst)})"
+        lines += [f"## {theme['no']} {label}{count}", ""]
         for it in lst:
             href = os.path.relpath(os.path.join(ROOT, it["path"]), os.path.join(ROOT, base))
             lines.append(f"- [{it['no']} {it['name']}]({href})")

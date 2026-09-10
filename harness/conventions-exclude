@@ -1,6 +1,26 @@
-# Authoritative external data corpus (confirmed exception, docs/16 6): the reproduced
-# criteria documents under docs/. This is faithful source data (Korean is authoritative),
-# not the project's own engineering prose, so docs/16 (English IT terms, no-space parens)
-# must not rewrite it. Do NOT add the project's own docs here; only this external corpus.
+# Per-repo exception to the LANGUAGE checks [2][3][4][5] of check-conventions.sh (docs/16 s6).
+# Check [1], forbidden unicode, is language-neutral (docs/16 s4.2) and is NOT waived by this file.
+#
+# What docs/ko/ is: this repository's Korean-language control documents. They are the project's own
+# original writing, NOT a reproduced external corpus, and the Korean and English sides are peer to
+# peer with neither authoritative over the other (UPDATES.md section 2.2, and the CLAUDE.md
+# copyright boundary). An earlier version of this file claimed the opposite; it had been copied from
+# a different repository and contradicted the boundary this whole corpus is built on.
+#
+# Why the exception is needed, for exactly one check: docs/16 section 4.3 requires a Korean-language
+# document to use natural Korean IT vocabulary, and these documents do, so the transliteration check
+# [2] fires on them by design rather than by defect. The checker already exempts Korean-language
+# documents from [2], but it keys that exemption on the file NAME, the "*.ko.md" suffix. This corpus
+# is laid out as docs/<lang>/<theme>/<no>.md, so its Korean documents never match that suffix. This
+# exclusion stands in for the exemption the layout cannot express.
+#
+# Measured against the live corpus, docs/ko/ produces hits on [2] only; [3], [4] and [5] are clean.
+#
+# docs/en/ is deliberately NOT listed. It produced zero hits on every check, so excluding it waived
+# nothing and only widened the carve-out.
+#
+# The upstream fix is a path-based exemption for docs/ko/** in the playbook's own [2] skip list, next
+# to the existing "*.ko.md" case. Once the playbook carries that, this file can be deleted. That
+# matters for the migration: playbook v0.2.0 fails any conventions-exclude covering 40 percent or
+# more of the tree, and docs/ko/ alone is about 47 percent here.
 docs/ko/
-docs/en/

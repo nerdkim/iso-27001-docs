@@ -12,12 +12,12 @@
 
 ## Control objective
 
-This control establishes and maintains ongoing contact with information security special interest groups, security forums, professional associations, information sharing and analysis centers (ISACs), and threat information sharing communities. Its purpose is to let the organization rapidly obtain current threats, vulnerabilities, attack techniques, and response good practice from external expert networks, keeping internal security knowledge up to date and enabling proactive response to new risks. It requires trusted relationships and points of contact to be secured in advance so that external expertise and support can be drawn on when an incident or emergency occurs.
+This control establishes and maintains ongoing contact with information security special interest groups, security forums, professional associations, information sharing and analysis centers (ISACs), and threat information sharing communities. Its purpose is to let the organization rapidly obtain current information on threats, vulnerabilities, attack techniques, and response good practice from external expert networks, keeping internal security knowledge up to date and enabling proactive response to new risks. It requires trusted relationships and points of contact to be secured in advance so that external expertise and support can be drawn on when an incident or emergency occurs.
 
 ## Key checkpoints
 
-1. Are the special interest groups/security forums/ISACs/professional associations to participate in identified and maintained as a list, suited to the organization's sector, technology stack, and threat environment?
-2. Is a point of contact, responsible person, and mode of participation (membership, subscription, two-way sharing) set for each group, with a backup person designated for absences?
+1. Is a list maintained of the special interest groups/security forums/ISACs/professional associations to participate in, selected to suit the organization's sector, technology stack, and threat environment?
+2. Are the point of contact, responsible person, and mode of participation (membership, subscription, two-way sharing) set for each group, with a backup person designated for absences?
 3. Is the threat/vulnerability information obtained externally actually reflected in internal risk assessment, patch management, vulnerability remediation, and awareness activities?
 4. When sharing information with external groups, are the scope and procedure controlled so that the organization's confidential information/personal data/internal configuration details are not exposed inappropriately?
 5. Is the effectiveness of participation (timeliness and usefulness of the information obtained) reviewed periodically and the set of groups updated?
@@ -29,12 +29,12 @@ This control establishes and maintains ongoing contact with information security
 - Establish an internal handling flow that classifies/evaluates the information obtained and links it into risk assessment, patch management, vulnerability remediation, and incident response procedures.
 - Define in advance what may and may not be shared externally (internal network/asset details, undisclosed vulnerabilities, personal data, and so on), and set a review/approval step before sharing.
 - Define the internal dissemination path and emergency response trigger (escalation) for when an early warning of a threat/vulnerability is received.
-- Define contacts by position/job rather than by an individual's informal network, so the relationship is succeeded when a person changes.
+- Define contacts by position/job rather than by an individual's informal network, so the relationship is handed over when a person changes.
 - Review the value of participation periodically, retiring low-value channels and adding needed ones.
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 7.4 (Communication), 7.1 (Resources), 6.1 (Actions to address risks and opportunities, fed by threat information), 10 (Improvement)
+- ISO 27001 clauses: 7.4 (Communication), 7.1 (Resources), 6.1 (Actions to address risks and opportunities), 10 (Improvement)
 - Adjacent Annex A: A.5.5 (Contact with authorities), A.5.7 (Threat intelligence), A.6.3 (Information security awareness, education and training), A.5.24 to A.5.28 (Information security incident management)
 - ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system
 - 2013 mapping: A.6.1.4 (Contact with special interest groups)

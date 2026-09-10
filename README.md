@@ -97,7 +97,7 @@ set to `themes`, so a consumer renders the four themes as its top-level navigati
     "lang": "ko", "section": "organizational", "no": "A.5.1", "name": "정보보안 정책",
     "groupNo": "A.5", "group": "조직적 통제", "subgroupNo": "", "subgroup": "",
     "appliesTo": [], "path": "docs/ko/A.5-organizational/A.5.1.md",
-    "counts": { "checkpoints": 4, "evidence": 4, "defects": 4, "hasLaws": false }
+    "counts": { "checkpoints": 6, "evidence": 6, "defects": 6, "hasLaws": false }
   }]
 }
 ```
@@ -115,8 +115,9 @@ travel with a clone, so run this **once per clone**:
 bash harness/install-hooks.sh
 ```
 
-It is idempotent, writes nothing outside `.git/config`, and activates `pre-commit` (documentation
-conventions), `commit-msg` (message rules), and `pre-push` (blocks a direct push to master). The
+It is idempotent and writes nothing outside `.git/config`, apart from setting the executable bit
+on the three hook files. It activates `pre-commit` (documentation conventions), `commit-msg`
+(message rules), and `pre-push` (blocks a direct push to master). The
 hooks are a convenience guardrail and are bypassable; the authoritative gate is CI
 (`.github/workflows/docs.yml`), which runs the same checkers.
 

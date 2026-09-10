@@ -57,7 +57,7 @@ This control ensures that information accessed, processed, or stored by personne
 - Remote devices have no disk encryption or screen lock, so information leakage is not controlled if a device is lost or stolen.
 - Personally owned devices (BYOD) are used for work without separate conditions or consent, and data is stored/retained on personal devices.
 - Access logs of remote workers are not collected or monitored, so anomalous access cannot be detected.
-- After remote working ends, access rights are not reclaimed and issued devices/data are left unreturned.
+- After remote working ends, access rights are not reclaimed or issued devices/data are left unreturned.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

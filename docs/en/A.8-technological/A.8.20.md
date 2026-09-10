@@ -16,7 +16,7 @@ This control ensures that networks and network devices are securely managed and 
 
 ## Key checkpoints
 
-1. Are network diagrams/asset inventories kept current, and are areas (DMZ, internal network, management network, etc.) separated according to trust level?
+1. Are network diagrams/asset inventories kept current, and are areas (DMZ, internal network, management network, and so on) separated according to trust level?
 2. Are access control policies across perimeters and segments defined on a least-privilege basis and reflected in firewalls/ACLs?
 3. Are security configuration baselines for network devices (changing default passwords, disabling unnecessary services/ports, restricting management access) established and applied?
 4. Are encryption and authentication applied to remote access, wireless, and external connection segments?
@@ -25,10 +25,10 @@ This control ensures that networks and network devices are securely managed and 
 
 ## Implementation guidance
 
-- Separate the network into zones by trust level (public/DMZ, internal business network, management network, development network, etc.) and configure inter-zone traffic to block by default and permit only required flows (default deny) via firewalls/ACLs.
-- Establish security configuration standards for network devices (routers, switches, firewalls, wireless APs, etc.) covering default account/password changes, disabling unnecessary services/ports, restricting management-interface access, and keeping firmware up to date.
+- Separate the network into zones by trust level (public/DMZ, internal business network, management network, development network, and so on) and use firewalls/ACLs to block inter-zone traffic by default and permit only the required flows (default deny).
+- Establish security configuration standards for network devices (routers, switches, firewalls, wireless APs, and so on) covering default account/password changes, disabling unnecessary services/ports, restricting management-interface access, and keeping firmware up to date.
 - To protect confidentiality/integrity in transit, use encrypted protocols such as SSH/HTTPS for remote management, and apply VPN and strengthened authentication (multi-factor) to external/wireless/remote access segments.
-- Collect logs from network devices and security systems centrally (log server/SIEM), and continuously monitor for signs of intrusion/misuse using threshold-based alerting and anomalous-traffic detection (IDS/IPS, NDR, etc.).
+- Collect logs from network devices and security systems centrally (log server/SIEM), and continuously monitor for signs of intrusion/misuse using threshold-based alerting and anomalous-traffic detection (IDS/IPS, NDR, and so on).
 - With external network service providers, specify the security features, service levels, and management requirements of the provided services in contracts/agreements, and periodically review whether they are fulfilled.
 - Apply the change management (A.8.32) procedure to network configuration changes, periodically review firewall policies/ACLs to remove unused or overly permissive rules, and keep network diagrams current.
 
@@ -44,7 +44,7 @@ This control ensures that networks and network devices are securely managed and 
 - Network diagrams and network asset/zone inventories
 - Firewall/ACL policies and policy review (periodic re-review) records
 - Network device security configuration standards and applied configuration records (snapshots/inspection results)
-- Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, etc.)
+- Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, and so on)
 - Log collection and monitoring/alerting configuration for network/security devices, and anomaly detection/response records
 - External network service contracts/SLAs and fulfillment review results
 

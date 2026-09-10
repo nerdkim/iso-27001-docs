@@ -29,7 +29,7 @@ This control requires the organization to separate development, test, and produc
 - Link promotion from lower environments to production with change management for approval and recording, and provide integrity verification of deployment artifacts (signing, artifact verification) and rollback procedures.
 - Block developers' direct access to production by default, and where needed grant least-privilege/time-bound access controlled and logged through privileged access management (PAM).
 - As a rule do not use production data for testing; where unavoidable, use it in a limited way after masking/pseudonymization and owner approval.
-- Apply login banners/screen colors/host naming conventions so that environments are clearly identifiable, preventing mis-operation between production and test.
+- Apply login banners/screen colors/host naming conventions so that environments are clearly identifiable, preventing mistaken operations between production and test.
 - Remove unnecessary elements such as compilers, debugging tools, development accounts, and source code from production to minimize the attack surface.
 - In cloud/IaC/CI-CD pipelines, separate accounts, networks, secrets/credentials, and pipeline permissions per environment to prevent cross-environment access.
 

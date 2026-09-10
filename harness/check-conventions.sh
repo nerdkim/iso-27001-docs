@@ -19,8 +19,10 @@
 # Scope: standard artifacts (docs, templates, root markdown, scripts, harness,
 # workflows). The file list is the union of tracked files and untracked-but-not-
 # ignored files (git ls-files --others --exclude-standard), so a manual run before
-# git add catches brand-new files; .gitignore is respected. Excludes _research/ and
-# any path prefixes listed in harness/conventions-exclude (see below).
+# git add catches brand-new files; .gitignore is respected. _research/ is excluded
+# from every check. The path prefixes in harness/conventions-exclude are excluded
+# from the LANGUAGE checks [2][3][4][5] only: check [1] is language-neutral and
+# cannot be waived per repo.
 # Checks [2][3][4][5] also exclude docs/16 (the rule-definition file, which names the
 # forbidden forms as examples) and this script. Checks [3][4] run on prose .md
 # only (code files keep ASCII arrows). Term/arrow/paren/prefix scans strip fenced code
@@ -43,14 +45,33 @@ fi
 # prose (e.g. a reproduced official standard/document collection), never to hide the
 # project's own docs from the rules. Adopt such an exclusion only as a confirmed
 # exception (docs/16 6).
-EXCLUDE_RE='^_research/'
+# NOTE for this repo: its harness/conventions-exclude does not match that description, and says so
+# in its own header. docs/ko/ IS the project's own prose. It is listed because the [2] exemption for
+# Korean-language documents is keyed on the "*.ko.md" file name, which this corpus's
+# docs/<lang>/<theme>/<no>.md layout cannot produce. That is a workaround for a naming mismatch, not
+# an external-corpus exception, and it is recorded rather than hidden so the real fix (a path-based
+# [2] exemption upstream in the playbook) stays visible.
+# Two exclusion layers, on purpose (this mirrors playbook v0.2.0's UFILES/FILES split):
+#   BUILTIN_EXCLUDE_RE applies to EVERY check.
+#   USER_EXCLUDE_RE, from harness/conventions-exclude, applies ONLY to the language checks [2][3][4][5].
+# Forbidden unicode [1] is a language-neutral rule (docs/16 s4.2), so no per-repo exception may waive
+# it. Applying the per-repo layer to [1] as well was a fail-open: this repo excludes docs/ko/ for the
+# term check, which silently took 186 of 188 corpus documents out of [1] too, and a middle dot
+# (U+00B7) survived in docs/ko/ while the checker reported PASS. So [1] scans ALLFILES.
+BUILTIN_EXCLUDE_RE='^_research/'
+USER_EXCLUDE_RE=''
 if [ -f harness/conventions-exclude ]; then
   while IFS= read -r line || [ -n "$line" ]; do
     line="${line%%#*}"; line="$(printf '%s' "$line" | tr -d '[:space:]')"
-    [ -n "$line" ] && EXCLUDE_RE="$EXCLUDE_RE|^${line}"
+    [ -n "$line" ] && USER_EXCLUDE_RE="${USER_EXCLUDE_RE:+$USER_EXCLUDE_RE|}^${line}"
   done < harness/conventions-exclude
 fi
-mapfile -t FILES < <( { git ls-files '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml'; git ls-files --others --exclude-standard '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml'; } | grep -vE "$EXCLUDE_RE" | sort -u )
+mapfile -t ALLFILES < <( { git ls-files '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml'; git ls-files --others --exclude-standard '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml'; } | grep -vE "$BUILTIN_EXCLUDE_RE" | sort -u )
+if [ -n "$USER_EXCLUDE_RE" ]; then
+  mapfile -t FILES < <( printf '%s\n' ${ALLFILES+"${ALLFILES[@]}"} | grep . | grep -vE "$USER_EXCLUDE_RE" )
+else
+  mapfile -t FILES < <( printf '%s\n' ${ALLFILES+"${ALLFILES[@]}"} | grep . )
+fi
 # exclude the rule-definition file and the checker scripts from term/arrow/paren
 # checks. Matched by basename so this works whether the checker lives in harness/
 # (this repo) or wherever a consumer installs it. test-check-conventions.sh
@@ -74,9 +95,10 @@ stripfence() { awk 'BEGIN{inf=0} /^```/{inf=!inf; print ""; next} /conventions-a
 fail=0
 
 echo "== [1] forbidden unicode punctuation =="
-if grep -rnP '[\x{2014}\x{2013}\x{2015}\x{00B7}\x{2022}\x{FF0D}]' "${FILES[@]}"; then
+# ALLFILES, not FILES: harness/conventions-exclude must not be able to waive this check.
+if [ "${#ALLFILES[@]}" -gt 0 ] && grep -rnP '[\x{2014}\x{2013}\x{2015}\x{00B7}\x{2022}\x{FF0D}]' ${ALLFILES+"${ALLFILES[@]}"}; then
   echo "  -> FAIL (see above)"; fail=1
-else echo "  OK: 0"; fi
+else echo "  OK: 0 (${#ALLFILES[@]} files scanned)"; fi
 
 echo "== [2] transliteration / translation terms (docs/16 s3.1) =="
 # 계층(hierarchy)/저장소(storage) omitted (common Korean homographs, review by hand).

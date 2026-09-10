@@ -17,18 +17,18 @@ The purpose is to inspect and service equipment that stores, processes, or trans
 ## Key checkpoints
 
 1. Are maintenance targets, cycles, and owners defined and followed for each item, based on the asset inventory and the manufacturer's recommended specifications?
-2. Is maintenance performed only by qualified and authorized personnel, and for external technicians are supervision, attendance, and limited access scope applied?
+2. Is maintenance performed only by qualified and authorized personnel, and for external technicians, are escort/supervision and limited access scope applied?
 3. Are maintenance records (date and time, performer, actions taken, faults found, parts replaced) kept and retained?
 4. For external servicing, remote maintenance, and off-site repair, are measures in place to prevent exposure or alteration of stored information (backup, data removal or encryption, confidentiality agreements, session logging)?
-5. Are maintenance contract and SLA terms, warranty conditions, and relevant legal requirements (safety inspections for electrical, fire, and the like) defined and verified for compliance?
+5. Are maintenance contract and SLA terms, warranty conditions, and relevant legal requirements (electrical, fire, and similar safety inspections) defined and verified for compliance?
 6. After maintenance, is the equipment rechecked to confirm normal operation and that security settings (permissions, patches, configuration) have not been degraded?
 
 ## Implementation guidance
 
 - Define maintenance targets, preventive servicing cycles, and owners based on the asset inventory, and build the maintenance plan reflecting manufacturer specifications and operational criticality.
 - Separate preventive servicing (periodic inspection, consumable and part replacement, firmware checks) from corrective servicing (fault response, repair, replacement), and set procedures and approval criteria for each.
-- Restrict maintenance to qualified and authorized personnel, and for external technicians apply attendance and supervision, minimized access scope, and before-and-after checks.
-- Before external servicing or off-site repair, back up and then remove sensitive information or detach the storage media; where this is unavoidable, protect it with encryption and a non-disclosure agreement (NDA).
+- Restrict maintenance to qualified and authorized personnel, and for external technicians apply escort/supervision, minimized access scope, and before-and-after checks.
+- Before external servicing or off-site repair, back up and then remove sensitive information or detach the storage media; where that is not possible, protect it with encryption and a non-disclosure agreement (NDA).
 - Apply prior approval, least-privilege accounts, encrypted connections, and session logging and monitoring to remote maintenance, and revoke access rights when the work ends.
 - Include security requirements in maintenance contracts and SLAs (warranty scope, response time, information protection obligations, subcontracting controls), and review compliance periodically.
 - After maintenance completes, verify that the equipment operates normally and that security configuration, patches, and access rights are intact, and record and retain the results and history.
@@ -45,7 +45,7 @@ The purpose is to inspect and service equipment that stores, processes, or trans
 - Inventory of equipment subject to maintenance and the maintenance plan or schedule (including preventive servicing cycles)
 - Maintenance logs, work orders, and inspection checklists (performer, actions taken, parts replaced)
 - Maintenance contracts and SLAs, warranty documents, and non-disclosure agreements (NDAs) with external technicians
-- Entry and attendance records for external technicians and approval records for access scope
+- Entry/escort records for external technicians and approval records for access scope
 - Approval records and session logs for remote maintenance
 - Records confirming data backup and removal before off-site repair, and recheck records of normal operation and security settings after maintenance
 
@@ -53,7 +53,7 @@ The purpose is to inspect and service equipment that stores, processes, or trans
 
 - No maintenance cycle is defined for critical equipment, or preventive servicing is chronically delayed, leaving the risk of failure or performance degradation unmanaged.
 - Maintenance history is not recorded, or actions taken and parts replaced are omitted, so servicing cannot be traced.
-- External technicians access equipment without attendance or supervision, creating a risk that stored sensitive information is exposed.
+- External technicians access equipment without escort/supervision, creating a risk that stored sensitive information is exposed.
 - Equipment is taken off site for repair without backing up or removing data on the storage media, creating a risk of information leakage.
 - Remote maintenance uses shared accounts or leaves sessions unlogged, so it is impossible to confirm who did what.
 - Equipment whose warranty or SLA has expired is left in place without renewal or replacement, making timely recovery difficult when a fault occurs.

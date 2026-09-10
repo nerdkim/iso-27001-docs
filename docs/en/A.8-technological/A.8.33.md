@@ -20,7 +20,7 @@ This control requires the organization to carefully select, protect, and manage 
 2. Is the use of operational data for testing restricted in principle, with approval by the responsible owner obtained where it is unavoidable?
 3. When operational data is used for testing, is the identifiability of personal and sensitive data removed through masking/pseudonymization/transformation?
 4. Are access controls and storage/transmission protection equivalent to the production environment applied to test data?
-5. Is the copying/transfer of operational data into test environments logged and traceable?
+5. Are the copying/transfer of operational data into test environments and its use there logged and traceable?
 6. After testing completes, is test data (especially copies of operational data) promptly and securely deleted/disposed of according to the defined procedure?
 
 ## Implementation guidance
@@ -56,7 +56,7 @@ This control requires the organization to carefully select, protect, and manage 
 - The access control/encryption level of the test environment is markedly lower than production, leaving personal data exposed to risk.
 - Masking is applied but is insufficient (only some fields processed, reversible), so individuals can still be identified.
 - After testing ends, copies of operational data remain on test servers, developer PCs, or shared storage.
-- The use/copying of operational data for testing is not logged, so it cannot be traced which data was used where.
+- The use/copying of operational data for testing is not logged, so there is no way to trace which data was used where.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

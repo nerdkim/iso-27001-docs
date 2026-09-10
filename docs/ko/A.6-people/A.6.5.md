@@ -1,11 +1,11 @@
-# A.6.5 고용 종료 또는 변경 후 책임 (Responsibilities after termination or change of employment)
+# A.6.5 고용 종료 또는 변경 후 책임(Responsibilities after termination or change of employment)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.6 인적 통제 (People controls) |
+| 테마 | A.6 인적 통제(People controls) |
 | 통제 | A.6.5 고용 종료 또는 변경 후 책임 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.2.5 퇴직 및 직무변경 관리 |
 | 2013 대응 | A.7.3.1 |

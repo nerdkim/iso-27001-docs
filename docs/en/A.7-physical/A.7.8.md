@@ -12,7 +12,7 @@
 
 ## Control objective
 
-The purpose is to place equipment that stores, processes, or transmits information in locations with low exposure to physical and environmental threats and to unauthorized access or damage, and to apply protection commensurate with each location. The organization should decide siting for servers, network devices, endpoints, and output based on each item's importance and exposure, reducing threats such as water, dust, vibration, temperature and humidity, electromagnetic interference, and line of sight. In doing so it prevents loss of availability from equipment damage or malfunction, information exposure such as shoulder surfing of screens and printouts, and integrity compromise through physical access.
+The purpose is to place equipment that stores, processes, or transmits information in locations with low exposure to physical and environmental threats and to unauthorized access or damage, and to apply protection commensurate with each location. The organization should decide siting for servers, network devices, endpoints, and printouts based on each item's importance and exposure, reducing threats such as water, dust, vibration, temperature and humidity, electromagnetic interference, and line-of-sight exposure. In doing so it prevents loss of availability from equipment damage or malfunction, information exposure such as shoulder surfing of screens and printouts, and integrity compromise through physical access.
 
 ## Key checkpoints
 

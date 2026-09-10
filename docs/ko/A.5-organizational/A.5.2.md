@@ -1,11 +1,11 @@
-# A.5.2 정보보안 역할 및 책임 (Information security roles and responsibilities)
+# A.5.2 정보보안 역할 및 책임(Information security roles and responsibilities)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.5 조직적 통제 (Organizational controls) |
+| 테마 | A.5 조직적 통제(Organizational controls) |
 | 통제 | A.5.2 정보보안 역할 및 책임 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 1.1.3 조직 구성, 1.1.2 최고책임자의 지정 |
 | 2013 대응 | A.6.1.1 |

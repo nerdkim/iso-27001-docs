@@ -25,7 +25,7 @@ This control ensures that systems/applications being developed or acquired are t
 
 ## Implementation guidance
 
-- Establish a security testing plan aligned with the development life cycle (A.8.25), and vary the test scope and depth (code review, vulnerability assessment, penetration testing, etc.) according to the system's risk rating and exposure environment.
+- Establish a security testing plan aligned with the development life cycle (A.8.25), and vary the test scope and depth (code review, vulnerability assessment, penetration testing, and so on) according to the system's risk rating and exposure environment.
 - Translate the security requirements from A.8.26 and the architecture/engineering principles from A.8.27 into concrete test cases, and maintain traceability by linking requirement IDs to test cases so nothing goes unverified.
 - During development, integrate static analysis (SAST), software composition analysis (SCA/dependency vulnerability scanning), and secret scanning into the CI pipeline for early defect detection, and complement these with dynamic analysis (DAST)/fuzzing against the running environment.
 - At the acceptance stage, define pass/fail criteria (acceptable residual risk, severity-based remediation thresholds) in advance, and approve transfer to operations only when the acceptance testing (secure configuration review, penetration test result review) is passed.
@@ -51,7 +51,7 @@ This control ensures that systems/applications being developed or acquired are t
 ## Nonconformity examples
 
 - Only functional testing is performed without a security testing plan, and the system is transferred to operations.
-- There are no test cases linked to security requirements, so requirements are released without being verified.
+- There are no test cases linked to security requirements, so the system is released without those requirements being verified.
 - High-risk defects found in vulnerability assessment/penetration testing are moved to production without remediation/re-testing.
 - Acceptance (transfer-to-operations) pass criteria are not defined in advance, so approval decisions are made arbitrarily.
 - Purchased/externally sourced products are adopted without reviewing their security test results.

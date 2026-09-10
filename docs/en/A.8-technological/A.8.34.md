@@ -19,7 +19,7 @@ This control ensures that assessment activities on operational information syste
 1. Are audit/vulnerability assessment/penetration test activities on operational systems planned in advance, with scope/timing/method/access rights agreed with the system owner?
 2. During testing, is access to operational systems and data limited to the minimum needed for the purpose, and are read-only access or isolated copies used where possible?
 3. Are the privileges granted to temporary test accounts and testing tools limited to the purpose, and are accounts/temporary access rights/tools revoked and removed after the test?
-4. Is access and activity during testing logged and monitored so it can be verified afterward?
+4. Are access and activity during testing logged and monitored so they can be verified afterward?
 5. Are tests that may affect performance/availability/integrity (load generation, scanning, change-inducing actions) performed under controlled conditions (such as off-peak windows) after impact assessment and approval?
 6. Are data/results/evidence obtained from testing stored securely under access control and disposed of once the retention period has passed?
 

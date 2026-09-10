@@ -1,11 +1,11 @@
-# A.5.5 관계 당국과의 연락 (Contact with authorities)
+# A.5.5 관계 당국과의 연락(Contact with authorities)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.5 조직적 통제 (Organizational controls) |
+| 테마 | A.5 조직적 통제(Organizational controls) |
 | 통제 | A.5.5 관계 당국과의 연락 |
-| 통제 유형(참고) | 예방적 (Preventive) / 교정적 (Corrective) |
+| 통제 유형(참고) | 예방적(Preventive) / 교정적(Corrective) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.11.1 사고 예방 및 대응체계 구축, 2.11.5 사고 대응 및 복구 |
 | 2013 대응 | A.6.1.3 |

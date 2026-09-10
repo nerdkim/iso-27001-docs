@@ -17,7 +17,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 ## Key checkpoints
 
 1. Does the business impact analysis (BIA) identify critical activities and the ICT services that support them, with a recovery time objective (RTO) and recovery point objective (RPO) defined for each service?
-2. Are ICT continuity/recovery strategies (redundancy, backup, alternate processing facilities, cloud-based recovery, etc.) established to meet the defined RTO/RPO, with the necessary resources secured?
+2. Are ICT continuity/recovery strategies (redundancy, backup, alternate processing facilities, cloud-based recovery, and so on) established to meet the defined RTO/RPO, with the necessary resources secured?
 3. Are ICT recovery procedures (fault detection, invocation criteria, recovery stages and priorities, roles/responsibilities, emergency contacts) documented and kept up to date?
 4. Are the ICT continuity/recovery plans tested regularly and after significant changes, with results evaluated against RTO/RPO achievement and fed into improvement?
 5. Are the backups, configuration information, documents, licenses, and access means needed for recovery protected and stored so that they remain usable during a disaster?
@@ -26,11 +26,11 @@ ICT readiness for business continuity is the control for planning, implementing,
 ## Implementation guidance
 
 - Based on the BIA and risk assessment results, quantitatively define RTO/RPO/minimum service level for each critical ICT service, and confirm them as recovery targets with management approval.
-- Select recovery strategies that meet the targets (system redundancy/clustering, geographically separated alternate processing facilities, data backup and offsite storage, cloud-based recovery, manual workarounds, etc.), and apply them differentially by service criticality with cost and risk in mind.
+- Select recovery strategies that meet the targets (system redundancy/clustering, geographically separated alternate processing facilities, data backup and offsite storage, cloud-based recovery, manual workarounds, and so on), and apply them differentially by service criticality with cost and risk in mind.
 - Document the ICT continuity/recovery plan to include fault/disaster detection and invocation criteria, recovery priorities and stage-by-stage procedures, roles and responsibilities, emergency contact lists, coordination with external suppliers/telecom/cloud providers, and the procedure for returning to normal operation after recovery.
 - Store the backups, system configuration/images, network diagrams, operational documents, software licenses, and credentials/access means essential to recovery in a separate secure location, and periodically verify their integrity and recoverability.
 - Test the continuity/recovery plan regularly (and after significant infrastructure/configuration changes) using varied methods (checklist review, walk-through, simulation, live failover), and record RTO/RPO achievement and gaps as improvement items.
-- Secure the availability of recovery resources such as people, skills, facilities, and external contracts, and ensure recovery is possible even when specific individuals are absent by training staff and designating backup personnel.
+- Secure the availability of recovery resources such as people, skills, facilities, and external contracts, and, by training staff and designating backup personnel, ensure recovery is possible even when specific individuals are absent.
 - Integrate the ICT readiness plan with the organization's business continuity management system and incident/crisis management procedures, and update them together whenever changes occur to keep them consistent.
 
 ## Related controls and attributes
@@ -43,7 +43,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 ## Evidence
 
 - Business impact analysis (BIA) results and the RTO/RPO definition for each critical ICT service
-- ICT continuity/recovery strategy document and architecture diagrams (redundancy, alternate processing facilities, backup architecture, etc.)
+- ICT continuity/recovery strategy document and architecture diagrams (redundancy, alternate processing facilities, backup architecture, and so on)
 - ICT disaster recovery plan (DRP)/recovery procedures (including invocation criteria, recovery stages, roles/responsibilities, emergency contact lists)
 - Recovery test plan and test result reports (RTO/RPO achievement, identified gaps, and improvement follow-up)
 - Records of offsite storage of backups and configuration/documents, and recoverability verification (restore testing)

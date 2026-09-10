@@ -18,7 +18,7 @@ This control establishes formal procedures and channels so that employees, exter
 
 1. Are formal reporting channels (hotline, email, ticket, portal) and a reporting procedure defined for information security events, and are employees/external parties aware of them?
 2. Is guidance provided on what should be reported as an event, including types, examples, and decision criteria?
-3. Are reporting deadlines (e.g. immediately on becoming aware, or within a set time) and the information to include (time of occurrence, affected asset, symptoms, actions taken) specified?
+3. Are reporting deadlines (for example, immediately on becoming aware, or within a set time) and the information to include (time of occurrence, affected asset, symptoms, actions taken) specified?
 4. Are confidentiality and protection from retaliation for good-faith reporters guaranteed by policy?
 5. Are received events routed into the incident assessment/classification/response procedure (A.5.24 onward), and is the outcome fed back to the reporter?
 6. Are reporting channels and methods also provided for parties outside the organization, such as external parties, suppliers, and users?

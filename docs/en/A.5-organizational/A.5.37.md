@@ -12,11 +12,11 @@
 
 ## Control objective
 
-This control requires that the activities used to operate information processing facilities and information systems be captured as standardized, documented procedures, so that personnel perform tasks consistently and correctly rather than relying on personal memory or experience. Well maintained operating procedures prevent human error, missed steps, and the service outages or security incidents that follow, and they preserve operational continuity across staff handovers, absences, and emergencies. Documented procedures also serve as the training baseline for new personnel and as evidence, during audits or reviews, that actual operations conform to control requirements.
+This control requires that the activities used to operate information processing facilities and information systems be captured as standardized, documented procedures, so that personnel perform tasks consistently and correctly rather than relying on personal memory or experience. Well-maintained operating procedures prevent human error, missed steps, and the service outages or security incidents that follow, and they preserve operational continuity across staff handovers, absences, and emergencies. Documented procedures also serve as the training baseline for new personnel and as evidence, during audits or reviews, that actual operations conform to control requirements.
 
 ## Key checkpoints
 
-1. Are the main operational activities of information processing facilities and systems (startup/shutdown, backup/recovery, batch jobs, media handling, incident response, etc.) documented as operating procedures?
+1. Are the main operational activities of information processing facilities and systems (startup/shutdown, backup/recovery, batch jobs, media handling, incident response, and so on) documented as operating procedures?
 2. Do the procedures contain the information needed to execute them: scope, method and sequence of steps, responsible party and required privileges, normal/abnormal completion criteria, error/exception handling, and contact/escalation paths?
 3. Are the operating procedures made available in an accessible form to the personnel who actually need to perform them, and kept current?
 4. When system, configuration, or environment changes occur, are the related operating procedures updated, reviewed, and approved in conjunction with the change management process?
@@ -25,8 +25,8 @@ This control requires that the activities used to operate information processing
 
 ## Implementation guidance
 
-- Identify the operational activities of information processing facilities and systems, and prioritize procedures for tasks that are repetitive/routine or high impact on error (backup, batch, startup/shutdown, incident handling, media management).
-- In each procedure, state the target system/task, prerequisites and preconditions, step by step method, responsible party and required privileges, normal completion criteria, and handling of abnormal/error conditions with escalation contacts.
+- Identify the operational activities of information processing facilities and systems, and prioritize procedures for tasks that are repetitive/routine or high impact in the event of an error (backup, batch, startup/shutdown, incident handling, media management).
+- In each procedure, state the target system/task, prerequisites and preconditions, step-by-step method, responsible party and required privileges, normal completion criteria, and handling of abnormal/error conditions with escalation contacts.
 - Bring operating procedures into the organization's document management scheme (version, author/reviewer/approver, revision history, distribution scope) so the current version is clearly identifiable.
 - Define access paths and permissions so personnel can consult procedures immediately when needed, balancing access control with availability (for example, offline copies and an emergency access method).
 - On system, configuration, or environment changes, update the related procedures in conjunction with change management, and route the updates through review and approval.
@@ -42,7 +42,7 @@ This control requires that the activities used to operate information processing
 
 ## Evidence
 
-- Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, etc.)
+- Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, and so on)
 - Version/revision history and author/reviewer/approver records for the procedures
 - Distribution and access status of operating procedures (access permission lists, publication locations)
 - Records of procedure updates linked to change management records

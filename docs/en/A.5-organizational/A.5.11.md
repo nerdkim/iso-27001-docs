@@ -16,7 +16,7 @@ This control requires that personnel and external parties return all organizatio
 
 ## Key checkpoints
 
-1. Is the scope and list of assets to be returned defined in advance for retirement/job change/contract termination, so it can be reconciled one-to-one against the assets issued to each individual?
+1. Are the scope and list of assets to be returned defined in advance for retirement/job change/contract termination, so it can be reconciled one-to-one against the assets issued to each individual?
 2. Is the asset return procedure linked to the HR/contract-termination process so it runs without omission, and are return confirmation records (signatures/confirmation forms) kept?
 3. Are physical and logical access rights (access cards, accounts, VPN, remote access) revoked/disabled at the same time as return?
 4. For assets that are hard to return (work information stored on personally owned devices, cloud accounts), are measures for information transfer/deletion/access blocking in place, and are the results verified?

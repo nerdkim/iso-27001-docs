@@ -29,7 +29,7 @@ This control requires the organization to define secure engineering principles a
 - Make the principles concrete as reusable reference architectures, secure design patterns, and standard components (authentication/authorization modules, cryptographic libraries, logging components) so projects can adopt them easily.
 - When designing a system, diagram trust boundaries and data flows, and place authentication/authorization/input validation/encryption/logging controls at each boundary to design layered defense.
 - Design accounts and privileges around least privilege and segregation of duties by default, and apply least privilege to administrative/service accounts and system-to-system integrations as well.
-- Establish security baselines that make the principles concrete per adopted technology (hardening standards, network segregation, secrets management for cloud/containers/APIs/microservices) and reflect them in designs.
+- Establish security baselines that make the principles concrete for each adopted technology such as cloud/containers/APIs/microservices (hardening standards, network segregation, secrets management, and so on), and reflect them in designs.
 - Check compliance with the principles at design review (and threat modeling), and manage exceptions with documented risk assessment/approval/compensating controls/expiry.
 - Review and update the principles and reference architectures periodically based on threat intelligence, lessons from incidents, and the adoption of new technologies, and keep a change history.
 

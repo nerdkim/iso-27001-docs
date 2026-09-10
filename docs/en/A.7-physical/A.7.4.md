@@ -25,7 +25,7 @@ The purpose is to keep facilities that hold information and information processi
 
 ## Implementation guidance
 
-- Define the areas and points that need monitoring from risk assessment, and deploy a layered combination of surveillance cameras, intrusion detection, alarms, and staffed guarding.
+- Define, from the risk assessment, the areas and points that need monitoring, and deploy a layered combination of surveillance cameras, intrusion detection, alarms, and staffed guarding.
 - Map key points and blind spots such as doors, entry routes, loading bays, and data center or server room interiors, and minimize blind spots through camera fields of view and sensor placement.
 - Set retention periods and storage media for monitoring records, and protect the record store physically and logically so an intruder cannot delete or alter the records.
 - Integrate alarms so that a control or security operator is notified immediately, and document the verification, on-site dispatch, and escalation stages along with response-time targets.

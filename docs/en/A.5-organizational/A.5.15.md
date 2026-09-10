@@ -28,7 +28,7 @@ This control requires the organization to establish and implement rules that gra
 - Document the access control policy and state its core principles, including need-to-know/need-to-use, least privilege, and consideration of segregation of duties.
 - Define access rules according to asset classification level and risk assessment results, and choose an authorization model suited to the organization, such as role-based (RBAC) or attribute-based (ABAC).
 - Manage physical access (protected areas/facilities) and logical access (systems/applications/databases/networks) consistently under one policy framework.
-- Limit access to networks and network services to explicitly authorized scope, and set the baseline policy to deny by default.
+- Limit access to networks and network services to the explicitly authorized scope, and set the baseline policy to deny by default.
 - Define procedures for requesting, approving, granting, modifying, and revoking access rights, and designate the owner and required records for each step.
 - Review access rights periodically to prevent excessive accumulation, and promptly adjust or revoke rights upon role change, resignation, or contract termination.
 - Check the consistency between access rules and actual granted results (whether policy matches real configuration) and retain the history.
@@ -45,7 +45,7 @@ This control requires the organization to establish and implement rules that gra
 - Access control policy/guideline documents (including principles, scope, and authorization model)
 - Access rule definitions linked to asset classification/criticality (such as a role-based permission matrix)
 - Records of requesting/approving/granting/modifying/revoking access rights
-- Network and network service access approvals and configurations (firewall/access control lists, etc.)
+- Network and network service access approvals and configurations (firewall/access control lists, and so on)
 - Results of periodic access rights reviews and records of resulting actions
 - Records of access control policy communication/training
 

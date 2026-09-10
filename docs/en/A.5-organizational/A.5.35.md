@@ -26,12 +26,12 @@ This control requires the organization's approach to managing information securi
 ## Implementation guidance
 
 - Establish a plan to independently review the information security approach and its implementation, defining both a regular cadence (for example, at least annually) and the trigger criteria for ad hoc reviews when significant changes occur (reorganization, major incident, new regulation, major system change).
-- Position the reviewer independently from the operation and responsibility of the area being reviewed, using an internal audit function, a separate unit, or an external specialist body, and confirm the reviewer's competence and absence of conflicts of interest in advance.
+- Position the reviewer independently of the operation and responsibility of the area being reviewed, using an internal audit function, a separate unit, or an external specialist body, and confirm the reviewer's competence and absence of conflicts of interest in advance.
 - Include in the review scope the adequacy of policies/guidelines/procedures, the design and actual implementation of controls, whether risk assessment/treatment results are reflected, and compliance with legal/contractual requirements, and clearly define the target systems/units/processes.
 - Perform the review on an evidence basis by combining document review, interviews with staff, on-site verification, sampling of logs/records, and technical checks where necessary, recording the basis and risk level for each finding.
 - Compile the results into a report containing findings, risk levels, and improvement recommendations, report it to management (the information security officer/top management), and feed it into management system improvement and the management review as an input.
 - For each improvement recommendation, establish an action plan with an assigned owner and deadline, track progress and completion, and re-confirm the effectiveness of completed actions in a subsequent review.
-- Retain review plans/reports/action histories as records so that it can be demonstrated the reviews were actually performed independently and periodically and led to improvement.
+- Retain review plans/reports/action histories as records so that it can be demonstrated that the reviews were actually performed independently and periodically and led to improvement.
 
 ## Related controls and attributes
 

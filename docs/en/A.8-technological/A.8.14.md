@@ -52,7 +52,7 @@ This control requires that information processing facilities (servers, storage, 
 
 ## Nonconformity examples
 
-- Only some equipment is made redundant without defined availability requirements, while other layers such as power/links remain single, leaving SPOFs.
+- Only some equipment is made redundant without defined availability requirements, while other layers such as power/links remain in a single configuration, leaving SPOFs.
 - Redundancy is configured but failover has never been tested, so switchover fails during a real incident.
 - The standby node lacks capacity/performance, so the service cannot run normally after switchover.
 - Replication lag is not managed, causing data loss/inconsistency after switchover.

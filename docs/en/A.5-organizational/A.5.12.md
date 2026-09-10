@@ -27,7 +27,7 @@ This control requires information to be classified according to its confidential
 
 - Design the class scheme to be simple and fit the organization's size and business (for example, 3 to 4 levels such as public/internal/restricted/confidential). Too many levels reduce practical compliance.
 - Describe in each class definition the impact from a confidentiality/integrity/availability perspective (expected damage from disclosure/alteration/disruption), so staff have a basis for deciding the level.
-- Link classification to the information asset inventory (A.5.9) so that asset owners assign/approve the class and specify a procedure for periodic re-review.
+- Link classification to the information asset inventory (A.5.9) so that asset owners assign/approve the class, and specify a procedure for periodic re-review.
 - Identify legally protected data (personal data, unique identifiers, trade secrets) with separate tags or labels so they connect automatically to the handling rules.
 - Define how to mark (label) classification per medium (documents/files/email/databases), and where possible turn the class into metadata using DLP and document security tools for enforcement.
 - Assign responsibility for the initial classification of newly created and collected information, and set a default (how to treat unclassified items) to prevent gaps.
@@ -35,7 +35,7 @@ This control requires information to be classified according to its confidential
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1.2/6.1.3 (Information security risk treatment), 7.5 (Documented information), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 6.1.2/6.1.3 (Information security risk assessment/treatment), 7.5 (Documented information), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.9 (Inventory of information and other associated assets), A.5.13 (Labelling of information), A.5.10 (Acceptable use of information and other associated assets), A.8.10 (Information deletion), A.8.12 (Data leakage prevention)
 - ISMS-P mapping: 1.2.1 Identification of information assets (establishing classification criteria and rating importance) (related: 2.1.3 Information asset management)
 - 2013 mapping: A.8.2.1 (Classification of information)

@@ -18,7 +18,7 @@ This control requires the organization to identify the privacy protection requir
 
 1. Are the types, processing purposes, and flows of the PII the organization processes identified, and are the applicable privacy-related legal, regulatory, and contractual requirements understood?
 2. Is a policy/guideline on privacy and PII protection established, and is it communicated and shared with all personnel and parties involved in PII processing?
-3. Is an accountable owner for PII protection (such as a privacy officer) and a point of contact appointed, with roles and authority defined?
+3. Are an accountable owner for PII protection (such as a privacy officer) and a point of contact appointed, with roles and authority defined?
 4. Are technical and organizational safeguards applied across the PII lifecycle: collection, use, provision, storage, and disposal?
 5. Is there a procedure to receive and handle data subject requests such as access, correction, deletion, and suspension of processing?
 6. Are privacy risks associated with PII processing, such as those from new services or systems, assessed and reflected in the controls?

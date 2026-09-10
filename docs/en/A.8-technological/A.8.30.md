@@ -17,7 +17,7 @@ This control ensures that when all or part of system development is outsourced t
 ## Key checkpoints
 
 1. Do outsourced development contracts/requests for proposal (RFP) specify security requirements (secure coding, testing, deliverables, intellectual property, data handling, right to audit, and so on)?
-2. Is the supplier's secure development capability and security management maturity assessed before contracting and reflected in the selection criteria?
+2. Are the supplier's secure development capability and security management maturity assessed before contracting and reflected in the selection criteria?
 3. Are there procedures and deliverable submission requirements that let the organization check/oversee fulfillment of its security requirements during development?
 4. Is security verification (security testing, vulnerability assessment, source code review, malware/backdoor checks) performed before accepting deliverables, and are the results reflected in acceptance approval?
 5. Are controls defined for the source code, data, access privileges, and development environment provided or created for the project, along with return/destruction procedures at contract termination?
@@ -25,7 +25,7 @@ This control ensures that when all or part of system development is outsourced t
 
 ## Implementation guidance
 
-- Include, in specific terms, in the outsourced development contract and RFP: the security requirements, the secure development standards/secure coding rules to comply with, the deliverable list, acceptance criteria, right to audit, and sanctions for violations.
+- Include in the outsourced development contract and RFP, in specific terms, the security requirements, the secure development standards/secure coding rules to comply with, the deliverable list, acceptance criteria, right to audit, and sanctions for violations.
 - Assess secure development capability, personnel security, past track record, and sub-contract management ability when selecting a supplier, and stipulate that sub-contracting requires prior approval and inherits equivalent security obligations.
 - Minimize production data provided for development, replacing it with pseudonymized/anonymized or test data, and grant least-privilege access to source code/development environment/documentation with access logging.
 - Direct and oversee requirement fulfillment through phase-based security checks (design review, interim deliverable review, sharing of security test results) and regular reporting.

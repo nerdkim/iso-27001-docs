@@ -15,9 +15,10 @@ source material:
 
 2. Documentation and reference collection (CC BY 4.0)
    The original explanatory text in both languages, and the selection,
-   structuring, and compilation of the material (the content under docs/, and
-   the prose in the meta/project documents) are licensed under the Creative
-   Commons Attribution 4.0 International License. See LICENSE-CONTENT. The
+   structuring, and compilation of the material (the content under docs/, the
+   compiled data under extended/, and the prose in the meta/project documents)
+   are licensed under the Creative Commons Attribution 4.0 International
+   License. See LICENSE-CONTENT. The
    Korean and English documents are both this project's own writing; neither
    is a translation of the other, and neither translates an official text.
 
@@ -37,12 +38,14 @@ The licenses above apply only to this project's own work. The following remain
 the property of their respective owners and are governed by their own terms:
 
 - Official ISMS-P material: this repository does not reproduce the ISMS-P
-  certification criteria. It carries only cross-reference mappings, that is
+  certification criteria. It carries only cross-reference mappings, that is,
   the official item number and its short item name (for example, "2.5.4
   Password management"), used as factual reference data in the same way as the
   ISO control numbers below. Those item numbers and names are works of the
-  Korean authorities, the Korea Internet and Security Agency (KISA) and the
-  Personal Information Protection Commission (PIPC). This project does not
+  Korean authorities: the certification criteria are a joint notice of the
+  Ministry of Science and ICT (MSIT) and the Personal Information Protection
+  Commission (PIPC), and the Korea Internet and Security Agency (KISA)
+  publishes the criteria guide. This project does not
   claim ownership of them and does not relicense them. Consult the official
   sources for authoritative wording.
 

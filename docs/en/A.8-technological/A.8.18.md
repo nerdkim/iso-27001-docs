@@ -12,7 +12,7 @@
 
 ## Control objective
 
-Privileged utility programs are tools capable of overriding or bypassing the normal controls of a system or application, such as access control, authorization checks, and logging. This control requires the organization to restrict and tightly govern the possession, installation, and use of such tools, so that unauthorized users cannot exploit them to alter data/systems or evade controls. By ensuring they are used only by the minimum necessary personnel, only when needed, and in a verified/recorded manner, the control protects operational stability and the integrity/confidentiality of information.
+Privileged utility programs are tools capable of overriding or bypassing normal system or application controls such as access control, authorization checks, and logging. This control requires the organization to restrict and tightly govern the possession, installation, and use of such tools, so that unauthorized users cannot exploit them to alter data/systems or evade controls. By ensuring they are used only by the minimum necessary personnel, only when needed, and in a verified/recorded manner, the control protects operational stability and the integrity/confidentiality of information.
 
 ## Key checkpoints
 
@@ -38,12 +38,12 @@ Privileged utility programs are tools capable of overriding or bypassing the nor
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.2 (Privileged access rights), A.8.3 (Information access restriction), A.8.5 (Secure authentication), A.8.19 (Installation of software on operational systems), A.8.15 (Logging), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.5.5 Special account and privilege management (from the usage-control/recording angle, it also relates to 2.6.2 Information system access)
+- ISMS-P mapping: 2.5.5 Special account and privilege management (from the usage-control/recording angle, it also relates to 2.6.2 Information system access and 2.9.4 Log and access record management)
 - 2013 mapping: A.9.4.4 (Use of privileged utility programs)
 
 ## Evidence
 
-- Inventory identifying and managing privileged utility programs
+- Inventory of identified and managed privileged utility programs
 - Approval requests and records for installing/using privileged utilities
 - Records of granting/revoking usage rights and periodic rights reviews
 - Privileged utility usage logs and monitoring/alert records

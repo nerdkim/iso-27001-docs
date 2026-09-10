@@ -34,10 +34,10 @@ This control requires the organization to plan in advance so that its informatio
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 Actions to address risks and opportunities, 8.1 Operational planning and control, 10.1/10.2 Continual improvement and corrective action
-- Adjacent Annex A: A.5.30 ICT readiness for business continuity, A.5.24 Information security incident management planning and preparation, A.5.26 Response to information security incidents, A.8.13 Information backup, A.8.14 Redundancy of information processing facilities
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 10.1/10.2 (Continual improvement, nonconformity and corrective action)
+- Adjacent Annex A: A.5.30 (ICT readiness for business continuity), A.5.24 (Information security incident management planning and preparation), A.5.26 (Response to information security incidents), A.8.13 (Information backup), A.8.14 (Redundancy of information processing facilities)
 - ISMS-P mapping: 2.12.1 Safety measures for disaster and emergency preparedness (related: 2.12.2 Disaster recovery testing and improvement, 2.9.3 Backup and recovery management)
-- 2013 mapping: A.17.1.1 (Planning information security continuity), A.17.1.2 (Implementing information security continuity), A.17.1.3 Verify, review and evaluate information security continuity
+- 2013 mapping: A.17.1.1 (Planning information security continuity), A.17.1.2 (Implementing information security continuity), A.17.1.3 (Verify, review and evaluate information security continuity)
 
 ## Evidence
 

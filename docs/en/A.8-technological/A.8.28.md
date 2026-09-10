@@ -18,7 +18,7 @@ The organization is required to define secure coding principles and standards su
 
 1. Are secure coding standards or guidelines established per programming language/framework in use, and shared with developers?
 2. Is there a procedure to detect and remediate vulnerabilities during coding and build using automated tools such as static analysis (SAST)?
-3. Are vulnerabilities, licenses, and currency of external libraries/open source components identified and managed?
+3. Are the vulnerabilities and licenses of external libraries/open source components identified, and is their currency managed?
 4. Is secure coding training delivered to developers on a regular basis, with completion status tracked?
 5. Do code review and merge/release approval procedures include security check items?
 6. Are severity classification, remediation deadlines, and recurrence prevention for identified vulnerabilities tracked and managed?
@@ -34,7 +34,7 @@ The organization is required to define secure coding principles and standards su
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: Clause 8 (Operation), 7.2 (Competence)/7.3 (Awareness), 6.1 (Actions to address risks and opportunities)
+- ISO 27001 clauses: 8.1 (Operational planning and control), 7.2 (Competence)/7.3 (Awareness), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles), A.8.29 (Security testing in development and acceptance), A.8.8 (Management of technical vulnerabilities)
 - ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.8.5 Source program management)
 - 2013 mapping: New in 2022
@@ -52,7 +52,7 @@ The organization is required to define secure coding principles and standards su
 
 - Secure coding standards exist but are not applied to actual development or the pipeline, remaining as formal documents only.
 - High/medium severity vulnerabilities from SAST results are left unremediated for a long period with no exception approval justification.
-- An outdated version of an open source library with known vulnerabilities (CVEs) is deployed to production as is.
+- An outdated version of an open source library with known vulnerabilities (CVEs) is deployed to production as-is.
 - API keys and database passwords are hardcoded in source code and committed to the version control repository.
 - A code review procedure is defined, but reviews are performed with a focus on functionality only, without security check items.
 

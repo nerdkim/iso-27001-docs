@@ -14,20 +14,20 @@ generated from these files or exists to guard them.
 public Annex A control list. The explanatory body of every document is **original material** written
 by this project for practical reference.
 
-The normative text of ISO/IEC 27001:2022, its implementation guidance, and its attribute tables are
-not reproduced, paraphrased close to the source, or translated here. Each document carries a source
-and limitation notice at the bottom saying so. For an authoritative answer, use a licensed copy of
-the standard.
+The normative text of ISO/IEC 27001:2022 and 27002:2022, their implementation guidance, and their
+attribute tables are not reproduced, paraphrased close to the source, or translated here. Each
+document carries a source and limitation notice at the bottom saying so. For an authoritative
+answer, use a licensed copy of the standard.
 
 This boundary is a hard rule when editing, and it is also the reason the update model here differs
 from an ordinary mirror of an upstream document. See [../UPDATES.md](../UPDATES.md).
 
 ## Read-only
 
-Treat this directory as **immutable while using the corpus**. `tools/check_corpus.py` only reads from here and
-`tools/build_index.py` writes nothing but the generated `INDEX.md` files, and an agent answering
-questions with the corpus must never create, edit, or delete anything under `docs/`. Derived
-output belongs in the consuming workspace.
+Treat this directory as **immutable while using the corpus**. `tools/check_corpus.py` only reads
+from here, `tools/build_index.py` writes nothing under `docs/` but the generated `INDEX.md` files,
+and an agent answering questions with the corpus must never create, edit, or delete anything under
+`docs/`. Derived output belongs in the consuming workspace.
 
 Maintainers do edit these files. That is a different activity, with its own rules: see
 [../CLAUDE.md](../CLAUDE.md) and the parity rule below.
@@ -79,7 +79,9 @@ safe to depend on.
 Unlike the ISMS-P corpus, neither language here is a translation of the other, and neither is
 subordinate: both are this project's own writing. They must still say the same thing, and they must
 change **in the same commit**. A Korean-only or English-only content edit is a defect, and CI
-rejects it. The correspondence is keyed by control number.
+rejects it when the two languages carry a different number of items in a counted section.
+Rewording that keeps the counts equal is caught in review, not by CI. The correspondence is keyed
+by control number.
 
 ## For AI agents: route through the manifest
 
@@ -87,7 +89,8 @@ Do not grep `docs/` blindly. Start from [`../extended/manifest.json`](../extende
 which indexes every document with its `no`, `path`, theme, and per-section counts. Narrow to the
 relevant control numbers first, then read only those files. When only the lists are needed, read
 `../extended/index/evidence-dictionary.json` or `../extended/index/nonconformity-rulebook.json`
-instead of the documents.
+instead of the documents. Those two files are Korean; the English lists are the same names with
+`.en` before `.json`.
 
 The full operating rules (read-only corpus, manifest-first routing, mandatory citation, the
 copyright boundary, human approval gates) are in [../extended/README.md](../extended/README.md).

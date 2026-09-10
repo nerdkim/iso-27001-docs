@@ -1,11 +1,11 @@
-# A.8.1 사용자 엔드포인트 기기 (User endpoint devices)
+# A.8.1 사용자 엔드포인트 기기(User endpoint devices)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.8 기술적 통제 (Technological controls) |
+| 테마 | A.8 기술적 통제(Technological controls) |
 | 통제 | A.8.1 사용자 엔드포인트 기기 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.10.6 업무용 단말기기 보안 |
 | 2013 대응 | A.6.2.1, A.11.2.8 |

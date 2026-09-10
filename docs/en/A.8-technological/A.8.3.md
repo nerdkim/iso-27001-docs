@@ -18,7 +18,7 @@ This control restricts access to information and application system functions in
 
 1. Is access to information and application system functions restricted according to the access control policy and per-duty authorization definitions (roles/menus/functions/data scope)?
 2. Following least privilege and need-to-know, are the accessible data and functions separated per user/role?
-3. Are unauthorized accesses blocked at the screen/menu/function/record/field level, and is the scope of viewing/output/download of results controlled?
+3. Is unauthorized access blocked at the screen/menu/function/record/field level, and is the scope of viewing/output/download of results controlled?
 4. Are sensitive functions (bulk queries, downloads, administrator menus, and so on) separately restricted/approved and logged?
 5. Are applications configured to access back-end resources (databases/files/APIs) using least-privilege accounts?
 

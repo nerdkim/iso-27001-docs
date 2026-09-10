@@ -20,16 +20,16 @@ This control ensures that, when applications are developed or acquired/purchased
 2. Are requirements for authentication/authorization/session management/access control specifically reflected in the requirements specification?
 3. Are requirements for addressing application vulnerabilities (input validation, output encoding, safe error handling, protection against injection/tampering) defined?
 4. For transactions/transmissions over public networks, are requirements defined for transport encryption, transaction integrity, non-repudiation, and prevention of incomplete/duplicated/replayed/misrouted messages?
-5. Are legal/contractual requirements (for personal data, payment data, etc.) and logging/audit-trail requirements reflected?
+5. Are legal/contractual requirements (for personal data, payment data, and so on) and logging/audit-trail requirements reflected?
 6. Are the defined security requirements verified/tested during the design/implementation/testing stages and approved before release?
 
 ## Implementation guidance
 
-- Establish a security requirements catalog/checklist keyed to application type (web/mobile/API/electronic transaction, etc.), data classification, and exposure environment, and select requirements based on the risk assessment at project initiation.
+- Establish a security requirements catalog/checklist keyed to application type (web/mobile/API/electronic transaction, and so on), data classification, and exposure environment, and select requirements based on the risk assessment at project initiation.
 - Specify requirements for authentication (including multi-factor), authorization and least privilege, session management, and access control, and define control requirements for interactions between users/systems of differing trust levels.
-- Define defenses against known vulnerabilities such as input validation, output encoding/escaping, safe error handling, injection/XSS/CSRF/insecure deserialization, linked to the secure coding standard (A.8.28).
+- Define requirements for addressing known vulnerabilities, such as input validation, output encoding/escaping, safe error handling, and protection against injection/XSS/CSRF/insecure deserialization, linked to the secure coding standard (A.8.28).
 - For public-network/electronic-transaction applications, define requirements for transport encryption (TLS), transaction integrity and non-repudiation (digital signatures/timestamps), prevention of incomplete/duplicated/replayed/misrouted messages, and payment/settlement validation.
-- Where personal data and payment data are processed, reflect applicable laws/standards (data protection law, PCI DSS, etc.) together with data retention/disposal and logging/audit-trail requirements.
+- Where personal data and payment data are processed, reflect applicable laws/standards (data protection law, PCI DSS, and so on) together with data retention/disposal and logging/audit-trail requirements.
 - Maintain traceability (requirement IDs) for the defined security requirements so they can be verified in design/implementation/testing (A.8.29), and for acquired (purchased/SaaS) products, assess and approve whether the supplier's security features meet the requirements.
 
 ## Related controls and attributes
@@ -44,7 +44,7 @@ This control ensures that, when applications are developed or acquired/purchased
 - Application security requirements specification/checklist and approval records
 - Risk assessment and data classification results underpinning the requirements
 - Authentication/authorization/access control/session management design documents
-- Specification and applied records for public-network/electronic-transaction requirements (transport encryption, transaction integrity, non-repudiation, etc.)
+- Specification and applied records for public-network/electronic-transaction requirements (transport encryption, transaction integrity, non-repudiation, and so on)
 - Test/verification results for security requirements (design reviews, security test reports)
 - Supplier security requirement conformance assessment and approval documents for acquired applications
 

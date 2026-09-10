@@ -186,7 +186,7 @@
     "Access control policy/guideline documents (including principles, scope, and authorization model)",
     "Access rule definitions linked to asset classification/criticality (such as a role-based permission matrix)",
     "Records of requesting/approving/granting/modifying/revoking access rights",
-    "Network and network service access approvals and configurations (firewall/access control lists, etc.)",
+    "Network and network service access approvals and configurations (firewall/access control lists, and so on)",
     "Results of periodic access rights reviews and records of resulting actions",
     "Records of access control policy communication/training"
    ]
@@ -306,7 +306,7 @@
     "Response playbooks by incident type, first-action checklists, reporting channel guidance",
     "Summary table of legal or regulatory notification requirements and deadlines, external communication guidelines",
     "Exercise plans and result reports, procedure revision history",
-    "Contracts or cooperation arrangements with external specialists (forensics, legal, etc.)"
+    "Contracts or cooperation arrangements with external specialists (forensics, legal, and so on)"
    ]
   },
   "A.5.25": {
@@ -379,7 +379,7 @@
    "path": "docs/en/A.5-organizational/A.5.30.md",
    "evidence": [
     "Business impact analysis (BIA) results and the RTO/RPO definition for each critical ICT service",
-    "ICT continuity/recovery strategy document and architecture diagrams (redundancy, alternate processing facilities, backup architecture, etc.)",
+    "ICT continuity/recovery strategy document and architecture diagrams (redundancy, alternate processing facilities, backup architecture, and so on)",
     "ICT disaster recovery plan (DRP)/recovery procedures (including invocation criteria, recovery stages, roles/responsibilities, emergency contact lists)",
     "Recovery test plan and test result reports (RTO/RPO achievement, identified gaps, and improvement follow-up)",
     "Records of offsite storage of backups and configuration/documents, and recoverability verification (restore testing)",
@@ -409,7 +409,7 @@
     "Software asset register (licenses held, installation status, usage) and periodic reconciliation/audit results",
     "License agreements, purchase records, certificates, and expiry/renewal management records",
     "Results of unauthorized/illegal software detection (asset scanning/inventory) and remediation records",
-    "Open source usage review sheets, SBOM, and evidence of meeting license obligations (attribution notices, etc.)",
+    "Open source usage review sheets, SBOM, and evidence of meeting license obligations (attribution notices, and so on)",
     "IPR awareness training materials/undertakings, and intellectual property ownership and confidentiality clauses in contracts"
    ]
   },
@@ -471,7 +471,7 @@
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.37.md",
    "evidence": [
-    "Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, etc.)",
+    "Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, and so on)",
     "Version/revision history and author/reviewer/approver records for the procedures",
     "Distribution and access status of operating procedures (access permission lists, publication locations)",
     "Records of procedure updates linked to change management records",
@@ -524,7 +524,7 @@
    "path": "docs/en/A.6-people/A.6.4.md",
    "evidence": [
     "Disciplinary process/regulation document applied to information security breaches, and record of management approval",
-    "Action criteria by violation type (e.g., a table for deciding the level of action) and documents linking to work rules/internal regulations",
+    "Action criteria by violation type (for example, a table for deciding the level of action) and documents linking to work rules/internal regulations",
     "Breach investigation reports, the individual's response materials, and deliberation/decision records",
     "Notification documents of disciplinary outcomes and records of follow-up actions such as revocation of access rights",
     "Training materials and security agreements used to make the disciplinary process known",
@@ -655,7 +655,7 @@
    "theme": "A.7 Physical controls",
    "path": "docs/en/A.7-physical/A.7.6.md",
    "evidence": [
-    "Work control procedure/guideline for secure areas (permitted work, approving authority, rules, etc.)",
+    "Work control procedure/guideline for secure areas (permitted work, approving authority, rules, and so on)",
     "Work request/approval records (including electronic approval) and work completion confirmations",
     "Identity verification materials for external workers, temporary badge issuance/return register, escort/supervision records",
     "Register of equipment and storage media brought in and out during work",
@@ -674,7 +674,7 @@
     "Status of provided storage means such as lockable drawers/cabinets/safes",
     "Walk-through/self-inspection checklists and inspection results",
     "Awareness training materials and violation-response records",
-    "Document disposal (shredding, etc.) procedure and disposal records"
+    "Document disposal (shredding, and so on) procedure and disposal records"
    ]
   },
   "A.7.8": {
@@ -750,7 +750,7 @@
     "Inventory of equipment subject to maintenance and the maintenance plan or schedule (including preventive servicing cycles)",
     "Maintenance logs, work orders, and inspection checklists (performer, actions taken, parts replaced)",
     "Maintenance contracts and SLAs, warranty documents, and non-disclosure agreements (NDAs) with external technicians",
-    "Entry and attendance records for external technicians and approval records for access scope",
+    "Entry/escort records for external technicians and approval records for access scope",
     "Approval records and session logs for remote maintenance",
     "Records confirming data backup and removal before off-site repair, and recheck records of normal operation and security settings after maintenance"
    ]
@@ -992,7 +992,7 @@
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.18.md",
    "evidence": [
-    "Inventory identifying and managing privileged utility programs",
+    "Inventory of identified and managed privileged utility programs",
     "Approval requests and records for installing/using privileged utilities",
     "Records of granting/revoking usage rights and periodic rights reviews",
     "Privileged utility usage logs and monitoring/alert records",
@@ -1021,7 +1021,7 @@
     "Network diagrams and network asset/zone inventories",
     "Firewall/ACL policies and policy review (periodic re-review) records",
     "Network device security configuration standards and applied configuration records (snapshots/inspection results)",
-    "Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, etc.)",
+    "Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, and so on)",
     "Log collection and monitoring/alerting configuration for network/security devices, and anomaly detection/response records",
     "External network service contracts/SLAs and fulfillment review results"
    ]
@@ -1032,9 +1032,9 @@
    "path": "docs/en/A.8-technological/A.8.21.md",
    "evidence": [
     "Network service inventory and per-service security feature/requirement definitions",
-    "Documentation of service levels (availability/bandwidth/recovery time, etc.) and security characteristics",
+    "Documentation of service levels (availability/bandwidth/recovery time, and so on) and security characteristics",
     "External network service contracts/SLAs and the security requirements stated therein (including subcontracting/notification/audit clauses)",
-    "Security feature implementation verification records (configuration snapshots for VPN/firewall/DNS, etc., and inspection results)",
+    "Security feature implementation verification records (configuration snapshots for VPN/firewall/DNS, and so on, and inspection results)",
     "Service level/security feature monitoring reports and corrective-request/escalation records for shortfalls",
     "Security review and change management records for the introduction/change of network services"
    ]
@@ -1071,7 +1071,7 @@
    "path": "docs/en/A.8-technological/A.8.24.md",
    "evidence": [
     "Cryptography policy/guideline documents and the approved algorithm/minimum key length reference table",
-    "A status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)",
+    "Status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)",
     "Key management procedures and the key lifecycle register (generation/rotation/destruction history)",
     "HSM/KMS access privilege lists and access/operation logs",
     "TLS configuration review results (evidence of disabling weak versions/cipher suites) and vulnerability assessment reports",
@@ -1100,7 +1100,7 @@
     "Application security requirements specification/checklist and approval records",
     "Risk assessment and data classification results underpinning the requirements",
     "Authentication/authorization/access control/session management design documents",
-    "Specification and applied records for public-network/electronic-transaction requirements (transport encryption, transaction integrity, non-repudiation, etc.)",
+    "Specification and applied records for public-network/electronic-transaction requirements (transport encryption, transaction integrity, non-repudiation, and so on)",
     "Test/verification results for security requirements (design reviews, security test reports)",
     "Supplier security requirement conformance assessment and approval documents for acquired applications"
    ]

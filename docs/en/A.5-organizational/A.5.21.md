@@ -12,14 +12,14 @@
 
 ## Control objective
 
-This control identifies and manages the risks that arise across the acquisition and use of ICT products and services. Hardware, software, firmware, cloud, and managed services reach an organization through multiple upstream and downstream suppliers, so a vulnerability or tampering in a single component can propagate across the whole environment. The control requires security requirements to flow down and be verified not only through the directly contracted supplier but along the full chain of sub-suppliers (subcontractors). Its aim is to assure the authenticity and integrity of components, prepare for supply disruption, and prevent risk proactively.
+This control requires the risks that arise across the acquisition and use of ICT products and services to be identified and managed. Hardware, software, firmware, cloud, and managed services reach an organization through multiple upstream and downstream suppliers, so a vulnerability or tampering in a single component can propagate across the whole environment. The control requires security requirements to flow down and be verified not only through the directly contracted supplier but along the full chain of sub-suppliers (subcontractors). Its aim is to assure the authenticity and integrity of components, prepare for supply disruption, and prevent risk proactively.
 
 ## Key checkpoints
 
 1. Is there a procedure to identify and assess ICT supply chain risks (component provenance, sub-suppliers, tampering/counterfeiting) when acquiring ICT products/services?
 2. Do contracts/agreements require security requirements to be propagated down to sub-suppliers (subcontractors)?
 3. Are there methods to verify the authenticity and integrity of acquired hardware/software components (genuineness, tamper checks, signature/hash verification)?
-4. Are software components (open source, third-party libraries) inventoried (e.g., an SBOM) with tracking of vulnerabilities, licenses, and end-of-life/support (EoL/EoS) status?
+4. Are software components (open source, third-party libraries) inventoried (for example, an SBOM) with tracking of vulnerabilities, licenses, and end-of-life/support (EoL/EoS) status?
 5. Have alternatives and continuity measures been considered for supply disruption, discontinuation, or supplier failure of critical ICT products/services?
 6. Is security verification and monitoring performed on components delivered through the supply chain, both before adoption and during operation?
 

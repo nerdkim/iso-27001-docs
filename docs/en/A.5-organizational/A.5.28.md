@@ -26,7 +26,7 @@ This control establishes and consistently applies, in advance, procedures for th
 
 - Define collection procedures and priorities for each evidence type (logs, disk images, memory dumps, network packets, documents, physical media), and specify an order that secures the most volatile evidence first (memory, sessions, temporary data).
 - Standardize a chain-of-custody record that captures the acquisition date/time, location, handler, handover details, and storage location without gaps, and update it at every movement or examination.
-- Work on verified copies (bit-level images) rather than analyzing the original directly, and generate a hash immediately after collection so that the copy can be proven identical to the original.
+- For digital evidence, work on verified copies (bit-level images) rather than analyzing the original directly, and generate a hash immediately after collection so that the copy can be proven identical to the original.
 - Use write-blocking devices, verified forensic tools, and time-synchronized (NTP) system clocks to ensure collection integrity and a reliable timeline.
 - Restrict evidence-handling privileges to a minimal set of qualified personnel, protect evidence with sealed and locked storage and access logs, and define retention periods and disposal procedures.
 - When handling evidence that contains personal or confidential information, comply with applicable laws and privacy requirements, and collect or examine only the minimum needed for the purpose of the investigation.
