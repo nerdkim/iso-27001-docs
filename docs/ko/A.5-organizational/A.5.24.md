@@ -1,11 +1,11 @@
-# A.5.24 정보보안 사고관리 계획 및 준비 (Information security incident management planning and preparation)
+# A.5.24 정보보안 사고관리 계획 및 준비(Information security incident management planning and preparation)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.5 조직적 통제 (Organizational controls) |
+| 테마 | A.5 조직적 통제(Organizational controls) |
 | 통제 | A.5.24 정보보안 사고관리 계획 및 준비 |
-| 통제 유형(참고) | 예방적 (Preventive) / 교정적 (Corrective) |
+| 통제 유형(참고) | 예방적(Preventive) / 교정적(Corrective) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.11.1 사고 예방 및 대응체계 구축 |
 | 2013 대응 | A.16.1.1 |

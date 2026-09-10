@@ -21,13 +21,13 @@ The purpose is to design and apply physical security to the individual offices, 
 3. Do signage, directories, door signs, and publicly available material avoid needlessly revealing the location and purpose of critical information processing facilities?
 4. Are measures in place so that screens, documents, and work inside cannot be observed, and conversations cannot be overheard, from outside through windows, glass walls, or open spaces?
 5. Are offices and facilities kept locked or sealed during unattended and out-of-hours periods, and is there a procedure to check that state?
-6. Has the siting and internal design of critical spaces accounted for natural and man-made hazards such as fire, flooding, explosion, and civil disturbance?
+6. Have the siting and internal design of critical spaces accounted for natural and man-made hazards such as fire, flooding, explosion, and civil disturbance?
 
 ## Implementation guidance
 
 - Set the physical security requirement level for each office, room, and facility from the sensitivity of the information it handles, and document the protective measures and responsibilities per space.
 - Locate critical facilities such as server rooms, communication rooms, and document stores away from lobbies, reception, and shared corridors where outsiders are frequent, and isolate them from general work areas.
-- Minimize or anonymize entries in building signage, floor directories, door signs, and external material so the exact location and purpose of critical facilities is not disclosed.
+- Minimize or anonymize entries in building signage, floor directories, door signs, and external material so the exact location and purpose of critical facilities are not disclosed.
 - Fit blinds, film, or partitions to windows and glass walls that expose the interior, and site spaces used for sensitive discussion with soundproofing and screening in mind.
 - Keep offices and facilities locked during out-of-hours and unattended periods, and periodically check keys, access media, and locking status to remediate anomalies.
 - Site critical spaces away from flood-prone basements or top floors, vulnerable positions adjacent to outer walls, and areas near hazardous-material storage, and design them together with fire and water-leak detection and HVAC and power provisions.

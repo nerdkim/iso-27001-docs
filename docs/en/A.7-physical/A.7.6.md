@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control requires that work performed inside secure areas (computer rooms, communications rooms, records storage, data centers, etc.), such as maintenance, construction, installation, cleaning, visits, and moving items in and out, be governed so that it does not lead to exposure, damage, unauthorized manipulation, or service disruption. Even where physical safeguards such as entry control and perimeters exist, unauthorized actions, photography, media introduction, or arbitrary configuration changes can occur at the moment work actually takes place. The organization should therefore preserve the security level even during work through prior approval, supervision during the work, and retention of work records. By managing the risk of the moment when people and equipment actually intervene in a secure area, this control reinforces the effectiveness of the overall physical security scheme.
+This control requires that work performed inside secure areas (computer rooms, communications rooms, records storage, data centers, and so on), such as maintenance, construction, installation, cleaning, visits, and moving items in and out, be governed so that it does not lead to exposure, damage, unauthorized manipulation, or service disruption. Even where physical safeguards such as entry control and perimeters exist, unauthorized actions, photography, media introduction, or arbitrary configuration changes can occur at the moment work actually takes place. The organization should therefore preserve the security level even during work through prior approval, supervision during the work, and retention of work records. By managing the risk of the moment when people and equipment actually intervene in a secure area, this control reinforces the effectiveness of the overall physical security scheme.
 
 ## Key checkpoints
 
@@ -20,7 +20,7 @@ This control requires that work performed inside secure areas (computer rooms, c
 2. Is work inside secure areas performed only after a prior request/approval process, with the purpose, scope, personnel, and equipment used recorded and managed?
 3. For external personnel such as maintenance contractors, are identity verification, temporary badge issuance, and continuous escort/supervision applied?
 4. Are risky actions during work, such as photography, bringing in storage media/personal devices, and unauthorized network connection, notified in advance and controlled?
-5. Is unattended lone work restricted, and are additional controls applied to work during vulnerable time windows (outside business hours, etc.)?
+5. Is unattended lone work restricted, and are additional controls applied to work during vulnerable time windows (outside business hours, and so on)?
 6. After work is completed, are the removal of introduced equipment/media confirmed, temporary changes reverted, and work records reviewed?
 
 ## Implementation guidance
@@ -30,7 +30,7 @@ This control requires that work performed inside secure areas (computer rooms, c
 - Issue temporary badges to external workers after identity verification, permit work only under the continuous escort/supervision of a responsible person, and recover the badge when work ends.
 - Notify in advance the rules to be observed during work, such as restrictions on cameras/personal devices/storage media, prohibition of photography, and prohibition of arbitrary network connection or system manipulation, and set criteria for action upon violation.
 - Prohibit unattended lone work, and apply reinforcing controls such as two-person teams or additional approval for work during vulnerable windows such as late night or holidays.
-- On completion, confirm the removal of equipment/media brought in, revert any temporarily granted rights or changed configurations, and review work records (request forms, entry logs, CCTV, etc.) to check for anomalies.
+- On completion, confirm the removal of equipment/media brought in, revert any temporarily granted rights or changed configurations, and review work records (request forms, entry logs, CCTV, and so on) to check for anomalies.
 - For repetitive work such as periodic maintenance, standardize the work procedure and approval method, and record work results and exceptions to feed into improvement.
 
 ## Related controls and attributes
@@ -42,7 +42,7 @@ This control requires that work performed inside secure areas (computer rooms, c
 
 ## Evidence
 
-- Work control procedure/guideline for secure areas (permitted work, approving authority, rules, etc.)
+- Work control procedure/guideline for secure areas (permitted work, approving authority, rules, and so on)
 - Work request/approval records (including electronic approval) and work completion confirmations
 - Identity verification materials for external workers, temporary badge issuance/return register, escort/supervision records
 - Register of equipment and storage media brought in and out during work

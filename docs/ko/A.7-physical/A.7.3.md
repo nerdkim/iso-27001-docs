@@ -1,11 +1,11 @@
-# A.7.3 사무실, 공간 및 설비 보안 (Securing offices, rooms and facilities)
+# A.7.3 사무실, 공간 및 설비 보안(Securing offices, rooms and facilities)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.7 물리적 통제 (Physical controls) |
+| 테마 | A.7 물리적 통제(Physical controls) |
 | 통제 | A.7.3 사무실, 공간 및 설비 보안 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.4.1 보호구역 지정 |
 | 2013 대응 | A.11.1.3 |

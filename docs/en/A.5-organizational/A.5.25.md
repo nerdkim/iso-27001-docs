@@ -17,7 +17,7 @@ This control assesses information security events against predefined categorizat
 ## Key checkpoints
 
 1. Are criteria (severity/impact/priority) defined for deciding whether an information security event is classified as an incident?
-2. Are received events assessed by a designated person/team (e.g., a response team) against the defined criteria?
+2. Are received events assessed by a designated person/team (for example, a response team) against the defined criteria?
 3. Are the assessment result, the incident classification decision, and its rationale recorded?
 4. For events decided to be incidents, are they connected to a response and escalation procedure matching their grade/priority?
 5. Are the assessment/decision criteria reviewed periodically to reduce false positives and missed detections?
@@ -33,8 +33,8 @@ This control assesses information security events against predefined categorizat
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 9.1 Monitoring, measurement, analysis and evaluation; 10.1 Continual improvement; 10.2 Nonconformity and corrective action
-- Adjacent Annex A: A.5.24 Information security incident management planning and preparation, A.5.26 Response to information security incidents, A.5.27 Learning from information security incidents, A.6.8 Information security event reporting, A.8.15 Logging, A.8.16 Monitoring activities
+- ISO 27001 clauses: 9.1 (Monitoring, measurement, analysis and evaluation), 10.1 (Continual improvement), 10.2 (Nonconformity and corrective action)
+- Adjacent Annex A: A.5.24 (Information security incident management planning and preparation), A.5.26 (Response to information security incidents), A.5.27 (Learning from information security incidents), A.6.8 (Information security event reporting), A.8.15 (Logging), A.8.16 (Monitoring activities)
 - ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system (related: 2.11.3 Anomaly analysis and monitoring, 2.11.5 Incident response and recovery)
 - 2013 mapping: A.16.1.4
 

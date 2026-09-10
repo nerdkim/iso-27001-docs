@@ -16,12 +16,12 @@ This control protects premises and information processing facilities against nat
 
 ## Key checkpoints
 
-1. Are physical and environmental threats identified for each site with regard to geographic location and surroundings (rivers, adjacent hazardous facilities, traffic, flooding history, etc.)?
-2. For each identified threat (fire, flooding, earthquake, power failure, lightning, etc.), are preventive and mitigating facilities in place proportionate to the risk level?
+1. Are physical and environmental threats identified for each site with regard to geographic location and surroundings (rivers, adjacent hazardous facilities, traffic, flooding history, and so on)?
+2. For each identified threat (fire, flooding, earthquake, power failure, lightning, and so on), are preventive and mitigating facilities in place proportionate to the risk level?
 3. Are environmental protection facilities such as fire detection and suppression, water-leak detection, temperature/humidity control, and UPS/emergency power inspected and tested regularly to confirm they operate correctly?
-4. Are critical facility areas such as server rooms and data centers sited or reinforced to avoid locations vulnerable to flooding, fire spread, or external impact (lowest basement level, beneath plumbing, adjacent to outer walls, etc.)?
+4. Are critical facility areas such as server rooms and data centers sited or reinforced to avoid locations vulnerable to flooding, fire spread, or external impact (lowest basement level, beneath plumbing, adjacent to outer walls, and so on)?
 5. Are procedures and responsibilities defined for alerting, initial response, notification of authorities, and escalation to responsible staff when a physical or environmental event occurs?
-6. Are threats arising from adjacent premises or external factors (nearby construction, hazardous material storage, leaks from upper floors, etc.) identified and addressed?
+6. Are threats arising from adjacent premises or external factors (nearby construction, hazardous material storage, leaks from upper floors, and so on) identified and addressed?
 
 ## Implementation guidance
 
@@ -53,7 +53,7 @@ This control protects premises and information processing facilities against nat
 
 - The server room sits in the building's lowest level, beneath plumbing, or against an outer wall, exposing it to flooding/leak risk, yet no mitigating measures are in place.
 - Fire detection/suppression, leak detection, and precision cooling exist but are not inspected or operationally tested, so it cannot be confirmed they actually work.
-- No physical or environmental threat identification has been performed with regard to geographic location or surroundings (flooding history, adjacent hazardous facilities, etc.).
+- No physical or environmental threat identification has been performed with regard to geographic location or surroundings (flooding history, adjacent hazardous facilities, and so on).
 - UPS/emergency generation capacity or runtime does not meet the actual load or recovery objectives, or fuel/battery condition is not checked.
 - No alarm or notification scheme exists for temperature/humidity, leak, or power anomalies, so events are not recognized early even when they occur.
 - Threats from adjacent premises or external factors such as leaks from upper floors or nearby construction are omitted from identification and treatment.

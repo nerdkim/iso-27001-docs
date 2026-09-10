@@ -21,7 +21,7 @@ This control requires that access rights to information and other associated ass
 3. Are privileged (administrator) rights and rights over sensitive assets treated separately from ordinary rights, with stricter approval, recording, and restriction applied?
 4. When a subject's status changes (job change/transfer/retirement/contract termination), are the associated access rights adjusted or revoked without delay?
 5. Does the asset owner periodically review the validity of granted access rights, and are unnecessary or excessive rights actually acted upon as a result?
-6. Is the consistency between the rights recorded in policy and the rights actually configured in systems reconciled, and are discrepancies handled?
+6. Are the rights recorded in policy reconciled against the rights actually configured in systems, and are discrepancies handled?
 
 ## Implementation guidance
 

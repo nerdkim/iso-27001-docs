@@ -33,8 +33,8 @@ This control ensures that matters classified as information security incidents a
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 10.2 Nonconformity and corrective action, 8.1 Operational planning and control, 7.4 Communication
-- Adjacent Annex A: A.5.24 Information security incident management planning and preparation, A.5.25 Assessment and decision on information security events, A.5.27 Learning from information security incidents, A.5.28 Collection of evidence, A.5.29 Information security during disruption, A.6.8 Information security event reporting
+- ISO 27001 clauses: 10.2 (Nonconformity and corrective action), 8.1 (Operational planning and control), 7.4 (Communication)
+- Adjacent Annex A: A.5.24 (Information security incident management planning and preparation), A.5.25 (Assessment and decision on information security events), A.5.27 (Learning from information security incidents), A.5.28 (Collection of evidence), A.5.29 (Information security during disruption), A.6.8 (Information security event reporting)
 - ISMS-P mapping: 2.11.5 Incident response and recovery
 - 2013 mapping: A.16.1.5 (Response to information security incidents)
 

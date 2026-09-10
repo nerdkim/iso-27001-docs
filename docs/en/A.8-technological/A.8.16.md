@@ -20,7 +20,7 @@ This control requires networks, systems, and applications to be observed on an o
 2. Are a normal-state baseline and anomaly detection rules/thresholds defined, and are they updated periodically to reflect threat intelligence and incident history?
 3. When an anomaly occurs, are alert generation, severity classification, and linkage (escalation) to the incident response process defined and operated?
 4. Are people, tools (such as a SIEM), and responsibilities assigned to perform monitoring continuously (including whether 24x7 is required)?
-5. Are the integrity and access control of the logs/alerts produced by monitoring themselves assured, and do they meet legal retention periods?
+5. Are the integrity and access control of the monitoring logs/alerts themselves assured, and do they meet legal retention periods?
 6. Are detection performance (false positives/false negatives) and alert handling times reviewed periodically to improve rules and baselines?
 
 ## Implementation guidance

@@ -1,11 +1,11 @@
-# A.5.4 경영진 책임 (Management responsibilities)
+# A.5.4 경영진 책임(Management responsibilities)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.5 조직적 통제 (Organizational controls) |
+| 테마 | A.5 조직적 통제(Organizational controls) |
 | 통제 | A.5.4 경영진 책임 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 1.1.1 경영진의 참여, 2.2.4 인식제고 및 교육훈련 |
 | 2013 대응 | A.7.2.1 |

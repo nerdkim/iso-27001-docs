@@ -21,7 +21,7 @@ This control requires a formal, previously communicated disciplinary process to 
 3. Is the disciplinary process designed to be consistent with applicable laws (labour/employment law) and the organization's work rules/internal regulations?
 4. When a breach is confirmed, are the steps of fact-finding investigation, opportunity for the individual to respond, decision, and notification carried out fairly and recorded?
 5. Is the existence of the disciplinary process and the consequences of a breach made known to personnel through training, agreements, and similar means?
-6. Are disciplinary outcomes linked to preventing recurrence and improving the management system (policy revision, additional training, etc.)?
+6. Are disciplinary outcomes linked to preventing recurrence and improving the management system (policy revision, additional training, and so on)?
 
 ## Implementation guidance
 
@@ -43,7 +43,7 @@ This control requires a formal, previously communicated disciplinary process to 
 ## Evidence
 
 - Disciplinary process/regulation document applied to information security breaches, and record of management approval
-- Action criteria by violation type (e.g., a table for deciding the level of action) and documents linking to work rules/internal regulations
+- Action criteria by violation type (for example, a table for deciding the level of action) and documents linking to work rules/internal regulations
 - Breach investigation reports, the individual's response materials, and deliberation/decision records
 - Notification documents of disciplinary outcomes and records of follow-up actions such as revocation of access rights
 - Training materials and security agreements used to make the disciplinary process known

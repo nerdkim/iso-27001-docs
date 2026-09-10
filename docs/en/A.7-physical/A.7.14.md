@@ -20,7 +20,7 @@ The purpose is to confirm, before equipment containing storage media is disposed
 2. After data and licensed software are removed from equipment marked for re-use or disposal, is irrecoverability verified and the result recorded?
 3. For media where simple deletion or partial overwriting does not fully erase data, such as SSD and flash, is a separate secure method applied (cryptographic erase, physical destruction)?
 4. When disposal or destruction is outsourced, does the contract include security requirements and is proof of completion (a destruction certificate) obtained?
-5. Are built-in stores in devices where storage is not obvious, such as multifunction devices, printers, network equipment, and IoT/OT devices, included in the scope of disposal and re-use?
+5. Is built-in storage in devices where storage is not obvious, such as multifunction devices, printers, network equipment, and IoT/OT devices, included in the scope of disposal and re-use?
 6. After disposal or re-use processing, is the asset inventory updated so that asset status and disposal history stay current?
 
 ## Implementation guidance

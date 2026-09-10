@@ -27,7 +27,7 @@ This control requires that confidentiality, integrity, and availability be maint
 
 - Define, in line with the classification scheme, which channels are permitted and what protection each requires, and document this as policies and procedures covering electronic, physical, and verbal transfer.
 - Apply transport encryption (such as TLS) by default to electronic channels (email, large-file transfer, SFTP, API interfaces), and add end-to-end or document-level encryption for sensitive information.
-- Where there is regular or bulk transfer with external organizations, include in the data transfer agreement the security requirements, allocation of responsibility, incident notification procedure, data return/disposal conditions, and restrictions on onward transfer.
+- Where there is regular or bulk transfer with external organizations, include in the data transfer agreement the security requirements, allocation of responsibility, incident notification procedure, data return/disposal conditions, and restrictions on subcontracting.
 - Control the movement of physical media (documents, removable storage) through approved transport procedures, locked storage, sealing, and handover logs, and encrypt the information held on the media.
 - Operate measures to prevent misdelivery and leakage: recipient address confirmation, external-send warnings, send delay/recall, approval for large or sensitive sends, and DLP rules.
 - Include in training the awareness criteria for verbal transfer, such as limiting conversations in public places, guarding against eavesdropping in meeting rooms, and caution with speakerphone/video conferencing.
@@ -54,7 +54,7 @@ This control requires that confidentiality, integrity, and availability be maint
 - A transfer policy exists but lacks procedures for physical media transport or verbal transfer, being limited to electronic transfer only.
 - Sensitive or personal information is sent to external parties by email in plaintext without encryption.
 - Information is regularly transferred to external organizations without concluding a transfer agreement that sets out security requirements and responsibilities.
-- A large-file transfer service shares links without expiry or access controls, allowing an unspecified number of people to download.
+- Links are shared through a large-file transfer service without expiry or access controls, allowing an unspecified number of people to download.
 - Email auto-forwarding rules continuously send internal information to personal external accounts without control or monitoring.
 - Data is taken out on removable storage media without handover records or media encryption.
 

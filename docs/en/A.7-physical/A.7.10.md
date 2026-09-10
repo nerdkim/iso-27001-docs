@@ -28,7 +28,7 @@ This control requires that information held on storage media be protected agains
 - Define classification criteria and handling rules by media type (removable/fixed/optical/tape/SSD), and apply labeling and asset-register entries so that location and status can be tracked.
 - Restrict removable media use by default, issue media only after approval/registration when there is a genuine business need, and encrypt stored information so that loss or theft does not expose data.
 - For off-site transport, use trusted carriers, tamper-evident sealing/packaging, handover and receipt-confirmation records, and in-transit encryption, and retain the transport history.
-- For re-use, reset previous data so that it cannot be recovered (multi-pass overwriting, cryptographic erase, etc.); for disposal, perform physical destruction/perforation/degaussing/incineration suited to the media type.
+- For re-use, reset previous data so that it cannot be recovered (multi-pass overwriting, cryptographic erase, and so on); for disposal, perform physical destruction/perforation/degaussing/incineration suited to the media type.
 - Use verifiable, standard methods for sanitization/destruction and record the date, target media, method, responsible person, and result on a certificate; where outsourced, obtain the processing evidence and the contract.
 - For media with unreliable overwrite behavior such as SSD/flash, encrypt from the point of storage and dispose by key destruction (cryptographic erase) or combine with physical destruction; do not rely on degaussing alone.
 

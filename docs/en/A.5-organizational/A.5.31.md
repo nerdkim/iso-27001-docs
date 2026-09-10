@@ -17,7 +17,7 @@ This control requires the organization to identify and document, without omissio
 ## Key checkpoints
 
 1. Are legal, statutory, regulatory, and contractual requirements relevant to information security and privacy identified per jurisdiction, documented as a register, and kept current?
-2. For each requirement, is a responsible owner and the control/procedure that satisfies it mapped, and is compliance verified periodically?
+2. For each requirement, are a responsible owner and the control/procedure that satisfies it mapped, and is compliance verified periodically?
 3. Is there a process to monitor changes such as new or amended laws, new regulations, and contract changes, and to reflect them in the register and controls?
 4. Are the national legal restrictions on the adoption, import/export, and use of cryptographic technology reviewed and complied with?
 5. Are the legal requirements that apply to cross-border data transfers, including transfers of personal data abroad, identified and addressed?
@@ -26,7 +26,7 @@ This control requires the organization to identify and document, without omissio
 ## Implementation guidance
 
 - Build a compliance requirements register that lists each legal, statutory, regulatory, and contractual requirement relevant to information security and privacy, recording for each the jurisdiction, source clause, owner, responding control, and compliance status.
-- Determine the obligations of every country/region in which the organization does business, and for multinational operations, distinguish and manage requirements that conflict or add across jurisdictions.
+- Determine the obligations of every country/region in which the organization does business, and for multinational operations, distinguish and manage requirements that conflict or are additional across jurisdictions.
 - Operate a mechanism to continuously monitor new and amended laws and regulatory trends (legal/compliance function, legal counsel, subscriptions to regulator notices), and reflect changes in the register and in risk assessment/controls.
 - Review national regulations on the use, adoption, and import/export of cryptographic technology (licensing, notification, algorithm restrictions), and comply with them in conjunction with cryptography controls (A.8.24).
 - Identify requirements that apply to specific domains such as cross-border transfer of personal data, data localization, and electronic transactions/e-finance, and reflect them in the relevant procedures and contracts.

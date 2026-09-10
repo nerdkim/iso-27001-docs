@@ -17,7 +17,7 @@ This control requires the organization to identify, without omission, the inform
 ## Key checkpoints
 
 1. Are criteria and a procedure defined for identifying information assets and other associated assets (hardware, software, services, facilities, people)?
-2. Are identified assets managed in an inventory, with each asset recording the necessary attributes such as owner, location, type, and criticality?
+2. Are identified assets managed in an inventory, with each asset recording the necessary attributes such as owner/custodian, location, type, and criticality?
 3. Is the inventory updated in a timely manner when lifecycle changes occur, such as acquisition, change, or disposal of assets?
 4. Does the inventory match the scope of the management system and reflect the actual operating environment without omissions or duplicates?
 5. Is the accuracy of the inventory reviewed/reconciled periodically, and are the results linked to risk assessment and safeguards?

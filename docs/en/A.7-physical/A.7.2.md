@@ -16,20 +16,20 @@ This control requires that entry to protected areas and facilities be restricted
 
 ## Key checkpoints
 
-1. Are entry control mechanisms (access cards, biometrics, locks, etc.) and authentication strength applied differentially according to the sensitivity of each protected area?
+1. Are entry control mechanisms (access cards, biometrics, locks, and so on) and authentication strength applied differentially according to the sensitivity of each protected area?
 2. Are the granting, modification, and revocation of entry rights performed through an approval procedure, with rights promptly adjusted upon transfer, resignation, or contract termination?
 3. Is the entry of visitors and external personnel controlled through identity verification, prior approval, recording of visit purpose, and escort/supervision?
-4. Are entry records for each area (entry/exit times, identity, etc.) generated, retained, and reviewed periodically?
+4. Are entry records for each area (entry/exit times, identity, and so on) generated, retained, and reviewed periodically?
 5. Are external-facing points such as delivery/loading areas separated from and controlled apart from internal protected areas?
 6. Are secondary entry paths (emergency exits, shutters, rear doors) and bypass/unauthorized opening of the entry control system (including tailgating) addressed?
 
 ## Implementation guidance
 
-- Define entry control levels according to area sensitivity (general office, computer room, communications room, records storage, etc.) and apply authentication means (single/multi-factor) commensurate with each level.
+- Define entry control levels according to area sensitivity (general office, computer room, communications room, records storage, and so on) and apply authentication means (single/multi-factor) commensurate with each level.
 - Grant entry rights minimally on the basis of business need (need-to-enter), and clearly define the request/approval/granting/revocation procedure, owners, and required records.
 - Issue visitor badges after prior approval and identity verification, record the purpose/time/host of each visit, and provide continuous escort/supervision in sensitive areas.
-- Integrate the entry control system (card readers, biometrics, electronic locks, etc.) with monitoring means (CCTV, alarms) to detect and respond to unauthorized entry and tailgating.
-- Retain entry records securely for a defined period and review them periodically to identify abnormal entries (unauthorized attempts, late-night entry, etc.).
+- Integrate the entry control system (card readers, biometrics, electronic locks, and so on) with monitoring means (CCTV, alarms) to detect and respond to unauthorized entry and tailgating.
+- Retain entry records securely for a defined period and review them periodically to identify abnormal entries (unauthorized attempts, late-night entry, and so on).
 - Separate delivery/loading areas so that outsiders cannot enter internal protected areas, and operate inspection and receipt procedures for incoming goods.
 - Establish procedures for lost/damaged/unreturned access cards or keys (immediate deactivation, controlled reissuance) and periodically verify validity so that no residual rights remain.
 

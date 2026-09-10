@@ -55,7 +55,7 @@ This control restricts read and write access to source code, development tools, 
 - Original source code is left on operational servers, creating a risk of unauthorized viewing/modification.
 - Direct changes to a protected branch (such as force-push) are possible without code review/merge approval.
 - Repository access rights of leavers or role-changed staff are not revoked and remain active.
-- Credentials/keys are committed hardcoded in the source code but are not checked for.
+- Credentials/keys are committed into the source code in hardcoded form, and no check detects them.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

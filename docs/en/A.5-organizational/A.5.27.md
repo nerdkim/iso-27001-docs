@@ -55,7 +55,7 @@ This control uses the knowledge gained from information security incidents (and 
 - The same type of incident recurs, yet there is no trend analysis or measure to prevent recurrence.
 - Incident data is recorded sporadically without a taxonomy, making aggregation and metrics by type/cause impossible.
 - No record exists of management reporting or of the basis for improvement priorities for major incidents.
-- Incident lessons are not shared with relevant staff or training, so they do not translate into organization-wide response capability.
+- Incident lessons are not shared with relevant staff or reflected in training, so they do not translate into stronger organization-wide response capability.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

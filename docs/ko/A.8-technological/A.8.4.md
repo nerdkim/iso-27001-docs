@@ -1,11 +1,11 @@
-# A.8.4 소스코드 접근 (Access to source code)
+# A.8.4 소스코드 접근(Access to source code)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.8 기술적 통제 (Technological controls) |
+| 테마 | A.8 기술적 통제(Technological controls) |
 | 통제 | A.8.4 소스코드 접근 |
-| 통제 유형(참고) | 예방적 (Preventive) |
+| 통제 유형(참고) | 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 |
 | ISMS-P 대응 | 2.8.5 소스 프로그램 관리 |
 | 2013 대응 | A.9.4.5 |

@@ -172,7 +172,7 @@
     "A transfer policy exists but lacks procedures for physical media transport or verbal transfer, being limited to electronic transfer only.",
     "Sensitive or personal information is sent to external parties by email in plaintext without encryption.",
     "Information is regularly transferred to external organizations without concluding a transfer agreement that sets out security requirements and responsibilities.",
-    "A large-file transfer service shares links without expiry or access controls, allowing an unspecified number of people to download.",
+    "Links are shared through a large-file transfer service without expiry or access controls, allowing an unspecified number of people to download.",
     "Email auto-forwarding rules continuously send internal information to personal external accounts without control or monitoring.",
     "Data is taken out on removable storage media without handover records or media encryption."
    ]
@@ -298,7 +298,7 @@
     "An incident response procedure document exists, but roles/responsibilities and the emergency contact list are not kept current, so the actual responsible person cannot be identified.",
     "No criteria distinguish events from incidents and no severity ratings exist, so the timing of reporting and escalation depends on the individual handler's discretion.",
     "No reporting channel is provided, so personnel who notice incident indicators do not know where or how to report them.",
-    "Legal notification duties and deadlines (e.g., for personal data breaches) are not reflected in the procedure, creating a risk of delayed notification.",
+    "Legal notification duties and deadlines (for example, for personal data breaches) are not reflected in the procedure, creating a risk of delayed notification.",
     "No exercise has ever been conducted after the plan was established, so the effectiveness of the procedures has not been validated.",
     "The logs, tools, and external-body contact arrangements needed for response were not secured in advance, delaying first response during an incident."
    ]
@@ -337,7 +337,7 @@
     "The same type of incident recurs, yet there is no trend analysis or measure to prevent recurrence.",
     "Incident data is recorded sporadically without a taxonomy, making aggregation and metrics by type/cause impossible.",
     "No record exists of management reporting or of the basis for improvement priorities for major incidents.",
-    "Incident lessons are not shared with relevant staff or training, so they do not translate into organization-wide response capability."
+    "Incident lessons are not shared with relevant staff or reflected in training, so they do not translate into stronger organization-wide response capability."
    ]
   },
   "A.5.28": {
@@ -401,7 +401,7 @@
     "There is no software license register, or the number of copies actually installed exceeds the number of licenses held.",
     "There is no control over install privileges on workstations, so employees can freely install illegal or unauthorized software.",
     "Software continues to be used after license expiry without renewal, or licenses assigned to leavers are not reclaimed or reassigned.",
-    "Open source is adopted/distributed without reviewing its license terms (attribution, source disclosure, etc.), breaching the obligations.",
+    "Open source is adopted/distributed without reviewing its license terms (attribution, source disclosure, and so on), breaching the obligations.",
     "Fonts/images/documents obtained from public networks are used commercially without checking the usage terms.",
     "Ownership of outsourced development deliverables and source code is not stated in the contract, leaving the intellectual property rights unclear."
    ]
@@ -559,7 +559,7 @@
     "Remote devices have no disk encryption or screen lock, so information leakage is not controlled if a device is lost or stolen.",
     "Personally owned devices (BYOD) are used for work without separate conditions or consent, and data is stored/retained on personal devices.",
     "Access logs of remote workers are not collected or monitored, so anomalous access cannot be detected.",
-    "After remote working ends, access rights are not reclaimed and issued devices/data are left unreturned."
+    "After remote working ends, access rights are not reclaimed or issued devices/data are left unreturned."
    ]
   },
   "A.6.8": {
@@ -634,7 +634,7 @@
    "cases": [
     "The server room sits in the building's lowest level, beneath plumbing, or against an outer wall, exposing it to flooding/leak risk, yet no mitigating measures are in place.",
     "Fire detection/suppression, leak detection, and precision cooling exist but are not inspected or operationally tested, so it cannot be confirmed they actually work.",
-    "No physical or environmental threat identification has been performed with regard to geographic location or surroundings (flooding history, adjacent hazardous facilities, etc.).",
+    "No physical or environmental threat identification has been performed with regard to geographic location or surroundings (flooding history, adjacent hazardous facilities, and so on).",
     "UPS/emergency generation capacity or runtime does not meet the actual load or recovery objectives, or fuel/battery condition is not checked.",
     "No alarm or notification scheme exists for temperature/humidity, leak, or power anomalies, so events are not recognized early even when they occur.",
     "Threats from adjacent premises or external factors such as leaks from upper floors or nearby construction are omitted from identification and treatment."
@@ -738,7 +738,7 @@
    "cases": [
     "No maintenance cycle is defined for critical equipment, or preventive servicing is chronically delayed, leaving the risk of failure or performance degradation unmanaged.",
     "Maintenance history is not recorded, or actions taken and parts replaced are omitted, so servicing cannot be traced.",
-    "External technicians access equipment without attendance or supervision, creating a risk that stored sensitive information is exposed.",
+    "External technicians access equipment without escort/supervision, creating a risk that stored sensitive information is exposed.",
     "Equipment is taken off site for repair without backing up or removing data on the storage media, creating a risk of information leakage.",
     "Remote maintenance uses shared accounts or leaves sessions unlogged, so it is impossible to confirm who did what.",
     "Equipment whose warranty or SLA has expired is left in place without renewal or replacement, making timely recovery difficult when a fault occurs."
@@ -805,7 +805,7 @@
     "Original source code is left on operational servers, creating a risk of unauthorized viewing/modification.",
     "Direct changes to a protected branch (such as force-push) are possible without code review/merge approval.",
     "Repository access rights of leavers or role-changed staff are not revoked and remain active.",
-    "Credentials/keys are committed hardcoded in the source code but are not checked for."
+    "Credentials/keys are committed into the source code in hardcoded form, and no check detects them."
    ]
   },
   "A.8.5": {
@@ -926,7 +926,7 @@
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.14.md",
    "cases": [
-    "Only some equipment is made redundant without defined availability requirements, while other layers such as power/links remain single, leaving SPOFs.",
+    "Only some equipment is made redundant without defined availability requirements, while other layers such as power/links remain in a single configuration, leaving SPOFs.",
     "Redundancy is configured but failover has never been tested, so switchover fails during a real incident.",
     "The standby node lacks capacity/performance, so the service cannot run normally after switchover.",
     "Replication lag is not managed, causing data loss/inconsistency after switchover.",
@@ -1111,7 +1111,7 @@
    "cases": [
     "Secure coding standards exist but are not applied to actual development or the pipeline, remaining as formal documents only.",
     "High/medium severity vulnerabilities from SAST results are left unremediated for a long period with no exception approval justification.",
-    "An outdated version of an open source library with known vulnerabilities (CVEs) is deployed to production as is.",
+    "An outdated version of an open source library with known vulnerabilities (CVEs) is deployed to production as-is.",
     "API keys and database passwords are hardcoded in source code and committed to the version control repository.",
     "A code review procedure is defined, but reviews are performed with a focus on functionality only, without security check items."
    ]
@@ -1122,7 +1122,7 @@
    "path": "docs/en/A.8-technological/A.8.29.md",
    "cases": [
     "Only functional testing is performed without a security testing plan, and the system is transferred to operations.",
-    "There are no test cases linked to security requirements, so requirements are released without being verified.",
+    "There are no test cases linked to security requirements, so the system is released without those requirements being verified.",
     "High-risk defects found in vulnerability assessment/penetration testing are moved to production without remediation/re-testing.",
     "Acceptance (transfer-to-operations) pass criteria are not defined in advance, so approval decisions are made arbitrarily.",
     "Purchased/externally sourced products are adopted without reviewing their security test results.",
@@ -1179,7 +1179,7 @@
     "The access control/encryption level of the test environment is markedly lower than production, leaving personal data exposed to risk.",
     "Masking is applied but is insufficient (only some fields processed, reversible), so individuals can still be identified.",
     "After testing ends, copies of operational data remain on test servers, developer PCs, or shared storage.",
-    "The use/copying of operational data for testing is not logged, so it cannot be traced which data was used where."
+    "The use/copying of operational data for testing is not logged, so there is no way to trace which data was used where."
    ]
   },
   "A.8.34": {

@@ -1,11 +1,11 @@
-# A.6.4 징계 절차 (Disciplinary process)
+# A.6.4 징계 절차(Disciplinary process)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.6 인적 통제 (People controls) |
+| 테마 | A.6 인적 통제(People controls) |
 | 통제 | A.6.4 징계 절차 |
-| 통제 유형(참고) | 교정적 (Corrective) / 예방적 (Preventive) |
+| 통제 유형(참고) | 교정적(Corrective) / 예방적(Preventive) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.2.6 보안 위반 시 조치 |
 | 2013 대응 | A.7.2.3 |

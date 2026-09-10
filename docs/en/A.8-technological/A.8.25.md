@@ -17,7 +17,7 @@ This control requires the organization to build security activities into every s
 ## Key checkpoints
 
 1. Is a secure development life cycle (SDLC) policy/standard documented and applied consistently to both in-house and outsourced development?
-2. Are the security activities and pass criteria (security gates) to be performed at each stage (requirements/design/implementation/test/deployment/transition to production) defined?
+2. Are the security activities to be performed at each stage (requirements/design/implementation/test/deployment/transition to production) and their pass criteria (security gates) defined?
 3. Are secure coding standards and training provided to developers, and is compliance checked?
 4. Is a secure development/configuration management environment (version control, access control, build/deployment pipeline) established and controlled?
 5. Are security requirements and verification (license, vulnerabilities, SBOM, and so on) defined for open source/third-party/outsourced components?

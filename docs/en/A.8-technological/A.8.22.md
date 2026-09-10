@@ -35,7 +35,7 @@ Segregation of networks partitions a single network into zones with different tr
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.8.20 Networks security, A.8.21 Security of network services, A.8.23 Web filtering, A.5.14 Information transfer
+- Adjacent Annex A: A.8.20 (Networks security), A.8.21 (Security of network services), A.8.23 (Web filtering), A.5.14 (Information transfer)
 - ISMS-P mapping: 2.6.1 Network access
 - 2013 mapping: A.13.1.3 (Segregation in networks)
 

@@ -34,7 +34,7 @@ This control requires the organization to protect the records it must retain und
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 7.5 (Documented information), 9.2 (Internal audit records), 9.3 (Management review records), 5.3/8.1 (Organizational roles/responsibilities and operational control)
+- ISO 27001 clauses: 7.5 (Documented information), 9.2 (Internal audit), 9.3 (Management review), 5.3/8.1 (Organizational roles/responsibilities and operational control)
 - Adjacent Annex A: A.5.34 (Privacy and protection of PII), A.5.37 (Documented operating procedures), A.7.10 (Storage media), A.8.10 (Information deletion), A.8.13 (Information backup), A.8.15 (Logging)
 - ISMS-P mapping: 2.9.4 Log and access record management (related: 1.4.1 Legal requirements compliance review, 3.4.2 Measures when retaining after purpose achieved, 2.9.7 Reuse and disposal of information assets)
 - 2013 mapping: A.18.1.3 (Protection of records)

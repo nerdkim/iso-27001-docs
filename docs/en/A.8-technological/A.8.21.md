@@ -17,7 +17,7 @@ This control ensures that the security features, service levels, and service req
 ## Key checkpoints
 
 1. Is there a maintained inventory of the network services the organization uses (internally provided and externally outsourced), with the security features/requirements of each service identified?
-2. Are the required security characteristics (authentication, encryption, filtering, isolation, etc.) and service levels (availability, bandwidth, recovery time, etc.) defined and agreed for each network service?
+2. Are the required security characteristics (authentication, encryption, filtering, isolation, and so on) and service levels (availability, bandwidth, recovery time, and so on) defined and agreed for each network service?
 3. Are the security features/service levels (SLAs) of externally provided network services stated in contracts/agreements, with subcontracting and responsibility boundaries specified?
 4. Are the security features of network services implemented in actual configuration/operation, and is fulfillment of service levels monitored?
 5. Is access to network services controlled on a least-privilege basis (which users/systems may use which services)?
@@ -25,8 +25,8 @@ This control ensures that the security features, service levels, and service req
 
 ## Implementation guidance
 
-- Inventory all network services the organization uses (leased lines/MPLS, internet circuits, VPN, DNS, firewall/IPS, load balancing, DDoS protection, cloud connectivity, managed security services, etc.) and define the required security features and service requirements for each.
-- Document the required security characteristics per service (transport encryption, mutual authentication, access filtering, traffic isolation, provision of logs, etc.) and service level targets (availability, bandwidth, latency, recovery time, support hours), set in line with the risk level.
+- Inventory all network services the organization uses (leased lines/MPLS, internet circuits, VPN, DNS, firewall/IPS, load balancing, DDoS protection, cloud connectivity, managed security services, and so on) and define the required security features and service requirements for each.
+- Document the required security characteristics per service (transport encryption, mutual authentication, access filtering, traffic isolation, provision of logs, and so on) and service level targets (availability, bandwidth, latency, recovery time, support hours), set in line with the risk level.
 - For network services from external suppliers, specify security features, service levels, responsibility boundaries, subcontracting conditions, breach/outage notification obligations, and audit/reporting rights in contracts/SLAs, and include disconnection and data return procedures at termination.
 - Verify that the defined security features are reflected in actual configuration (for example VPN cipher suites, firewall service policies, DNS security settings), and control which users/systems may use each network service on a least-privilege basis.
 - Continuously monitor fulfillment of service levels and security features (availability/performance metrics, security events, SLA reports), and operate corrective-request and escalation procedures when agreed levels are not met.
@@ -42,9 +42,9 @@ This control ensures that the security features, service levels, and service req
 ## Evidence
 
 - Network service inventory and per-service security feature/requirement definitions
-- Documentation of service levels (availability/bandwidth/recovery time, etc.) and security characteristics
+- Documentation of service levels (availability/bandwidth/recovery time, and so on) and security characteristics
 - External network service contracts/SLAs and the security requirements stated therein (including subcontracting/notification/audit clauses)
-- Security feature implementation verification records (configuration snapshots for VPN/firewall/DNS, etc., and inspection results)
+- Security feature implementation verification records (configuration snapshots for VPN/firewall/DNS, and so on, and inspection results)
 - Service level/security feature monitoring reports and corrective-request/escalation records for shortfalls
 - Security review and change management records for the introduction/change of network services
 

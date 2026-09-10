@@ -31,12 +31,12 @@ When a supplier accesses, processes, stores, or transmits the organization's inf
 - Clearly define the incident notification deadline (for example, within 24 hours or 72 hours of becoming aware), the notification recipients/channels, and the obligation to cooperate in investigations.
 - Specify audit/inspection rights, the obligation to submit evidence, the scope of accepted third-party certifications (for example, ISO 27001, SOC 2), and the conditions for re-audit.
 - Include clauses for return/disposal evidence of data, revocation of accounts/access rights, return of assets, and surviving obligations (such as residual confidentiality) on contract termination or cancellation.
-- When outsourcing the processing of personal data, reflect the processing purpose/scope, restrictions on further outsourcing, safeguards, and cross-border transfer conditions required by applicable law in the contract.
+- When outsourcing the processing of personal data, reflect in the contract the processing purpose/scope, restrictions on further outsourcing, safeguards, and cross-border transfer conditions required by applicable law.
 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.19 Information security in supplier relationships, A.5.21 Managing information security in the ICT supply chain, A.5.22 Monitoring, review and change management of supplier services, A.5.23 Information security for use of cloud services
+- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
 - ISMS-P mapping: 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination)
 - 2013 mapping: A.15.1.2
 

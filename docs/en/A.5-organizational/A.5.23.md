@@ -33,8 +33,8 @@ This control defines and enforces the organization's security requirements acros
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 Risk assessment and treatment, 8.1 Operational planning and control
-- Adjacent Annex A: A.5.19 Information security in supplier relationships, A.5.20 Addressing information security within supplier agreements, A.5.21 Managing information security in the ICT supply chain, A.5.22 Monitoring, review and change management of supplier services
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
+- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services)
 - ISMS-P mapping: 2.10.2 Cloud security
 - 2013 mapping: New in 2022
 

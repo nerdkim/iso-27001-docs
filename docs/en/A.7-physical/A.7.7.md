@@ -19,7 +19,7 @@ This control requires that sensitive documents and storage media not be left una
 1. Are clear desk rules defined so that sensitive documents, printouts, and storage media are stored in locked drawers/cabinets/containers rather than left on desks?
 2. Is automatic screen locking applied after a period of inactivity, and are users required to lock manually (for example, a screen-lock shortcut) when leaving their workstation?
 3. Are controls such as secure printing (release after user authentication) applied so that printouts are not left on shared printers, multifunction devices, or fax machines?
-4. Are whiteboards, sticky notes, and monitor attachments managed so that account credentials or sensitive information are not exposed?
+4. Are whiteboards, sticky notes, and monitor attachments managed so that account credentials or sensitive information is not exposed?
 5. Are storage and disposal methods applied differentially by the sensitivity (classification) of information and media, and do the rules also cover meeting rooms, shared spaces, and remote-work environments?
 6. Are compliance checks (such as walk-through inspections) and awareness activities carried out for clear desk and clear screen practices?
 
@@ -48,7 +48,7 @@ This control requires that sensitive documents and storage media not be left una
 - Status of provided storage means such as lockable drawers/cabinets/safes
 - Walk-through/self-inspection checklists and inspection results
 - Awareness training materials and violation-response records
-- Document disposal (shredding, etc.) procedure and disposal records
+- Document disposal (shredding, and so on) procedure and disposal records
 
 ## Nonconformity examples
 

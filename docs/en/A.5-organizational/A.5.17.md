@@ -35,7 +35,7 @@ Authentication information (passwords, PINs, token secrets, certificate private 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.15 Access control, A.5.16 Identity management, A.5.18 Access rights, A.8.2 Privileged access rights, A.8.5 Secure authentication
+- Adjacent Annex A: A.5.15 (Access control), A.5.16 (Identity management), A.5.18 (Access rights), A.8.2 (Privileged access rights), A.8.5 (Secure authentication)
 - ISMS-P mapping: 2.5.4 Password management (related: 2.5.3 User authentication)
 - 2013 mapping: A.9.2.4, A.9.3.1, A.9.4.3
 
