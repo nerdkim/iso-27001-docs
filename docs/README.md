@@ -24,10 +24,10 @@ from an ordinary mirror of an upstream document. See [../UPDATES.md](../UPDATES.
 
 ## Read-only
 
-Treat this directory as **immutable while using the corpus**. `tools/build_index.py` and
-`tools/check_corpus.py` only read from here, and an agent answering questions with the corpus must
-never create, edit, or delete anything under `docs/`. Derived output belongs in the consuming
-workspace.
+Treat this directory as **immutable while using the corpus**. `tools/check_corpus.py` only reads from here and
+`tools/build_index.py` writes nothing but the generated `INDEX.md` files, and an agent answering
+questions with the corpus must never create, edit, or delete anything under `docs/`. Derived
+output belongs in the consuming workspace.
 
 Maintainers do edit these files. That is a different activity, with its own rules: see
 [../CLAUDE.md](../CLAUDE.md) and the parity rule below.

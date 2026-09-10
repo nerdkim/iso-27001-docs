@@ -4,7 +4,8 @@
 
 The layer that lets an AI agent **use** the `docs/` corpus without re-reading all of it, and the
 operating rules that keep that use honest. Everything here is generated from `docs/` plus
-`catalog/controls.json`, except this readme pair.
+`catalog/controls.json`, except this readme pair and `catalog/controls.json` itself, which is
+hand-maintained and is the source of truth for which controls must exist.
 
 ## What is in here
 

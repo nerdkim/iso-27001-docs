@@ -42,6 +42,7 @@
 
 ```
 docs/
+  README.md / README.ko.md       이 문서들이 무엇인지와 읽기 전용 규칙
   ko/                            한국어 문서
     A.5-organizational/<no>.md   예: docs/ko/A.5-organizational/A.5.1.md
     A.6-people/<no>.md
@@ -50,6 +51,7 @@ docs/
     INDEX.md                     생성되는 목차
   en/                            영어 문서. 상대 경로가 한국어 쪽과 동일
 extended/
+  README.md / README.ko.md       자료집을 AI가 사용할 때의 운영 규칙
   catalog/controls.json          Annex A 공개 통제 목록(번호, 명칭, 테마)
   manifest.json                  기계가독 색인(공개 계약)
   index/                         평탄 CSV 색인, 부적합 사례 룰북, 증적 사전
@@ -59,6 +61,11 @@ tools/
 harness/
   install-hooks.sh               clone에 git hook을 배선(최초 1회, 설치 절 참고)
   check-conventions.sh           문서 규약 검사기(playbook docs/16)
+  test-check-conventions.sh      위 검사기의 자체 시험. CI가 먼저 실행
+  check-infra-conformance.sh     infra 규약 검사기(이 저장소에는 대상이 없음)
+  conventions-exclude            규약 검사에서 제외하는 경로와 그 사유
+  githooks/                      pre-commit, commit-msg, pre-push
+  gitmessage                     commit message 템플릿
 ```
 
 경로는 전부 ASCII라 소비자 쪽에서 URL 인코딩 문제가 생기지 않습니다.
@@ -122,7 +129,9 @@ bash harness/check-conventions.sh
 자료집과 일치합니다.
 
 통제를 추가/수정/삭제할 때는 **같은 commit에서 반대 언어 문서도 함께 고칩니다**. 대응 관계는 통제
-번호로 잡힙니다. 한국어만 또는 영어만 고친 상태는 결함이며 CI가 막습니다.
+번호로 잡힙니다. 한국어만 또는 영어만 고친 상태는 결함입니다. `tools/check_corpus.py`는 한쪽
+언어에만 통제가 있거나 두 언어의 섹션 항목 수가 다르면 실패합니다. 항목 수가 같은 채로 문장만 바꾼
+경우는 CI가 아니라 리뷰에서 걸러집니다.
 
 통제를 추가하면 `extended/catalog/controls.json`에도 추가해야 합니다. 카탈로그와 문서가 어느 방향으로든
 어긋나면 `check_corpus.py`가 실패합니다.

@@ -5,10 +5,10 @@
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.8 Technological controls |
 | Control | A.8.30 Outsourced development |
-| Control type (ref.) | Preventive, Detective |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
-| ISMS-P mapping | 2.8.1 Security requirements definition |
-| 2013 mapping | 14.2.7 (Outsourced development) |
+| Control type (ref.) | Preventive / Detective |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
+| ISMS-P mapping | 2.8.1 Definition of security requirements |
+| 2013 mapping | A.14.2.7 (Outsourced development) |
 
 ## Control objective
 
@@ -25,20 +25,20 @@ This control ensures that when all or part of system development is outsourced t
 
 ## Implementation guidance
 
-- Include in the outsourced development contract and RFP the security requirements, the secure development standards/secure coding rules to comply with, the deliverable list, acceptance criteria, right to audit, and sanctions for violations in specific terms.
+- Include, in specific terms, in the outsourced development contract and RFP: the security requirements, the secure development standards/secure coding rules to comply with, the deliverable list, acceptance criteria, right to audit, and sanctions for violations.
 - Assess secure development capability, personnel security, past track record, and sub-contract management ability when selecting a supplier, and stipulate that sub-contracting requires prior approval and inherits equivalent security obligations.
 - Minimize production data provided for development, replacing it with pseudonymized/anonymized or test data, and grant least-privilege access to source code/development environment/documentation with access logging.
 - Direct and oversee requirement fulfillment through phase-based security checks (design review, interim deliverable review, sharing of security test results) and regular reporting.
 - At acceptance, perform source code review, static/dynamic analysis (SAST/DAST), software composition analysis (SCA/open source vulnerabilities), and checks for malware/backdoors/hardcoded credentials, and manage completion of defect remediation as a condition of acceptance approval.
-- Stipulate intellectual property ownership, source code escrow, license compliance, maintenance and warranty responsibility, and notification/joint-response duties in the event of a security incident in the contract.
+- Stipulate intellectual property ownership, source code escrow, license compliance, maintenance and warranty responsibility, and notification/joint-response duties in the event of a security incident.
 - At contract termination/expiry, confirm the return or destruction of provided assets, source code, access privileges, and development/test data, and retain evidence.
 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 7.4 (Communication), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.31 (Separation of development, test and production environments), A.8.4 (Access to source code), A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain)
-- ISMS-P mapping: 2.8.1 Security requirements definition (related: 2.3.2 Security in external party contracts, 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and expiry, 2.8.2 Security requirements review and testing, 2.8.5 Source program management)
-- 2013 mapping: 14.2.7 (Outsourced development)
+- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.3.2 Security in external party contracts, 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination, 2.8.2 Review and testing of security requirements, 2.8.5 Source program management)
+- 2013 mapping: A.14.2.7 (Outsourced development)
 
 ## Evidence
 

@@ -34,7 +34,7 @@ This control ensures that the security features, service levels, and service req
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks), 9.1 (Monitoring and measurement)
+- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.20 (Networks security), A.8.22 (Segregation of networks), A.8.23 (Web filtering), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
 - ISMS-P mapping: 2.6.1 Network access (related: 2.3.2 Security in external party contracts, 2.3.3 Management of external party security compliance, 2.10.1 Operation of security systems, 2.10.5 Information transfer security, 2.9.2 Performance and fault management)
 - 2013 mapping: A.13.1.2 (Security of network services)

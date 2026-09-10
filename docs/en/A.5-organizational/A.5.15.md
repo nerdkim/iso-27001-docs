@@ -7,8 +7,8 @@
 | Control | A.5.15 Access control |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.5.1 User account management (related: 2.5.5 Privileged account and rights management, 2.5.6 Access rights review, 2.6.1 Network access, 2.6.2 Information system access) |
-| 2013 mapping | 9.1.1, 9.1.2 |
+| ISMS-P mapping | 2.5.1 User account management (related: 2.5.5 Special account and privilege management, 2.5.6 Review of access rights, 2.6.1 Network access, 2.6.2 Information system access) |
+| 2013 mapping | A.9.1.1, A.9.1.2 |
 
 ## Control objective
 
@@ -35,10 +35,10 @@ This control requires the organization to establish and implement rules that gra
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 5.3 (Roles, responsibilities and authorities), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
+- ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.16 (Identity management), A.5.17 (Authentication information), A.5.18 (Access rights), A.8.2 (Privileged access rights), A.8.3 (Information access restriction), A.8.4 (Access to source code), A.8.5 (Secure authentication), A.7.1 (Physical security perimeters)
-- ISMS-P mapping: 2.5.1 User account management (related: 2.5.5 Privileged account and rights management, 2.5.6 Access rights review, 2.6.1 Network access, 2.6.2 Information system access)
-- 2013 mapping: 9.1.1 (Access control policy), 9.1.2 (Access to networks and network services)
+- ISMS-P mapping: 2.5.1 User account management (related: 2.5.5 Special account and privilege management, 2.5.6 Review of access rights, 2.6.1 Network access, 2.6.2 Information system access)
+- 2013 mapping: A.9.1.1 (Access control policy), A.9.1.2 (Access to networks and network services)
 
 ## Evidence
 

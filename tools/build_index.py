@@ -125,7 +125,33 @@ def numbered(text):
     ]
 
 
+def source_note(catalog):
+    """Per-language source note from the catalog.
+
+    Accepts the bilingual {"ko": ..., "en": ...} object, and still accepts a single
+    string for backward compatibility. Fails loudly on a missing language rather than
+    shipping an empty string into the published manifest.
+    """
+    note = catalog.get("source_note")
+    if isinstance(note, str):
+        return {lang: note for lang in LANGS}
+    if not isinstance(note, dict):
+        raise SystemExit("controls.json: source_note must be a string or a {ko, en} object")
+    missing = [lang for lang in LANGS if not note.get(lang)]
+    if missing:
+        raise SystemExit("controls.json: source_note is missing " + ", ".join(missing))
+    return {lang: note[lang] for lang in LANGS}
+
+
+CONTROL_NAME = re.compile(r"^A\.\d+\.\d+$")
+
+
 def control_sort_key(no):
+    if not CONTROL_NAME.match(no):
+        raise SystemExit(
+            f"{no}: not a control file name. Files under docs/<lang>/<theme>/ must be named "
+            "A.<n>.<n>.md. Put anything else outside that glob (see docs/README.md)."
+        )
     return [int(n) for n in no.replace("A.", "").split(".")]
 
 
@@ -267,7 +293,7 @@ def main():
             "nav": "themes",
             "langs": list(LANGS),
             "sections": sections,
-            "source": {lang: catalog.get("source_note", "") for lang in LANGS},
+            "source": source_note(catalog),
             "provenance": PROVENANCE,
             "itemSections": ITEM_SECTIONS,
         },

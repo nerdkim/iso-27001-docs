@@ -7,8 +7,8 @@
 | Control | A.7.7 Clear desk and clear screen |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity |
-| ISMS-P mapping | 2.4.7 Work environment security (related: 2.10.6 End-user device security, 2.10.7 Management of removable storage media) |
-| 2013 mapping | 11.2.9 |
+| ISMS-P mapping | 2.4.7 Work environment security (related: 2.10.6 Business-use device security, 2.10.7 Management of removable storage media) |
+| 2013 mapping | A.11.2.9 |
 
 ## Control objective
 
@@ -37,8 +37,8 @@ This control requires that sensitive documents and storage media not be left una
 
 - ISO 27001 clauses: 7.3 (Awareness), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.6 (Working in secure areas), A.7.8 (Equipment siting and protection), A.7.9 (Security of assets off-premises), A.7.10 (Storage media), A.7.14 (Secure disposal or re-use of equipment), A.8.1 (User endpoint devices), A.5.10 (Acceptable use of information and other associated assets)
-- ISMS-P mapping: 2.4.7 Work environment security (related: 2.10.6 End-user device security, 2.10.7 Management of removable storage media)
-- 2013 mapping: 11.2.9 (Clear desk and clear screen policy)
+- ISMS-P mapping: 2.4.7 Work environment security (related: 2.10.6 Business-use device security, 2.10.7 Management of removable storage media)
+- 2013 mapping: A.11.2.9 (Clear desk and clear screen policy)
 
 ## Evidence
 

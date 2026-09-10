@@ -17,7 +17,7 @@ This control requires the organization to define and document the configurations
 ## Key checkpoints
 
 1. Are secure configuration baselines/templates defined and documented per asset type (server OS, network devices, DBMS, middleware, cloud services, endpoints, and so on)?
-2. Are the defined baselines built into deployment procedures so they are actually applied during new provisioning/reinstallation/provisioning?
+2. Are the defined baselines built into deployment procedures so they are actually applied during new introduction/reinstallation/provisioning?
 3. Is the live configuration of running systems periodically checked against the baseline to detect drift and unauthorized changes?
 4. Is configuration information (settings, versions, interdependencies, owners, and so on) kept current and linked to the change management process?
 5. Is access to sensitive configuration information (credentials, keys, detailed settings) controlled, and is it stored/transmitted securely?
@@ -37,7 +37,7 @@ This control requires the organization to define and document the configurations
 
 - ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.32 (Change management), A.8.19 (Installation of software on operational systems), A.8.8 (Management of technical vulnerabilities), A.5.9 (Inventory of information and other associated assets), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.9.1 Change management (from the secure-configuration/hardening angle, it also relates to 2.6.2 Information system access and 2.10.1 Security system operation)
+- ISMS-P mapping: 2.9.1 Change management (from the secure-configuration/hardening angle, it also relates to 2.6.2 Information system access)
 - 2013 mapping: New in 2022 (a control newly introduced in ISO/IEC 27002:2022)
 
 ## Evidence

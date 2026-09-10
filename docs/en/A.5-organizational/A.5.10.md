@@ -7,8 +7,8 @@
 | Control | A.5.10 Acceptable use of information and other associated assets |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.1.3 Information asset management (related: 2.10.6 Business device security, 2.10.7 Removable media management, 2.2.3 Security pledge) |
-| 2013 mapping | 8.1.3, 8.2.3 |
+| ISMS-P mapping | 2.1.3 Information asset management (related: 2.10.6 Business-use device security, 2.10.7 Management of removable storage media, 2.2.3 Security pledge) |
+| 2013 mapping | A.8.1.3, A.8.2.3 |
 
 ## Control objective
 
@@ -33,10 +33,10 @@ This control requires the organization to define rules for how employees and ext
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 5.3 (Roles, responsibilities and authorities), 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.9 (Inventory of information and other associated assets), A.5.11 (Return of assets), A.5.12 (Classification of information), A.5.13 (Labelling of information), A.7.9 (Security of assets off-premises), A.8.1 (User endpoint devices)
-- ISMS-P mapping: 2.1.3 Information asset management (related: 2.10.6 Business device security, 2.10.7 Removable media management, 2.2.3 Security pledge)
-- 2013 mapping: 8.1.3 (Acceptable use of assets), 8.2.3 (Handling of assets)
+- ISMS-P mapping: 2.1.3 Information asset management (related: 2.10.6 Business-use device security, 2.10.7 Management of removable storage media, 2.2.3 Security pledge)
+- 2013 mapping: A.8.1.3 (Acceptable use of assets), A.8.2.3 (Handling of assets)
 
 ## Evidence
 

@@ -3,7 +3,7 @@
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
-| 테마 | A.8 기술적 통제 (Technological) |
+| 테마 | A.8 기술적 통제 (Technological controls) |
 | 통제 | A.8.17 시각 동기화 |
 | 통제 유형(참고) | 탐지적 (Detective) |
 | 보안 속성(참고) | 무결성 |

@@ -33,7 +33,7 @@ This control requires authentication technologies and procedures to be applied i
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 (Actions to address risks), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.15 (Access control), A.5.16 (Identity management), A.5.17 (Authentication information), A.5.18 (Access rights), A.8.2 (Privileged access rights), A.8.3 (Information access restriction)
 - ISMS-P mapping: 2.5.3 User authentication
 - 2013 mapping: A.9.4.2 (Secure log-on procedures)

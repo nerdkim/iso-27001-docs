@@ -15,7 +15,9 @@
 - [ ] source pin (`UPDATES.md` and `UPDATES.ko.md`)
 
 ## Bilingual parity
-<!-- A Korean-only or English-only content edit is a bug, and CI rejects it. -->
+<!-- A Korean-only or English-only content edit is a bug. CI rejects it when a control exists in
+     one language only, or when the two languages carry a different number of items in a counted
+     section. Rewording that keeps the counts equal is on the reviewer. -->
 - [ ] Korean and English counterparts changed in **this same commit**, keyed by control number
 - [ ] N/A (this PR touches no control content)
 

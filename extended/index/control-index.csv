@@ -1,5 +1,5 @@
 ﻿lang,theme,theme_no,no,name,n_checkpoints,n_evidence,n_nonconformity_cases,path
-ko,organizational,A.5,A.5.1,정보보안 정책,4,4,4,docs/ko/A.5-organizational/A.5.1.md
+ko,organizational,A.5,A.5.1,정보보안 정책,6,6,6,docs/ko/A.5-organizational/A.5.1.md
 ko,organizational,A.5,A.5.2,정보보안 역할 및 책임,5,5,5,docs/ko/A.5-organizational/A.5.2.md
 ko,organizational,A.5,A.5.3,직무 분리,5,5,5,docs/ko/A.5-organizational/A.5.3.md
 ko,organizational,A.5,A.5.4,경영진 책임,6,6,6,docs/ko/A.5-organizational/A.5.4.md
@@ -92,7 +92,7 @@ ko,technological,A.8,A.8.31,"개발, 시험, 운영 환경 분리",6,6,6,docs/ko
 ko,technological,A.8,A.8.32,변경 관리,6,6,6,docs/ko/A.8-technological/A.8.32.md
 ko,technological,A.8,A.8.33,시험 정보,6,6,6,docs/ko/A.8-technological/A.8.33.md
 ko,technological,A.8,A.8.34,감사 시험 중 정보시스템 보호,6,6,6,docs/ko/A.8-technological/A.8.34.md
-en,organizational,A.5,A.5.1,Policies for information security,4,4,4,docs/en/A.5-organizational/A.5.1.md
+en,organizational,A.5,A.5.1,Policies for information security,6,6,6,docs/en/A.5-organizational/A.5.1.md
 en,organizational,A.5,A.5.2,Information security roles and responsibilities,5,5,5,docs/en/A.5-organizational/A.5.2.md
 en,organizational,A.5,A.5.3,Segregation of duties,5,5,5,docs/en/A.5-organizational/A.5.3.md
 en,organizational,A.5,A.5.4,Management responsibilities,6,6,6,docs/en/A.5-organizational/A.5.4.md

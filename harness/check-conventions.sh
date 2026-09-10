@@ -26,7 +26,12 @@
 # only (code files keep ASCII arrows). Term/arrow/paren/prefix scans strip fenced code
 # blocks and inline code first.
 set -uo pipefail
-cd "$(git rev-parse --show-toplevel)"
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+if [ -z "$ROOT" ]; then
+  echo "check-conventions: not inside a git work tree; refusing to scan an unknown directory." >&2
+  exit 1
+fi
+cd "$ROOT"
 
 if ! echo x | grep -qP x 2>/dev/null; then
   echo "error: GNU grep -P (PCRE) required" >&2; exit 2

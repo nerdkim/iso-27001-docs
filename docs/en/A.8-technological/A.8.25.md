@@ -6,9 +6,9 @@
 | Theme | A.8 Technological controls |
 | Control | A.8.25 Secure development life cycle |
 | Control type (ref.) | Preventive |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
-| ISMS-P mapping | 2.8.1 Security requirements definition |
-| 2013 mapping | 14.2.1 (Secure development policy) |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
+| ISMS-P mapping | 2.8.1 Definition of security requirements |
+| 2013 mapping | A.14.2.1 (Secure development policy) |
 
 ## Control objective
 
@@ -37,8 +37,8 @@ This control requires the organization to build security activities into every s
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 7.2 (Competence)
 - Adjacent Annex A: A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.30 (Outsourced development), A.8.31 (Separation of development, test and production environments), A.8.4 (Access to source code), A.8.32 (Change management), A.8.33 (Test information)
-- ISMS-P mapping: 2.8.1 Security requirements definition (related: 2.8.2 Security requirements review and testing, 2.8.3 Separation of test and production environments, 2.8.5 Source program management, 2.9.1 Change management)
-- 2013 mapping: 14.2.1 (Secure development policy)
+- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.8.3 Separation of test and production environments, 2.8.5 Source program management, 2.9.1 Change management)
+- 2013 mapping: A.14.2.1 (Secure development policy)
 
 ## Evidence
 

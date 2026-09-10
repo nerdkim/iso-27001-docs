@@ -35,9 +35,9 @@ This control ensures that information accessed, processed, or stored by personne
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 (Actions to address risks), 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.3 (Information security awareness, education and training), A.7.9 (Security of assets off-premises), A.8.1 (User endpoint devices), A.8.5 (Secure authentication)
-- ISMS-P mapping: 2.6.6 Remote access control (related: 2.4.7 Workspace security, 2.10.6 End-user device security)
+- ISMS-P mapping: 2.6.6 Remote access control (related: 2.4.7 Work environment security, 2.10.6 Business-use device security)
 - 2013 mapping: A.6.2.2 (Teleworking)
 
 ## Evidence

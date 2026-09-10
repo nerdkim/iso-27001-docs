@@ -34,7 +34,7 @@ This control ensures that technical vulnerabilities in the information systems t
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks), 9.1 (Monitoring and measurement)
+- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.19 (Installation of software on operational systems), A.8.9 (Configuration management), A.8.32 (Change management), A.5.7 (Threat intelligence), A.8.7 (Protection against malware), A.5.36 (Compliance with policies, rules and standards for information security)
 - ISMS-P mapping: 2.11.2 Vulnerability assessment and remediation (related: 2.10.8 Patch management)
 - 2013 mapping: A.12.6.1 (Management of technical vulnerabilities), A.18.2.3 (Technical compliance review)

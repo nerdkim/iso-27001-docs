@@ -16,7 +16,7 @@ This control ensures that the employment contract and equivalent agreements stat
 
 ## Key checkpoints
 
-1. Do the employment contract (or a separate agreement/pledge) state the employee's information security responsibilities and the organization's responsibilities?
+1. Does the employment contract (or a separate agreement/pledge) state the employee's information security responsibilities and the organization's responsibilities?
 2. Are confidentiality obligations for confidential information and personal data, and their duration (during and after employment), defined in the contract?
 3. Are security obligations differentiated by role/grade/access level reflected in the contract or pledge?
 4. Is there a procedure for personnel to sign or acknowledge compliance with information security policies and rules of conduct at the point of hiring/assignment?
@@ -42,7 +42,7 @@ This control ensures that the employment contract and equivalent agreements stat
 ## Evidence
 
 - Standard employment contract template that includes information security responsibility clauses
-- Security pledge or nondisclosure pledge signed by personnel
+- Security pledge or non-disclosure pledge signed by personnel
 - Records of policy and rules-of-conduct briefing and consent at hiring/assignment
 - Additional security obligation pledges by role/authority (key-duty personnel, personal data handlers, and so on)
 - Documents applying security terms to fixed-term/dispatched/outsourced personnel

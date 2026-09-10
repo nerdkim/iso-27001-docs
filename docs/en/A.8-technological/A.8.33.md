@@ -6,9 +6,9 @@
 | Theme | A.8 Technological controls |
 | Control | A.8.33 Test information |
 | Control type (ref.) | Preventive |
-| Security properties (ref.) | Confidentiality, Integrity |
+| Security properties (ref.) | Confidentiality / Integrity |
 | ISMS-P mapping | 2.8.4 Test data security |
-| 2013 mapping | 14.3.1 (Protection of test data) |
+| 2013 mapping | A.14.3.1 (Protection of test data) |
 
 ## Control objective
 
@@ -38,7 +38,7 @@ This control requires the organization to carefully select, protect, and manage 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.31 (Separation of development, test and production environments), A.8.29 (Security testing in development and acceptance), A.8.3 (Information access restriction), A.8.4 (Access to source code), A.8.10 (Information deletion), A.8.11 (Data masking), A.8.12 (Data leakage prevention), A.8.24 (Use of cryptography)
 - ISMS-P mapping: 2.8.4 Test data security (related: 2.8.3 Separation of test and production environments, 3.2.5 Pseudonymized data processing, 2.9.7 Reuse and disposal of information assets, 3.4.1 Destruction of personal data)
-- 2013 mapping: 14.3.1 (Protection of test data)
+- 2013 mapping: A.14.3.1 (Protection of test data)
 
 ## Evidence
 

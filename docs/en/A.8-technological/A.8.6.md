@@ -52,7 +52,7 @@ This control requires the organization to monitor and tune the use of informatio
 - Managed resources and thresholds are not defined, so utilization is not noticed until it reaches saturation.
 - Log collection/backup halts due to insufficient storage, but with no early-warning scheme it is discovered only after the fact.
 - No capacity sizing is performed when introducing a new service, causing performance degradation/outage right after launch.
-- Cloud auto-scaling has no upper bound, so a traffic surge causes an outage, or conversely leads to excessive cost.
+- Cloud auto-scaling bounds are misconfigured: a too-low upper bound causes an outage during a traffic surge, or the absence of one leads to excessive cost.
 - Demand forecasting is performed but procurement lead time is not considered, so the timing of expansion does not match actual demand.
 
 ---

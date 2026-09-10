@@ -46,6 +46,7 @@ Every control document keeps the same six sections:
 
 ```
 docs/
+  README.md / README.ko.md       what these documents are, and the read-only rule
   ko/                            Korean documents
     A.5-organizational/<no>.md   e.g. docs/ko/A.5-organizational/A.5.1.md
     A.6-people/<no>.md
@@ -54,6 +55,7 @@ docs/
     INDEX.md                     generated table of contents
   en/                            English documents, same relative paths
 extended/
+  README.md / README.ko.md       operating rules for AI use of the corpus
   catalog/controls.json          the public Annex A control list (numbers, titles, themes)
   manifest.json                  machine-readable index (the published contract)
   index/                         flat CSV index, nonconformity rulebook, evidence dictionary
@@ -63,6 +65,11 @@ tools/
 harness/
   install-hooks.sh               wire this clone to the git hooks (run once, see Setup)
   check-conventions.sh           documentation conventions checker (playbook docs/16)
+  test-check-conventions.sh      self-test for the checker above; CI runs it first
+  check-infra-conformance.sh     infra conformance checker (finds nothing here by design)
+  conventions-exclude            paths the conventions checker skips, with the reason
+  githooks/                      pre-commit, commit-msg, pre-push
+  gitmessage                     commit message template
 ```
 
 All paths are ASCII, so there are no URL-encoding surprises for consumers.
@@ -123,12 +130,14 @@ python3 tools/check_corpus.py   # read-only integrity checks
 bash harness/check-conventions.sh
 ```
 
-Both builders are deterministic and reproducible: CI regenerates and fails on any diff, so the
+The builder is deterministic and reproducible: CI regenerates and fails on any diff, so the
 committed indexes always match the corpus.
 
 When you add, edit, or delete a control, **update the counterpart document in the other language in
 the same commit**. The correspondence is keyed by control number. A Korean-only or English-only edit
-is a bug, and CI rejects it.
+is a bug. `tools/check_corpus.py` fails when a control exists in only one language, and when the two
+languages carry a different number of items in any counted section; rewording that keeps the counts
+equal is caught in review, not by CI.
 
 Adding a control also means adding it to `extended/catalog/controls.json`; `check_corpus.py` fails
 when the catalog and the documents disagree in either direction.

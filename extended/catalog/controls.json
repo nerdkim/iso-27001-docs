@@ -1,8 +1,16 @@
 {
  "schema": "iso-27001-annex-a-catalog/v1",
  "standard": "ISO/IEC 27001:2022",
- "description": "ISO/IEC 27001:2022 Annex A control catalog. Control numbers/titles/themes are a public factual list; each control's explanatory text (docs/ISO-27001/) is original material of this collection, not the normative text of the standard.",
- "source_note": "Control numbers/titles/four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. Korean titles are this collection's translation.",
+ "edition": {
+  "annex_a": "2022",
+  "amendment": "ISO/IEC 27001:2022/Amd 1:2024 (climate action changes) amends main-body clauses 4.1 and 4.2 only. Annex A, its 93 controls, their numbering and the four themes are unchanged, so this catalog is unaffected.",
+  "last_verified": "2026-09"
+ },
+ "description": "ISO/IEC 27001:2022 Annex A control catalog. Control numbers/titles/themes are a public factual list; each control's explanatory text (docs/ko/, docs/en/) is original material of this collection, not the normative text of the standard.",
+ "source_note": {
+  "ko": "통제 번호, 명칭, 4개 테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 한국어 명칭은 이 자료집의 표기입니다. Amd 1:2024는 본문 4.1과 4.2만 개정하며 Annex A는 바뀌지 않았습니다.",
+  "en": "Control numbers, titles and the four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. Korean titles are this collection's rendering. Amd 1:2024 amends main-body clauses 4.1 and 4.2 only; Annex A is unchanged."
+ },
  "themes": {
   "organizational": { "no": "A.5", "label_ko": "조직적 통제", "label_en": "Organizational controls", "dir": "A.5-organizational" },
   "people": { "no": "A.6", "label_ko": "인적 통제", "label_en": "People controls", "dir": "A.6-people" },

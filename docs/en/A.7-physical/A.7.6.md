@@ -7,12 +7,12 @@
 | Control | A.7.6 Working in secure areas |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.5 Working in protected areas (related: 2.4.6 Control of devices brought in and out, 2.4.2 Access control) |
-| 2013 mapping | 11.1.5 |
+| ISMS-P mapping | 2.4.5 Working in protected areas (related: 2.4.6 Control of devices brought in and out, 2.4.2 Physical entry control) |
+| 2013 mapping | A.11.1.5 |
 
 ## Control objective
 
-This control requires that work performed inside secure areas (computer rooms, communications rooms, records storage, data centres, etc.), such as maintenance, construction, installation, cleaning, visits, and moving items in and out, be governed so that it does not lead to exposure, damage, unauthorized manipulation, or service disruption. Even where physical safeguards such as entry control and perimeters exist, unauthorized actions, photography, media introduction, or arbitrary configuration changes can occur at the moment work actually takes place. The organization should therefore preserve the security level even during work through prior approval, supervision during the work, and retention of work records. By managing the risk of the moment when people and equipment actually intervene in a secure area, this control reinforces the effectiveness of the overall physical security scheme.
+This control requires that work performed inside secure areas (computer rooms, communications rooms, records storage, data centers, etc.), such as maintenance, construction, installation, cleaning, visits, and moving items in and out, be governed so that it does not lead to exposure, damage, unauthorized manipulation, or service disruption. Even where physical safeguards such as entry control and perimeters exist, unauthorized actions, photography, media introduction, or arbitrary configuration changes can occur at the moment work actually takes place. The organization should therefore preserve the security level even during work through prior approval, supervision during the work, and retention of work records. By managing the risk of the moment when people and equipment actually intervene in a secure area, this control reinforces the effectiveness of the overall physical security scheme.
 
 ## Key checkpoints
 
@@ -37,8 +37,8 @@ This control requires that work performed inside secure areas (computer rooms, c
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.7.4 (Physical security monitoring), A.7.10 (Storage media), A.6.3 (Information security awareness, education and training)
-- ISMS-P mapping: 2.4.5 Working in protected areas (related: 2.4.6 Control of devices brought in and out, 2.4.2 Access control)
-- 2013 mapping: 11.1.5 (Working in secure areas)
+- ISMS-P mapping: 2.4.5 Working in protected areas (related: 2.4.6 Control of devices brought in and out, 2.4.2 Physical entry control)
+- 2013 mapping: A.11.1.5 (Working in secure areas)
 
 ## Evidence
 

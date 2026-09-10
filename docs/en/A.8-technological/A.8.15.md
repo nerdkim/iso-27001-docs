@@ -6,7 +6,7 @@
 | Theme | A.8 Technological controls |
 | Control | A.8.15 Logging |
 | Control type (ref.) | Detective |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.9.4 Log and access record management |
 | 2013 mapping | A.12.4.1 / A.12.4.2 / A.12.4.3 (Event logging / Protection of log information / Administrator and operator logs) |
 
@@ -38,7 +38,7 @@ Logging requires that events arising from information systems, applications, net
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.16 (Monitoring activities), A.8.17 (Clock synchronization), A.5.28 (Collection of evidence), A.8.6 (Capacity management), A.5.33 (Protection of records)
 - ISMS-P mapping: 2.9.4 Log and access record management (review under 2.9.5, time synchronization under 2.9.6)
-- 2013 mapping: A.12.4.1 / A.12.4.2 / A.12.4.3
+- 2013 mapping: A.12.4.1 (/ A.12.4.2 / A.12.4.3)
 
 ## Evidence
 

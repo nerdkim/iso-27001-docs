@@ -33,7 +33,7 @@ This control requires the organization to collect, analyze, and use information 
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 (Actions to address risks), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and continual improvement)
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.5.5 (Contact with authorities), A.5.6 (Contact with special interest groups), A.8.8 (Management of technical vulnerabilities), A.8.16 (Monitoring activities), A.5.24 to A.5.27 (Information security incident management)
 - ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system (related: 2.11.3 Anomaly analysis and monitoring, 2.11.2 Vulnerability assessment and remediation)
 - 2013 mapping: New in 2022

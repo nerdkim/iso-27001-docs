@@ -5,8 +5,8 @@
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.8 Technological controls |
 | Control | A.8.23 Web filtering |
-| Control type (ref.) | Preventive/Detective |
-| Security properties (ref.) | Confidentiality/Integrity/Availability |
+| Control type (ref.) | Preventive / Detective |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.6.7 Internet access control |
 | 2013 mapping | New in 2022 |
 
@@ -21,7 +21,7 @@ This control requires that access to external websites be managed/controlled so 
 3. Are threat intelligence, reputation lists, and category databases kept up to date so that newly identified risky sites are reflected promptly?
 4. Is the same filtering policy applied when users connect from outside the corporate network, such as remote workers and mobile devices?
 5. Is there an inspection policy for encrypted traffic such as HTTPS, along with criteria for exceptions that consider personal data/privacy?
-6. Are block/bypass-attempt logs collected and reviewed, and is there a procedure to request and review exceptions for false positives/negatives?
+6. Are block/bypass-attempt logs collected and reviewed, and is there a procedure to request and review exceptions for false positives?
 
 ## Implementation guidance
 
@@ -30,7 +30,7 @@ This control requires that access to external websites be managed/controlled so 
 - Automatically update threat intelligence, reputation feeds, and category databases so that the latest risky sites are reflected promptly.
 - Apply the same policy in remote/mobile environments through an endpoint agent or cloud-based filtering to remove blind spots.
 - Apply HTTPS traffic inspection (SSL inspection) while managing sensitive sites such as finance/healthcare on an exception list, and document the inspection scope and exceptions to meet privacy/legal requirements.
-- Collect and periodically review block events, bypass attempts, and policy-exception requests, and operate an exception-approval procedure and user guidance (acceptable use policy) for false positives/negatives.
+- Collect and periodically review block events, bypass attempts, and policy-exception requests, and operate an exception-approval procedure and user guidance (acceptable use policy) for false positives.
 - Combine with download-file scanning and malware controls to defend against web-borne threats in multiple layers.
 
 ## Related controls and attributes

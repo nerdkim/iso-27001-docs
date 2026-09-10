@@ -54,8 +54,8 @@ This control ensures that, when applications are developed or acquired/purchased
 - Transactions over public networks have no defined requirements for transport encryption/transaction integrity/non-repudiation.
 - Vulnerability-handling requirements such as input validation/injection prevention are absent, so the same class of vulnerability recurs.
 - Legal requirements for processing personal data/payment data are not reflected in the security requirements.
-- Defined security requirements are released without being confirmed during the testing/verification stage.
-- The security features of an acquired (purchased/SaaS) application are adopted without being assessed for conformance to requirements.
+- The product is released without the defined security requirements being confirmed during the testing/verification stage.
+- An acquired (purchased/SaaS) application is adopted without its security features being assessed for conformance to requirements.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

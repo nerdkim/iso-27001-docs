@@ -6,14 +6,16 @@
 | Theme | A.5 Organizational controls |
 | Control | A.5.23 Information security for use of cloud services |
 | Control type (ref.) | Preventive |
-| Security properties (ref.) | Confidentiality/Integrity/Availability |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.10.2 Cloud security |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
+
 This control defines and enforces the organization's security requirements across the full lifecycle of cloud services: acquisition, use, migration, and exit. Because cloud operates under a shared responsibility model that splits control points between the provider and the customer, the essential task is to carry out every security responsibility that falls to the customer through contracts, configuration, and monitoring. The aim is to govern unapproved cloud use and to securely recover or destroy data on exit or migration, so that cloud risk stays within the organization's management scope.
 
 ## Key checkpoints
+
 1. Are security requirements and usage criteria defined and subject to an approval process before adopting a cloud service?
 2. Is the boundary of security responsibility between provider and customer documented per service type (IaaS/PaaS/SaaS) under the shared responsibility model?
 3. Are security baselines for cloud accounts and configuration (privileges, network, encryption, logging) established and their compliance reviewed?
@@ -21,6 +23,7 @@ This control defines and enforces the organization's security requirements acros
 5. Are procedures for data recovery/destruction and account/privilege revocation in place for service termination or migration?
 
 ## Implementation guidance
+
 - Establish a cloud adoption/use policy and operate a process to identify and block unapproved cloud (shadow IT) use.
 - Produce a shared responsibility matrix per service type that clarifies customer-owned items such as account management, data encryption, network controls, and log collection.
 - Define cloud configuration security baselines and periodically check for risky configurations such as exposed public storage, excessive privileges, and unencrypted data.
@@ -29,12 +32,14 @@ This control defines and enforces the organization's security requirements acros
 - Prepare an exit plan in advance to manage data portability and vendor lock-in risk.
 
 ## Related controls and attributes
+
 - ISO 27001 clauses: 6.1 Risk assessment and treatment, 8.1 Operational planning and control
 - Adjacent Annex A: A.5.19 Information security in supplier relationships, A.5.20 Addressing information security within supplier agreements, A.5.21 Managing information security in the ICT supply chain, A.5.22 Monitoring, review and change management of supplier services
 - ISMS-P mapping: 2.10.2 Cloud security
 - 2013 mapping: New in 2022
 
 ## Evidence
+
 - Cloud adoption/use policy and adoption approval records
 - Shared responsibility matrix per service type
 - Cloud contract/SLA (including data storage location, incident notification, exit clauses)
@@ -43,6 +48,7 @@ This control defines and enforces the organization's security requirements acros
 - Data return/destruction confirmation on service termination or migration
 
 ## Nonconformity examples
+
 - A team adopts a SaaS to store customer data without approval, and it is omitted from the organization's management scope.
 - Misunderstanding the shared responsibility model, the customer assumes the provider performs data encryption/access control that are in fact the customer's responsibility.
 - Cloud storage is configured as public and exposed to the internet.

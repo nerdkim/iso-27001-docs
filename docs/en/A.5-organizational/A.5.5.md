@@ -7,7 +7,7 @@
 | Control | A.5.5 Contact with authorities |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.1 Building an incident prevention and response system, 2.11.5 Incident response and recovery |
+| ISMS-P mapping | 2.11.1 Establishment of incident prevention and response system, 2.11.5 Incident response and recovery |
 | 2013 mapping | A.6.1.3 |
 
 ## Control objective
@@ -35,7 +35,7 @@ This control ensures that the organization establishes and maintains contact arr
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 7.4 (Communication), 10 (Improvement)
 - Adjacent Annex A: A.5.6 (Contact with special interest groups), A.5.24 (Information security incident management planning and preparation), A.5.25 (Assessment and decision on information security events), A.5.26 (Response to information security incidents), A.5.29 (Information security during disruption), A.5.31 (Legal, statutory, regulatory and contractual requirements)
-- ISMS-P mapping: 2.11.1 Building an incident prevention and response system, 2.11.5 Incident response and recovery
+- ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system, 2.11.5 Incident response and recovery
 - 2013 mapping: A.6.1.3 (Contact with authorities)
 
 ## Evidence

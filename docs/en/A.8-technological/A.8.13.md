@@ -6,9 +6,9 @@
 | Theme | A.8 Technological controls |
 | Control | A.8.13 Information backup |
 | Control type (ref.) | Corrective |
-| Security properties (ref.) | Integrity, Availability |
+| Security properties (ref.) | Integrity / Availability |
 | ISMS-P mapping | 2.9.3 Backup and recovery management |
-| 2013 mapping | A.12.3.1 Information backup |
+| 2013 mapping | A.12.3.1 (Information backup) |
 
 ## Control objective
 
@@ -19,7 +19,7 @@ This control requires that copies of information, software, and system images be
 1. Are the backup scope (business data, configuration information, system images, cryptographic keys, and so on), backup frequency, retention period, and storage location defined in the backup policy/procedure?
 2. Do the backup scope and frequency align with recovery targets such as the RPO/RTO derived from business criticality?
 3. Is the recoverability of backup data tested periodically, with actual recovery time/consistency results recorded and acted upon?
-4. Are access control, encryption, and storage separated from the source (off-site/isolated, and so on) applied to backup repositories/media?
+4. Are access control, encryption, and separation from the source (off-site/isolated storage, and so on) applied to backup repositories/media?
 5. Are resilience measures such as immutable/offline/isolated backups in place to guard against simultaneous corruption, for example by ransomware?
 6. Is the success/failure of backup jobs monitored, with re-run and escalation procedures operated when a job fails or is missed?
 
@@ -38,7 +38,7 @@ This control requires that copies of information, software, and system images be
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.30 (ICT readiness for business continuity), A.8.14 (Redundancy of information processing facilities), A.8.16 (Monitoring activities), A.8.24 (Use of cryptography), A.8.10 (Information deletion)
 - ISMS-P mapping: 2.9.3 Backup and recovery management
-- 2013 mapping: A.12.3.1 Information backup
+- 2013 mapping: A.12.3.1 (Information backup)
 
 ## Evidence
 

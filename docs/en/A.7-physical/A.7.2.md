@@ -7,8 +7,8 @@
 | Control | A.7.2 Physical entry |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.2 Access control (related: 2.4.1 Designation of protected areas, 2.4.3 Information system protection, 2.4.6 Control of devices brought in and out) |
-| 2013 mapping | 11.1.2, 11.1.6 |
+| ISMS-P mapping | 2.4.2 Physical entry control (related: 2.4.1 Designation of protected areas, 2.4.3 Information system protection, 2.4.6 Control of devices brought in and out) |
+| 2013 mapping | A.11.1.2, A.11.1.6 |
 
 ## Control objective
 
@@ -37,8 +37,8 @@ This control requires that entry to protected areas and facilities be restricted
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 7.5 (Documented information), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.3 (Securing offices, rooms and facilities), A.7.4 (Physical security monitoring), A.7.6 (Working in secure areas), A.5.15 (Access control), A.5.20 (Addressing information security within supplier agreements), A.6.7 (Remote working)
-- ISMS-P mapping: 2.4.2 Access control (related: 2.4.1 Designation of protected areas, 2.4.3 Information system protection, 2.4.6 Control of devices brought in and out)
-- 2013 mapping: 11.1.2 (Physical entry controls), 11.1.6 (Delivery and loading areas)
+- ISMS-P mapping: 2.4.2 Physical entry control (related: 2.4.1 Designation of protected areas, 2.4.3 Information system protection, 2.4.6 Control of devices brought in and out)
+- 2013 mapping: A.11.1.2 (Physical entry controls), A.11.1.6 (Delivery and loading areas)
 
 ## Evidence
 

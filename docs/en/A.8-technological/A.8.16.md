@@ -5,8 +5,8 @@
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.8 Technological controls |
 | Control | A.8.16 Monitoring activities |
-| Control type (ref.) | Detective, Corrective |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
+| Control type (ref.) | Detective / Corrective |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.11.3 Anomaly analysis and monitoring |
 | 2013 mapping | New in 2022 |
 

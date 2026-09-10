@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.10.7 Management of removable storage media (related: 2.9.7 Reuse and disposal of information assets, 2.4.6 Control of devices brought in and out) |
-| 2013 mapping | 8.3.1, 8.3.2, 8.3.3, 11.2.5 |
+| 2013 mapping | A.8.3.1, A.8.3.2, A.8.3.3, A.11.2.5 |
 
 ## Control objective
 
@@ -25,19 +25,19 @@ This control requires that information held on storage media be protected agains
 
 ## Implementation guidance
 
-- Define classification criteria and handling rules by media type (removable/fixed/optical/tape/SSD), and apply labelling and asset-register entries so that location and status can be tracked.
+- Define classification criteria and handling rules by media type (removable/fixed/optical/tape/SSD), and apply labeling and asset-register entries so that location and status can be tracked.
 - Restrict removable media use by default, issue media only after approval/registration when there is a genuine business need, and encrypt stored information so that loss or theft does not expose data.
 - For off-site transport, use trusted carriers, tamper-evident sealing/packaging, handover and receipt-confirmation records, and in-transit encryption, and retain the transport history.
 - For re-use, reset previous data so that it cannot be recovered (multi-pass overwriting, cryptographic erase, etc.); for disposal, perform physical destruction/perforation/degaussing/incineration suited to the media type.
 - Use verifiable, standard methods for sanitization/destruction and record the date, target media, method, responsible person, and result on a certificate; where outsourced, obtain the processing evidence and the contract.
-- For media with unreliable overwrite behaviour such as SSD/flash, encrypt from the point of storage and dispose by key destruction (cryptographic erase) or combine with physical destruction; do not rely on degaussing alone.
+- For media with unreliable overwrite behavior such as SSD/flash, encrypt from the point of storage and dispose by key destruction (cryptographic erase) or combine with physical destruction; do not rely on degaussing alone.
 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 7.5 (Documented information), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.7.9 (Security of assets off-premises), A.7.14 (Secure disposal or re-use of equipment), A.8.10 (Information deletion), A.8.12 (Data leakage prevention), A.5.9 (Inventory of information and other associated assets), A.5.10 (Acceptable use of information and other associated assets), A.5.14 (Information transfer)
 - ISMS-P mapping: 2.10.7 Management of removable storage media (related: 2.9.7 Reuse and disposal of information assets, 2.4.6 Control of devices brought in and out)
-- 2013 mapping: 8.3.1 (Management of removable media), 8.3.2 (Disposal of media), 8.3.3 (Physical media transfer), 11.2.5 (Removal of assets)
+- 2013 mapping: A.8.3.1 (Management of removable media), A.8.3.2 (Disposal of media), A.8.3.3 (Physical media transfer), A.11.2.5 (Removal of assets)
 
 ## Evidence
 

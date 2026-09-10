@@ -6,7 +6,7 @@
 | Theme | A.8 Technological controls |
 | Control | A.8.28 Secure coding |
 | Control type (ref.) | Preventive |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.8.1 Definition of security requirements |
 | 2013 mapping | New in 2022 |
 

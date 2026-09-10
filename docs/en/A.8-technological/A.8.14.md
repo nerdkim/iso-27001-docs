@@ -7,8 +7,8 @@
 | Control | A.8.14 Redundancy of information processing facilities |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Availability |
-| ISMS-P mapping | 2.9.2 Performance and failure management |
-| 2013 mapping | 17.2.1 Availability of information processing facilities |
+| ISMS-P mapping | 2.9.2 Performance and fault management |
+| 2013 mapping | A.17.2.1 (Availability of information processing facilities) |
 
 ## Control objective
 
@@ -37,8 +37,8 @@ This control requires that information processing facilities (servers, storage, 
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.30 (ICT readiness for business continuity), A.8.6 (Capacity management), A.8.13 (Information backup), A.7.11 (Supporting utilities), A.7.12 (Cabling security)
-- ISMS-P mapping: 2.9.2 Performance and failure management (linked: 2.12.1 Safety measures for disaster/emergency preparedness, 2.9.3 Backup and recovery management)
-- 2013 mapping: 17.2.1 Availability of information processing facilities
+- ISMS-P mapping: 2.9.2 Performance and fault management (linked: 2.12.1 Safety measures for disaster and emergency preparedness, 2.9.3 Backup and recovery management)
+- 2013 mapping: A.17.2.1 (Availability of information processing facilities)
 
 ## Evidence
 
@@ -54,7 +54,7 @@ This control requires that information processing facilities (servers, storage, 
 
 - Only some equipment is made redundant without defined availability requirements, while other layers such as power/links remain single, leaving SPOFs.
 - Redundancy is configured but failover has never been tested, so switchover fails during a real incident.
-- The standby node lacks capacity/performance, so the service cannot be processed normally after switchover.
+- The standby node lacks capacity/performance, so the service cannot run normally after switchover.
 - Replication lag is not managed, causing data loss/inconsistency after switchover.
 - Redundant components run different configuration/firmware versions, causing malfunction at switchover.
 - There is no monitoring/alerting on redundancy status, so a degraded state (one side already failed) goes unnoticed.

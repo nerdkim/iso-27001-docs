@@ -35,7 +35,7 @@ This control requires that the clocks of all in-scope information systems and ne
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.15 (Logging), A.8.16 (Monitoring activities), A.5.28 (Collection of evidence), A.8.20 (Networks security), A.8.21 (Security of network services)
-- ISMS-P mapping: 2.9.6 Time synchronization (related: 2.9.4 Log and access record management, 2.9.5 Log and access record review, 2.11.3 Anomaly analysis and monitoring)
+- ISMS-P mapping: 2.9.6 Time synchronization (related: 2.9.4 Log and access record management, 2.9.5 Review of logs and access records, 2.11.3 Anomaly analysis and monitoring)
 - 2013 mapping: A.12.4.4 (Clock synchronization)
 
 ## Evidence

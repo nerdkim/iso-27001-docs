@@ -36,7 +36,7 @@ This control ensures that systems/applications being developed or acquired are t
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles), A.8.28 (Secure coding), A.8.30 (Outsourced development), A.8.31 (Separation of development, test and production environments), A.8.33 (Test information), A.8.8 (Management of technical vulnerabilities)
-- ISMS-P mapping: 2.8.2 Review and testing of security requirements (related: 2.8.1 Definition of security requirements, 2.8.3 Separation of test and production environments, 2.8.4 Test data security, 2.8.6 Migration to production, 2.11.2 Vulnerability assessment and remediation)
+- ISMS-P mapping: 2.8.2 Review and testing of security requirements (related: 2.8.1 Definition of security requirements, 2.8.3 Separation of test and production environments, 2.8.4 Test data security, 2.8.6 Transfer to operational environment, 2.11.2 Vulnerability assessment and remediation)
 - 2013 mapping: A.14.2.8 (System security testing), A.14.2.9 (System acceptance testing)
 
 ## Evidence

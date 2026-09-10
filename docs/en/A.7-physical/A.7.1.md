@@ -6,14 +6,16 @@
 | Theme | A.7 Physical controls |
 | Control | A.7.1 Physical security perimeters |
 | Control type (ref.) | Preventive |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.4.1 Designation of protected areas |
-| 2013 mapping | 11.1.1 |
+| 2013 mapping | A.11.1.1 |
 
 ## Control objective
-The purpose is to enclose areas that hold information and information processing facilities within clearly defined physical perimeters so that unauthorized physical access, damage, and interference are prevented. The organization should design perimeters in layers according to asset value and assessed risk, keeping the strength of each perimeter proportionate to what it protects. A well defined perimeter is the physical foundation on which later controls such as entry control, monitoring, and secure-area work depend to be effective.
+
+The purpose is to enclose areas that hold information and information processing facilities within clearly defined physical perimeters so that unauthorized physical access, damage, and interference are prevented. The organization should design perimeters in layers according to asset value and assessed risk, keeping the strength of each perimeter proportionate to what it protects. A well-defined perimeter is the physical foundation on which later controls such as entry control, monitoring, and secure-area work depend to be effective.
 
 ## Key checkpoints
+
 1. Are physical perimeters (walls, doors, reception, fencing) clearly defined and documented for areas that contain information processing facilities and sensitive information?
 2. Are perimeters divided into graded zones (for example general/restricted/controlled) based on asset criticality and risk assessment, with protection levels applied accordingly?
 3. Are the walls, ceiling, floor, windows, and entry points that form the perimeter physically robust enough to resist unauthorized intrusion?
@@ -22,6 +24,7 @@ The purpose is to enclose areas that hold information and information processing
 6. Are locking, detection, and inspection measures in place to maintain perimeter integrity in unattended areas or outside working hours?
 
 ## Implementation guidance
+
 - Define protected areas from asset criticality and risk assessment, and document the location and protection grade of each physical perimeter in floor plans and a zone inventory.
 - Design perimeters as multiple layers rather than a single barrier, so control strength increases as one moves from the outer boundary toward core assets.
 - Apply intrusion-resistant materials and construction standards to perimeter structures, and inspect bypass routes such as windows, vents, ceiling voids, and raised-floor spaces.
@@ -31,12 +34,14 @@ The purpose is to enclose areas that hold information and information processing
 - Maintain a change history for perimeters and protected areas, and inspect physical condition periodically to remediate damage, deterioration, or bypass paths.
 
 ## Related controls and attributes
-- ISO 27001 clauses: 6.1 (risk assessment and treatment), 8.1 (operational planning and control), 9.1 (monitoring and measurement)
+
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.7.4 (Physical security monitoring), A.7.6 (Working in secure areas)
 - ISMS-P mapping: 2.4.1 Designation of protected areas
-- 2013 mapping: 11.1.1
+- 2013 mapping: A.11.1.1
 
 ## Evidence
+
 - Policy or guideline for designating protected areas and assigning protection grades
 - Facility floor plans showing perimeter boundaries and entry points, plus a protected-area inventory
 - Physical perimeter inspection checklist and records of periodic inspections
@@ -45,6 +50,7 @@ The purpose is to enclose areas that hold information and information processing
 - Operating records for the reception or staffed control point
 
 ## Nonconformity examples
+
 - The server room sits in the same space as general offices with no separate perimeter, so no physical separation exists.
 - The same minimal level of control is applied to all areas, with no grading of protected zones.
 - An emergency exit on the perimeter is left open or can be opened easily from outside, allowing bypass entry.

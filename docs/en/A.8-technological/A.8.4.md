@@ -20,7 +20,7 @@ This control restricts read and write access to source code, development tools, 
 2. Is repository access authenticated with individually identifiable accounts, and are access/commit/merge/permission-change events logged so they can be audited?
 3. Is unnecessary source code kept off operational systems, and is access to development tools, libraries, and build pipeline credentials also controlled?
 4. Are source code changes applied through a review process (code review, merge approval), with unapproved direct changes blocked?
-5. When external developers or suppliers access source code, is the scope and duration limited and governed by contract/confidentiality undertakings?
+5. When external developers or suppliers access source code, are the scope and duration limited and governed by contract/confidentiality undertakings?
 6. Are access rights reviewed periodically and revoked immediately on termination or role change?
 
 ## Implementation guidance
@@ -34,7 +34,7 @@ This control restricts read and write access to source code, development tools, 
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks)
+- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.3 (Information access restriction), A.8.2 (Privileged access rights), A.8.31 (Separation of development, test and production environments), A.8.32 (Change management), A.8.25 (Secure development life cycle), A.8.28 (Secure coding), A.5.18 (Access rights)
 - ISMS-P mapping: 2.8.5 Source program management
 - 2013 mapping: A.9.4.5 (Access control to program source code)

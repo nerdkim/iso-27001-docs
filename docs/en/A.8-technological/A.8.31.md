@@ -6,9 +6,9 @@
 | Theme | A.8 Technological controls |
 | Control | A.8.31 Separation of development, test and production environments |
 | Control type (ref.) | Preventive |
-| Security properties (ref.) | Confidentiality, Integrity, Availability |
+| Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.8.3 Separation of test and production environments |
-| 2013 mapping | 12.1.4 (Separation of development, testing and operational facilities) |
+| 2013 mapping | A.12.1.4 (Separation of development, testing and operational environments), A.14.2.6 (Secure development environment) |
 
 ## Control objective
 
@@ -37,8 +37,8 @@ This control requires the organization to separate development, test, and produc
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.32 (Change management), A.8.33 (Test information), A.8.25 (Secure development life cycle), A.8.4 (Access to source code), A.8.9 (Configuration management), A.8.2 (Privileged access rights), A.8.3 (Information access restriction)
-- ISMS-P mapping: 2.8.3 Separation of test and production environments (related: 2.8.4 Test data security, 2.8.6 Transition to production, 2.9.1 Change management, 2.5.5 Special account and privilege management)
-- 2013 mapping: 12.1.4 (Separation of development, testing and operational facilities)
+- ISMS-P mapping: 2.8.3 Separation of test and production environments (related: 2.8.4 Test data security, 2.8.6 Transfer to operational environment, 2.9.1 Change management, 2.5.5 Special account and privilege management)
+- 2013 mapping: A.12.1.4 (Separation of development, testing and operational environments), A.14.2.6 (Secure development environment)
 
 ## Evidence
 

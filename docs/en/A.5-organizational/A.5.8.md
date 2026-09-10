@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.8.1 Definition of security requirements (related: 1.2.3 Risk assessment, 2.8.2 Review and testing of security requirements) |
-| 2013 mapping | 6.1.5 (Information security in project management), 14.1.1 (Information security requirements analysis and specification) |
+| 2013 mapping | A.6.1.5 (Information security in project management), A.14.1.1 (Information security requirements analysis and specification) |
 
 ## Control objective
 
@@ -33,10 +33,10 @@ This control requires information security to be embedded in project management 
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 (Actions to address risks), 6.2 (Information security objectives and planning), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.9 (Inventory of assets), A.5.19 to A.5.22 (Supplier relationships security), A.5.31 (Legal and regulatory requirements), A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles)
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 6.2 (Information security objectives and planning), 8.1 (Operational planning and control)
+- Adjacent Annex A: A.5.9 (Inventory of information and other associated assets), A.5.19 to A.5.22 (Supplier relationships security), A.5.31 (Legal, statutory, regulatory and contractual requirements), A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles)
 - ISMS-P mapping: 2.8.1 Definition of security requirements (related: 1.2.3 Risk assessment, 2.8.2 Review and testing of security requirements)
-- 2013 mapping: 6.1.5 (Information security in project management), 14.1.1 (Information security requirements analysis and specification)
+- 2013 mapping: A.6.1.5 (Information security in project management), A.14.1.1 (Information security requirements analysis and specification)
 
 ## Evidence
 

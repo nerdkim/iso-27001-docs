@@ -17,7 +17,7 @@ This control ensures that all personnel and relevant external parties receive on
 ## Key checkpoints
 
 1. Is there an information security awareness and training plan covering all personnel and relevant external parties, backed by management approval and budget?
-2. Are new joiners given basic security training early in hiring/assignment, and does all personnel receive periodic (at least annual) refresher training?
+2. Are new joiners given basic security training early in hiring/assignment, and do all personnel receive periodic (at least annual) refresher training?
 3. Is differentiated, specialized training provided according to job characteristics (developers, system administrators, personal data handlers, management, and so on)?
 4. Does the content reflect current threats (phishing, ransomware, social engineering) and policy/legal revisions, and is it refreshed periodically?
 5. Are completion and comprehension confirmed (attendance, assessment, acknowledgement), and are remedial actions taken for those who did not complete?

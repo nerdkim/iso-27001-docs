@@ -7,7 +7,7 @@
 | Control | A.8.2 Privileged access rights |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.5.5 Special accounts and privilege management |
+| ISMS-P mapping | 2.5.5 Special account and privilege management |
 | 2013 mapping | A.9.2.3 |
 
 ## Control objective
@@ -28,15 +28,15 @@ Privileged access rights (administrator, root, system/DB administrator privilege
 - Use individually identifiable privileged accounts, minimize shared administrator account use, and where unavoidable ensure use is logged and attributable to a responsible person.
 - Apply hardening measures to privileged access, such as multi-factor authentication, access via bastion/jump hosts, session recording, and privileged access management (PAM) solutions.
 - Grant privileges only when needed through just-in-time elevation, and revoke them automatically once the task is complete.
-- Store privileged credentials securely (for example in a vault) and rotate them periodically, and disable or rename/repassword default system administrator accounts.
+- Store privileged credentials securely (for example in a vault) and rotate them periodically, and disable default system administrator accounts, or rename them and change their passwords.
 - Adjust privileged rights immediately on transfer/termination/role change, and link with periodic access reviews (A.5.18) to check for excessive grants.
 - Retain privileged activity logs separately and link them with logging/monitoring (A.8.15, A.8.16) to detect anomalous behavior.
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 6.1 (Actions to address risks), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.15 (Access control), A.5.16 (Identity management), A.5.17 (Authentication information), A.5.18 (Access rights), A.8.3 (Information access restriction), A.8.5 (Secure authentication), A.8.15 (Logging), A.8.16 (Monitoring activities), A.8.18 (Use of privileged utility programs)
-- ISMS-P mapping: 2.5.5 Special accounts and privilege management
+- ISMS-P mapping: 2.5.5 Special account and privilege management
 - 2013 mapping: A.9.2.3 (Management of privileged access rights)
 
 ## Evidence

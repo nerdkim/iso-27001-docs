@@ -53,7 +53,10 @@ jobs:
       - name: Generated indexes match the corpus (no drift)
         run: |
           python3 tools/build_index.py
-          if ! git diff --exit-code -- extended docs; then
+          # --porcelain also reports files the builder newly created; git diff alone would not.
+          if [ -n "$(git status --porcelain -- extended docs)" ]; then
+            git status --porcelain -- extended docs
+            git diff -- extended docs
             echo "::error::the committed indexes are stale. Run 'python3 tools/build_index.py' and commit the result."
             exit 1
           fi

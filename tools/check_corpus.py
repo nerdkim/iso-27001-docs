@@ -10,6 +10,11 @@ Checks
   [5] every control document ends with a source/limitation footer
   [6] every path recorded in the manifest exists on disk, no document on disk is missing
       from the manifest, and every control in the catalog has a document in both languages
+  [7] the Korean and English documents for a control carry the same number of items in each
+      counted section, so a structural one-language edit cannot land on its own
+  [8] every 'A.x.y (title)' cross-reference reproduces that control's title from the catalog
+  [9] the metadata table carries the expected rows, and the control-type and security-property
+      values agree between the two languages
 
 Exit code 0 when the corpus is intact, 1 otherwise.
 
@@ -80,6 +85,105 @@ def check_document(path, lang):
         fail(f"{rel}: missing the trailing source/limitation footer ('---' followed by a '>' line)")
 
 
+COUNTED_SECTIONS = {
+    "ko": ["주요 확인사항", "이행 지침", "증적자료", "부적합 사례"],
+    "en": ["Key checkpoints", "Implementation guidance", "Evidence", "Nonconformity examples"],
+}
+META_ROWS = {
+    "ko": ["표준", "테마", "통제", "통제 유형(참고)", "보안 속성(참고)", "ISMS-P 대응", "2013 대응"],
+    "en": ["Standard", "Theme", "Control", "Control type (ref.)",
+           "Security properties (ref.)", "ISMS-P mapping", "2013 mapping"],
+}
+XREF_MARKER = {"ko": "인접 Annex A:", "en": "Adjacent Annex A:"}
+TYPE_KO = {"예방적": "Preventive", "탐지적": "Detective", "교정적": "Corrective"}
+PROP_KO = {"기밀성": "Confidentiality", "무결성": "Integrity", "가용성": "Availability"}
+# A range such as "A.5.24~A.5.28(...)" carries a group label, not one control's title.
+RANGE_RE = re.compile(r"A\.\d+\.\d+\s*(?:[~\-]|\s+to\s+)\s*A\.\d+\.\d+\s*[(（]")
+
+
+def read(path):
+    return open(path, encoding="utf-8").read()
+
+
+def section_items(text, title):
+    m = re.search(r"(?m)^##\s+" + re.escape(title) + r"\s*$(.*?)(?=^##\s|\n---\n|\Z)", text, re.S)
+    if not m:
+        return None
+    return len([l for l in m.group(1).split("\n") if re.match(r"^\s*(?:-|\d+\.)\s", l)])
+
+
+def meta_rows(text):
+    return {k.strip(): v.strip()
+            for k, v in re.findall(r"(?m)^\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|\s*$", text)}
+
+
+def attr_tokens(cell):
+    return [x.strip() for x in re.split(r"[/,]", re.sub(r"\([^)]*\)", "", cell)) if x.strip()]
+
+
+def close_paren(s, i):
+    opener = s[i]
+    closer = ")" if opener == "(" else "）"
+    depth = 0
+    for j in range(i, len(s)):
+        if s[j] == opener:
+            depth += 1
+        elif s[j] == closer:
+            depth -= 1
+            if depth == 0:
+                return j
+    return None
+
+
+def check_pair(no, paths, catalog_by_no):
+    """Checks [7], [8] and [9] for one control across both languages."""
+    text = {lang: read(paths[lang]) for lang in LANGS}
+    rel = {lang: os.path.relpath(paths[lang], ROOT).replace(os.sep, "/") for lang in LANGS}
+
+    # [7] structural parity between the two languages.
+    for ko_sec, en_sec in zip(COUNTED_SECTIONS["ko"], COUNTED_SECTIONS["en"]):
+        a = section_items(text["ko"], ko_sec)
+        b = section_items(text["en"], en_sec)
+        if a is not None and b is not None and a != b:
+            fail(f"{no}: '{ko_sec}' has {a} items but '{en_sec}' has {b}. "
+                 "Edit both languages in the same commit.")
+
+    meta = {lang: meta_rows(text[lang]) for lang in LANGS}
+    for lang in LANGS:
+        for row in META_ROWS[lang]:
+            if row not in meta[lang]:
+                fail(f"{rel[lang]}: metadata table is missing the '{row}' row")
+
+    # [9] the two languages must classify a control the same way.
+    kt = [TYPE_KO.get(x, x) for x in attr_tokens(meta["ko"].get("통제 유형(참고)", ""))]
+    et = attr_tokens(meta["en"].get("Control type (ref.)", ""))
+    if kt != et:
+        fail(f"{no}: control type is {kt} in ko but {et} in en")
+    kp = [PROP_KO.get(x, x) for x in attr_tokens(meta["ko"].get("보안 속성(참고)", ""))]
+    ep = attr_tokens(meta["en"].get("Security properties (ref.)", ""))
+    if kp != ep:
+        fail(f"{no}: security properties are {kp} in ko but {ep} in en")
+
+    # [8] cross-reference labels must reproduce the catalog title.
+    for lang, key in (("ko", "title_ko"), ("en", "title_en")):
+        for line in text[lang].split("\n"):
+            if XREF_MARKER[lang] not in line:
+                continue
+            body = RANGE_RE.sub("", line.split(XREF_MARKER[lang], 1)[1])
+            for m in re.finditer(r"(A\.\d+\.\d+)\s*[(（]", body):
+                ref = m.group(1)
+                if ref not in catalog_by_no:
+                    fail(f"{rel[lang]}: cross-reference {ref} is not a control in the catalog")
+                    continue
+                end = close_paren(body, m.end() - 1)
+                if end is None:
+                    continue
+                label = body[m.end():end]
+                want = catalog_by_no[ref][key]
+                if label != want:
+                    fail(f"{rel[lang]}: {ref} is labelled '{label}' but the catalog says '{want}'")
+
+
 def main():
     for required in (MANIFEST, CATALOG):
         if not os.path.exists(required):
@@ -136,6 +240,15 @@ def main():
             fail(f"{missing}: listed in the catalog but has no {lang} document")
         for extra in sorted(documented - catalog_nos):
             fail(f"{extra}: has a {lang} document but is not listed in the catalog")
+
+    catalog_by_no = {c["no"]: c for c in catalog["controls"]}
+    theme_dir = {tid: t["dir"] for tid, t in catalog["themes"].items()}
+    for control in catalog["controls"]:
+        no = control["no"]
+        paths = {lang: os.path.join(DOCS, lang, theme_dir[control["theme"]], no + ".md")
+                 for lang in LANGS}
+        if all(os.path.exists(paths[lang]) for lang in LANGS):
+            check_pair(no, paths, catalog_by_no)
 
     if problems:
         for p in problems:

@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 1.2.1 Identification of information assets (establishing classification criteria and rating importance) (related: 2.1.3 Information asset management) |
-| 2013 mapping | 8.2.1 |
+| 2013 mapping | A.8.2.1 |
 
 ## Control objective
 
@@ -35,10 +35,10 @@ This control requires information to be classified according to its confidential
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1.2/6.1.3 (Information security risk assessment and treatment), 7.5 (Documented information), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 6.1.2/6.1.3 (Information security risk treatment), 7.5 (Documented information), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.9 (Inventory of information and other associated assets), A.5.13 (Labelling of information), A.5.10 (Acceptable use of information and other associated assets), A.8.10 (Information deletion), A.8.12 (Data leakage prevention)
 - ISMS-P mapping: 1.2.1 Identification of information assets (establishing classification criteria and rating importance) (related: 2.1.3 Information asset management)
-- 2013 mapping: 8.2.1 (Classification of information)
+- 2013 mapping: A.8.2.1 (Classification of information)
 
 ## Evidence
 

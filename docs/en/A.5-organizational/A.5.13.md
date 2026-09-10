@@ -7,12 +7,12 @@
 | Control | A.5.13 Labelling of information |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.1.3 Information asset management (related: 1.2.1 Information asset identification) |
-| 2013 mapping | 8.2.2 Labelling of information |
+| ISMS-P mapping | 2.1.3 Information asset management (related: 1.2.1 Identification of information assets) |
+| 2013 mapping | A.8.2.2 (Labelling of information) |
 
 ## Control objective
 
-This control requires the organization to attach labels that indicate classification levels to information and other associated assets, in line with the classification scheme it has adopted, and to apply and maintain those labels consistently. If information is classified but the result is not shown on the asset itself, people handling the asset cannot recognize its sensitivity, which can lead to improper handling, disclosure, or misdelivery. The aim is therefore to establish a labelling procedure, define how and to what labels are applied, and ensure consistent marking across physical and electronic forms so that classification decisions translate into actual handling controls.
+This control requires the organization to attach labels that indicate classification levels to information and other associated assets, in line with the classification scheme it has adopted, and to apply and maintain those labels consistently. If information is classified but the result is not shown on the asset itself, people handling the asset cannot recognize its sensitivity, which can lead to improper handling, disclosure, or misdelivery. The aim is therefore to establish a labelling procedure, define how labels are applied and to what, and ensure consistent marking across physical and electronic forms so that classification decisions translate into actual handling controls.
 
 ## Key checkpoints
 
@@ -33,10 +33,10 @@ This control requires the organization to attach labels that indicate classifica
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 6.1 (Actions to address risks)
+- ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.5.12 (Classification of information), A.5.9 (Inventory of information and other associated assets), A.5.10 (Acceptable use of information and other associated assets), A.5.14 (Information transfer), A.7.10 (Storage media), A.8.12 (Data leakage prevention)
-- ISMS-P mapping: 2.1.3 Information asset management (related: 1.2.1 Information asset identification)
-- 2013 mapping: 8.2.2 Labelling of information
+- ISMS-P mapping: 2.1.3 Information asset management (related: 1.2.1 Identification of information assets)
+- 2013 mapping: A.8.2.2 (Labelling of information)
 
 ## Evidence
 

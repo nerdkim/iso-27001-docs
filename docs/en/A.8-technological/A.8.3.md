@@ -33,7 +33,7 @@ This control restricts access to information and application system functions in
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks), 9.1 (Monitoring, measurement, analysis and evaluation)
+- ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.15 (Access control), A.5.18 (Access rights), A.5.3 (Segregation of duties), A.8.2 (Privileged access rights), A.8.4 (Access to source code), A.8.5 (Secure authentication), A.8.18 (Use of privileged utility programs)
 - ISMS-P mapping: 2.6.3 Application access (related: 2.6.2 Information system access, 2.6.4 Database access)
 - 2013 mapping: A.9.4.1 (Information access restriction)

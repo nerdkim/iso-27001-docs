@@ -3,8 +3,9 @@
 > English: [README.md](README.md)
 
 AI agent가 `docs/` 자료집 전체를 다시 읽지 않고도 **사용**할 수 있게 해 주는 계층이고, 그 사용을
-정직하게 유지하는 운영 규약입니다. 이 readme 한 쌍을 빼면 전부 `docs/`와 `catalog/controls.json`에서
-생성됩니다.
+정직하게 유지하는 운영 규약입니다. 이 readme 한 쌍과 `catalog/controls.json`을 빼면 전부 `docs/`와
+`catalog/controls.json`에서 생성됩니다. `catalog/controls.json`은 손으로 관리하는 입력이며, 어떤
+통제가 존재해야 하는지를 정의하는 정본입니다.
 
 ## 구성
 

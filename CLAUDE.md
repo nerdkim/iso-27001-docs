@@ -44,7 +44,8 @@ This is the single most important constraint in this repository.
   dictionary. `extended/README.md` states the operating rules for AI use of the corpus.
 - `tools/` : `build_index.py` regenerates every derived index from `docs/`; `check_corpus.py` runs
   read-only integrity checks. Both are dependency-free (Python standard library only).
-- `harness/` : the playbook guard set (documentation conventions checker, git hooks). `core.hooksPath`
+- `harness/` : the playbook guard set (documentation conventions checker and its self-test, the
+  infra conformance checker, git hooks). `core.hooksPath`
   is local `.git/config` state and does not travel with a clone, and this repository has no
   `package.json` to hang a `prepare` script on, so the wiring is `bash harness/install-hooks.sh`,
   run once per clone. It is idempotent and writes nothing outside `.git/config`.
@@ -72,11 +73,17 @@ mandatory) follow the playbook docs. Only repository-specific rules are kept her
   (single spec; `AGENTS.md` is a symlink, per playbook `docs/10`).
 - **Keep Korean and English in sync (important)**: when you add, edit, or delete a control's
   content, **update the corresponding document in the other language in the same commit**. The
-  correspondence is keyed by control number. `tools/check_corpus.py` and CI enforce this.
-- **Control documents** keep the 6-section structure (통제 목적 / 주요 확인사항 / 이행 지침 /
-  관련 통제 및 속성 / 증적자료 / 부적합 사례), the metadata table at the top, and the source and
-  limitation footer at the bottom. The character rules from playbook `docs/16` apply, except that
-  `docs/ko/` and `docs/en/` are a confirmed exception listed in `harness/conventions-exclude`.
+  correspondence is keyed by control number. `tools/check_corpus.py` fails when a control exists in
+  only one language, and when the two languages carry a different number of items in any counted
+  section; rewording that keeps the counts equal is caught in review, not by CI.
+- **Control documents** keep the 6-section structure, in order, with the metadata table at the top
+  and the source and limitation footer at the bottom. The section names are per language:
+  `docs/ko/` uses 통제 목적 / 주요 확인사항 / 이행 지침 / 관련 통제 및 속성 / 증적자료 / 부적합 사례,
+  and `docs/en/` uses Control objective / Key checkpoints / Implementation guidance /
+  Related controls and attributes / Evidence / Nonconformity examples. `tools/check_corpus.py`
+  enforces both sets, so writing the Korean names into an English document fails CI. The character
+  rules from playbook `docs/16` apply, except that `docs/ko/` and `docs/en/` are a confirmed
+  exception listed in `harness/conventions-exclude`.
 - **Regeneration**: `docs/` and `extended/catalog/controls.json` drive everything derived. Run
   `python3 tools/build_index.py` after any change and commit the result in the same commit. CI
   regenerates and fails on any diff, so a stale `extended/manifest.json` blocks the merge.

@@ -7,7 +7,7 @@
 | Control | A.8.34 Protection of information systems during audit testing |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.2 Management system review |
+| ISMS-P mapping | 1.4.2 Management system inspection |
 | 2013 mapping | A.12.7.1 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control ensures that assessment activities on operational information syste
 
 - ISO 27001 clauses: 9.2 (Internal audit), 9.1 (Monitoring, measurement, analysis and evaluation), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.8.8 (Management of technical vulnerabilities), A.5.35 (Independent review of information security), A.8.15 (Logging), A.8.16 (Monitoring activities), A.8.31 (Separation of development, test and production environments), A.8.9 (Configuration management), A.5.18 (Access rights)
-- ISMS-P mapping: 1.4.2 Management system review (related: 2.11.2 Vulnerability assessment and remediation, 2.9.4 Log and access record management, 2.5.5 Special account and privilege management, 2.8.3 Separation of test and production environments)
+- ISMS-P mapping: 1.4.2 Management system inspection (related: 2.11.2 Vulnerability assessment and remediation, 2.9.4 Log and access record management, 2.5.5 Special account and privilege management, 2.8.3 Separation of test and production environments)
 - 2013 mapping: A.12.7.1 (Information systems audit controls)
 
 ## Evidence

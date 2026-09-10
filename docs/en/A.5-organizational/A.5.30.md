@@ -5,15 +5,17 @@
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.5 Organizational controls |
 | Control | A.5.30 ICT readiness for business continuity |
-| Control type (ref.) | Preventive, Corrective |
-| Security properties (ref.) | Integrity, Availability |
-| ISMS-P mapping | 2.12.1 Safeguards against disasters and disruptions |
+| Control type (ref.) | Preventive / Corrective |
+| Security properties (ref.) | Integrity / Availability |
+| ISMS-P mapping | 2.12.1 Safety measures for disaster and emergency preparedness |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
+
 ICT readiness for business continuity is the control for planning, implementing, maintaining, and testing the continuity and recovery capability of ICT services so that the organization can meet its predefined business continuity objectives. Based on business impact analysis (BIA) and risk assessment, it requires the organization to derive the recovery requirements (recovery time objective, recovery point objective, minimum service level) for the ICT services that support critical activities, and to put in place recovery strategies, configurations, and procedures that satisfy them. The aim is to keep ICT in a constant state of readiness and to verify it regularly, so that ICT can be restored quickly to the agreed level even during a disaster or disruption.
 
 ## Key checkpoints
+
 1. Does the business impact analysis (BIA) identify critical activities and the ICT services that support them, with a recovery time objective (RTO) and recovery point objective (RPO) defined for each service?
 2. Are ICT continuity/recovery strategies (redundancy, backup, alternate processing facilities, cloud-based recovery, etc.) established to meet the defined RTO/RPO, with the necessary resources secured?
 3. Are ICT recovery procedures (fault detection, invocation criteria, recovery stages and priorities, roles/responsibilities, emergency contacts) documented and kept up to date?
@@ -22,6 +24,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 6. Is ICT readiness aligned and integrated with the organization's business continuity management (BCM) and its incident/crisis management arrangements?
 
 ## Implementation guidance
+
 - Based on the BIA and risk assessment results, quantitatively define RTO/RPO/minimum service level for each critical ICT service, and confirm them as recovery targets with management approval.
 - Select recovery strategies that meet the targets (system redundancy/clustering, geographically separated alternate processing facilities, data backup and offsite storage, cloud-based recovery, manual workarounds, etc.), and apply them differentially by service criticality with cost and risk in mind.
 - Document the ICT continuity/recovery plan to include fault/disaster detection and invocation criteria, recovery priorities and stage-by-stage procedures, roles and responsibilities, emergency contact lists, coordination with external suppliers/telecom/cloud providers, and the procedure for returning to normal operation after recovery.
@@ -31,12 +34,14 @@ ICT readiness for business continuity is the control for planning, implementing,
 - Integrate the ICT readiness plan with the organization's business continuity management system and incident/crisis management procedures, and update them together whenever changes occur to keep them consistent.
 
 ## Related controls and attributes
+
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 8.2/8.3 (Information security risk assessment/treatment), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.24 (Information security incident management planning and preparation), A.8.13 (Information backup), A.8.14 (Redundancy of information processing facilities), A.8.6 (Capacity management), A.7.5 (Protecting against physical and environmental threats), A.7.11 (Supporting utilities)
-- ISMS-P mapping: 2.12.1 Safeguards against disasters and disruptions (adjacent: 2.12.2 Disaster recovery testing and improvement, 2.9.3 Backup and recovery management, 2.11.5 Incident response and recovery, 2.9.2 Performance and fault management)
+- ISMS-P mapping: 2.12.1 Safety measures for disaster and emergency preparedness (adjacent: 2.12.2 Disaster recovery testing and improvement, 2.9.3 Backup and recovery management, 2.11.5 Incident response and recovery, 2.9.2 Performance and fault management)
 - 2013 mapping: New in 2022
 
 ## Evidence
+
 - Business impact analysis (BIA) results and the RTO/RPO definition for each critical ICT service
 - ICT continuity/recovery strategy document and architecture diagrams (redundancy, alternate processing facilities, backup architecture, etc.)
 - ICT disaster recovery plan (DRP)/recovery procedures (including invocation criteria, recovery stages, roles/responsibilities, emergency contact lists)
@@ -46,6 +51,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 - Recovery-related contracts/SLAs with external suppliers/telecom/cloud providers
 
 ## Nonconformity examples
+
 - ICT recovery targets (RTO/RPO) are not defined because no BIA was performed, so there is no basis for recovery priorities or resource allocation.
 - A disaster recovery strategy/plan exists but is outdated and inconsistent with the current infrastructure/configuration, with no update history.
 - Backups are performed but restore testing has never been done, so recoverability in an actual disaster is unverified.

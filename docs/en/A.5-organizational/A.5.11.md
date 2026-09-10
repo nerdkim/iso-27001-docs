@@ -7,8 +7,8 @@
 | Control | A.5.11 Return of assets |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.5 Management of retirement and job change (related: 2.3.4 Security on change and termination of external party contracts, 2.1.3 Information asset management) |
-| 2013 mapping | 8.1.4 Return of assets |
+| ISMS-P mapping | 2.2.5 Management of retirement and job change (related: 2.3.4 Security on external party contract change and termination, 2.1.3 Information asset management) |
+| 2013 mapping | A.8.1.4 (Return of assets) |
 
 ## Control objective
 
@@ -36,8 +36,8 @@ This control requires that personnel and external parties return all organizatio
 
 - ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.9 (Inventory of information and other associated assets), A.5.10 (Acceptable use of information and other associated assets), A.5.18 (Access rights), A.6.5 (Responsibilities after termination or change of employment), A.7.9 (Security of assets off-premises), A.8.1 (User endpoint devices)
-- ISMS-P mapping: 2.2.5 Management of retirement and job change (related: 2.3.4 Security on change and termination of external party contracts, 2.1.3 Information asset management)
-- 2013 mapping: 8.1.4 Return of assets
+- ISMS-P mapping: 2.2.5 Management of retirement and job change (related: 2.3.4 Security on external party contract change and termination, 2.1.3 Information asset management)
+- 2013 mapping: A.8.1.4 (Return of assets)
 
 ## Evidence
 

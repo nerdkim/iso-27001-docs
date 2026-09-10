@@ -7,7 +7,7 @@
 | Control | A.6.5 Responsibilities after termination or change of employment |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.5 Termination and job change management |
+| ISMS-P mapping | 2.2.5 Management of retirement and job change |
 | 2013 mapping | A.7.3.1 |
 
 ## Control objective
@@ -18,7 +18,7 @@ This control ensures that information security responsibilities and obligations 
 
 1. Are information security responsibilities that persist after termination or role change (confidentiality, non-disclosure, asset return, handover of unfinished work) specified in contracts/undertakings/policies?
 2. Are the validity period and scope of the surviving obligations clearly defined, communicated in writing, and acknowledged by the individual?
-3. On a role change, are access rights and responsibilities granted for the previous role revoked or readjusted and recalculated against the new role?
+3. On a role change, are access rights and responsibilities granted for the previous role revoked or readjusted and reset against the new role?
 4. Does the termination/role-change procedure define the roles of HR, information security, and line managers, together with the notification flow and handover steps?
 5. Is there a basis for response/sanctions and legal action in the event of a breach of the surviving obligations?
 
@@ -35,7 +35,7 @@ This control ensures that information security responsibilities and obligations 
 
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 7.2 (Competence), 7.3 (Awareness)
 - Adjacent Annex A: A.6.1 (Screening), A.6.2 (Terms and conditions of employment), A.6.4 (Disciplinary process), A.6.6 (Confidentiality or non-disclosure agreements), A.5.11 (Return of assets), A.5.18 (Access rights)
-- ISMS-P mapping: 2.2.5 Termination and job change management
+- ISMS-P mapping: 2.2.5 Management of retirement and job change
 - 2013 mapping: A.7.3.1 (Termination or change of employment responsibilities)
 
 ## Evidence
