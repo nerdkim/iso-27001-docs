@@ -1,10 +1,10 @@
-# A.5.22 공급자 서비스의 모니터링, 검토 및 변경관리(Monitoring, review and change management of supplier services)
+# A.5.22 공급자 서비스의 모니터링, 검토 및 변경 관리(Monitoring, review and change management of supplier services)
 
 | 구분 | 내용 |
 |---|---|
 | 표준 | ISO/IEC 27001:2022 Annex A |
 | 테마 | A.5 조직적 통제(Organizational controls) |
-| 통제 | A.5.22 공급자 서비스의 모니터링, 검토 및 변경관리 |
+| 통제 | A.5.22 공급자 서비스의 모니터링, 검토 및 변경 관리 |
 | 통제 유형(참고) | 예방적(Preventive) / 탐지적(Detective) |
 | 보안 속성(참고) | 기밀성 / 무결성 / 가용성 |
 | ISMS-P 대응 | 2.3.3 외부자 보안 이행 관리 |

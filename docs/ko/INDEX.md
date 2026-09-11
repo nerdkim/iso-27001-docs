@@ -27,7 +27,7 @@
 - [A.5.19 공급자 관계에서의 정보보안](A.5-organizational/A.5.19.md)
 - [A.5.20 공급자 계약 내 정보보안 반영](A.5-organizational/A.5.20.md)
 - [A.5.21 ICT 공급망 정보보안 관리](A.5-organizational/A.5.21.md)
-- [A.5.22 공급자 서비스의 모니터링, 검토 및 변경관리](A.5-organizational/A.5.22.md)
+- [A.5.22 공급자 서비스의 모니터링, 검토 및 변경 관리](A.5-organizational/A.5.22.md)
 - [A.5.23 클라우드 서비스 이용 정보보안](A.5-organizational/A.5.23.md)
 - [A.5.24 정보보안 사고관리 계획 및 준비](A.5-organizational/A.5.24.md)
 - [A.5.25 정보보안 이벤트 평가 및 결정](A.5-organizational/A.5.25.md)
