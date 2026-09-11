@@ -40,7 +40,7 @@
   { "no": "A.5.19", "theme": "organizational", "title_en": "Information security in supplier relationships", "title_ko": "공급자 관계에서의 정보보안" },
   { "no": "A.5.20", "theme": "organizational", "title_en": "Addressing information security within supplier agreements", "title_ko": "공급자 계약 내 정보보안 반영" },
   { "no": "A.5.21", "theme": "organizational", "title_en": "Managing information security in the ICT supply chain", "title_ko": "ICT 공급망 정보보안 관리" },
-  { "no": "A.5.22", "theme": "organizational", "title_en": "Monitoring, review and change management of supplier services", "title_ko": "공급자 서비스의 모니터링, 검토 및 변경관리" },
+  { "no": "A.5.22", "theme": "organizational", "title_en": "Monitoring, review and change management of supplier services", "title_ko": "공급자 서비스의 모니터링, 검토 및 변경 관리" },
   { "no": "A.5.23", "theme": "organizational", "title_en": "Information security for use of cloud services", "title_ko": "클라우드 서비스 이용 정보보안" },
   { "no": "A.5.24", "theme": "organizational", "title_en": "Information security incident management planning and preparation", "title_ko": "정보보안 사고관리 계획 및 준비" },
   { "no": "A.5.25", "theme": "organizational", "title_en": "Assessment and decision on information security events", "title_ko": "정보보안 이벤트 평가 및 결정" },
