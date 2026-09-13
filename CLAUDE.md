@@ -51,6 +51,15 @@ This is the single most important constraint in this repository.
   `package.json` to hang a `prepare` script on, so the wiring is `bash harness/install-hooks.sh`,
   run once per clone. It is idempotent, and writes nothing outside `.git/config` apart from setting
   the executable bit on the three hook files.
+- `skill/iso-27001-review/` : a Claude Code skill that applies the operating rules of
+  `extended/README.md` to content a user hands over, and reports nonconformity candidates, open
+  questions, and clean results with citations into `docs/`. `SKILL.md` is the procedure and
+  `topic-index.json` is its routing table (everyday Korean and English words to control numbers).
+  `tools/check_corpus.py` check [11] fails when the table names a control that is not in the
+  catalog or leaves a catalog control unreachable from every topic. It is installed by symlinking the directory
+  into `~/.claude/skills/`, so the corpus root resolves from the symlink when the skill is invoked
+  from another project. `SKILL.md` is English prose under the docs/16 conventions; the Korean report
+  template inside it is a fenced block.
 - `README.md` / `README.ko.md` : repository introduction (English default, Korean companion).
 - `UPDATES.md` / `UPDATES.ko.md` : the source pin and the update model. It separates the small
   **factual layer** (the public Annex A control list, pinned to the 2022 revision) from the large

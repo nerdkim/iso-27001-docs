@@ -66,6 +66,10 @@ harness/
   conventions-exclude            규약 검사에서 제외하는 경로와 그 사유
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     commit message 템플릿
+skill/
+  iso-27001-review/              Claude Code skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
+    SKILL.md                     절차(routing, 읽기, 판정, 보고 형식)
+    topic-index.json             일상 용어를 통제 번호로 연결하는 routing 표
 ```
 
 경로는 전부 ASCII라 소비자 쪽에서 URL 인코딩 문제가 생기지 않습니다.

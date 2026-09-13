@@ -28,6 +28,8 @@ repository 루트에서 `python3 tools/build_index.py`로 전부 재생성합니
 ## AI 사용 운영 규약
 
 소비자 쪽 agent가 지켜야 하는 규칙입니다. 소비 환경의 `CLAUDE.md` 또는 `AGENTS.md`에 반영하십시오.
+이 규칙을 전달받은 내용에 적용해 부적합 후보를 보고하는 Claude Code skill이
+`../skill/iso-27001-review/`에 있습니다.
 
 1. **`docs/`는 읽기 전용입니다.** 자료집을 사용하는 동안 `docs/` 아래의 무엇도 만들거나 고치거나
    지우지 않습니다. 파생 산출물은 소비자 쪽 작업 공간에 쓰고, 이 repository로 되돌려 쓰지 않습니다.

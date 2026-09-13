@@ -18,6 +18,8 @@ Checks
       values agree between the two languages
  [10] every ISO main-body clause citation carries a parenthesised clause title, and one clause
       number is cited under one title across the whole corpus, per language
+ [11] the skill routing table (skill/iso-27001-review/topic-index.json) names only controls that
+      exist in the catalog, and every catalog control is reachable from at least one topic
 
 Exit code 0 when the corpus is intact, 1 otherwise.
 
@@ -33,6 +35,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
 MANIFEST = os.path.join(ROOT, "extended", "manifest.json")
 CATALOG = os.path.join(ROOT, "extended", "catalog", "controls.json")
+TOPIC_INDEX = os.path.join(ROOT, "skill", "iso-27001-review", "topic-index.json")
 
 LANGS = ("ko", "en")
 
@@ -245,6 +248,44 @@ def check_pair(no, paths, catalog_by_no):
                     fail(f"{rel[lang]}: {ref} is labelled '{label}' but the catalog says '{want}'")
 
 
+def check_topic_index(catalog_nos):
+    """[11] the skill routing table and the catalog agree in both directions.
+
+    The skill routes a user's words to control numbers through this table before it reads any
+    document, so a control missing from every topic is unreachable through the skill, and a number
+    that is not in the catalog would route to a document that does not exist. Both are defects of the
+    same kind as a catalog/document mismatch, and are judged the same way.
+    """
+    rel = os.path.relpath(TOPIC_INDEX, ROOT).replace(os.sep, "/")
+    if not os.path.exists(TOPIC_INDEX):
+        fail(f"{rel}: missing. The skill cannot route without its topic index.")
+        return
+    try:
+        index = json.load(open(TOPIC_INDEX, encoding="utf-8"))
+    except ValueError as exc:
+        fail(f"{rel}: not valid JSON ({exc})")
+        return
+    topics = index.get("topics")
+    if not isinstance(topics, list) or not topics:
+        fail(f"{rel}: 'topics' must be a non-empty list")
+        return
+    reachable = set()
+    for i, topic in enumerate(topics):
+        label = topic.get("topic_ko") or topic.get("topic_en") or f"#{i}"
+        controls = topic.get("controls")
+        if not isinstance(controls, list) or not controls:
+            fail(f"{rel}: topic '{label}' has no controls")
+            continue
+        if not topic.get("keywords"):
+            fail(f"{rel}: topic '{label}' has no keywords, so nothing can route to it")
+        for no in controls:
+            if no not in catalog_nos:
+                fail(f"{rel}: topic '{label}' routes to {no}, which is not a control in the catalog")
+            reachable.add(no)
+    for no in sorted(catalog_nos - reachable):
+        fail(f"{rel}: {no} is not reachable from any topic, so the skill can never route to it")
+
+
 def main():
     for required in (MANIFEST, CATALOG):
         if not os.path.exists(required):
@@ -310,6 +351,9 @@ def main():
                  for lang in LANGS}
         if all(os.path.exists(paths[lang]) for lang in LANGS):
             check_pair(no, paths, catalog_by_no)
+
+    # [11] the skill routing table names real controls and reaches every one of them.
+    check_topic_index(catalog_nos)
 
     # [10] one clause number, one title. Judged here rather than per document, because a title is
     # only inconsistent relative to how the rest of the corpus cites the same clause.

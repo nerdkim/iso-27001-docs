@@ -70,6 +70,10 @@ harness/
   conventions-exclude            paths the conventions checker skips, with the reason
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     commit message template
+skill/
+  iso-27001-review/              Claude Code skill: assess content against Annex A using this corpus
+    SKILL.md                     the procedure (routing, reading, verdicts, report format)
+    topic-index.json             routing table from everyday words to control numbers
 ```
 
 All paths are ASCII, so there are no URL-encoding surprises for consumers.
