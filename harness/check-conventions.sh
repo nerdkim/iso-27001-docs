@@ -16,13 +16,15 @@
 #   [5] Korean prefix glued to an English term (docs/16 s3.2): do not stick "재"
 #       to an English word (재deploy). Use "re-deploy" or "다시 deploy".
 #
-# Scope: standard artifacts (docs, templates, root markdown, scripts, harness,
-# workflows). The file list is the union of tracked files and untracked-but-not-
-# ignored files (git ls-files --others --exclude-standard), so a manual run before
-# git add catches brand-new files; .gitignore is respected. _research/ is excluded
-# from every check. The path prefixes in harness/conventions-exclude are excluded
-# from the LANGUAGE checks [2][3][4][5] only: check [1] is language-neutral and
-# cannot be waived per repo.
+# Scope: two file lists, because the checks have two different scopes.
+#   LANGFILES, the language-checked artifacts (docs, templates, root markdown, scripts,
+#     harness, workflows), feeds checks [2][3][4][5].
+#   ALLFILES, EVERY text file in the repository, feeds check [1] alone.
+# Both are the union of tracked files and untracked-but-not-ignored files
+# (git ls-files --others --exclude-standard), so a manual run before git add catches
+# brand-new files; .gitignore is respected. _research/ is excluded from every check.
+# The path prefixes in harness/conventions-exclude are excluded from the LANGUAGE
+# checks [2][3][4][5] only: check [1] is language-neutral and cannot be waived per repo.
 # Checks [2][3][4][5] also exclude docs/16 (the rule-definition file, which names the
 # forbidden forms as examples) and this script. Checks [3][4] run on prose .md
 # only (code files keep ASCII arrows). Term/arrow/paren/prefix scans strip fenced code
@@ -58,19 +60,33 @@ fi
 # it. Applying the per-repo layer to [1] as well was a fail-open: this repo excludes docs/ko/ for the
 # term check, which silently took 186 of 188 corpus documents out of [1] too, and a middle dot
 # (U+00B7) survived in docs/ko/ while the checker reported PASS. So [1] scans ALLFILES.
+# A narrow pathspec was the other half of the same fail-open: [1] used to see only *.md, three named
+# scripts and the workflows, so the generated JSON and CSV under extended/, the skill routing table,
+# the extensionless git hooks and the Python tools (whose Korean strings reach extended/manifest.json)
+# were never checked at all. ALLFILES therefore takes NO pathspec and is filtered with grep -I to drop
+# binaries. LANGFILES keeps the narrow pathspec, or the generated JSON would enter the term check [2],
+# where the corpus vocabulary produces hundreds of legitimate hits.
 BUILTIN_EXCLUDE_RE='^_research/'
 USER_EXCLUDE_RE=''
 if [ -f harness/conventions-exclude ]; then
   while IFS= read -r line || [ -n "$line" ]; do
     line="${line%%#*}"; line="$(printf '%s' "$line" | tr -d '[:space:]')"
+    # A path prefix is a LITERAL path, not a pattern. Interpolating it raw let a metacharacter
+    # widen the waiver silently, and this repo's theme directories are full of dots
+    # (A.5-organizational), so escape before the prefix joins the alternation.
+    line="$(printf '%s' "$line" | sed 's/[][\.^$*+?(){}|]/\\&/g')"
     [ -n "$line" ] && USER_EXCLUDE_RE="${USER_EXCLUDE_RE:+$USER_EXCLUDE_RE|}^${line}"
   done < harness/conventions-exclude
 fi
-mapfile -t ALLFILES < <( { git ls-files '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml'; git ls-files --others --exclude-standard '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml'; } | grep -vE "$BUILTIN_EXCLUDE_RE" | sort -u )
+LANGSPEC=( '*.md' 'initialize.sh' 'install-playbook.sh' 'scripts/*.sh' 'harness/*.sh' '.github/workflows/*.yml' )
+mapfile -t LANGFILES < <( { git ls-files "${LANGSPEC[@]}"; git ls-files --others --exclude-standard "${LANGSPEC[@]}"; } | grep -vE "$BUILTIN_EXCLUDE_RE" | sort -u )
+# No pathspec here, on purpose: [1] must reach every text file. grep -I drops binaries (and empty
+# files, which cannot carry a forbidden character anyway).
+mapfile -t ALLFILES < <( { git ls-files; git ls-files --others --exclude-standard; } | grep -vE "$BUILTIN_EXCLUDE_RE" | sort -u | xargs -d '\n' -r grep -Il '' -- 2>/dev/null )
 if [ -n "$USER_EXCLUDE_RE" ]; then
-  mapfile -t FILES < <( printf '%s\n' ${ALLFILES+"${ALLFILES[@]}"} | grep . | grep -vE "$USER_EXCLUDE_RE" )
+  mapfile -t FILES < <( printf '%s\n' ${LANGFILES+"${LANGFILES[@]}"} | grep . | grep -vE "$USER_EXCLUDE_RE" )
 else
-  mapfile -t FILES < <( printf '%s\n' ${ALLFILES+"${ALLFILES[@]}"} | grep . )
+  mapfile -t FILES < <( printf '%s\n' ${LANGFILES+"${LANGFILES[@]}"} | grep . )
 fi
 # exclude the rule-definition file and the checker scripts from term/arrow/paren
 # checks. Matched by basename so this works whether the checker lives in harness/
@@ -95,7 +111,8 @@ stripfence() { awk 'BEGIN{inf=0} /^```/{inf=!inf; print ""; next} /conventions-a
 fail=0
 
 echo "== [1] forbidden unicode punctuation =="
-# ALLFILES, not FILES: harness/conventions-exclude must not be able to waive this check.
+# ALLFILES, not FILES: harness/conventions-exclude must not be able to waive this check, and the
+# list is every text file in the repository, not just the language-checked artifacts.
 if [ "${#ALLFILES[@]}" -gt 0 ] && grep -rnP '[\x{2014}\x{2013}\x{2015}\x{00B7}\x{2022}\x{FF0D}]' ${ALLFILES+"${ALLFILES[@]}"}; then
   echo "  -> FAIL (see above)"; fail=1
 else echo "  OK: 0 (${#ALLFILES[@]} files scanned)"; fi

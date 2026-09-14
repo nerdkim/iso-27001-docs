@@ -90,9 +90,16 @@ PROVENANCE = {
 # Markdown parsing helpers
 # ---------------------------------------------------------------------------
 def section_body(text, title):
-    """Return the body of the '## <title>' section, up to the next '## ' or '---'."""
+    """Return the body of the '## <title>' section, up to the next '## ' or the closing rule.
+
+    The section ends at a BARE '---' rule line, never at any line that merely starts with '---'.
+    Ending at '\\n---' truncated the section at such a line while tools/check_corpus.py, which
+    ends at '\\n---\\n', still counted the whole section, so the published manifest and the derived
+    index files lost items while the integrity check reported PASS. The two boundaries must stay
+    identical.
+    """
     m = re.search(
-        r"(?m)^##\s+" + re.escape(title) + r"\b[^\n]*\n(.*?)(?=\n##\s|\n---|\Z)", text, re.S
+        r"(?m)^##\s+" + re.escape(title) + r"\b[^\n]*\n(.*?)(?=\n##\s|\n---\n|\Z)", text, re.S
     )
     return m.group(1).strip() if m else ""
 
@@ -227,11 +234,12 @@ def build_docs_index(items, lang, themes):
     # split after an ISO revision changed the control list, while the total beside it moved.
     n = {key: sum(1 for it in items if it["section"] == key) for key in THEME_ORDER}
     if lang == "ko":
+        # Theme names come from the catalog, so the header says the same thing as the theme
+        # headings below it in the same file. Abbreviating them here ("조직 37") contradicted both
+        # those headings and the English header, which spells its theme names out.
+        split = " / ".join(f"{themes[key]['label_ko']} {n[key]}" for key in THEME_ORDER)
         # No space before an opening paren after Hangul (playbook docs/16 s4.3).
-        total_line = (
-            f"총 {len(items)}개 통제(조직 {n['organizational']} / 인적 {n['people']} / "
-            f"물리 {n['physical']} / 기술 {n['technological']})."
-        )
+        total_line = f"총 {len(items)}개 통제({split})."
         note = "> 통제 번호/명칭/테마는 공개 목록 근거. 설명 본문은 원저작이며 표준 원문이 아닙니다."
     else:
         total_line = (
