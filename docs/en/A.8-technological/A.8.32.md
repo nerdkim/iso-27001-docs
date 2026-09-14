@@ -16,7 +16,7 @@ This control ensures that changes to information processing facilities and infor
 
 ## Key checkpoints
 
-1. Is a change management procedure documented for information system/infrastructure/application changes, with its scope (routine/emergency/standard changes) defined?
+1. Is a change management procedure documented for information system/infrastructure/application changes, with the systems it covers and the change types (standard/routine/emergency) defined?
 2. When a change is requested, are its purpose, scope of impact, security impact, risk, and rollback plan reviewed in advance and approved by an authorized party?
 3. Is a change validated in a test environment and confirmed to meet acceptance criteria before it is applied to production?
 4. Is there a separate procedure for emergency changes, including post-implementation review/approval and recording, that is actually operated?
@@ -28,7 +28,7 @@ This control ensures that changes to information processing facilities and infor
 - Establish a change management procedure that defines the stages (request, impact/risk assessment, approval, testing, deployment, closure) and responsible parties for each change type (standard/routine/emergency).
 - Standardize the change request so it includes the change purpose, target assets, security/privacy impact, interdependencies, expected downtime, rollback plan, and verification method.
 - Have a change review body such as a change advisory board (CAB) or an authorized approver review/approve changes commensurate with risk level, and separate the requester from the approver to prevent self-approval.
-- Validate changes in a test environment separated from production (A.8.31), and once acceptance criteria are met, apply them through the transfer-to-operational-environment/deployment procedure (A.8.19).
+- Validate changes in a test environment separated from production (A.8.31), and once acceptance criteria are met, apply them through the production promotion/deployment procedure (A.8.19).
 - Back up current configuration/executable code/data before deployment, and prepare and test in advance a rollback procedure that can restore the previous state within a defined time if the change fails.
 - Process emergency changes quickly but complete formal review/approval/recording afterward, and update all change history, configuration/operating documents, and security controls (firewall rules, access rights, and so on) in line with the change.
 

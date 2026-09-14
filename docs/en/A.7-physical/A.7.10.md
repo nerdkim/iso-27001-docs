@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control requires that information held on storage media be protected against unauthorized disclosure, alteration, loss, or recovery across the full media life cycle: acquisition, registration, use, storage, transfer, transport, re-use, and disposal. The scope covers removable media such as USB drives, external hard disks, optical discs, and backup tapes, as well as fixed media embedded in servers and endpoints. Because physical transport and disposal easily fall outside routine controls and carry high risk of loss, theft, or recovery of residual data, the organization should define a protection level commensurate with the media type and the sensitivity of the stored information, and keep verifiable records of how media are handled and destroyed.
+This control requires that information held on storage media be protected against unauthorized disclosure, alteration, loss, or recovery across the full media life cycle: acquisition, registration, use, storage, movement in and out, transport, re-use, and disposal. The scope covers removable media such as USB drives, external hard disks, optical discs, and backup tapes, as well as fixed media embedded in servers and endpoints. Because physical transport and disposal easily fall outside routine controls and carry high risk of loss, theft, or recovery of residual data, the organization should define a protection level commensurate with the media type and the sensitivity of the stored information, and keep verifiable records of how media are handled and destroyed.
 
 ## Key checkpoints
 

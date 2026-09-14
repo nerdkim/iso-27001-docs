@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control restricts access to information and application system functions in line with the access control policy, so that authorized users/processes reach only the data and functions they need for their work. By implementing least privilege and need-to-know at the system, application, and data layers, it aims to prevent unauthorized viewing, modification, and leakage.
+When a single account can reach far more than the job in front of it needs, one stolen password or one careless click puts the whole store of information in play. This control exists to keep each user and each process working inside the narrow slice of data and functionality their duties actually call for, as the organization's access control policy defines it. By implementing least privilege and need-to-know at the system, application, and data layers, it aims to prevent unauthorized viewing, modification, and leakage.
 
 ## Key checkpoints
 

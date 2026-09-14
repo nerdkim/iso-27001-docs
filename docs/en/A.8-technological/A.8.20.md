@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.6.1 Network access |
-| 2013 mapping | A.13.1.1, A.13.1.2 |
+| 2013 mapping | A.13.1.1 |
 
 ## Control objective
 
@@ -37,7 +37,7 @@ This control ensures that networks and network devices are securely managed and 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.21 (Security of network services), A.8.22 (Segregation of networks), A.8.23 (Web filtering), A.8.24 (Use of cryptography), A.8.16 (Monitoring activities), A.8.15 (Logging)
 - ISMS-P mapping: 2.6.1 Network access (related: 2.10.1 Operation of security systems, 2.10.5 Information transfer security, 2.6.7 Internet access control, 2.6.5 Wireless network access)
-- 2013 mapping: A.13.1.1 (Network controls), A.13.1.2 (Security of network services)
+- 2013 mapping: A.13.1.1 (Network controls)
 
 ## Evidence
 

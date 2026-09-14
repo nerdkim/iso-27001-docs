@@ -7,7 +7,7 @@
 | Control | A.6.1 Screening |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.1 Designation and management of key duty personnel |
+| ISMS-P mapping | 2.2.1 Designation and management of key duty personnel (nearest counterpart; ISMS-P has no criterion dedicated to pre-employment screening) |
 | 2013 mapping | A.7.1.1 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control verifies the identity, career history, qualifications, and backgrou
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 5.3 (Organizational roles, responsibilities and authorities)
 - Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.3 (Information security awareness, education and training), A.6.5 (Responsibilities after termination or change of employment), A.6.6 (Confidentiality or non-disclosure agreements)
-- ISMS-P mapping: 2.2.1 Designation and management of key duty personnel
+- ISMS-P mapping: 2.2.1 Designation and management of key duty personnel (nearest counterpart; ISMS-P has no criterion dedicated to pre-employment screening, so read together with 2.2.3 Security pledge and 2.3.2 Security in external party contracts)
 - 2013 mapping: A.7.1.1 (Screening)
 
 ## Evidence

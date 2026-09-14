@@ -12,7 +12,7 @@
 
 ## Control objective
 
-The purpose is to design and apply physical security to the individual offices, rooms, and facilities where information and information processing activities take place, so that unauthorized access, viewing, damage, and external disclosure of information are prevented. Where the physical security perimeter (A.7.1) encloses a whole area, this control requires each space inside that perimeter to implement layout, screening, and low visibility in proportion to the sensitivity of the information it handles. As a result, the location of critical facilities and the activity inside them are not readily apparent to outsiders, and each space is protected in proportion to the value of the assets it contains.
+The purpose is to design and apply physical security to the individual offices, rooms, and facilities where information and information processing activities take place, so that unauthorized access, viewing, damage, and external disclosure of information are prevented. Whereas the physical security perimeter (A.7.1) encloses a whole area, this control requires each space inside that perimeter to implement layout, screening, and low visibility in proportion to the sensitivity of the information it handles. As a result, the location of critical facilities and the activity inside them are not readily apparent to outsiders, and each space is protected in proportion to the value of the assets it contains.
 
 ## Key checkpoints
 
@@ -38,7 +38,7 @@ The purpose is to design and apply physical security to the individual offices, 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.4 (Physical security monitoring), A.7.5 (Protecting against physical and environmental threats), A.7.6 (Working in secure areas)
 - ISMS-P mapping: 2.4.1 Designation of protected areas
-- 2013 mapping: A.11.1.3
+- 2013 mapping: A.11.1.3 (Securing offices, rooms and facilities)
 
 ## Evidence
 

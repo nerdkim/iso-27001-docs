@@ -38,7 +38,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 8.2/8.3 (Information security risk assessment/treatment), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.24 (Information security incident management planning and preparation), A.8.13 (Information backup), A.8.14 (Redundancy of information processing facilities), A.8.6 (Capacity management), A.7.5 (Protecting against physical and environmental threats), A.7.11 (Supporting utilities)
 - ISMS-P mapping: 2.12.1 Safety measures for disaster and emergency preparedness (adjacent: 2.12.2 Disaster recovery testing and improvement, 2.9.3 Backup and recovery management, 2.11.5 Incident response and recovery, 2.9.2 Performance and fault management)
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 

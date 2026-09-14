@@ -36,7 +36,7 @@ This control ensures that software installed on operational (production) systems
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.32 (Change management), A.8.9 (Configuration management), A.8.8 (Management of technical vulnerabilities), A.8.31 (Separation of development, test and production environments), A.8.29 (Security testing in development and acceptance), A.8.4 (Access to source code)
-- ISMS-P mapping: 2.8.6 Transfer to operational environment (related: 2.10.8 Patch management, 2.9.1 Change management)
+- ISMS-P mapping: 2.8.6 Transfer to operational environment (related: 2.10.8 Patch management, 2.9.1 Change management, 2.10.6 Business-use device security)
 - 2013 mapping: A.12.5.1 (Installation of software on operational systems), A.12.6.2 (Restrictions on software installation)
 
 ## Evidence

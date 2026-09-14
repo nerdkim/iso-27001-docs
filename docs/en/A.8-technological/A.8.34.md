@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control ensures that assessment activities on operational information systems, such as audits, vulnerability assessments, penetration tests, and technical compliance reviews, are planned in advance and carried out within an agreed scope so they do not cause service disruption, data corruption, or exposure of sensitive information. It requires agreeing the target, timing, method, and access rights with the owner of the system under test, limiting access to read-only where possible, and recording and managing audit accounts/tools and access activity during the test. The aim is to minimize the risk that the assessment activity itself undermines operational stability and information protection.
+This control ensures that assessment activities on operational information systems, such as audits, vulnerability assessments, penetration tests, and technical compliance reviews, are planned in advance and carried out within an agreed scope so they do not cause service disruption, data corruption, or exposure of sensitive information. It requires agreeing the target, timing, method, and access rights with the owner of the system under test, limiting access to read-only where possible, and recording and managing test accounts/tools and access activity during the test. The aim is to minimize the risk that the assessment activity itself undermines operational stability and information protection.
 
 ## Key checkpoints
 

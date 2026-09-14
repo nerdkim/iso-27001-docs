@@ -7,7 +7,7 @@
 | Control | A.5.2 Information security roles and responsibilities |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.1.3 Organization, 1.1.2 Designation of chief officer |
+| ISMS-P mapping | 1.1.3 Organizational structure, 1.1.2 Designation of chief officer (related: 2.1.2 Maintenance of the organization) |
 | 2013 mapping | A.6.1.1 |
 
 ## Control objective
@@ -35,7 +35,7 @@ This control ensures that information security roles and responsibilities are cl
 
 - ISO 27001 clauses: 5.1 (Leadership and commitment), 5.3 (Organizational roles, responsibilities and authorities), 7.2 (Competence)
 - Adjacent Annex A: A.5.1 (Policies for information security), A.5.3 (Segregation of duties), A.5.4 (Management responsibilities), A.5.9 (Inventory of information and other associated assets), A.6.1 (Screening)
-- ISMS-P mapping: 1.1.3 Organization, 1.1.2 Designation of chief officer
+- ISMS-P mapping: 1.1.3 Organizational structure, 1.1.2 Designation of chief officer (related: 2.1.2 Maintenance of the organization)
 - 2013 mapping: A.6.1.1 (Information security roles and responsibilities)
 
 ## Evidence

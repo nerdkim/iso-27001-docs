@@ -119,7 +119,7 @@
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.10.md",
    "evidence": [
-    "Rules for acceptable use of information and associated assets (policy/guideline/handling procedure)",
+    "Rules for acceptable use of information and other associated assets (policy/guideline/handling procedure)",
     "Documented handling/storage/transfer/disposal criteria by information classification level",
     "Security pledges or asset use agreement records",
     "Approval and management records for remote work/BYOD/removable media use",
@@ -227,8 +227,8 @@
     "Records of access-right provisioning/modification/revocation requests and approvals",
     "Approval forms for privileged-account/sensitive-asset rights, with use-justification and grant-period records",
     "Results of periodic access-right review (recertification) and records of actions taken (revoke/reduce)",
-    "Reconciliation results between policy rights and actual system configuration, with discrepancy-handling records",
-    "HR-linked processing records (rights adjustment and revocation on job change/retirement)"
+    "Reconciliation results between the approved access-right records and actual system configuration, with discrepancy-handling records",
+    "HR-linked processing records (rights adjustment and revocation on job change/departure)"
    ]
   },
   "A.5.19": {
@@ -527,7 +527,7 @@
     "Action criteria by violation type (for example, a table for deciding the level of action) and documents linking to work rules/internal regulations",
     "Breach investigation reports, the individual's response materials, and deliberation/decision records",
     "Notification documents of disciplinary outcomes and records of follow-up actions such as revocation of access rights",
-    "Training materials and security agreements used to make the disciplinary process known",
+    "Training materials and security pledges used to make the disciplinary process known",
     "Records of cause analysis of disciplinary cases and of recurrence-prevention measures (policy revision, additional training)"
    ]
   },
@@ -536,7 +536,7 @@
    "theme": "A.6 People controls",
    "path": "docs/en/A.6-people/A.6.5.md",
    "evidence": [
-    "Employment contract/security undertaking templates containing post-termination clauses (confidentiality/non-disclosure)",
+    "Employment contract/security pledge templates containing post-termination clauses (confidentiality/non-disclosure)",
     "Termination/role-change procedure documents and checklists",
     "Asset return confirmations, access revocation/account deactivation records",
     "Exit briefing/surviving-obligation re-notification confirmations (signed by the individual)",
@@ -631,7 +631,7 @@
    "evidence": [
     "Physical monitoring policy or guideline (monitored areas, monitoring means, record retention criteria)",
     "Camera and sensor placement plans and a list of monitoring points",
-    "Records for retention period and access-right management of monitoring records (video/alarm)",
+    "Documentation of the retention period and access-right management for monitoring records (video/alarm)",
     "Alarm response procedure documents and records of actual alarms and responses",
     "Results of periodic inspection and testing of the monitoring system and fault response records",
     "Camera installation signage and records of controls on viewing and disclosure of image data"
@@ -687,7 +687,7 @@
     "Status of physical protection measures such as rack and cabinet locking, port disabling, and cable fixing",
     "Records of exposure-prevention measures such as secure print and screen shielding",
     "Rules and notices restricting actions inside processing areas (food, photography, and the like)",
-    "Approval records for equipment movement, relocation, transfer, or disposal, and recheck records after location changes"
+    "Approval records for equipment movement, relocation, removal and return, or disposal, and recheck records after location changes"
    ]
   },
   "A.7.9": {
@@ -762,7 +762,7 @@
    "evidence": [
     "Equipment disposal and re-use procedure (deletion and destruction methods per media type, verification and recording criteria)",
     "Data deletion and destruction records (target asset, media serial number, method, operator, date and time, verification result)",
-    "Records of secure erase, crypto erase, or physical destruction, with supporting evidence such as destruction photos or video",
+    "Records of secure erase, cryptographic erase, or physical destruction, with supporting evidence such as destruction photos or video",
     "Contract with security requirements and destruction certificates for outsourced work",
     "Checklist for handling built-in storage in multifunction devices, network equipment, and similar",
     "Asset inventory change history before and after disposal (status, disposal reason, date)"
@@ -1191,10 +1191,10 @@
    "path": "docs/en/A.8-technological/A.8.33.md",
    "evidence": [
     "Test data management policy/procedure and test data selection/use criteria",
-    "Approval requests/records for the use of operational data in testing (owner/data protection officer approval)",
+    "Approval requests/records for the use of production data in testing (owner/data protection officer approval)",
     "Masking/pseudonymization/transformation processing records and before/after samples or verification records",
     "Test environment access privilege lists and access/usage logs",
-    "Records of copying/transferring operational data into test environments (timing/target/handler)",
+    "Records of copying/transferring production data into test environments (timing/target/handler)",
     "Confirmation of deletion/disposal of test data after testing and disposal history"
    ]
   },

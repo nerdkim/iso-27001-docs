@@ -40,7 +40,7 @@ This control requires the organization to define rules for how employees and ext
 
 ## Evidence
 
-- Rules for acceptable use of information and associated assets (policy/guideline/handling procedure)
+- Rules for acceptable use of information and other associated assets (policy/guideline/handling procedure)
 - Documented handling/storage/transfer/disposal criteria by information classification level
 - Security pledges or asset use agreement records
 - Approval and management records for remote work/BYOD/removable media use

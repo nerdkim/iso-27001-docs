@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 1.2.1 Identification of information assets (related: 2.1.3 Information asset management, 1.1.4 Scope definition) |
-| 2013 mapping | A.8.1.1 Inventory of assets (related: A.8.1.2 Ownership of assets) |
+| 2013 mapping | A.8.1.1 (Inventory of assets), A.8.1.2 (Ownership of assets) |
 
 ## Control objective
 
@@ -33,10 +33,10 @@ This control requires the organization to identify, without omission, the inform
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 4.3 (Determining the scope of the management system), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
+- ISO 27001 clauses: 4.3 (Determining the scope of the information security management system), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.10 (Acceptable use of information and other associated assets), A.5.11 (Return of assets), A.5.12 (Classification of information), A.5.13 (Labelling of information), A.7.9 (Security of assets off-premises), A.8.1 (User endpoint devices)
 - ISMS-P mapping: 1.2.1 Identification of information assets (related: 2.1.3 Information asset management, 1.1.4 Scope definition)
-- 2013 mapping: A.8.1.1 Inventory of assets (related: A.8.1.2 Ownership of assets)
+- 2013 mapping: A.8.1.1 (Inventory of assets), A.8.1.2 (Ownership of assets)
 
 ## Evidence
 

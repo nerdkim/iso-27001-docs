@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control establishes and consistently applies, in advance, procedures for the identification, collection, acquisition, and preservation of evidence related to information security incidents so that the evidence can be used for disciplinary action, litigation, regulatory reporting, and cause analysis. If the integrity and chain of custody of evidence are not maintained, then no matter how much material is gathered after an incident, it may lose its value as evidence in legal or disciplinary proceedings. The aim is therefore to prepare procedures, roles, tools, and external cooperation arrangements before an incident occurs, so that evidence can be secured promptly and in a defensible manner when one happens.
+This control is about how an organization finds, secures, and safeguards the material an incident leaves behind, so that it can still be relied on later for disciplinary action, litigation, regulatory reporting, and cause analysis. If the integrity and chain of custody of evidence are not maintained, then no matter how much material is gathered after an incident, it may lose its value as evidence in legal or disciplinary proceedings. The aim is therefore to prepare procedures, roles, tools, and external cooperation arrangements before an incident occurs, so that evidence can be secured promptly and in a defensible manner when one happens.
 
 ## Key checkpoints
 

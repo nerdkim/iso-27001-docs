@@ -18,7 +18,7 @@ This control requires authentication technologies and procedures to be applied i
 
 1. Are authentication methods (knowledge/possession/biometric based) applied differentially according to the sensitivity and risk of the information/system being accessed?
 2. Is multi-factor authentication (MFA) applied to high-risk access such as privileged accounts, remote access, and access to critical systems?
-3. Are login attempts limited (account lockout/delay/CAPTCHA), and are failure messages designed not to reveal which credential was wrong?
+3. Are failed login attempts limited (account lockout/delay/CAPTCHA and similar), and are failure messages designed not to reveal which credential was wrong?
 4. Are credentials such as passwords/tokens protected during transmission and storage (encryption in transit, hashing/salting at rest)?
 5. Are secure log-on procedures (input masking, session timeout, access warning banner) configured, and are authentication events logged and monitored?
 

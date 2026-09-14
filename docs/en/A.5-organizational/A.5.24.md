@@ -37,7 +37,7 @@ This control requires the organization to define, before any incident actually o
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 7.5 (Documented information), 9.1 (Monitoring, measurement, analysis and evaluation), 10.1/10.2 (Continual improvement, nonconformity and corrective action)
 - Adjacent Annex A: A.5.25 (Assessment and decision on information security events), A.5.26 (Response to information security incidents), A.5.27 (Learning from information security incidents), A.5.28 (Collection of evidence), A.5.5 (Contact with authorities), A.5.6 (Contact with special interest groups), A.6.8 (Information security event reporting), A.8.15 (Logging), A.8.16 (Monitoring activities)
 - ISMS-P mapping: 2.11.1 (Establishment of incident prevention and response system), related 2.11.4 (Incident response training and improvement), 2.11.5 (Incident response and recovery)
-- 2013 mapping: A.16.1.1 (Responsibilities and procedures for information security incident management)
+- 2013 mapping: A.16.1.1 (Responsibilities and procedures)
 
 ## Evidence
 

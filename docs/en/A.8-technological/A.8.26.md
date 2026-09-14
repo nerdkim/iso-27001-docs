@@ -36,7 +36,7 @@ This control ensures that, when applications are developed or acquired/purchased
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.27 (Secure system architecture and engineering principles), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.30 (Outsourced development), A.5.8 (Information security in project management), A.8.24 (Use of cryptography)
-- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.6.3 Application access, 2.10.4 Electronic transaction and fintech security)
+- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.6.3 Application access, 2.10.3 Public server security, 2.10.4 Electronic transaction and fintech security)
 - 2013 mapping: A.14.1.2 (Securing application services on public networks), A.14.1.3 (Protecting application services transactions)
 
 ## Evidence

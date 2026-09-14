@@ -19,7 +19,7 @@ This control requires that information no longer needed be reliably erased from 
 1. Are retention periods and deletion timing defined per information type, with a procedure to identify and delete data that has passed its retention period?
 2. Are deletion methods (secure deletion, overwriting, cryptographic erasure, physical destruction) defined to suit the media/system characteristics (magnetic disk, SSD, cloud storage, backups, logs, and so on)?
 3. After deletion is requested/executed, is it verified and recorded that the data has actually been rendered unrecoverable?
-4. In outsourced/cloud environments, is deletion of the processor's data upon contract termination or purpose fulfillment reflected in contracts/procedures, and is fulfillment of that obligation verified?
+4. In outsourced/cloud environments, is deletion of the data held or processed by the processor upon contract termination or purpose fulfillment reflected in contracts/procedures, and is fulfillment of that obligation verified?
 5. Does the deletion scope cover all copies of the same information, including backups, snapshots, archives, and derived copies?
 
 ## Implementation guidance
@@ -52,7 +52,7 @@ This control requires that information no longer needed be reliably erased from 
 - Data past its retention period is left in operational systems for a long time with no deletion criteria in place.
 - Only a simple file delete is performed on SSD/cloud storage, without making the data unrecoverable (overwriting/cryptographic erasure).
 - Operational data is deleted, but the same information remains in backups/snapshots/logs and is omitted from the deletion scope.
-- After a cloud/outsourcing contract ends, deletion of the processor's data is neither confirmed nor supported by any proof.
+- After a cloud/outsourcing contract ends, deletion of the data held by the processor is neither confirmed nor supported by any proof.
 - Deletion is claimed but cannot be confirmed as complete because there is no verifying evidence such as deletion logs or certificates.
 
 ---

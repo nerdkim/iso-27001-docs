@@ -20,7 +20,7 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 2. Is the extent of exposure (full/partial disclosure, number of masked digits, and so on) differentiated according to access rights and business need?
 3. Are masked/pseudonymized/synthetic data used instead of real data in non-production environments such as development, test, and training?
 4. Are the applied techniques designed and validated so that re-identification risk (for example, through combinations of quasi-identifiers) is sufficiently reduced?
-5. Is alignment with legal requirements (such as personal data protection law) ensured?
+5. When masking/pseudonymization/anonymization is applied, is compliance with legal requirements such as personal data protection law (purpose limitation, separate storage of the additional information, prohibition of re-identification, and so on) reviewed and recorded?
 6. Are approval/logging controls in place for unmasking (viewing originals) and for exception handling?
 
 ## Implementation guidance
@@ -37,7 +37,7 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.12 (Classification of information), A.5.34 (Privacy and protection of PII), A.8.10 (Information deletion), A.8.12 (Data leakage prevention), A.8.4 (Access to source code), A.8.33 (Test information)
 - ISMS-P mapping: 3.2.5 Pseudonymized data processing (related: 2.8.4 Test data security, 2.6.3 Application access)
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 
@@ -55,7 +55,7 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 - With no masking criteria, application varies by field at the discretion of individual staff, resulting in inconsistency.
 - Data is treated as fully anonymized even though re-identification is possible through combinations of quasi-identifiers.
 - Unmasking (viewing originals) privileges are granted broadly and viewing history is not recorded.
-- After pseudonymization, the mapping table (additional information) is stored on the same system as the original without separation.
+- After pseudonymization, the additional information (mapping table/key) is kept on the same system as the pseudonymized data, without separation.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

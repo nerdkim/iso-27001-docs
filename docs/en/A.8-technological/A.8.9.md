@@ -38,7 +38,7 @@ This control requires the organization to define and document the configurations
 - ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.32 (Change management), A.8.19 (Installation of software on operational systems), A.8.8 (Management of technical vulnerabilities), A.5.9 (Inventory of information and other associated assets), A.8.16 (Monitoring activities)
 - ISMS-P mapping: 2.9.1 Change management (from the secure-configuration/hardening angle, it also relates to 2.6.2 Information system access and 2.10.1 Operation of security systems)
-- 2013 mapping: New in 2022 (a control newly introduced in ISO/IEC 27002:2022)
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 

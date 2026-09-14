@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control requires the risks that arise across the acquisition and use of ICT products and services to be identified and managed. Hardware, software, firmware, cloud, and managed services reach an organization through multiple upstream and downstream suppliers, so a vulnerability or tampering in a single component can propagate across the whole environment. The control requires security requirements to flow down and be verified not only through the directly contracted supplier but along the full chain of sub-suppliers (subcontractors). Its aim is to assure the authenticity and integrity of components, prepare for supply disruption, and prevent risk proactively.
+This control requires the supply chain risks that arise across the acquisition and use of ICT products and services to be identified and managed. Hardware, software, firmware, cloud, and managed services reach an organization through multiple upstream and downstream suppliers, so a vulnerability or tampering in a single component can propagate across the whole environment. The control requires security requirements to flow down and be verified not only through the directly contracted supplier but along the full chain of sub-suppliers (subcontractors). Its aim is to assure the authenticity and integrity of components, prepare for supply disruption, and prevent risk proactively.
 
 ## Key checkpoints
 

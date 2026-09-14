@@ -37,7 +37,7 @@ The organization is required to define secure coding principles and standards su
 - ISO 27001 clauses: 8.1 (Operational planning and control), 7.2 (Competence)/7.3 (Awareness), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles), A.8.29 (Security testing in development and acceptance), A.8.8 (Management of technical vulnerabilities)
 - ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.8.5 Source program management)
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 

@@ -30,7 +30,7 @@ This control protects premises and information processing facilities against nat
 - Against flooding and leaks, install leak-detection sensors, drainage, and water barriers, and review siting so critical facilities are not placed in the lowest level, beneath plumbing, or against outer walls.
 - Against power failure or anomalies, provide UPS and emergency generation, periodically check and test capacity, runtime, and fuel reserves, and apply surge protection and grounding.
 - Operate HVAC/precision cooling for temperature and humidity control with alarms on threshold breaches, and in seismic areas apply earthquake reinforcement such as securing racks and equipment.
-- Link detection and alarm facilities to continuous monitoring and notification so events are recognized early, and document and rehearse initial-response and authority-notification procedures.
+- Link detection and alarm facilities to continuous monitoring and notification so events are recognized early, document initial-response and authority-notification procedures, and make sure the relevant staff are familiar with them.
 - Periodically reassess threats from external factors such as adjacent premises, nearby construction, and handling of hazardous materials, and update mitigations, drawing on advice from specialists or authorities where needed.
 
 ## Related controls and attributes

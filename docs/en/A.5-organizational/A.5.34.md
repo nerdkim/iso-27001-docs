@@ -7,7 +7,7 @@
 | Control | A.5.34 Privacy and protection of PII |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 3.5.1 Disclosure of the personal information processing policy |
+| ISMS-P mapping | 1.4.1 Legal requirements compliance review, and domain 3 (stage-by-stage requirements for processing personal information) as a whole |
 | 2013 mapping | A.18.1.4 (Privacy and protection of personally identifiable information) |
 
 ## Control objective
@@ -26,7 +26,7 @@ This control requires the organization to identify the privacy protection requir
 ## Implementation guidance
 
 - Identify the items, processing purposes, retention periods, processing locations, and third-party provision/outsourcing status of the PII the organization collects and processes, document this as a processing inventory (flow map/record of processing), and keep it current.
-- Determine the applicable privacy laws, regulations, and contractual requirements (including domestic and foreign jurisdictions) in conjunction with the compliance requirements register in A.5.31, and separately manage requirements for cross-border transfers such as transfer abroad.
+- Determine the applicable privacy laws, regulations, and contractual requirements (including domestic and foreign jurisdictions) in conjunction with the compliance requirements register in A.5.31, and separately manage the requirements that apply to cross-border transfers of PII.
 - Establish a policy/guideline on privacy and PII protection that defines processing principles, roles and responsibilities, procedures for upholding data subject rights, and safeguard standards, and communicate it to employees, processors, and external parties involved in PII processing.
 - Appoint an accountable owner for PII protection and a point of contact (privacy officer/responsible function), and operate a procedure to receive and handle inquiries, rights requests, and breach reports.
 - Design and apply technical and organizational safeguards for each stage of the PII lifecycle, such as data minimization, least-privilege access, encryption/pseudonymization/masking, access logging, and disposal once the retention period expires.
@@ -37,7 +37,7 @@ This control requires the organization to identify the privacy protection requir
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 7.4 (Communication), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.33 (Protection of records), A.5.12 (Classification of information), A.8.10 (Information deletion), A.8.11 (Data masking), A.8.12 (Data leakage prevention)
-- ISMS-P mapping: 3.5.1 Disclosure of the personal information processing policy (adjacent: 1.4.1 Legal requirements compliance review, 3.1.1 Collection/use of personal information, 3.5.2 Guaranteeing data subject rights, 3.4.1 Destruction of personal data, and domain 3 (stage-by-stage requirements for processing personal information) as a whole)
+- ISMS-P mapping: 1.4.1 Legal requirements compliance review, and domain 3 (stage-by-stage requirements for processing personal information) as a whole (adjacent: 3.5.1 Disclosure of the personal information processing policy, 3.1.1 Collection/use of personal information, 3.5.2 Guaranteeing data subject rights, 3.4.1 Destruction of personal data)
 - 2013 mapping: A.18.1.4 (Privacy and protection of personally identifiable information)
 
 ## Evidence

@@ -27,7 +27,7 @@ This control ensures that matters classified as information security incidents a
 - Define incident severity levels (for example high/medium/low) and document target response times and escalation criteria per level.
 - On initial response, determine the scope of impact and prioritize containment actions (account lockout, session termination, network isolation) to stop the spread.
 - Eradicate the root cause and remediate the vulnerability, then restore services/systems to a normal state and verify correct operation and absence of reinfection after recovery.
-- Collect evidence such as logs, images, and memory dumps in a manner that preserves originality, and record custody/transfer history (chain of custody).
+- Collect evidence such as logs, images, and memory dumps in a manner that preserves the integrity of the original, and record custody/transfer history (chain of custody).
 - For reportable incidents such as personal data breaches, confirm statutory deadlines and notification recipients and complete notification/reporting without omission.
 - Keep a chronological incident log of the whole response, and on closure produce a handling report that feeds into learning from incidents (A.5.27).
 

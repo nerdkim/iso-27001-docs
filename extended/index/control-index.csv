@@ -32,11 +32,11 @@ ko,organizational,A.5,A.5.30,사업연속성을 위한 ICT 준비,6,7,7,docs/ko/
 ko,organizational,A.5,A.5.31,"법률, 법령, 규제 및 계약 요구사항",6,6,6,docs/ko/A.5-organizational/A.5.31.md
 ko,organizational,A.5,A.5.32,지식재산권,6,6,6,docs/ko/A.5-organizational/A.5.32.md
 ko,organizational,A.5,A.5.33,기록 보호,6,6,6,docs/ko/A.5-organizational/A.5.33.md
-ko,organizational,A.5,A.5.34,프라이버시 및 개인식별정보(PII) 보호,6,7,7,docs/ko/A.5-organizational/A.5.34.md
+ko,organizational,A.5,A.5.34,프라이버시 및 개인식별정보 보호,6,7,7,docs/ko/A.5-organizational/A.5.34.md
 ko,organizational,A.5,A.5.35,정보보안 독립적 검토,6,6,6,docs/ko/A.5-organizational/A.5.35.md
 ko,organizational,A.5,A.5.36,"정보보안 정책, 규칙 및 표준 준수",6,6,6,docs/ko/A.5-organizational/A.5.36.md
 ko,organizational,A.5,A.5.37,문서화된 운영 절차,6,6,6,docs/ko/A.5-organizational/A.5.37.md
-ko,people,A.6,A.6.1,채용 심사(신원 확인),6,6,6,docs/ko/A.6-people/A.6.1.md
+ko,people,A.6,A.6.1,채용 신원 검증,6,6,6,docs/ko/A.6-people/A.6.1.md
 ko,people,A.6,A.6.2,고용 조건,6,6,6,docs/ko/A.6-people/A.6.2.md
 ko,people,A.6,A.6.3,"정보보안 인식제고, 교육 및 훈련",6,6,6,docs/ko/A.6-people/A.6.3.md
 ko,people,A.6,A.6.4,징계 절차,6,6,6,docs/ko/A.6-people/A.6.4.md
@@ -62,9 +62,9 @@ ko,technological,A.8,A.8.1,사용자 엔드포인트 기기,6,6,6,docs/ko/A.8-te
 ko,technological,A.8,A.8.2,특권 접근 권한,5,6,6,docs/ko/A.8-technological/A.8.2.md
 ko,technological,A.8,A.8.3,정보 접근 제한,5,5,5,docs/ko/A.8-technological/A.8.3.md
 ko,technological,A.8,A.8.4,소스코드 접근,6,6,6,docs/ko/A.8-technological/A.8.4.md
-ko,technological,A.8,A.8.5,보안 인증,5,6,5,docs/ko/A.8-technological/A.8.5.md
+ko,technological,A.8,A.8.5,안전한 인증,5,6,5,docs/ko/A.8-technological/A.8.5.md
 ko,technological,A.8,A.8.6,용량 관리,5,6,5,docs/ko/A.8-technological/A.8.6.md
-ko,technological,A.8,A.8.7,악성코드 대응,5,5,5,docs/ko/A.8-technological/A.8.7.md
+ko,technological,A.8,A.8.7,악성코드 방어,5,5,5,docs/ko/A.8-technological/A.8.7.md
 ko,technological,A.8,A.8.8,기술적 취약점 관리,6,5,6,docs/ko/A.8-technological/A.8.8.md
 ko,technological,A.8,A.8.9,구성 관리,6,6,6,docs/ko/A.8-technological/A.8.9.md
 ko,technological,A.8,A.8.10,정보 삭제,5,6,5,docs/ko/A.8-technological/A.8.10.md
@@ -76,7 +76,7 @@ ko,technological,A.8,A.8.15,로깅,6,6,6,docs/ko/A.8-technological/A.8.15.md
 ko,technological,A.8,A.8.16,모니터링 활동,6,6,6,docs/ko/A.8-technological/A.8.16.md
 ko,technological,A.8,A.8.17,시각 동기화,5,6,6,docs/ko/A.8-technological/A.8.17.md
 ko,technological,A.8,A.8.18,특권 유틸리티 프로그램 사용,6,6,6,docs/ko/A.8-technological/A.8.18.md
-ko,technological,A.8,A.8.19,운영 시스템 소프트웨어 설치,6,6,6,docs/ko/A.8-technological/A.8.19.md
+ko,technological,A.8,A.8.19,운영 환경 소프트웨어 설치,6,6,6,docs/ko/A.8-technological/A.8.19.md
 ko,technological,A.8,A.8.20,네트워크 보안,6,6,6,docs/ko/A.8-technological/A.8.20.md
 ko,technological,A.8,A.8.21,네트워크 서비스 보안,6,6,6,docs/ko/A.8-technological/A.8.21.md
 ko,technological,A.8,A.8.22,네트워크 분리,6,6,6,docs/ko/A.8-technological/A.8.22.md
@@ -84,7 +84,7 @@ ko,technological,A.8,A.8.23,웹 필터링,6,6,5,docs/ko/A.8-technological/A.8.23
 ko,technological,A.8,A.8.24,암호화 사용,6,6,6,docs/ko/A.8-technological/A.8.24.md
 ko,technological,A.8,A.8.25,보안 개발 생명주기,6,7,7,docs/ko/A.8-technological/A.8.25.md
 ko,technological,A.8,A.8.26,애플리케이션 보안 요구사항,6,6,6,docs/ko/A.8-technological/A.8.26.md
-ko,technological,A.8,A.8.27,보안 시스템 아키텍처 및 엔지니어링 원칙,6,7,6,docs/ko/A.8-technological/A.8.27.md
+ko,technological,A.8,A.8.27,안전한 시스템 아키텍처 및 엔지니어링 원칙,6,7,6,docs/ko/A.8-technological/A.8.27.md
 ko,technological,A.8,A.8.28,시큐어 코딩,6,6,5,docs/ko/A.8-technological/A.8.28.md
 ko,technological,A.8,A.8.29,개발 및 인수 단계 보안 시험,6,6,6,docs/ko/A.8-technological/A.8.29.md
 ko,technological,A.8,A.8.30,외주 개발,6,7,7,docs/ko/A.8-technological/A.8.30.md

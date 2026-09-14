@@ -38,13 +38,13 @@ The purpose is to keep facilities that hold information and information processi
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.5.7 (Threat intelligence), A.8.16 (Monitoring activities)
 - ISMS-P mapping: 2.4.2 Physical entry control
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 
 - Physical monitoring policy or guideline (monitored areas, monitoring means, record retention criteria)
 - Camera and sensor placement plans and a list of monitoring points
-- Records for retention period and access-right management of monitoring records (video/alarm)
+- Documentation of the retention period and access-right management for monitoring records (video/alarm)
 - Alarm response procedure documents and records of actual alarms and responses
 - Results of periodic inspection and testing of the monitoring system and fault response records
 - Camera installation signage and records of controls on viewing and disclosure of image data

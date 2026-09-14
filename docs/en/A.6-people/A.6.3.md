@@ -56,7 +56,7 @@ This control ensures that all personnel and relevant external parties receive on
 - The same material is used every year, so current threats or policy/legal revisions are not reflected at all.
 - Only general training is delivered, with no role-specific training for high-risk roles such as developers and system administrators.
 - Only completion is tracked formally, with no confirmation of comprehension or remedial action for those who did not complete.
-- There is no effectiveness measurement such as phishing simulations, so the value of awareness activities cannot be confirmed or improved.
+- There is no effectiveness measurement such as phishing simulations, so the effectiveness of awareness activities cannot be confirmed or improved.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

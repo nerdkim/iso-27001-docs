@@ -36,7 +36,7 @@ This control requires that confidentiality, integrity, and availability be maint
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 7.5 (Documented information)
-- Adjacent Annex A: A.5.10 (Acceptable use of information and other associated assets), A.5.13 (Labelling of information), A.5.33 (Protection of records), A.6.6 (Confidentiality or non-disclosure agreements), A.8.12 (Data leakage prevention), A.8.24 (Use of cryptography)
+- Adjacent Annex A: A.5.10 (Acceptable use of information and other associated assets), A.5.13 (Labelling of information), A.5.33 (Protection of records), A.6.6 (Confidentiality or non-disclosure agreements), A.7.10 (Storage media), A.8.12 (Data leakage prevention), A.8.24 (Use of cryptography)
 - ISMS-P mapping: 2.10.5 Information transfer security (related: 2.3.2 Security in external party contracts)
 - 2013 mapping: A.13.2.1 (Information transfer policies and procedures), A.13.2.2 (Agreements on information transfer), A.13.2.3 (Electronic messaging)
 

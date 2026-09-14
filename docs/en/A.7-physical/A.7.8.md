@@ -12,7 +12,7 @@
 
 ## Control objective
 
-The purpose is to place equipment that stores, processes, or transmits information in locations with low exposure to physical and environmental threats and to unauthorized access or damage, and to apply protection commensurate with each location. The organization should decide siting for servers, network devices, endpoints, and printouts based on each item's importance and exposure, reducing threats such as water, dust, vibration, temperature and humidity, electromagnetic interference, and line-of-sight exposure. In doing so it prevents loss of availability from equipment damage or malfunction, information exposure such as shoulder surfing of screens and printouts, and integrity compromise through physical access.
+The purpose is to place equipment that stores, processes, or transmits information in locations with low exposure to physical and environmental threats and to unauthorized access or damage, and to apply protection commensurate with each location. The organization should decide siting for servers, network devices, endpoints, and output devices based on each item's importance and exposure, reducing threats such as water, dust, vibration, temperature and humidity, electromagnetic interference, and line-of-sight exposure. In doing so it prevents loss of availability from equipment damage or malfunction, information exposure such as shoulder surfing of screens and printouts, and integrity compromise through physical access.
 
 ## Key checkpoints
 
@@ -31,7 +31,7 @@ The purpose is to place equipment that stores, processes, or transmits informati
 - Keep printers and multifunction devices in access-controlled areas and apply secure print (release after user authentication) to prevent exposure from unattended output.
 - Restrict unauthorized connection or movement of endpoints, unused network ports, and console ports in common or open areas through physical locks, port disabling, and cable fixing.
 - Restrict actions that could damage equipment or expose information inside processing areas, such as handling food and drink, smoking, or unauthorized photography, and make users aware of the rules.
-- Establish approval and record procedures so the same protection criteria are maintained during movement, relocation, transfer, or disposal, and recheck the protection state after any change of location.
+- Establish approval and record procedures so the same protection criteria are maintained during movement, relocation, removal and return, or disposal, and recheck the protection state after any change of location.
 
 ## Related controls and attributes
 
@@ -47,7 +47,7 @@ The purpose is to place equipment that stores, processes, or transmits informati
 - Status of physical protection measures such as rack and cabinet locking, port disabling, and cable fixing
 - Records of exposure-prevention measures such as secure print and screen shielding
 - Rules and notices restricting actions inside processing areas (food, photography, and the like)
-- Approval records for equipment movement, relocation, transfer, or disposal, and recheck records after location changes
+- Approval records for equipment movement, relocation, removal and return, or disposal, and recheck records after location changes
 
 ## Nonconformity examples
 

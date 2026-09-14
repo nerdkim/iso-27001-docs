@@ -225,7 +225,7 @@
     "The access rights of a leaver/contract-terminated party are not revoked, so access remains possible after the status change.",
     "Periodic access-right review is not performed, or the review is a formality (signature only) that leaves unnecessary rights untouched.",
     "Privileged (administrator) rights are over-granted to many users and managed without separate approval or records.",
-    "Policy rights and actual system configuration are not reconciled, so unauthorized rights exist."
+    "The approved access-right records and actual system configuration are not reconciled, so unauthorized rights exist."
    ]
   },
   "A.5.19": {
@@ -453,7 +453,7 @@
    "cases": [
     "Information security policies/standards are established, but no checking activity is performed to verify actual compliance.",
     "Compliance checks are done only once at a specific point in time, with no frequency, owner, or method defined as a procedure.",
-    "No technical compliance check (verification against security settings/configuration baselines) exists, so system settings run differently from the standard.",
+    "No technical compliance check (verification against security settings/configuration baselines) exists, so system settings drift from the standard.",
     "Non-compliance is found in a check, but it is merely recorded and left unaddressed without root-cause analysis or corrective action.",
     "The same non-compliance recurs, yet it is never linked to fundamental improvement such as policy revision or training.",
     "Technical compliance checks are run on operational systems without prior approval/planning, causing incidents or adverse impact."
@@ -508,7 +508,7 @@
     "The same material is used every year, so current threats or policy/legal revisions are not reflected at all.",
     "Only general training is delivered, with no role-specific training for high-risk roles such as developers and system administrators.",
     "Only completion is tracked formally, with no confirmation of comprehension or remedial action for those who did not complete.",
-    "There is no effectiveness measurement such as phishing simulations, so the value of awareness activities cannot be confirmed or improved."
+    "There is no effectiveness measurement such as phishing simulations, so the effectiveness of awareness activities cannot be confirmed or improved."
    ]
   },
   "A.6.4": {
@@ -531,7 +531,7 @@
    "cases": [
     "A leaver is not informed that the confidentiality obligation persists, so no acknowledgement signature record exists.",
     "After a role change, access rights granted for the previous department/role are not revoked and remain in place.",
-    "Contracts/undertakings do not include information security responsibility clauses that remain valid after termination.",
+    "Contracts/security pledges do not include information security responsibility clauses that remain valid after termination.",
     "On termination, asset return and account deactivation are delayed, so employment-level privileges persist for a period.",
     "There are no response/sanction criteria to apply when surviving obligations are breached, so breaches cannot be acted upon."
    ]
@@ -571,7 +571,7 @@
     "There are no event types, criteria, or examples for what should be reported, so the decision to report is left entirely to individual judgment.",
     "Even when events are reported, they are not routed into the assessment/classification/response procedure and are left unattended after intake.",
     "No reporter-protection policy exists, so fear of adverse consequences leads to concealment and under-reporting.",
-    "No reporting channel is offered to external parties/suppliers/users, so events noticed outside the organization cannot be received.",
+    "No reporting channel is offered to external parties/partners/users, so events noticed outside the organization cannot be received.",
     "Reporting deadlines and required fields are not defined, so intake time and content are not recorded and the response is delayed."
    ]
   },
@@ -749,7 +749,7 @@
    "theme": "A.7 Physical controls",
    "path": "docs/en/A.7-physical/A.7.14.md",
    "cases": [
-    "Storage in PCs or servers due for disposal is only file-deleted or quick-formatted before it is removed or sold, so data can be recovered.",
+    "Storage devices in PCs or servers due for disposal are only file-deleted or quick-formatted before the equipment is taken off site or sold, so data can be recovered.",
     "Only HDD-style overwriting is applied to SSD or flash media, so residual data is not actually erased.",
     "The internal hard disk of multifunction devices or printers is omitted from scope when the units are returned from lease or disposed of.",
     "Disposal is outsourced without obtaining a destruction certificate or processing evidence, so destruction cannot be proven.",
@@ -878,7 +878,7 @@
     "Data past its retention period is left in operational systems for a long time with no deletion criteria in place.",
     "Only a simple file delete is performed on SSD/cloud storage, without making the data unrecoverable (overwriting/cryptographic erasure).",
     "Operational data is deleted, but the same information remains in backups/snapshots/logs and is omitted from the deletion scope.",
-    "After a cloud/outsourcing contract ends, deletion of the processor's data is neither confirmed nor supported by any proof.",
+    "After a cloud/outsourcing contract ends, deletion of the data held by the processor is neither confirmed nor supported by any proof.",
     "Deletion is claimed but cannot be confirmed as complete because there is no verifying evidence such as deletion logs or certificates."
    ]
   },
@@ -892,7 +892,7 @@
     "With no masking criteria, application varies by field at the discretion of individual staff, resulting in inconsistency.",
     "Data is treated as fully anonymized even though re-identification is possible through combinations of quasi-identifiers.",
     "Unmasking (viewing originals) privileges are granted broadly and viewing history is not recorded.",
-    "After pseudonymization, the mapping table (additional information) is stored on the same system as the original without separation."
+    "After pseudonymization, the additional information (mapping table/key) is kept on the same system as the pseudonymized data, without separation."
    ]
   },
   "A.8.12": {
@@ -970,7 +970,7 @@
     "Some devices (network/security appliances, legacy servers) are not synchronized and are left with significant clock drift.",
     "The internal time server itself is not synchronized to a reliable external reference, or it is a single point with no redundancy.",
     "Synchronization status is not monitored, so drift/failures go unnoticed for extended periods.",
-    "The time source is open to arbitrary external NTP with no restriction/authentication, exposing it to spoofing.",
+    "Devices or internal time servers are configured to reference arbitrary external NTP with no restriction or authentication, exposing them to time source spoofing.",
     "Log timestamps are inaccurate, weakening incident investigation and the admissibility of evidence."
    ]
   },
@@ -1174,12 +1174,12 @@
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.33.md",
    "cases": [
-    "An operational database is copied into the test environment without masking/pseudonymization and used for development/testing.",
-    "Staff take out and use operational data at their own discretion without any approval process for test data use.",
+    "A production database is copied into the test environment without masking/pseudonymization and used for development/testing.",
+    "Staff take out and use production data at their own discretion without any approval process for test data use.",
     "The access control/encryption level of the test environment is markedly lower than production, leaving personal data exposed to risk.",
     "Masking is applied but is insufficient (only some fields processed, reversible), so individuals can still be identified.",
-    "After testing ends, copies of operational data remain on test servers, developer PCs, or shared storage.",
-    "The use/copying of operational data for testing is not logged, so there is no way to trace which data was used where."
+    "After testing ends, copies of production data remain on test servers, developer PCs, or shared storage.",
+    "The use/copying of production data for testing is not logged, so there is no way to trace which data was used where."
    ]
   },
   "A.8.34": {

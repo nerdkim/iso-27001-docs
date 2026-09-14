@@ -38,7 +38,7 @@ The purpose is to enclose areas that hold information and information processing
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.7.4 (Physical security monitoring), A.7.6 (Working in secure areas)
 - ISMS-P mapping: 2.4.1 Designation of protected areas
-- 2013 mapping: A.11.1.1
+- 2013 mapping: A.11.1.1 (Physical security perimeter)
 
 ## Evidence
 

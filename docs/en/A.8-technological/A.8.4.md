@@ -12,13 +12,13 @@
 
 ## Control objective
 
-This control restricts read and write access to source code, development tools, and software libraries according to business need. It aims to prevent insertion of unauthorized functionality, malicious changes, and accidental modification, and to preserve the confidentiality of source code as intellectual property. It requires controlling who can access source code and to what extent across development, build, and deployment, while keeping change history traceable.
+Anything written into the code an organization ships eventually runs on the organization's behalf wherever that software is deployed, and code that leaks lets an attacker read its weaknesses straight off the page. This control therefore settles, on the basis of business need, who may view the organization's program code together with the build tooling and shared libraries that go into it, and who may change it. It aims to prevent insertion of unauthorized functionality, malicious changes, and accidental modification, and to preserve the confidentiality of source code as intellectual property. It requires controlling who can access source code and to what extent across development, build, and deployment, while keeping change history traceable.
 
 ## Key checkpoints
 
 1. Is access to the source code repository (configuration/version control system) granted on a least-privilege, business-need basis, with read and write permissions managed separately?
 2. Is repository access authenticated with individually identifiable accounts, and are access/commit/merge/permission-change events logged so they can be audited?
-3. Is unnecessary source code kept off operational systems, and is access to development tools, libraries, and build pipeline credentials also controlled?
+3. Is original source code kept off operational systems unless it is genuinely required, and is access to development tools, libraries, and build pipeline credentials also controlled?
 4. Are source code changes applied through a review process (code review, merge approval), with unapproved direct changes blocked?
 5. When external developers or suppliers access source code, are the scope and duration limited and governed by contract/confidentiality undertakings?
 6. Are access rights reviewed periodically and revoked immediately on termination or role change?

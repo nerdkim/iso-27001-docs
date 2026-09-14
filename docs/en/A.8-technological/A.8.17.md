@@ -53,7 +53,7 @@ This control requires that the clocks of all in-scope information systems and ne
 - Some devices (network/security appliances, legacy servers) are not synchronized and are left with significant clock drift.
 - The internal time server itself is not synchronized to a reliable external reference, or it is a single point with no redundancy.
 - Synchronization status is not monitored, so drift/failures go unnoticed for extended periods.
-- The time source is open to arbitrary external NTP with no restriction/authentication, exposing it to spoofing.
+- Devices or internal time servers are configured to reference arbitrary external NTP with no restriction or authentication, exposing them to time source spoofing.
 - Log timestamps are inaccurate, weakening incident investigation and the admissibility of evidence.
 
 ---

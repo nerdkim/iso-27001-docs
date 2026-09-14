@@ -28,7 +28,7 @@ This control requires that personnel and external parties return all organizatio
 - Register assets in the inventory at issuance and assign a custodian, so that at return the issued items can be reconciled to verify recovery.
 - Include asset return items in the retirement/job-change/contract-expiry checklist, and clearly define the roles and processing order across HR, general affairs, security, and IT functions.
 - Define, by asset type (laptops/mobiles/removable media/smart cards/tokens/keys/access cards/security documents), the return method and verification steps (wiping, confirmation of data deletion, inspection before reissue).
-- For work information and personal data stored on personally owned devices (BYOD), recover it by remote wipe or selective wipe, then verify and record the result.
+- For work information and personal data stored on personally owned devices (BYOD), transfer it to organizational storage where needed, then remove it by remote wipe or selective wipe, and verify and record the result.
 - On completion of return, immediately revoke/disable accounts, privileges, and access rights; for assets whose return is delayed or impossible, assess the risk and apply compensating controls such as access blocking and monitoring.
 - Keep evidence such as return confirmation forms/signatures, and update the asset status (returned/disposed/reissued) in the inventory to keep it consistent with the actual holdings.
 

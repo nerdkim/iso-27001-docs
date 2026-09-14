@@ -21,7 +21,7 @@ This control establishes formal procedures and channels so that employees, exter
 3. Are reporting deadlines (for example, immediately on becoming aware, or within a set time) and the information to include (time of occurrence, affected asset, symptoms, actions taken) specified?
 4. Are confidentiality and protection from retaliation for good-faith reporters guaranteed by policy?
 5. Are received events routed into the incident assessment/classification/response procedure (A.5.24 onward), and is the outcome fed back to the reporter?
-6. Are reporting channels and methods also provided for parties outside the organization, such as external parties, suppliers, and users?
+6. Are reporting channels and methods also provided for parties outside the organization, such as external parties, partners, and users?
 
 ## Implementation guidance
 
@@ -31,7 +31,7 @@ This control establishes formal procedures and channels so that employees, exter
 - Establish a policy that protects good-faith reporters (confidentiality, no retaliation, anonymous reporting where needed) and make it known to all members.
 - Route received events into the incident management procedure without delay so they connect to assessment/classification/response (A.5.24, A.5.25, A.5.26), and send an acknowledgement and outcome back to the reporter.
 - Include reporting methods and examples in awareness training (A.6.3), and use exercises (such as phishing simulations) to verify that reporting actually works.
-- State the reporting obligation and channels in external-party/supplier contracts and user guidance, so reporting is not limited to internal staff.
+- State the reporting obligation and channels in external-party/partner contracts and user guidance, so reporting is not limited to internal staff.
 
 ## Related controls and attributes
 
@@ -56,7 +56,7 @@ This control establishes formal procedures and channels so that employees, exter
 - There are no event types, criteria, or examples for what should be reported, so the decision to report is left entirely to individual judgment.
 - Even when events are reported, they are not routed into the assessment/classification/response procedure and are left unattended after intake.
 - No reporter-protection policy exists, so fear of adverse consequences leads to concealment and under-reporting.
-- No reporting channel is offered to external parties/suppliers/users, so events noticed outside the organization cannot be received.
+- No reporting channel is offered to external parties/partners/users, so events noticed outside the organization cannot be received.
 - Reporting deadlines and required fields are not defined, so intake time and content are not recorded and the response is delayed.
 
 ---

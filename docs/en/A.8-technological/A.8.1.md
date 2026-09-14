@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control protects information that is stored on, processed by, or accessed through user endpoint devices such as laptops, desktops, smartphones, and tablets. Because these devices operate outside the controlled data-center perimeter and are exposed to loss, theft, and untrusted networks, they require both a use policy and technical safeguards. It requires managing device registration, configuration, and user responsibilities so that information is not exposed through the endpoint.
+Whoever ends up holding a staff member's laptop, smartphone, or tablet also holds the work stored on it and a ready route into the systems it can reach. This control exists so that the organization settles in advance what information may sit on such a device and what defends it. Because these devices operate outside the controlled data-center perimeter and are exposed to loss, theft, and untrusted networks, they require both a use policy and technical safeguards. It requires managing device registration, configuration, and user responsibilities so that information is not exposed through the endpoint.
 
 ## Key checkpoints
 

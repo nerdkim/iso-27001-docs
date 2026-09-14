@@ -25,7 +25,7 @@ This control requires that work performed inside secure areas (computer rooms, c
 
 ## Implementation guidance
 
-- Document the permitted work types, approving authority, allowed working hours, and mandatory rules for each secure area, and apply control strength differentially to match the sensitivity of each area.
+- Document the permitted work types, approving authority, allowed working hours, and mandatory rules for each secure area, and apply control strength differentially to match the characteristics of each area.
 - Require work requests to state the purpose, scope, participating personnel, equipment/media brought in, and expected duration, and allow work to proceed only after prior approval.
 - Issue temporary badges to external workers after identity verification, permit work only under the continuous escort/supervision of a responsible person, and recover the badge when work ends.
 - Notify in advance the rules to be observed during work, such as restrictions on cameras/personal devices/storage media, prohibition of photography, and prohibition of arbitrary network connection or system manipulation, and set criteria for action upon violation.
