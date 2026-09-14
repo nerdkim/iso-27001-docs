@@ -5,8 +5,16 @@
 **ISO/IEC 27001:2022 Annex A**의 93개 통제를 통제 하나당 Markdown 파일 하나로 정리한 한국어/영어
 이중 언어 실무 참고 자료집입니다.
 
-이 저장소에는 문서만 있습니다. 애플리케이션도 빌드 산출물도 infra도 없습니다. 자료집을 쓰는 쪽은
+이 저장소에는 문서만 있습니다. 애플리케이션도 빌드 산출물도 인프라도 없습니다. 자료집을 쓰는 쪽은
 [`extended/manifest.json`](extended/manifest.json)을 읽습니다. 그 파일이 공개 계약입니다.
+
+**범위: Annex A 한정.** 이 자료집은 Annex A 93개 통제만 다룹니다. ISMS 요구사항이 있는 본문 4장에서
+10장, 곧 범위, 리더십, 위험 평가와 위험 처리, 6.1.3이 요구하는 적용가능성 명세서(Statement of
+Applicability), 목표, 역량, 문서화된 정보, 운용, 성과 평가, 내부 심사, 경영 검토, 부적합과 시정조치는
+다루지 않습니다. 각 통제 문서의 `ISO 27001 본문 연계` 줄은 본문을 가리키는 포인터이지 본문 요약이
+아니므로, 그 요구사항이 필요하면 라이선스를 갖춘 표준 원본이 있어야 합니다. 적용가능성 명세서는
+조직이 93개 통제 각각에 대한 판단을 기록하는 문서입니다. 이 자료집은 그 문서가 아니며 그것을 만들어
+주지도 않습니다.
 
 ## 저작권 경계, 먼저 읽으십시오
 
@@ -15,7 +23,7 @@
 - 각 문서의 **설명 본문은 본 자료집이 새로 작성한 원저작**입니다. 통제 목적, 주요 확인사항, 이행 지침,
   관련 통제, 증적 예시, 부적합 사례가 여기에 해당합니다. ISO/IEC 27001:2022 및 27002:2022의 규범
   텍스트가 **아니며**, 그 텍스트의 번역도 아닙니다.
-- 표준의 규범 텍스트, 이행 지침, 속성 표, 제3자 해설은 이 repository에서 **원문 그대로 옮기지
+- 표준의 규범 텍스트, 이행 지침, 속성 표, 제3자 해설은 이 저장소에서 **원문 그대로 옮기지
   않습니다**.
 - 정본 대조가 필요하면 **라이선스된 표준 원문**으로 확인하십시오. 모든 문서 하단에 이 고지가 있으며,
   누락된 문서가 있으면 CI가 실패합니다.
@@ -65,7 +73,7 @@ harness/
   check-infra-conformance.sh     infra 규약 검사기(이 저장소에는 대상이 없음)
   conventions-exclude            규약 검사에서 제외하는 경로와 그 사유
   githooks/                      pre-commit, commit-msg, pre-push
-  gitmessage                     commit message 템플릿
+  gitmessage                     커밋 메시지 템플릿
 skill/
   iso-27001-review/              Claude Code skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
     SKILL.md                     절차(routing, 읽기, 판정, 보고 형식)
@@ -107,7 +115,7 @@ skill/
 
 ## 설치
 
-이 repository에는 문서만 있어서 패키지 관리자도, git hook 배선을 걸어둘 install 단계도 없습니다.
+이 저장소에는 문서만 있어서 패키지 관리자도, git hook 배선을 걸어둘 설치 단계도 없습니다.
 `core.hooksPath`는 `.git/config`에 있고 이는 clone과 함께 따라오지 않는 로컬 상태이므로,
 **clone마다 한 번씩** 다음을 실행하십시오.
 
@@ -116,9 +124,9 @@ bash harness/install-hooks.sh
 ```
 
 여러 번 실행해도 안전하고, hook 파일 세 개에 실행 권한을 주는 것 말고는 `.git/config` 밖에
-아무것도 쓰지 않습니다. `pre-commit`(문서 규약), `commit-msg`(commit message 규칙),
-`pre-push`(master 직접 push 차단)를 활성화합니다. hook은 우회 가능한
-편의 guardrail이고, 정본 게이트는 같은 검사기를 돌리는 CI(`.github/workflows/docs.yml`)입니다.
+아무것도 쓰지 않습니다. `pre-commit`(문서 규약), `commit-msg`(커밋 메시지 규칙),
+`pre-push`(master 직접 푸시 차단)를 활성화합니다. hook은 우회 가능한
+편의용 안전장치이고, 정본 게이트는 같은 검사기를 돌리는 CI(`.github/workflows/docs.yml`)입니다.
 
 나머지는 Python 3(표준 라이브러리만)와 bash만 있으면 됩니다.
 
@@ -130,10 +138,10 @@ python3 tools/check_corpus.py   # 읽기 전용 무결성 검사
 bash harness/check-conventions.sh
 ```
 
-`build_index.py`는 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, commit된 색인은 항상
-자료집과 일치합니다.
+`build_index.py`는 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, 커밋된
+색인은 항상 자료집과 일치합니다.
 
-통제를 추가/수정/삭제할 때는 **같은 commit에서 반대 언어 문서도 함께 고칩니다**. 대응 관계는 통제
+통제를 추가/수정/삭제할 때는 **같은 커밋에서 반대 언어 문서도 함께 고칩니다**. 대응 관계는 통제
 번호로 잡힙니다. 한국어만 또는 영어만 고친 상태는 결함입니다. `tools/check_corpus.py`는 한쪽
 언어에만 통제가 있거나 두 언어의 섹션 항목 수가 다르면 실패합니다. 항목 수가 같은 채로 문장만 바꾼
 경우는 CI가 아니라 리뷰에서 걸러집니다.
@@ -144,8 +152,8 @@ bash harness/check-conventions.sh
 ## 라이선스
 
 - 코드와 도구: MIT. [LICENSE](LICENSE) 참고.
-- 자료집(원저작 설명 본문과 `docs/` 편집, 구성): CC BY 4.0. [LICENSE-CONTENT](LICENSE-CONTENT)와
-  [NOTICE](NOTICE) 참고.
+- 자료집(원저작 설명 본문, `docs/` 편집과 구성, `extended/`의 생성 데이터, 메타 문서의 본문):
+  CC BY 4.0. [LICENSE-CONTENT](LICENSE-CONTENT)와 [NOTICE](NOTICE) 참고.
 
 위 라이선스는 본 프로젝트의 자체 저작물에만 적용됩니다. ISO/IEC 27001 표준 원문은 ISO와 IEC의 권리에
 따르며 여기서 재라이선스하거나 복제하거나 번역하지 않습니다.

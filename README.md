@@ -9,6 +9,15 @@ This repository holds documents only. There is no application here, no build out
 infrastructure. A consumer reads [`extended/manifest.json`](extended/manifest.json), which is the
 published contract for this corpus.
 
+**Scope: Annex A only.** This corpus covers the 93 Annex A controls and nothing else. It does not
+document the ISMS requirements of main-body clauses 4 to 10: scope, leadership, risk assessment and
+treatment, the Statement of Applicability required by 6.1.3, objectives, competence, documented
+information, operation, performance evaluation, internal audit, management review, nonconformity
+and corrective action. The `ISO 27001 clauses` lines in the control documents are pointers into the
+main body, not summaries of it, so a reader who needs those requirements needs a licensed copy of
+the standard. The Statement of Applicability is where an organization records its decision on each
+of the 93 controls; this corpus is not one and does not generate one.
+
 ## Copyright boundary, read this first
 
 - Control **numbers, titles, and the four-theme classification** come from the **public list** of
@@ -150,7 +159,8 @@ when the catalog and the documents disagree in either direction.
 ## License
 
 - Code and tooling: MIT. See [LICENSE](LICENSE).
-- The corpus (the original explanatory material and the compilation under `docs/`): CC BY 4.0. See
+- The corpus (the original explanatory material, the compilation under `docs/`, the generated data
+  under `extended/`, and the prose of the meta documents): CC BY 4.0. See
   [LICENSE-CONTENT](LICENSE-CONTENT) and [NOTICE](NOTICE).
 
 These licenses cover this project's own work only. The ISO/IEC 27001 standard text remains the

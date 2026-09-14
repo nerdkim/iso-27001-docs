@@ -85,9 +85,9 @@ Every row below was verified on the check date at the top of this document.
 | ISO/IEC 27001:2022/Amd 1:2024 | Published February 2024. Amends main-body clauses 4.1 and 4.2 only. Annex A unchanged, so this corpus is unaffected. See 2.3. |
 | Annex A control list | 93 controls, four themes, 2022 numbering, unchanged. All 93 are present in both languages, and `tools/check_corpus.py` fails when the catalog and the documents disagree in either direction. |
 | ISO/IEC 27002 | Still the 2022 edition, unamended. The climate amendment applied to management system standards; 27002 is guidance, not one. Not used as a source here in any case. |
-| ISO/IEC 27000 | Sixth edition published July 2026, retitled from "Overview and vocabulary" to "Overview", and no longer the vocabulary reference for the ISMS family. It does not change Annex A and is not a source for this corpus. |
+| ISO/IEC 27000 | Sixth edition published 3 July 2026, retitled from "Overview and vocabulary" to "Overview". The family vocabulary was not dropped: it moved out of the body into an annex of the same document, Clause 3 keeping only the roughly 12 terms the overview itself needs, down from 77 in the 2018 edition, and the individual standards of the family may now define and update terms of their own. It does not change Annex A and is not a source for this corpus. |
 | 2013 transition | Closed. Certificates issued against the 2013 edition expired on 31 October 2025. |
-| ISMS-P 인증기준 | The 101-item set of the 2023.11 안내서 is still in force. The 2023.11 revision removed 3.4.3 휴면 이용자 관리, taking the set from 102 items to 101, so a mapping written against the 2022.4 안내서 is identifiable by that item. The 2026 certification reform changes the audit model and the mandatory scope, not the item numbering. |
+| ISMS-P 인증기준 | The 101-item set of the 2023.11 안내서 is still in force. The 2023.11 revision removed 3.4.3 휴면 이용자 관리, taking the set from 102 items to 101, so a mapping written against the 2022.4 안내서 is identifiable by that item. The certification reform announced on 10 April 2026 keeps the 101 items and their numbering: it tiers certification into 강화 / 표준 / 간편, makes ISMS-P mandatory for designated major personal-data systems, and moves auditing from document review toward on-site verification and technical testing. It also adds a separate set of 20 강화 인증기준(76 세부점검항목) that applies on top of the base set for the 강화인증군 only, the large ISP/IDC and telecommunications operators selected by revenue, from 2027. Those 20 are not part of the item list this corpus maps to, so no mapping here changes. |
 
 ## 3. Operating principle
 
@@ -115,3 +115,11 @@ Every row below was verified on the check date at the top of this document.
 - Edition and amendment status (section 2.4): confirmed against the ISO catalogue entry for
   ISO/IEC 27001:2022/Amd 1:2024 and against published summaries of the 2026 ISO/IEC 27000 edition.
   This check covers only which documents exist and what they cover, never their text.
+- 2013 transition (section 2.4): IAF MD 26, the International Accreditation Forum's transition
+  requirements for ISO/IEC 27001:2022, which fix the expiry of 2013-edition certificates at
+  31 October 2025.
+- ISMS-P claims (sections 1 and 2.4): the published item list of the ISMS-P 인증기준 안내서, 2023.11
+  revision, issued by KISA with the Personal Information Protection Commission and the Ministry of
+  Science and ICT; and the 인증제 실효성 강화방안 that the Commission and the Ministry announced on
+  10 April 2026. Only
+  item numbers, item names, and the announced structure are used, as factual reference data.
