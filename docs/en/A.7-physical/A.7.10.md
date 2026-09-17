@@ -19,7 +19,7 @@ This control requires that information held on storage media be protected agains
 1. Are procedures and responsibilities defined for the acquisition, registration, use, storage, and disposal of storage media, and are media identified and managed as assets?
 2. Is the use of removable media restricted to the minimum necessary, so that only approved and registered media may be used?
 3. When media are moved in/out or physically transported off-site, are protections applied such as encryption, tamper-evident sealing/packaging, and handover records?
-4. Before re-use or disposal, is an unrecoverable sanitization/destruction method appropriate to the media type applied, and is the result recorded (for example, on a certificate)?
+4. Before reuse/disposal, is sanitization selected for the media type, sensitivity, and anticipated recovery threat, with execution results and suitability verified and recorded?
 5. Is the storage environment for media holding sensitive information managed (physical access control, temperature/humidity, migration ahead of media ageing)?
 6. Is protection at the point of storage, such as encryption, applied to important/personal data on media so that exposure is prevented if the media are lost?
 
@@ -28,9 +28,9 @@ This control requires that information held on storage media be protected agains
 - Define classification criteria and handling rules by media type (removable/fixed/optical/tape/SSD), and apply labeling and asset-register entries so that location and status can be tracked.
 - Restrict removable media use by default, issue media only after approval/registration when there is a genuine business need, and encrypt stored information so that loss or theft does not expose data.
 - For off-site transport, use trusted carriers, tamper-evident sealing/packaging, handover and receipt-confirmation records, and in-transit encryption, and retain the transport history.
-- For re-use, reset previous data so that it cannot be recovered (multi-pass overwriting, cryptographic erase, and so on); for disposal, perform physical destruction/perforation/degaussing/incineration suited to the media type.
+- Select clearing, purging, or physical destruction according to reuse/disposal needs, media characteristics, and risk. Do not use repeated overwriting or drilling as a universal solution; verify treatment coverage and results.
 - Use verifiable, standard methods for sanitization/destruction and record the date, target media, method, responsible person, and result on a certificate; where outsourced, obtain the processing evidence and the contract.
-- For media with unreliable overwrite behavior such as SSD/flash, encrypt from the point of storage and dispose by key destruction (cryptographic erase) or combine with physical destruction; do not rely on degaussing alone.
+- SSDs/flash may retain data outside ordinary overwrite coverage; use supported purge functions or suitable destruction with validation. Use cryptographic erase only when target data was appropriately encrypted from the outset and all relevant key copies can be removed; account for separate plaintext/backup copies. Degaussing does not erase flash storage.
 
 ## Related controls and attributes
 

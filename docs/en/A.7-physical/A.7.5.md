@@ -26,7 +26,7 @@ This control protects premises and information processing facilities against nat
 ## Implementation guidance
 
 - Survey each site for geographic/environmental characteristics and history of past incidents, list the relevant physical and environmental threats, and set treatment priorities based on the risk assessment.
-- Against fire, apply detectors, automatic suppression suited to IT equipment (for example gas-based systems), extinguishers, fire compartmentation, and fire-resistant materials, and test their operation periodically.
+- Have qualified specialists design and inspect fire detection, suppression, compartmentation, and fire-resistant provisions for facility risks, life safety, evacuation, and applicable rules. Test gas-based and other suppression systems with occupant protection, alarms, and safe discharge conditions in view, alongside equipment suitability.
 - Against flooding and leaks, install leak-detection sensors, drainage, and water barriers, and review siting so critical facilities are not placed in the lowest level, beneath plumbing, or against outer walls.
 - Against power failure or anomalies, provide UPS and emergency generation, periodically check and test capacity, runtime, and fuel reserves, and apply surge protection and grounding.
 - Operate HVAC/precision cooling for temperature and humidity control with alarms on threshold breaches, and in seismic areas apply earthquake reinforcement such as securing racks and equipment.

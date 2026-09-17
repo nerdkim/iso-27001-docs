@@ -26,11 +26,11 @@ This control ensures that assessment activities on operational information syste
 ## Implementation guidance
 
 - Agree and document in advance the request, scope, schedule, access rights, responsible parties, and emergency contact arrangements for assessment activities on operational systems (internal/external audits, vulnerability assessments, penetration tests, compliance checks).
-- Make least privilege and read-only access the default for testing, and require tests needing write/change access to run on isolated copies or a test environment (A.8.31) separated from production.
+- Use least privilege and read-only access by default, and run write/change tests on isolated copies or test environments where feasible. Where production testing is necessary, obtain explicit system-owner authorization and define scope limits, monitoring, stop criteria, and recovery procedures.
 - Assign a validity period and usage scope to temporary test accounts and tools, and revoke/delete them immediately after the test so no account or tool remains on operational systems.
 - Log and monitor access and executed commands during testing (A.8.15, A.8.16), and establish a procedure to immediately halt/roll back on anomalies or incidents.
 - Perform tests that may affect performance/availability (load tests, large-scale scans, vulnerability exploitation) after impact assessment and approval, during off-peak hours or an agreed testing window.
-- Store operational data, test results, and evidence obtained from testing in an access-controlled repository, and dispose of them securely once the retention period has passed.
+- Keep acquired operational data, results, and evidence to the minimum needed in restricted storage. At retention expiry, check legal holds and necessary investigation preservation; securely delete and record disposal once no basis remains.
 
 ## Related controls and attributes
 
@@ -55,7 +55,7 @@ This control ensures that assessment activities on operational information syste
 - Excessive write/change privileges on operational data are granted during testing, resulting in data corruption.
 - Access and activity during testing are not logged, so what was tested cannot be verified afterward.
 - A load-inducing test is run during business hours without impact assessment, causing performance degradation or a service outage.
-- Operational data/results obtained from testing are stored without access control or not disposed of, leaving a risk of leakage.
+- Acquired data/results lack access controls or remain after their retention basis ends, leaving disclosure risk.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

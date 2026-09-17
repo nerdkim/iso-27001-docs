@@ -25,7 +25,7 @@ Supporting utilities are the infrastructure services that information processing
 
 ## Implementation guidance
 
-- Build the power path from dual feeds, a UPS (uninterruptible power supply), and a standby generator, guarantee uninterrupted transfer with an automatic transfer switch (ATS), and verify battery and fuel levels and runtime periodically.
+- Design feeds, UPS, and generation for required availability. An ATS switches sources but does not itself guarantee uninterrupted power; verify that UPS runtime covers generator start/transfer delays at the required load, and test batteries, fuel, and the complete power path.
 - Define the allowable temperature and humidity range for the server room and make precision cooling units redundant, so that if one fails the standby unit takes over automatically and an alert is raised.
 - Monitor power quality, temperature and humidity, water leakage, fuel level, and battery state in real time, and notify responsible staff over multiple channels (SMS, email, operations center) when thresholds are exceeded.
 - Perform preventive maintenance such as generator load tests, UPS battery performance checks, and air-conditioning filter replacement on a regular schedule, and record and retain inspection results and actions taken.

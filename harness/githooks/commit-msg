@@ -20,12 +20,12 @@ if printf '%s' "$body" | LC_ALL=C grep -qP '\xe2\x80\x94|\xe2\x80\x93|\xe2\x80\x
 fi
 
 # Co-Authored-By policy (CLAUDE.md commit rule): author is nerdkim, and the only
-# sanctioned co-author is mikdren <bot-sidekick@nerd.kim>. Any OTHER
+# sanctioned co-author is nerdkim-sidekick <bot-sidekick@nerd.kim>. Any OTHER
 # co-author (e.g. Claude) or a generated signature is blocked.
 if printf '%s\n' "$body" | grep -iE '^[[:space:]]*co-authored-by:' \
-     | grep -qivE '^[[:space:]]*co-authored-by:[[:space:]]*mikdren[[:space:]]*<bot-sidekick@nerd\.kim>[[:space:]]*$'; then
-  echo "commit-msg: the only allowed co-author is 'Co-Authored-By: mikdren <bot-sidekick@nerd.kim>'." >&2
-  echo "차단: mikdren 외의 Co-Authored-By는 넣지 마세요(예: Claude)." >&2
+     | grep -qivE '^[[:space:]]*co-authored-by:[[:space:]]*nerdkim-sidekick[[:space:]]*<bot-sidekick@nerd\.kim>[[:space:]]*$'; then
+  echo "commit-msg: the only allowed co-author is 'Co-Authored-By: nerdkim-sidekick <bot-sidekick@nerd.kim>'." >&2
+  echo "차단: nerdkim-sidekick 외의 Co-Authored-By는 넣지 마세요(예: Claude)." >&2
   exit 1
 fi
 exit 0

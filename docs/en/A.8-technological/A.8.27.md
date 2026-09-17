@@ -25,7 +25,7 @@ This control requires the organization to define secure engineering principles a
 
 ## Implementation guidance
 
-- Define and approve the organization's secure engineering principles, such as security by design, defense in depth (multiple defensive layers), least privilege and segregation of duties, secure defaults, fail-secure, minimizing the attack surface, and never trust (zero trust), then share them.
+- Define principles for security by design, defense in depth, least privilege, segregation of duties, secure defaults, and attack-surface reduction. Make zero trust concrete through verification of subjects, devices, and requests without granting trust solely from location or ownership. Select failure behavior with security, life safety, and availability requirements in view.
 - Make the principles concrete as reusable reference architectures, secure design patterns, and standard components (authentication/authorization modules, cryptographic libraries, logging components) so projects can adopt them easily.
 - When designing a system, diagram trust boundaries and data flows, and place authentication/authorization/input validation/encryption/logging controls at each boundary to design layered defense.
 - Design accounts and privileges around least privilege and segregation of duties by default, and apply least privilege to administrative/service accounts and system-to-system integrations as well.

@@ -30,7 +30,7 @@ This control requires the organization to identify and document, without omissio
 - Operate a mechanism to continuously monitor new and amended laws and regulatory trends (legal/compliance function, legal counsel, subscriptions to regulator notices), and reflect changes in the register and in risk assessment/controls.
 - Review national regulations on the use, adoption, and import/export of cryptographic technology (licensing, notification, algorithm restrictions), and comply with them in conjunction with cryptography controls (A.8.24).
 - Identify requirements that apply to specific domains such as cross-border transfer of personal data, data localization, and electronic transactions/e-finance, and reflect them in the relevant procedures and contracts.
-- Identify the security/privacy clauses in customer/supplier contracts at the review stage, define implementation responsibilities and evidence methods, and track compliance status through to contract termination.
+- Identify security/privacy clauses in customer and supplier contracts, with implementation owners and evidence methods. At contract termination, identify surviving duties such as confidentiality, record retention, and return/disposal, and track each until it ends.
 - Periodically review the consistency between the compliance requirements register and the responding controls, and manage significant non-compliance risks through management reporting and improvement items.
 
 ## Related controls and attributes

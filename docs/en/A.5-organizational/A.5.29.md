@@ -17,7 +17,7 @@ This control requires the organization to plan in advance so that its informatio
 ## Key checkpoints
 
 1. Are information security requirements embedded in the business continuity/disaster recovery framework, defining the security level to be maintained during disruption?
-2. Are core security controls (access control, encryption, backup, logging) applied at the alternative site/emergency operating environment to the same standard as the normal environment?
+2. Does the alternative site/emergency environment meet an approved security baseline reflecting risks and obligations, with compensating controls for differences from normal operation?
 3. Are approval, usage recording, and revocation procedures in place for emergency/temporary privileges granted during a crisis?
 4. Are security roles, responsibilities, and decision authority assigned for disruption, and is an emergency contact scheme maintained?
 5. Is there a procedure to reverse temporary measures/workarounds introduced during disruption and re-establish security controls upon return to normal?
@@ -26,7 +26,7 @@ This control requires the organization to plan in advance so that its informatio
 ## Implementation guidance
 
 - Integrate information security requirements into the business continuity plan (BCP)/disaster recovery plan (DRP) and define the minimum security control baseline to maintain for each type of disruption.
-- Design each alternative processing mode (alternative site, cloud failover, manual operation) so that access control, encryption, backup, and logging/monitoring are maintained at normal levels.
+- Design access control, encryption, backup, and logging appropriate to each alternative mode, including alternate sites, cloud failover, or manual work. Where normal controls cannot be maintained, define risks, compensating controls, approvers, duration, and restoration conditions.
 - Define a break-glass emergency access procedure that specifies the approval path, usage logging, post-event review, and automatic/manual revocation.
 - Document the security owner and roles (RACI), escalation paths, and internal/external communication criteria for disruption, and keep the emergency contact list current.
 - Reflect obligations to maintain security and notification requirements during disruption in contracts with alternative-environment and service providers (A.5.19-A.5.22) and cloud services (A.5.23).
@@ -51,7 +51,7 @@ This control requires the organization to plan in advance so that its informatio
 ## Nonconformity examples
 
 - A BCP/DRP exists but does not embed information security requirements, so the security level to maintain during alternative operation is undefined.
-- The alternative site is configured with weaker access control/encryption/logging than the primary site, degrading the security level during disruption.
+- The alternative site fails to meet its approved emergency security baseline for access control, encryption, or logging, with no risk assessment or compensating controls.
 - Emergency privileges granted during a crisis are neither logged nor revoked, so excessive privileges persist after return to normal.
 - Temporary workarounds introduced during disruption are not reversed on return to normal and remain as vulnerabilities.
 - The related plans are never validated through exercises, so whether security controls hold during an actual disruption cannot be confirmed.

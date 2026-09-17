@@ -18,8 +18,8 @@ Segregation of networks partitions a single network into zones with different tr
 
 1. Is the network divided into zones/segments by trust level, business purpose, and data sensitivity, with the criteria documented?
 2. Is inter-zone communication configured to block by default and permit only required traffic (default deny)?
-3. Are public-facing services (DMZ) separated from the internal network, the production network from the management network, and the development/test network from production?
-4. Are wireless, guest, and business networks separated from one another with controlled access paths?
+3. Are necessary boundaries between public services, internal business, management, development/test, and production enforced physically or logically to restrict unauthorized communication?
+4. Are guest/untrusted wireless access and business access separated, with identity- and device-appropriate policies for approved corporate wireless connections?
 5. In cloud/virtualized environments, is logical separation applied via VPCs/subnets/security groups and reviewed periodically?
 6. Are the segmentation policy and firewall rules reviewed regularly to remove unnecessary or overly permissive allow rules?
 
@@ -27,7 +27,7 @@ Segregation of networks partitions a single network into zones with different tr
 
 - Define trust boundaries and design zones based on asset identification and risk assessment results.
 - Place firewalls/router ACLs/next-generation firewalls at zone boundaries and manage allow rules on an allowlist basis after applying default deny.
-- Route management traffic through a dedicated management network (OOB) or a bastion/jump host, keeping it separate from the general business network.
+- Protect management traffic through dedicated management networks, bastions, or equivalent logical access controls. Verify administrator and target authentication, permitted paths and privileges, and logging so ordinary business access does not grant administrative access.
 - In the cloud, build zones with VPCs/subnets/security groups/network ACLs/service endpoints and manage configuration as code (IaC).
 - Consider workload-level micro-segmentation and East-West traffic control from a zero-trust perspective.
 - Set a regular review cycle for inter-zone allow rules and tie changes to the change management process with approvals and records.
@@ -50,10 +50,10 @@ Segregation of networks partitions a single network into zones with different tr
 
 ## Nonconformity examples
 
-- Public-facing servers reside in the same segment as the internal business network with no DMZ zone.
+- Public-facing services lack enforced boundaries to internal business systems, permitting unnecessary internal communication.
 - Firewall policy contains any-any allow rules, effectively nullifying segmentation.
 - The development/test network is not separated from production, so test traffic reaches production systems.
-- Management traffic is carried over the general business network with no dedicated management network/bastion.
+- Management traffic lacks necessary authentication and access restrictions, allowing unauthorized access from ordinary business-network users.
 - A cloud security group exposes management ports (22/3389) to 0.0.0.0/0.
 - Inter-zone firewall rules are not reviewed periodically, leaving rules for departed staff or decommissioned systems in place.
 

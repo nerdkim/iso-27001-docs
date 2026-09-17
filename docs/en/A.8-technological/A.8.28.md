@@ -27,7 +27,7 @@ The organization is required to define secure coding principles and standards su
 
 - Document secure coding standards reflecting language/framework characteristics, covering input validation, output encoding, authentication/session management, error handling, and safe logging principles.
 - Integrate SAST/SCA/secret scanning into the development pipeline (CI/CD) to check automatically at commit/build time, and apply build-blocking or exception-approval policies based on severity.
-- Maintain a software bill of materials (SBOM), and remediate components with known vulnerabilities (CVEs) by version upgrade or replacement.
+- Maintain an SBOM and assess whether known vulnerabilities apply to the versions/features in use. Prioritize upgrades, replacement, or mitigation according to exposure, exploitation, and safeguards, with approved, expiring exceptions.
 - Prohibit hardcoding credentials/cryptographic keys in source code, and keep secrets separated in a dedicated secrets management solution.
 - Operate a security-focused code review checklist, and ensure high-risk changes cannot be merged without peer review and approval.
 - Deliver secure coding training and hands-on practice to developers regularly, continuously reflecting new threat and vulnerability types in the material.
@@ -52,7 +52,7 @@ The organization is required to define secure coding principles and standards su
 
 - Secure coding standards exist but are not applied to actual development or the pipeline, remaining as formal documents only.
 - High/medium severity vulnerabilities from SAST results are left unremediated for a long period with no exception approval justification.
-- An outdated version of an open source library with known vulnerabilities (CVEs) is deployed to production as-is.
+- A component affected by a known vulnerability is deployed without risk assessment, necessary mitigation, or an approved remediation plan.
 - API keys and database passwords are hardcoded in source code and committed to the version control repository.
 - A code review procedure is defined, but reviews are performed with a focus on functionality only, without security check items.
 

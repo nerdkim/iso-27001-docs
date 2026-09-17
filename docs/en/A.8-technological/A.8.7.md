@@ -17,7 +17,7 @@ This control protects information and information processing facilities against 
 ## Key checkpoints
 
 1. Are anti-malware solutions installed and operated on in-scope assets (servers, endpoints, mobile devices, and so on), with engines/signatures kept up to date?
-2. Are detection and response functions such as real-time monitoring, scheduled full scans, and automatic quarantine/remediation enabled?
+2. Are detection/response measures such as real-time monitoring, suitable scanning, and isolation operated according to asset type and supported capabilities, with validated alternatives where unavailable?
 3. Is execution of unauthorized software/scripts controlled (for example, allow-listing, attachment/web filtering), and are external media and download paths scanned?
 4. Is user awareness training on malware prevention conducted, and are reporting/response procedures in place when infection is found?
 5. Are malware detection/blocking events logged and reviewed periodically, with significant infections escalated to incident response procedures?
@@ -25,7 +25,7 @@ This control protects information and information processing facilities against 
 ## Implementation guidance
 
 - Select suitable defenses per asset type (servers/PCs/mobile/virtualization/containers, and so on) and manage policy and update status centrally.
-- In addition to signature-based detection, consider behavior-based detection (such as EDR), and run full scans on a defined cycle.
+- Combine signature/behavior detection, allow-listing, and isolation according to asset needs. Schedule full scans after evaluating support and performance/safety impact; use validated alternatives for mobile, container, OT, or other environments that cannot support agents or scanning.
 - Apply scanning and filtering to the main entry paths, including email attachments/URLs, web downloads, and removable media.
 - Control privileges so end users cannot disable the defense solution or set exceptions on their own.
 - Link with threat intelligence (A.5.7) and technical vulnerability management (A.8.8) to handle new/variant threats, and secure ransomware recovery capability through backups (A.8.13).
@@ -48,9 +48,9 @@ This control protects information and information processing facilities against 
 
 ## Nonconformity examples
 
-- Defense solutions are missing or excepted on some servers/endpoints, leaving blind spots in management.
+- Malware protection is missing or excepted for assets without risk assessment or alternative safeguards.
 - A defense solution is installed but its engine/signatures have not been updated for a long time, so new malware is not detected.
-- Real-time monitoring is turned off, or scheduled full scans are not performed.
+- Real-time monitoring or scanning required by the approved protection plan is disabled or omitted without compensating controls.
 - Malware detection logs are only collected but not reviewed, so repeated infection/spread goes unnoticed.
 - Privileges are left unmanaged so users can stop the defense solution at will.
 

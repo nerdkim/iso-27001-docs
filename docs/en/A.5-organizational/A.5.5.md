@@ -26,9 +26,9 @@ This control ensures that the organization establishes and maintains contact arr
 
 - Identify the authorities that need to be contacted based on the regulations/laws and incident types applicable to the organization, and maintain a list with the body name, jurisdiction, contact details, and point of contact.
 - Define contact criteria and procedures per situation (routine enquiry, incident report, personal data breach notification, disaster/emergency) and state the reporting scope/deadline/method in the incident response plan (such as A.5.24).
-- Link statutory reporting obligations (for example, personal data breach notification/reporting deadlines, incident reporting) to incident classification and severity criteria, so that the reporting procedure is triggered automatically when a threshold is exceeded.
+- Evaluate statutory reporting triggers and deadlines alongside incident classification, independently of the internal severity rating. A low internal rating or an ongoing investigation must not cause an applicable report to be missed.
 - Designate a contact person and a backup, and maintain an emergency contact scheme and details for incidents that need 24/365 response.
-- Considering the sensitivity of information shared with authorities, pre-agree the security of the transmission channel (encryption, approval steps) and the scope of sharing, and consolidate external communication through a single point of contact.
+- Predefine the information to share, secure transmission channels, contacts, and delegated authority. Internal approvals or an unavailable central contact must not delay statutory deadlines or requests for emergency assistance.
 - Regularly verify/update contact details and responsible persons, and record actual contact (reports/assistance) history to feed exercises and procedure improvement.
 
 ## Related controls and attributes

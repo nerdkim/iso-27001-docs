@@ -28,8 +28,8 @@ Because a supplier that handles the organization's information or runs part of i
 - Perform a per-supplier risk assessment before contracting, derive a list of security requirements proportionate to the access scope and information sensitivity, and reflect it in the contract terms.
 - Prepare a standard contract template and a security schedule so that confidentiality, data handling, access control, encryption, log/monitoring, and vulnerability and patch management are stipulated consistently.
 - Include a prior-approval procedure for subcontracting (further outsourcing) and a clause that flows down equivalent security obligations to sub-suppliers.
-- Clearly define the incident notification deadline (for example, within 24 hours or 72 hours of becoming aware), the notification recipients/channels, and the obligation to cooperate in investigations.
-- Specify audit/inspection rights, the obligation to submit evidence, the scope of accepted third-party certifications (for example, ISO 27001, SOC 2), and the conditions for re-audit.
+- Set supplier incident notification deadlines, starting triggers, recipients, channels, and investigation duties with applicable law, contract obligations, and response time in view. Define initial and follow-up notifications early enough for the organization to meet its own external reporting deadlines.
+- Specify audit/inspection rights, evidence duties, and reassessment conditions, distinguishing certifications such as ISO 27001 from assurance reports such as SOC 2. Review covered services, scope, validity or assessment period, exceptions, and customer control responsibilities.
 - Include clauses for return/disposal evidence of data, revocation of accounts/access rights, return of assets, and surviving obligations (such as residual confidentiality) on contract termination or cancellation.
 - When outsourcing the processing of personal data, reflect in the contract the processing purpose/scope, restrictions on further outsourcing, safeguards, and cross-border transfer conditions required by applicable law.
 

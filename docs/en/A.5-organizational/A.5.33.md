@@ -28,8 +28,8 @@ This control requires the organization to protect the records it must retain und
 - Establish a records retention schedule that defines, for each record type, the legal/regulatory/contractual basis, retention period, storage location, owner, and disposal point.
 - Apply access control, encryption, backup, change-history management, and logging to record stores to prevent unauthorized access/change/deletion and ensure integrity (for electronic records, use anti-tampering measures such as hashing, digital signatures, and WORM storage).
 - For long-term records, prepare a plan for periodic media migration, format standardization, and legibility checks to counter media degradation and obsolescence of the software/hardware needed to read the media.
-- Apply purpose-based minimum retention periods to records containing personal or sensitive information, and dispose of them in an unrecoverable manner once retention ends, keeping a disposal record.
-- Apply the same protection level and retention period to backups and archives as to the originals, and maintain controls across media check-in/out, storage, and destruction (linked to A.7.10, A.8.10).
+- Set retention periods for personal/sensitive records according to purpose and obligations, and check legal holds or dispute-related preservation needs before deletion. When no retention basis remains, delete/dispose of records using an appropriate method and record the outcome.
+- Protect backups and archives according to sensitivity and define their retention/expiry schedules based on recovery needs and legal obligations. Restrict use and reapply deletions after restoration so information deleted from active systems is not reintroduced into use (linked to A.7.10, A.8.10).
 - Assign management responsibility across the whole record lifecycle (creation/storage/transfer/disposal), and maintain indexing and classification so records can be retrieved/produced promptly on audit and regulatory requests.
 
 ## Related controls and attributes
@@ -53,7 +53,7 @@ This control requires the organization to protect the records it must retain und
 - Retention periods per record type are undefined, so legally required records are deleted at will or kept far longer than necessary.
 - Legally retained records such as accounting/transaction records are left in shared folders without access control or integrity assurance, exposing them to tampering.
 - No provision is made against media degradation and format obsolescence of long-term records, so records cannot be read within their retention period.
-- Records containing personal data whose retention period has expired are not disposed of and remain in storage.
+- Personal-data records remain after their retention period without a valid basis such as a legal preservation obligation.
 - Audit logs are stored without change-prevention measures, so whether they were tampered with cannot be demonstrated afterward.
 - No indexing/retrieval scheme exists to respond to a regulator's request to produce records, so they cannot be produced within the required period.
 

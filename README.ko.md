@@ -32,6 +32,9 @@ Applicability), 목표, 역량, 문서화된 정보, 운용, 성과 평가, 내�
 설명 문구가 아니라 **통제 목록**을 바꿉니다. 각 계층이 어느 판본에 고정돼 있고 어떻게 관리되는지는
 [UPDATES.ko.md](UPDATES.ko.md)에 기록돼 있습니다.
 
+[REVIEW.ko.md](REVIEW.ko.md)는 2026-09-17에 수행한 통제 문서 186개 전체의 본문 검토 기록입니다.
+수정 내용, 통제별 검토 범위와 검증 한계를 담고 있습니다.
+
 ## 구성
 
 | 테마 | 언어별 통제 수 |
@@ -66,18 +69,20 @@ extended/
 tools/
   build_index.py                 docs/에서 파생 색인 전체를 재생성
   check_corpus.py                읽기 전용 무결성 검사
+  test_check_corpus.py           문서 경계 및 Codex 검색 경로 회귀 시험
 harness/
   install-hooks.sh               clone에 git hook을 배선(최초 1회, 설치 절 참고)
   check-conventions.sh           문서 규약 검사기(playbook docs/16)
   test-check-conventions.sh      위 검사기의 자체 시험. CI가 먼저 실행
   check-infra-conformance.sh     infra 규약 검사기(이 저장소에는 대상이 없음)
-  conventions-exclude            규약 검사에서 제외하는 경로와 그 사유
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     커밋 메시지 템플릿
 skill/
-  iso-27001-review/              Claude Code skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
+  iso-27001-review/              Codex skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
     SKILL.md                     절차(routing, 읽기, 판정, 보고 형식)
     topic-index.json             일상 용어를 통제 번호로 연결하는 routing 표
+.agents/skills/
+  iso-27001-review               위 스킬을 가리키는 Codex 검색용 심볼릭 링크
 ```
 
 경로는 전부 ASCII라 소비자 쪽에서 URL 인코딩 문제가 생기지 않습니다.
@@ -130,12 +135,40 @@ bash harness/install-hooks.sh
 
 나머지는 Python 3(표준 라이브러리만)와 bash만 있으면 됩니다.
 
+## Codex로 작업하기
+
+이 저장소를 Codex에서 열면 [AGENTS.md](AGENTS.md)를 읽습니다. 이 파일은 지침 원본인
+`CLAUDE.md`를 가리키는 링크이며, 원본 파일명은 playbook 호환을 위해 유지합니다.
+Claude Code 설치나 개인 Codex 설정 변경은 필요하지 않습니다.
+
+내용을 검토하려면 `$iso-27001-review`와 함께 본문이나 파일 경로를 전달하십시오. Codex는
+`.agents/skills/iso-27001-review`에서 스킬을 검색합니다. 이 스킬은 자료집을 읽기만 합니다.
+자료집 자체의 유지보수는 별도 작업이며 `AGENTS.md`의 규칙을 따릅니다.
+
+다른 프로젝트에서도 같은 스킬을 쓰려면 자료집 최상위에서 다음을 선택적으로 실행하십시오.
+기존 설치가 있으면 덮어쓰지 않습니다.
+
+```bash
+mkdir -p "$HOME/.agents/skills"
+if [ ! -e "$HOME/.agents/skills/iso-27001-review" ] && [ ! -L "$HOME/.agents/skills/iso-27001-review" ]; then
+  ln -s "$PWD/skill/iso-27001-review" "$HOME/.agents/skills/iso-27001-review"
+fi
+```
+
+검색 결과가 갱신되지 않으면 새 Codex 세션을 시작하십시오. 공식
+[스킬 검색 문서](https://learn.chatgpt.com/docs/build-skills)와
+[AGENTS.md 문서](https://learn.chatgpt.com/docs/agent-configuration/agents-md)를 참고하십시오.
+
 ## 유지보수
 
 ```bash
 python3 tools/build_index.py    # extended/와 docs/{ko,en}/INDEX.md 재생성
 python3 tools/check_corpus.py   # 읽기 전용 무결성 검사
+python3 -B -m unittest discover -s tools -p 'test_*.py'
+bash harness/test-check-conventions.sh
 bash harness/check-conventions.sh
+bash harness/check-infra-conformance.sh
+git diff --check
 ```
 
 `build_index.py`는 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, 커밋된
@@ -148,6 +181,10 @@ bash harness/check-conventions.sh
 
 통제를 추가하면 `extended/catalog/controls.json`에도 추가해야 합니다. 카탈로그와 문서가 어느 방향으로든
 어긋나면 `check_corpus.py`가 실패합니다.
+
+확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. 적용된 playbook
+검사 도구의 기준 버전은 v0.1.6이며, Codex 설정과 별개인 v0.2.0 이전은 수행하지 않았습니다.
+확인한 참조본 및 상위 저장소의 커밋은 `CLAUDE.md`에 기록되어 있습니다.
 
 ## 라이선스
 

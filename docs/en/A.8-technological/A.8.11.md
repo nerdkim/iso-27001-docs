@@ -18,7 +18,7 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 
 1. Are the target data (resident registration numbers, card numbers, contact details, account numbers, and so on) and the criteria for applying masking/pseudonymization/anonymization defined?
 2. Is the extent of exposure (full/partial disclosure, number of masked digits, and so on) differentiated according to access rights and business need?
-3. Are masked/pseudonymized/synthetic data used instead of real data in non-production environments such as development, test, and training?
+3. Are suitable transformed/synthetic data preferred for development/test/training, with any necessary real-data exception controlled through a lawful basis, approval, and safeguards?
 4. Are the applied techniques designed and validated so that re-identification risk (for example, through combinations of quasi-identifiers) is sufficiently reduced?
 5. When masking/pseudonymization/anonymization is applied, is compliance with legal requirements such as personal data protection law (purpose limitation, separate storage of the additional information, prohibition of re-identification, and so on) reviewed and recorded?
 6. Are approval/logging controls in place for unmasking (viewing originals) and for exception handling?
@@ -26,10 +26,10 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 ## Implementation guidance
 
 - Identify the fields to be masked based on the data classification results, and document the applicable technique and exposure extent per field as a standard.
-- Distinguish and apply static masking (permanent transformation when storing or generating copies) and dynamic masking (real-time transformation at query time) according to the use case.
-- Select techniques such as partial masking, substitution, shuffling, tokenization, pseudonymization, anonymization, and synthetic data, balancing risk against data usefulness.
+- Use static masking to transform values in copies such as test datasets, and dynamic masking to limit query output. Dynamic masking does not replace authorization at the underlying store; control direct queries and bypass paths as well.
+- Select partial masking, substitution, shuffling, tokenization, pseudonymization, or synthetic data according to purpose and risk. Masked/pseudonymized data is not automatically anonymous, and synthetic data also needs assessment for source-data disclosure.
 - Integrate with role-based access control (RBAC) to differentiate exposure by role/duty, and apply masking consistently across all output paths, including screens, APIs, downloads, and logs, not just the display.
-- Assess re-identification risk (for example, k-anonymity and review of quasi-identifier combinations) and revalidate periodically when data structures or business processes change.
+- Assess re-identification through quasi-identifier combinations, linkage to other data, and inference. A single measure such as k-anonymity does not guarantee anonymity; reassess when data or its use environment changes.
 - Store masking rules and the keys/mapping tables (additional information) used for pseudonymization securely and separately, and control access and change history.
 
 ## Related controls and attributes
@@ -50,12 +50,12 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 
 ## Nonconformity examples
 
-- A production database is copied as-is and real data is used in the development/test environment.
+- Production data is copied unchanged into development/test without justified need, a lawful basis, approval, and safeguards.
 - Masking is applied on screen, but plaintext is still exposed in API responses, downloaded files, and logs.
 - With no masking criteria, application varies by field at the discretion of individual staff, resulting in inconsistency.
 - Data is treated as fully anonymized even though re-identification is possible through combinations of quasi-identifiers.
 - Unmasking (viewing originals) privileges are granted broadly and viewing history is not recorded.
-- After pseudonymization, the additional information (mapping table/key) is kept on the same system as the pseudonymized data, without separation.
+- Pseudonymized data and re-identification mappings/keys lack physical or logical access separation, allowing ordinary users to access both.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

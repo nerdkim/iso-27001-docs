@@ -27,7 +27,7 @@ This control establishes and maintains ongoing contact with information security
 - Define the types of information the organization needs (vulnerability alerts, threat intelligence, regulatory/technology trends, response good practice) and list the external groups/forums/communities that meet each need.
 - Document the point of contact and backup person, means of contact, and participation level for each group, and keep this current as personnel change.
 - Establish an internal handling flow that classifies/evaluates the information obtained and links it into risk assessment, patch management, vulnerability remediation, and incident response procedures.
-- Define in advance what may and may not be shared externally (internal network/asset details, undisclosed vulnerabilities, personal data, and so on), and set a review/approval step before sharing.
+- Define recipients, permitted information, and review/approval procedures for external sharing. Allow limited sharing of undisclosed vulnerabilities with suppliers or response bodies through an authorized coordinated disclosure process, while minimizing personal data and internal confidential details.
 - Define the internal dissemination path and emergency response trigger (escalation) for when an early warning of a threat/vulnerability is received.
 - Define contacts by position/job rather than by an individual's informal network, so the relationship is handed over when a person changes.
 - Review the value of participation periodically, retiring low-value channels and adding needed ones.

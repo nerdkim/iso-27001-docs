@@ -19,18 +19,18 @@ This control verifies the identity, career history, qualifications, and backgrou
 1. Is there a documented screening procedure applied to all candidates before or at hiring, operated in proportion to business need, information classification, and risk level?
 2. Are screening items (identity verification, verification of education/career/qualifications, reference checks, and criminal-record/credit checks where legally permitted) defined according to role sensitivity?
 3. Are the scope and depth of screening strengthened for people who handle sensitive information or perform key duties?
-4. Is screening performed in compliance with applicable laws, regulations, and ethics (data minimization, prior consent, non-discrimination)?
+4. Does screening comply with applicable law and ethics, including a lawful basis, data minimization, notice and required consent/authorization, and non-discrimination?
 5. Are equivalent screening requirements applied through contracts to external personnel such as contractors, temporary staff, and outsourced/dispatched workers?
-6. Are screening results and consent records retained, and is re-screening performed on changes of access rights or moves into key duties?
+6. Are screening and its lawful basis recorded, and is legally permitted, proportionate re-screening considered when duties or access become more sensitive?
 
 ## Implementation guidance
 
 - Document a screening policy/procedure that applies to all candidates, and differentiate the screening scope in proportion to the classification of information to be accessed and the risk of the role.
 - Define per-role screening items: identity verification, education/qualifications, career history, reference checks, and criminal-record/credit checks for high-risk roles where legally permitted.
-- Obtain the candidate's prior consent before collecting/verifying personal information, collect only the minimum necessary, and handle it securely in line with personal data protection law.
+- Confirm a lawful basis before collecting or verifying personal information and apply required notice and consent/authorization procedures. Consent alone does not authorize a prohibited check; securely process only information necessary for the role.
 - Apply enhanced verification to sensitive/key roles (privileged access, finance, personal data handlers), and consider re-screening at defined intervals or on role change.
 - Extend screening requirements to external personnel (contractors, dispatched workers, outsourced staff) through contract clauses, and confirm that the supplier performed equivalent screening.
-- Record screening completion, criteria, and consent; keep the results in a secure location with restricted access; and set retention/disposal rules aligned with purpose and law.
+- Retain screening criteria, results, lawful basis, and required consent/authorization records in restricted storage, with retention and disposal rules aligned with purpose and law.
 
 ## Related controls and attributes
 
@@ -43,7 +43,7 @@ This control verifies the identity, career history, qualifications, and backgrou
 
 - Screening policy/procedure document
 - Per-candidate screening checklists and records (identity verification, results of education/qualification/career verification)
-- Candidate consent forms for background checks and personal data collection
+- Lawful-basis and notice records for screening/personal-data collection, with consent/authorization where required
 - Reference-check records and, where legally permitted, criminal-record/credit-check records
 - Contract clauses requiring screening of external personnel and supplier confirmations that screening was performed
 - Re-screening records for key-duty personnel, and records of secure storage and access control for screening results
@@ -53,7 +53,7 @@ This control verifies the identity, career history, qualifications, and backgrou
 - Hiring proceeds with no documented screening procedure, so identity/career verification is left to individual discretion or not performed at all.
 - People in sensitive roles (privileged/administrator accounts, personal data handlers) are placed without background verification proportionate to the risk.
 - Screening is applied only to full-time employees and not to contractors/dispatched workers who hold equivalent access.
-- Background/personal information is collected without candidate consent or beyond what is necessary, breaching personal data protection law.
+- Background information is collected without a lawful basis or required consent/authorization, or beyond what the role requires.
 - No screening records are kept, so it cannot be evidenced at audit time that screening was actually performed.
 - No re-screening or review is carried out even when someone moves into a role with a higher risk level.
 

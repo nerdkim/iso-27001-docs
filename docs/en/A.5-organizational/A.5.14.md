@@ -26,10 +26,10 @@ This control requires that confidentiality, integrity, and availability be maint
 ## Implementation guidance
 
 - Define, in line with the classification scheme, which channels are permitted and what protection each requires, and document this as policies and procedures covering electronic, physical, and verbal transfer.
-- Apply transport encryption (such as TLS) by default to electronic channels (email, large-file transfer, SFTP, API interfaces), and add end-to-end or document-level encryption for sensitive information.
+- Apply encryption and peer authentication appropriate to the transfer protocol, such as TLS for web/API traffic and SSH for SFTP. Add end-to-end or document-level encryption according to sensitivity and intermediary exposure.
 - Where there is regular or bulk transfer with external organizations, include in the data transfer agreement the security requirements, allocation of responsibility, incident notification procedure, data return/disposal conditions, and restrictions on subcontracting.
-- Control the movement of physical media (documents, removable storage) through approved transport procedures, locked storage, sealing, and handover logs, and encrypt the information held on the media.
-- Operate measures to prevent misdelivery and leakage: recipient address confirmation, external-send warnings, send delay/recall, approval for large or sensitive sends, and DLP rules.
+- Protect documents and removable media through approved transport, locked storage, sealing, and handover records. Apply appropriate encryption to electronic media and physical safeguards such as secure packaging and recipient verification to paper documents.
+- Prevent misdelivery with recipient checks, external-send warnings, send delays, sensitive-transfer approval, and DLP rules. Message recall can fail depending on the recipient environment and must not replace incident handling after disclosure.
 - Include in training the awareness criteria for verbal transfer, such as limiting conversations in public places, guarding against eavesdropping in meeting rooms, and caution with speakerphone/video conferencing.
 - Keep transfer records (sender, recipient, time, information transferred) and periodically review for abnormal sending to act on anomalies.
 

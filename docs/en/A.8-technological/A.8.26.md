@@ -12,14 +12,14 @@
 
 ## Control objective
 
-This control ensures that, when applications are developed or acquired/purchased, information security requirements are identified, specified, and approved by taking into account the sensitivity of the information processed, the exposure environment, the access/authentication characteristics, and the nature of transactions, and that these requirements are reflected throughout development and acquisition. Defining security requirements early in planning/design rather than after the fact prevents vulnerabilities from being built into the design and implementation stages and reduces rework cost. Applications exposed over public networks (the internet) and electronic transactions in particular need additional requirements such as transaction integrity, non-repudiation, and prevention of incomplete/erroneous/replayed transmissions.
+This control identifies and approves application security requirements according to information sensitivity, exposure, access/authentication characteristics, and transaction needs, then carries them into design and verification. Early specification reduces design gaps and rework. Apply confidentiality, integrity, and duplicate/replay protections to public-network communication and electronic transactions according to risk; where proof of an action is needed, define additional signature and audit-trail requirements.
 
 ## Key checkpoints
 
 1. Is there a procedure to identify, document, and approve security requirements for application development/acquisition according to the sensitivity of the information processed and the exposure environment (internal/public network)?
 2. Are requirements for authentication/authorization/session management/access control specifically reflected in the requirements specification?
 3. Are requirements for addressing application vulnerabilities (input validation, output encoding, safe error handling, protection against injection/tampering) defined?
-4. For transactions/transmissions over public networks, are requirements defined for transport encryption, transaction integrity, non-repudiation, and prevention of incomplete/duplicated/replayed/misrouted messages?
+4. Are encryption, integrity, missing/duplicate/replayed/misrouted-message controls, and any required proof of actions specified according to the nature and risk of public-network communications/transactions?
 5. Are legal/contractual requirements (for personal data, payment data, and so on) and logging/audit-trail requirements reflected?
 6. Are the defined security requirements verified/tested during the design/implementation/testing stages and approved before release?
 
@@ -28,7 +28,7 @@ This control ensures that, when applications are developed or acquired/purchased
 - Establish a security requirements catalog/checklist keyed to application type (web/mobile/API/electronic transaction, and so on), data classification, and exposure environment, and select requirements based on the risk assessment at project initiation.
 - Specify requirements for authentication (including multi-factor), authorization and least privilege, session management, and access control, and define control requirements for interactions between users/systems of differing trust levels.
 - Define requirements for addressing known vulnerabilities, such as input validation, output encoding/escaping, safe error handling, and protection against injection/XSS/CSRF/insecure deserialization, linked to the secure coding standard (A.8.28).
-- For public-network/electronic-transaction applications, define requirements for transport encryption (TLS), transaction integrity and non-repudiation (digital signatures/timestamps), prevention of incomplete/duplicated/replayed/misrouted messages, and payment/settlement validation.
+- Apply suitable transport protection to public-network communication and specify integrity, duplicate/replay prevention, and payment validation according to transaction needs. Where non-repudiation evidence is needed, design verifiable signatures, linkage between actors and transactions, protected audit records, and time evidence together. A timestamp alone does not establish who acted.
 - Where personal data and payment data are processed, reflect applicable laws/standards (data protection law, PCI DSS, and so on) together with data retention/disposal and logging/audit-trail requirements.
 - Maintain traceability (requirement IDs) for the defined security requirements so they can be verified in design/implementation/testing (A.8.29), and for acquired (purchased/SaaS) products, assess and approve whether the supplier's security features meet the requirements.
 
@@ -51,7 +51,7 @@ This control ensures that, when applications are developed or acquired/purchased
 ## Nonconformity examples
 
 - Applications are developed/acquired using only functional requirements, without separately defining security requirements.
-- Transactions over public networks have no defined requirements for transport encryption/transaction integrity/non-repudiation.
+- Required transport protection, integrity, or proof-of-action requirements are missing because public-network transaction risks and obligations were not assessed.
 - Vulnerability-handling requirements such as input validation/injection prevention are absent, so the same class of vulnerability recurs.
 - Legal requirements for processing personal data/payment data are not reflected in the security requirements.
 - The product is released without the defined security requirements being confirmed during the testing/verification stage.

@@ -205,6 +205,22 @@ printf '# waived\n\n자연스러운 한국어로 배포와 빌드를 쓴다.\n' 
 printf '# not waived\n\n소스를 빌드해 배포한다.\n' > "$d/docs/abc/x.md"
 assert_repo "conventions-exclude prefix is literal, not a regex" "$d" 1 "docs/abc/x.md"
 
+# The bilingual corpus path exempts terminology only, never punctuation or spacing.
+d="$(new_repo)"
+mkdir -p "$d/docs/ko/A.5-organizational"
+printf '# doc\n\n데이터를 백업하고 배포한다.\n' > "$d/docs/ko/A.5-organizational/A.5.1.md"
+assert_repo "docs/ko uses Korean vocabulary without an exclusion file" "$d" 0 "RESULT: PASS"
+
+d="$(new_repo)"
+mkdir -p "$d/docs/ko/A.5-organizational"
+printf '# doc\n\n한글 (부연)\n' > "$d/docs/ko/A.5-organizational/A.5.1.md"
+assert_repo "docs/ko still enforces parenthesis spacing" "$d" 1 "opening-paren"
+
+d="$(new_repo)"
+mkdir -p "$d/docs/en/A.5-organizational"
+printf '# doc\n\n데이터를 배포한다.\n' > "$d/docs/en/A.5-organizational/A.5.1.md"
+assert_repo "docs/en retains terminology checks" "$d" 1 "transliteration"
+
 echo
 echo "RESULT: $pass passed, $fail failed."
 [ "$fail" -eq 0 ] || exit 1
