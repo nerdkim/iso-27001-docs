@@ -26,10 +26,10 @@ This control requires that access to external websites be managed/controlled so 
 ## Implementation guidance
 
 - Establish allow/block policies per web category based on business need and risk level, and block by default the sites known to distribute malware, host phishing/C2, or provide anonymizing proxies.
-- Deploy technical means such as a secure web gateway, proxy, or DNS filtering to control access by URL/domain/reputation/category, and direct policy violations to a block notice page.
+- Check capability differences: proxies/secure web gateways can enforce supported URL/content policies, while DNS filtering primarily controls domains. Explain blocks through available mechanisms without assuming HTTPS can always show a block page or instructing users to ignore certificate warnings.
 - Automatically update threat intelligence, reputation feeds, and category databases so that the latest risky sites are reflected promptly.
 - Apply the same policy in remote/mobile environments through an endpoint agent or cloud-based filtering to remove blind spots.
-- Apply HTTPS traffic inspection (SSL inspection) while managing sensitive sites such as finance/healthcare on an exception list, and document the inspection scope and exceptions to meet privacy/legal requirements.
+- Decide whether and where to decrypt HTTPS after assessing necessity, security impact, privacy, and legal requirements. If used, manage certificate validation, interception CA key protection, TLS security, and exceptions. For uninspected traffic, apply appropriate alternatives such as domain, reputation, or endpoint controls.
 - Collect and periodically review block events, bypass attempts, and policy-exception requests, and operate an exception-approval procedure and user guidance (acceptable use policy) for false positives.
 - Combine with download-file scanning and malware controls to defend against web-borne threats in multiple layers.
 

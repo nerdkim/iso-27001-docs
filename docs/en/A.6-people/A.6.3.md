@@ -12,12 +12,12 @@
 
 ## Control objective
 
-This control ensures that all personnel and relevant external parties receive ongoing awareness activities and role-based education/training so they understand the information security policies, procedures, and responsibilities relevant to their duties and apply them in daily work. However strong technical controls are, human carelessness or lack of awareness leads to social engineering, phishing, and mistakes, and remains a leading cause of security incidents. The control aims to embed security knowledge as culture and habitual behavior rather than a one-off briefing, and requires content to be refreshed in line with the changing threat landscape and policy revisions, with the effectiveness measured.
+This control provides ongoing awareness activities and role-based education/training so personnel and relevant external parties understand and apply the security policies, procedures, and responsibilities relevant to their work. Awareness gaps, processes, and working conditions can contribute to phishing, social engineering, and mistakes, so training complements technical and organizational safeguards. Refresh content as threats and policies change and measure effectiveness to support safe decisions and behavior in daily work.
 
 ## Key checkpoints
 
 1. Is there an information security awareness and training plan covering all personnel and relevant external parties, backed by management approval and budget?
-2. Are new joiners given basic security training early in hiring/assignment, and do all personnel receive periodic (at least annual) refresher training?
+2. Are new joiners given basic security training early in hiring/assignment, and do all personnel receive refresher training on a schedule set by the organization's risks, roles, policies, and applicable obligations?
 3. Is differentiated, specialized training provided according to job characteristics (developers, system administrators, personal data handlers, management, and so on)?
 4. Does the content reflect current threats (phishing, ransomware, social engineering) and policy/legal revisions, and is it refreshed periodically?
 5. Are completion and comprehension confirmed (attendance, assessment, acknowledgement), and are remedial actions taken for those who did not complete?
@@ -26,7 +26,7 @@ This control ensures that all personnel and relevant external parties receive on
 ## Implementation guidance
 
 - Establish an annual training plan covering audiences (all personnel, new joiners, by role, external parties), frequency, methods (classroom/online/simulation), and content, and obtain management approval.
-- Provide basic security training to new joiners early in assignment, and repeat regular training for all personnel at least annually to sustain awareness.
+- Provide basic security training to new joiners early in assignment, and set and record the refresher schedule for all personnel based on risk, role, policy, and applicable obligations, with additional training when threats or duties change.
 - Provide separate, role-specific in-depth training for high-risk roles such as development, operations, and personal data handling (secure coding, privilege management, data protection).
 - Reflect current threat trends, real incident cases, and policy/legal revisions in the content and refresh it regularly.
 - Reinforce awareness continuously through repeated and varied channels such as phishing simulations, quizzes, campaigns, and posters/newsletters.
@@ -56,7 +56,7 @@ This control ensures that all personnel and relevant external parties receive on
 - The same material is used every year, so current threats or policy/legal revisions are not reflected at all.
 - Only general training is delivered, with no role-specific training for high-risk roles such as developers and system administrators.
 - Only completion is tracked formally, with no confirmation of comprehension or remedial action for those who did not complete.
-- There is no effectiveness measurement such as phishing simulations, so the value of awareness activities cannot be confirmed or improved.
+- There is no effectiveness measurement such as phishing simulations, so the effectiveness of awareness activities cannot be confirmed or improved.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

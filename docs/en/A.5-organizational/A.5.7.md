@@ -28,7 +28,7 @@ This control requires the organization to collect, analyze, and use information 
 - Analyze threat information by level: strategic (long-term threat trends), tactical (attacker TTPs), and operational (immediately usable indicators such as IOCs).
 - Evaluate source reliability, timeliness, and organizational relevance to filter out false positives and noise, and assign priorities.
 - Turn analysis into defense by feeding it into detection/blocking rules in SIEM/IPS/firewalls, risk assessment updates, and vulnerability remediation priorities.
-- Structure threat information in standard formats (for example, STIX/TAXII) and participate in trust-based sharing communities to enable two-way use of information.
+- Structure threat information using standard formats and exchange protocols (for example, STIX and TAXII) and participate in trust-based sharing communities to enable two-way use of information.
 - Assign roles and responsibilities for the threat intelligence process and document how outputs are used and fed back, so that the activity does not rely on the capability of a single individual.
 
 ## Related controls and attributes
@@ -36,7 +36,7 @@ This control requires the organization to collect, analyze, and use information 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.5.5 (Contact with authorities), A.5.6 (Contact with special interest groups), A.8.8 (Management of technical vulnerabilities), A.8.16 (Monitoring activities), A.5.24 to A.5.27 (Information security incident management)
 - ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system (related: 2.11.3 Anomaly analysis and monitoring, 2.11.2 Vulnerability assessment and remediation)
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 

@@ -19,25 +19,29 @@ index/nonconformity-rulebook.json   93개 통제의 부적합 사례를 통제 �
 index/nonconformity-rulebook.en.json 내부 심사 준비용 점검 규칙입니다. 접미사 없는 파일이
                                     한국어, '.en'이 영어이며 각각 "lang" 필드를 갖습니다.
 index/evidence-dictionary.json      93개 통제의 증적자료를 통제 번호로 색인. 증적을 통제에
-index/evidence-dictionary.en.json   mapping할 때 쓰는 참고 사전입니다. 언어 규칙은 위와 같습니다.
+index/evidence-dictionary.en.json   매핑할 때 쓰는 참고 사전입니다. 언어 규칙은 위와 같습니다.
 ```
 
-repository 루트에서 `python3 tools/build_index.py`로 전부 재생성합니다. 빌드는 결정적이며, commit된
+저장소 루트에서 `python3 tools/build_index.py`로 전부 재생성합니다. 빌드는 결정적이며, 커밋된
 산출물이 `docs/`와 어긋나면 CI가 실패합니다.
 
 ## AI 사용 운영 규약
 
-소비자 쪽 agent가 지켜야 하는 규칙입니다. 소비 환경의 `CLAUDE.md` 또는 `AGENTS.md`에 반영하십시오.
+소비자 쪽 agent가 지켜야 하는 규칙입니다. 소비 환경의 `AGENTS.md`에 반영하십시오.
+이 규칙을 전달받은 내용에 적용해 부적합 후보를 보고하는 Codex 호환 스킬은
+[../skill/iso-27001-review/SKILL.md](../skill/iso-27001-review/SKILL.md)에 있습니다.
+저장소의 검색용 링크는 `.agents/skills/iso-27001-review`이며 `$iso-27001-review`로 호출합니다.
+다른 프로젝트에서 사용하는 방법은 [../README.ko.md](../README.ko.md)를 참고하십시오.
 
 1. **`docs/`는 읽기 전용입니다.** 자료집을 사용하는 동안 `docs/` 아래의 무엇도 만들거나 고치거나
-   지우지 않습니다. 파생 산출물은 소비자 쪽 작업 공간에 쓰고, 이 repository로 되돌려 쓰지 않습니다.
-2. **manifest 우선 routing.** `manifest.json`을 먼저 읽습니다. 관련 통제 번호와 `path`로 범위를 좁힌
+   지우지 않습니다. 파생 산출물은 소비자 쪽 작업 공간에 쓰고, 이 저장소로 되돌려 쓰지 않습니다.
+2. **manifest 우선 라우팅.** `manifest.json`을 먼저 읽습니다. 관련 통제 번호와 `path`로 범위를 좁힌
    뒤 해당 문서만 읽습니다. `docs/` 전체에 grep을 뿌리지 않습니다.
 3. **모든 주장에 출처를 답니다.** 각 진술에 `docs/` 경로와 섹션명을
    `[출처: docs/ko/A.5-organizational/A.5.1.md > 주요 확인사항]` 형태로 붙입니다. 출처를 만들 수
    없으면
    단정하지 말고, 자료집이 다루지 않는 내용이라고 밝힙니다.
-4. **자료집 범위를 벗어나지 않습니다.** 이 repository의 근거는 186개 `.md` 문서, `manifest.json`,
+4. **자료집 범위를 벗어나지 않습니다.** 이 저장소의 근거는 186개 `.md` 문서, `manifest.json`,
    `index/*`, `catalog/controls.json`입니다. 모델의 일반 지식으로 통제 요구사항이나 수치, 기준값을
    단정하지 않습니다.
 5. **저작권 경계를 지킵니다.** 여기 설명 본문은 원저작이며 표준 원문이 아닙니다. 이를
@@ -47,11 +51,12 @@ repository 루트에서 `python3 tools/build_index.py`로 전부 재생성합니
 6. **사람 승인 게이트.** 인증 준비 상태 판단, 최종 적합성 판정, 보완조치 완료 판정은 agent가 아니라
    사람이 결정합니다. 결과는 검토 대상 후보로 제시합니다.
 
-## routing 예시
+## 라우팅 예시
 
 "접근통제가 운영되고 있음을 무엇으로 증명하는가"라는 질문은 이렇게 풀립니다.
 
-1. `manifest.json`에서 `name`이 접근통제와 관련된 통제를 찾습니다(A.8.2에서 A.8.5 구간과 A.5.15).
+1. `manifest.json`에서 `name`이 접근통제와 관련된 통제를 찾습니다(A.5.15에서 A.5.18 구간과
+   A.8.2에서 A.8.5 구간).
 2. 그 문서들만 읽어 `증적자료`와 `부적합 사례` 섹션을 뽑습니다. 목록만 필요하면
    `index/evidence-dictionary.json`과 `index/nonconformity-rulebook.json`에서 같은 내용을 바로
    읽어도

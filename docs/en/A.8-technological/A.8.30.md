@@ -20,7 +20,7 @@ This control ensures that when all or part of system development is outsourced t
 2. Are the supplier's secure development capability and security management maturity assessed before contracting and reflected in the selection criteria?
 3. Are there procedures and deliverable submission requirements that let the organization check/oversee fulfillment of its security requirements during development?
 4. Is security verification (security testing, vulnerability assessment, source code review, malware/backdoor checks) performed before accepting deliverables, and are the results reflected in acceptance approval?
-5. Are controls defined for the source code, data, access privileges, and development environment provided or created for the project, along with return/destruction procedures at contract termination?
+5. Are controls defined for provided/generated source, data, privileges, and environments, including return/disposal of assets/data and access revocation at termination?
 6. Are source code ownership/escrow, licensing, restrictions on sub-contracting (secondary outsourcing), and maintenance/warranty responsibility stipulated in the contract?
 
 ## Implementation guidance
@@ -29,9 +29,9 @@ This control ensures that when all or part of system development is outsourced t
 - Assess secure development capability, personnel security, past track record, and sub-contract management ability when selecting a supplier, and stipulate that sub-contracting requires prior approval and inherits equivalent security obligations.
 - Minimize production data provided for development, replacing it with pseudonymized/anonymized or test data, and grant least-privilege access to source code/development environment/documentation with access logging.
 - Direct and oversee requirement fulfillment through phase-based security checks (design review, interim deliverable review, sharing of security test results) and regular reporting.
-- At acceptance, perform source code review, static/dynamic analysis (SAST/DAST), software composition analysis (SCA/open source vulnerabilities), and checks for malware/backdoors/hardcoded credentials, and manage completion of defect remediation as a condition of acceptance approval.
+- Before acceptance, use code/component analysis and security tests suited to deliverables and risk to check vulnerabilities, malicious functionality, and hardcoded secrets. Remediate/retest blocking findings; approve permissible exceptions with accountable risk acceptance, compensating controls, and deadlines.
 - Stipulate intellectual property ownership, source code escrow, license compliance, maintenance and warranty responsibility, and notification/joint-response duties in the event of a security incident.
-- At contract termination/expiry, confirm the return or destruction of provided assets, source code, access privileges, and development/test data, and retain evidence.
+- At termination, verify return or deletion of provided/generated assets and data with evidence, and revoke access at the defined termination time. Manage legally required retained records separately by basis, scope, use restrictions, and final deletion timing.
 
 ## Related controls and attributes
 
@@ -48,13 +48,13 @@ This control ensures that when all or part of system development is outsourced t
 - Acceptance-stage security testing/vulnerability assessment/source code review/malware check reports and defect remediation records
 - Acceptance approval records and deliverable lists
 - Source code escrow agreements and license/intellectual property documents
-- Confirmation of return or destruction of assets/data/access privileges at contract termination
+- Termination records confirming asset/data return or disposal and access revocation
 
 ## Nonconformity examples
 
 - The outsourced development contract lacks security requirements and acceptance criteria, so deliverables are accepted with a lower level of security than in-house development.
 - No security testing/vulnerability assessment is performed before acceptance, so vulnerabilities or hardcoded credentials are carried into production.
-- Production data is provided to the supplier for development without pseudonymization/anonymization, exposing personal and confidential information.
+- Production data is supplied for outsourced development without verifying need, lawful basis, approval, minimization, and safeguards, exposing personal/confidential information.
 - The contract has no restriction on sub-contracting, so a secondary supplier the organization was unaware of processes the source code.
 - Source code/development environment access privileges granted to the supplier are not revoked and remain after the contract ends.
 - Source code ownership/escrow and maintenance responsibility are not stipulated in the contract, making maintenance impossible when the supplier withdraws.

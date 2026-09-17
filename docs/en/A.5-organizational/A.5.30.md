@@ -29,7 +29,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 - Select recovery strategies that meet the targets (system redundancy/clustering, geographically separated alternate processing facilities, data backup and offsite storage, cloud-based recovery, manual workarounds, and so on), and apply them differentially by service criticality with cost and risk in mind.
 - Document the ICT continuity/recovery plan to include fault/disaster detection and invocation criteria, recovery priorities and stage-by-stage procedures, roles and responsibilities, emergency contact lists, coordination with external suppliers/telecom/cloud providers, and the procedure for returning to normal operation after recovery.
 - Store the backups, system configuration/images, network diagrams, operational documents, software licenses, and credentials/access means essential to recovery in a separate secure location, and periodically verify their integrity and recoverability.
-- Test the continuity/recovery plan regularly (and after significant infrastructure/configuration changes) using varied methods (checklist review, walk-through, simulation, live failover), and record RTO/RPO achievement and gaps as improvement items.
+- Combine reviews, tabletop exercises, and restore/failover tests periodically and after significant changes. Use tabletop exercises to check roles and procedures; verify RTO/RPO achievement by measuring elapsed time and recovered data points in representative restore/failover tests. Record coverage limits and improvement actions.
 - Secure the availability of recovery resources such as people, skills, facilities, and external contracts, and, by training staff and designating backup personnel, ensure recovery is possible even when specific individuals are absent.
 - Integrate the ICT readiness plan with the organization's business continuity management system and incident/crisis management procedures, and update them together whenever changes occur to keep them consistent.
 
@@ -38,7 +38,7 @@ ICT readiness for business continuity is the control for planning, implementing,
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 8.2/8.3 (Information security risk assessment/treatment), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.24 (Information security incident management planning and preparation), A.8.13 (Information backup), A.8.14 (Redundancy of information processing facilities), A.8.6 (Capacity management), A.7.5 (Protecting against physical and environmental threats), A.7.11 (Supporting utilities)
 - ISMS-P mapping: 2.12.1 Safety measures for disaster and emergency preparedness (adjacent: 2.12.2 Disaster recovery testing and improvement, 2.9.3 Backup and recovery management, 2.11.5 Incident response and recovery, 2.9.2 Performance and fault management)
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 

@@ -25,10 +25,10 @@ This control requires the organization to monitor and tune the use of informatio
 ## Implementation guidance
 
 - Define the resources and performance metrics (response time, throughput, utilization, and so on) to be managed per key service, and establish baselines for the normal state.
-- Collect resource utilization in real time with monitoring tools, and operate an early-warning scheme using at least two threshold levels (warning/critical).
+- Monitor resource utilization and service performance and set alerts that leave enough time to respond. Choose threshold values and levels, such as warning/critical, according to service behavior and operational capability, and review alert effectiveness.
 - Perform demand forecasting based on historical usage trends and business plans, and compare/adjust forecast against actuals on a regular cycle (for example, quarterly).
 - Prepare response options for shortfalls in advance, including resource expansion, reclamation/optimization of unused resources, load balancing, and archiving/data cleanup.
-- In cloud environments, set auto-scaling upper/lower bounds, a mix of reserved/on-demand resources, and budget alerts to manage availability and cost together.
+- Assess cloud scaling capabilities and service constraints to select manual or automatic expansion. Where autoscaling is used, set bounds and quotas, and manage availability and cost through purchasing choices and budget alerts.
 - Link capacity planning with procurement lead times so that budget and orders are completed before the point at which expansion is needed.
 
 ## Related controls and attributes

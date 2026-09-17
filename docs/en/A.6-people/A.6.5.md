@@ -16,19 +16,19 @@ This control ensures that information security responsibilities and obligations 
 
 ## Key checkpoints
 
-1. Are information security responsibilities that persist after termination or role change (confidentiality, non-disclosure, asset return, handover of unfinished work) specified in contracts/undertakings/policies?
-2. Are the validity period and scope of the surviving obligations clearly defined, communicated in writing, and acknowledged by the individual?
+1. Are information security responsibilities that persist after termination or role change (confidentiality, non-disclosure, asset return, handover of unfinished work) specified in contracts/security pledges/policies?
+2. Are the duration and scope of surviving obligations communicated in writing, with acknowledgement or evidence of delivery and reasons an acknowledgement could not be obtained?
 3. On a role change, are access rights and responsibilities granted for the previous role revoked or readjusted and reset against the new role?
 4. Does the termination/role-change procedure define the roles of HR, information security, and line managers, together with the notification flow and handover steps?
 5. Is there a basis for response/sanctions and legal action in the event of a breach of the surviving obligations?
 
 ## Implementation guidance
 
-- Include confidentiality/non-disclosure/information-protection clauses that remain valid after termination in employment contracts and security undertakings, and state the validity period for each clause.
+- Include confidentiality/non-disclosure/information-protection clauses that remain valid after termination in employment contracts and security pledges, and state the validity period for each clause.
 - Operate a termination/role-change checklist so that asset return, access revocation, account deactivation, and knowledge/work handover are all completed without omission.
 - Define the notification flow for personnel changes among HR, information security, and line managers so that termination/change information is shared promptly and drives follow-up actions.
 - On a role change, re-grant only the access needed for the new role under the least-privilege principle and immediately remove previous privileges that are no longer needed.
-- At the point of termination/change, re-communicate the surviving obligations in writing (exit briefing, re-notification form) and obtain the individual's acknowledgement signature.
+- Re-communicate surviving obligations in writing at termination/role change and seek acknowledgement where possible. If refusal or absence prevents a signature, record delivery and the reason, without delaying account or privilege revocation.
 - Reflect the response procedure, reporting channels, and legal basis for breaches of surviving obligations in policy, and ensure relevant departments are aware of them.
 
 ## Related controls and attributes
@@ -40,7 +40,7 @@ This control ensures that information security responsibilities and obligations 
 
 ## Evidence
 
-- Employment contract/security undertaking templates containing post-termination clauses (confidentiality/non-disclosure)
+- Employment contract/security pledge templates containing post-termination clauses (confidentiality/non-disclosure)
 - Termination/role-change procedure documents and checklists
 - Asset return confirmations, access revocation/account deactivation records
 - Exit briefing/surviving-obligation re-notification confirmations (signed by the individual)
@@ -48,9 +48,9 @@ This control ensures that information security responsibilities and obligations 
 
 ## Nonconformity examples
 
-- A leaver is not informed that the confidentiality obligation persists, so no acknowledgement signature record exists.
+- A leaver is not informed of surviving confidentiality obligations and no record demonstrates that notice was delivered.
 - After a role change, access rights granted for the previous department/role are not revoked and remain in place.
-- Contracts/undertakings do not include information security responsibility clauses that remain valid after termination.
+- Contracts/security pledges do not include information security responsibility clauses that remain valid after termination.
 - On termination, asset return and account deactivation are delayed, so employment-level privileges persist for a period.
 - There are no response/sanction criteria to apply when surviving obligations are breached, so breaches cannot be acted upon.
 

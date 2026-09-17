@@ -27,10 +27,10 @@ This control ensures that technical vulnerabilities in the information systems t
 
 - Maintain an inventory of in-scope assets together with configuration details (OS/middleware/application/version/owner), and reflect newly introduced assets in the process so nothing is missed.
 - Define vulnerability information sources (vendor notices, CVE/security advisories, CERT/threat intelligence) and make collection frequency and verification responsibility explicit.
-- Prioritize by combining vulnerability severity (for example, CVSS), actual exposure, and asset criticality, and set remediation deadlines (SLAs) per risk tier.
-- Validate patches in a test environment, deploy them through change management (A.8.32), and prepare a rollback plan alongside.
+- Prioritize remediation and deadlines using severity such as CVSS alongside evidence of active exploitation, exposure paths, asset criticality, and existing safeguards. Do not equate a score alone with actual risk.
+- Validate patches to the extent feasible, deploy through change management (A.8.32), and prepare recovery. Handle urgent vulnerabilities through emergency change authority, minimum validation, monitoring, and retrospective review.
 - When immediate remediation is not possible, apply mitigations such as tightened access control, service deactivation, or virtual patching, and register the residual risk in the risk management framework.
-- Link periodic vulnerability assessment (scanning, penetration testing) with patch management (A.8.19), verify remediation through re-testing, and manage metrics such as open findings and deadline compliance rate.
+- Link periodic assessments with patch management and verify remediation. Run scans/penetration tests within authorized scope, timing, stop criteria, and operational safeguards, and track open findings and deadline compliance.
 
 ## Related controls and attributes
 
@@ -54,7 +54,7 @@ This control ensures that technical vulnerabilities in the information systems t
 - Priorities and deadlines are not set because severity is not assessed, leaving high-risk vulnerabilities unaddressed for a long time.
 - Remediation of findings from assessments is not tracked or verified, so unremediated conditions recur.
 - Vulnerabilities that cannot be patched immediately are left without any mitigation or residual-risk acceptance decision.
-- A patch is deployed to production without testing or change management, causing an outage.
+- A patch is deployed without the validation and authorization required by the normal or emergency change procedure, causing an outage.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

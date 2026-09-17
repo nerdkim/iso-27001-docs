@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control defines and enforces the organization's security requirements across the full lifecycle of cloud services: acquisition, use, migration, and exit. Because cloud operates under a shared responsibility model that splits control points between the provider and the customer, the essential task is to carry out every security responsibility that falls to the customer through contracts, configuration, and monitoring. The aim is to govern unapproved cloud use and to securely recover or destroy data on exit or migration, so that cloud risk stays within the organization's management scope.
+This control requires the organization to define and implement its security requirements across the full lifecycle of cloud services: acquisition, use, migration, and exit. Because cloud operates under a shared responsibility model that splits control points between the provider and the customer, the essential task is to carry out every security responsibility that falls to the customer through contracts, configuration, and monitoring. The aim is to govern unapproved cloud use and to securely recover or destroy data on exit or migration, so that cloud risk stays within the organization's management scope.
 
 ## Key checkpoints
 
@@ -26,7 +26,7 @@ This control defines and enforces the organization's security requirements acros
 
 - Establish a cloud adoption/use policy and operate a process to identify and block unapproved cloud (shadow IT) use.
 - Produce a shared responsibility matrix per service type that clarifies customer-owned items such as account management, data encryption, network controls, and log collection.
-- Define cloud configuration security baselines and periodically check for risky configurations such as exposed public storage, excessive privileges, and unencrypted data.
+- Define cloud configuration baselines and check for unauthorized exposure of non-public data, excessive privileges, and missing required encryption. For intentionally public material, verify publication approval and separately controlled write access.
 - Specify data storage location/cross-border transfer, incident notification deadlines, audit rights, and data return/destruction on termination in the contract and SLA.
 - Apply multi-factor authentication and least privilege to cloud administrator accounts, and log and monitor administrative actions.
 - Prepare an exit plan in advance to manage data portability and vendor lock-in risk.
@@ -36,7 +36,7 @@ This control defines and enforces the organization's security requirements acros
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services)
 - ISMS-P mapping: 2.10.2 Cloud security
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 
@@ -51,7 +51,7 @@ This control defines and enforces the organization's security requirements acros
 
 - A team adopts a SaaS to store customer data without approval, and it is omitted from the organization's management scope.
 - Misunderstanding the shared responsibility model, the customer assumes the provider performs data encryption/access control that are in fact the customer's responsibility.
-- Cloud storage is configured as public and exposed to the internet.
+- Cloud storage holding non-public information is exposed to the internet without approval.
 - The contract lacks clauses on data storage location and destruction on termination, leaving no clear basis for transfer or disposal.
 - The cloud management console account has no MFA applied and no access logs are collected for administrative actions.
 

@@ -12,24 +12,24 @@
 
 ## Control objective
 
-This control requires that the clocks of all in-scope information systems and network devices be synchronized to a single, trustworthy reference time source, so that timestamps in logs across systems are consistent and directly comparable. Accurate and aligned time is essential for cross-system log correlation, incident investigation, forensic reliability, and preserving the integrity of legal evidence. When device clocks drift apart, the sequence of events becomes difficult to reconstruct and collected logs may lose their evidentiary value.
+This control manages in-scope systems and network devices against a trustworthy common time basis. Multiple approved sources may be used, with accuracy, availability, and consistency considered together. Distinguishing timestamp time zones from clock error supports reliable event ordering and correlation. Monitor synchronization and preserve relevant offset information to support incident investigation and evidence interpretation.
 
 ## Key checkpoints
 
 1. Is a trustworthy reference time source designated (for example, an internal NTP server synchronized to a reliable external reference such as national standard time) and is a synchronization policy established?
-2. Are all in-scope assets (servers, network/security devices, endpoints, applications, cloud resources) synchronized to the reference source and configured with a consistent time zone/UTC baseline?
+2. Do servers, devices, endpoints, applications, and cloud resources use an approved common time basis, with UTC or explicit time-zone offsets in logs?
 3. Is synchronization status monitored, and are clock drift, synchronization failures, and anomalies detected and remediated?
 4. Is the time source protected against tampering/spoofing (for example, restricting which sources may be queried, and NTP authentication)?
 5. Do logs record consistent and accurate time that can be used for cross-system correlation?
 
 ## Implementation guidance
 
-- Design a hierarchical time distribution architecture with internal NTP server(s) synchronized to a reliable external reference (national time authority, GPS, and so on), and have all systems point to the internal servers.
-- Standardize on UTC or a single defined time zone as the baseline, and document the policy including the allowed drift tolerance and synchronization interval.
-- Configure servers, network devices, security appliances, endpoints, containers, and cloud resources to synchronize automatically, and for cloud make appropriate use of the provider's time service.
+- Approve internal time servers, trusted external references, or provider time services appropriate to the environment and define distribution arrangements. Verify consistent baselines and tolerances across sources and assess dependence on a single server.
+- Make records comparable through UTC or explicit time-zone offsets, and define clock-error tolerances and synchronization policy. Different time-zone representations do not necessarily mean different clock times; distinguish format conversion from clock-error correction during analysis.
+- Configure servers, network/security devices, endpoints, and virtual machines for suitable time services. For containers sharing the host clock, verify host synchronization and application time representation instead of requiring NTP in each container. Verify provider capabilities for managed cloud services.
 - Protect the time source: restrict which sources devices may query, use authenticated NTP where supported, place time servers in protected segments, and monitor for spoofing.
 - Continuously monitor synchronization health (offset/drift alerts), remediate devices that fall out of sync, and provide time source redundancy for availability.
-- Verify that logging subsystems apply the synchronized time, and reconcile the time baseline in log correlation/SIEM so that event ordering is consistent.
+- Verify that logging layers record system time correctly and handle time zones and known clock offsets in the SIEM. Retain original timestamps and conversion/correction records so analysis remains traceable.
 
 ## Related controls and attributes
 
@@ -49,11 +49,11 @@ This control requires that the clocks of all in-scope information systems and ne
 
 ## Nonconformity examples
 
-- Systems are set to inconsistent time zones or local times with no common baseline, making log correlation impossible.
+- Missing time-zone/offset information or an unclear time basis prevents reliable comparison of log timestamps.
 - Some devices (network/security appliances, legacy servers) are not synchronized and are left with significant clock drift.
 - The internal time server itself is not synchronized to a reliable external reference, or it is a single point with no redundancy.
 - Synchronization status is not monitored, so drift/failures go unnoticed for extended periods.
-- The time source is open to arbitrary external NTP with no restriction/authentication, exposing it to spoofing.
+- Devices or internal time servers are configured to reference arbitrary external NTP with no restriction or authentication, exposing them to time source spoofing.
 - Log timestamps are inaccurate, weakening incident investigation and the admissibility of evidence.
 
 ---

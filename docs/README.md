@@ -22,6 +22,16 @@ answer, use a licensed copy of the standard.
 This boundary is a hard rule when editing, and it is also the reason the update model here differs
 from an ordinary mirror of an upstream document. See [../UPDATES.md](../UPDATES.md).
 
+**Scope: Annex A only.** These documents cover the 93 Annex A controls and nothing else. The ISMS
+requirements of main-body clauses 4 to 10 are not documented here: scope, leadership, risk
+assessment and treatment, the Statement of Applicability required by 6.1.3, objectives, competence,
+documented information, operation, performance evaluation, internal audit, management review,
+nonconformity and corrective action. The `ISO 27001 clauses` line in each `Related controls and
+attributes` section points into the main body rather than summarizing it, and those requirements
+need a licensed copy of the standard. The Statement of Applicability is where an organization
+records its decision on each of the 93 controls, and it is the usual starting point for an Annex A
+audit; this corpus is not one and does not generate one.
+
 ## Read-only
 
 Treat this directory as **immutable while using the corpus**. `tools/check_corpus.py` only reads
@@ -30,7 +40,7 @@ and an agent answering questions with the corpus must never create, edit, or del
 `docs/`. Derived output belongs in the consuming workspace.
 
 Maintainers do edit these files. That is a different activity, with its own rules: see
-[../CLAUDE.md](../CLAUDE.md) and the parity rule below.
+[../AGENTS.md](../AGENTS.md) and the parity rule below.
 
 ## Layout
 

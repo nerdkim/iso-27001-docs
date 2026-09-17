@@ -25,11 +25,11 @@ This control requires that work performed inside secure areas (computer rooms, c
 
 ## Implementation guidance
 
-- Document the permitted work types, approving authority, allowed working hours, and mandatory rules for each secure area, and apply control strength differentially to match the sensitivity of each area.
+- Document the permitted work types, approving authority, allowed working hours, and mandatory rules for each secure area, and apply control strength differentially to match the characteristics of each area.
 - Require work requests to state the purpose, scope, participating personnel, equipment/media brought in, and expected duration, and allow work to proceed only after prior approval.
 - Issue temporary badges to external workers after identity verification, permit work only under the continuous escort/supervision of a responsible person, and recover the badge when work ends.
 - Notify in advance the rules to be observed during work, such as restrictions on cameras/personal devices/storage media, prohibition of photography, and prohibition of arbitrary network connection or system manipulation, and set criteria for action upon violation.
-- Prohibit unattended lone work, and apply reinforcing controls such as two-person teams or additional approval for work during vulnerable windows such as late night or holidays.
+- Restrict lone work according to the area's security risks and occupational safety needs. For hazardous work or vulnerable time windows, define suitable safeguards such as two-person work, prior approval, remote supervision, or check-ins, with documented conditions and emergency response.
 - On completion, confirm the removal of equipment/media brought in, revert any temporarily granted rights or changed configurations, and review work records (request forms, entry logs, CCTV, and so on) to check for anomalies.
 - For repetitive work such as periodic maintenance, standardize the work procedure and approval method, and record work results and exceptions to feed into improvement.
 

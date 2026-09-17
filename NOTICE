@@ -8,10 +8,11 @@ This project is offered under two licenses, plus a boundary for third-party
 source material:
 
 1. Software (MIT)
-   The repository tooling (tools/, harness/) and the CI configuration
-   (.github/) are licensed under the MIT License. See LICENSE. This
-   repository holds documents only: there is no application, no build output,
-   and no infrastructure here.
+   The repository tooling (tools/, harness/), the Codex-compatible skill under
+   skill/ (skill/iso-27001-review/SKILL.md and its topic-index.json), and the
+   CI configuration (.github/) are licensed under the MIT License. See
+   LICENSE. This repository holds documents only: there is no application, no
+   build output, and no infrastructure here.
 
 2. Documentation and reference collection (CC BY 4.0)
    The original explanatory text in both languages, and the selection,

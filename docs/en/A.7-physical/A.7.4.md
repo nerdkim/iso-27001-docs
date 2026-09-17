@@ -38,21 +38,21 @@ The purpose is to keep facilities that hold information and information processi
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.5.7 (Threat intelligence), A.8.16 (Monitoring activities)
 - ISMS-P mapping: 2.4.2 Physical entry control
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 
 - Physical monitoring policy or guideline (monitored areas, monitoring means, record retention criteria)
 - Camera and sensor placement plans and a list of monitoring points
-- Records for retention period and access-right management of monitoring records (video/alarm)
+- Documentation of the retention period and access-right management for monitoring records (video/alarm)
 - Alarm response procedure documents and records of actual alarms and responses
 - Results of periodic inspection and testing of the monitoring system and fault response records
 - Camera installation signage and records of controls on viewing and disclosure of image data
 
 ## Nonconformity examples
 
-- No cameras cover the server room interior or its doors, so there is no means to detect or trace unauthorized access when it occurs.
-- Cameras are installed but do not record, or the retention period has lapsed, so no footage remains for the time of an incident.
+- The server room and key entry routes lack risk-appropriate monitoring, so unauthorized access cannot be detected or traced.
+- Recording failure, deletion before the defined retention deadline, or failure to preserve required incident evidence leaves needed footage unavailable.
 - An intrusion alarm notifies only a single person, but no response procedure or accountable owner is defined, so the alarm is left unattended.
 - The monitoring record store is located inside the monitored area itself, so an intruder can easily remove the records.
 - Camera fields of view leave many blind spots, omitting key entry routes from coverage.

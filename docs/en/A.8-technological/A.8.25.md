@@ -30,7 +30,7 @@ This control requires the organization to build security activities into every s
 - Establish secure coding standards (input validation, authentication/authorization, session/encryption, error handling, safe logging, and so on) and run developer training and compliance checks in parallel.
 - Automate static analysis (SAST), dynamic analysis (DAST), software composition analysis (SCA/open source vulnerabilities), and secret scanning by integrating them into the CI/CD pipeline.
 - Separate development/test/production environments, and secure configuration/version control, source code access control, and the integrity of build/deployment artifacts (signing, artifact verification).
-- Treat pre-deployment security testing (secure code review, vulnerability assessment, penetration testing) as a pass criterion, and manage completion of remediation for identified defects as a condition of deployment approval.
+- Compare pre-release security test results with risk-based approval criteria. Verify remediation and retesting of blocking defects; track acceptable exceptions with authorized residual-risk acceptance, compensating controls, remediation deadlines, and expiry.
 - For outsourced development, include security requirements and acceptance criteria in the contract, and verify the security of deliverables at the point of acceptance.
 
 ## Related controls and attributes
@@ -56,7 +56,7 @@ This control requires the organization to build security activities into every s
 - Secure coding standards do not exist, or exist but are not shared/taught to developers and so are not actually followed.
 - Security testing is not integrated into the CI/CD pipeline, so vulnerable code is deployed automatically without verification.
 - Open source/third-party components are adopted without verifying their known vulnerabilities and licenses.
-- Deployment is approved even though defects found in vulnerability assessment have not been remediated.
+- A release proceeds with defects meeting blocking criteria, without remediation, authorized exception approval, or compensating controls.
 - The outsourced development contract has no security requirements, and no security verification is performed at acceptance.
 - Development/test/production environments and source code access privileges are not separated/controlled.
 

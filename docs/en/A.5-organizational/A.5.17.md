@@ -18,17 +18,17 @@ Authentication information (passwords, PINs, token secrets, certificate private 
 
 1. Are there defined procedures for verifying identity and securely delivering authentication information when it is first issued to a new user or system?
 2. Are initial/temporary passwords given a short validity period and set to be changed on first login?
-3. Are quality rules for authentication information (complexity, minimum length, reuse limits, validity period) defined in policy and actually enforced in the systems?
-4. Is authentication information stored in a secure hashed/encrypted form rather than plaintext, and encrypted in transit?
-5. Are users informed of their responsibility to handle authentication information securely (no sharing, no writing it down, no personal reuse) and required to acknowledge it?
+3. Are quality rules appropriate to each credential type, such as password length, breached-password blocking, and reuse restrictions, plus replacement on compromise, defined and enforced?
+4. Are verifier-held user passwords stored using a salted password hashing scheme with an appropriate work factor, recoverable service secrets protected separately with encryption and access control, and transmission paths protected?
+5. Are users informed of restrictions on credential sharing and reuse across work/personal accounts, given safe storage options such as approved password managers, and asked to acknowledge these responsibilities?
 6. Are there procedures to reset authentication information immediately when leakage/exposure is suspected, and to change default authentication information?
 
 ## Implementation guidance
 
 - Document issuance/delivery/storage/disposal procedures by type of authentication information (user passwords, service account secrets, cryptographic keys, certificates) and assign owners.
-- Give initial/temporary authentication information a short validity, deliver it over a secure channel, and force a change on first use.
-- Store passwords with a salted strong one-way hash so that even administrators cannot see plaintext, and encrypt the transmission path (TLS and similar).
-- Enforce a password policy (minimum length, complexity or passphrase support, blocking of breached passwords, reuse history limits, account lockout) in the authentication system and combine it with multi-factor authentication (MFA).
+- Give initial/temporary passwords a short validity, deliver them securely, and require replacement on first use. Apply activation, expiry, and revocation procedures suited to keys, certificates, and one-time codes.
+- Protect password transmission and store verifier-held passwords with a purpose-built password hashing scheme, unique salts, and an appropriate work factor. A general-purpose hash alone or reversible encryption is unsuitable for password verification storage.
+- Apply adequate length, blocking of breached/common passwords, attempt throttling, MFA, and password manager support. Do not treat arbitrary composition rules or periodic password changes as universal requirements; require changes on suspected compromise or under a separately applicable obligation.
 - Remove hardcoded credentials from system/service accounts, manage them centrally in a secrets vault, and rotate them periodically.
 - Train users on their responsibilities (no sharing of authentication information, phishing resistance, no reuse across personal/work accounts) and obtain acknowledgements.
 
@@ -42,9 +42,9 @@ Authentication information (passwords, PINs, token secrets, certificate private 
 ## Evidence
 
 - Authentication information management policy/procedure (covering issuance, delivery, storage, disposal)
-- Password policy configuration (complexity, minimum length, validity period, reuse limits, account lockout)
-- Evidence of the forced password change setting on first login
-- Records confirming the password storage method (hash/salt) and encryption settings for the transmission path
+- Password policy settings (length, breached-password blocking, attempt limits, MFA, and replacement triggers)
+- Evidence of first-login replacement and expiry settings for initial/temporary passwords
+- Records verifying the password hashing scheme, salts, work factor, and transport protection settings
 - Operation records of the secrets vault and the secret rotation history
 - User security acknowledgements and training records on handling authentication information
 
@@ -54,7 +54,7 @@ Authentication information (passwords, PINs, token secrets, certificate private 
 - User passwords are stored in the database in plaintext or simple encoding (base64).
 - A database access password is hardcoded in application source/configuration files and committed to version control.
 - User passwords can be viewed in plaintext from the administrator screen.
-- Password validity/complexity policy exists in documents but is not applied in the actual systems.
+- Defined password length, breached-password blocking, or authentication attempt limits are not enforced in the systems.
 - Authentication information is not reset even after an incident where its leakage was suspected.
 
 ---

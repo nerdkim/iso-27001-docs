@@ -25,7 +25,7 @@ This control requires the organization to define secure engineering principles a
 
 ## Implementation guidance
 
-- Define and approve the organization's secure engineering principles, such as security by design, defense in depth (multiple defensive layers), least privilege and segregation of duties, secure defaults, fail-secure, minimizing the attack surface, and never trust (zero trust), then share them.
+- Define principles for security by design, defense in depth, least privilege, segregation of duties, secure defaults, and attack-surface reduction. Make zero trust concrete through verification of subjects, devices, and requests without granting trust solely from location or ownership. Select failure behavior with security, life safety, and availability requirements in view.
 - Make the principles concrete as reusable reference architectures, secure design patterns, and standard components (authentication/authorization modules, cryptographic libraries, logging components) so projects can adopt them easily.
 - When designing a system, diagram trust boundaries and data flows, and place authentication/authorization/input validation/encryption/logging controls at each boundary to design layered defense.
 - Design accounts and privileges around least privilege and segregation of duties by default, and apply least privilege to administrative/service accounts and system-to-system integrations as well.
@@ -35,7 +35,7 @@ This control requires the organization to define secure engineering principles a
 
 ## Related controls and attributes
 
-- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 6.2 (Information security objectives and planning), 7.2 (Competence)
+- ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 6.2 (Information security objectives and planning to achieve them), 7.2 (Competence)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.9 (Configuration management), A.8.22 (Segregation of networks), A.8.4 (Access to source code), A.5.8 (Information security in project management)
 - ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.6.1 Network access, 2.6.2 Information system access, 2.5.5 Special account and privilege management, 2.10.2 Cloud security)
 - 2013 mapping: A.14.2.5 (Secure system engineering principles)

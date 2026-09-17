@@ -27,11 +27,11 @@ This control ensures that the organization identifies requirements for confident
 
 - Analyze the types and sensitivity of information requiring protection and define the requirements to include in the agreement (scope of covered information, confidentiality obligations, permitted/prohibited actions, validity period).
 - Establish a procedure for personnel to sign early in hiring/assignment and for external parties (processors, partners, consultants, visitors) to sign before accessing information or at contract conclusion.
-- State clearly in the agreement the definition of protected information, restrictions on use, obligations to return/destroy, prohibition of unauthorized disclosure, and responsibilities for breach (damages, disciplinary action, legal measures).
+- Define protected information, use restrictions, return/disposal, unauthorized disclosure, and breach responsibilities. Include lawful exceptions and procedures for required or protected reporting/disclosure so the agreement does not improperly restrict them.
 - Specify in the agreement the confidentiality obligations and their duration that persist after employment/contract termination, to prevent disclosure after the relationship ends.
 - Record and manage signing status per individual, and run a follow-up procedure for unsigned parties or those requiring re-signature.
 - Review the agreement templates regularly to reflect changes in laws, contractual requirements, and the threat environment, update them as needed, and assess whether existing parties should re-sign upon revision.
-- Where handling information with special legal protection such as personal data, reflect the pledge/consent elements required by relevant laws in the agreement.
+- Reflect applicable processing duties for specially protected information such as personal data. An employee or processor NDA does not substitute for data subject consent or another lawful processing basis; verify these separately.
 
 ## Related controls and attributes
 

@@ -25,12 +25,12 @@ This control governs the full life cycle of identities assigned to internal pers
 
 ## Implementation guidance
 
-- Establish a one-identity-per-subject principle, assign a unique identifier per individual, and maintain the mapping to the real user to preserve accountability.
+- Identify each person and non-human subject uniquely and link accounts to that subject. Where a person has separate everyday and administrative accounts, keep both attributable to the same accountable individual.
 - Define roles, responsibilities, and approvers for each life-cycle stage (request, approval, issuance, change, suspension, removal) and standardize them as a workflow.
-- Manage non-human identities (service accounts, system accounts, API keys, device certificates) in the same inventory, each with a designated owner.
+- Assign owners to service, system, and device identities and link their identifiers and credential references to the inventory. Keep raw API secrets and certificate private keys in an approved secrets store, outside the inventory.
 - Prohibit shared identities by default; where unavoidable, document the rationale, approval, scope, and owner, and apply compensating controls to attribute individual actions.
 - Integrate with the HR or contract-management system so that joiner, leaver, and role-change events are automatically reflected in identity status.
-- Set criteria to detect unused or dormant identities (for example, no login within a defined period) and deactivate or delete them on a regular cycle.
+- Detect dormancy using activity appropriate to the identity type, confirm ownership and service dependencies, then deactivate unused accounts. Do not judge service accounts solely by interactive logins, and check audit-record retention before deletion.
 - Periodically reconcile the active identity inventory against actual status and record the resolution of any discrepancies.
 
 ## Related controls and attributes

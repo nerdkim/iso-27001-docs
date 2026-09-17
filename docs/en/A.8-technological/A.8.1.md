@@ -12,14 +12,14 @@
 
 ## Control objective
 
-This control protects information that is stored on, processed by, or accessed through user endpoint devices such as laptops, desktops, smartphones, and tablets. Because these devices operate outside the controlled data-center perimeter and are exposed to loss, theft, and untrusted networks, they require both a use policy and technical safeguards. It requires managing device registration, configuration, and user responsibilities so that information is not exposed through the endpoint.
+Loss or compromise of a laptop, smartphone, or tablet can endanger stored work data and connected systems. This control defines permitted device data and safeguards, supported by registration, configuration, and user responsibilities. Possession of a device does not automatically grant information access; encryption, locking, authentication, and session protection affect that risk. Apply policy and technical safeguards suited to the device and its operating environment.
 
 ## Key checkpoints
 
 1. Is there a policy defining secure configuration and use of user endpoint devices, and are users made aware of their responsibilities?
 2. Are endpoint devices that access organizational information registered/identified, and is ownership (corporate-issued / personally owned (BYOD)) distinguished?
 3. Is a technical baseline applied to endpoints: disk encryption, screen lock, malware protection, patching, and restriction of unauthorized software?
-4. Is there a remote lock/wipe capability and a reporting procedure for lost/stolen devices, and is it followed?
+4. Are loss/theft reporting and access-blocking procedures established, with remote lock/wipe applied and verified according to device support and authorized scope?
 5. For BYOD, are business and personal data separated, and are intellectual property/licensing/privacy matters handled with user consent?
 6. Is access to information and use of endpoints controlled according to network location/trust level, such as public networks or teleworking?
 
@@ -28,7 +28,7 @@ This control protects information that is stored on, processed by, or accessed t
 - Establish an endpoint device policy covering registration, permitted use, minimum security configuration, and user obligations, and obtain user acknowledgment/signature.
 - Enforce the technical baseline through endpoint management (MDM/UEM): storage encryption, automatic screen lock, strengthened authentication, patching, and malware protection.
 - Restrict installation of unauthorized software and control administrator privileges; for BYOD, separate business and personal areas through containerization/profiles.
-- Provide remote lock/wipe, mandate prompt reporting of loss/theft, and link this to incident response (A.5.24).
+- Link loss/theft reporting to incident response (A.5.24) and prepare prompt access blocking, including session/token revocation. Consider support and connectivity for remote lock/wipe; for BYOD, verify the authorized work-data scope and legal authority while protecting personal content.
 - Apply least privilege, avoid storing sensitive data locally where risk is high (use centralized/virtual access), and control connections from untrusted public networks.
 - On end of use, perform secure return/erasure (A.8.10) and access revocation, and ensure physical protection of off-premises devices (A.7.9).
 
@@ -52,7 +52,7 @@ This control protects information that is stored on, processed by, or accessed t
 
 - A laptop holding sensitive data is not encrypted, so information is exposed if it is lost or stolen.
 - Endpoint devices are not registered/identified, so unmanaged devices access organizational information.
-- There is no remote lock/wipe capability, and the lost-device reporting procedure is undefined or not followed.
+- Lost-device reporting/access blocking is absent or ineffective, with no alternative when remote lock/wipe cannot be performed.
 - BYOD devices access business data with no separation from personal areas and no user consent procedure.
 - Endpoint patching and malware protection are not applied consistently, leaving devices unpatched for a long time.
 - Users are granted local administrator rights and install unauthorized software freely, neutralizing the baseline.

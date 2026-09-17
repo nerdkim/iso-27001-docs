@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 1.4.1 Legal requirements compliance review |
-| 2013 mapping | A.18.1.1 Identification of applicable legislation and contractual requirements (and A.18.1.5 Regulation of cryptographic controls) |
+| 2013 mapping | A.18.1.1 (Identification of applicable legislation and contractual requirements), A.18.1.5 (Regulation of cryptographic controls) |
 
 ## Control objective
 
@@ -30,7 +30,7 @@ This control requires the organization to identify and document, without omissio
 - Operate a mechanism to continuously monitor new and amended laws and regulatory trends (legal/compliance function, legal counsel, subscriptions to regulator notices), and reflect changes in the register and in risk assessment/controls.
 - Review national regulations on the use, adoption, and import/export of cryptographic technology (licensing, notification, algorithm restrictions), and comply with them in conjunction with cryptography controls (A.8.24).
 - Identify requirements that apply to specific domains such as cross-border transfer of personal data, data localization, and electronic transactions/e-finance, and reflect them in the relevant procedures and contracts.
-- Identify the security/privacy clauses in customer/supplier contracts at the review stage, define implementation responsibilities and evidence methods, and track compliance status through to contract termination.
+- Identify security/privacy clauses in customer and supplier contracts, with implementation owners and evidence methods. At contract termination, identify surviving duties such as confidentiality, record retention, and return/disposal, and track each until it ends.
 - Periodically review the consistency between the compliance requirements register and the responding controls, and manage significant non-compliance risks through management reporting and improvement items.
 
 ## Related controls and attributes
@@ -38,7 +38,7 @@ This control requires the organization to identify and document, without omissio
 - ISO 27001 clauses: 4.1 (Understanding the organization and its context), 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.32 (Intellectual property rights), A.5.33 (Protection of records), A.5.34 (Privacy and protection of PII), A.5.36 (Compliance with policies, rules and standards for information security), A.8.24 (Use of cryptography)
 - ISMS-P mapping: 1.4.1 Legal requirements compliance review (adjacent: 1.4.2 Management system inspection, 1.1.5 Establishment of policy, 3.3.4 Cross-border transfer of personal data)
-- 2013 mapping: A.18.1.1 Identification of applicable legislation and contractual requirements (and A.18.1.5 Regulation of cryptographic controls)
+- 2013 mapping: A.18.1.1 (Identification of applicable legislation and contractual requirements), A.18.1.5 (Regulation of cryptographic controls)
 
 ## Evidence
 

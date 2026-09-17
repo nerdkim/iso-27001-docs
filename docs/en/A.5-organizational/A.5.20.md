@@ -7,12 +7,12 @@
 | Control | A.5.20 Addressing information security within supplier agreements |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination) |
+| ISMS-P mapping | 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination, 3.3.2 Outsourcing of personal information processing tasks) |
 | 2013 mapping | A.15.1.2 |
 
 ## Control objective
 
-When a supplier accesses, processes, stores, or transmits the organization's information or assets, or provides elements of the IT infrastructure, the corresponding information security requirements must be explicitly reflected in the contract or agreement and agreed with the supplier. This control aims to control supply chain risk in advance and to clarify each party's obligations and accountability by documenting security responsibilities, control levels, incident notification, audit rights, and termination actions from the contracting stage. The essence is to enforce, as contractual terms, requirements proportionate to the access scope and the sensitivity of the information, rather than relying on verbal agreements or informal practice.
+Because a supplier that handles the organization's information or runs part of its IT environment carries the organization's risk without being under the organization's own controls, the information security requirements that match the nature and risk of that relationship must be written into the contract or agreement and agreed with the supplier. This control aims to control supply chain risk in advance and to clarify each party's obligations and accountability by documenting security responsibilities, control levels, incident notification, audit rights, and termination actions from the contracting stage. The essence is to enforce, as contractual terms, requirements proportionate to the access scope and the sensitivity of the information, rather than relying on verbal agreements or informal practice.
 
 ## Key checkpoints
 
@@ -28,8 +28,8 @@ When a supplier accesses, processes, stores, or transmits the organization's inf
 - Perform a per-supplier risk assessment before contracting, derive a list of security requirements proportionate to the access scope and information sensitivity, and reflect it in the contract terms.
 - Prepare a standard contract template and a security schedule so that confidentiality, data handling, access control, encryption, log/monitoring, and vulnerability and patch management are stipulated consistently.
 - Include a prior-approval procedure for subcontracting (further outsourcing) and a clause that flows down equivalent security obligations to sub-suppliers.
-- Clearly define the incident notification deadline (for example, within 24 hours or 72 hours of becoming aware), the notification recipients/channels, and the obligation to cooperate in investigations.
-- Specify audit/inspection rights, the obligation to submit evidence, the scope of accepted third-party certifications (for example, ISO 27001, SOC 2), and the conditions for re-audit.
+- Set supplier incident notification deadlines, starting triggers, recipients, channels, and investigation duties with applicable law, contract obligations, and response time in view. Define initial and follow-up notifications early enough for the organization to meet its own external reporting deadlines.
+- Specify audit/inspection rights, evidence duties, and reassessment conditions, distinguishing certifications such as ISO 27001 from assurance reports such as SOC 2. Review covered services, scope, validity or assessment period, exceptions, and customer control responsibilities.
 - Include clauses for return/disposal evidence of data, revocation of accounts/access rights, return of assets, and surviving obligations (such as residual confidentiality) on contract termination or cancellation.
 - When outsourcing the processing of personal data, reflect in the contract the processing purpose/scope, restrictions on further outsourcing, safeguards, and cross-border transfer conditions required by applicable law.
 
@@ -37,7 +37,7 @@ When a supplier accesses, processes, stores, or transmits the organization's inf
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
-- ISMS-P mapping: 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination)
+- ISMS-P mapping: 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination, 3.3.2 Outsourcing of personal information processing tasks)
 - 2013 mapping: A.15.1.2
 
 ## Evidence

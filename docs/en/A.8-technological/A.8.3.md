@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control restricts access to information and application system functions in line with the access control policy, so that authorized users/processes reach only the data and functions they need for their work. By implementing least privilege and need-to-know at the system, application, and data layers, it aims to prevent unauthorized viewing, modification, and leakage.
+When a single account can reach far more than the job in front of it needs, one stolen password or one careless click puts the whole store of information in play. This control exists to keep each user and each process working inside the narrow slice of data and functionality their duties actually call for, as the organization's access control policy defines it. By implementing least privilege and need-to-know at the system, application, and data layers, it aims to prevent unauthorized viewing, modification, and leakage.
 
 ## Key checkpoints
 
@@ -26,7 +26,7 @@ This control restricts access to information and application system functions in
 
 - Define a role-based (RBAC) or attribute-based (ABAC) authorization model from the access control policy, and document a permission matrix per menu/function/data.
 - Verify authorization on the server side for every request, so protection does not rely on hidden/disabled UI elements alone (block bypass via direct URL/API calls).
-- Apply limits to bulk output/download/copy of query results (count limits/masking/watermarking/approval).
+- Control bulk queries/downloads/copying through server-side authorization, volume limits, approval, and logging. Use masking to limit disclosed data and watermarks for deterrence and tracing; neither watermarks nor their presence substitute for authorization or prevent copying.
 - Use least-privilege service accounts for application-to-database connections instead of shared administrator accounts, and confine access to the required tables/views/procedures.
 - Link grant/change/revoke procedures with periodic access rights review (A.5.18), and prevent risky privilege combinations through segregation of duties (A.5.3).
 - Log authorization grant and denial events (A.8.15) and connect them to monitoring.

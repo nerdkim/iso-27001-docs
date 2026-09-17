@@ -32,7 +32,10 @@ deterministic, and CI fails if the committed output drifts from `docs/`.
 ## Operating rules for AI use
 
 These are the rules a consuming agent must follow. Reflect them into the consuming environment's
-`CLAUDE.md` or `AGENTS.md`.
+`AGENTS.md`. A Codex-compatible skill that applies them to supplied content and reports
+nonconformity candidates lives at [../skill/iso-27001-review/SKILL.md](../skill/iso-27001-review/SKILL.md).
+Its repository discovery link is `.agents/skills/iso-27001-review`; invoke `$iso-27001-review`.
+See [../README.md](../README.md) for use from another project.
 
 1. **`docs/` is read-only.** Never create, modify, or delete anything under `docs/` while using the
    corpus. Write derived output somewhere in the consuming workspace, never back into this
@@ -57,8 +60,8 @@ These are the rules a consuming agent must follow. Reflect them into the consumi
 
 A question such as "what evidence proves access control is operating?" resolves as:
 
-1. In `manifest.json`, find controls whose `name` relates to access control (the A.8.2 to A.8.5
-   range and A.5.15).
+1. In `manifest.json`, find controls whose `name` relates to access control (the A.5.15 to A.5.18
+   range and the A.8.2 to A.8.5 range).
 2. Read only those documents and pull their `Evidence` and `Nonconformity examples` sections, or
    read the same content directly out of `index/evidence-dictionary.json` and
    `index/nonconformity-rulebook.json` when only the lists are needed.

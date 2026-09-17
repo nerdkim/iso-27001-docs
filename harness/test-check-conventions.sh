@@ -10,6 +10,10 @@
 # literal) so this test file itself stays clean under check [1]. Term/arrow/paren
 # fixtures are literal Korean, so this file is excluded from checks [2][3][4] via
 # the checker's EXCL list.
+#
+# The two scan lists are tested apart: [1] must reach every text file (case 21) while
+# [2][3][4][5] must stay on the narrower language-checked list (case 22), because
+# widening both at once floods the term check with correct Korean from generated data.
 set -uo pipefail
 
 REPO_ROOT="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
@@ -176,6 +180,46 @@ mkdir -p "$d/harness" "$d/docs/corpus"
 printf 'docs/corpus/\n' > "$d/harness/conventions-exclude"
 printf '# corpus\n\nA%sB\n' "$EM_DASH" > "$d/docs/corpus/x.md"
 assert_repo "conventions-exclude cannot waive forbidden unicode [1]" "$d" 1 "[1] forbidden unicode"
+
+# 21) [1] reaches EVERY text file, not just the language-checked artifacts. A generated .json
+# carried no pathspec of its own, so a forbidden character there was never scanned at all.
+d="$(new_repo)"
+mkdir -p "$d/data"
+printf '{"note": "range %s here"}\n' "$EM_DASH" > "$d/data/x.json"
+assert_repo "em dash in a .json fails [1]" "$d" 1 "[1] forbidden unicode"
+
+# 22) but widening [1] must NOT widen [2]: the generated corpus data is full of Korean IT terms
+# (데이터, 배포, 테스트) that are correct Korean, and pulling it into the term check would fire
+# hundreds of false hits. [2] keeps the narrower LANGFILES list.
+d="$(new_repo)"
+mkdir -p "$d/data"
+printf '{"terms": ["데이터", "배포", "테스트", "아키텍처"]}\n' > "$d/data/terms.json"
+assert_repo "Korean IT term in a .json is not flagged by [2]" "$d" 0 "RESULT: PASS"
+
+# 23) a conventions-exclude path prefix is a LITERAL path. Interpolated raw into the exclusion
+# regex, "docs/a.c/" also waived docs/abc/; escaped, it waives only the path it names.
+d="$(new_repo)"
+mkdir -p "$d/harness" "$d/docs/a.c" "$d/docs/abc"
+printf 'docs/a.c/\n' > "$d/harness/conventions-exclude"
+printf '# waived\n\n자연스러운 한국어로 배포와 빌드를 쓴다.\n' > "$d/docs/a.c/ok.md"
+printf '# not waived\n\n소스를 빌드해 배포한다.\n' > "$d/docs/abc/x.md"
+assert_repo "conventions-exclude prefix is literal, not a regex" "$d" 1 "docs/abc/x.md"
+
+# The bilingual corpus path exempts terminology only, never punctuation or spacing.
+d="$(new_repo)"
+mkdir -p "$d/docs/ko/A.5-organizational"
+printf '# doc\n\n데이터를 백업하고 배포한다.\n' > "$d/docs/ko/A.5-organizational/A.5.1.md"
+assert_repo "docs/ko uses Korean vocabulary without an exclusion file" "$d" 0 "RESULT: PASS"
+
+d="$(new_repo)"
+mkdir -p "$d/docs/ko/A.5-organizational"
+printf '# doc\n\n한글 (부연)\n' > "$d/docs/ko/A.5-organizational/A.5.1.md"
+assert_repo "docs/ko still enforces parenthesis spacing" "$d" 1 "opening-paren"
+
+d="$(new_repo)"
+mkdir -p "$d/docs/en/A.5-organizational"
+printf '# doc\n\n데이터를 배포한다.\n' > "$d/docs/en/A.5-organizational/A.5.1.md"
+assert_repo "docs/en retains terminology checks" "$d" 1 "transliteration"
 
 echo
 echo "RESULT: $pass passed, $fail failed."

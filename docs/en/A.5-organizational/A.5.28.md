@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control establishes and consistently applies, in advance, procedures for the identification, collection, acquisition, and preservation of evidence related to information security incidents so that the evidence can be used for disciplinary action, litigation, regulatory reporting, and cause analysis. If the integrity and chain of custody of evidence are not maintained, then no matter how much material is gathered after an incident, it may lose its value as evidence in legal or disciplinary proceedings. The aim is therefore to prepare procedures, roles, tools, and external cooperation arrangements before an incident occurs, so that evidence can be secured promptly and in a defensible manner when one happens.
+This control is about how an organization finds, secures, and safeguards the material an incident leaves behind, so that it can still be relied on later for disciplinary action, litigation, regulatory reporting, and cause analysis. If the integrity and chain of custody of evidence are not maintained, then no matter how much material is gathered after an incident, it may lose its value as evidence in legal or disciplinary proceedings. The aim is therefore to prepare procedures, roles, tools, and external cooperation arrangements before an incident occurs, so that evidence can be secured promptly and in a defensible manner when one happens.
 
 ## Key checkpoints
 
@@ -26,8 +26,8 @@ This control establishes and consistently applies, in advance, procedures for th
 
 - Define collection procedures and priorities for each evidence type (logs, disk images, memory dumps, network packets, documents, physical media), and specify an order that secures the most volatile evidence first (memory, sessions, temporary data).
 - Standardize a chain-of-custody record that captures the acquisition date/time, location, handler, handover details, and storage location without gaps, and update it at every movement or examination.
-- For digital evidence, work on verified copies (bit-level images) rather than analyzing the original directly, and generate a hash immediately after collection so that the copy can be proven identical to the original.
-- Use write-blocking devices, verified forensic tools, and time-synchronized (NTP) system clocks to ensure collection integrity and a reliable timeline.
+- For stable media, acquire a verified image where feasible and analyze the copy. For live systems or cloud data, record the authorized collection method and its limitations, and hash acquired material to detect later changes. A hash alone does not establish identity with a source that cannot be directly compared.
+- Use suitable write protection and validated collection tools. Record trusted collector time and the source time zone/clock offset; do not change an evidence source clock merely to synchronize it. Document reasons and effects for unavoidable state changes.
 - Restrict evidence-handling privileges to a minimal set of qualified personnel, protect evidence with sealed and locked storage and access logs, and define retention periods and disposal procedures.
 - When handling evidence that contains personal or confidential information, comply with applicable laws and privacy requirements, and collect or examine only the minimum needed for the purpose of the investigation.
 - Identify in advance situations that require cooperation with external forensic specialists or law enforcement, prepare contracts/agreements and contact arrangements, and define procedures so the chain of custody is not broken at handover.
@@ -53,7 +53,7 @@ This control establishes and consistently applies, in advance, procedures for th
 - Evidence collection procedures are not documented, so during an incident staff collect evidence at their own discretion.
 - The original disk is opened/analyzed directly, changing timestamps and compromising evidence integrity.
 - No chain-of-custody record exists, so the handling history of the evidence cannot be traced and its validity cannot be demonstrated in legal or disciplinary proceedings.
-- Hashes are not generated/verified, so the collected copy cannot be proven identical to the original.
+- Acquired material lacks an integrity baseline or records of its collection path and limitations, preventing verification of later changes and provenance.
 - The evidence store has no access control, allowing many people to access the evidence without authorization.
 - Evidence containing personal data is collected excessively without limits on purpose/scope, breaching privacy requirements.
 

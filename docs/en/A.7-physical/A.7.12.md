@@ -12,7 +12,7 @@
 
 ## Control objective
 
-The purpose is to protect power and telecommunications cabling that carries data or supports information services from interception, interference, and physical damage. The organization should keep power supply and data transmission continuous and reduce the risk of signal interception, electromagnetic interference, and cable cutting or damage along cabling runs. In doing so it prevents service interruption from cable damage (availability), interception of information in transit (confidentiality), and data tampering or unauthorized device connection through manipulation of the cabling (integrity).
+The purpose is to treat cabling as part of the information infrastructure rather than as building fabric. Cable runs cross ceilings, risers, and shared building space that lies outside the rooms anyone has been made responsible for, so a run that nobody owns quietly undoes the protection applied at both ends of it. The organization should keep power supply and data transmission continuous and reduce the risk of signal interception, electromagnetic interference, and cable cutting or damage along cabling runs. In doing so it prevents service interruption from cable damage (availability), interception of information in transit (confidentiality), and data tampering or unauthorized device connection through manipulation of the cabling (integrity).
 
 ## Key checkpoints
 
@@ -29,8 +29,8 @@ The purpose is to protect power and telecommunications cabling that carries data
 - Separate power and telecommunications lines by adequate clearance or use metal conduit or shielded cable to prevent electromagnetic interference.
 - Apply locks and access control to wiring rooms (MDF/IDF), frames, patch panels, and junction boxes, and keep records of access.
 - Label all cables, ports, and patch panels and keep the cabling diagram current to prevent miswiring and unauthorized change, updating the diagram immediately whenever changes occur.
-- Apply strengthened protection such as shielded (STP) cable, fiber optics, locked conduit, and electromagnetic shielding to segments requiring high confidentiality, and perform cable scanning or tap detection where needed.
-- Remove or physically and logically disable unused cables and network ports, and confirm through periodic inspection that no unauthorized junction points or tapping devices are attached.
+- Protect sensitive segments with fiber, shielding, locked conduit, and access monitoring according to risk. Do not assume fiber or shielding alone prevents interception or ensures confidentiality; use peer authentication and encryption where required.
+- Remove unused cables and network ports, or disable them physically or logically, and confirm through periodic inspection that no unauthorized junction points or tapping devices are attached.
 - Provide redundancy for critical segments over physically separate alternate cabling routes so a single cable fault does not cause a full service outage.
 
 ## Related controls and attributes

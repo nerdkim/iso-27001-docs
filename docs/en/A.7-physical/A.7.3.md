@@ -12,7 +12,7 @@
 
 ## Control objective
 
-The purpose is to design and apply physical security to the individual offices, rooms, and facilities where information and information processing activities take place, so that unauthorized access, viewing, damage, and external disclosure of information are prevented. Where the physical security perimeter (A.7.1) encloses a whole area, this control requires each space inside that perimeter to implement layout, screening, and low visibility in proportion to the sensitivity of the information it handles. As a result, the location of critical facilities and the activity inside them are not readily apparent to outsiders, and each space is protected in proportion to the value of the assets it contains.
+The purpose is to design and apply physical security to the individual offices, rooms, and facilities where information and information processing activities take place, so that unauthorized access, viewing, damage, and external disclosure of information are prevented. Whereas the physical security perimeter (A.7.1) encloses a whole area, this control requires each space inside that perimeter to implement layout, screening, and low visibility in proportion to the sensitivity of the information it handles. As a result, the location of critical facilities and the activity inside them are not readily apparent to outsiders, and each space is protected in proportion to the value of the assets it contains.
 
 ## Key checkpoints
 
@@ -27,7 +27,7 @@ The purpose is to design and apply physical security to the individual offices, 
 
 - Set the physical security requirement level for each office, room, and facility from the sensitivity of the information it handles, and document the protective measures and responsibilities per space.
 - Locate critical facilities such as server rooms, communication rooms, and document stores away from lobbies, reception, and shared corridors where outsiders are frequent, and isolate them from general work areas.
-- Minimize or anonymize entries in building signage, floor directories, door signs, and external material so the exact location and purpose of critical facilities are not disclosed.
+- Reduce unnecessary disclosure of critical facility locations and functions in external signage, directories, door labels, and public material. Retain signs needed for fire safety, evacuation, safe work, and emergency response.
 - Fit blinds, film, or partitions to windows and glass walls that expose the interior, and site spaces used for sensitive discussion with soundproofing and screening in mind.
 - Keep offices and facilities locked during out-of-hours and unattended periods, and periodically check keys, access media, and locking status to remediate anomalies.
 - Site critical spaces away from flood-prone basements or top floors, vulnerable positions adjacent to outer walls, and areas near hazardous-material storage, and design them together with fire and water-leak detection and HVAC and power provisions.
@@ -38,7 +38,7 @@ The purpose is to design and apply physical security to the individual offices, 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.4 (Physical security monitoring), A.7.5 (Protecting against physical and environmental threats), A.7.6 (Working in secure areas)
 - ISMS-P mapping: 2.4.1 Designation of protected areas
-- 2013 mapping: A.11.1.3
+- 2013 mapping: A.11.1.3 (Securing offices, rooms and facilities)
 
 ## Evidence
 
@@ -52,7 +52,7 @@ The purpose is to design and apply physical security to the individual offices, 
 ## Nonconformity examples
 
 - The server room sits directly beside the lobby/reception, so outsiders are constantly nearby and it is not separated from general space.
-- Floor directories and door signs label rooms as "data center" or "server room", disclosing their location and purpose externally.
+- External directions disclose excessive detail about critical facility locations and access without reviewing necessity and risk.
 - Work screens and documents can be observed from outside through a large street-facing glass wall, with no screening in place.
 - Document stores and work rooms are left unlocked out of hours and there is no procedure to check locking status.
 - Critical facilities are located in a basement with a history of flooding, with no water-leak or fire detection considered.

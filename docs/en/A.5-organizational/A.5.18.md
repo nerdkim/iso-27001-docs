@@ -19,18 +19,18 @@ This control requires that access rights to information and other associated ass
 1. Are access rights provisioned/modified/revoked based on business need and the approval of the asset owner (or responsible party), and are these actions recorded?
 2. Are rights granted only to the minimum scope matching the role/job, in line with the least-privilege and need-to-know principles?
 3. Are privileged (administrator) rights and rights over sensitive assets treated separately from ordinary rights, with stricter approval, recording, and restriction applied?
-4. When a subject's status changes (job change/transfer/retirement/contract termination), are the associated access rights adjusted or revoked without delay?
+4. When a subject's status changes (job change/transfer/departure/contract termination), are the associated access rights adjusted or revoked without delay?
 5. Does the asset owner periodically review the validity of granted access rights, and are unnecessary or excessive rights actually acted upon as a result?
-6. Are the rights recorded in policy reconciled against the rights actually configured in systems, and are discrepancies handled?
+6. Are the approved access-right records reconciled against the rights actually configured in systems, and are discrepancies handled?
 
 ## Implementation guidance
 
 - Standardize the request/approval/execution/recording procedure for access rights, and clearly designate the approver (asset owner/department head) and the recorded fields at each step.
 - Define role-based access profiles (RBAC) in line with least-privilege and need-to-know principles, and assign rights only to the minimum scope needed to perform the job.
 - Apply a separate, stronger approval process, use-justification records, and time limits (automatic expiry for temporary grants) to privileged accounts and access to sensitive assets.
-- Build a workflow linked to HR/contract management so that onboarding/job-change/retirement/contract-termination events automatically drive the adjustment or revocation of access rights.
+- Build a workflow linked to HR/contract management so that onboarding/job-change/departure/contract-termination events automatically drive the adjustment or revocation of access rights.
 - Define the cycle/scope/reviewer (asset owner) for periodic access-right review (recertification), and keep records of review outcomes and actions taken (revoke/reduce/retain with justification).
-- Periodically reconcile the rights recorded in policy against actual system configuration to detect and clean up unauthorized and residual rights.
+- Periodically reconcile the approved access-right records against actual system configuration to detect and clean up unauthorized and residual rights.
 - Log the key events for provisioning/modification/revocation of rights so that accountability and after-the-fact verification are possible.
 
 ## Related controls and attributes
@@ -47,8 +47,8 @@ This control requires that access rights to information and other associated ass
 - Records of access-right provisioning/modification/revocation requests and approvals
 - Approval forms for privileged-account/sensitive-asset rights, with use-justification and grant-period records
 - Results of periodic access-right review (recertification) and records of actions taken (revoke/reduce)
-- Reconciliation results between policy rights and actual system configuration, with discrepancy-handling records
-- HR-linked processing records (rights adjustment and revocation on job change/retirement)
+- Reconciliation results between the approved access-right records and actual system configuration, with discrepancy-handling records
+- HR-linked processing records (rights adjustment and revocation on job change/departure)
 
 ## Nonconformity examples
 
@@ -57,7 +57,7 @@ This control requires that access rights to information and other associated ass
 - The access rights of a leaver/contract-terminated party are not revoked, so access remains possible after the status change.
 - Periodic access-right review is not performed, or the review is a formality (signature only) that leaves unnecessary rights untouched.
 - Privileged (administrator) rights are over-granted to many users and managed without separate approval or records.
-- Policy rights and actual system configuration are not reconciled, so unauthorized rights exist.
+- The approved access-right records and actual system configuration are not reconciled, so unauthorized rights exist.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

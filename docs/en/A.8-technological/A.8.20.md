@@ -8,7 +8,7 @@
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
 | ISMS-P mapping | 2.6.1 Network access |
-| 2013 mapping | A.13.1.1, A.13.1.2 |
+| 2013 mapping | A.13.1.1 |
 
 ## Control objective
 
@@ -26,8 +26,8 @@ This control ensures that networks and network devices are securely managed and 
 ## Implementation guidance
 
 - Separate the network into zones by trust level (public/DMZ, internal business network, management network, development network, and so on) and use firewalls/ACLs to block inter-zone traffic by default and permit only the required flows (default deny).
-- Establish security configuration standards for network devices (routers, switches, firewalls, wireless APs, and so on) covering default account/password changes, disabling unnecessary services/ports, restricting management-interface access, and keeping firmware up to date.
-- To protect confidentiality/integrity in transit, use encrypted protocols such as SSH/HTTPS for remote management, and apply VPN and strengthened authentication (multi-factor) to external/wireless/remote access segments.
+- Define network-device baselines for replacing default secrets, disabling unnecessary default accounts/services/ports, restricting management interfaces, and updating firmware. Distinguish a retained default account name from exposed default credentials.
+- Use protected protocols such as SSH/HTTPS for remote management. Apply authentication and encryption appropriate to users, devices, and services on external/wireless/remote connections, with MFA for high-risk user access. Do not assume every link needs a VPN or interactive MFA.
 - Collect logs from network devices and security systems centrally (log server/SIEM), and continuously monitor for signs of intrusion/misuse using threshold-based alerting and anomalous-traffic detection (IDS/IPS, NDR, and so on).
 - With external network service providers, specify the security features, service levels, and management requirements of the provided services in contracts/agreements, and periodically review whether they are fulfilled.
 - Apply the change management (A.8.32) procedure to network configuration changes, periodically review firewall policies/ACLs to remove unused or overly permissive rules, and keep network diagrams current.
@@ -37,7 +37,7 @@ This control ensures that networks and network devices are securely managed and 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.21 (Security of network services), A.8.22 (Segregation of networks), A.8.23 (Web filtering), A.8.24 (Use of cryptography), A.8.16 (Monitoring activities), A.8.15 (Logging)
 - ISMS-P mapping: 2.6.1 Network access (related: 2.10.1 Operation of security systems, 2.10.5 Information transfer security, 2.6.7 Internet access control, 2.6.5 Wireless network access)
-- 2013 mapping: A.13.1.1 (Network controls), A.13.1.2 (Security of network services)
+- 2013 mapping: A.13.1.1 (Network controls)
 
 ## Evidence
 
@@ -52,7 +52,7 @@ This control ensures that networks and network devices are securely managed and 
 
 - Areas of differing trust level are not separated, so externally reachable systems and internal core systems coexist on the same network.
 - The firewall policy contains overly permissive (any-any) rules with unclear purpose/justification and is not periodically reviewed.
-- Default accounts/passwords on network devices are unchanged, or unnecessary management services are exposed externally.
+- Network-device default passwords remain in use or unnecessary management services are exposed externally.
 - Remote/wireless access segments lack encryption or strengthened authentication, creating a risk of eavesdropping/unauthorized access.
 - Network device logs are not collected/monitored, so intrusion attempts or anomalous traffic cannot be detected.
 - Security requirements/service levels for external network services are not defined in the contract, so fulfillment cannot be verified.

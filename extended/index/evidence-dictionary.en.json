@@ -23,7 +23,7 @@
    "path": "docs/en/A.5-organizational/A.5.2.md",
    "evidence": [
     "Policy/regulation or role description (such as a RACI matrix) defining information security roles and responsibilities",
-    "Designation document for the chief officer (CISO/CPO) and the organization chart",
+    "Security leadership designation records (including CISO/CPO where applicable) and the organization chart",
     "List of owners/responsible persons per asset, system, and personal data processing activity",
     "Job descriptions or a specification of security responsibilities per role",
     "Records of role reallocation/privilege transfer following reorganization or personnel movement"
@@ -119,7 +119,7 @@
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.10.md",
    "evidence": [
-    "Rules for acceptable use of information and associated assets (policy/guideline/handling procedure)",
+    "Rules for acceptable use of information and other associated assets (policy/guideline/handling procedure)",
     "Documented handling/storage/transfer/disposal criteria by information classification level",
     "Security pledges or asset use agreement records",
     "Approval and management records for remote work/BYOD/removable media use",
@@ -210,9 +210,9 @@
    "path": "docs/en/A.5-organizational/A.5.17.md",
    "evidence": [
     "Authentication information management policy/procedure (covering issuance, delivery, storage, disposal)",
-    "Password policy configuration (complexity, minimum length, validity period, reuse limits, account lockout)",
-    "Evidence of the forced password change setting on first login",
-    "Records confirming the password storage method (hash/salt) and encryption settings for the transmission path",
+    "Password policy settings (length, breached-password blocking, attempt limits, MFA, and replacement triggers)",
+    "Evidence of first-login replacement and expiry settings for initial/temporary passwords",
+    "Records verifying the password hashing scheme, salts, work factor, and transport protection settings",
     "Operation records of the secrets vault and the secret rotation history",
     "User security acknowledgements and training records on handling authentication information"
    ]
@@ -227,8 +227,8 @@
     "Records of access-right provisioning/modification/revocation requests and approvals",
     "Approval forms for privileged-account/sensitive-asset rights, with use-justification and grant-period records",
     "Results of periodic access-right review (recertification) and records of actions taken (revoke/reduce)",
-    "Reconciliation results between policy rights and actual system configuration, with discrepancy-handling records",
-    "HR-linked processing records (rights adjustment and revocation on job change/retirement)"
+    "Reconciliation results between the approved access-right records and actual system configuration, with discrepancy-handling records",
+    "HR-linked processing records (rights adjustment and revocation on job change/departure)"
    ]
   },
   "A.5.19": {
@@ -486,7 +486,7 @@
    "evidence": [
     "Screening policy/procedure document",
     "Per-candidate screening checklists and records (identity verification, results of education/qualification/career verification)",
-    "Candidate consent forms for background checks and personal data collection",
+    "Lawful-basis and notice records for screening/personal-data collection, with consent/authorization where required",
     "Reference-check records and, where legally permitted, criminal-record/credit-check records",
     "Contract clauses requiring screening of external personnel and supplier confirmations that screening was performed",
     "Re-screening records for key-duty personnel, and records of secure storage and access control for screening results"
@@ -527,7 +527,7 @@
     "Action criteria by violation type (for example, a table for deciding the level of action) and documents linking to work rules/internal regulations",
     "Breach investigation reports, the individual's response materials, and deliberation/decision records",
     "Notification documents of disciplinary outcomes and records of follow-up actions such as revocation of access rights",
-    "Training materials and security agreements used to make the disciplinary process known",
+    "Training materials and security pledges used to make the disciplinary process known",
     "Records of cause analysis of disciplinary cases and of recurrence-prevention measures (policy revision, additional training)"
    ]
   },
@@ -536,7 +536,7 @@
    "theme": "A.6 People controls",
    "path": "docs/en/A.6-people/A.6.5.md",
    "evidence": [
-    "Employment contract/security undertaking templates containing post-termination clauses (confidentiality/non-disclosure)",
+    "Employment contract/security pledge templates containing post-termination clauses (confidentiality/non-disclosure)",
     "Termination/role-change procedure documents and checklists",
     "Asset return confirmations, access revocation/account deactivation records",
     "Exit briefing/surviving-obligation re-notification confirmations (signed by the individual)",
@@ -631,7 +631,7 @@
    "evidence": [
     "Physical monitoring policy or guideline (monitored areas, monitoring means, record retention criteria)",
     "Camera and sensor placement plans and a list of monitoring points",
-    "Records for retention period and access-right management of monitoring records (video/alarm)",
+    "Documentation of the retention period and access-right management for monitoring records (video/alarm)",
     "Alarm response procedure documents and records of actual alarms and responses",
     "Results of periodic inspection and testing of the monitoring system and fault response records",
     "Camera installation signage and records of controls on viewing and disclosure of image data"
@@ -687,7 +687,7 @@
     "Status of physical protection measures such as rack and cabinet locking, port disabling, and cable fixing",
     "Records of exposure-prevention measures such as secure print and screen shielding",
     "Rules and notices restricting actions inside processing areas (food, photography, and the like)",
-    "Approval records for equipment movement, relocation, transfer, or disposal, and recheck records after location changes"
+    "Approval records for equipment movement, relocation, removal and return, or disposal, and recheck records after location changes"
    ]
   },
   "A.7.9": {
@@ -762,7 +762,7 @@
    "evidence": [
     "Equipment disposal and re-use procedure (deletion and destruction methods per media type, verification and recording criteria)",
     "Data deletion and destruction records (target asset, media serial number, method, operator, date and time, verification result)",
-    "Records of secure erase, crypto erase, or physical destruction, with supporting evidence such as destruction photos or video",
+    "Records of secure erase, cryptographic erase, or physical destruction, with supporting evidence such as destruction photos or video",
     "Contract with security requirements and destruction certificates for outsourced work",
     "Checklist for handling built-in storage in multifunction devices, network equipment, and similar",
     "Asset inventory change history before and after disposal (status, disposal reason, date)"
@@ -827,7 +827,7 @@
     "Authentication policy/standard defining authentication methods per classification/risk",
     "MFA configuration screens for privileged/remote/critical access",
     "Account lockout/login attempt limit configuration screens",
-    "Evidence of credential storage method (hash/salt) and transmission encryption settings",
+    "Evidence of password hashing scheme/salts/work factor, recoverable-secret protection, and transport encryption settings",
     "Access warning banner and session timeout configuration screens",
     "Authentication success/failure logs and abnormal authentication monitoring/alert records"
    ]
@@ -1008,7 +1008,7 @@
     "Operational software installation/transfer procedures and assignment of installation privileges",
     "Software testing/acceptance and deployment approval records",
     "Software installation/update history (version/date/time/performer/approver)",
-    "Previous-version backups and rollback procedures/execution records",
+    "Required prior-version/data backups and rollback or alternative recovery procedures/validation records",
     "Supplier software supported-version register (including EOL status)",
     "Configuration records of software installation restrictions (allowlist/deployment tools) on endpoints/servers"
    ]
@@ -1156,7 +1156,7 @@
     "Acceptance-stage security testing/vulnerability assessment/source code review/malware check reports and defect remediation records",
     "Acceptance approval records and deliverable lists",
     "Source code escrow agreements and license/intellectual property documents",
-    "Confirmation of return or destruction of assets/data/access privileges at contract termination"
+    "Termination records confirming asset/data return or disposal and access revocation"
    ]
   },
   "A.8.31": {
@@ -1169,7 +1169,7 @@
     "Cross-environment promotion/deployment approval records (linked to change management) and rollback procedure documents",
     "Test data masking/pseudonymization records and usage approval records",
     "Cloud/IaC environment separation configuration evidence (account/VPC/namespace/secret separation)",
-    "Production minimal-configuration review results (confirmation that compilers/development tools/source code are removed)"
+    "Reviews of removal of unnecessary development elements and access protection for required runtime components"
    ]
   },
   "A.8.32": {
@@ -1178,10 +1178,10 @@
    "path": "docs/en/A.8-technological/A.8.32.md",
    "evidence": [
     "Change management procedure and documentation defining change types (standard/routine/emergency)",
-    "Change request/approval records (including impact/risk assessment and rollback plan)",
+    "Change request/approval records including impact/risk assessment and rollback or alternative recovery plans",
     "Change test/acceptance results and production deployment records",
     "Emergency change handling and post-implementation review/approval records",
-    "Pre-change backup and rollback execution/verification records",
+    "Necessary pre-change backups and rollback/alternative recovery validation records",
     "Change advisory board minutes or approval history, and records of configuration/operating document updates arising from the change"
    ]
   },
@@ -1191,10 +1191,10 @@
    "path": "docs/en/A.8-technological/A.8.33.md",
    "evidence": [
     "Test data management policy/procedure and test data selection/use criteria",
-    "Approval requests/records for the use of operational data in testing (owner/data protection officer approval)",
-    "Masking/pseudonymization/transformation processing records and before/after samples or verification records",
+    "Approval requests/records for the use of production data in testing (owner/data protection officer approval)",
+    "Masking/pseudonymization/transformation and re-identification-risk verification records, with minimized and restricted access to sensitive before/after samples",
     "Test environment access privilege lists and access/usage logs",
-    "Records of copying/transferring operational data into test environments (timing/target/handler)",
+    "Records of copying/transferring production data into test environments (timing/target/handler)",
     "Confirmation of deletion/disposal of test data after testing and disposal history"
    ]
   },

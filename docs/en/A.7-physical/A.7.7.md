@@ -27,7 +27,7 @@ This control requires that sensitive documents and storage media not be left una
 
 - Establish a clear desk and clear screen policy that specifies the covered information/media, storage methods, actions when leaving a workstation, and consequences of violations, and communicate it to staff and external personnel.
 - Provide storage means such as lockable drawers, cabinets, and safes according to the sensitivity classification of information and media, and apply no-unattended rules differentially by level.
-- Enforce screen savers/automatic locking after a defined idle period through policy, and instruct/train users to make manual locking a habit when stepping away.
+- Enforce actual locking after a defined idle period and authentication on resume. A screensaver alone is not a lock; train users to lock manually when leaving the workstation.
 - Apply pull printing (release after user authentication) or immediate collection procedures on shared output devices, and manage output trays so that documents do not accumulate.
 - Establish procedures to clear documents and media from desks at end of day and during extended absence, and to dispose of unnecessary documents by secure means such as shredding.
 - Apply the same rules to remote/home working and shared-seating (hot-desk) environments, and provide guidance on document storage and screen-exposure prevention in personal spaces.

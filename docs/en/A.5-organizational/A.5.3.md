@@ -49,7 +49,7 @@ This control separates conflicting duties and areas of responsibility so that no
 ## Nonconformity examples
 
 - One person requests, approves, grants, and reviews access rights, so no mutual check operates.
-- Developers access and change production systems/databases directly, with no separation between development and operations.
+- Developers directly change production systems/databases without independent approval, activity review, or other compensating controls.
 - No matrix or criteria identify conflicting duties, so there is no basis to judge which privilege combinations are risky.
 - In a small organization where combined roles are unavoidable, operations run without compensating controls such as dual approval or independent log review.
 - Access-rights reviews are performed only as a formality, so conflicting privileges accumulated in one individual are not detected or corrected.

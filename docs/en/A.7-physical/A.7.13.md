@@ -19,7 +19,7 @@ The purpose is to inspect and service equipment that stores, processes, or trans
 1. Are maintenance targets, cycles, and owners defined and followed for each item, based on the asset inventory and the manufacturer's recommended specifications?
 2. Is maintenance performed only by qualified and authorized personnel, and for external technicians, are escort/supervision and limited access scope applied?
 3. Are maintenance records (date and time, performer, actions taken, faults found, parts replaced) kept and retained?
-4. For external servicing, remote maintenance, and off-site repair, are measures in place to prevent exposure or alteration of stored information (backup, data removal or encryption, confidentiality agreements, session logging)?
+4. For external/remote servicing and offsite repair, are safeguards against exposure/alteration (media removal, deletion/encryption, restricted access, NDAs, session records) distinguished from backups for recovery?
 5. Are maintenance contract and SLA terms, warranty conditions, and relevant legal requirements (electrical, fire, and similar safety inspections) defined and verified for compliance?
 6. After maintenance, is the equipment rechecked to confirm normal operation and that security settings (permissions, patches, configuration) have not been degraded?
 
@@ -54,7 +54,7 @@ The purpose is to inspect and service equipment that stores, processes, or trans
 - No maintenance cycle is defined for critical equipment, or preventive servicing is chronically delayed, leaving the risk of failure or performance degradation unmanaged.
 - Maintenance history is not recorded, or actions taken and parts replaced are omitted, so servicing cannot be traced.
 - External technicians access equipment without escort/supervision, creating a risk that stored sensitive information is exposed.
-- Equipment is taken off site for repair without backing up or removing data on the storage media, creating a risk of information leakage.
+- Equipment sent offsite for repair retains sensitive data without deletion, media removal, or suitable encryption/access restrictions, leaving disclosure risk untreated.
 - Remote maintenance uses shared accounts or leaves sessions unlogged, so it is impossible to confirm who did what.
 - Equipment whose warranty or SLA has expired is left in place without renewal or replacement, making timely recovery difficult when a fault occurs.
 

@@ -12,13 +12,13 @@
 
 ## Control objective
 
-This control ensures that management treats information security as part of running the organization and formally requires all personnel and relevant parties to apply security in line with the established information security policy, topic-specific policies, and procedures. Without clear direction and visible commitment from management, a policy stays a document and never turns into practice on the ground. The control drives compliance to become a shared responsibility and culture across the organization, and requires management to provide the resources and conditions that personnel need to be aware of and fulfil their security responsibilities.
+This control ensures that management treats information security as part of running the organization and formally requires all personnel and relevant parties to apply security in line with the established information security policy, topic-specific policies, and procedures. Without clear direction and visible commitment from management, a policy stays a document and never turns into practice on the ground. The control works to spread policy compliance as a shared responsibility and part of the culture across the organization, and requires management to provide the resources and conditions that personnel need to be aware of and fulfill their security responsibilities.
 
 ## Key checkpoints
 
 1. Does management formally require all personnel to comply with information security policies and procedures, and communicate those expectations clearly?
 2. Is there a procedure to brief new joiners and role changers on their role-specific security responsibilities at the point of hiring/assignment?
-3. Does management provide access to policies/procedures, training, and the knowledge/skills that personnel need to fulfil their security responsibilities?
+3. Does management provide access to policies/procedures, training, and the knowledge/skills that personnel need to fulfill their security responsibilities?
 4. Does management allocate resources (budget, staff, time) for information security activities and give them appropriate priority?
 5. Are channels to report policy violations or security concerns, and procedures for handling violations, established and operating?
 6. Is there a working management cycle in which management is regularly briefed on security status and directs improvements?
@@ -35,7 +35,7 @@ This control ensures that management treats information security as part of runn
 ## Related controls and attributes
 
 - ISO 27001 clauses: 5.1 (Leadership and commitment), 5.3 (Organizational roles, responsibilities and authorities), 7.2 (Competence), 7.3 (Awareness)
-- Adjacent Annex A: A.5.1 (Policies for information security), A.5.2 (Information security roles and responsibilities), A.5.3 (Segregation of duties), A.6.3 (Information security awareness, education and training)
+- Adjacent Annex A: A.5.1 (Policies for information security), A.5.2 (Information security roles and responsibilities), A.5.3 (Segregation of duties), A.6.3 (Information security awareness, education and training), A.6.4 (Disciplinary process)
 - ISMS-P mapping: 1.1.1 Management involvement, 2.2.4 Awareness and training
 - 2013 mapping: A.7.2.1 (Management responsibilities)
 

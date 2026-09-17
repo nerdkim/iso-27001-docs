@@ -29,7 +29,7 @@ This control requires that the movement of sensitive/critical information beyond
 - Place control points by data state: in transit (network gateways, email/web proxies), in use (endpoint agents), and at rest (cloud access security broker (CASB), repository scanning).
 - Distinguish response levels in policy: log only, warn the user, allow after approval, block, or enforce encryption.
 - Manage tasks that require exceptions/bypass (bulk transfers, export of development/test data) on the basis of prior approval and a validity period, and keep audit logs.
-- To reduce false positives, operate initially in monitoring (detection) mode, then strengthen blocking policies in stages after validation.
+- Use initial monitoring to evaluate false positives and business impact, then choose blocking, approval, and response levels according to risk. If detection-focused operation continues, verify its approval basis, responder timelines, and the effectiveness of other leakage-prevention measures.
 - Store events/logs in an access-controlled repository, and finalize the monitoring scope and notices after legal/HR review to manage the risk of privacy intrusion.
 
 ## Related controls and attributes
@@ -54,7 +54,7 @@ This control requires that the movement of sensitive/critical information beyond
 - DLP is applied only to the email channel, while major leakage paths such as web upload, cloud, and removable media are not controlled.
 - Violation events occur in large volumes, but no reviewer/responder is assigned and they are left unattended.
 - Exceptions are granted indefinitely without an approval process, effectively nullifying the control.
-- The system runs only in detection (monitoring) mode, failing to block actual leakage attempts, with no plan to transition to blocking policies.
+- Known leakage risk lacks needed blocking or prompt response, with no risk assessment or compensating controls supporting continued detection-only operation.
 - Retention period/access control for DLP event logs is inadequate, so they cannot be used for later investigation and root-cause analysis.
 
 ---

@@ -37,7 +37,7 @@ This control requires networks, systems, and applications to be observed on an o
 - ISO 27001 clauses: 9.1 (Monitoring, measurement, analysis and evaluation), 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.15 (Logging), A.8.17 (Clock synchronization), A.5.7 (Threat intelligence), A.5.25 (Assessment and decision on information security events), A.8.20 (Networks security), A.8.6 (Capacity management)
 - ISMS-P mapping: 2.11.3 Anomaly analysis and monitoring (related: 2.9.5 Review of logs and access records, 2.10.1 Operation of security systems)
-- 2013 mapping: New in 2022
+- 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence
 

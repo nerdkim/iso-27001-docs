@@ -28,8 +28,8 @@ The purpose is to enclose areas that hold information and information processing
 - Define protected areas from asset criticality and risk assessment, and document the location and protection grade of each physical perimeter in floor plans and a zone inventory.
 - Design perimeters as multiple layers rather than a single barrier, so control strength increases as one moves from the outer boundary toward core assets.
 - Apply intrusion-resistant materials and construction standards to perimeter structures, and inspect bypass routes such as windows, vents, ceiling voids, and raised-floor spaces.
-- Provide a reception or staffed control point so that visitors and external personnel are identified and recorded at the moment they enter the perimeter.
-- Keep perimeter doors and emergency exits locked in normal operation, and install emergency exits so they cannot be opened from outside while still allowing egress from inside.
+- Provide reception/control arrangements that verify and record visitors' identities, purpose, and entry authorization. Select onsite staffing, remote reception, or other arrangements according to facility risk and response capability.
+- Control unauthorized entry through doors and emergency exits while preserving egress and emergency responder access required by applicable fire and evacuation rules. Verify that locks and alarms do not obstruct evacuation.
 - Isolate high-risk areas such as data centers and server rooms within an independent perimeter separated from general office space, and ensure fire, power, and utility routes do not bypass the perimeter.
 - Maintain a change history for perimeters and protected areas, and inspect physical condition periodically to remediate damage, deterioration, or bypass paths.
 
@@ -38,7 +38,7 @@ The purpose is to enclose areas that hold information and information processing
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.7.4 (Physical security monitoring), A.7.6 (Working in secure areas)
 - ISMS-P mapping: 2.4.1 Designation of protected areas
-- 2013 mapping: A.11.1.1
+- 2013 mapping: A.11.1.1 (Physical security perimeter)
 
 ## Evidence
 
@@ -53,10 +53,10 @@ The purpose is to enclose areas that hold information and information processing
 
 - The server room sits in the same space as general offices with no separate perimeter, so no physical separation exists.
 - The same minimal level of control is applied to all areas, with no grading of protected zones.
-- An emergency exit on the perimeter is left open or can be opened easily from outside, allowing bypass entry.
+- Emergency exits lack adequate protection or monitoring against unauthorized entry, allowing outsiders to bypass the perimeter.
 - Bypass routes such as windows, vents, and ceiling voids are omitted from identification and inspection.
 - The protected-area floor plan does not match the actual facility and no change history is maintained.
-- No reception or staffed control point exists, so visitor entry through the perimeter is not identified or recorded.
+- There is no risk-appropriate means of identifying visitors and recording entry, leaving perimeter access uncontrolled.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

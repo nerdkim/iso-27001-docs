@@ -36,7 +36,7 @@ This control requires the organization to periodically verify that the informati
 ## Related controls and attributes
 
 - ISO 27001 clauses: 7.2 (Competence), 9.1 (Monitoring, measurement, analysis and evaluation), 9.2 (Internal audit), 9.3 (Management review), 10.1 (Continual improvement)
-- Adjacent Annex A: A.5.1 (Policies for information security), A.5.35 (Independent review of information security), A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.37 (Documented operating procedures), A.8.8 (Management of technical vulnerabilities)
+- Adjacent Annex A: A.5.1 (Policies for information security), A.5.35 (Independent review of information security), A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.37 (Documented operating procedures), A.8.8 (Management of technical vulnerabilities), A.8.34 (Protection of information systems during audit testing)
 - ISMS-P mapping: 1.4.2 Management system inspection (adjacent: 1.4.3 Management system improvement, 2.1.1 Policy maintenance, 2.11.2 Vulnerability assessment and remediation)
 - 2013 mapping: A.18.2.2 (Compliance with security policies and standards), A.18.2.3 (Technical compliance review)
 
@@ -53,7 +53,7 @@ This control requires the organization to periodically verify that the informati
 
 - Information security policies/standards are established, but no checking activity is performed to verify actual compliance.
 - Compliance checks are done only once at a specific point in time, with no frequency, owner, or method defined as a procedure.
-- No technical compliance check (verification against security settings/configuration baselines) exists, so system settings run differently from the standard.
+- No technical compliance check (verification against security settings/configuration baselines) exists, so system settings drift from the standard.
 - Non-compliance is found in a check, but it is merely recorded and left unaddressed without root-cause analysis or corrective action.
 - The same non-compliance recurs, yet it is never linked to fundamental improvement such as policy revision or training.
 - Technical compliance checks are run on operational systems without prior approval/planning, causing incidents or adverse impact.

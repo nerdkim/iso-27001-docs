@@ -12,25 +12,25 @@
 
 ## Control objective
 
-This control ensures that changes to information processing facilities and information systems (infrastructure, applications, configuration, procedures) are planned, reviewed, approved, tested, and deployed through a controlled procedure, so that unverified changes cannot compromise security or service stability. It requires assessing the impact and risk of a change in advance, obtaining approval from authorized parties, and applying the change in a state where the previous condition can be restored if it fails. The aim is to reduce outages, introduction of vulnerabilities, and unauthorized functional changes caused by change, while keeping change history traceable.
+This document covers planning, review, authorization, validation, and deployment of changes to systems, infrastructure, applications, and procedures. Assess security and service impact, implement under authorized approval, and prepare validated rollback or alternative recovery if a change fails. Procedures suited to change type and risk, with traceable records, reduce unauthorized changes, outages, and introduced vulnerabilities.
 
 ## Key checkpoints
 
-1. Is a change management procedure documented for information system/infrastructure/application changes, with its scope (routine/emergency/standard changes) defined?
-2. When a change is requested, are its purpose, scope of impact, security impact, risk, and rollback plan reviewed in advance and approved by an authorized party?
-3. Is a change validated in a test environment and confirmed to meet acceptance criteria before it is applied to production?
+1. Is a change management procedure documented for information system/infrastructure/application changes, with the systems it covers and the change types (standard/routine/emergency) defined?
+2. Are purpose, impact scope, security impact, risk, and rollback/alternative recovery reviewed in advance with authorized approval?
+3. Is validation appropriate to risk and change type performed before production deployment, with limited testing for emergency changes managed through authorized procedures and retrospective review?
 4. Is there a separate procedure for emergency changes, including post-implementation review/approval and recording, that is actually operated?
 5. Is change history (request/approval/test/deployment/result) recorded and retained in a traceable form, and are related documents (configuration/operating procedures) updated together?
-6. Is a rollback prepared in advance and confirmed afterward so the previous state can be restored if a change fails or has unexpected effects?
+6. Is rollback or alternative recovery prepared with data/schema compatibility in view, and are service and data state verified after a failure?
 
 ## Implementation guidance
 
 - Establish a change management procedure that defines the stages (request, impact/risk assessment, approval, testing, deployment, closure) and responsible parties for each change type (standard/routine/emergency).
-- Standardize the change request so it includes the change purpose, target assets, security/privacy impact, interdependencies, expected downtime, rollback plan, and verification method.
+- Record purpose, assets, security/privacy impact, dependencies, expected downtime, validation, and rollback or alternative recovery in change requests. For irreversible changes, state limitations and potential data loss during recovery.
 - Have a change review body such as a change advisory board (CAB) or an authorized approver review/approve changes commensurate with risk level, and separate the requester from the approver to prevent self-approval.
-- Validate changes in a test environment separated from production (A.8.31), and once acceptance criteria are met, apply them through the transfer-to-operational-environment/deployment procedure (A.8.19).
-- Back up current configuration/executable code/data before deployment, and prepare and test in advance a rollback procedure that can restore the previous state within a defined time if the change fails.
-- Process emergency changes quickly but complete formal review/approval/recording afterward, and update all change history, configuration/operating documents, and security controls (firewall rules, access rights, and so on) in line with the change.
+- Validate changes in a test environment separated from production (A.8.31), and once acceptance criteria are met, apply them through the production promotion/deployment procedure (A.8.19).
+- Preserve necessary code/configuration/data and validate recovery procedures. Check whether reverting remains safe after data/schema changes; where it does not, prepare compatible transitions, restoration, or forward fixes, with criteria for stopping deployment.
+- Process emergency changes through predefined authority and contacts, obtaining expedited authorization where feasible and recording the basis and minimum validation. Complete formal retrospective review and required approvals afterward, and update configuration/operating documents and security controls.
 
 ## Related controls and attributes
 
@@ -42,19 +42,19 @@ This control ensures that changes to information processing facilities and infor
 ## Evidence
 
 - Change management procedure and documentation defining change types (standard/routine/emergency)
-- Change request/approval records (including impact/risk assessment and rollback plan)
+- Change request/approval records including impact/risk assessment and rollback or alternative recovery plans
 - Change test/acceptance results and production deployment records
 - Emergency change handling and post-implementation review/approval records
-- Pre-change backup and rollback execution/verification records
+- Necessary pre-change backups and rollback/alternative recovery validation records
 - Change advisory board minutes or approval history, and records of configuration/operating document updates arising from the change
 
 ## Nonconformity examples
 
 - No change management procedure exists, or it does not apply to certain systems (for example network devices or cloud configuration), so changes are applied without control.
 - A change is applied directly to production without impact/risk assessment or approval, causing an outage or introducing a vulnerability.
-- A change is applied to production without validation in a test environment, or the requester approves their own change.
+- Validation/authorization required for the change type is omitted, or a requester approves their own change without independent oversight or approved compensating controls.
 - After handling an emergency change, no post-implementation review/approval/record is kept, so the change cannot be verified.
-- There is no pre-change backup or rollback plan, so service recovery is delayed when a change fails.
+- Backups and validated rollback/alternative recovery needed for a failed change are absent, delaying service restoration.
 - After a change, configuration documents, access rights, or security policies are not updated, so the actual configuration and the documentation are inconsistent.
 
 ---

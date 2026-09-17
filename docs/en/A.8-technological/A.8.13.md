@@ -27,9 +27,9 @@ This control requires that copies of information, software, and system images be
 
 - Define and document the backup scope, frequency, and retention period (including generation management) based on asset criticality and legal/contractual retention requirements.
 - Design the backup method (full/incremental/differential) and frequency to meet the RPO/RTO derived from business continuity needs, applying shorter cycles to more critical systems.
-- Keep backup copies in a location physically/network-separated from the source, and hold at least one copy in offline/off-site or immutable storage to guard against ransomware spread and single points of failure.
+- Separate backup locations according to failure scope and restrict attacker modification/deletion through offline or appropriately locked immutable copies. Offsite location alone does not provide ransomware isolation; verify separation of network paths and administrative privileges/credentials.
 - Encrypt backup data and removable media, and control access to backup repositories and recovery consoles under the least-privilege principle.
-- Plan periodic recovery tests (partial/full) to verify actual restore time and data consistency, and record the test results and improvement actions.
+- In periodic partial/full restore tests, verify elapsed time, data consistency, and access to decryption keys, credentials, and recovery tools. Test dependencies when production is unavailable, and record results and improvements.
 - Monitor backup job results with automated alerting, and operate retry and escalation procedures for failures or omissions.
 - Manage change history for backup policy/configuration, and apply secure erasure/destruction of residual data when backup media are disposed of.
 
