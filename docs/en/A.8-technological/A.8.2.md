@@ -28,7 +28,7 @@ Privileged access rights (administrator, root, system/DB administrator privilege
 - Use individually identifiable privileged accounts, minimize shared administrator account use, and where unavoidable ensure use is logged and attributable to a responsible person.
 - Apply hardening measures to privileged access, such as multi-factor authentication, access via bastion/jump hosts, session recording, and privileged access management (PAM) solutions.
 - Grant privileges only when needed through just-in-time elevation, and revoke them automatically once the task is complete.
-- Store privileged credentials securely (for example in a vault) and rotate them periodically, and disable default system administrator accounts, or rename them and change their passwords.
+- Protect privileged credentials in secure storage and replace them according to type, compromise risk, and applicable obligations. Disable unnecessary default accounts and replace default secrets. Renaming an account does not replace changing default passwords or restricting access.
 - Adjust privileged rights immediately on transfer/termination/role change, and link with periodic access reviews (A.5.18) to check for excessive grants.
 - Retain privileged activity logs separately and link them with logging/monitoring (A.8.15, A.8.16) to detect anomalous behavior.
 
@@ -55,7 +55,7 @@ Privileged access rights (administrator, root, system/DB administrator privilege
 - Multi-factor authentication is not applied to privileged access, so a simple password alone grants access.
 - Privileged account activity is not logged, or logs are collected but never reviewed.
 - Privileged rights of leavers/role-changers are not revoked and remain active.
-- Default system administrator accounts/passwords are left at their initial values and still in use.
+- Default administrator passwords remain unchanged or unnecessary default administrative access remains enabled.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

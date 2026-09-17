@@ -25,7 +25,7 @@ This control requires the organization's approach to managing information securi
 
 ## Implementation guidance
 
-- Establish a plan to independently review the information security approach and its implementation, defining both a regular cadence (for example, at least annually) and the trigger criteria for ad hoc reviews when significant changes occur (reorganization, major incident, new regulation, major system change).
+- Set the independent review cadence according to risk, internal policy, and applicable obligations. Include triggers for additional reviews following reorganization, major incidents, new regulation, or significant system changes.
 - Position the reviewer independently of the operation and responsibility of the area being reviewed, using an internal audit function, a separate unit, or an external specialist body, and confirm the reviewer's competence and absence of conflicts of interest in advance.
 - Include in the review scope the adequacy of policies/guidelines/procedures, the design and actual implementation of controls, whether risk assessment/treatment results are reflected, and compliance with legal/contractual requirements, and clearly define the target systems/units/processes.
 - Perform the review on an evidence basis by combining document review, interviews with staff, on-site verification, sampling of logs/records, and technical checks where necessary, recording the basis and risk level for each finding.

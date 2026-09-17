@@ -25,7 +25,7 @@ This control ensures that information security roles and responsibilities are cl
 ## Implementation guidance
 
 - Document information security roles and responsibilities in a policy/regulation or a role description (such as a RACI matrix), stating each role's scope, authority, and reporting line.
-- Formally designate the chief officer (CISO/CPO or equivalent) and lay out the roles of the security function and operational staff in a clear hierarchy.
+- Assign accountable security leadership appropriate to organizational size and applicable obligations, with clear authority and reporting lines. Where a statutory CISO/CPO or similar office is required, verify its appointment and qualification requirements separately.
 - Designate an owner/responsible person for each protected object (information asset, information system, personal data processing activity) to prevent gaps and overlaps in accountability.
 - Define roles by position/job rather than by an individual's informal habit, so responsibilities are handed over when a person changes.
 - Link the roles to HR processes so that role reallocation and revocation/transfer of privileges are triggered on transfer, departure, or role change.
@@ -41,7 +41,7 @@ This control ensures that information security roles and responsibilities are cl
 ## Evidence
 
 - Policy/regulation or role description (such as a RACI matrix) defining information security roles and responsibilities
-- Designation document for the chief officer (CISO/CPO) and the organization chart
+- Security leadership designation records (including CISO/CPO where applicable) and the organization chart
 - List of owners/responsible persons per asset, system, and personal data processing activity
 - Job descriptions or a specification of security responsibilities per role
 - Records of role reallocation/privilege transfer following reorganization or personnel movement

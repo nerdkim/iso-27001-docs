@@ -21,7 +21,7 @@ This control ensures that systems/applications being developed or acquired are t
 3. Are security testing techniques appropriate to the system's risk level applied, such as static/dynamic analysis, vulnerability assessment, and penetration testing?
 4. At the acceptance stage (transfer to operations/adoption of purchased products), are acceptance criteria defined in advance and are test results verified and approved against those criteria?
 5. Are discovered vulnerabilities/defects remediated and re-tested according to severity, and is residual risk reflected in release approval?
-6. Are the test environment and data controlled so that live production data is not used as-is, and are test records retained?
+6. Are security test data sensitivity and usage basis assessed, production-data exceptions approved and protected, and test records retained?
 
 ## Implementation guidance
 
@@ -30,7 +30,7 @@ This control ensures that systems/applications being developed or acquired are t
 - During development, integrate static analysis (SAST), software composition analysis (SCA/dependency vulnerability scanning), and secret scanning into the CI pipeline for early defect detection, and complement these with dynamic analysis (DAST)/fuzzing against the running environment.
 - At the acceptance stage, define pass/fail criteria (acceptable residual risk, severity-based remediation thresholds) in advance, and approve transfer to operations only when the acceptance testing (secure configuration review, penetration test result review) is passed.
 - For purchased/externally sourced products (including SaaS), review the security test/certification results provided by the supplier and, where necessary, perform independent vulnerability assessment to confirm the product meets adoption requirements (linked to A.8.30).
-- Use pseudonymized/synthetic data rather than live production/personal data for testing (linked to A.8.31/A.8.33), and retain documentation of remediation of discovered vulnerabilities, re-test results, and approvals.
+- Prefer synthetic/transformed data and assess re-identification and source-data disclosure risk (A.8.11, A.8.33). Where real data is essential, apply a lawful basis, owner approval, minimum scope/duration, and restricted access. Retain remediation, retest, and residual-risk approval records.
 
 ## Related controls and attributes
 
@@ -52,7 +52,7 @@ This control ensures that systems/applications being developed or acquired are t
 
 - Only functional testing is performed without a security testing plan, and the system is transferred to operations.
 - There are no test cases linked to security requirements, so the system is released without those requirements being verified.
-- High-risk defects found in vulnerability assessment/penetration testing are moved to production without remediation/re-testing.
+- High-risk test findings reach production without remediation/retesting required by acceptance criteria or authorized exception approval and necessary compensating controls.
 - Acceptance (transfer-to-operations) pass criteria are not defined in advance, so approval decisions are made arbitrarily.
 - Purchased/externally sourced products are adopted without reviewing their security test results.
 - Live production/personal data is used for security testing without controls.

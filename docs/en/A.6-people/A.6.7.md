@@ -20,18 +20,18 @@ This control ensures that information accessed, processed, or stored by personne
 2. When accessing internal systems/data from remote locations, are secure connections (such as VPN) and strengthened authentication (such as multi-factor) enforced?
 3. Are security requirements (encryption, anti-malware, screen lock, patching) defined and checked for devices used in remote work, whether company-issued or personally owned (BYOD)?
 4. Are physical safeguards in place for the environment (screen exposure in shared spaces, handling of printouts/storage media, response to loss/theft)?
-5. Are remote workers' access rights and access logs managed/monitored the same as on-premises, and are rights/assets reclaimed when remote working ends?
+5. Are remote workers' rights and logs managed/monitored, and are rights and assets no longer needed reclaimed when remote working ends or duties change?
 6. Are remote workers trained on the relevant policy and incident reporting procedures, and is compliance checked?
 
 ## Implementation guidance
 
 - Establish a policy that specifies who/where/under what conditions remote working is permitted, the approval and exception process, and the permitted devices and services, and obtain management approval.
 - Enforce encrypted communication channels such as VPN and multi-factor authentication for access to internal resources from remote locations, and restrict target/time/network where needed.
-- Apply minimum security baselines to remote devices (disk encryption, anti-malware, automatic screen lock, current patches, remote wipe for loss) and check them periodically.
-- Where personally owned devices (BYOD) are allowed, run separate conditions and consent procedures such as work/personal separation, limited access scope, and no local data storage.
+- Apply device-appropriate baselines for encryption, malware protection, screen locking, and patching. For remote wipe, check device support, connectivity, and authorized scope, and prepare alternatives such as access blocking when wiping cannot be performed.
+- For BYOD, define work/personal separation, access scope, local storage conditions, and monitoring/deletion authority, with required consent/authorization. Prevent collection or deletion of personal information and content beyond the approved scope.
 - Advise on physical and network practices such as preventing shoulder-surfing in shared/public spaces (privacy filters, seating), controlling printouts/removable media, and limiting use of public Wi-Fi.
-- Provide procedures and contact channels so that incidents such as loss/theft or data leakage can be reported immediately and responded to with remote lock/wipe.
-- Reclaim access rights and require return/deletion of issued devices and data when remote working ends or a role changes.
+- Provide immediate reporting procedures and contacts for loss, theft, or disclosure. Revoke sessions/tokens and block access, and perform remote locking/wiping according to device support and authorized scope, verifying results.
+- Reassess business needs when remote working ends or duties change; revoke unnecessary remote access and identify assets and work data for return/deletion. Retain still-needed work privileges and required records within approved scope.
 
 ## Related controls and attributes
 
@@ -53,11 +53,11 @@ This control ensures that information accessed, processed, or stored by personne
 ## Nonconformity examples
 
 - Remote working is widely practiced, but there is no governing policy or approval process, so no control basis can be confirmed.
-- Internal systems are accessed from remote locations in cleartext or with single-factor authentication, without VPN or multi-factor authentication.
+- Remote access lacks required encryption or strengthened authentication, exposing internal information to unauthorized access.
 - Remote devices have no disk encryption or screen lock, so information leakage is not controlled if a device is lost or stolen.
 - Personally owned devices (BYOD) are used for work without separate conditions or consent, and data is stored/retained on personal devices.
 - Access logs of remote workers are not collected or monitored, so anomalous access cannot be detected.
-- After remote working ends, access rights are not reclaimed or issued devices/data are left unreturned.
+- Unneeded rights remain after remote working ends, or assets and work data designated for return/deletion are not recovered.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

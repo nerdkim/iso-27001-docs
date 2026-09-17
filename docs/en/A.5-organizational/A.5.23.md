@@ -26,7 +26,7 @@ This control requires the organization to define and implement its security requ
 
 - Establish a cloud adoption/use policy and operate a process to identify and block unapproved cloud (shadow IT) use.
 - Produce a shared responsibility matrix per service type that clarifies customer-owned items such as account management, data encryption, network controls, and log collection.
-- Define cloud configuration security baselines and periodically check for risky configurations such as exposed public storage, excessive privileges, and unencrypted data.
+- Define cloud configuration baselines and check for unauthorized exposure of non-public data, excessive privileges, and missing required encryption. For intentionally public material, verify publication approval and separately controlled write access.
 - Specify data storage location/cross-border transfer, incident notification deadlines, audit rights, and data return/destruction on termination in the contract and SLA.
 - Apply multi-factor authentication and least privilege to cloud administrator accounts, and log and monitor administrative actions.
 - Prepare an exit plan in advance to manage data portability and vendor lock-in risk.
@@ -51,7 +51,7 @@ This control requires the organization to define and implement its security requ
 
 - A team adopts a SaaS to store customer data without approval, and it is omitted from the organization's management scope.
 - Misunderstanding the shared responsibility model, the customer assumes the provider performs data encryption/access control that are in fact the customer's responsibility.
-- Cloud storage is configured as public and exposed to the internet.
+- Cloud storage holding non-public information is exposed to the internet without approval.
 - The contract lacks clauses on data storage location and destruction on termination, leaving no clear basis for transfer or disposal.
 - The cloud management console account has no MFA applied and no access logs are collected for administrative actions.
 

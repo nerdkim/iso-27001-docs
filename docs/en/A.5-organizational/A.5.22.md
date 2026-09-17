@@ -26,7 +26,7 @@ This control requires the organization to regularly monitor and review, througho
 
 - Classify suppliers by service criticality and risk level, and apply differentiated monitoring/review cadence and methods per tier (periodic meetings, performance reporting, on-site inspection, third-party certificate review).
 - State security performance indicators, reporting obligations, the right to audit, change-notification duties, and sub-supplier approval conditions in contracts and SLAs, and use them as review criteria.
-- Regularly collect and validate supplier-provided service reports, independent audit results, penetration test/vulnerability assessment results, and certificates (for example, ISO 27001, SOC 2).
+- Review service reports, independent audits, vulnerability assessments, ISO 27001 certificates, and SOC 2 reports periodically. Check scope and covered services, certificate validity or report assessment period, findings, exclusions, and controls the customer must perform.
 - Require advance notice of changes to supplier services (scope, personnel, location, network/technical configuration, sub-suppliers), re-assess the impact on the organization's risk, and adjust controls accordingly.
 - Manage deficiencies identified in monitoring/review as improvement plans (corrective action, owner, deadline), and close them only after re-verifying that the action was implemented.
 - Agree notification and response procedures for supplier-related incidents/vulnerabilities in advance, and handle them in conjunction with the organization's incident response process when they occur.

@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control establishes formal procedures and channels so that employees, external parties, and users can report observed or suspected information security events (anomalies, policy violations, discovered vulnerabilities, malfunctions) without undue delay. Most incidents begin at the point where a person first notices something unusual before it escalates into an actual breach, so early detection and a fast response are only possible when everyone knows what to report, when, and how. A further core purpose is to protect people who report in good faith from adverse consequences, thereby preventing concealment and under-reporting.
+This control establishes formal procedures and channels for personnel, external parties, and users to promptly report observed or suspected information security events. Human observations complement automated detection, so explain what, when, and how to report and connect reports to assessment and response. Protecting good-faith reporters also helps reduce concealment and reluctance to report.
 
 ## Key checkpoints
 
@@ -20,16 +20,16 @@ This control establishes formal procedures and channels so that employees, exter
 2. Is guidance provided on what should be reported as an event, including types, examples, and decision criteria?
 3. Are reporting deadlines (for example, immediately on becoming aware, or within a set time) and the information to include (time of occurrence, affected asset, symptoms, actions taken) specified?
 4. Are confidentiality and protection from retaliation for good-faith reporters guaranteed by policy?
-5. Are received events routed into the incident assessment/classification/response procedure (A.5.24 onward), and is the outcome fed back to the reporter?
+5. Are received events routed to incident assessment/classification/response (A.5.24 onward), with feedback to reporters appropriate to confidentiality and investigation needs?
 6. Are reporting channels and methods also provided for parties outside the organization, such as external parties, partners, and users?
 
 ## Implementation guidance
 
-- Define and communicate the event types to be reported (suspected account compromise, malware detection, lost/stolen device, phishing received, access errors, signs of information leakage, discovered vulnerabilities) with concrete examples.
+- Explain reportable events with examples, including suspected compromise, malware, loss, phishing, access errors, disclosure, and vulnerabilities. Ask reporters to relay observations without reproducing vulnerabilities or accessing further information without authorization.
 - Provide an easy-to-reach single reporting point (hotline, dedicated mailbox, intranet portal, ticketing system) and maintain a contact route for out-of-hours and emergency situations.
 - Supply a minimum set of fields and a standard form so anyone can report simply and quickly.
 - Establish a policy that protects good-faith reporters (confidentiality, no retaliation, anonymous reporting where needed) and make it known to all members.
-- Route received events into the incident management procedure without delay so they connect to assessment/classification/response (A.5.24, A.5.25, A.5.26), and send an acknowledgement and outcome back to the reporter.
+- Route reports into incident assessment/classification/response (A.5.24, A.5.25, A.5.26) and acknowledge receipt. Limit outcome feedback to information that can be shared considering privacy, confidentiality, and investigation impact.
 - Include reporting methods and examples in awareness training (A.6.3), and use exercises (such as phishing simulations) to verify that reporting actually works.
 - State the reporting obligation and channels in external-party/partner contracts and user guidance, so reporting is not limited to internal staff.
 

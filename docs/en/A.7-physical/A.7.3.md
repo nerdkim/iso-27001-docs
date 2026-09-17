@@ -27,7 +27,7 @@ The purpose is to design and apply physical security to the individual offices, 
 
 - Set the physical security requirement level for each office, room, and facility from the sensitivity of the information it handles, and document the protective measures and responsibilities per space.
 - Locate critical facilities such as server rooms, communication rooms, and document stores away from lobbies, reception, and shared corridors where outsiders are frequent, and isolate them from general work areas.
-- Minimize or anonymize entries in building signage, floor directories, door signs, and external material so the exact location and purpose of critical facilities are not disclosed.
+- Reduce unnecessary disclosure of critical facility locations and functions in external signage, directories, door labels, and public material. Retain signs needed for fire safety, evacuation, safe work, and emergency response.
 - Fit blinds, film, or partitions to windows and glass walls that expose the interior, and site spaces used for sensitive discussion with soundproofing and screening in mind.
 - Keep offices and facilities locked during out-of-hours and unattended periods, and periodically check keys, access media, and locking status to remediate anomalies.
 - Site critical spaces away from flood-prone basements or top floors, vulnerable positions adjacent to outer walls, and areas near hazardous-material storage, and design them together with fire and water-leak detection and HVAC and power provisions.
@@ -52,7 +52,7 @@ The purpose is to design and apply physical security to the individual offices, 
 ## Nonconformity examples
 
 - The server room sits directly beside the lobby/reception, so outsiders are constantly nearby and it is not separated from general space.
-- Floor directories and door signs label rooms as "data center" or "server room", disclosing their location and purpose externally.
+- External directions disclose excessive detail about critical facility locations and access without reviewing necessity and risk.
 - Work screens and documents can be observed from outside through a large street-facing glass wall, with no screening in place.
 - Document stores and work rooms are left unlocked out of hours and there is no procedure to check locking status.
 - Critical facilities are located in a basement with a history of flooding, with no water-leak or fire detection considered.

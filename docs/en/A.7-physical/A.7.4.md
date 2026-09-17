@@ -51,8 +51,8 @@ The purpose is to keep facilities that hold information and information processi
 
 ## Nonconformity examples
 
-- No cameras cover the server room interior or its doors, so there is no means to detect or trace unauthorized access when it occurs.
-- Cameras are installed but do not record, or the retention period has lapsed, so no footage remains for the time of an incident.
+- The server room and key entry routes lack risk-appropriate monitoring, so unauthorized access cannot be detected or traced.
+- Recording failure, deletion before the defined retention deadline, or failure to preserve required incident evidence leaves needed footage unavailable.
 - An intrusion alarm notifies only a single person, but no response procedure or accountable owner is defined, so the alarm is left unattended.
 - The monitoring record store is located inside the monitored area itself, so an intruder can easily remove the records.
 - Camera fields of view leave many blind spots, omitting key entry routes from coverage.

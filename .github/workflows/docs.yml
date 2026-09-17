@@ -53,6 +53,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Test corpus integrity boundaries
+        run: python3 -B -m unittest discover -s tools -p 'test_*.py'
+
       - name: Corpus integrity (parity, structure, catalog and manifest agreement)
         run: python3 tools/check_corpus.py
 

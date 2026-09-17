@@ -31,7 +31,7 @@ This control requires that entry to protected areas and facilities be restricted
 - Integrate the entry control system (card readers, biometrics, electronic locks, and so on) with monitoring means (CCTV, alarms) to detect and respond to unauthorized entry and tailgating.
 - Retain entry records securely for a defined period and review them periodically to identify abnormal entries (unauthorized attempts, late-night entry, and so on).
 - Separate delivery/loading areas so that outsiders cannot enter internal protected areas, and operate inspection and receipt procedures for incoming goods.
-- Establish procedures for lost/damaged/unreturned access cards or keys (immediate deactivation, controlled reissuance) and periodically verify validity so that no residual rights remain.
+- Define prompt recovery and controlled reissuance for lost, damaged, or unreturned entry media. Disable electronic credentials; for mechanical keys, use risk-appropriate rekeying/lock replacement and interim monitoring to prevent residual access.
 
 ## Related controls and attributes
 
@@ -52,7 +52,7 @@ This control requires that entry to protected areas and facilities be restricted
 
 ## Nonconformity examples
 
-- The same entry control mechanism is applied to sensitive areas (such as computer rooms) and general offices, so no differential control by level exists.
+- Access entitlements and authentication strength do not reflect area sensitivity, allowing ordinary visitors or staff into restricted areas without justification.
 - Visitors are admitted without identity verification or prior approval, or move unaccompanied in sensitive areas without escort/supervision.
 - Entry rights are not revoked after a transfer or resignation, so unnecessary entry rights remain.
 - Entry records are not generated, or are not retained/reviewed, making later tracing and identification of abnormal entry impossible.

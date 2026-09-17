@@ -5,10 +5,10 @@
 Checks
   [1] manifest present and self-consistent (counts match the item list)
   [2] Korean and English mirror each other exactly, keyed by (theme, control number)
-  [3] every control document carries the six required sections, in order
+  [3] every control document carries exactly the six required sections, in order
   [4] the H1 names the control: the number matches the file name, and the title is the catalog's
   [5] every control document ENDS with the source/limitation footer, a '---' rule followed by
-      the '>' block, so the copyright boundary is the last thing in the file
+      the complete notice, so the copyright boundary is the last thing in the file
   [6] every path recorded in the manifest exists on disk, no document on disk is missing from the
       manifest, every control in the catalog has a document in both languages, and every document
       sits at its canonical docs/<lang>/<theme-dir>/<no>.md path
@@ -28,6 +28,7 @@ Checks
       stands on the clause line
  [11] the skill routing table (skill/iso-27001-review/topic-index.json) names only controls that
       exist in the catalog, and every catalog control is reachable from at least one topic
+ [12] Codex instruction and skill entrypoints resolve to the maintained sources
 
 Exit code 0 when the corpus is intact, 1 otherwise.
 
@@ -36,6 +37,7 @@ Usage: python3 tools/check_corpus.py
 import glob
 import json
 import os
+from pathlib import Path
 import re
 import sys
 
@@ -57,6 +59,23 @@ REQUIRED_SECTIONS = {
         "Evidence",
         "Nonconformity examples",
     ],
+}
+
+# Canonical project-authored notices, never ISO normative text.
+SOURCE_FOOTERS = {
+    "ko": (
+        "출처/한계: 통제 번호/명칭/테마 분류는 ISO/IEC 27001:2022 Annex A의 공개된 목록에 근거합니다. 통제 목적/주요 확인사항/이행 "
+        "지침/증적자료/부적합 사례 등 설명 본문과 속성 분류는 본 자료집이 실무 참고용으로 새로 작성한 원저작이며, ISO/IEC 27001:2022 및 "
+        "27002:2022 표준 원문의 규범 텍스트가 아닙니다. 인증 대응 시 정본은 라이선스된 표준 원문으로 확인하십시오."
+    ),
+    "en": (
+        "Source/limitation: Control numbers, titles, and theme classification are based on the "
+        "publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control "
+        "objective, key checkpoints, implementation guidance, evidence, nonconformity examples) "
+        "and the attribute classification are original material written by this collection for "
+        "practical reference; they are not the normative text of the ISO/IEC 27001:2022 or "
+        "27002:2022 standards. For certification, verify against a licensed copy of the standard."
+    ),
 }
 
 problems = []
@@ -83,7 +102,7 @@ def h1_form(no, lang, entry):
 
 def check_document(path, lang, catalog_by_no):
     rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
-    text = open(path, encoding="utf-8").read()
+    text = read(path)
 
     # [4] H1 names the control: the number matches the file name, and the title is the catalog's.
     # Checking only the number let a title typo ship while INDEX.md and extended/manifest.json,
@@ -100,24 +119,19 @@ def check_document(path, lang, catalog_by_no):
         if first != want:
             fail(f"{rel}: H1 is '{first}' but the catalog says '{want}'")
 
-    # [3] the six required sections, in order.
-    found = headings(text)
-    cursor = 0
-    for title in REQUIRED_SECTIONS[lang]:
-        while cursor < len(found) and not found[cursor].startswith(title):
-            cursor += 1
-        if cursor == len(found):
-            fail(f"{rel}: missing or out-of-order section '{title}'")
-            break
-        cursor += 1
+    # [3] Extra or duplicate sections would escape the parser or change which text it indexes.
+    if headings(text) != REQUIRED_SECTIONS[lang]:
+        fail(f"{rel}: expected exactly the six required sections, in order")
 
-    # [5] source/limitation footer, at the END of the document. An unanchored search passed on any
-    # document holding a '---' line followed by a '>' line ANYWHERE, so a footer left stranded in
-    # the middle of a document satisfied the check that carries this repository's copyright
-    # boundary. The last non-empty lines must be the rule and the '>' block, nothing after them.
-    if not re.search(r"(?m)^---[ \t]*\n(?:>[ \t]*\S[^\n]*\n?)+[ \t\n]*\Z", text):
-        fail(f"{rel}: the document does not END with the source/limitation footer. The last lines "
-             "must be a '---' rule followed by the '> ' footer block.")
+    # [5] A blockquote alone is not a source/limitation notice. Compare the complete project
+    # notice, allowing only line wrapping and whitespace differences.
+    footer = re.search(r"(?m)^---[ \t]*\n((?:>[ \t]*\S[^\n]*\n?)+)[ \t\n]*\Z", text)
+    if not footer:
+        fail(f"{rel}: the document does not END with the source/limitation footer")
+    else:
+        notice = " ".join(line.lstrip("> \t") for line in footer.group(1).splitlines())
+        if " ".join(notice.split()) != " ".join(SOURCE_FOOTERS[lang].split()):
+            fail(f"{rel}: source/limitation footer differs from the complete project notice")
 
     # [10] ISO main-body clause citations: uniform form, and one title per clause number.
     check_clause_citations(rel, lang, text)
@@ -164,7 +178,7 @@ MAPPING_ROWS = (
 
 
 def read(path):
-    return open(path, encoding="utf-8").read()
+    return Path(path).read_text(encoding="utf-8")
 
 
 # tools/build_index.py counts numbered items in the checkpoints section and '- ' bullets in every
@@ -462,6 +476,26 @@ def check_topic_index(catalog_nos):
         fail(f"{rel}: {no} is not reachable from any topic, so the skill can never route to it")
 
 
+def check_agent_entrypoints():
+    """[12] Discoverable links must not become missing files or independent copies."""
+    root = Path(ROOT)
+    for entry, target in (
+        ("AGENTS.md", "CLAUDE.md"),
+        (".agents/skills/iso-27001-review", "skill/iso-27001-review"),
+    ):
+        path = root / entry
+        try:
+            valid = (path.is_symlink() and path.resolve(strict=True)
+                     == (root / target).resolve(strict=True))
+        except (OSError, RuntimeError):
+            valid = False
+        if not valid:
+            fail(f"{entry}: must be a working symlink to {target}")
+    for name in ("SKILL.md", "topic-index.json"):
+        if not (root / "skill" / "iso-27001-review" / name).is_file():
+            fail(f"skill/iso-27001-review/{name}: missing skill source")
+
+
 def check_manifest(manifest):
     """[1] the manifest agrees with itself, and [2] the two languages mirror each other in it."""
     items = manifest["items"]
@@ -560,6 +594,7 @@ def main():
 
     # [11] the skill routing table names real controls and reaches every one of them.
     check_topic_index(catalog_nos)
+    check_agent_entrypoints()
 
     # [10] one clause number, one title. Judged here rather than per document, because a title is
     # only inconsistent relative to how the rest of the corpus cites the same clause.

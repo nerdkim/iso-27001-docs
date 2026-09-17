@@ -28,7 +28,7 @@ This control requires the supply chain risks that arise across the acquisition a
 - State supply chain security requirements (component provenance disclosure, authenticity evidence, flow-down obligations to sub-suppliers, vulnerability notification duties) in the ICT acquisition policy and embed them in the procurement process.
 - Identify ICT products/services critical to the organization and their suppliers, map the supply chain tiers (first, second, and beyond) and subcontracting structure, and apply management effort proportionate to risk.
 - Include in contracts/agreements the flow-down of security requirements, provision of component specifications (including an SBOM), notification of security incidents/vulnerabilities, and audit/verification rights.
-- Verify authenticity and integrity by checking hardware for genuineness/tampering (seals, serials, chain-of-custody) and software via digital signatures, hashes, or checksums.
+- Check hardware provenance and tampering through seals, identifiers, and custody records. Verify software using trusted signatures or digests obtained through an authenticated supplier channel; a checksum from an untrusted source does not establish authenticity.
 - Obtain and maintain a software bill of materials (SBOM) and continuously track known vulnerabilities (CVEs), license risks, and end-of-support dates.
 - Reduce single-supplier dependence for critical components by pre-assessing alternative suppliers/products, and keep migration plans ready for discontinuation or end of support (EoS).
 - Formalize pre-adoption security verification (acceptance testing, known-vulnerability checks) and in-operation monitoring (reflecting patches, version changes, and vulnerability advisories).

@@ -7,7 +7,7 @@
 #       fullwidth hyphen U+FF0D.
 #   [2] a Korean transliteration / translation of an IT term inside an ENGLISH doc
 #       (docs/16 s3.1). Korean-language docs use natural Korean, so [2] is skipped for
-#       `*.ko.md` and the Korean governance docs (agent-conduct.md, korean-honorifics.md);
+#       `*.ko.md`, `docs/ko/*.md`, and the Korean governance docs (agent-conduct.md, korean-honorifics.md);
 #       it only keeps a Korean term from slipping into English-designated text.
 #   [3] prose arrows must be the arrow char (docs/16 s2.1): use U+2192, not the
 #       ASCII "->". Code fences / mermaid / shell keep ASCII (excluded here).
@@ -47,19 +47,14 @@ fi
 # prose (e.g. a reproduced official standard/document collection), never to hide the
 # project's own docs from the rules. Adopt such an exclusion only as a confirmed
 # exception (docs/16 6).
-# NOTE for this repo: its harness/conventions-exclude does not match that description, and says so
-# in its own header. docs/ko/ IS the project's own prose. It is listed because the [2] exemption for
-# Korean-language documents is keyed on the "*.ko.md" file name, which this corpus's
-# docs/<lang>/<theme>/<no>.md layout cannot produce. That is a workaround for a naming mismatch, not
-# an external-corpus exception, and it is recorded rather than hidden so the real fix (a path-based
-# [2] exemption upstream in the playbook) stays visible.
+# This corpus's docs/ko/*.md paths receive the same terminology-only exemption as *.ko.md
+# below. No conventions-exclude file is needed for the project's own Korean prose.
 # Two exclusion layers, on purpose (this mirrors playbook v0.2.0's UFILES/FILES split):
 #   BUILTIN_EXCLUDE_RE applies to EVERY check.
 #   USER_EXCLUDE_RE, from harness/conventions-exclude, applies ONLY to the language checks [2][3][4][5].
 # Forbidden unicode [1] is a language-neutral rule (docs/16 s4.2), so no per-repo exception may waive
-# it. Applying the per-repo layer to [1] as well was a fail-open: this repo excludes docs/ko/ for the
-# term check, which silently took 186 of 188 corpus documents out of [1] too, and a middle dot
-# (U+00B7) survived in docs/ko/ while the checker reported PASS. So [1] scans ALLFILES.
+# it. Applying the per-repo layer to [1] previously hid corpus files from punctuation checks.
+# Check [1] therefore scans ALLFILES independently of language exclusions.
 # A narrow pathspec was the other half of the same fail-open: [1] used to see only *.md, three named
 # scripts and the workflows, so the generated JSON and CSV under extended/, the skill routing table,
 # the extensionless git hooks and the Python tools (whose Korean strings reach extended/manifest.json)
@@ -128,7 +123,7 @@ for f in "${TFILES[@]}"; do
   # (agent-conduct.md, korean-honorifics.md). Skip [2] for them. On the remaining
   # (English-designated) docs, [2] only keeps a Korean transliteration from slipping in.
   # [4] Korean-paren and [5] prefix-glue still apply to Korean docs; [1]/[3] apply to all.
-  case "$f" in *.ko.md|*agent-conduct.md|*korean-honorifics.md) continue;; esac
+  case "$f" in docs/ko/*.md|*.ko.md|*agent-conduct.md|*korean-honorifics.md) continue;; esac
   h=$(strip "$f" | grep -noP "($TPAT)" | sed "s#^#${f}:#"); [ -n "$h" ] && th+="$h"$'\n'
 done
 th=$(printf '%s' "$th" | sed '/^$/d')

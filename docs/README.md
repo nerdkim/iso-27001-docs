@@ -40,7 +40,7 @@ and an agent answering questions with the corpus must never create, edit, or del
 `docs/`. Derived output belongs in the consuming workspace.
 
 Maintainers do edit these files. That is a different activity, with its own rules: see
-[../CLAUDE.md](../CLAUDE.md) and the parity rule below.
+[../AGENTS.md](../AGENTS.md) and the parity rule below.
 
 ## Layout
 

@@ -16,20 +16,20 @@ This control requires that information no longer needed be reliably erased from 
 
 ## Key checkpoints
 
-1. Are retention periods and deletion timing defined per information type, with a procedure to identify and delete data that has passed its retention period?
-2. Are deletion methods (secure deletion, overwriting, cryptographic erasure, physical destruction) defined to suit the media/system characteristics (magnetic disk, SSD, cloud storage, backups, logs, and so on)?
-3. After deletion is requested/executed, is it verified and recorded that the data has actually been rendered unrecoverable?
+1. Are retention/deletion timing and legal preservation exceptions defined by information type, with a procedure to identify and delete information once its retention basis ends?
+2. Are individual-record deletion and whole-media sanitization distinguished, with methods appropriate to system/media/cloud capabilities and responsibilities?
+3. Are deletion execution and method suitability verified, with verifiable scope, residual copies, and validation limits recorded?
 4. In outsourced/cloud environments, is deletion of the data held or processed by the processor upon contract termination or purpose fulfillment reflected in contracts/procedures, and is fulfillment of that obligation verified?
 5. Does the deletion scope cover all copies of the same information, including backups, snapshots, archives, and derived copies?
 
 ## Implementation guidance
 
-- Define retention periods and deletion criteria per information type in policy, and operate a procedure that periodically identifies and deletes data past its retention period.
-- Standardize deletion methods to suit media and system characteristics: overwriting/secure deletion based on a recognized standard for reusable media, cryptographic erasure or vendor secure-erase for SSD/flash, and physical destruction for media being discarded.
-- Where cryptographic erasure (crypto-shredding) is used, link it to key management so the target data is stored only in strongly encrypted form and the key is securely destroyed.
-- Confirm complete deletion after execution through recovery attempts/sample verification or deletion logs/certificates, and retain the results.
+- Define retention bases and deletion triggers by information type and process expired information periodically. For exceptions such as legal holds, record scope, basis, owner, and review timing, and restrict unrelated use.
+- Delete individual data through application/service functions and copy-management procedures; sanitize whole media for reuse/disposal under A.7.14. Do not universally apply ordinary overwrites to SSDs or assume customers can overwrite shared cloud hardware. Verify provider capabilities and contractual responsibilities.
+- Use cryptographic erase after verifying encryption coverage throughout the target data's history and removal of relevant key copies. Identify recovery/escrow/backup keys and separate plaintext or differently encrypted copies; deleting one key does not establish erasure of every copy.
+- Verify execution through deletion logs, service state, provider evidence, and feasible sample checks. Verifiability differs across media and services; record and track limitations and outstanding items instead of treating a log or certificate as proof of absolute irrecoverability.
 - State in cloud/outsourcing contracts the obligation to return or delete data upon termination and to submit proof of deletion, and check that it is met.
-- Map in advance every location where the same information may exist, such as backups, snapshots, replicas, logs, and temporary files, to prevent deletion gaps.
+- Map backups, snapshots, replicas, logs, and temporary files. Where immediate selective deletion is impractical, set retention/expiry deadlines and use restrictions consistent with applicable obligations, with an assigned owner. Reapply deletions during recovery to prevent reintroduction into use, and verify expiry processing.
 
 ## Related controls and attributes
 
@@ -50,10 +50,10 @@ This control requires that information no longer needed be reliably erased from 
 ## Nonconformity examples
 
 - Data past its retention period is left in operational systems for a long time with no deletion criteria in place.
-- Only a simple file delete is performed on SSD/cloud storage, without making the data unrecoverable (overwriting/cryptographic erasure).
-- Operational data is deleted, but the same information remains in backups/snapshots/logs and is omitted from the deletion scope.
+- Deletion is marked complete after a simple file delete without checking SSD/cloud deletion capabilities or residual copies against the required outcome.
+- Backups/snapshots/logs remaining after active-data deletion lack a retention basis, use restrictions, expiry, or re-deletion controls during recovery.
 - After a cloud/outsourcing contract ends, deletion of the data held by the processor is neither confirmed nor supported by any proof.
-- Deletion is claimed but cannot be confirmed as complete because there is no verifying evidence such as deletion logs or certificates.
+- Deletion is reported complete without evidence sufficient to verify the processing outcome, scope, and limitations.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

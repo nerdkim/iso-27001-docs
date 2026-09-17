@@ -12,7 +12,7 @@
 
 ## Control objective
 
-Anything written into the code an organization ships eventually runs on the organization's behalf wherever that software is deployed, and code that leaks lets an attacker read its weaknesses straight off the page. This control therefore settles, on the basis of business need, who may view the organization's program code together with the build tooling and shared libraries that go into it, and who may change it. It aims to prevent insertion of unauthorized functionality, malicious changes, and accidental modification, and to preserve the confidentiality of source code as intellectual property. It requires controlling who can access source code and to what extent across development, build, and deployment, while keeping change history traceable.
+This control manages read and change access to source code, build tools, libraries, and pipelines according to business need. It focuses on preventing unauthorized functionality, malicious changes, and accidental modification while preserving traceability. Restrict disclosure of confidential source and govern intentional open source publication through an approved policy. Protect write access and secrets regardless of publication status, and deploy necessary source securely where the runtime requires it.
 
 ## Key checkpoints
 
@@ -26,8 +26,8 @@ Anything written into the code an organization ships eventually runs on the orga
 ## Implementation guidance
 
 - Manage source code centrally in an authorized configuration/version control system, and separate read/write permissions by role at the repository/branch level.
-- Apply individually identifiable accounts and strong authentication (for example, SSO/multi-factor) to repository access, and log all access/commit/merge/permission-change events to ensure traceability.
-- Deploy only the artifacts needed to run in operational/deployment environments and do not leave original source code there; minimize access to build tools, libraries, and pipeline credentials such as tokens/keys.
+- Use individually identifiable accounts and risk-appropriate repository authentication. Even with SSO, verify MFA and authentication policy for high-risk access, and collect records that make access, commits, merges, and permission changes traceable.
+- Deploy only required runtime artifacts and remove unnecessary repository metadata, development material, and secrets. Retain source needed by interpreted or other runtimes while restricting external access to non-public files and unauthorized changes; minimize access to build tools and pipeline credentials.
 - Control changes with code review and merge approval and with protected-branch policies (such as no force-push), blocking unapproved direct changes.
 - Apply secret scanning and pre-commit checks to prevent hardcoded credentials/keys from entering the source code.
 - Limit external personnel to only the repositories they need, revoke access immediately when the access period ends or the contract expires, and review the permission list periodically.
@@ -52,7 +52,7 @@ Anything written into the code an organization ships eventually runs on the orga
 
 - Least privilege is not applied, for example all developers hold admin/write access to the source code repository.
 - A shared account is used to access the repository, so the author of a change cannot be traced.
-- Original source code is left on operational servers, creating a risk of unauthorized viewing/modification.
+- Unnecessary source/repository material or non-public runtime files lack access controls on production servers, permitting unauthorized viewing or changes.
 - Direct changes to a protected branch (such as force-push) are possible without code review/merge approval.
 - Repository access rights of leavers or role-changed staff are not revoked and remain active.
 - Credentials/keys are committed into the source code in hardcoded form, and no check detects them.

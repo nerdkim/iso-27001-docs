@@ -17,20 +17,20 @@ The purpose is to protect assets that are used or stored outside the organizatio
 ## Key checkpoints
 
 1. Is there a procedure to pre-authorize and register the removal of assets off-site, recording the holder, asset, removal period, and purpose?
-2. Are protective measures such as disk encryption, strong authentication, automatic screen lock, and remote lock/wipe applied to laptops and mobile devices used off-premises?
+2. Do off-premises laptops/mobiles have required encryption, strong authentication, and automatic locking, with remote lock/wipe prepared according to support and authorized scope?
 3. Are physical protection guidelines in place so that assets are not left unattended in transit, public places, public transport, vehicles, or accommodation?
 4. Are asset-handling responsibilities and security obligations defined and communicated to teleworkers and remote or field staff?
-5. For equipment sent off-site for repair, outsourcing, lease, or disposal, are data-handling (prior deletion/encryption) and return procedures defined?
+5. Are repair/outsourcing/lease distinguished from disposal when defining data protection, media removal or sanitization, and return verification?
 6. Is there a reporting and response procedure (remote lock/wipe, credential revocation, and the like) for loss or theft of off-premises assets?
 
 ## Implementation guidance
 
 - Define in policy which assets may be taken off-site and under what conditions (approver, permitted period, scope of use), and manage removal and return history in a register or log.
-- Apply disk/file encryption, strong authentication, automatic screen lock, and remote location/lock/wipe (MDM/EMM) to devices and media used off-premises.
+- Apply encryption, strong authentication, and automatic locking to off-premises devices and media. Use remote location/lock/wipe according to legal authority, device support, and connectivity; sending a command does not establish completion.
 - Prohibit leaving assets unattended in public places, public transport, vehicles, or accommodation, and recommend privacy filters against shoulder surfing and physical locking devices.
 - Handle and transport equipment in line with manufacturer guidance (temperature, humidity, shock, electromagnetic exposure) and protect it against damage in transit.
 - Train teleworkers and remote or field staff on precautions (avoiding untrusted networks, secure storage, blocking access by family or third parties) and assign clear handling responsibility.
-- Before sending equipment off-site for repair, outsourcing, or disposal, delete or encrypt sensitive data in advance, and include security requirements and return/destruction confirmation in the contract.
+- Before external repair/outsourcing, make necessary backups and protect information through media removal, deletion, or suitable encryption and access restrictions. For disposal/reuse, follow validated sanitization under A.7.14; enabled encryption alone does not establish deletion. Include protection duties and return/processing evidence in contracts.
 - Where appropriate, set insurance or liability limits and predefine reporting channels and remote response procedures for loss or theft.
 
 ## Related controls and attributes
@@ -52,9 +52,9 @@ The purpose is to protect assets that are used or stored outside the organizatio
 ## Nonconformity examples
 
 - Laptops or mobile devices are taken off-site without authorization or registration, so no removal history can be confirmed.
-- Devices used off-premises lack disk encryption or remote lock/wipe, leaving information exposed if lost or stolen.
+- Off-premises devices lack required encryption, authentication, locking, and loss-response arrangements, exposing information on loss.
 - No asset-handling guidance or accountability exists for teleworkers, so the level of protection relies on individual judgment.
-- Equipment is sent off-site for repair without prior deletion or encryption of the data on its storage media.
+- Equipment with sensitive data is sent for repair without media removal, deletion, or suitable encryption and access restrictions.
 - No reporting or response procedure exists for loss or theft of off-premises assets, so remediation is delayed.
 - Return of removed assets is not tracked, so unreturned assets are left unaccounted for.
 

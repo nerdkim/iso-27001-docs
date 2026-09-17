@@ -25,13 +25,13 @@ This control requires the organization to identify the privacy protection requir
 
 ## Implementation guidance
 
-- Identify the items, processing purposes, retention periods, processing locations, and third-party provision/outsourcing status of the PII the organization collects and processes, document this as a processing inventory (flow map/record of processing), and keep it current.
+- Maintain an inventory of personal data, purposes, lawful processing bases, retention, locations, and sharing/processor relationships. Apply consent requirements where consent is the chosen valid basis, and distinguish it from other lawful bases.
 - Determine the applicable privacy laws, regulations, and contractual requirements (including domestic and foreign jurisdictions) in conjunction with the compliance requirements register in A.5.31, and separately manage the requirements that apply to cross-border transfers of PII.
 - Establish a policy/guideline on privacy and PII protection that defines processing principles, roles and responsibilities, procedures for upholding data subject rights, and safeguard standards, and communicate it to employees, processors, and external parties involved in PII processing.
 - Appoint an accountable owner for PII protection and a point of contact (privacy officer/responsible function), and operate a procedure to receive and handle inquiries, rights requests, and breach reports.
-- Design and apply technical and organizational safeguards for each stage of the PII lifecycle, such as data minimization, least-privilege access, encryption/pseudonymization/masking, access logging, and disposal once the retention period expires.
+- Apply safeguards across the personal-data lifecycle, including minimization, least privilege, appropriate encryption/pseudonymization/masking, and access logging. Before deletion at retention expiry, check preservation obligations and applicable exceptions; restrict retained information from unrelated use.
 - Conduct a privacy (impact) assessment when introducing new services/systems or when processing PII at scale, to identify and mitigate risks, and keep the processing policy and related notices up to date.
-- Establish and operate procedures for handling data subject rights requests (access, correction, deletion, suspension of processing, withdrawal of consent) and for notification/reporting in the event of a personal data breach.
+- Receive access, correction, erasure, restriction, and consent-withdrawal requests, and verify the requester proportionately to risk. Apply the relevant deadlines, conditions, and exceptions, recording the decision basis. Handle breach notifications under their separate deadlines and recipient requirements.
 
 ## Related controls and attributes
 
@@ -56,7 +56,7 @@ This control requires the organization to identify the privacy protection requir
 - No policy or guideline on privacy/PII protection exists, or where one exists it is not communicated to the personnel/processors who actually handle PII.
 - No privacy officer or point of contact is appointed, so responsibility for responding to data subject inquiries and rights requests is unclear.
 - The applicable privacy laws or cross-border transfer requirements are not identified, so legal requirements are not met.
-- PII whose retention period has expired is not disposed of but retained, or it is used/provided beyond the notified purpose.
+- Personal data is retained after expiry without a valid retention basis, or used/shared without a lawful purpose or basis.
 - No procedure exists to receive and handle data subject rights requests such as access and deletion, so requests cannot be answered.
 - No privacy risk assessment is performed for large-scale PII processing or the introduction of new systems.
 

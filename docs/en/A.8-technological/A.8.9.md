@@ -26,9 +26,9 @@ This control requires the organization to define and document the configurations
 ## Implementation guidance
 
 - Establish configuration baselines/templates per asset type that reflect hardening requirements, and document the rationale (vendor guidance, industry benchmarks, internal policy).
-- Standardize common hardening items such as changing default accounts/passwords, disabling unnecessary services/ports/functions, and enabling logging and time synchronization.
+- Standardize replacement of default passwords/secrets, disabling unnecessary default accounts, minimizing services/ports/functions, and enabling logging and time synchronization. Renaming accounts does not substitute for credential protection.
 - Use golden images, infrastructure as code (IaC), and configuration management tools to apply baselines automatically, reducing manual errors and drift.
-- Compare live configurations against baselines on a regular/continuous basis to detect drift, and either roll back unauthorized changes or formalize them through change management.
+- When drift is detected, investigate its cause and operational impact and preserve necessary evidence. Route suspected compromise to incident response, then determine safe restoration or formal change approval. Do not accept detected drift as a new baseline without review.
 - Keep configuration items (CIs), versions, dependencies, and owners current in a CMDB/configuration repository, integrated with change and asset management.
 - Avoid hardcoding credentials/keys in configuration files; protect them with secret management (vault), access control, and encryption.
 - Periodically re-review and revise baselines to reflect the evolving threat landscape and new vulnerability information, and keep a revision history.
@@ -52,7 +52,7 @@ This control requires the organization to define and document the configurations
 ## Nonconformity examples
 
 - No secure configuration baseline is defined, so settings differ from server to server and whether hardening was applied cannot be confirmed.
-- Systems are found running with default administrator accounts/passwords still unchanged.
+- Default administrator passwords remain in use or access through unnecessary default accounts is unrestricted.
 - With no procedure to check for configuration drift, unauthorized setting changes go unaddressed for a long time.
 - The CMDB is not kept current, so the actual configuration does not match the documented configuration.
 - Database passwords/API keys are hardcoded in plaintext in configuration files and exposed in the repository.

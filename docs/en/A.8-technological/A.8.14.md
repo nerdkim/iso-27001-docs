@@ -26,10 +26,10 @@ This control requires that information processing facilities (servers, storage, 
 ## Implementation guidance
 
 - Assign an availability tier to each service based on business impact analysis, and design the redundancy level (component, site, data center) to match the tier.
-- Remove SPOFs layer by layer: servers (cluster/HA), storage (RAID/replication), network (redundant paths and devices), power (UPS/generator/dual feed), and links (diverse carriers/redundant routes).
-- Choose synchronous or asynchronous data replication to meet the RPO requirement, and design so data consistency is preserved after switchover.
+- Assess single points of failure across servers, storage, networks, power, and links. Choose fault-tolerant RAID levels or replication for storage needs; account for the fact that RAID 0 provides no redundancy.
+- Select synchronous/asynchronous replication for RPO and consistency needs and verify data state after switchover. Replication can propagate deletion, corruption, or malicious changes, so provide independent backups and point-in-time recovery under A.8.13.
 - Document automatic failover triggers/thresholds, the manual switchover procedure, and the failback procedure, and clarify responsible roles.
-- Run periodic failure-injection/switchover tests, measuring switchover time, data loss, and performance degradation, and improve based on the results.
+- Run failure-injection/switchover tests with approved scope, operational impact assessment, stop criteria, and recovery procedures. Measure switchover time, data loss, and performance, recording untested scope and improvements.
 - Combine geographically distributed redundancy (for wide-area disasters) with local redundancy according to risk and cost, and include physical infrastructure (power/cooling/links) in the review.
 - Monitor health checks, replication lag, and switchover events of redundant components, and periodically check configuration/firmware version consistency.
 

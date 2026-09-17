@@ -17,7 +17,7 @@ This control ensures that the organization uses intellectual property (copyright
 ## Key checkpoints
 
 1. Are procedures and responsibilities defined for identifying and managing assets subject to intellectual property rights (software, copyrighted works, data) and their license terms?
-2. For the software in use, is there a periodic check that the number of licenses held matches the number of copies actually installed and used?
+2. Is actual software installation/use periodically reconciled against the applicable license metrics and terms for users, devices, cores, subscriptions, or other entitlements?
 3. Are preventive controls in place (restricting install privileges, awareness) to stop employees and external parties from installing unauthorized/illegal software or copying works without permission?
 4. Are proof of license (purchase/contract/certificate) and proof of ownership retained, and are license expiry, renewal, and reclamation managed?
 5. Are the usage terms of open source, third-party materials, and materials obtained from public networks reviewed and complied with?
@@ -26,9 +26,9 @@ This control ensures that the organization uses intellectual property (copyright
 ## Implementation guidance
 
 - Establish an intellectual property rights management policy that states the scope (commercial software, open source, copyrighted works such as fonts/images/documents, datasets, patents/trademarks, in-house deliverables) and the compliance principles.
-- Operate a software asset management (SAM) capability that records licenses held, installation status, and usage in a register, and periodically reconcile (comparing installed counts against licensed counts).
+- Record entitlements, installations, and actual use in the software asset register. Reconcile use against the license metric and conditions, such as users, devices, cores, concurrent use, or subscription rights.
 - Control software installation privileges on workstations/servers, and use asset scanning/inventory tools to detect and remove unauthorized or illegal software.
-- When using open source, review the license type (GPL, MIT, Apache, and so on) and its obligations (attribution, source disclosure, usage restrictions), and where needed use an SBOM and an open source review process to check for license conflicts in distributed deliverables.
+- Review the applicable open source license and version, and obligations arising from modification, distribution, or service delivery. Check relevant notices, attribution, and source-provision conditions without assuming identical obligations for all open source. Use an SBOM and review process where needed to verify deliverables.
 - Securely retain license agreements, purchase records, certificates, and proof of ownership, and track expiry/renewal/reassignment (including reclaiming licenses on termination and role change).
 - Communicate the prohibition of unauthorized copying and illegal installation, and the consequences of violation, through awareness training, security undertakings, and contract clauses, and secure ownership of the organization's own intellectual property and confidentiality obligations by contract.
 
@@ -50,7 +50,7 @@ This control ensures that the organization uses intellectual property (copyright
 
 ## Nonconformity examples
 
-- There is no software license register, or the number of copies actually installed exceeds the number of licenses held.
+- Records cannot establish license entitlements and use, or use exceeds the applicable contractual limits for users, devices, cores, or other metrics.
 - There is no control over install privileges on workstations, so employees can freely install illegal or unauthorized software.
 - Software continues to be used after license expiry without renewal, or licenses assigned to leavers are not reclaimed or reassigned.
 - Open source is adopted/distributed without reviewing its license terms (attribution, source disclosure, and so on), breaching the obligations.

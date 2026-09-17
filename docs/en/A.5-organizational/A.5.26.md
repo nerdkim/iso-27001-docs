@@ -12,7 +12,7 @@
 
 ## Control objective
 
-This control ensures that matters classified as information security incidents are responded to, contained, and recovered from promptly, following procedures and assigned responsibilities defined in advance. Damage and recurrence are minimized when designated personnel consistently carry out the stages that follow detection: initial assessment, containment, eradication, recovery, closure decision, and external notification. The aim is to preserve evidence during response, communicate with stakeholders in a timely manner, and record the handling results as a basis for later improvement.
+This control covers assessment, containment, eradication, recovery, and closure of information security incidents through predefined roles and procedures. Evidence preservation and stakeholder notification/reporting run alongside response; external reporting must not wait for recovery or incident closure. Record the handling process and results to reduce harm and recurrence and support later improvement.
 
 ## Key checkpoints
 
@@ -28,7 +28,7 @@ This control ensures that matters classified as information security incidents a
 - On initial response, determine the scope of impact and prioritize containment actions (account lockout, session termination, network isolation) to stop the spread.
 - Eradicate the root cause and remediate the vulnerability, then restore services/systems to a normal state and verify correct operation and absence of reinfection after recovery.
 - Collect evidence such as logs, images, and memory dumps in a manner that preserves the integrity of the original, and record custody/transfer history (chain of custody).
-- For reportable incidents such as personal data breaches, confirm statutory deadlines and notification recipients and complete notification/reporting without omission.
+- Assess legal/contractual reporting triggers, starting points, and recipients early, and report within deadlines alongside response. Where investigation is incomplete, use the applicable initial-report and follow-up update procedure.
 - Keep a chronological incident log of the whole response, and on closure produce a handling report that feeds into learning from incidents (A.5.27).
 
 ## Related controls and attributes

@@ -12,26 +12,26 @@
 
 ## Control objective
 
-This control requires the organization to carefully select, protect, and manage the information used for testing and development, so that production data (especially personal or sensitive data) is not copied indiscriminately into lower-assurance test environments where it could be exposed, and so that its integrity is not damaged during testing. Test information should be used only to the extent needed for the test purpose, and where production data must be used, its identifiability should be removed through masking/pseudonymization before applying access controls equivalent to those in production. This minimizes the leakage and misuse risk that arises from using real data for the sake of testing convenience, while also preserving the reliability of test results.
+This control selects and protects development/test information and manages its retention and deletion. Prefer synthetic or appropriately transformed data; where real production information is essential, verify a lawful basis, minimum scope, approval, and adequate safeguards. Masking or pseudonymization does not automatically guarantee anonymity, so assess re-identification and source-data disclosure risks. The aim is to protect information according to sensitivity while preserving reliable test results.
 
 ## Key checkpoints
 
 1. Is there a policy/procedure for selecting, using, protecting, and disposing of test data, and is it shared with development/test teams?
 2. Is the use of production data for testing restricted in principle, with approval by the responsible owner obtained where it is unavoidable?
-3. When production data is used for testing, is the identifiability of personal and sensitive data removed through masking/pseudonymization/transformation?
-4. Are access controls and storage/transmission protection equivalent to the production environment applied to test data?
+3. When production data is used, is identifiability reduced as needed and re-identification risk assessed, with any exception to transformation managed through a lawful basis and separate approval/safeguards?
+4. Are access and storage/transport safeguards appropriate to actual test-data sensitivity, with production-equivalent protection for sensitive production copies?
 5. Are the copying/transfer of production data into test environments and its use there logged and traceable?
-6. After testing completes, is test data (especially copies of production data) promptly and securely deleted/disposed of according to the defined procedure?
+6. Is unneeded data securely deleted after testing, with a defined basis, deadline, and access restrictions for records that must be retained?
 
 ## Implementation guidance
 
 - Document the criteria and responsibilities for selecting, generating, using, protecting, and disposing of test data as a policy/procedure, and train/share it with development and test staff.
-- Prioritize the use of synthetic or fabricated test data over real production data, so that personal/sensitive data is fundamentally prevented from entering test environments.
-- Where production data must be used, obtain prior approval from the responsible owner (and the data protection officer where relevant), and clearly limit the scope and duration of use.
-- Before using production data for testing, remove the identifiability of personal and unique identifying information through masking/pseudonymization/tokenization/partial deletion.
-- Apply access controls, account management, encryption (at rest and in transit), and logging to test data at a level equivalent to production, and raise the overall security level of the test environment accordingly.
+- Prefer synthetic/fabricated data but check whether generation reproduces source personal information or rare records. The synthetic label alone does not justify public disclosure or unrestricted use.
+- Verify the necessity and lawful basis for production data and obtain prior owner approval and privacy-function approval where needed. Where transformation is unsuitable, document a separate exception limiting scope, duration, users, and compensating controls.
+- Reduce unnecessary identifiers through masking, pseudonymization, tokenization, or field removal and assess linkage with other data. Pseudonymized data can remain identifiable using additional information, so separate keys/mappings and maintain required privacy safeguards.
+- Apply privileges, account management, necessary encryption, and logging according to test-data sensitivity and risk. Give sensitive production copies protection equivalent to production, without lowering safeguards for test convenience.
 - Manage the copying/transfer of production data into test environments so that the approval, timing, target, handler, and method are recorded and traceable.
-- When testing ends, promptly remove copies of production data and residual test data in a secure manner (unrecoverable deletion/disposal) and record the result.
+- After testing, delete unneeded production copies and residual data under A.8.10 and record outcomes. Where legal preservation or justified validation records are needed, define minimum scope, retention deadlines, and use restrictions, including backup expiry/recovery procedures.
 
 ## Related controls and attributes
 
@@ -44,18 +44,18 @@ This control requires the organization to carefully select, protect, and manage 
 
 - Test data management policy/procedure and test data selection/use criteria
 - Approval requests/records for the use of production data in testing (owner/data protection officer approval)
-- Masking/pseudonymization/transformation processing records and before/after samples or verification records
+- Masking/pseudonymization/transformation and re-identification-risk verification records, with minimized and restricted access to sensitive before/after samples
 - Test environment access privilege lists and access/usage logs
 - Records of copying/transferring production data into test environments (timing/target/handler)
 - Confirmation of deletion/disposal of test data after testing and disposal history
 
 ## Nonconformity examples
 
-- A production database is copied into the test environment without masking/pseudonymization and used for development/testing.
+- A production database is copied unchanged for testing without the required lawful basis, exception approval, and safeguards.
 - Staff take out and use production data at their own discretion without any approval process for test data use.
 - The access control/encryption level of the test environment is markedly lower than production, leaving personal data exposed to risk.
-- Masking is applied but is insufficient (only some fields processed, reversible), so individuals can still be identified.
-- After testing ends, copies of production data remain on test servers, developer PCs, or shared storage.
+- Masked/pseudonymized data remains re-identifiable but is treated as anonymous and used without needed access restrictions.
+- Unneeded production copies remain on test servers, developer PCs, or shared storage after testing without a valid retention basis or deletion plan.
 - The use/copying of production data for testing is not logged, so there is no way to trace which data was used where.
 
 ---

@@ -18,7 +18,7 @@ This control requires the organization to separate development, test, and produc
 
 1. Are development/test/production environments separated physically or logically (network/system/account)?
 2. Are procedures for promoting software and changes between environments (approval, linkage with change management, integrity verification, rollback) defined and enforced?
-3. Is the use of production data in development/test environments controlled, with masking/pseudonymization and separate approval where unavoidable?
+3. Is development/test data sensitivity reduced, with essential use of real production data controlled through a lawful basis, separate approval, and safeguards?
 4. Are access privileges separated per environment, and is developers' direct access to production minimized/controlled?
 5. Are unnecessary development elements (compilers, development tools, source code) removed from production so that it is kept to a minimal configuration?
 6. Is environment separation, including separation of accounts and secrets, applied in cloud/container/IaC/CI-CD automated deployment environments as well?
@@ -28,10 +28,10 @@ This control requires the organization to separate development, test, and produc
 - Separate development/test/production environments physically, or logically through distinct network segments/VPCs/subscriptions/projects/namespaces and accounts.
 - Link promotion from lower environments to production with change management for approval and recording, and provide integrity verification of deployment artifacts (signing, artifact verification) and rollback procedures.
 - Block developers' direct access to production by default, and where needed grant least-privilege/time-bound access controlled and logged through privileged access management (PAM).
-- As a rule do not use production data for testing; where unavoidable, use it in a limited way after masking/pseudonymization and owner approval.
+- Prefer synthetic/transformed test data and assess re-identification risk. For necessary real-production-data exceptions, verify need, lawful basis, owner approval, minimum scope/duration, and adequate safeguards under A.8.33.
 - Apply login banners/screen colors/host naming conventions so that environments are clearly identifiable, preventing mistaken operations between production and test.
 - Remove unnecessary elements such as compilers, debugging tools, development accounts, and source code from production to minimize the attack surface.
-- In cloud/IaC/CI-CD pipelines, separate accounts, networks, secrets/credentials, and pipeline permissions per environment to prevent cross-environment access.
+- Separate privileges, network boundaries, secrets, and deployment authority across environments in cloud/IaC/CI-CD, and test enforcement. Even on shared platforms, prevent unauthorized production access by development identities and permit only approved deployment paths.
 
 ## Related controls and attributes
 
@@ -47,16 +47,16 @@ This control requires the organization to separate development, test, and produc
 - Cross-environment promotion/deployment approval records (linked to change management) and rollback procedure documents
 - Test data masking/pseudonymization records and usage approval records
 - Cloud/IaC environment separation configuration evidence (account/VPC/namespace/secret separation)
-- Production minimal-configuration review results (confirmation that compilers/development tools/source code are removed)
+- Reviews of removal of unnecessary development elements and access protection for required runtime components
 
 ## Nonconformity examples
 
 - Development/test/production run on the same server or same network segment without separation.
-- Developers hold standing access privileges to production databases/servers.
-- Production data is copied into test environments and used without masking/pseudonymization.
+- Standing developer access to production lacks business justification, least privilege, approval, and activity review, leaving unauthorized-change risk uncontrolled.
+- Production data is copied into test without transformation or the lawful basis and safeguards required for an approved exception.
 - Developers apply source code or configuration directly to production (hotfix) without change management approval.
-- Compilers/debugging tools/source code remain in production, expanding the attack surface.
-- In the cloud, development and production share the same account/VPC or use common secrets/credentials.
+- Unnecessary development tools/source/repository material remains in production, or required runtime files lack access protection.
+- Insufficient privilege/network isolation or shared credentials in a cloud environment permit unauthorized access from development to production.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

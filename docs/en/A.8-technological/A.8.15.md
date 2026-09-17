@@ -26,10 +26,10 @@ Logging requires that events arising from information systems, applications, net
 ## Implementation guidance
 
 - Select the systems, event types, and level of detail in scope for logging based on asset criticality and risk assessment results, and document them in a logging policy/standard.
-- Include in each log at least the event timestamp (based on a synchronized time source), the user/process identifier, the event type, the target of access, the success/failure result, and the source address.
+- Record the time, actor, type, target, and result needed to reconstruct events, with a source address where available. Do not invent fields unavailable for an event or platform; make time zones and field meanings explicit.
 - Forward logs to a remote central store (log server/SIEM) so that original records survive even if an individual system is compromised, and encrypt the transmission path.
-- Minimize read/write permissions on logs and either block deletion/modification or make integrity verifiable through append-only storage, hashing, or digital signatures.
-- Apply masking/filtering so that personal data or authentication data (passwords, tokens, resident registration numbers, and so on) are not left in logs in plaintext.
+- Minimize log read/write privileges and protect records through modification/deletion restrictions, separate storage, or append-only storage. When using hashes/signatures for integrity checks, protect reference digests and verification keys against alteration alongside the logs.
+- Exclude authentication secrets such as passwords, reusable tokens, and secret API keys from logs. Record only necessary personal data, with masking/filtering and access control. Encryption of the log store does not justify unnecessary recording of secrets.
 - Define log rotation, retention, archiving, and disposal rules, and continuously monitor storage capacity and collection status.
 - Keep privileged/administrator activity logs separate from ordinary user logs, and separate the log-management role from the system-operations role so that mutual oversight is possible.
 
@@ -55,7 +55,7 @@ Logging requires that events arising from information systems, applications, net
 - Clocks are not synchronized across systems, making log correlation and time-based tracing impossible during an incident.
 - Administrators can arbitrarily delete/modify logs on individual servers, so log integrity is not assured.
 - The log retention period falls short of a legal requirement (for example, a mandatory access-record retention period) or logs are deleted prematurely.
-- Sensitive information such as passwords or resident registration numbers is recorded in logs in plaintext.
+- Reusable authentication secrets or unnecessary sensitive personal data are logged, creating disclosure risk.
 - A collection failure or storage exhaustion goes undetected, leaving logs missing for a considerable period without anyone noticing.
 
 ---

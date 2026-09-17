@@ -28,7 +28,7 @@ The purpose is to place equipment that stores, processes, or transmits informati
 - Classify siting tiers by equipment importance and the sensitivity of the information handled, and place critical items in access-controlled dedicated areas or locked racks and cabinets.
 - Choose locations that lower environmental threats such as water, dust, vibration, rapid temperature and humidity change, power surge, and electromagnetic interference, and apply shielding, dust and water protection, and threshold monitoring where needed.
 - Position screens that display sensitive information away from lines of sight toward doors, windows, and corridors, or block shoulder surfing with privacy filters or partitions.
-- Keep printers and multifunction devices in access-controlled areas and apply secure print (release after user authentication) to prevent exposure from unattended output.
+- Place printers/multifunction devices in controlled locations and prevent unattended output through authenticated print release or a controlled immediate-collection procedure.
 - Restrict unauthorized connection or movement of endpoints, unused network ports, and console ports in common or open areas through physical locks, port disabling, and cable fixing.
 - Restrict actions that could damage equipment or expose information inside processing areas, such as handling food and drink, smoking, or unauthorized photography, and make users aware of the rules.
 - Establish approval and record procedures so the same protection criteria are maintained during movement, relocation, removal and return, or disposal, and recheck the protection state after any change of location.
@@ -53,7 +53,7 @@ The purpose is to place equipment that stores, processes, or transmits informati
 
 - Servers or network devices sit in unlocked open spaces or common corridors, so anyone can access them physically.
 - Screens displaying sensitive information face doors, windows, or corridors, so unauthorized people can easily shoulder surf.
-- Printers and multifunction devices lack secure print, so printouts are left unattended and can be collected by third parties.
+- Shared output devices lack authenticated release or controlled collection for sensitive printouts, allowing third parties to take them.
 - Critical equipment is placed in high-threat spots such as under piping, by windows, or in vibration- and dust-prone locations, with no mitigation applied.
 - Unused network or console ports in common areas remain active, allowing unauthorized connection.
 - After equipment is moved or relocated, no recheck confirms that protection criteria (locking, line-of-sight blocking) are still in place.
