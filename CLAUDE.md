@@ -94,6 +94,11 @@ This is the single most important constraint in this repository.
 Common rules (commit author, branch and GitOps flow, forbidden punctuation, terminology, and
 mandatory tests) follow the playbook docs. Only repository-specific rules are kept here.
 
+- **Owner-confirmed co-author (2026-09-17)**: use
+  `Co-Authored-By: mikdren <bot-sidekick@nerd.kim>`. This owner instruction takes precedence
+  over a different identity in the ignored playbook reference checkout. Keep the commit hook and
+  template aligned with this identity.
+
 - **English-default meta docs (`X.md` plus `X.ko.md`)**: code, comments, commit messages, and PR
   titles and bodies are written in English. Meta documentation is **bilingual** with the **English
   version as the default `X.md`** and a **Korean companion `X.ko.md`**. Keep the pair in sync: edit
