@@ -94,10 +94,13 @@ Every row below was verified on the check date at the top of this document.
 - All 186 control documents were checked for catalog coverage, bilingual section counts, metadata
   agreement, references, section order, and the complete source/limitation footer. Derived indexes
   were regenerated and checked for reproducibility.
-- The Codex instruction link and repository skill discovery link are checked by
-  `tools/check_corpus.py`. Regression tests cover missing or replaced notices, extra sections,
-  and broken agent entrypoints. The conventions checker tests the Korean path exemption separately
-  from punctuation and spacing checks.
+- `tools/check_corpus.py` checks that `AGENTS.md` is a working symlink to `CLAUDE.md` and that
+  the skill source files exist. Regression tests cover missing or replaced notices, extra
+  sections, a missing or copied `AGENTS.md`, and a missing skill source. The conventions checker
+  tests the Korean path exemption separately from punctuation and spacing checks.
+- On 2026-09-23 the agent setup returned to Claude Code. The `.agents/skills` discovery link
+  added for Codex on 2026-09-17 was removed. The skill is installed through `~/.claude/skills/`,
+  and `AGENTS.md` stays a symlink to `CLAUDE.md` for other agents.
 - The full body review read all 93 Korean/English pairs and corrected 73 pairs (146 documents).
   The remaining 20 pairs had no substantive finding in this pass. [REVIEW.md](REVIEW.md) records
   every control's disposition, factual references, and the reviewed file snapshot. The earlier
@@ -108,7 +111,7 @@ Every row below was verified on the check date at the top of this document.
   reference checkout is v0.2.0 at `d8a44e5`; upstream `develop` was checked at `692444c`.
   Full v0.2.0 adoption includes incompatible language defaults and Claude-specific tooling.
   On 2026-09-17 the owner excluded that migration from this repository's current work.
-  The installed baseline remains in place; Codex readiness does not imply a full guard upgrade.
+  The installed baseline remains in place; the agent setup is separate from a guard upgrade.
 
 ## 3. Operating principle
 

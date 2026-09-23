@@ -28,7 +28,7 @@ Checks
       stands on the clause line
  [11] the skill routing table (skill/iso-27001-review/topic-index.json) names only controls that
       exist in the catalog, and every catalog control is reachable from at least one topic
- [12] Codex instruction and skill entrypoints resolve to the maintained sources
+ [12] AGENTS.md is a working symlink to CLAUDE.md, and the skill source files exist
 
 Exit code 0 when the corpus is intact, 1 otherwise.
 
@@ -477,20 +477,16 @@ def check_topic_index(catalog_nos):
 
 
 def check_agent_entrypoints():
-    """[12] Discoverable links must not become missing files or independent copies."""
+    """[12] AGENTS.md must not become a missing file or an independent copy that can drift."""
     root = Path(ROOT)
-    for entry, target in (
-        ("AGENTS.md", "CLAUDE.md"),
-        (".agents/skills/iso-27001-review", "skill/iso-27001-review"),
-    ):
-        path = root / entry
-        try:
-            valid = (path.is_symlink() and path.resolve(strict=True)
-                     == (root / target).resolve(strict=True))
-        except (OSError, RuntimeError):
-            valid = False
-        if not valid:
-            fail(f"{entry}: must be a working symlink to {target}")
+    path = root / "AGENTS.md"
+    try:
+        valid = (path.is_symlink() and path.resolve(strict=True)
+                 == (root / "CLAUDE.md").resolve(strict=True))
+    except (OSError, RuntimeError):
+        valid = False
+    if not valid:
+        fail("AGENTS.md: must be a working symlink to CLAUDE.md")
     for name in ("SKILL.md", "topic-index.json"):
         if not (root / "skill" / "iso-27001-review" / name).is_file():
             fail(f"skill/iso-27001-review/{name}: missing skill source")

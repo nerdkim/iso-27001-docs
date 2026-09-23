@@ -69,7 +69,7 @@ extended/
 tools/
   build_index.py                 docs/에서 파생 색인 전체를 재생성
   check_corpus.py                읽기 전용 무결성 검사
-  test_check_corpus.py           문서 경계 및 Codex 검색 경로 회귀 시험
+  test_check_corpus.py           문서 경계 및 AGENTS.md 링크 회귀 시험
 harness/
   install-hooks.sh               clone에 git hook을 배선(최초 1회, 설치 절 참고)
   check-conventions.sh           문서 규약 검사기(playbook docs/16)
@@ -78,11 +78,9 @@ harness/
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     커밋 메시지 템플릿
 skill/
-  iso-27001-review/              Codex skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
+  iso-27001-review/              Claude Code skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
     SKILL.md                     절차(routing, 읽기, 판정, 보고 형식)
     topic-index.json             일상 용어를 통제 번호로 연결하는 routing 표
-.agents/skills/
-  iso-27001-review               위 스킬을 가리키는 Codex 검색용 심볼릭 링크
 ```
 
 경로는 전부 ASCII라 소비자 쪽에서 URL 인코딩 문제가 생기지 않습니다.
@@ -135,29 +133,27 @@ bash harness/install-hooks.sh
 
 나머지는 Python 3(표준 라이브러리만)와 bash만 있으면 됩니다.
 
-## Codex로 작업하기
+## Claude Code로 작업하기
 
-이 저장소를 Codex에서 열면 [AGENTS.md](AGENTS.md)를 읽습니다. 이 파일은 지침 원본인
-`CLAUDE.md`를 가리키는 링크이며, 원본 파일명은 playbook 호환을 위해 유지합니다.
-Claude Code 설치나 개인 Codex 설정 변경은 필요하지 않습니다.
+이 저장소를 Claude Code에서 열면 유일한 지침 원본인 [CLAUDE.md](CLAUDE.md)를 읽습니다.
+[AGENTS.md](AGENTS.md)는 이 파일을 가리키는 심볼릭 링크라서 `AGENTS.md`를 읽는 에이전트도 같은
+규칙을 받습니다. 심볼릭 링크가 아니게 되면 `tools/check_corpus.py`가 실패합니다.
 
-내용을 검토하려면 `$iso-27001-review`와 함께 본문이나 파일 경로를 전달하십시오. Codex는
-`.agents/skills/iso-27001-review`에서 스킬을 검색합니다. 이 스킬은 자료집을 읽기만 합니다.
-자료집 자체의 유지보수는 별도 작업이며 `AGENTS.md`의 규칙을 따릅니다.
-
-다른 프로젝트에서도 같은 스킬을 쓰려면 자료집 최상위에서 다음을 선택적으로 실행하십시오.
-기존 설치가 있으면 덮어쓰지 않습니다.
+검토 스킬은 사용자별로 디렉터리를 `~/.claude/skills/`에 심볼릭 링크로 연결해 설치합니다. 자료집
+최상위에서 한 번 실행하십시오. 기존 설치가 있으면 덮어쓰지 않습니다.
 
 ```bash
-mkdir -p "$HOME/.agents/skills"
-if [ ! -e "$HOME/.agents/skills/iso-27001-review" ] && [ ! -L "$HOME/.agents/skills/iso-27001-review" ]; then
-  ln -s "$PWD/skill/iso-27001-review" "$HOME/.agents/skills/iso-27001-review"
+mkdir -p "$HOME/.claude/skills"
+if [ ! -e "$HOME/.claude/skills/iso-27001-review" ] && [ ! -L "$HOME/.claude/skills/iso-27001-review" ]; then
+  ln -s "$PWD/skill/iso-27001-review" "$HOME/.claude/skills/iso-27001-review"
 fi
 ```
 
-검색 결과가 갱신되지 않으면 새 Codex 세션을 시작하십시오. 공식
-[스킬 검색 문서](https://learn.chatgpt.com/docs/build-skills)와
-[AGENTS.md 문서](https://learn.chatgpt.com/docs/agent-configuration/agents-md)를 참고하십시오.
+내용을 검토하려면 `/iso-27001-review` 뒤에 본문이나 파일 경로를 붙여 실행하십시오. 인자 없이
+실행하면 대화에 앞서 붙여 넣은 내용을 검토합니다. 요청이 스킬 설명과 맞으면 Claude Code가 스스로
+스킬을 고르기도 합니다. 스킬은 이 심볼릭 링크로 자료집 최상위를 찾으므로 어느 프로젝트에서도
+동작합니다. 이 스킬은 자료집을 읽기만 합니다. 자료집 자체의 유지보수는 별도 작업이며 `CLAUDE.md`의
+규칙을 따릅니다.
 
 ## 유지보수
 
@@ -183,7 +179,7 @@ git diff --check
 어긋나면 `check_corpus.py`가 실패합니다.
 
 확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. 적용된 playbook
-검사 도구의 기준 버전은 v0.1.6이며, Codex 설정과 별개인 v0.2.0 이전은 수행하지 않았습니다.
+검사 도구의 기준 버전은 v0.1.6이며, v0.2.0 이전은 수행하지 않았습니다.
 확인한 참조본 및 상위 저장소의 커밋은 `CLAUDE.md`에 기록되어 있습니다.
 
 ## 라이선스

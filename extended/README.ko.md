@@ -27,10 +27,10 @@ index/evidence-dictionary.en.json   매핑할 때 쓰는 참고 사전입니다.
 
 ## AI 사용 운영 규약
 
-소비자 쪽 agent가 지켜야 하는 규칙입니다. 소비 환경의 `AGENTS.md`에 반영하십시오.
-이 규칙을 전달받은 내용에 적용해 부적합 후보를 보고하는 Codex 호환 스킬은
+소비자 쪽 agent가 지켜야 하는 규칙입니다. 소비 환경의 `CLAUDE.md` 또는 `AGENTS.md`에 반영하십시오.
+이 규칙을 전달받은 내용에 적용해 부적합 후보를 보고하는 Claude Code skill은
 [../skill/iso-27001-review/SKILL.md](../skill/iso-27001-review/SKILL.md)에 있습니다.
-저장소의 검색용 링크는 `.agents/skills/iso-27001-review`이며 `$iso-27001-review`로 호출합니다.
+디렉터리를 `~/.claude/skills/`에 심볼릭 링크로 연결해 설치하고 `/iso-27001-review`로 호출합니다.
 다른 프로젝트에서 사용하는 방법은 [../README.ko.md](../README.ko.md)를 참고하십시오.
 
 1. **`docs/`는 읽기 전용입니다.** 자료집을 사용하는 동안 `docs/` 아래의 무엇도 만들거나 고치거나
