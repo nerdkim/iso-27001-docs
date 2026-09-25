@@ -3,7 +3,7 @@
 This repository is a **documents-only** reference corpus: a practical reference for the 93 controls
 of ISO/IEC 27001:2022 Annex A, one Markdown file per control, bilingual in Korean and English.
 There is no application, no build output, and no infrastructure here. This file defines the rules
-OpenAI Codex and other agents follow when **maintaining this repository**.
+Claude Code (and any other agent that reads `AGENTS.md`) follows when **maintaining this repository**.
 
 The common engineering standard (interaction, priority, commit, punctuation, terminology,
 security) is **not copied into this file**; the playbook docs are the single source. Before
@@ -16,15 +16,13 @@ this repository. See the managed block at the bottom.
 > real file is `CLAUDE.md`). Claude Code reads `CLAUDE.md`; other agents such as Codex read
 > `AGENTS.md`. Edit only this file and both are updated.
 
-## Codex workflow
+## Maintenance workflow
 
-- Maintain this repository through `AGENTS.md`. The linked `CLAUDE.md` remains the single
-  instruction source required by the shared playbook; its filename does not require Claude Code.
 - Repository maintenance may edit the corpus under the bilingual rules below. The review skill's
   read-only rule applies when assessing supplied content, not when maintaining this repository.
-- Codex discovers `iso-27001-review` through `.agents/skills/iso-27001-review`, a relative symlink
-  to `skill/iso-27001-review`. Keep one skill source and invoke it with `$iso-27001-review` for
-  content reviews. Do not depend on Claude-specific tools, arguments, or home-directory paths.
+- The `iso-27001-review` skill has one source, `skill/iso-27001-review/`. Claude Code loads it
+  through the per-user symlink `~/.claude/skills/iso-27001-review`, and a content review is run
+  as `/iso-27001-review`. Do not add copies or per-agent discovery links inside the repository.
 - After edits, run `python3 -B tools/build_index.py`, `python3 -B tools/check_corpus.py`,
   `python3 -B -m unittest discover -s tools -p 'test_*.py'`,
   `bash harness/test-check-conventions.sh`, `bash harness/check-conventions.sh`, and
@@ -69,15 +67,16 @@ This is the single most important constraint in this repository.
   `package.json` to hang a `prepare` script on, so the wiring is `bash harness/install-hooks.sh`,
   run once per clone. It is idempotent, and writes nothing outside `.git/config` apart from setting
   the executable bit on the three hook files.
-- `skill/iso-27001-review/` : a Codex-compatible skill that applies the operating rules of
+- `skill/iso-27001-review/` : a Claude Code skill that applies the operating rules of
   `extended/README.md` to content a user hands over, and reports nonconformity candidates, open
   questions, and clean results with citations into `docs/`. `SKILL.md` is the procedure and
   `topic-index.json` is its routing table (everyday Korean and English words to control numbers).
   `tools/check_corpus.py` check [11] fails when the table names a control that is not in the
-  catalog or leaves a catalog control unreachable from every topic. Check [12] verifies the Codex
-  instruction and skill links. A user may also link the skill into `~/.agents/skills/` for reviews
-  from another project. The corpus root resolves from the loaded skill's real path. `SKILL.md` is
-  English prose under the docs/16 conventions; the Korean report template is a fenced block.
+  catalog or leaves a catalog control unreachable from every topic. Check [12] fails when
+  `AGENTS.md` is not a working symlink to `CLAUDE.md` or a skill source file is missing. The skill
+  is installed by symlinking the directory into `~/.claude/skills/`, so the corpus root resolves
+  from the symlink when the skill is invoked from another project. `SKILL.md` is English prose
+  under the docs/16 conventions; the Korean report template inside it is a fenced block.
 - `README.md` / `README.ko.md` : repository introduction (English default, Korean companion).
 - `UPDATES.md` / `UPDATES.ko.md` : the source pin and the update model. It separates the small
   **factual layer** (the public Annex A control list, pinned to the 2022 revision) from the large

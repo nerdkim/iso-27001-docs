@@ -65,7 +65,7 @@ ITEM_SECTIONS = {
 
 STANDARD_LABEL = {"ko": "ISO/IEC 27001:2022 Annex A", "en": "ISO/IEC 27001:2022 Annex A"}
 STANDARD_BLURB = {
-    "ko": "ISO/IEC 27001:2022 Annex A는 4개 테마(조직적/인적/물리적/기술적) 93개 정보보안 통제 목록입니다.",
+    "ko": "ISO/IEC 27001:2022 Annex A는 4개 테마(조직적/인적/물리적/기술적)로 나뉜 정보보안 통제 93개의 목록입니다.",
     "en": (
         "ISO/IEC 27001:2022 Annex A is a list of 93 information security controls across four "
         "themes (Organizational, People, Physical, Technological)."
@@ -74,8 +74,8 @@ STANDARD_BLURB = {
 PROVENANCE = {
     "ko": (
         "통제 번호/명칭/테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 설명 본문은 "
-        "본 자료집이 새로 작성한 원저작이며 ISO 표준 원문의 규범 텍스트가 아닙니다. 정본 대조는 "
-        "라이선스된 표준 원문으로 하십시오."
+        "이 자료집을 위해 새로 작성한 원저작물이며 ISO 표준 원문의 규범 텍스트가 아닙니다. 정본 대조는 "
+        "라이선스를 갖춘 표준 원본으로 하십시오."
     ),
     "en": (
         "Control numbers, titles, and theme classification are based on the public list of "
@@ -240,7 +240,7 @@ def build_docs_index(items, lang, themes):
         split = " / ".join(f"{themes[key]['label_ko']} {n[key]}" for key in THEME_ORDER)
         # No space before an opening paren after Hangul (playbook docs/16 s4.3).
         total_line = f"총 {len(items)}개 통제({split})."
-        note = "> 통제 번호/명칭/테마는 공개 목록 근거. 설명 본문은 원저작이며 표준 원문이 아닙니다."
+        note = "> 통제 번호/명칭/테마는 공개 목록에 근거합니다. 설명 본문은 원저작물이며 표준 원문이 아닙니다."
     else:
         total_line = (
             f"{len(items)} controls in total (Organizational {n['organizational']} / "

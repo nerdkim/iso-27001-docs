@@ -74,7 +74,7 @@ extended/
 tools/
   build_index.py                 regenerate every derived index from docs/
   check_corpus.py                read-only integrity checks
-  test_check_corpus.py           regression tests for document boundaries and Codex discovery
+  test_check_corpus.py           regression tests for document boundaries and the AGENTS.md link
 harness/
   install-hooks.sh               wire this clone to the git hooks (run once, see Setup)
   check-conventions.sh           documentation conventions checker (playbook docs/16)
@@ -83,11 +83,9 @@ harness/
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     commit message template
 skill/
-  iso-27001-review/              Codex skill: assess content against Annex A using this corpus
+  iso-27001-review/              Claude Code skill: assess content against Annex A using this corpus
     SKILL.md                     the procedure (routing, reading, verdicts, report format)
     topic-index.json             routing table from everyday words to control numbers
-.agents/skills/
-  iso-27001-review               symlink to the skill above, for Codex discovery
 ```
 
 All paths are ASCII, so there are no URL-encoding surprises for consumers.
@@ -141,29 +139,27 @@ hooks are a convenience guardrail and are bypassable; the authoritative gate is 
 
 Everything else needs only Python 3 (standard library only) and bash.
 
-## Working with Codex
+## Working with Claude Code
 
-Open this repository in Codex. It reads [AGENTS.md](AGENTS.md), which links to the single
-maintained instruction file, `CLAUDE.md`. The filename is retained for playbook compatibility.
-No Claude Code installation or personal Codex configuration is required.
+Open this repository in Claude Code. It reads [CLAUDE.md](CLAUDE.md), the single maintained
+instruction file. [AGENTS.md](AGENTS.md) is a symlink to it, so an agent that reads `AGENTS.md`
+receives the same rules; `tools/check_corpus.py` fails if it stops being a symlink.
 
-For a content review, invoke `$iso-27001-review` with the text or a file path. Codex discovers
-the skill through `.agents/skills/iso-27001-review`. The skill only reads the corpus; maintaining
-the corpus is a separate task governed by `AGENTS.md`.
-
-To make the same skill available in other projects, optionally run this from the corpus root.
-The command leaves any existing installation in place:
+The review skill is installed per user by symlinking its directory into `~/.claude/skills/`. Run
+this once from the corpus root. It leaves any existing installation in place:
 
 ```bash
-mkdir -p "$HOME/.agents/skills"
-if [ ! -e "$HOME/.agents/skills/iso-27001-review" ] && [ ! -L "$HOME/.agents/skills/iso-27001-review" ]; then
-  ln -s "$PWD/skill/iso-27001-review" "$HOME/.agents/skills/iso-27001-review"
+mkdir -p "$HOME/.claude/skills"
+if [ ! -e "$HOME/.claude/skills/iso-27001-review" ] && [ ! -L "$HOME/.claude/skills/iso-27001-review" ]; then
+  ln -s "$PWD/skill/iso-27001-review" "$HOME/.claude/skills/iso-27001-review"
 fi
 ```
 
-If discovery has not refreshed, start a new Codex session. See the official
-[skill discovery documentation](https://learn.chatgpt.com/docs/build-skills) and
-[AGENTS.md documentation](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
+For a content review, run `/iso-27001-review` followed by the text or a file path, or with no
+argument to assess content pasted earlier in the conversation. Claude Code may also pick the skill
+on its own when a request matches its description. The skill resolves the corpus root through the
+symlink, so it works from any project. It only reads the corpus; maintaining the corpus is a
+separate task governed by `CLAUDE.md`.
 
 ## Maintaining
 
@@ -190,8 +186,8 @@ Adding a control also means adding it to `extended/catalog/controls.json`; `chec
 when the catalog and the documents disagree in either direction.
 
 The dated verification record and its limits are in [UPDATES.md](UPDATES.md). The installed
-playbook guard baseline is v0.1.6; v0.2.0 migration is separate from the Codex setup and has not
-been applied. `CLAUDE.md` records the reference-checkout and upstream revisions checked.
+playbook guard baseline is v0.1.6; v0.2.0 migration has not been applied. `CLAUDE.md` records
+the reference-checkout and upstream revisions checked.
 
 ## License
 

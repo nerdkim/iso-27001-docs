@@ -59,13 +59,10 @@ class AgentEntrypointTests(unittest.TestCase):
         self.root = Path(self.directory.name)
         (self.root / "CLAUDE.md").write_text("Project instructions\n")
         (self.root / "AGENTS.md").symlink_to("CLAUDE.md")
-        skill = self.root / "skill" / "iso-27001-review"
-        skill.mkdir(parents=True)
-        (skill / "SKILL.md").write_text("Skill instructions\n")
-        (skill / "topic-index.json").write_text("{}\n")
-        self.link = self.root / ".agents" / "skills" / "iso-27001-review"
-        self.link.parent.mkdir(parents=True)
-        self.link.symlink_to("../../skill/iso-27001-review")
+        self.skill = self.root / "skill" / "iso-27001-review"
+        self.skill.mkdir(parents=True)
+        (self.skill / "SKILL.md").write_text("Skill instructions\n")
+        (self.skill / "topic-index.json").write_text("{}\n")
 
     def issues(self):
         checker.problems.clear()
@@ -73,15 +70,26 @@ class AgentEntrypointTests(unittest.TestCase):
             checker.check_agent_entrypoints()
         return list(checker.problems)
 
-    def test_portable_links_pass(self):
+    def test_instruction_link_and_skill_source_pass(self):
         self.assertEqual(self.issues(), [])
 
-    def test_missing_skill_entrypoint_fails(self):
-        self.link.unlink()
+    def test_missing_instruction_link_fails(self):
+        (self.root / "AGENTS.md").unlink()
+        self.assertTrue(self.issues())
+
+    def test_dangling_instruction_link_fails(self):
+        (self.root / "CLAUDE.md").unlink()
+        self.assertTrue(self.issues())
+
+    def test_link_to_another_file_fails(self):
+        (self.root / "OTHER.md").write_text("Other instructions\n")
+        path = self.root / "AGENTS.md"
+        path.unlink()
+        path.symlink_to("OTHER.md")
         self.assertTrue(self.issues())
 
     def test_missing_skill_source_fails(self):
-        (self.link / "SKILL.md").unlink()
+        (self.skill / "SKILL.md").unlink()
         self.assertTrue(self.issues())
 
     def test_instruction_copy_fails(self):

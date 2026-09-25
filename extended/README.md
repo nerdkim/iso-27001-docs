@@ -32,10 +32,11 @@ deterministic, and CI fails if the committed output drifts from `docs/`.
 ## Operating rules for AI use
 
 These are the rules a consuming agent must follow. Reflect them into the consuming environment's
-`AGENTS.md`. A Codex-compatible skill that applies them to supplied content and reports
-nonconformity candidates lives at [../skill/iso-27001-review/SKILL.md](../skill/iso-27001-review/SKILL.md).
-Its repository discovery link is `.agents/skills/iso-27001-review`; invoke `$iso-27001-review`.
-See [../README.md](../README.md) for use from another project.
+`CLAUDE.md` or `AGENTS.md`. A ready-made Claude Code skill that applies them to supplied content
+and reports nonconformity candidates lives at
+[../skill/iso-27001-review/SKILL.md](../skill/iso-27001-review/SKILL.md). Install it by
+symlinking its directory into `~/.claude/skills/` and invoke it as `/iso-27001-review`. See
+[../README.md](../README.md) for use from another project.
 
 1. **`docs/` is read-only.** Never create, modify, or delete anything under `docs/` while using the
    corpus. Write derived output somewhere in the consuming workspace, never back into this
