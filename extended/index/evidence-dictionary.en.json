@@ -257,7 +257,7 @@
    ]
   },
   "A.5.21": {
-   "name": "Managing information security in the ICT supply chain",
+   "name": "Managing information security in the information and communication technology (ICT) supply chain",
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.21.md",
    "evidence": [
@@ -427,7 +427,7 @@
    ]
   },
   "A.5.34": {
-   "name": "Privacy and protection of PII",
+   "name": "Privacy and protection of personal identifiable information (PII)",
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.34.md",
    "evidence": [
@@ -471,7 +471,7 @@
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.37.md",
    "evidence": [
-    "Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, and so on)",
+    "Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, failure handling, media handling, and so on)",
     "Version/revision history and author/reviewer/approver records for the procedures",
     "Distribution and access status of operating procedures (access permission lists, publication locations)",
     "Records of procedure updates linked to change management records",
@@ -539,7 +539,7 @@
     "Employment contract/security pledge templates containing post-termination clauses (confidentiality/non-disclosure)",
     "Termination/role-change procedure documents and checklists",
     "Asset return confirmations, access revocation/account deactivation records",
-    "Exit briefing/surviving-obligation re-notification confirmations (signed by the individual)",
+    "Exit briefing/surviving-obligation re-notification confirmations (signed by the individual, or a delivery record with the reason a signature could not be obtained)",
     "Personnel-change notification records between HR and information security, and work handover documents"
    ]
   },
@@ -769,7 +769,7 @@
    ]
   },
   "A.8.1": {
-   "name": "User endpoint devices",
+   "name": "User end point devices",
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.1.md",
    "evidence": [
@@ -1023,7 +1023,7 @@
     "Network device security configuration standards and applied configuration records (snapshots/inspection results)",
     "Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, and so on)",
     "Log collection and monitoring/alerting configuration for network/security devices, and anomaly detection/response records",
-    "External network service contracts/SLAs and fulfillment review results"
+    "Device authentication settings for network access (802.1X/NAC, and so on) and results of checks that weak protocols are disabled"
    ]
   },
   "A.8.21": {
@@ -1073,7 +1073,7 @@
     "Cryptography policy/guideline documents and the approved algorithm/minimum key length reference table",
     "Status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)",
     "Key management procedures and the key lifecycle register (generation/rotation/destruction history)",
-    "HSM/KMS access privilege lists and access/operation logs",
+    "Access privilege lists and access/operation logs for key stores (HSM, KMS, and so on)",
     "TLS configuration review results (evidence of disabling weak versions/cipher suites) and vulnerability assessment reports",
     "Records of the review of compliance with cryptography-related laws/regulations"
    ]
@@ -1083,7 +1083,7 @@
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.25.md",
    "evidence": [
-    "Secure development life cycle (SDLC) policy/standard and procedures",
+    "Secure development life cycle (secure SDLC) policy/standard and procedures",
     "Per-stage security activity checklists and security gate pass records",
     "Secure coding standard documents and developer security training records",
     "Threat modeling/security architecture review deliverables",
@@ -1177,7 +1177,7 @@
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.32.md",
    "evidence": [
-    "Change management procedure and documentation defining change types (standard/routine/emergency)",
+    "Change management procedure and documentation defining change types (standard/normal/emergency)",
     "Change request/approval records including impact/risk assessment and rollback or alternative recovery plans",
     "Change test/acceptance results and production deployment records",
     "Emergency change handling and post-implementation review/approval records",

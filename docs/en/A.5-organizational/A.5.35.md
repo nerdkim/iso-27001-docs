@@ -7,7 +7,7 @@
 | Control | A.5.35 Independent review of information security |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.2 Management system inspection |
+| ISMS-P mapping | 1.4.2 Management System Inspection |
 | 2013 mapping | A.18.2.1 (Independent review of information security) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires the organization's approach to managing information securi
 
 - ISO 27001 clauses: 9.2 (Internal audit), 9.3 (Management review), 9.1 (Monitoring, measurement, analysis and evaluation), 10.1 (Continual improvement), 5.3 (Organizational roles, responsibilities and authorities)
 - Adjacent Annex A: A.5.1 (Policies for information security), A.5.4 (Management responsibilities), A.5.36 (Compliance with policies, rules and standards for information security), A.8.8 (Management of technical vulnerabilities), A.8.34 (Protection of information systems during audit testing)
-- ISMS-P mapping: 1.4.2 Management system inspection (adjacent: 1.4.3 Management system improvement, 1.4.1 Legal requirements compliance review, 1.1.1 Management involvement)
+- ISMS-P mapping: 1.4.2 Management System Inspection (adjacent: 1.4.3 Management System Improvement, 1.4.1 Review of Compliance with Legal Requirements, 1.1.1 Participation of Executive Management)
 - 2013 mapping: A.18.2.1 (Independent review of information security)
 
 ## Evidence

@@ -5,14 +5,20 @@
 > Repository overview: [../README.md](../README.md) and source basis: [../UPDATES.md](../UPDATES.md)
 
 This directory is the corpus itself: the 93 information security controls of ISO/IEC 27001:2022
-Annex A, one Markdown file per control, in Korean and English. Everything else in this repository is
-generated from these files or exists to guard them.
+Annex A, one Markdown file per control, in Korean and English. Most of the rest of this repository
+is generated from these files and the hand-maintained control catalog, exists to guard them, or,
+like the review skill, reads them.
 
 ## What these documents are, and are not
 
 **They are not the standard.** Control numbers, titles, and theme classification come from the
-public Annex A control list. The explanatory body of every document is **original material** written
-by this project for practical reference.
+public Annex A control list (Table A.1 of ISO/IEC 27001:2022). The English titles keep the wording
+of that table, and the Korean titles are this project's own rendering. The explanatory body of every
+document is **original material** written by this project for practical reference.
+
+The `Control type (ref.)` and `Security properties (ref.)` rows of each metadata table are this
+project's own classification, not the attribute values of ISO/IEC 27002:2022, and they may differ
+from those values. Do not cite them as ISO's attributes.
 
 The normative text of ISO/IEC 27001:2022 and 27002:2022, their implementation guidance, and their
 attribute tables are not reproduced, paraphrased close to the source, or translated here. Each

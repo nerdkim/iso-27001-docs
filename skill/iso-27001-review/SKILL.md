@@ -136,8 +136,8 @@ management review, nonconformity and corrective action). Each control document p
 relevant clauses under `ISO 27001 본문 연계` / `ISO 27001 clauses`, and that is all it does.
 
 When an assertion is about one of those (for example "we have never done a risk assessment",
-"there is no internal audit", "the scope is undefined"), report it as **범위 외** with the clause
-number, say that the corpus does not cover it, and point the user at a licensed copy of the
+"there is no internal audit", "the ISMS scope is undefined"), report it as **범위 외** with the
+clause number, say that the corpus does not cover it, and point the user at a licensed copy of the
 standard. Do not fill the gap from memory. Cite the clause line of a control you read when
 there is one; when no control was routed at all, cite
 `skill/iso-27001-review/topic-index.json > out_of_scope`, which is where the clause numbers come
@@ -228,13 +228,19 @@ Input: "퇴사자가 생기면 인사팀이 월말에 명단을 보내고, IT팀
 퇴사일에 반납받습니다."
 
 Assertions: (1) account deletion happens in a monthly batch after HR sends a list; (2) laptops
-are returned on the last day. Routing: topic "퇴직, 직무 변경" (keyword 퇴사) gives A.6.5, A.5.11,
-A.5.18, A.5.16; topic "계정 관리, 식별, 공용 계정" (keyword 계정) confirms A.5.16 and adds A.8.5;
-topic "자산 반납" (keyword 반납) confirms A.5.11; topic "정보 삭제, 파기" (keyword 삭제) adds A.8.10
-and topic "노트북, PC, 모바일, BYOD" adds A.8.1. The filter step keeps A.5.18, A.5.16, A.6.5 and
-A.5.11 as primary (their checkpoints test these two facts) and lists A.8.5, A.8.10 and A.8.1 as
-related, since nothing in the content is about authentication strength, deletion of stored
-information, or device configuration.
+are returned on the last day. Routing collects 12 candidates from five topics: "퇴직, 직무 변경"
+(keyword 퇴사) gives A.6.5, A.5.11, A.5.18, A.5.16; "계정 관리, 식별, 공용 계정" (keyword 계정)
+confirms A.5.16 and A.5.18 and adds A.8.5; "자산 반납" (keyword 반납) confirms A.5.11, A.6.5 and
+A.5.18; "정보 삭제, 파기" (keyword 삭제) adds A.8.10, A.7.14 and A.5.33; "노트북, PC, 모바일,
+BYOD" (keyword 노트북) adds A.8.1, A.6.7, A.7.9 and A.8.7.
+
+The filter step drops two of those topics. 삭제 here removes an account, which is access
+revocation, not deletion of stored information. 노트북 is used in its own sense, but the content
+only says when laptops come back, which A.5.11 tests; the checkpoints of A.8.1, A.6.7, A.7.9 and
+A.8.7 are about device configuration and protection, remote working, and malware, none of which
+the content describes. That leaves A.5.18, A.5.16, A.6.5 and A.5.11 as primary (their checkpoints
+test these two facts) and A.8.5 as secondary, since nothing in the content is about
+authentication strength.
 
 - A.5.18 접근 권한: 부적합 후보. Checkpoint 4 asks whether rights are adjusted or revoked
   without delay on a status change; a monthly batch leaves access alive for up to a month, and
@@ -244,15 +250,19 @@ information, or device configuration.
   deactivation on a status change) and the nonconformity example about 퇴직자 identities left
   active. `docs/ko/A.5-organizational/A.5.16.md > 주요 확인사항, 부적합 사례`
 - A.6.5 고용 종료 또는 변경 후 책임: 부적합 후보, through the nonconformity example about
-  계정 비활성화 delay keeping 재직 기준 권한 alive. Whether the post-employment confidentiality
+  계정 비활성화 delay keeping 재직 중 권한 alive. Whether the post-employment confidentiality
   duty is re-notified and acknowledged in writing is 정보 부족 and goes to the evidence section.
   `docs/ko/A.6-people/A.6.5.md > 부적합 사례, 주요 확인사항`
-- A.5.11 자산 반납: 확인 필요. Laptop return on the last day meets the return part; whether a
-  return record is kept and whether the device is wiped before reissue is not stated.
-  `docs/ko/A.5-organizational/A.5.11.md > 주요 확인사항, 증적자료`
+- A.5.11 자산 반납: 부적합 후보. Returning the laptop on the last day is on time, but checkpoint
+  3 asks whether unnecessary access is revoked at the effective time of departure regardless of
+  asset return, and the month-end batch leaves the account active after the laptop is back.
+  Whether a return record is kept and whether the device is wiped before reissue are 정보 부족
+  and go to the evidence section. `docs/ko/A.5-organizational/A.5.11.md > 주요 확인사항, 증적자료`
 
-One-line conclusion: 부적합 후보 3건, 확인 필요 1건, 문제 없음 0건(검토한 통제 4개), 범위 외 0건.
-Related controls: A.8.5 안전한 인증, A.8.10 정보 삭제, A.8.1 사용자 엔드포인트 기기.
+One-line conclusion: 부적합 후보 4건, 확인 필요 0건, 문제 없음 0건(검토한 통제 4개), 범위 외 0건.
+Related controls: the secondary candidate A.8.5 안전한 인증, then the neighbours that the four
+documents name under 관련 통제 및 속성, such as A.8.1 사용자 엔드포인트 기기 and A.7.9 사외 자산
+보안 from A.5.11.
 
 ## Do not
 

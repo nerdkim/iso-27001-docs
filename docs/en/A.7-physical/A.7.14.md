@@ -7,7 +7,7 @@
 | Control | A.7.14 Secure disposal or re-use of equipment |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality |
-| ISMS-P mapping | 2.9.7 Reuse and disposal of information assets (related: 2.10.7 Management of removable storage media, 2.4.6 Control of devices brought in and out) |
+| ISMS-P mapping | 2.9.7 Reuse and Disposal of Information Assets (related: 2.10.7 Removable Storage Media Management, 2.4.6 Control of Devices Brought In and Out) |
 | 2013 mapping | A.11.2.7 |
 
 ## Control objective
@@ -38,7 +38,7 @@ The purpose is to deal with the fact that a machine stops being in use long befo
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 7.5 (Documented information)
 - Adjacent Annex A: A.7.10 (Storage media), A.7.9 (Security of assets off-premises), A.7.13 (Equipment maintenance), A.8.10 (Information deletion), A.5.9 (Inventory of information and other associated assets), A.5.11 (Return of assets)
-- ISMS-P mapping: 2.9.7 Reuse and disposal of information assets (related: 2.10.7 Management of removable storage media, 2.4.6 Control of devices brought in and out)
+- ISMS-P mapping: 2.9.7 Reuse and Disposal of Information Assets (related: 2.10.7 Removable Storage Media Management, 2.4.6 Control of Devices Brought In and Out)
 - 2013 mapping: A.11.2.7 (Secure disposal or re-use of equipment)
 
 ## Evidence

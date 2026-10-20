@@ -7,7 +7,7 @@
 | Control | A.8.10 Information deletion |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality |
-| ISMS-P mapping | 2.9.7 Reuse and disposal of information assets |
+| ISMS-P mapping | 2.9.7 Reuse and Disposal of Information Assets |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -34,8 +34,8 @@ This control requires that information no longer needed be reliably erased from 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.8.11 (Data masking), A.8.12 (Data leakage prevention), A.7.10 (Storage media), A.7.14 (Secure disposal or re-use of equipment), A.5.34 (Privacy and protection of PII)
-- ISMS-P mapping: 2.9.7 Reuse and disposal of information assets (for personal data, also 3.4.1 Destruction of personal data)
+- Adjacent Annex A: A.8.11 (Data masking), A.8.12 (Data leakage prevention), A.7.10 (Storage media), A.7.14 (Secure disposal or re-use of equipment), A.5.34 (Privacy and protection of personal identifiable information (PII))
+- ISMS-P mapping: 2.9.7 Reuse and Disposal of Information Assets (for personal data, also 3.4.1 Destruction of Personal Information)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

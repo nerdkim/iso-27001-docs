@@ -7,7 +7,7 @@
 | Control | A.8.6 Capacity management |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Availability |
-| ISMS-P mapping | 2.9.2 Performance and fault management |
+| ISMS-P mapping | 2.9.2 Performance and Fault Management |
 | 2013 mapping | A.12.1.3 |
 
 ## Control objective
@@ -20,7 +20,7 @@ This control requires the organization to monitor and tune the use of informatio
 2. Is resource utilization monitored continuously, with warning/critical thresholds set so that alerts and responses occur when they are exceeded?
 3. Is demand forecasting performed based on historical trends and business plans (new services, user growth, and so on), and is it linked to budget/procurement planning?
 4. Are response options for capacity shortfalls (resource expansion, reclamation/optimization, load balancing, data cleanup, and so on) defined in advance?
-5. In cloud/outsourced environments, are auto-scaling policies and cost controls (such as budget alerts) configured and operated together?
+5. In cloud/outsourced environments, is the manual or automatic scaling approach defined and, where auto-scaling is used, are bounds/quotas and cost controls (such as budget alerts) configured and operated together?
 
 ## Implementation guidance
 
@@ -35,7 +35,7 @@ This control requires the organization to monitor and tune the use of informatio
 
 - ISO 27001 clauses: 7.1 (Resources), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.16 (Monitoring activities), A.8.14 (Redundancy of information processing facilities), A.5.30 (ICT readiness for business continuity), A.8.9 (Configuration management)
-- ISMS-P mapping: 2.9.2 Performance and fault management
+- ISMS-P mapping: 2.9.2 Performance and Fault Management
 - 2013 mapping: A.12.1.3 (Capacity management)
 
 ## Evidence
@@ -52,7 +52,7 @@ This control requires the organization to monitor and tune the use of informatio
 - Managed resources and thresholds are not defined, so utilization is not noticed until it reaches saturation.
 - Log collection/backup halts due to insufficient storage, but with no early-warning scheme it is discovered only after the fact.
 - No capacity sizing is performed when introducing a new service, causing performance degradation/outage right after launch.
-- Cloud auto-scaling bounds are misconfigured: a too-low upper bound causes an outage during a traffic surge, or the absence of one leads to excessive cost.
+- Cloud auto-scaling bounds are misconfigured: a too-low upper bound causes an outage during a traffic surge, or the absence of one lets costs climb until a budget cap or quota curtails the service.
 - Demand forecasting is performed but procurement lead time is not considered, so the timing of expansion does not match actual demand.
 
 ---

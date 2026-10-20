@@ -7,16 +7,16 @@
 | Control | A.8.25 Secure development life cycle |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.8.1 Definition of security requirements |
+| ISMS-P mapping | 2.8.1 Definition of Security Requirements |
 | 2013 mapping | A.14.2.1 (Secure development policy) |
 
 ## Control objective
 
-This control requires the organization to build security activities into every stage of planning, designing, implementing, testing, deploying, and maintaining software and systems, so that vulnerabilities are prevented from entering deliverables and the cost of remediating them after the fact is reduced. By defining security requirements from the earliest stage and applying consistent rules and verification steps at each phase, the organization achieves security by design and security by default. The approach should apply consistently across the whole organization regardless of the development methodology (waterfall/agile/DevOps) and whether development is in-house or outsourced.
+This control requires the organization to build security activities into every stage of planning, designing, implementing, testing, deploying, and maintaining software and systems, so that vulnerabilities are prevented from entering deliverables and the cost of remediating them after the fact is reduced. Defining security requirements from the earliest stage and applying consistent rules and verification steps at each phase helps the organization achieve security by design and security by default. The approach should apply consistently across the whole organization regardless of the development methodology (waterfall/agile/DevOps) and whether development is in-house or outsourced.
 
 ## Key checkpoints
 
-1. Is a secure development life cycle (SDLC) policy/standard documented and applied consistently to both in-house and outsourced development?
+1. Is a secure development life cycle (secure SDLC) policy/standard documented and applied consistently to both in-house and outsourced development?
 2. Are the security activities to be performed at each stage (requirements/design/implementation/test/deployment/transition to production) and their pass criteria (security gates) defined?
 3. Are secure coding standards and training provided to developers, and is compliance checked?
 4. Is a secure development/configuration management environment (version control, access control, build/deployment pipeline) established and controlled?
@@ -37,12 +37,12 @@ This control requires the organization to build security activities into every s
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 7.2 (Competence)
 - Adjacent Annex A: A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.30 (Outsourced development), A.8.31 (Separation of development, test and production environments), A.8.4 (Access to source code), A.8.32 (Change management), A.8.33 (Test information)
-- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.8.3 Separation of test and production environments, 2.8.5 Source program management, 2.9.1 Change management)
+- ISMS-P mapping: 2.8.1 Definition of Security Requirements (related: 2.8.2 Review and Testing of Security Requirements, 2.8.3 Separation of Test and Operational Environments, 2.8.5 Source Program Management, 2.9.1 Change Management)
 - 2013 mapping: A.14.2.1 (Secure development policy)
 
 ## Evidence
 
-- Secure development life cycle (SDLC) policy/standard and procedures
+- Secure development life cycle (secure SDLC) policy/standard and procedures
 - Per-stage security activity checklists and security gate pass records
 - Secure coding standard documents and developer security training records
 - Threat modeling/security architecture review deliverables
@@ -52,7 +52,7 @@ This control requires the organization to build security activities into every s
 
 ## Nonconformity examples
 
-- An SDLC policy exists, but in actual projects security checks are performed only just before deployment after development is complete.
+- A secure SDLC policy exists, but in actual projects security checks are performed only just before deployment after development is complete.
 - Secure coding standards do not exist, or exist but are not shared/taught to developers and so are not actually followed.
 - Security testing is not integrated into the CI/CD pipeline, so vulnerable code is deployed automatically without verification.
 - Open source/third-party components are adopted without verifying their known vulnerabilities and licenses.

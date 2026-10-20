@@ -7,7 +7,7 @@
 | Control | A.6.4 Disciplinary process |
 | Control type (ref.) | Corrective / Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.6 Actions on security violations |
+| ISMS-P mapping | 2.2.6 Actions in Case of Security Violations |
 | 2013 mapping | A.7.2.3 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires a formal, previously communicated disciplinary process to 
 
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 7.3 (Awareness), 10.1 (Continual improvement)
 - Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.3 (Information security awareness, education and training), A.6.5 (Responsibilities after termination or change of employment), A.6.8 (Information security event reporting), A.5.4 (Management responsibilities)
-- ISMS-P mapping: 2.2.6 Actions on security violations
+- ISMS-P mapping: 2.2.6 Actions in Case of Security Violations
 - 2013 mapping: A.7.2.3 (Disciplinary process)
 
 ## Evidence

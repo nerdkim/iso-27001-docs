@@ -7,7 +7,7 @@
 | Control | A.7.3 Securing offices, rooms and facilities |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.1 Designation of protected areas |
+| ISMS-P mapping | 2.4.1 Designation of Protected Areas |
 | 2013 mapping | A.11.1.3 |
 
 ## Control objective
@@ -37,7 +37,7 @@ The purpose is to design and apply physical security to the individual offices, 
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.4 (Physical security monitoring), A.7.5 (Protecting against physical and environmental threats), A.7.6 (Working in secure areas)
-- ISMS-P mapping: 2.4.1 Designation of protected areas
+- ISMS-P mapping: 2.4.1 Designation of Protected Areas
 - 2013 mapping: A.11.1.3 (Securing offices, rooms and facilities)
 
 ## Evidence

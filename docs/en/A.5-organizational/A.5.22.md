@@ -7,7 +7,7 @@
 | Control | A.5.22 Monitoring, review and change management of supplier services |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.3.3 Management of external party security compliance |
+| ISMS-P mapping | 2.3.3 Management of External Party Security Implementation |
 | 2013 mapping | A.15.2.1 (Monitoring and review of supplier services), A.15.2.2 (Managing changes to supplier services) |
 
 ## Control objective
@@ -35,8 +35,8 @@ This control requires the organization to regularly monitor and review, througho
 ## Related controls and attributes
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 9.3 (Management review), 10.1 (Continual improvement)
-- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain), A.5.23 (Information security for use of cloud services), A.6.6 (Confidentiality or non-disclosure agreements)
-- ISMS-P mapping: 2.3.3 Management of external party security compliance (adjacent: 2.3.4 Security on external party contract change and termination, 2.3.2 Security in external party contracts, 2.9.1 Change management)
+- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the information and communication technology (ICT) supply chain), A.5.23 (Information security for use of cloud services), A.6.6 (Confidentiality or non-disclosure agreements)
+- ISMS-P mapping: 2.3.3 Management of External Party Security Implementation (adjacent: 2.3.4 Security upon Change or Expiration of External Party Contracts, 2.3.2 Security When Contracting with External Parties, 2.9.1 Change Management)
 - 2013 mapping: A.15.2.1 (Monitoring and review of supplier services), A.15.2.2 (Managing changes to supplier services)
 
 ## Evidence

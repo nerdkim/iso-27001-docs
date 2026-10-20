@@ -1,13 +1,13 @@
-# A.8.1 User endpoint devices
+# A.8.1 User end point devices
 
 | Field | Value |
 |---|---|
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.8 Technological controls |
-| Control | A.8.1 User endpoint devices |
+| Control | A.8.1 User end point devices |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.10.6 Business-use device security |
+| ISMS-P mapping | 2.10.6 Security of Business Terminals |
 | 2013 mapping | A.6.2.1, A.11.2.8 |
 
 ## Control objective
@@ -36,7 +36,7 @@ Loss or compromise of a laptop, smartphone, or tablet can endanger stored work d
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.7.9 (Security of assets off-premises), A.6.7 (Remote working), A.5.10 (Acceptable use of information and other associated assets), A.8.24 (Use of cryptography), A.8.7 (Protection against malware), A.8.8 (Management of technical vulnerabilities), A.8.19 (Installation of software on operational systems)
-- ISMS-P mapping: 2.10.6 Business-use device security
+- ISMS-P mapping: 2.10.6 Security of Business Terminals
 - 2013 mapping: A.6.2.1 (Mobile device policy), A.11.2.8 (Unattended user equipment)
 
 ## Evidence

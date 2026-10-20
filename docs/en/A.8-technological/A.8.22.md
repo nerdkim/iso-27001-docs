@@ -7,7 +7,7 @@
 | Control | A.8.22 Segregation of networks |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.6.1 Network access |
+| ISMS-P mapping | 2.6.1 Network Access |
 | 2013 mapping | A.13.1.3 (Segregation in networks) |
 
 ## Control objective
@@ -36,7 +36,7 @@ Segregation of networks partitions a single network into zones with different tr
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.8.20 (Networks security), A.8.21 (Security of network services), A.8.23 (Web filtering), A.5.14 (Information transfer)
-- ISMS-P mapping: 2.6.1 Network access
+- ISMS-P mapping: 2.6.1 Network Access
 - 2013 mapping: A.13.1.3 (Segregation in networks)
 
 ## Evidence

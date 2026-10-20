@@ -7,7 +7,7 @@
 | Control | A.7.10 Storage media |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.10.7 Management of removable storage media (related: 2.9.7 Reuse and disposal of information assets, 2.4.6 Control of devices brought in and out) |
+| ISMS-P mapping | 2.10.7 Removable Storage Media Management (related: 2.9.7 Reuse and Disposal of Information Assets, 2.4.6 Control of Devices Brought In and Out) |
 | 2013 mapping | A.8.3.1, A.8.3.2, A.8.3.3, A.11.2.5 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control requires that information held on storage media be protected agains
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 7.5 (Documented information), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.7.9 (Security of assets off-premises), A.7.14 (Secure disposal or re-use of equipment), A.8.10 (Information deletion), A.8.12 (Data leakage prevention), A.5.9 (Inventory of information and other associated assets), A.5.10 (Acceptable use of information and other associated assets), A.5.14 (Information transfer)
-- ISMS-P mapping: 2.10.7 Management of removable storage media (related: 2.9.7 Reuse and disposal of information assets, 2.4.6 Control of devices brought in and out)
+- ISMS-P mapping: 2.10.7 Removable Storage Media Management (related: 2.9.7 Reuse and Disposal of Information Assets, 2.4.6 Control of Devices Brought In and Out)
 - 2013 mapping: A.8.3.1 (Management of removable media), A.8.3.2 (Disposal of media), A.8.3.3 (Physical media transfer), A.11.2.5 (Removal of assets)
 
 ## Evidence

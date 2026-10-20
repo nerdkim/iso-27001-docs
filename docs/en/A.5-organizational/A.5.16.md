@@ -7,7 +7,7 @@
 | Control | A.5.16 Identity management |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.5.2 User identification |
+| ISMS-P mapping | 2.5.2 User Identification |
 | 2013 mapping | A.9.2.1 (User registration and de-registration) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control governs the full life cycle of identities assigned to internal pers
 
 - ISO 27001 clauses: 7.2 (Competence), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.17 (Authentication information), A.5.18 (Access rights), A.5.15 (Access control), A.8.2 (Privileged access rights), A.8.5 (Secure authentication)
-- ISMS-P mapping: 2.5.2 User identification (adjacent: 2.5.1 User account management, 2.5.5 Special account and privilege management)
+- ISMS-P mapping: 2.5.2 User Identification (adjacent: 2.5.1 User Account Management, 2.5.5 Management of Special Accounts and Privileges)
 - 2013 mapping: A.9.2.1 (User registration and de-registration)
 
 ## Evidence

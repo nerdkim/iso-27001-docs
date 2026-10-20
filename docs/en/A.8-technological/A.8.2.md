@@ -7,7 +7,7 @@
 | Control | A.8.2 Privileged access rights |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.5.5 Special account and privilege management |
+| ISMS-P mapping | 2.5.5 Management of Special Accounts and Privileges |
 | 2013 mapping | A.9.2.3 |
 
 ## Control objective
@@ -36,7 +36,7 @@ Privileged access rights (administrator, root, system/DB administrator privilege
 
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.15 (Access control), A.5.16 (Identity management), A.5.17 (Authentication information), A.5.18 (Access rights), A.8.3 (Information access restriction), A.8.5 (Secure authentication), A.8.15 (Logging), A.8.16 (Monitoring activities), A.8.18 (Use of privileged utility programs)
-- ISMS-P mapping: 2.5.5 Special account and privilege management
+- ISMS-P mapping: 2.5.5 Management of Special Accounts and Privileges
 - 2013 mapping: A.9.2.3 (Management of privileged access rights)
 
 ## Evidence

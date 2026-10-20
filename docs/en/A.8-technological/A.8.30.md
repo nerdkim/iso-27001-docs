@@ -7,7 +7,7 @@
 | Control | A.8.30 Outsourced development |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.8.1 Definition of security requirements |
+| ISMS-P mapping | 2.8.1 Definition of Security Requirements |
 | 2013 mapping | A.14.2.7 (Outsourced development) |
 
 ## Control objective
@@ -36,8 +36,8 @@ This control ensures that when all or part of system development is outsourced t
 ## Related controls and attributes
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 7.4 (Communication), 9.1 (Monitoring, measurement, analysis and evaluation)
-- Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.31 (Separation of development, test and production environments), A.8.4 (Access to source code), A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain)
-- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.3.2 Security in external party contracts, 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination, 2.8.2 Review and testing of security requirements, 2.8.5 Source program management)
+- Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.31 (Separation of development, test and production environments), A.8.4 (Access to source code), A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the information and communication technology (ICT) supply chain)
+- ISMS-P mapping: 2.8.1 Definition of Security Requirements (related: 2.3.2 Security When Contracting with External Parties, 2.3.3 Management of External Party Security Implementation, 2.3.4 Security upon Change or Expiration of External Party Contracts, 2.8.2 Review and Testing of Security Requirements, 2.8.5 Source Program Management)
 - 2013 mapping: A.14.2.7 (Outsourced development)
 
 ## Evidence

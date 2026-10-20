@@ -7,12 +7,12 @@
 | Control | A.5.17 Authentication information |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity |
-| ISMS-P mapping | 2.5.4 Password management (related: 2.5.3 User authentication) |
+| ISMS-P mapping | 2.5.4 Password Management (related: 2.5.3 User Authentication) |
 | 2013 mapping | A.9.2.4, A.9.3.1, A.9.4.3 |
 
 ## Control objective
 
-Authentication information (passwords, PINs, token secrets, certificate private keys, API keys, and similar) is the core secret that proves the identity of a user or system, so it must be distributed, stored, and managed securely across its full lifecycle from issuance through use, renewal, and disposal. This control requires the organization to establish responsibilities and procedures for both the organization and the user so that authentication information cannot be leaked, guessed, or reused to enable unauthorized access. The essence is to assure both the quality of the authentication information (complexity/length/reuse limits) and its secure storage and transmission.
+Authentication information (passwords, PINs, token secrets, certificate private keys, API keys, and similar) is the core secret that proves the identity of a user or system, so it must be distributed, stored, and managed securely across its full lifecycle from issuance through use, renewal, and disposal. This control requires the organization to establish responsibilities and procedures for both the organization and the user so that authentication information cannot be leaked, guessed, or reused to enable unauthorized access. The essence is to assure both the quality of the authentication information (adequate length, blocking of breached/common passwords, reuse limits) and its secure storage and transmission.
 
 ## Key checkpoints
 
@@ -36,7 +36,7 @@ Authentication information (passwords, PINs, token secrets, certificate private 
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.15 (Access control), A.5.16 (Identity management), A.5.18 (Access rights), A.8.2 (Privileged access rights), A.8.5 (Secure authentication)
-- ISMS-P mapping: 2.5.4 Password management (related: 2.5.3 User authentication)
+- ISMS-P mapping: 2.5.4 Password Management (related: 2.5.3 User Authentication)
 - 2013 mapping: A.9.2.4, A.9.3.1, A.9.4.3
 
 ## Evidence

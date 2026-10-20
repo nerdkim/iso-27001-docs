@@ -7,7 +7,7 @@
 | Control | A.5.36 Compliance with policies, rules and standards for information security |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.2 Management system inspection |
+| ISMS-P mapping | 1.4.2 Management System Inspection |
 | 2013 mapping | A.18.2.2 (Compliance with security policies and standards), A.18.2.3 (Technical compliance review) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires the organization to periodically verify that the informati
 
 - ISO 27001 clauses: 7.2 (Competence), 9.1 (Monitoring, measurement, analysis and evaluation), 9.2 (Internal audit), 9.3 (Management review), 10.1 (Continual improvement)
 - Adjacent Annex A: A.5.1 (Policies for information security), A.5.35 (Independent review of information security), A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.37 (Documented operating procedures), A.8.8 (Management of technical vulnerabilities), A.8.34 (Protection of information systems during audit testing)
-- ISMS-P mapping: 1.4.2 Management system inspection (adjacent: 1.4.3 Management system improvement, 2.1.1 Policy maintenance, 2.11.2 Vulnerability assessment and remediation)
+- ISMS-P mapping: 1.4.2 Management System Inspection (adjacent: 1.4.3 Management System Improvement, 2.1.1 Policy Maintenance, 2.11.2 Vulnerability Assessment and Remediation)
 - 2013 mapping: A.18.2.2 (Compliance with security policies and standards), A.18.2.3 (Technical compliance review)
 
 ## Evidence
@@ -56,7 +56,7 @@ This control requires the organization to periodically verify that the informati
 - No technical compliance check (verification against security settings/configuration baselines) exists, so system settings drift from the standard.
 - Non-compliance is found in a check, but it is merely recorded and left unaddressed without root-cause analysis or corrective action.
 - The same non-compliance recurs, yet it is never linked to fundamental improvement such as policy revision or training.
-- Technical compliance checks are run on operational systems without prior approval/planning, causing incidents or adverse impact.
+- Technical compliance checks are run on operational systems without prior approval/planning, causing outages or other adverse impact.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

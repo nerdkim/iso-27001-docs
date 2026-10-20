@@ -7,7 +7,7 @@
 | Control | A.5.18 Access rights |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.5.6 Review of access rights (related: 2.5.1 User account management, 2.5.5 Special account and privilege management) |
+| ISMS-P mapping | 2.5.6 Review of Access Rights (related: 2.5.1 User Account Management, 2.5.5 Management of Special Accounts and Privileges) |
 | 2013 mapping | A.9.2.2 (User access provisioning), A.9.2.5 (Review of user access rights), A.9.2.6 (Removal or adjustment of access rights) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires that access rights to information and other associated ass
 
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.15 (Access control), A.5.16 (Identity management), A.5.17 (Authentication information), A.8.2 (Privileged access rights), A.8.3 (Information access restriction), A.8.4 (Access to source code), A.8.18 (Use of privileged utility programs), A.6.5 (Responsibilities after termination or change of employment)
-- ISMS-P mapping: 2.5.6 Review of access rights (related: 2.5.1 User account management, 2.5.5 Special account and privilege management)
+- ISMS-P mapping: 2.5.6 Review of Access Rights (related: 2.5.1 User Account Management, 2.5.5 Management of Special Accounts and Privileges)
 - 2013 mapping: A.9.2.2 (User access provisioning), A.9.2.5 (Review of user access rights), A.9.2.6 (Removal or adjustment of access rights)
 
 ## Evidence

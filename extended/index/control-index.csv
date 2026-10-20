@@ -112,7 +112,7 @@ en,organizational,A.5,A.5.17,Authentication information,6,6,6,docs/en/A.5-organi
 en,organizational,A.5,A.5.18,Access rights,6,7,6,docs/en/A.5-organizational/A.5.18.md
 en,organizational,A.5,A.5.19,Information security in supplier relationships,6,5,6,docs/en/A.5-organizational/A.5.19.md
 en,organizational,A.5,A.5.20,Addressing information security within supplier agreements,6,6,6,docs/en/A.5-organizational/A.5.20.md
-en,organizational,A.5,A.5.21,Managing information security in the ICT supply chain,6,7,5,docs/en/A.5-organizational/A.5.21.md
+en,organizational,A.5,A.5.21,Managing information security in the information and communication technology (ICT) supply chain,6,7,5,docs/en/A.5-organizational/A.5.21.md
 en,organizational,A.5,A.5.22,"Monitoring, review and change management of supplier services",5,6,5,docs/en/A.5-organizational/A.5.22.md
 en,organizational,A.5,A.5.23,Information security for use of cloud services,5,6,5,docs/en/A.5-organizational/A.5.23.md
 en,organizational,A.5,A.5.24,Information security incident management planning and preparation,6,6,6,docs/en/A.5-organizational/A.5.24.md
@@ -125,7 +125,7 @@ en,organizational,A.5,A.5.30,ICT readiness for business continuity,6,7,7,docs/en
 en,organizational,A.5,A.5.31,"Legal, statutory, regulatory and contractual requirements",6,6,6,docs/en/A.5-organizational/A.5.31.md
 en,organizational,A.5,A.5.32,Intellectual property rights,6,6,6,docs/en/A.5-organizational/A.5.32.md
 en,organizational,A.5,A.5.33,Protection of records,6,6,6,docs/en/A.5-organizational/A.5.33.md
-en,organizational,A.5,A.5.34,Privacy and protection of PII,6,7,7,docs/en/A.5-organizational/A.5.34.md
+en,organizational,A.5,A.5.34,Privacy and protection of personal identifiable information (PII),6,7,7,docs/en/A.5-organizational/A.5.34.md
 en,organizational,A.5,A.5.35,Independent review of information security,6,6,6,docs/en/A.5-organizational/A.5.35.md
 en,organizational,A.5,A.5.36,"Compliance with policies, rules and standards for information security",6,6,6,docs/en/A.5-organizational/A.5.36.md
 en,organizational,A.5,A.5.37,Documented operating procedures,6,6,6,docs/en/A.5-organizational/A.5.37.md
@@ -151,7 +151,7 @@ en,physical,A.7,A.7.11,Supporting utilities,6,6,6,docs/en/A.7-physical/A.7.11.md
 en,physical,A.7,A.7.12,Cabling security,6,6,6,docs/en/A.7-physical/A.7.12.md
 en,physical,A.7,A.7.13,Equipment maintenance,6,6,6,docs/en/A.7-physical/A.7.13.md
 en,physical,A.7,A.7.14,Secure disposal or re-use of equipment,6,6,6,docs/en/A.7-physical/A.7.14.md
-en,technological,A.8,A.8.1,User endpoint devices,6,6,6,docs/en/A.8-technological/A.8.1.md
+en,technological,A.8,A.8.1,User end point devices,6,6,6,docs/en/A.8-technological/A.8.1.md
 en,technological,A.8,A.8.2,Privileged access rights,5,6,6,docs/en/A.8-technological/A.8.2.md
 en,technological,A.8,A.8.3,Information access restriction,5,5,5,docs/en/A.8-technological/A.8.3.md
 en,technological,A.8,A.8.4,Access to source code,6,6,6,docs/en/A.8-technological/A.8.4.md

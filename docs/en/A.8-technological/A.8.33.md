@@ -7,7 +7,7 @@
 | Control | A.8.33 Test information |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity |
-| ISMS-P mapping | 2.8.4 Test data security |
+| ISMS-P mapping | 2.8.4 Test Data Security |
 | 2013 mapping | A.14.3.1 (Protection of test data) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control selects and protects development/test information and manages its r
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.31 (Separation of development, test and production environments), A.8.29 (Security testing in development and acceptance), A.8.3 (Information access restriction), A.8.4 (Access to source code), A.8.10 (Information deletion), A.8.11 (Data masking), A.8.12 (Data leakage prevention), A.8.24 (Use of cryptography)
-- ISMS-P mapping: 2.8.4 Test data security (related: 2.8.3 Separation of test and production environments, 3.2.5 Pseudonymized data processing, 2.9.7 Reuse and disposal of information assets, 3.4.1 Destruction of personal data)
+- ISMS-P mapping: 2.8.4 Test Data Security (related: 2.8.3 Separation of Test and Operational Environments, 3.2.5 Processing of Pseudonymized Information, 2.9.7 Reuse and Disposal of Information Assets, 3.4.1 Destruction of Personal Information)
 - 2013 mapping: A.14.3.1 (Protection of test data)
 
 ## Evidence

@@ -1,18 +1,18 @@
-# A.5.21 Managing information security in the ICT supply chain
+# A.5.21 Managing information security in the information and communication technology (ICT) supply chain
 
 | Field | Value |
 |---|---|
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.5 Organizational controls |
-| Control | A.5.21 Managing information security in the ICT supply chain |
+| Control | A.5.21 Managing information security in the information and communication technology (ICT) supply chain |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.3.2 Security in external party contracts |
+| ISMS-P mapping | 2.3.2 Security When Contracting with External Parties |
 | 2013 mapping | A.15.1.3 (Information and communication technology supply chain) |
 
 ## Control objective
 
-This control requires the supply chain risks that arise across the acquisition and use of ICT products and services to be identified and managed. Hardware, software, firmware, cloud, and managed services reach an organization through multiple upstream and downstream suppliers, so a vulnerability or tampering in a single component can propagate across the whole environment. The control requires security requirements to flow down and be verified not only through the directly contracted supplier but along the full chain of sub-suppliers (subcontractors). Its aim is to assure the authenticity and integrity of components, prepare for supply disruption, and prevent risk proactively.
+This control requires the supply chain risks that arise across the acquisition and use of ICT products and services to be identified and managed. Hardware, software, firmware, cloud, and managed services reach an organization through multiple upstream and downstream suppliers, so a vulnerability or tampering in a single component can propagate across the whole environment. The control's aim is to assure the authenticity and integrity of components, prepare for supply disruption, and prevent risk proactively. ISO/IEC 27002 guidance recommends requiring suppliers to flow the organization's security requirements down to their sub-suppliers (subcontractors), and having a way to confirm that delivered ICT products and services meet those requirements.
 
 ## Key checkpoints
 
@@ -37,7 +37,7 @@ This control requires the supply chain risks that arise across the acquisition a
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services), A.8.30 (Outsourced development)
-- ISMS-P mapping: 2.3.2 Security in external party contracts (adjacent: 2.3.1 Managing the status of external parties, 2.3.3 Management of external party security compliance, 2.8.1 Definition of security requirements)
+- ISMS-P mapping: 2.3.2 Security When Contracting with External Parties (adjacent: 2.3.1 Management of the Status of External Parties, 2.3.3 Management of External Party Security Implementation, 2.8.1 Definition of Security Requirements)
 - 2013 mapping: A.15.1.3 (Information and communication technology supply chain)
 
 ## Evidence

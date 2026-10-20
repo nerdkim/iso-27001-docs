@@ -1,4 +1,4 @@
-# A.8.1 사용자 엔드포인트 기기(User endpoint devices)
+# A.8.1 사용자 엔드포인트 기기(User end point devices)
 
 | 구분 | 내용 |
 |---|---|

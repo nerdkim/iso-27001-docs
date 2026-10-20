@@ -7,12 +7,12 @@
 | Control | A.6.1 Screening |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.1 Designation and management of key duty personnel (nearest counterpart; ISMS-P has no criterion dedicated to pre-employment screening) |
+| ISMS-P mapping | 2.2.1 Designation and Management of Key Personnel (nearest counterpart; ISMS-P has no criterion dedicated to pre-employment screening) |
 | 2013 mapping | A.7.1.1 |
 
 ## Control objective
 
-This control verifies the identity, career history, qualifications, and background of candidates before they are given access to information, lowering the risk of inadvertently hiring someone who could threaten the organization's information and assets. People are the first line of defense in information security and can also be its weakest point, so the scope and depth of screening should be proportionate to the classification of the information to be accessed and the risk level of the role. The control requires screening to be carried out in line with applicable laws, regulations, and ethics (personal data protection, consent, non-discrimination), and to extend beyond full-time employees to external personnel who hold equivalent access.
+This control verifies the identity, career history, qualifications, and background of candidates before they are given access to information, lowering the risk of inadvertently hiring someone who could threaten the organization's information and assets. People are the first line of defense in information security and can also be its weakest point, so the scope and depth of screening should be proportionate to the classification of the information to be accessed and the risk level of the role. The control requires verification both before joining and on an ongoing basis during employment, carried out in line with applicable laws, regulations, and ethics (personal data protection, consent, non-discrimination), proportionate to the role's risk, and extended beyond full-time employees to external personnel who hold equivalent access.
 
 ## Key checkpoints
 
@@ -21,14 +21,14 @@ This control verifies the identity, career history, qualifications, and backgrou
 3. Are the scope and depth of screening strengthened for people who handle sensitive information or perform key duties?
 4. Does screening comply with applicable law and ethics, including a lawful basis, data minimization, notice and required consent/authorization, and non-discrimination?
 5. Are equivalent screening requirements applied through contracts to external personnel such as contractors, temporary staff, and outsourced/dispatched workers?
-6. Are screening and its lawful basis recorded, and is legally permitted, proportionate re-screening considered when duties or access become more sensitive?
+6. Are screening and its lawful basis recorded, and is ongoing verification defined (for example, re-verification at defined intervals for critical roles and when duties or access become more sensitive) using only legally permitted, proportionate checks?
 
 ## Implementation guidance
 
 - Document a screening policy/procedure that applies to all candidates, and differentiate the screening scope in proportion to the classification of information to be accessed and the risk of the role.
 - Define per-role screening items: identity verification, education/qualifications, career history, reference checks, and criminal-record/credit checks for high-risk roles where legally permitted.
 - Confirm a lawful basis before collecting or verifying personal information and apply required notice and consent/authorization procedures. Consent alone does not authorize a prohibited check; securely process only information necessary for the role.
-- Apply enhanced verification to sensitive/key roles (privileged access, finance, personal data handlers), and consider re-screening at defined intervals or on role change.
+- Apply enhanced verification to sensitive/key roles (privileged access, finance, personal data handlers), and define how suitability is re-verified during employment (at defined intervals for critical roles and on moves into more sensitive roles), using only checks that applicable law permits.
 - Extend screening requirements to external personnel (contractors, dispatched workers, outsourced staff) through contract clauses, and confirm that the supplier performed equivalent screening.
 - Retain screening criteria, results, lawful basis, and required consent/authorization records in restricted storage, with retention and disposal rules aligned with purpose and law.
 
@@ -36,7 +36,7 @@ This control verifies the identity, career history, qualifications, and backgrou
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 5.3 (Organizational roles, responsibilities and authorities)
 - Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.3 (Information security awareness, education and training), A.6.5 (Responsibilities after termination or change of employment), A.6.6 (Confidentiality or non-disclosure agreements)
-- ISMS-P mapping: 2.2.1 Designation and management of key duty personnel (nearest counterpart; ISMS-P has no criterion dedicated to pre-employment screening, so read together with 2.2.3 Security pledge and 2.3.2 Security in external party contracts)
+- ISMS-P mapping: 2.2.1 Designation and Management of Key Personnel (nearest counterpart; ISMS-P has no criterion dedicated to pre-employment screening, so read together with 2.2.3 Security Pledge and 2.3.2 Security When Contracting with External Parties)
 - 2013 mapping: A.7.1.1 (Screening)
 
 ## Evidence

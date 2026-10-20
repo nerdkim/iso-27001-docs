@@ -7,7 +7,7 @@
 | Control | A.8.24 Use of cryptography |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.7.1 Application of cryptographic policy |
+| ISMS-P mapping | 2.7.1 Application of Cryptographic Policy |
 | 2013 mapping | A.10.1.1, A.10.1.2 |
 
 ## Control objective
@@ -27,7 +27,7 @@ This control requires the organization to define through policy, and operate con
 
 - Document the scope, list of approved algorithms, minimum key lengths, operating modes, and exception approval procedure in the cryptography policy, and prioritize the targets of application by linking to risk assessment results.
 - Apply encryption at rest (disk/database/file) and encryption in transit (secure protocols/versions such as TLS) distinctly, and disable weak protocols (legacy TLS) and weak cipher suites.
-- Generate keys from a secure random source and store them in an HSM or a dedicated key management system (KMS); never store plaintext keys in source code, configuration files, or logs.
+- Generate keys from a secure random source and store them in a protected key store suited to the key's purpose and risk (an HSM, a KMS, an OS- or TPM-backed keystore, an access-restricted key file, and so on). Never embed plaintext keys in source code, configuration files, or logs.
 - Define rotation and recovery policies by key type and purpose. On suspected compromise, revoke use for new encryption/signing and replace the key; where existing data must be recovered, decrypt/migrate it under restricted procedures before secure key destruction. Decide backup/escrow needs by key purpose and apply separation of access and dual control.
 - Use only validated standard algorithms and trustworthy libraries, prohibit in-house cryptographic development, and continuously manage the versions of libraries in use and their known vulnerabilities.
 - Build crypto-agility into the design to prepare for the aging of algorithms/key strength, and periodically re-review and update the policy and its state of implementation.
@@ -36,7 +36,7 @@ This control requires the organization to define through policy, and operate con
 
 - ISO 27001 clauses: 6.1.3 (Information security risk treatment), 8.1 (Operational planning and control), 7.5 (Documented information)
 - Adjacent Annex A: A.5.31 (Legal, statutory, regulatory and contractual requirements), A.8.5 (Secure authentication), A.5.14 (Information transfer), A.8.20 (Networks security), A.8.26 (Application security requirements)
-- ISMS-P mapping: 2.7.1 Application of cryptographic policy (related: 2.7.2 Cryptographic key management, 2.10.5 Information transfer security, 2.5.4 Password management)
+- ISMS-P mapping: 2.7.1 Application of Cryptographic Policy (related: 2.7.2 Cryptographic Key Management, 2.10.5 Information Transmission Security, 2.5.4 Password Management)
 - 2013 mapping: A.10.1.1 (Policy on the use of cryptographic controls), A.10.1.2 (Key management)
 
 ## Evidence
@@ -44,7 +44,7 @@ This control requires the organization to define through policy, and operate con
 - Cryptography policy/guideline documents and the approved algorithm/minimum key length reference table
 - Status table of encryption at rest/in transit (algorithm/key length/protocol version per target system)
 - Key management procedures and the key lifecycle register (generation/rotation/destruction history)
-- HSM/KMS access privilege lists and access/operation logs
+- Access privilege lists and access/operation logs for key stores (HSM, KMS, and so on)
 - TLS configuration review results (evidence of disabling weak versions/cipher suites) and vulnerability assessment reports
 - Records of the review of compliance with cryptography-related laws/regulations
 

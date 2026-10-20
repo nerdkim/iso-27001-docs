@@ -88,14 +88,14 @@
   "out_of_scope": {
     "description": "Matters the corpus does not document because they are main-body ISMS requirements, not Annex A controls. Report them as 범위 외 with the clause number and point at a licensed copy of the standard. A keyword here never suppresses an Annex A verdict: when the same sentence also tests an Annex A checkpoint (a project risk assessment, a documented procedure, a corrective action on a supplier), judge that control first and add the main-body matter to the 범위 외 section as well.",
     "clauses": [
-      { "clause": "4.3", "topic_ko": "적용 범위", "keywords": ["적용 범위", "인증 범위", "ISMS scope", "scope of the ISMS"] },
+      { "clause": "4.3", "topic_ko": "적용 범위", "keywords": ["적용 범위", "인증 범위", "ISMS 범위", "ISMS scope", "scope of the ISMS", "certification scope"] },
       { "clause": "5.1", "topic_ko": "리더십과 의지표명", "keywords": ["리더십", "leadership"] },
-      { "clause": "6.1.2 / 6.1.3 / 8.2 / 8.3", "topic_ko": "위험 평가와 위험 처리, 적용성 보고서(SoA)", "keywords": ["위험 평가", "위험평가", "위험 처리", "위험 분석", "SoA", "적용성 보고서", "risk assessment", "risk treatment", "statement of applicability"] },
+      { "clause": "6.1.2 / 6.1.3 / 8.2 / 8.3", "topic_ko": "위험 평가와 위험 처리, 적용가능성 명세서(SoA)", "keywords": ["위험 평가", "위험평가", "위험 처리", "위험 분석", "SoA", "적용가능성 명세서", "적용성 보고서", "risk assessment", "risk treatment", "statement of applicability"] },
       { "clause": "6.2", "topic_ko": "정보보안 목표", "keywords": ["보안 목표", "정보보안 목표", "security objective"] },
       { "clause": "7.2", "topic_ko": "역량", "keywords": ["자격 요건", "역량 평가", "competence requirement"] },
       { "clause": "7.5", "topic_ko": "문서화된 정보의 관리", "keywords": ["문서 관리 절차", "문서 통제", "documented information", "document control"] },
       { "clause": "9.1", "topic_ko": "모니터링, 측정, 분석 및 평가", "keywords": ["성과 측정", "보안 지표", "performance measurement", "security metrics"] },
-      { "clause": "9.2", "topic_ko": "내부심사", "keywords": ["내부심사", "내부 심사", "ISMS 내부 감사", "internal ISMS audit"] },
+      { "clause": "9.2", "topic_ko": "내부심사", "keywords": ["내부심사", "내부 심사", "내부 감사", "ISMS 내부 감사", "internal audit", "internal ISMS audit"] },
       { "clause": "9.3", "topic_ko": "경영검토", "keywords": ["경영검토", "경영 검토", "management review"] },
       { "clause": "10.2", "topic_ko": "부적합 및 시정조치", "keywords": ["시정조치", "시정 조치", "부적합 관리", "corrective action", "nonconformity management"] }
     ]

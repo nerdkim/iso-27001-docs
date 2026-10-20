@@ -7,7 +7,7 @@
 | Control | A.8.15 Logging |
 | Control type (ref.) | Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.9.4 Log and access record management |
+| ISMS-P mapping | 2.9.4 Log and Access Record Management |
 | 2013 mapping | A.12.4.1 / A.12.4.2 / A.12.4.3 (Event logging / Protection of log information / Administrator and operator logs) |
 
 ## Control objective
@@ -17,7 +17,7 @@ Logging requires that events arising from information systems, applications, net
 ## Key checkpoints
 
 1. Are the systems in scope for logging and the event types to record (login, privilege change, data access, configuration change, error, and so on), together with the level of detail, defined in a logging policy/procedure?
-2. Is each log configured to include the mandatory fields (event timestamp, subject identifier, target, action, success/failure result, source, and so on)?
+2. Is each log configured to include the fields needed to reconstruct events (event timestamp, subject identifier, target, action, success/failure result, and so on), plus the source where the event or platform provides it?
 3. Are protective measures such as access control, tamper prevention, encryption, and central collection applied to preserve the integrity and confidentiality of logs?
 4. Is the log retention period defined in line with legal/regulatory/internal requirements, and are logs stored without loss for that period?
 5. Are the activities of privileged/administrator accounts logged separately, with separation of duties/controls so that a log administrator cannot conceal their own actions?
@@ -37,7 +37,7 @@ Logging requires that events arising from information systems, applications, net
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.16 (Monitoring activities), A.8.17 (Clock synchronization), A.5.28 (Collection of evidence), A.8.6 (Capacity management), A.5.33 (Protection of records)
-- ISMS-P mapping: 2.9.4 Log and access record management (review under 2.9.5, time synchronization under 2.9.6)
+- ISMS-P mapping: 2.9.4 Log and Access Record Management (review under 2.9.5, time synchronization under 2.9.6)
 - 2013 mapping: A.12.4.1 / A.12.4.2 / A.12.4.3 (Event logging / Protection of log information / Administrator and operator logs)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.8.20 Networks security |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.6.1 Network access |
+| ISMS-P mapping | 2.6.1 Network Access |
 | 2013 mapping | A.13.1.1 |
 
 ## Control objective
@@ -21,7 +21,7 @@ This control ensures that networks and network devices are securely managed and 
 3. Are security configuration baselines for network devices (changing default passwords, disabling unnecessary services/ports, restricting management access) established and applied?
 4. Are encryption and authentication applied to remote access, wireless, and external connection segments?
 5. Is network traffic logged/monitored, and is there an operating capability to detect and alert on anomalies?
-6. Are security requirements/service levels (SLAs) for network services (internally operated or from external providers) identified, agreed, and fulfilled?
+6. Are devices joining the network identified/authenticated so that unapproved devices cannot connect, and are weak protocols such as Telnet disabled?
 
 ## Implementation guidance
 
@@ -29,14 +29,14 @@ This control ensures that networks and network devices are securely managed and 
 - Define network-device baselines for replacing default secrets, disabling unnecessary default accounts/services/ports, restricting management interfaces, and updating firmware. Distinguish a retained default account name from exposed default credentials.
 - Use protected protocols such as SSH/HTTPS for remote management. Apply authentication and encryption appropriate to users, devices, and services on external/wireless/remote connections, with MFA for high-risk user access. Do not assume every link needs a VPN or interactive MFA.
 - Collect logs from network devices and security systems centrally (log server/SIEM), and continuously monitor for signs of intrusion/misuse using threshold-based alerting and anomalous-traffic detection (IDS/IPS, NDR, and so on).
-- With external network service providers, specify the security features, service levels, and management requirements of the provided services in contracts/agreements, and periodically review whether they are fulfilled.
+- Identify and authenticate devices joining the network (802.1X/NAC, and so on) to keep unapproved devices off, and disable weak protocols such as Telnet. Manage the security requirements and service levels to be agreed with network service providers under A.8.21.
 - Apply the change management (A.8.32) procedure to network configuration changes, periodically review firewall policies/ACLs to remove unused or overly permissive rules, and keep network diagrams current.
 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.21 (Security of network services), A.8.22 (Segregation of networks), A.8.23 (Web filtering), A.8.24 (Use of cryptography), A.8.16 (Monitoring activities), A.8.15 (Logging)
-- ISMS-P mapping: 2.6.1 Network access (related: 2.10.1 Operation of security systems, 2.10.5 Information transfer security, 2.6.7 Internet access control, 2.6.5 Wireless network access)
+- ISMS-P mapping: 2.6.1 Network Access (related: 2.10.1 Security System Operation, 2.10.5 Information Transmission Security, 2.6.7 Internet Access Control, 2.6.5 Wireless Network Access)
 - 2013 mapping: A.13.1.1 (Network controls)
 
 ## Evidence
@@ -46,7 +46,7 @@ This control ensures that networks and network devices are securely managed and 
 - Network device security configuration standards and applied configuration records (snapshots/inspection results)
 - Encryption and authentication configuration for remote/wireless/external access (VPN, multi-factor authentication, and so on)
 - Log collection and monitoring/alerting configuration for network/security devices, and anomaly detection/response records
-- External network service contracts/SLAs and fulfillment review results
+- Device authentication settings for network access (802.1X/NAC, and so on) and results of checks that weak protocols are disabled
 
 ## Nonconformity examples
 
@@ -55,7 +55,7 @@ This control ensures that networks and network devices are securely managed and 
 - Network-device default passwords remain in use or unnecessary management services are exposed externally.
 - Remote/wireless access segments lack encryption or strengthened authentication, creating a risk of eavesdropping/unauthorized access.
 - Network device logs are not collected/monitored, so intrusion attempts or anomalous traffic cannot be detected.
-- Security requirements/service levels for external network services are not defined in the contract, so fulfillment cannot be verified.
+- Devices joining the network are not identified or authenticated, so unapproved devices can connect to the internal network.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

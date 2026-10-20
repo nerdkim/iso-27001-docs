@@ -7,7 +7,7 @@
 | Control | A.5.27 Learning from information security incidents |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.4 Incident response training and improvement |
+| ISMS-P mapping | 2.11.4 Incident Response Training and Improvement |
 | 2013 mapping | A.16.1.6 (Learning from information security incidents) |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control uses the knowledge gained from information security incidents (and 
 
 - ISO 27001 clauses: 9.1 (Monitoring, measurement, analysis and evaluation), 9.3 (Management review), 10.1 (Continual improvement), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.5.24 (Information security incident management planning and preparation), A.5.25 (Assessment and decision on information security events), A.5.26 (Response to information security incidents), A.5.28 (Collection of evidence), A.6.8 (Information security event reporting)
-- ISMS-P mapping: 2.11.4 Incident response training and improvement (adjacent: 2.11.5 Incident response and recovery, 2.11.1 Establishment of incident prevention and response system, 1.4.3 Management system improvement)
+- ISMS-P mapping: 2.11.4 Incident Response Training and Improvement (adjacent: 2.11.5 Incident Response and Recovery, 2.11.1 Establishment of an Incident Prevention and Response System, 1.4.3 Management System Improvement)
 - 2013 mapping: A.16.1.6 (Learning from information security incidents)
 
 ## Evidence

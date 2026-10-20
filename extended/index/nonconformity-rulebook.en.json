@@ -255,7 +255,7 @@
    ]
   },
   "A.5.21": {
-   "name": "Managing information security in the ICT supply chain",
+   "name": "Managing information security in the information and communication technology (ICT) supply chain",
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.21.md",
    "cases": [
@@ -299,7 +299,7 @@
     "No criteria distinguish events from incidents and no severity ratings exist, so the timing of reporting and escalation depends on the individual handler's discretion.",
     "No reporting channel is provided, so personnel who notice incident indicators do not know where or how to report them.",
     "Legal notification duties and deadlines (for example, for personal data breaches) are not reflected in the procedure, creating a risk of delayed notification.",
-    "No exercise has ever been conducted after the plan was established, so the effectiveness of the procedures has not been validated.",
+    "The exercises or incident-handler training that the incident management plan itself calls for have not been carried out, so neither the effectiveness of the procedures nor staff familiarity with them can be confirmed.",
     "The logs, tools, and external-body contact arrangements needed for response were not secured in advance, delaying first response during an incident."
    ]
   },
@@ -420,7 +420,7 @@
    ]
   },
   "A.5.34": {
-   "name": "Privacy and protection of PII",
+   "name": "Privacy and protection of personal identifiable information (PII)",
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.34.md",
    "cases": [
@@ -430,7 +430,7 @@
     "The applicable privacy laws or cross-border transfer requirements are not identified, so legal requirements are not met.",
     "Personal data is retained after expiry without a valid retention basis, or used/shared without a lawful purpose or basis.",
     "No procedure exists to receive and handle data subject rights requests such as access and deletion, so requests cannot be answered.",
-    "No privacy risk assessment is performed for large-scale PII processing or the introduction of new systems."
+    "A privacy impact assessment required by applicable law (for example, the Korean public-institution PIA duty or a GDPR DPIA for likely high-risk processing) or by the organization's own policy is not performed for large-scale PII processing or a new system."
    ]
   },
   "A.5.35": {
@@ -456,7 +456,7 @@
     "No technical compliance check (verification against security settings/configuration baselines) exists, so system settings drift from the standard.",
     "Non-compliance is found in a check, but it is merely recorded and left unaddressed without root-cause analysis or corrective action.",
     "The same non-compliance recurs, yet it is never linked to fundamental improvement such as policy revision or training.",
-    "Technical compliance checks are run on operational systems without prior approval/planning, causing incidents or adverse impact."
+    "Technical compliance checks are run on operational systems without prior approval/planning, causing outages or other adverse impact."
    ]
   },
   "A.5.37": {
@@ -464,12 +464,12 @@
    "theme": "A.5 Organizational controls",
    "path": "docs/en/A.5-organizational/A.5.37.md",
    "cases": [
-    "Key operational tasks such as backup or incident response depend solely on an individual's knowledge, with no documented procedure.",
+    "Key operational tasks such as backup or failure/outage handling depend solely on an individual's knowledge, with no documented procedure.",
     "Operating procedures exist but are left out of date, diverging from how operations are actually performed.",
     "After a system or configuration change, related operating procedures are not updated, so documentation and operations are inconsistent.",
     "Procedures are accessible only to a specific individual, so they cannot be used during shift work or when the person is absent or in an emergency.",
     "Procedures lack version/approval management, so the current version cannot be identified.",
-    "Procedures omit error/exception handling or escalation contacts, delaying response during an incident."
+    "Procedures omit error/exception handling or escalation contacts, delaying response during a system failure or outage."
    ]
   },
   "A.6.1": {
@@ -711,7 +711,7 @@
    "path": "docs/en/A.7-physical/A.7.11.md",
    "cases": [
     "A UPS is installed, but its battery runtime or transfer operation has never been tested, so uninterrupted transfer fails during an actual outage.",
-    "The server-room precision cooling unit is a single unit with no standby, and its failure alert is not delivered to responsible staff.",
+    "Although the required availability calls for redundant cooling, the server-room precision cooling unit is a single unit with no standby, and its failure alert is not delivered to responsible staff.",
     "The standby generator's fuel level is not managed, so its runtime is insufficient during a prolonged outage.",
     "A temperature or humidity threshold alert is raised, but no responsible person or procedure is defined, so it is left unaddressed.",
     "A preventive maintenance plan for supporting utilities exists, but actual execution and result records are missing.",
@@ -758,7 +758,7 @@
    ]
   },
   "A.8.1": {
-   "name": "User endpoint devices",
+   "name": "User end point devices",
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.1.md",
    "cases": [
@@ -828,7 +828,7 @@
     "Managed resources and thresholds are not defined, so utilization is not noticed until it reaches saturation.",
     "Log collection/backup halts due to insufficient storage, but with no early-warning scheme it is discovered only after the fact.",
     "No capacity sizing is performed when introducing a new service, causing performance degradation/outage right after launch.",
-    "Cloud auto-scaling bounds are misconfigured: a too-low upper bound causes an outage during a traffic surge, or the absence of one leads to excessive cost.",
+    "Cloud auto-scaling bounds are misconfigured: a too-low upper bound causes an outage during a traffic surge, or the absence of one lets costs climb until a budget cap or quota curtails the service.",
     "Demand forecasting is performed but procurement lead time is not considered, so the timing of expansion does not match actual demand."
    ]
   },
@@ -932,7 +932,7 @@
     "Replication lag is not managed, causing data loss/inconsistency after switchover.",
     "Redundant components run different configuration/firmware versions, causing malfunction at switchover.",
     "There is no monitoring/alerting on redundancy status, so a degraded state (one side already failed) goes unnoticed.",
-    "Redundancy exists only within the same data center/same power feed, so a wide-area disaster brings everything down at once."
+    "Availability requirements call for resilience to site failure or wide-area disaster, yet redundancy exists only within the same data center/same power feed, so such an event brings everything down at once."
    ]
   },
   "A.8.15": {
@@ -968,10 +968,10 @@
    "cases": [
     "Missing time-zone/offset information or an unclear time basis prevents reliable comparison of log timestamps.",
     "Some devices (network/security appliances, legacy servers) are not synchronized and are left with significant clock drift.",
-    "The internal time server itself is not synchronized to a reliable external reference, or it is a single point with no redundancy.",
+    "The internal time server itself is not synchronized to a reliable external reference, or dependence on a single time server has not been assessed and no fallback source exists if it fails.",
     "Synchronization status is not monitored, so drift/failures go unnoticed for extended periods.",
     "Devices or internal time servers are configured to reference arbitrary external NTP with no restriction or authentication, exposing them to time source spoofing.",
-    "Log timestamps are inaccurate, weakening incident investigation and the admissibility of evidence."
+    "Log timestamps are inaccurate, weakening incident investigation and the evidential value of the logs."
    ]
   },
   "A.8.18": {
@@ -1010,7 +1010,7 @@
     "Network-device default passwords remain in use or unnecessary management services are exposed externally.",
     "Remote/wireless access segments lack encryption or strengthened authentication, creating a risk of eavesdropping/unauthorized access.",
     "Network device logs are not collected/monitored, so intrusion attempts or anomalous traffic cannot be detected.",
-    "Security requirements/service levels for external network services are not defined in the contract, so fulfillment cannot be verified."
+    "Devices joining the network are not identified or authenticated, so unapproved devices can connect to the internal network."
    ]
   },
   "A.8.21": {
@@ -1069,7 +1069,7 @@
    "theme": "A.8 Technological controls",
    "path": "docs/en/A.8-technological/A.8.25.md",
    "cases": [
-    "An SDLC policy exists, but in actual projects security checks are performed only just before deployment after development is complete.",
+    "A secure SDLC policy exists, but in actual projects security checks are performed only just before deployment after development is complete.",
     "Secure coding standards do not exist, or exist but are not shared/taught to developers and so are not actually followed.",
     "Security testing is not integrated into the CI/CD pipeline, so vulnerable code is deployed automatically without verification.",
     "Open source/third-party components are adopted without verifying their known vulnerabilities and licenses.",

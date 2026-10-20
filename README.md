@@ -21,11 +21,16 @@ of the 93 controls; this corpus is not one and does not generate one.
 ## Copyright boundary, read this first
 
 - Control **numbers, titles, and the four-theme classification** come from the **public list** of
-  ISO/IEC 27001:2022 Annex A. That list is factual reference data.
+  ISO/IEC 27001:2022 Annex A (Table A.1). That list is factual reference data. The English titles
+  keep the wording of that table; the Korean titles are this collection's own rendering, not an
+  official translation.
 - The **explanatory body of every document is original material written for this collection**:
   control objective, key checkpoints, implementation guidance, related controls, evidence examples,
   and nonconformity examples. It is **not** the normative text of ISO/IEC 27001:2022 or 27002:2022,
   and it is not a translation of that text.
+- The `Control type (ref.)` and `Security properties (ref.)` rows of each metadata table are
+  **this collection's own classification**, not the attribute values of ISO/IEC 27002:2022, and
+  they may differ from those values. Do not cite them as ISO's attributes.
 - The standard's normative text, its implementation guidance, its attribute tables, and third-party
   commentary are **never reproduced verbatim** in this repository.
 - For anything authoritative, compare against a **licensed copy of the standard**. Every document
@@ -37,7 +42,9 @@ so an ISO revision changes the **control list** here, not the wording of the exp
 maintained.
 
 [REVIEW.md](REVIEW.md) records the 2026-09-17 full body review of all 186 control documents,
-including corrections, control-by-control coverage, and verification limits.
+including corrections, control-by-control coverage, and verification limits. Changes made after
+that review, including the 2026-10-20 fact check, are listed in its section 5 and in
+[UPDATES.md](UPDATES.md).
 
 ## Contents
 

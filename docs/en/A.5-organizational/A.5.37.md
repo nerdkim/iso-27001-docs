@@ -7,7 +7,7 @@
 | Control | A.5.37 Documented operating procedures |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.1.5 Establishment of policy |
+| ISMS-P mapping | 1.1.5 Policy Establishment |
 | 2013 mapping | A.12.1.1 (Documented operating procedures) |
 
 ## Control objective
@@ -16,7 +16,7 @@ This control requires that the activities used to operate information processing
 
 ## Key checkpoints
 
-1. Are the main operational activities of information processing facilities and systems (startup/shutdown, backup/recovery, batch jobs, media handling, incident response, and so on) documented as operating procedures?
+1. Are the main operational activities of information processing facilities and systems (startup/shutdown, backup/recovery, batch jobs, media handling, failure/outage handling, and so on) documented as operating procedures?
 2. Do the procedures contain the information needed to execute them: scope, method and sequence of steps, responsible party and required privileges, normal/abnormal completion criteria, error/exception handling, and contact/escalation paths?
 3. Are the operating procedures made available in an accessible form to the personnel who actually need to perform them, and kept current?
 4. When system, configuration, or environment changes occur, are the related operating procedures updated, reviewed, and approved in conjunction with the change management process?
@@ -25,7 +25,7 @@ This control requires that the activities used to operate information processing
 
 ## Implementation guidance
 
-- Identify the operational activities of information processing facilities and systems, and prioritize procedures for tasks that are repetitive/routine or high impact in the event of an error (backup, batch, startup/shutdown, incident handling, media management).
+- Identify the operational activities of information processing facilities and systems, and prioritize procedures for tasks that are repetitive/routine or high impact in the event of an error (backup, batch, startup/shutdown, failure handling, media management).
 - In each procedure, state the target system/task, prerequisites and preconditions, step-by-step method, responsible party and required privileges, normal completion criteria, and handling of abnormal/error conditions with escalation contacts.
 - Bring operating procedures into the organization's document management scheme (version, author/reviewer/approver, revision history, distribution scope) so the current version is clearly identifiable.
 - Define access paths and permissions so personnel can consult procedures immediately when needed, balancing access control with availability (for example, offline copies and an emergency access method).
@@ -37,12 +37,12 @@ This control requires that the activities used to operate information processing
 
 - ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 7.2 (Competence)
 - Adjacent Annex A: A.5.1 (Policies for information security), A.8.32 (Change management), A.8.9 (Configuration management), A.8.13 (Information backup)
-- ISMS-P mapping: 1.1.5 Establishment of policy (adjacent: 1.3.3 Management of operational status, 2.1.1 Policy maintenance, 2.9.1 Change management)
+- ISMS-P mapping: 1.1.5 Policy Establishment (adjacent: 1.3.3 Management of Operational Status, 2.1.1 Policy Maintenance, 2.9.1 Change Management)
 - 2013 mapping: A.12.1.1 (Documented operating procedures)
 
 ## Evidence
 
-- Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, incident handling, media handling, and so on)
+- Operating procedures/operations manuals (backup/recovery, batch, startup/shutdown, failure handling, media handling, and so on)
 - Version/revision history and author/reviewer/approver records for the procedures
 - Distribution and access status of operating procedures (access permission lists, publication locations)
 - Records of procedure updates linked to change management records
@@ -51,12 +51,12 @@ This control requires that the activities used to operate information processing
 
 ## Nonconformity examples
 
-- Key operational tasks such as backup or incident response depend solely on an individual's knowledge, with no documented procedure.
+- Key operational tasks such as backup or failure/outage handling depend solely on an individual's knowledge, with no documented procedure.
 - Operating procedures exist but are left out of date, diverging from how operations are actually performed.
 - After a system or configuration change, related operating procedures are not updated, so documentation and operations are inconsistent.
 - Procedures are accessible only to a specific individual, so they cannot be used during shift work or when the person is absent or in an emergency.
 - Procedures lack version/approval management, so the current version cannot be identified.
-- Procedures omit error/exception handling or escalation contacts, delaying response during an incident.
+- Procedures omit error/exception handling or escalation contacts, delaying response during a system failure or outage.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

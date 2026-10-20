@@ -7,7 +7,7 @@
 | Control | A.7.5 Protecting against physical and environmental threats |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.4 Protection facility operation (related: 2.12.1 Safety measures for disaster and emergency preparedness, 2.4.1 Designation of protected areas) |
+| ISMS-P mapping | 2.4.4 Operation of Protective Facilities (related: 2.12.1 Safety Measures for Disaster/Emergency Preparedness, 2.4.1 Designation of Protected Areas) |
 | 2013 mapping | A.11.1.4 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control protects premises and information processing facilities against nat
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 10.1 (Continual improvement)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.4 (Physical security monitoring), A.7.8 (Equipment siting and protection), A.7.11 (Supporting utilities), A.7.12 (Cabling security), A.5.29 (Information security during disruption), A.5.30 (ICT readiness for business continuity)
-- ISMS-P mapping: 2.4.4 Protection facility operation (related: 2.12.1 Safety measures for disaster and emergency preparedness, 2.4.1 Designation of protected areas)
+- ISMS-P mapping: 2.4.4 Operation of Protective Facilities (related: 2.12.1 Safety Measures for Disaster/Emergency Preparedness, 2.4.1 Designation of Protected Areas)
 - 2013 mapping: A.11.1.4 (Protecting against external and environmental threats)
 
 ## Evidence

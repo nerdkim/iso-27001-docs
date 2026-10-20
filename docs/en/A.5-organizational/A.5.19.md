@@ -7,7 +7,7 @@
 | Control | A.5.19 Information security in supplier relationships |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.3.1 Managing the status of external parties (related: 2.3.2 Security in external party contracts, 2.3.3 Management of external party security compliance) |
+| ISMS-P mapping | 2.3.1 Management of the Status of External Parties (related: 2.3.2 Security When Contracting with External Parties, 2.3.3 Management of External Party Security Implementation) |
 | 2013 mapping | A.15.1.1 |
 
 ## Control objective
@@ -35,8 +35,8 @@ Information security in supplier relationships requires the organization to esta
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 5.3 (Organizational roles, responsibilities and authorities)
-- Adjacent Annex A: A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
-- ISMS-P mapping: 2.3.1 Managing the status of external parties (related: 2.3.2 Security in external party contracts, 2.3.3 Management of external party security compliance)
+- Adjacent Annex A: A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the information and communication technology (ICT) supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
+- ISMS-P mapping: 2.3.1 Management of the Status of External Parties (related: 2.3.2 Security When Contracting with External Parties, 2.3.3 Management of External Party Security Implementation)
 - 2013 mapping: A.15.1.1 (Information security policy for supplier relationships)
 
 ## Evidence

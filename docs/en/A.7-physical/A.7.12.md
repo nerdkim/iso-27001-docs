@@ -7,7 +7,7 @@
 | Control | A.7.12 Cabling security |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.3 Information system protection (related: 2.4.4 Protection facility operation, 2.10.5 Information transfer security) |
+| ISMS-P mapping | 2.4.3 Information System Protection (related: 2.4.4 Operation of Protective Facilities, 2.10.5 Information Transmission Security) |
 | 2013 mapping | A.11.2.3 |
 
 ## Control objective
@@ -37,7 +37,7 @@ The purpose is to treat cabling as part of the information infrastructure rather
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 7.5 (Documented information)
 - Adjacent Annex A: A.7.8 (Equipment siting and protection), A.7.11 (Supporting utilities), A.7.13 (Equipment maintenance), A.7.5 (Protecting against physical and environmental threats), A.8.20 (Networks security), A.8.21 (Security of network services)
-- ISMS-P mapping: 2.4.3 Information system protection (related: 2.4.4 Protection facility operation, 2.10.5 Information transfer security)
+- ISMS-P mapping: 2.4.3 Information System Protection (related: 2.4.4 Operation of Protective Facilities, 2.10.5 Information Transmission Security)
 - 2013 mapping: A.11.2.3 (Cabling security)
 
 ## Evidence

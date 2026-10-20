@@ -7,7 +7,7 @@
 | Control | A.7.13 Equipment maintenance |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.9.2 Performance and fault management (related: 2.4.4 Protection facility operation, 2.3.3 Management of external party security compliance) |
+| ISMS-P mapping | 2.9.2 Performance and Fault Management (related: 2.4.4 Operation of Protective Facilities, 2.3.3 Management of External Party Security Implementation) |
 | 2013 mapping | A.11.2.4 |
 
 ## Control objective
@@ -37,7 +37,7 @@ The purpose is to inspect and service equipment that stores, processes, or trans
 
 - ISO 27001 clauses: 7.1 (Resources), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.8 (Equipment siting and protection), A.7.10 (Storage media), A.7.11 (Supporting utilities), A.7.14 (Secure disposal or re-use of equipment), A.5.29 (Information security during disruption), A.8.14 (Redundancy of information processing facilities)
-- ISMS-P mapping: 2.9.2 Performance and fault management (related: 2.4.4 Protection facility operation, 2.3.3 Management of external party security compliance)
+- ISMS-P mapping: 2.9.2 Performance and Fault Management (related: 2.4.4 Operation of Protective Facilities, 2.3.3 Management of External Party Security Implementation)
 - 2013 mapping: A.11.2.4 (Equipment maintenance)
 
 ## Evidence

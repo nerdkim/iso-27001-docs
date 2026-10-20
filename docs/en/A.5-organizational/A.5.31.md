@@ -7,12 +7,12 @@
 | Control | A.5.31 Legal, statutory, regulatory and contractual requirements |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.1 Legal requirements compliance review |
+| ISMS-P mapping | 1.4.1 Review of Compliance with Legal Requirements |
 | 2013 mapping | A.18.1.1 (Identification of applicable legislation and contractual requirements), A.18.1.5 (Regulation of cryptographic controls) |
 
 ## Control objective
 
-This control requires the organization to identify and document, without omission, all legal, statutory, regulatory, and contractual requirements relevant to its information security and privacy, and to define and keep current its approach to meeting them. It calls for understanding the obligations that apply across every jurisdiction in which the organization operates (domestic and foreign), and for linking each requirement to a responsible owner, asset, and control so that compliance can be verified on an ongoing basis. The ultimate aim is to prevent penalties, fines, and suspension arising from legal violations, and damages and loss of trust arising from contractual breach, while feeding regulatory requirements into the management system and risk assessment as inputs.
+This control requires the organization to identify and document, without omission, all legal, statutory, regulatory, and contractual requirements relevant to its information security and privacy, and to define and keep current its approach to meeting them. It calls for understanding the obligations that apply across every jurisdiction in which the organization operates (domestic and foreign), and for defining the processes and responsibilities for meeting each requirement. Linking requirements to owners, assets, and controls is a practical way to keep compliance verifiable on an ongoing basis. The ultimate aim is to prevent penalties, fines, and suspension arising from legal violations, and damages and loss of trust arising from contractual breach, while feeding regulatory requirements into the management system and risk assessment as inputs.
 
 ## Key checkpoints
 
@@ -36,8 +36,8 @@ This control requires the organization to identify and document, without omissio
 ## Related controls and attributes
 
 - ISO 27001 clauses: 4.1 (Understanding the organization and its context), 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
-- Adjacent Annex A: A.5.32 (Intellectual property rights), A.5.33 (Protection of records), A.5.34 (Privacy and protection of PII), A.5.36 (Compliance with policies, rules and standards for information security), A.8.24 (Use of cryptography)
-- ISMS-P mapping: 1.4.1 Legal requirements compliance review (adjacent: 1.4.2 Management system inspection, 1.1.5 Establishment of policy, 3.3.4 Cross-border transfer of personal data)
+- Adjacent Annex A: A.5.32 (Intellectual property rights), A.5.33 (Protection of records), A.5.34 (Privacy and protection of personal identifiable information (PII)), A.5.36 (Compliance with policies, rules and standards for information security), A.8.24 (Use of cryptography)
+- ISMS-P mapping: 1.4.1 Review of Compliance with Legal Requirements (adjacent: 1.4.2 Management System Inspection, 1.1.5 Policy Establishment, 3.3.4 Cross-Border Transfer of Personal Information)
 - 2013 mapping: A.18.1.1 (Identification of applicable legislation and contractual requirements), A.18.1.5 (Regulation of cryptographic controls)
 
 ## Evidence

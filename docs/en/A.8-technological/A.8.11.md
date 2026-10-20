@@ -7,7 +7,7 @@
 | Control | A.8.11 Data masking |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality |
-| ISMS-P mapping | 3.2.5 Pseudonymized data processing |
+| ISMS-P mapping | 3.2.5 Processing of Pseudonymized Information |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -20,7 +20,7 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 2. Is the extent of exposure (full/partial disclosure, number of masked digits, and so on) differentiated according to access rights and business need?
 3. Are suitable transformed/synthetic data preferred for development/test/training, with any necessary real-data exception controlled through a lawful basis, approval, and safeguards?
 4. Are the applied techniques designed and validated so that re-identification risk (for example, through combinations of quasi-identifiers) is sufficiently reduced?
-5. When masking/pseudonymization/anonymization is applied, is compliance with legal requirements such as personal data protection law (purpose limitation, separate storage of the additional information, prohibition of re-identification, and so on) reviewed and recorded?
+5. When masking/pseudonymization/anonymization is applied, is compliance with applicable law such as Korea's Personal Information Protection Act (for pseudonymization: purpose limitation, separate storage of the additional information, prohibition of processing to re-identify individuals, and so on) reviewed and recorded?
 6. Are approval/logging controls in place for unmasking (viewing originals) and for exception handling?
 
 ## Implementation guidance
@@ -35,8 +35,8 @@ This control requires the organization to limit unnecessary exposure of sensitiv
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.12 (Classification of information), A.5.34 (Privacy and protection of PII), A.8.10 (Information deletion), A.8.12 (Data leakage prevention), A.8.4 (Access to source code), A.8.33 (Test information)
-- ISMS-P mapping: 3.2.5 Pseudonymized data processing (related: 2.8.4 Test data security, 2.6.3 Application access)
+- Adjacent Annex A: A.5.12 (Classification of information), A.5.34 (Privacy and protection of personal identifiable information (PII)), A.8.10 (Information deletion), A.8.12 (Data leakage prevention), A.8.3 (Information access restriction), A.8.33 (Test information)
+- ISMS-P mapping: 3.2.5 Processing of Pseudonymized Information (related: 2.8.4 Test Data Security, 2.6.3 Application Access)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

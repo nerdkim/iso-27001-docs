@@ -7,7 +7,7 @@
 | Control | A.8.26 Application security requirements |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.8.1 Definition of security requirements |
+| ISMS-P mapping | 2.8.1 Definition of Security Requirements |
 | 2013 mapping | A.14.1.2, A.14.1.3 |
 
 ## Control objective
@@ -29,14 +29,14 @@ This control identifies and approves application security requirements according
 - Specify requirements for authentication (including multi-factor), authorization and least privilege, session management, and access control, and define control requirements for interactions between users/systems of differing trust levels.
 - Define requirements for addressing known vulnerabilities, such as input validation, output encoding/escaping, safe error handling, and protection against injection/XSS/CSRF/insecure deserialization, linked to the secure coding standard (A.8.28).
 - Apply suitable transport protection to public-network communication and specify integrity, duplicate/replay prevention, and payment validation according to transaction needs. Where non-repudiation evidence is needed, design verifiable signatures, linkage between actors and transactions, protected audit records, and time evidence together. A timestamp alone does not establish who acted.
-- Where personal data and payment data are processed, reflect applicable laws/standards (data protection law, PCI DSS, and so on) together with data retention/disposal and logging/audit-trail requirements.
+- Where personal data and payment data are processed, reflect applicable laws/standards (data protection law such as Korea's Personal Information Protection Act, PCI DSS, and so on) together with data retention/disposal and logging/audit-trail requirements.
 - Maintain traceability (requirement IDs) for the defined security requirements so they can be verified in design/implementation/testing (A.8.29), and for acquired (purchased/SaaS) products, assess and approve whether the supplier's security features meet the requirements.
 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.27 (Secure system architecture and engineering principles), A.8.28 (Secure coding), A.8.29 (Security testing in development and acceptance), A.8.30 (Outsourced development), A.5.8 (Information security in project management), A.8.24 (Use of cryptography)
-- ISMS-P mapping: 2.8.1 Definition of security requirements (related: 2.8.2 Review and testing of security requirements, 2.6.3 Application access, 2.10.3 Public server security, 2.10.4 Electronic transaction and fintech security)
+- ISMS-P mapping: 2.8.1 Definition of Security Requirements (related: 2.8.2 Review and Testing of Security Requirements, 2.6.3 Application Access, 2.10.3 Public Server Security, 2.10.4 Electronic Transaction and Fintech Security)
 - 2013 mapping: A.14.1.2 (Securing application services on public networks), A.14.1.3 (Protecting application services transactions)
 
 ## Evidence

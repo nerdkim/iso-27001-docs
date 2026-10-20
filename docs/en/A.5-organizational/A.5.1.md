@@ -7,7 +7,7 @@
 | Control | A.5.1 Policies for information security |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.1.5 Establishment of policy, 2.1.1 Policy maintenance |
+| ISMS-P mapping | 1.1.5 Policy Establishment, 2.1.1 Policy Maintenance |
 | 2013 mapping | A.5.1.1, A.5.1.2 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control establishes management direction and commitment to information secu
 
 - ISO 27001 clauses: 5.2 (Policy), 5.3 (Organizational roles, responsibilities and authorities), 7.5 (Documented information)
 - Adjacent Annex A: A.5.2 (Information security roles and responsibilities), A.5.36 (Compliance with policies, rules and standards for information security), A.5.37 (Documented operating procedures)
-- ISMS-P mapping: 1.1.5 Establishment of policy, 2.1.1 Policy maintenance
+- ISMS-P mapping: 1.1.5 Policy Establishment, 2.1.1 Policy Maintenance
 - 2013 mapping: A.5.1.1 (Policies for information security), A.5.1.2 (Review of the policies for information security)
 
 ## Evidence

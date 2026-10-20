@@ -12,16 +12,17 @@ to reconstruct it:
 
 Confusing the two is the failure mode this document exists to prevent.
 
-Last checked: 2026-09-17. This is a dated verification, not a promise of future currency.
+Last checked: 2026-10-20. This is a dated verification, not a promise of future currency.
 
 ## 1. Source versions
 
 | Part of the corpus | Basis | Edition |
 |---|---|---|
-| Control numbers, titles, and theme classification (`extended/catalog/controls.json`) | the **public** list of ISO/IEC 27001:2022 Annex A | 2022, not touched by Amd 1:2024 |
+| Control numbers, titles, and theme classification (`extended/catalog/controls.json`) | the **public** list of ISO/IEC 27001:2022 Annex A (Table A.1); English titles keep its wording, Korean titles are this project's rendering | 2022, not touched by Amd 1:2024 |
 | Control objective, Key checkpoints, Implementation guidance, Related controls and attributes, Evidence, Nonconformity examples | **original material** written by this project for practical reference | not an upstream edition |
+| The `Control type (ref.)` and `Security properties (ref.)` rows of the metadata tables | this project's own classification, **not** the attribute values of ISO/IEC 27002:2022, and they may differ from those values | not an upstream edition |
 | The English documents under `docs/en/` | this project's own English edition | see 2.2 |
-| ISMS-P item numbers and names in the metadata tables and `Related controls and attributes` | the **public** item list of the Korean ISMS-P 인증기준 | the 101-item set of the 2023.11 인증기준 안내서 |
+| ISMS-P item numbers and names in the metadata tables and `Related controls and attributes` | the **public** item list of the Korean ISMS-P 인증기준; the English names are the English item titles of the isms-p-docs corpus, an unofficial translation | the 101-item set of the 2023.11 인증기준 안내서 |
 
 The 93 controls across four themes (A.5 organizational 37, A.6 people 8, A.7 physical 14,
 A.8 technological 34) follow the 2022 revision, which restructured Annex A from the 114 controls of
@@ -81,13 +82,13 @@ Every row below was verified on the check date at the top of this document.
 
 | Item | Status |
 |---|---|
-| ISO/IEC 27001 edition | The [ISO catalogue](https://www.iso.org/standard/27001) lists the 2022 edition as published. Do not infer the absence of future revision work from that status. |
-| ISO/IEC 27001:2022/Amd 1:2024 | Published February 2024. Amends main-body clauses 4.1 and 4.2 only. Annex A unchanged, so this corpus is unaffected. See 2.3. |
-| Annex A control list | 93 controls, four themes, 2022 numbering, unchanged. All 93 are present in both languages, and `tools/check_corpus.py` fails when the catalog and the documents disagree in either direction. |
-| ISO/IEC 27002 | The [ISO catalogue](https://www.iso.org/standard/75652.html) lists edition 3, published February 2022, with an English corrected version dated March 2022. Its guidance is not reproduced here. |
-| ISO/IEC 27000 | The [ISO catalogue](https://www.iso.org/standard/27000) records publication of edition 6 on 3 July 2026, titled "Overview". This is a different document, not a replacement edition of ISO/IEC 27001 or Annex A. |
-| 2013 transition | The transition deadline was 31 October 2025. [IAF MD 26:2023](https://iaf.nu/iaf_system/uploads/documents/IAF_MD26_Issue_2_15012023.pdf), section 3. |
-| ISMS-P mapping basis | The [official resource list](https://isms-p.or.kr/ntcn/rcsrm/selectGnrlRcsrmList.do) still publishes the 2023.11 guide used for this corpus's mappings. The [10 April 2026 reform announcement](https://isms-p.or.kr/ntcn/ntc/selectGnrlNtcList.do?pageIndex=2) is a separate policy development. An announcement is not proof that every planned measure is in force; verify the applicable notice and effective date before changing a mapping or claiming a new obligation. This repository does not track all ISMS-P legal changes. |
+| ISO/IEC 27001 edition | The [ISO catalogue](https://www.iso.org/standard/27001) lists edition 3 (October 2022) as published, with Amd 1:2024 as its only amendment and no revision or amendment project in progress. A new project can be registered at any time, so recheck this before relying on it. |
+| ISO/IEC 27001:2022/Amd 1:2024 | Published 23 February 2024. Amends main-body clauses 4.1 and 4.2 only. Annex A unchanged, so this corpus is unaffected. See 2.3. |
+| Annex A control list | 93 controls, four themes, 2022 numbering, unchanged. All 93 are present in both languages, and `tools/check_corpus.py` fails when the catalog and the documents disagree in either direction. The English titles keep the wording of Table A.1 (see 2.6). |
+| ISO/IEC 27002 | The [ISO catalogue](https://www.iso.org/standard/75652.html) lists edition 3, published February 2022, with an English corrected version dated March 2022, and no amendment or revision project. Its guidance is not reproduced here. |
+| ISO/IEC 27000 | The [ISO catalogue](https://www.iso.org/standard/84257.html) records publication of edition 6 on 3 July 2026, replacing ISO/IEC 27000:2018; the title now ends in "Overview" instead of "Overview and vocabulary". This is a different document, not a replacement edition of ISO/IEC 27001 or Annex A. |
+| 2013 transition | The transition deadline was 31 October 2025. [IAF MD 26:2023](https://iaf.nu/iaf_system/uploads/documents/IAF_MD26_Issue_2_15012023.pdf), section 3. IAF has since ceased operations; see section 4. |
+| ISMS-P mapping basis | The [official resource list](https://isms-p.or.kr/ntcn/rcsrm/selectGnrlRcsrmList.do) still publishes the 2023.11 guide used for this corpus's mappings. The [10 April 2026 reform announcement](https://isms-p.or.kr/ntcn/ntc/selectGnrlNtcDetail.do?searchNtcMtrId=NTCMTRID_00000010525) is a separate policy development. An announcement is not proof that every planned measure is in force; verify the applicable notice and effective date before changing a mapping or claiming a new obligation. This repository does not track all ISMS-P legal changes. |
 
 ### 2.5 Repository verification and limits
 
@@ -103,15 +104,49 @@ Every row below was verified on the check date at the top of this document.
   and `AGENTS.md` stays a symlink to `CLAUDE.md` for other agents.
 - The full body review read all 93 Korean/English pairs and corrected 73 pairs (146 documents).
   The remaining 20 pairs had no substantive finding in this pass. [REVIEW.md](REVIEW.md) records
-  every control's disposition, factual references, and the reviewed file snapshot. The earlier
-  unsupported numeric minima in A.6.3 and the review skill were also removed. Automated checks
+  every control's disposition, factual references, and the reviewed file snapshot. The same review
+  also removed unsupported numeric minima from A.6.3 and the review skill. Automated checks
   cannot establish semantic equivalence or certification sufficiency. No licensed standard text
   was used for an authoritative comparison, and the crosswalks remain reference aids.
+- On 2026-09-24 (commit e7950e5) all 93 Korean control documents were restyled to the Korean
+  style standard, and 14 Korean sentences that disagreed with the English were changed to match
+  it. No English control document changed. The digest in [REVIEW.md](REVIEW.md) therefore
+  identifies the 2026-09-17 snapshot, not the current files; REVIEW.md section 5 lists the later
+  changes.
 - The installed playbook guard baseline remains v0.1.6, with repository-specific fixes. The local
   reference checkout is v0.2.0 at `d8a44e5`; upstream `develop` was checked at `692444c`.
   Full v0.2.0 adoption includes incompatible language defaults and Claude-specific tooling.
   On 2026-09-17 the owner excluded that migration from this repository's current work.
   The installed baseline remains in place; the agent setup is separate from a guard upgrade.
+
+### 2.6 Fact check of 2026-10-20
+
+- All 186 control documents, the meta documents, the review skill, and the catalog were checked
+  against public sources. No false technical or legal statement was found in the control
+  documents. Overstated requirements, wrong adjacent-control references, and Korean/English
+  mismatches were corrected in both languages.
+- English control titles: A.5.21, A.5.34, and A.8.1 used the shorter clause headings of
+  ISO/IEC 27002:2022. They now keep the wording of Table A.1 in ISO/IEC 27001:2022 Annex A:
+  "Managing information security in the information and communication technology (ICT) supply
+  chain", "Privacy and protection of personal identifiable information (PII)", and "User end point
+  devices". This corpus names Annex A as the source of its titles, so a reader who copies a title
+  into a Statement of Applicability should get the Annex A wording. The other 90 English titles
+  already matched. No Korean title changed. Section 4 gives the evidence and its limits.
+- ISMS-P names: the English item names in the `ISMS-P mapping` rows and lines now match the
+  English item titles of the isms-p-docs corpus exactly. Those titles are an unofficial
+  translation, so the Korean names prevail. Two Korean names that differed from the item names in
+  isms-p-docs were corrected: 2.12.1 재해/재난 대비 안전조치 and 2.8.5 소스 프로그램 관리.
+- Meta documents and the review skill: the skill's worked example now rates A.5.11 a
+  nonconformity candidate, as its checkpoint 3 requires, and accounts for every routed control.
+  The out-of-scope keywords now catch the skill's own example sentences, and the README pairs
+  state that the attribute rows are this project's classification. [REVIEW.md](REVIEW.md)
+  section 5 lists the changes made after that review.
+- ISO status on the check date (details in 2.4): ISO/IEC 27001:2022 with Amd 1:2024 is current.
+  No project for a new edition is listed. ISO/IEC 27000:2026, edition 6, was published on 2026-07-03.
+  IAF ceased operations on 2026-01-01.
+- Limits: www.iso.org refused automated requests, so the ISO catalogue records were read through
+  ISO's committee.iso.org mirror. No licensed copy of ISO/IEC 27001 or 27002 was used, so the
+  Table A.1 wording rests on public reproductions (section 4).
 
 ## 3. Operating principle
 
@@ -133,9 +168,15 @@ Every row below was verified on the check date at the top of this document.
 
 ## 4. Sources checked
 
-- ISO/IEC 27001:2022 Annex A control list (numbers, titles, themes): the publicly available control
-  listing. Authoritative comparison is done against a **licensed** copy of the standard, which is
-  not redistributed with this repository.
+- ISO/IEC 27001:2022 Annex A control list (numbers, titles, themes): Table A.1 of the standard.
+  English titles keep that table's wording. Because no licensed copy was used, the wording was
+  checked against public reproductions of the table, such as a
+  [published Statement of Applicability](https://www.databricks.com/legal/databricks-iso-statement-of-applicability.pdf)
+  that reproduces the Annex A controls. [IAF MD 26:2023](https://iaf.nu/iaf_system/uploads/documents/IAF_MD26_Issue_2_15012023.pdf)
+  section 2.2 says that Annex A references the controls of ISO/IEC 27002:2022, titles included,
+  so the two lists are nearly identical: the 27002 clause headings differ only for A.5.21, A.5.34,
+  and A.8.1, where they are shorter. An authoritative comparison needs a **licensed** copy of the
+  standard, which is not redistributed with this repository.
 - Korean control titles: rendered by this project for consistency across the corpus; they are not an
   official Korean translation of the standard, and the standard's own terminology prevails for any
   formal use.
@@ -143,11 +184,17 @@ Every row below was verified on the check date at the top of this document.
   [ISO/IEC 27001:2022/Amd 1:2024](https://www.iso.org/standard/88435.html).
   The [ISO/IAF announcement](https://www.iso.org/files/live/sites/isoorg/files/standards/popular_standards/management_systems/ISO-IAF%20Joint%20Communique%20Feb%202024.pdf)
   identifies the affected main-body clauses. This check uses publication metadata and change scope;
-  it does not reproduce the amended requirements.
+  it does not reproduce the amended requirements. On 2026-10-20 www.iso.org refused automated
+  requests, so the catalogue records were read through ISO's committee.iso.org mirror of the same
+  pages.
 - 2013 transition (section 2.4): IAF MD 26, the International Accreditation Forum's transition
   requirements for ISO/IEC 27001:2022, which fix the expiry of 2013-edition certificates at
-  31 October 2025.
+  31 October 2025. IAF ceased operations on 1 January 2026, when the Global Accreditation
+  Cooperation Incorporated replaced IAF and ILAC; MD 26 remains available on the archived iaf.nu
+  site.
 - ISMS-P claims (sections 1 and 2.4): the published item list of the ISMS-P 인증기준 안내서, 2023.11
   revision on the official resource list linked above, and the dated reform announcement. Only
-  item numbers, item names, and publication status are used as factual reference data. Crosswalks
-  between standards are this project's reference mappings, not official equivalence determinations.
+  item numbers, item names, and publication status are used as factual reference data. The
+  English item names are the English item titles of the isms-p-docs corpus, an unofficial
+  translation; the Korean names prevail. Crosswalks between standards are this project's
+  reference mappings, not official equivalence determinations.

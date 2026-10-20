@@ -7,7 +7,7 @@
 | Control | A.8.29 Security testing in development and acceptance |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.8.2 Review and testing of security requirements |
+| ISMS-P mapping | 2.8.2 Review and Testing of Security Requirements |
 | 2013 mapping | A.14.2.8, A.14.2.9 |
 
 ## Control objective
@@ -29,14 +29,14 @@ This control ensures that systems/applications being developed or acquired are t
 - Translate the security requirements from A.8.26 and the architecture/engineering principles from A.8.27 into concrete test cases, and maintain traceability by linking requirement IDs to test cases so nothing goes unverified.
 - During development, integrate static analysis (SAST), software composition analysis (SCA/dependency vulnerability scanning), and secret scanning into the CI pipeline for early defect detection, and complement these with dynamic analysis (DAST)/fuzzing against the running environment.
 - At the acceptance stage, define pass/fail criteria (acceptable residual risk, severity-based remediation thresholds) in advance, and approve transfer to operations only when the acceptance testing (secure configuration review, penetration test result review) is passed.
-- For purchased/externally sourced products (including SaaS), review the security test/certification results provided by the supplier and, where necessary, perform independent vulnerability assessment to confirm the product meets adoption requirements (linked to A.8.30).
+- For purchased/externally sourced products (including SaaS), review the security test/certification results provided by the supplier and, where necessary, perform independent vulnerability assessment to confirm the product meets adoption requirements (linked to A.5.20 and A.5.21; A.5.23 for SaaS; A.8.30 for custom outsourced development).
 - Prefer synthetic/transformed data and assess re-identification and source-data disclosure risk (A.8.11, A.8.33). Where real data is essential, apply a lawful basis, owner approval, minimum scope/duration, and restricted access. Retain remediation, retest, and residual-risk approval records.
 
 ## Related controls and attributes
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.25 (Secure development life cycle), A.8.26 (Application security requirements), A.8.27 (Secure system architecture and engineering principles), A.8.28 (Secure coding), A.8.30 (Outsourced development), A.8.31 (Separation of development, test and production environments), A.8.33 (Test information), A.8.8 (Management of technical vulnerabilities)
-- ISMS-P mapping: 2.8.2 Review and testing of security requirements (related: 2.8.1 Definition of security requirements, 2.8.3 Separation of test and production environments, 2.8.4 Test data security, 2.8.6 Transfer to operational environment, 2.11.2 Vulnerability assessment and remediation)
+- ISMS-P mapping: 2.8.2 Review and Testing of Security Requirements (related: 2.8.1 Definition of Security Requirements, 2.8.3 Separation of Test and Operational Environments, 2.8.4 Test Data Security, 2.8.6 Transition to the Operational Environment, 2.11.2 Vulnerability Assessment and Remediation)
 - 2013 mapping: A.14.2.8 (System security testing), A.14.2.9 (System acceptance testing)
 
 ## Evidence

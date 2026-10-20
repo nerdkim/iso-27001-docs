@@ -38,10 +38,15 @@ This is the single most important constraint in this repository.
 
 - Control **numbers, titles, and the four-theme classification** are based on the **public list** of
   ISO/IEC 27001:2022 Annex A, held in `extended/catalog/controls.json`. That is factual reference
-  data and may be used.
+  data and may be used. English titles keep the exact wording of Table A.1 in that Annex; for
+  A.5.21, A.5.34, and A.8.1 the ISO/IEC 27002:2022 clause headings are shorter, so do not replace
+  the Annex A wording with them. Korean titles are this collection's own rendering.
 - The **explanatory body of every document is newly written original material** for practical
   reference. **Never** reproduce, paraphrase closely, or translate the standard's normative text,
   its implementation guidance, its attribute tables, or third-party commentary.
+- The `Control type (ref.)` and `Security properties (ref.)` rows are this collection's own
+  classification, not the ISO/IEC 27002:2022 attribute values, and may differ from them. Do not
+  copy values into them from the ISO/IEC 27002 attribute table; that would reproduce the table.
 - Every document **must** end with the source and limitation footer stating this boundary.
   `tools/check_corpus.py` fails when a document is missing it, and CI runs that check.
 - A licensed copy of the standard may be consulted locally for an authoritative comparison, but it
