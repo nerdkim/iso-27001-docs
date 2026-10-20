@@ -132,7 +132,7 @@ bash harness/install-hooks.sh
 
 여러 번 실행해도 안전하고, hook 파일 세 개에 실행 권한을 주는 것 말고는 `.git/config` 밖에
 아무것도 쓰지 않습니다. `pre-commit`(문서 규약), `commit-msg`(커밋 메시지 규칙),
-`pre-push`(master 직접 푸시 차단)를 활성화합니다. hook은 우회할 수 있는
+`pre-push`(main 직접 푸시 차단)를 활성화합니다. hook은 우회할 수 있는
 편의용 안전장치이고, 최종 판정은 같은 검사기를 실행하는 CI(`.github/workflows/docs.yml`)가 맡습니다.
 
 나머지는 Python 3(표준 라이브러리만)과 bash만 있으면 됩니다.
