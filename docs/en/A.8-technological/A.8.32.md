@@ -7,7 +7,7 @@
 | Control | A.8.32 Change management |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.9.1 Change management |
+| ISMS-P mapping | 2.9.1 Change Management |
 | 2013 mapping | A.12.1.2, A.14.2.2, A.14.2.3, A.14.2.4 |
 
 ## Control objective
@@ -16,7 +16,7 @@ This document covers planning, review, authorization, validation, and deployment
 
 ## Key checkpoints
 
-1. Is a change management procedure documented for information system/infrastructure/application changes, with the systems it covers and the change types (standard/routine/emergency) defined?
+1. Is a change management procedure documented for information system/infrastructure/application changes, with the systems it covers and the change types (standard/normal/emergency) defined?
 2. Are purpose, impact scope, security impact, risk, and rollback/alternative recovery reviewed in advance with authorized approval?
 3. Is validation appropriate to risk and change type performed before production deployment, with limited testing for emergency changes managed through authorized procedures and retrospective review?
 4. Is there a separate procedure for emergency changes, including post-implementation review/approval and recording, that is actually operated?
@@ -25,7 +25,7 @@ This document covers planning, review, authorization, validation, and deployment
 
 ## Implementation guidance
 
-- Establish a change management procedure that defines the stages (request, impact/risk assessment, approval, testing, deployment, closure) and responsible parties for each change type (standard/routine/emergency).
+- Establish a change management procedure that defines the stages (request, impact/risk assessment, approval, testing, deployment, closure) and responsible parties for each change type (standard/normal/emergency).
 - Record purpose, assets, security/privacy impact, dependencies, expected downtime, validation, and rollback or alternative recovery in change requests. For irreversible changes, state limitations and potential data loss during recovery.
 - Have a change review body such as a change advisory board (CAB) or an authorized approver review/approve changes commensurate with risk level, and separate the requester from the approver to prevent self-approval.
 - Validate changes in a test environment separated from production (A.8.31), and once acceptance criteria are met, apply them through the production promotion/deployment procedure (A.8.19).
@@ -36,12 +36,12 @@ This document covers planning, review, authorization, validation, and deployment
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.3 (Planning of changes), 10 (Improvement)
 - Adjacent Annex A: A.8.31 (Separation of development, test and production environments), A.8.19 (Installation of software on operational systems), A.8.9 (Configuration management), A.8.8 (Management of technical vulnerabilities), A.8.29 (Security testing in development and acceptance), A.8.25 (Secure development life cycle)
-- ISMS-P mapping: 2.9.1 Change management (related: 2.8.6 Transfer to operational environment, 2.8.2 Review and testing of security requirements, 2.10.8 Patch management)
+- ISMS-P mapping: 2.9.1 Change Management (related: 2.8.6 Transition to the Operational Environment, 2.8.2 Review and Testing of Security Requirements, 2.10.8 Patch Management)
 - 2013 mapping: A.12.1.2 (Change management), A.14.2.2 (System change control procedures), A.14.2.3 (Technical review of applications after operating platform changes), A.14.2.4 (Restrictions on changes to software packages)
 
 ## Evidence
 
-- Change management procedure and documentation defining change types (standard/routine/emergency)
+- Change management procedure and documentation defining change types (standard/normal/emergency)
 - Change request/approval records including impact/risk assessment and rollback or alternative recovery plans
 - Change test/acceptance results and production deployment records
 - Emergency change handling and post-implementation review/approval records

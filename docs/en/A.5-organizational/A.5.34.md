@@ -1,13 +1,13 @@
-# A.5.34 Privacy and protection of PII
+# A.5.34 Privacy and protection of personal identifiable information (PII)
 
 | Field | Value |
 |---|---|
 | Standard | ISO/IEC 27001:2022 Annex A |
 | Theme | A.5 Organizational controls |
-| Control | A.5.34 Privacy and protection of PII |
+| Control | A.5.34 Privacy and protection of personal identifiable information (PII) |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.1 Legal requirements compliance review, and domain 3 (stage-by-stage requirements for processing personal information) as a whole |
+| ISMS-P mapping | 1.4.1 Review of Compliance with Legal Requirements, and domain 3 (stage-by-stage requirements for processing personal information) as a whole |
 | 2013 mapping | A.18.1.4 (Privacy and protection of personally identifiable information) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires the organization to identify the privacy protection requir
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 7.4 (Communication), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.33 (Protection of records), A.5.12 (Classification of information), A.8.10 (Information deletion), A.8.11 (Data masking), A.8.12 (Data leakage prevention)
-- ISMS-P mapping: 1.4.1 Legal requirements compliance review, and domain 3 (stage-by-stage requirements for processing personal information) as a whole (adjacent: 3.5.1 Disclosure of the personal information processing policy, 3.1.1 Collection/use of personal information, 3.5.2 Guaranteeing data subject rights, 3.4.1 Destruction of personal data)
+- ISMS-P mapping: 1.4.1 Review of Compliance with Legal Requirements, and domain 3 (stage-by-stage requirements for processing personal information) as a whole (adjacent: 3.5.1 Disclosure of the Privacy Policy, 3.1.1 Collection/Use of Personal Information, 3.5.2 Guaranteeing the Rights of Data Subjects, 3.4.1 Destruction of Personal Information)
 - 2013 mapping: A.18.1.4 (Privacy and protection of personally identifiable information)
 
 ## Evidence
@@ -58,7 +58,7 @@ This control requires the organization to identify the privacy protection requir
 - The applicable privacy laws or cross-border transfer requirements are not identified, so legal requirements are not met.
 - Personal data is retained after expiry without a valid retention basis, or used/shared without a lawful purpose or basis.
 - No procedure exists to receive and handle data subject rights requests such as access and deletion, so requests cannot be answered.
-- No privacy risk assessment is performed for large-scale PII processing or the introduction of new systems.
+- A privacy impact assessment required by applicable law (for example, the Korean public-institution PIA duty or a GDPR DPIA for likely high-risk processing) or by the organization's own policy is not performed for large-scale PII processing or a new system.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

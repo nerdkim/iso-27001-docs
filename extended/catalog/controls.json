@@ -4,12 +4,12 @@
  "edition": {
   "annex_a": "2022",
   "amendment": "ISO/IEC 27001:2022/Amd 1:2024 (climate action changes) amends main-body clauses 4.1 and 4.2 only. Annex A, its 93 controls, their numbering and the four themes are unchanged, so this catalog is unaffected.",
-  "last_verified": "2026-09"
+  "last_verified": "2026-10"
  },
- "description": "ISO/IEC 27001:2022 Annex A control catalog. Control numbers/titles/themes are a public factual list; each control's explanatory text (docs/ko/, docs/en/) is original material of this collection, not the normative text of the standard.",
+ "description": "ISO/IEC 27001:2022 Annex A control catalog. Control numbers/titles/themes are a public factual list. English titles keep the wording of Table A.1 in Annex A; for A.5.21, A.5.34 and A.8.1 that wording is longer than the ISO/IEC 27002:2022 clause headings, so do not shorten it to them. Korean titles are this collection's rendering. Each control's explanatory text (docs/ko/, docs/en/) is original material of this collection, not the normative text of the standard.",
  "source_note": {
-  "ko": "통제 번호, 명칭, 4개 테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 한국어 명칭은 이 자료집의 표기입니다. Amd 1:2024는 본문 4.1과 4.2만 개정하며 Annex A는 바뀌지 않았습니다.",
-  "en": "Control numbers, titles and the four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. Korean titles are this collection's rendering. Amd 1:2024 amends main-body clauses 4.1 and 4.2 only; Annex A is unchanged."
+  "ko": "통제 번호, 명칭, 4개 테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 영어 명칭은 Annex A Table A.1의 표기를 그대로 따르고, 한국어 명칭은 이 자료집의 표기입니다. Amd 1:2024는 본문 4.1과 4.2만 개정하며 Annex A는 바뀌지 않았습니다.",
+  "en": "Control numbers, titles and the four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. English titles keep the wording of its Table A.1; Korean titles are this collection's rendering. Amd 1:2024 amends main-body clauses 4.1 and 4.2 only; Annex A is unchanged."
  },
  "themes": {
   "organizational": { "no": "A.5", "label_ko": "조직적 통제", "label_en": "Organizational controls", "dir": "A.5-organizational" },
@@ -39,7 +39,7 @@
   { "no": "A.5.18", "theme": "organizational", "title_en": "Access rights", "title_ko": "접근 권한" },
   { "no": "A.5.19", "theme": "organizational", "title_en": "Information security in supplier relationships", "title_ko": "공급자 관계에서의 정보보안" },
   { "no": "A.5.20", "theme": "organizational", "title_en": "Addressing information security within supplier agreements", "title_ko": "공급자 계약 내 정보보안 반영" },
-  { "no": "A.5.21", "theme": "organizational", "title_en": "Managing information security in the ICT supply chain", "title_ko": "ICT 공급망 정보보안 관리" },
+  { "no": "A.5.21", "theme": "organizational", "title_en": "Managing information security in the information and communication technology (ICT) supply chain", "title_ko": "ICT 공급망 정보보안 관리" },
   { "no": "A.5.22", "theme": "organizational", "title_en": "Monitoring, review and change management of supplier services", "title_ko": "공급자 서비스의 모니터링, 검토 및 변경 관리" },
   { "no": "A.5.23", "theme": "organizational", "title_en": "Information security for use of cloud services", "title_ko": "클라우드 서비스 이용 정보보안" },
   { "no": "A.5.24", "theme": "organizational", "title_en": "Information security incident management planning and preparation", "title_ko": "정보보안 사고관리 계획 및 준비" },
@@ -52,7 +52,7 @@
   { "no": "A.5.31", "theme": "organizational", "title_en": "Legal, statutory, regulatory and contractual requirements", "title_ko": "법률, 법령, 규제 및 계약 요구사항" },
   { "no": "A.5.32", "theme": "organizational", "title_en": "Intellectual property rights", "title_ko": "지식재산권" },
   { "no": "A.5.33", "theme": "organizational", "title_en": "Protection of records", "title_ko": "기록 보호" },
-  { "no": "A.5.34", "theme": "organizational", "title_en": "Privacy and protection of PII", "title_ko": "프라이버시 및 개인식별정보 보호" },
+  { "no": "A.5.34", "theme": "organizational", "title_en": "Privacy and protection of personal identifiable information (PII)", "title_ko": "프라이버시 및 개인식별정보 보호" },
   { "no": "A.5.35", "theme": "organizational", "title_en": "Independent review of information security", "title_ko": "정보보안 독립적 검토" },
   { "no": "A.5.36", "theme": "organizational", "title_en": "Compliance with policies, rules and standards for information security", "title_ko": "정보보안 정책, 규칙 및 표준 준수" },
   { "no": "A.5.37", "theme": "organizational", "title_en": "Documented operating procedures", "title_ko": "문서화된 운영 절차" },
@@ -78,7 +78,7 @@
   { "no": "A.7.12", "theme": "physical", "title_en": "Cabling security", "title_ko": "케이블 보안" },
   { "no": "A.7.13", "theme": "physical", "title_en": "Equipment maintenance", "title_ko": "장비 유지보수" },
   { "no": "A.7.14", "theme": "physical", "title_en": "Secure disposal or re-use of equipment", "title_ko": "장비의 안전한 폐기 또는 재사용" },
-  { "no": "A.8.1", "theme": "technological", "title_en": "User endpoint devices", "title_ko": "사용자 엔드포인트 기기" },
+  { "no": "A.8.1", "theme": "technological", "title_en": "User end point devices", "title_ko": "사용자 엔드포인트 기기" },
   { "no": "A.8.2", "theme": "technological", "title_en": "Privileged access rights", "title_ko": "특권 접근 권한" },
   { "no": "A.8.3", "theme": "technological", "title_en": "Information access restriction", "title_ko": "정보 접근 제한" },
   { "no": "A.8.4", "theme": "technological", "title_en": "Access to source code", "title_ko": "소스코드 접근" },

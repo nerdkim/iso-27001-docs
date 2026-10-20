@@ -7,7 +7,7 @@
 | Control | A.5.4 Management responsibilities |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.1.1 Management involvement, 2.2.4 Awareness and training |
+| ISMS-P mapping | 1.1.1 Participation of Executive Management, 2.2.4 Awareness Raising and Education/Training |
 | 2013 mapping | A.7.2.1 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control ensures that management treats information security as part of runn
 
 - ISO 27001 clauses: 5.1 (Leadership and commitment), 5.3 (Organizational roles, responsibilities and authorities), 7.2 (Competence), 7.3 (Awareness)
 - Adjacent Annex A: A.5.1 (Policies for information security), A.5.2 (Information security roles and responsibilities), A.5.3 (Segregation of duties), A.6.3 (Information security awareness, education and training), A.6.4 (Disciplinary process)
-- ISMS-P mapping: 1.1.1 Management involvement, 2.2.4 Awareness and training
+- ISMS-P mapping: 1.1.1 Participation of Executive Management, 2.2.4 Awareness Raising and Education/Training
 - 2013 mapping: A.7.2.1 (Management responsibilities)
 
 ## Evidence

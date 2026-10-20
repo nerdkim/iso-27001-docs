@@ -7,7 +7,7 @@
 | Control | A.6.7 Remote working |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.6.6 Remote access control |
+| ISMS-P mapping | 2.6.6 Remote Access Control |
 | 2013 mapping | A.6.2.2 |
 
 ## Control objective
@@ -36,8 +36,8 @@ This control ensures that information accessed, processed, or stored by personne
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.3 (Information security awareness, education and training), A.7.9 (Security of assets off-premises), A.8.1 (User endpoint devices), A.8.5 (Secure authentication)
-- ISMS-P mapping: 2.6.6 Remote access control (related: 2.4.7 Work environment security, 2.10.6 Business-use device security)
+- Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.3 (Information security awareness, education and training), A.7.9 (Security of assets off-premises), A.8.1 (User end point devices), A.8.5 (Secure authentication)
+- ISMS-P mapping: 2.6.6 Remote Access Control (related: 2.4.7 Work Environment Security, 2.10.6 Security of Business Terminals)
 - 2013 mapping: A.6.2.2 (Teleworking)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.7.9 Security of assets off-premises |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.10.6 Business-use device security (related: 2.4.6 Control of devices brought in and out, 2.10.7 Management of removable storage media) |
+| ISMS-P mapping | 2.10.6 Security of Business Terminals (related: 2.4.6 Control of Devices Brought In and Out, 2.10.7 Removable Storage Media Management) |
 | 2013 mapping | A.11.2.6 |
 
 ## Control objective
@@ -36,8 +36,8 @@ The purpose is to protect assets that are used or stored outside the organizatio
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 7.5 (Documented information), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
-- Adjacent Annex A: A.8.1 (User endpoint devices), A.6.7 (Remote working), A.7.10 (Storage media), A.5.11 (Return of assets), A.7.8 (Equipment siting and protection), A.7.14 (Secure disposal or re-use of equipment)
-- ISMS-P mapping: 2.10.6 Business-use device security (related: 2.4.6 Control of devices brought in and out, 2.10.7 Management of removable storage media)
+- Adjacent Annex A: A.8.1 (User end point devices), A.6.7 (Remote working), A.7.10 (Storage media), A.5.11 (Return of assets), A.7.8 (Equipment siting and protection), A.7.14 (Secure disposal or re-use of equipment)
+- ISMS-P mapping: 2.10.6 Security of Business Terminals (related: 2.4.6 Control of Devices Brought In and Out, 2.10.7 Removable Storage Media Management)
 - 2013 mapping: A.11.2.6 (Security of equipment and assets off-premises)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.5.32 Intellectual property rights |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.1 Legal requirements compliance review |
+| ISMS-P mapping | 1.4.1 Review of Compliance with Legal Requirements |
 | 2013 mapping | A.18.1.2 (Intellectual property rights) |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control ensures that the organization uses intellectual property (copyright
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 7.5 (Documented information), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.33 (Protection of records), A.5.9 (Inventory of information and other associated assets), A.5.10 (Acceptable use of information and other associated assets), A.8.19 (Installation of software on operational systems)
-- ISMS-P mapping: 1.4.1 Legal requirements compliance review (adjacent: 2.10.6 Business-use device security, 2.8.5 Source program management, 2.1.3 Information asset management)
+- ISMS-P mapping: 1.4.1 Review of Compliance with Legal Requirements (adjacent: 2.10.6 Security of Business Terminals, 2.8.5 Source Program Management, 2.1.3 Information Asset Management)
 - 2013 mapping: A.18.1.2 (Intellectual property rights)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.7.6 Working in secure areas |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.5 Working in protected areas (related: 2.4.6 Control of devices brought in and out, 2.4.2 Physical entry control) |
+| ISMS-P mapping | 2.4.5 Work within Protected Areas (related: 2.4.6 Control of Devices Brought In and Out, 2.4.2 Physical Entry Control) |
 | 2013 mapping | A.11.1.5 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires that work performed inside secure areas (computer rooms, c
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.7.4 (Physical security monitoring), A.7.10 (Storage media), A.6.3 (Information security awareness, education and training)
-- ISMS-P mapping: 2.4.5 Working in protected areas (related: 2.4.6 Control of devices brought in and out, 2.4.2 Physical entry control)
+- ISMS-P mapping: 2.4.5 Work within Protected Areas (related: 2.4.6 Control of Devices Brought In and Out, 2.4.2 Physical Entry Control)
 - 2013 mapping: A.11.1.5 (Working in secure areas)
 
 ## Evidence

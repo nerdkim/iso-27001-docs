@@ -7,7 +7,7 @@
 | Control | A.8.12 Data leakage prevention |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality |
-| ISMS-P mapping | 2.10.5 Information transfer security |
+| ISMS-P mapping | 2.10.5 Information Transmission Security |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control requires that the movement of sensitive/critical information beyond
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.12 (Classification of information), A.5.13 (Labelling of information), A.5.14 (Information transfer), A.8.10 (Information deletion), A.8.11 (Data masking), A.8.16 (Monitoring activities), A.8.24 (Use of cryptography)
-- ISMS-P mapping: 2.10.5 Information transfer security (related: 2.10.1 Operation of security systems, 2.10.6 Business-use device security, 2.10.7 Management of removable storage media, 2.6.7 Internet access control)
+- ISMS-P mapping: 2.10.5 Information Transmission Security (related: 2.10.1 Security System Operation, 2.10.6 Security of Business Terminals, 2.10.7 Removable Storage Media Management, 2.6.7 Internet Access Control)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

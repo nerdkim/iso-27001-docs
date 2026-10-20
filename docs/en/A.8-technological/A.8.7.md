@@ -7,7 +7,7 @@
 | Control | A.8.7 Protection against malware |
 | Control type (ref.) | Preventive / Detective / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.10.9 Malware control |
+| ISMS-P mapping | 2.10.9 Malicious Code Control |
 | 2013 mapping | A.12.2.1 |
 
 ## Control objective
@@ -35,7 +35,7 @@ This control protects information and information processing facilities against 
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.5.7 (Threat intelligence), A.8.8 (Management of technical vulnerabilities), A.8.13 (Information backup), A.8.19 (Installation of software on operational systems), A.8.23 (Web filtering), A.6.3 (Information security awareness, education and training)
-- ISMS-P mapping: 2.10.9 Malware control
+- ISMS-P mapping: 2.10.9 Malicious Code Control
 - 2013 mapping: A.12.2.1 (Controls against malware)
 
 ## Evidence

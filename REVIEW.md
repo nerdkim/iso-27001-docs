@@ -170,3 +170,22 @@ The digest identifies the reviewed files; it does not establish the correctness 
 This completes the requested body review. By owner decision, the separate playbook v0.2.0
 migration is excluded from the current work; see [UPDATES.md](UPDATES.md). Publication history
 is recorded in Git and the promotion pull request.
+
+## 5. Changes after this review
+
+This record describes the control documents as they were reviewed on 2026-09-17. Later changes:
+
+- 2026-09-23 (commit 42760f1): the agent setup returned to Claude Code, which removed the Codex
+  setup that section 1 says was preserved (the `.agents/skills` discovery link and the
+  Codex-oriented skill setup). The Python regression tests for that setup were reworked, and the
+  suite now has 11 tests.
+- 2026-09-24 (commit e7950e5): all 93 Korean control documents were restyled to the Korean style
+  standard, and 14 Korean sentences that disagreed with the English were changed to match it. No
+  English control document changed.
+- 2026-10-20: a fact check of all 186 control documents corrected overstated requirements, wrong
+  adjacent-control references, and Korean/English mismatches. The English titles of A.5.21, A.5.34
+  and A.8.1 now keep the wording of Table A.1 in ISO/IEC 27001:2022 Annex A.
+
+The digest in section 4 therefore identifies the 2026-09-17 snapshot, which commit 5495d78 holds,
+and does not match the current files. [UPDATES.md](UPDATES.md) sections 2.5 and 2.6 record these
+changes.

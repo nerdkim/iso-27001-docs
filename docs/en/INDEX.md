@@ -26,7 +26,7 @@
 - [A.5.18 Access rights](A.5-organizational/A.5.18.md)
 - [A.5.19 Information security in supplier relationships](A.5-organizational/A.5.19.md)
 - [A.5.20 Addressing information security within supplier agreements](A.5-organizational/A.5.20.md)
-- [A.5.21 Managing information security in the ICT supply chain](A.5-organizational/A.5.21.md)
+- [A.5.21 Managing information security in the information and communication technology (ICT) supply chain](A.5-organizational/A.5.21.md)
 - [A.5.22 Monitoring, review and change management of supplier services](A.5-organizational/A.5.22.md)
 - [A.5.23 Information security for use of cloud services](A.5-organizational/A.5.23.md)
 - [A.5.24 Information security incident management planning and preparation](A.5-organizational/A.5.24.md)
@@ -39,7 +39,7 @@
 - [A.5.31 Legal, statutory, regulatory and contractual requirements](A.5-organizational/A.5.31.md)
 - [A.5.32 Intellectual property rights](A.5-organizational/A.5.32.md)
 - [A.5.33 Protection of records](A.5-organizational/A.5.33.md)
-- [A.5.34 Privacy and protection of PII](A.5-organizational/A.5.34.md)
+- [A.5.34 Privacy and protection of personal identifiable information (PII)](A.5-organizational/A.5.34.md)
 - [A.5.35 Independent review of information security](A.5-organizational/A.5.35.md)
 - [A.5.36 Compliance with policies, rules and standards for information security](A.5-organizational/A.5.36.md)
 - [A.5.37 Documented operating procedures](A.5-organizational/A.5.37.md)
@@ -74,7 +74,7 @@
 
 ## A.8 Technological controls (34)
 
-- [A.8.1 User endpoint devices](A.8-technological/A.8.1.md)
+- [A.8.1 User end point devices](A.8-technological/A.8.1.md)
 - [A.8.2 Privileged access rights](A.8-technological/A.8.2.md)
 - [A.8.3 Information access restriction](A.8-technological/A.8.3.md)
 - [A.8.4 Access to source code](A.8-technological/A.8.4.md)

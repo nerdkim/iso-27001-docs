@@ -7,12 +7,12 @@
 | Control | A.5.23 Information security for use of cloud services |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.10.2 Cloud security |
+| ISMS-P mapping | 2.10.2 Cloud Security |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
 
-This control requires the organization to define and implement its security requirements across the full lifecycle of cloud services: acquisition, use, migration, and exit. Because cloud operates under a shared responsibility model that splits control points between the provider and the customer, the essential task is to carry out every security responsibility that falls to the customer through contracts, configuration, and monitoring. The aim is to govern unapproved cloud use and to securely recover or destroy data on exit or migration, so that cloud risk stays within the organization's management scope.
+This control requires the organization to establish processes, in line with its information security requirements, across the full lifecycle of cloud services: acquisition, use, management, and exit (including migration). Because cloud operates under a shared responsibility model that splits control points between the provider and the customer, the essential task is to carry out every security responsibility that falls to the customer through contracts, configuration, and monitoring. The aim is to govern unapproved cloud use and to securely recover or destroy data on exit or migration, so that cloud risk stays within the organization's management scope.
 
 ## Key checkpoints
 
@@ -34,8 +34,8 @@ This control requires the organization to define and implement its security requ
 ## Related controls and attributes
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services)
-- ISMS-P mapping: 2.10.2 Cloud security
+- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.20 (Addressing information security within supplier agreements), A.5.21 (Managing information security in the information and communication technology (ICT) supply chain), A.5.22 (Monitoring, review and change management of supplier services)
+- ISMS-P mapping: 2.10.2 Cloud Security
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

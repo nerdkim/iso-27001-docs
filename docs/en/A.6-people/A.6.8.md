@@ -7,7 +7,7 @@
 | Control | A.6.8 Information security event reporting |
 | Control type (ref.) | Detective / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.1 Establishment of incident prevention and response system |
+| ISMS-P mapping | 2.11.1 Establishment of an Incident Prevention and Response System |
 | 2013 mapping | A.16.1.2, A.16.1.3 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control establishes formal procedures and channels for personnel, external 
 
 - ISO 27001 clauses: 7.3 (Awareness), 7.4 (Communication), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.5.24 (Information security incident management planning and preparation), A.5.25 (Assessment and decision on information security events), A.5.26 (Response to information security incidents), A.5.27 (Learning from information security incidents), A.6.3 (Information security awareness, education and training), A.5.7 (Threat intelligence)
-- ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system (related: 2.2.4 Awareness and training, 2.11.5 Incident response and recovery)
+- ISMS-P mapping: 2.11.1 Establishment of an Incident Prevention and Response System (related: 2.2.4 Awareness Raising and Education/Training, 2.11.5 Incident Response and Recovery)
 - 2013 mapping: A.16.1.2 (Reporting information security events), A.16.1.3 (Reporting information security weaknesses)
 
 ## Evidence

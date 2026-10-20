@@ -7,7 +7,7 @@
 | Control | A.5.33 Protection of records |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 1.4.1 Legal requirements compliance review (related: 2.9.4 Log and access record management, 2.1.3 Information asset management, 3.4.2 Measures when retaining after purpose achieved, 2.9.7 Reuse and disposal of information assets) |
+| ISMS-P mapping | 1.4.1 Review of Compliance with Legal Requirements (related: 2.9.4 Log and Access Record Management, 2.1.3 Information Asset Management, 3.4.2 Measures When Retaining Personal Information After the Processing Purpose Is Achieved, 2.9.7 Reuse and Disposal of Information Assets) |
 | 2013 mapping | A.18.1.3 |
 
 ## Control objective
@@ -35,8 +35,8 @@ This control requires the organization to protect the records it must retain und
 ## Related controls and attributes
 
 - ISO 27001 clauses: 7.5 (Documented information), 9.2 (Internal audit), 9.3 (Management review), 5.3 (Organizational roles, responsibilities and authorities), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.34 (Privacy and protection of PII), A.5.37 (Documented operating procedures), A.7.10 (Storage media), A.8.10 (Information deletion), A.8.13 (Information backup), A.8.15 (Logging)
-- ISMS-P mapping: 1.4.1 Legal requirements compliance review (related: 2.9.4 Log and access record management, 2.1.3 Information asset management, 3.4.2 Measures when retaining after purpose achieved, 2.9.7 Reuse and disposal of information assets)
+- Adjacent Annex A: A.5.31 (Legal, statutory, regulatory and contractual requirements), A.5.34 (Privacy and protection of personal identifiable information (PII)), A.5.37 (Documented operating procedures), A.7.10 (Storage media), A.8.10 (Information deletion), A.8.13 (Information backup), A.8.15 (Logging)
+- ISMS-P mapping: 1.4.1 Review of Compliance with Legal Requirements (related: 2.9.4 Log and Access Record Management, 2.1.3 Information Asset Management, 3.4.2 Measures When Retaining Personal Information After the Processing Purpose Is Achieved, 2.9.7 Reuse and Disposal of Information Assets)
 - 2013 mapping: A.18.1.3 (Protection of records)
 
 ## Evidence

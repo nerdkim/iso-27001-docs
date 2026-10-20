@@ -7,7 +7,7 @@
 | Control | A.8.19 Installation of software on operational systems |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.8.6 Transfer to operational environment |
+| ISMS-P mapping | 2.8.6 Transition to the Operational Environment |
 | 2013 mapping | A.12.5.1, A.12.6.2 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control ensures that software installed on operational (production) systems
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.32 (Change management), A.8.9 (Configuration management), A.8.8 (Management of technical vulnerabilities), A.8.31 (Separation of development, test and production environments), A.8.29 (Security testing in development and acceptance), A.8.4 (Access to source code)
-- ISMS-P mapping: 2.8.6 Transfer to operational environment (related: 2.10.8 Patch management, 2.9.1 Change management, 2.10.6 Business-use device security)
+- ISMS-P mapping: 2.8.6 Transition to the Operational Environment (related: 2.10.8 Patch Management, 2.9.1 Change Management, 2.10.6 Security of Business Terminals)
 - 2013 mapping: A.12.5.1 (Installation of software on operational systems), A.12.6.2 (Restrictions on software installation)
 
 ## Evidence

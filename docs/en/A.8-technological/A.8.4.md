@@ -7,7 +7,7 @@
 | Control | A.8.4 Access to source code |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity |
-| ISMS-P mapping | 2.8.5 Source program management |
+| ISMS-P mapping | 2.8.5 Source Program Management |
 | 2013 mapping | A.9.4.5 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control manages read and change access to source code, build tools, librari
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.3 (Information access restriction), A.8.2 (Privileged access rights), A.8.31 (Separation of development, test and production environments), A.8.32 (Change management), A.8.25 (Secure development life cycle), A.8.28 (Secure coding), A.5.18 (Access rights)
-- ISMS-P mapping: 2.8.5 Source program management
+- ISMS-P mapping: 2.8.5 Source Program Management
 - 2013 mapping: A.9.4.5 (Access control to program source code)
 
 ## Evidence

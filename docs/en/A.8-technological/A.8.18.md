@@ -7,7 +7,7 @@
 | Control | A.8.18 Use of privileged utility programs |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.5.5 Special account and privilege management |
+| ISMS-P mapping | 2.5.5 Management of Special Accounts and Privileges |
 | 2013 mapping | A.9.4.4 (Use of privileged utility programs) |
 
 ## Control objective
@@ -38,7 +38,7 @@ Privileged utility programs are tools capable of overriding or bypassing normal 
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.2 (Privileged access rights), A.8.3 (Information access restriction), A.8.5 (Secure authentication), A.8.19 (Installation of software on operational systems), A.8.15 (Logging), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.5.5 Special account and privilege management (from the usage-control/recording angle, it also relates to 2.6.2 Information system access and 2.9.4 Log and access record management)
+- ISMS-P mapping: 2.5.5 Management of Special Accounts and Privileges (from the usage-control/recording angle, it also relates to 2.6.2 Information System Access and 2.9.4 Log and Access Record Management)
 - 2013 mapping: A.9.4.4 (Use of privileged utility programs)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.6.2 Terms and conditions of employment |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.3 Security pledge |
+| ISMS-P mapping | 2.2.3 Security Pledge |
 | 2013 mapping | A.7.1.2 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control ensures that the employment contract and equivalent agreements stat
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 5.3 (Organizational roles, responsibilities and authorities)
 - Adjacent Annex A: A.6.1 (Screening), A.6.3 (Information security awareness, education and training), A.6.4 (Disciplinary process), A.6.5 (Responsibilities after termination or change of employment), A.6.6 (Confidentiality or non-disclosure agreements), A.5.10 (Acceptable use of information and other associated assets)
-- ISMS-P mapping: 2.2.3 Security pledge
+- ISMS-P mapping: 2.2.3 Security Pledge
 - 2013 mapping: A.7.1.2 (Terms and conditions of employment)
 
 ## Evidence

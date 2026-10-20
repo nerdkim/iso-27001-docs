@@ -7,7 +7,7 @@
 | Control | A.5.25 Assessment and decision on information security events |
 | Control type (ref.) | Detective / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.1 Establishment of incident prevention and response system |
+| ISMS-P mapping | 2.11.1 Establishment of an Incident Prevention and Response System |
 | 2013 mapping | A.16.1.4 |
 
 ## Control objective
@@ -35,7 +35,7 @@ This control assesses information security events against predefined categorizat
 
 - ISO 27001 clauses: 9.1 (Monitoring, measurement, analysis and evaluation), 10.1 (Continual improvement), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.5.24 (Information security incident management planning and preparation), A.5.26 (Response to information security incidents), A.5.27 (Learning from information security incidents), A.6.8 (Information security event reporting), A.8.15 (Logging), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system (related: 2.11.3 Anomaly analysis and monitoring, 2.11.5 Incident response and recovery)
+- ISMS-P mapping: 2.11.1 Establishment of an Incident Prevention and Response System (related: 2.11.3 Analysis and Monitoring of Anomalous Behavior, 2.11.5 Incident Response and Recovery)
 - 2013 mapping: A.16.1.4
 
 ## Evidence

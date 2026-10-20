@@ -7,7 +7,7 @@
 | Control | A.8.9 Configuration management |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.9.1 Change management |
+| ISMS-P mapping | 2.9.1 Change Management |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires the organization to define and document the configurations
 
 - ISO 27001 clauses: 7.5 (Documented information), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.8.32 (Change management), A.8.19 (Installation of software on operational systems), A.8.8 (Management of technical vulnerabilities), A.5.9 (Inventory of information and other associated assets), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.9.1 Change management (from the secure-configuration/hardening angle, it also relates to 2.6.2 Information system access and 2.10.1 Operation of security systems)
+- ISMS-P mapping: 2.9.1 Change Management (from the secure-configuration/hardening angle, it also relates to 2.6.2 Information System Access and 2.10.1 Security System Operation)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

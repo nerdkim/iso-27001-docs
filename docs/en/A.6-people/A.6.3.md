@@ -7,7 +7,7 @@
 | Control | A.6.3 Information security awareness, education and training |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.4 Awareness and training |
+| ISMS-P mapping | 2.2.4 Awareness Raising and Education/Training |
 | 2013 mapping | A.7.2.2 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control provides ongoing awareness activities and role-based education/trai
 
 - ISO 27001 clauses: 7.2 (Competence), 7.3 (Awareness), 7.4 (Communication)
 - Adjacent Annex A: A.6.1 (Screening), A.6.2 (Terms and conditions of employment), A.6.4 (Disciplinary process), A.5.1 (Policies for information security), A.6.8 (Information security event reporting)
-- ISMS-P mapping: 2.2.4 Awareness and training
+- ISMS-P mapping: 2.2.4 Awareness Raising and Education/Training
 - 2013 mapping: A.7.2.2 (Information security awareness, education and training)
 
 ## Evidence

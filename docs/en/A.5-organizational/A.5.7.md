@@ -7,7 +7,7 @@
 | Control | A.5.7 Threat intelligence |
 | Control type (ref.) | Preventive / Detective / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.1 Establishment of incident prevention and response system (related: 2.11.3 Anomaly analysis and monitoring, 2.11.2 Vulnerability assessment and remediation) |
+| ISMS-P mapping | 2.11.1 Establishment of an Incident Prevention and Response System (related: 2.11.3 Analysis and Monitoring of Anomalous Behavior, 2.11.2 Vulnerability Assessment and Remediation) |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -35,7 +35,7 @@ This control requires the organization to collect, analyze, and use information 
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.5.5 (Contact with authorities), A.5.6 (Contact with special interest groups), A.8.8 (Management of technical vulnerabilities), A.8.16 (Monitoring activities), A.5.24 to A.5.27 (Information security incident management)
-- ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system (related: 2.11.3 Anomaly analysis and monitoring, 2.11.2 Vulnerability assessment and remediation)
+- ISMS-P mapping: 2.11.1 Establishment of an Incident Prevention and Response System (related: 2.11.3 Analysis and Monitoring of Anomalous Behavior, 2.11.2 Vulnerability Assessment and Remediation)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

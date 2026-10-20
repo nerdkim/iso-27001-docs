@@ -7,7 +7,7 @@
 | Control | A.5.20 Addressing information security within supplier agreements |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination, 3.3.2 Outsourcing of personal information processing tasks) |
+| ISMS-P mapping | 2.3.2 Security When Contracting with External Parties (related: 2.3.3 Management of External Party Security Implementation, 2.3.4 Security upon Change or Expiration of External Party Contracts, 3.3.2 Outsourcing of Personal Information Processing Tasks) |
 | 2013 mapping | A.15.1.2 |
 
 ## Control objective
@@ -36,8 +36,8 @@ Because a supplier that handles the organization's information or runs part of i
 ## Related controls and attributes
 
 - ISO 27001 clauses: 4.2 (Understanding the needs and expectations of interested parties), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
-- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.21 (Managing information security in the ICT supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
-- ISMS-P mapping: 2.3.2 Security in external party contracts (related: 2.3.3 Management of external party security compliance, 2.3.4 Security on external party contract change and termination, 3.3.2 Outsourcing of personal information processing tasks)
+- Adjacent Annex A: A.5.19 (Information security in supplier relationships), A.5.21 (Managing information security in the information and communication technology (ICT) supply chain), A.5.22 (Monitoring, review and change management of supplier services), A.5.23 (Information security for use of cloud services)
+- ISMS-P mapping: 2.3.2 Security When Contracting with External Parties (related: 2.3.3 Management of External Party Security Implementation, 2.3.4 Security upon Change or Expiration of External Party Contracts, 3.3.2 Outsourcing of Personal Information Processing Tasks)
 - 2013 mapping: A.15.1.2
 
 ## Evidence

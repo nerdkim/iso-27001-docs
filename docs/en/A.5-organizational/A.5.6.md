@@ -7,7 +7,7 @@
 | Control | A.5.6 Contact with special interest groups |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.1 Establishment of incident prevention and response system |
+| ISMS-P mapping | 2.11.1 Establishment of an Incident Prevention and Response System |
 | 2013 mapping | A.6.1.4 |
 
 ## Control objective
@@ -36,7 +36,7 @@ This control establishes and maintains ongoing contact with information security
 
 - ISO 27001 clauses: 7.4 (Communication), 7.1 (Resources), 6.1 (Actions to address risks and opportunities), 10 (Improvement)
 - Adjacent Annex A: A.5.5 (Contact with authorities), A.5.7 (Threat intelligence), A.6.3 (Information security awareness, education and training), A.5.24 to A.5.28 (Information security incident management)
-- ISMS-P mapping: 2.11.1 Establishment of incident prevention and response system
+- ISMS-P mapping: 2.11.1 Establishment of an Incident Prevention and Response System
 - 2013 mapping: A.6.1.4 (Contact with special interest groups)
 
 ## Evidence

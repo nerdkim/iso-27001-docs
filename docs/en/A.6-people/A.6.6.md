@@ -7,7 +7,7 @@
 | Control | A.6.6 Confidentiality or non-disclosure agreements |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality |
-| ISMS-P mapping | 2.2.3 Security pledge |
+| ISMS-P mapping | 2.2.3 Security Pledge |
 | 2013 mapping | A.13.2.4 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control ensures that the organization identifies requirements for confident
 
 - ISO 27001 clauses: 7.3 (Awareness), 7.5 (Documented information), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.6.2 (Terms and conditions of employment), A.6.5 (Responsibilities after termination or change of employment), A.5.14 (Information transfer), A.5.20 (Addressing information security within supplier agreements), A.5.13 (Labelling of information)
-- ISMS-P mapping: 2.2.3 Security pledge (for external parties, 2.3.2 Security in external party contracts)
+- ISMS-P mapping: 2.2.3 Security Pledge (for external parties, 2.3.2 Security When Contracting with External Parties)
 - 2013 mapping: A.13.2.4 (Confidentiality or non-disclosure agreements)
 
 ## Evidence

@@ -7,12 +7,12 @@
 | Control | A.8.16 Monitoring activities |
 | Control type (ref.) | Detective / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.3 Anomaly analysis and monitoring |
+| ISMS-P mapping | 2.11.3 Analysis and Monitoring of Anomalous Behavior |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
 
-This control requires networks, systems, and applications to be observed on an ongoing basis so that anomalous behavior, abnormal traffic, and unauthorized access attempts that deviate from a normal baseline are detected early, evaluated as potential information security incidents, and responded to promptly. The essence is not merely to keep logs but to analyze and correlate the collected data in real time or near real time to identify signs of compromise. The objective is to continuously tune detection rules and baselines so that both missed detections and excessive false positives are reduced, and to ensure the monitoring feeds into the incident response process.
+This control requires networks, systems, and applications to be observed on an ongoing basis so that anomalous behavior, abnormal traffic, and unauthorized access attempts that deviate from a normal baseline are detected early, evaluated as potential information security incidents, and responded to promptly. The essence is not merely to keep logs but to analyze and correlate the collected data, in real time or at defined intervals suited to the organization's needs and capabilities, to identify signs of compromise. The objective is to continuously tune detection rules and baselines so that both missed detections and excessive false positives are reduced, and to ensure the monitoring feeds into the incident response process.
 
 ## Key checkpoints
 
@@ -36,7 +36,7 @@ This control requires networks, systems, and applications to be observed on an o
 
 - ISO 27001 clauses: 9.1 (Monitoring, measurement, analysis and evaluation), 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.8.15 (Logging), A.8.17 (Clock synchronization), A.5.7 (Threat intelligence), A.5.25 (Assessment and decision on information security events), A.8.20 (Networks security), A.8.6 (Capacity management)
-- ISMS-P mapping: 2.11.3 Anomaly analysis and monitoring (related: 2.9.5 Review of logs and access records, 2.10.1 Operation of security systems)
+- ISMS-P mapping: 2.11.3 Analysis and Monitoring of Anomalous Behavior (related: 2.9.5 Log and Access Record Review, 2.10.1 Security System Operation)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

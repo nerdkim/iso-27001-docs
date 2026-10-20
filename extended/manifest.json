@@ -71,8 +71,8 @@
    }
   ],
   "source": {
-   "ko": "통제 번호, 명칭, 4개 테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 한국어 명칭은 이 자료집의 표기입니다. Amd 1:2024는 본문 4.1과 4.2만 개정하며 Annex A는 바뀌지 않았습니다.",
-   "en": "Control numbers, titles and the four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. Korean titles are this collection's rendering. Amd 1:2024 amends main-body clauses 4.1 and 4.2 only; Annex A is unchanged."
+   "ko": "통제 번호, 명칭, 4개 테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 영어 명칭은 Annex A Table A.1의 표기를 그대로 따르고, 한국어 명칭은 이 자료집의 표기입니다. Amd 1:2024는 본문 4.1과 4.2만 개정하며 Annex A는 바뀌지 않았습니다.",
+   "en": "Control numbers, titles and the four-theme classification are based on the public list of ISO/IEC 27001:2022 Annex A. English titles keep the wording of its Table A.1; Korean titles are this collection's rendering. Amd 1:2024 amends main-body clauses 4.1 and 4.2 only; Annex A is unchanged."
   },
   "provenance": {
    "ko": "통제 번호/명칭/테마 분류는 ISO/IEC 27001:2022 Annex A의 공개 목록에 근거합니다. 설명 본문은 이 자료집을 위해 새로 작성한 원저작물이며 ISO 표준 원문의 규범 텍스트가 아닙니다. 정본 대조는 라이선스를 갖춘 표준 원본으로 하십시오.",
@@ -2141,7 +2141,7 @@
    "lang": "en",
    "section": "organizational",
    "no": "A.5.21",
-   "name": "Managing information security in the ICT supply chain",
+   "name": "Managing information security in the information and communication technology (ICT) supply chain",
    "groupNo": "A.5",
    "group": "Organizational controls",
    "subgroupNo": "",
@@ -2375,7 +2375,7 @@
    "lang": "en",
    "section": "organizational",
    "no": "A.5.34",
-   "name": "Privacy and protection of PII",
+   "name": "Privacy and protection of personal identifiable information (PII)",
    "groupNo": "A.5",
    "group": "Organizational controls",
    "subgroupNo": "",
@@ -2843,7 +2843,7 @@
    "lang": "en",
    "section": "technological",
    "no": "A.8.1",
-   "name": "User endpoint devices",
+   "name": "User end point devices",
    "groupNo": "A.8",
    "group": "Technological controls",
    "subgroupNo": "",

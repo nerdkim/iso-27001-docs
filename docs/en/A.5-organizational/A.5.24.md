@@ -7,7 +7,7 @@
 | Control | A.5.24 Information security incident management planning and preparation |
 | Control type (ref.) | Preventive / Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.1 Establishment of incident prevention and response system |
+| ISMS-P mapping | 2.11.1 Establishment of an Incident Prevention and Response System |
 | 2013 mapping | A.16.1.1 |
 
 ## Control objective
@@ -54,7 +54,7 @@ This control requires the organization to define, before any incident actually o
 - No criteria distinguish events from incidents and no severity ratings exist, so the timing of reporting and escalation depends on the individual handler's discretion.
 - No reporting channel is provided, so personnel who notice incident indicators do not know where or how to report them.
 - Legal notification duties and deadlines (for example, for personal data breaches) are not reflected in the procedure, creating a risk of delayed notification.
-- No exercise has ever been conducted after the plan was established, so the effectiveness of the procedures has not been validated.
+- The exercises or incident-handler training that the incident management plan itself calls for have not been carried out, so neither the effectiveness of the procedures nor staff familiarity with them can be confirmed.
 - The logs, tools, and external-body contact arrangements needed for response were not secured in advance, delaying first response during an incident.
 
 ---

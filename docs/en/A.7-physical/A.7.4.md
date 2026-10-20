@@ -7,7 +7,7 @@
 | Control | A.7.4 Physical security monitoring |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.4.2 Physical entry control |
+| ISMS-P mapping | 2.4.2 Physical Entry Control |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -37,7 +37,7 @@ The purpose is to keep facilities that hold information and information processi
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action)
 - Adjacent Annex A: A.7.1 (Physical security perimeters), A.7.2 (Physical entry), A.7.3 (Securing offices, rooms and facilities), A.5.7 (Threat intelligence), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.4.2 Physical entry control
+- ISMS-P mapping: 2.4.2 Physical Entry Control
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.8.23 Web filtering |
 | Control type (ref.) | Preventive / Detective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.6.7 Internet access control |
+| ISMS-P mapping | 2.6.7 Internet Access Control |
 | 2013 mapping | New in 2022 |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires that access to external websites be managed/controlled so 
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.8.22 (Segregation of networks), A.8.20 (Networks security), A.8.21 (Security of network services), A.8.7 (Protection against malware), A.5.10 (Acceptable use of information and other associated assets)
-- ISMS-P mapping: 2.6.7 Internet access control (for the malware aspect, also 2.10.9 Malware control)
+- ISMS-P mapping: 2.6.7 Internet Access Control (for the malware aspect, also 2.10.9 Malicious Code Control)
 - 2013 mapping: New in 2022 (no corresponding control in the 2013 edition)
 
 ## Evidence

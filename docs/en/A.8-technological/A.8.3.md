@@ -7,7 +7,7 @@
 | Control | A.8.3 Information access restriction |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity |
-| ISMS-P mapping | 2.6.3 Application access |
+| ISMS-P mapping | 2.6.3 Application Access |
 | 2013 mapping | A.9.4.1 |
 
 ## Control objective
@@ -35,7 +35,7 @@ When a single account can reach far more than the job in front of it needs, one 
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.15 (Access control), A.5.18 (Access rights), A.5.3 (Segregation of duties), A.8.2 (Privileged access rights), A.8.4 (Access to source code), A.8.5 (Secure authentication), A.8.18 (Use of privileged utility programs)
-- ISMS-P mapping: 2.6.3 Application access (related: 2.6.2 Information system access, 2.6.4 Database access)
+- ISMS-P mapping: 2.6.3 Application Access (related: 2.6.2 Information System Access, 2.6.4 Database Access)
 - 2013 mapping: A.9.4.1 (Information access restriction)
 
 ## Evidence

@@ -7,7 +7,7 @@
 | Control | A.6.5 Responsibilities after termination or change of employment |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.5 Management of retirement and job change |
+| ISMS-P mapping | 2.2.5 Management of Departure and Job Change |
 | 2013 mapping | A.7.3.1 |
 
 ## Control objective
@@ -35,7 +35,7 @@ This control ensures that information security responsibilities and obligations 
 
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 7.2 (Competence), 7.3 (Awareness)
 - Adjacent Annex A: A.6.1 (Screening), A.6.2 (Terms and conditions of employment), A.6.4 (Disciplinary process), A.6.6 (Confidentiality or non-disclosure agreements), A.5.11 (Return of assets), A.5.18 (Access rights)
-- ISMS-P mapping: 2.2.5 Management of retirement and job change
+- ISMS-P mapping: 2.2.5 Management of Departure and Job Change
 - 2013 mapping: A.7.3.1 (Termination or change of employment responsibilities)
 
 ## Evidence
@@ -43,7 +43,7 @@ This control ensures that information security responsibilities and obligations 
 - Employment contract/security pledge templates containing post-termination clauses (confidentiality/non-disclosure)
 - Termination/role-change procedure documents and checklists
 - Asset return confirmations, access revocation/account deactivation records
-- Exit briefing/surviving-obligation re-notification confirmations (signed by the individual)
+- Exit briefing/surviving-obligation re-notification confirmations (signed by the individual, or a delivery record with the reason a signature could not be obtained)
 - Personnel-change notification records between HR and information security, and work handover documents
 
 ## Nonconformity examples

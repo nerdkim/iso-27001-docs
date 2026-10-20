@@ -7,7 +7,7 @@
 | Control | A.8.14 Redundancy of information processing facilities |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Availability |
-| ISMS-P mapping | 2.9.2 Performance and fault management |
+| ISMS-P mapping | 2.9.2 Performance and Fault Management |
 | 2013 mapping | A.17.2.1 (Availability of information processing facilities) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires that information processing facilities (servers, storage, 
 
 - ISO 27001 clauses: 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control), 9.1 (Monitoring, measurement, analysis and evaluation)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.30 (ICT readiness for business continuity), A.8.6 (Capacity management), A.8.13 (Information backup), A.7.11 (Supporting utilities), A.7.12 (Cabling security)
-- ISMS-P mapping: 2.9.2 Performance and fault management (linked: 2.12.1 Safety measures for disaster and emergency preparedness, 2.9.3 Backup and recovery management)
+- ISMS-P mapping: 2.9.2 Performance and Fault Management (linked: 2.12.1 Safety Measures for Disaster/Emergency Preparedness, 2.9.3 Backup and Recovery Management)
 - 2013 mapping: A.17.2.1 (Availability of information processing facilities)
 
 ## Evidence
@@ -58,7 +58,7 @@ This control requires that information processing facilities (servers, storage, 
 - Replication lag is not managed, causing data loss/inconsistency after switchover.
 - Redundant components run different configuration/firmware versions, causing malfunction at switchover.
 - There is no monitoring/alerting on redundancy status, so a degraded state (one side already failed) goes unnoticed.
-- Redundancy exists only within the same data center/same power feed, so a wide-area disaster brings everything down at once.
+- Availability requirements call for resilience to site failure or wide-area disaster, yet redundancy exists only within the same data center/same power feed, so such an event brings everything down at once.
 
 ---
 > Source/limitation: Control numbers, titles, and theme classification are based on the publicly available list of ISO/IEC 27001:2022 Annex A. The explanatory text (control objective, key checkpoints, implementation guidance, evidence, nonconformity examples) and the attribute classification are original material written by this collection for practical reference; they are not the normative text of the ISO/IEC 27001:2022 or 27002:2022 standards. For certification, verify against a licensed copy of the standard.

@@ -7,7 +7,7 @@
 | Control | A.8.13 Information backup |
 | Control type (ref.) | Corrective |
 | Security properties (ref.) | Integrity / Availability |
-| ISMS-P mapping | 2.9.3 Backup and recovery management |
+| ISMS-P mapping | 2.9.3 Backup and Recovery Management |
 | 2013 mapping | A.12.3.1 (Information backup) |
 
 ## Control objective
@@ -37,7 +37,7 @@ This control requires that copies of information, software, and system images be
 
 - ISO 27001 clauses: 8.1 (Operational planning and control), 6.1 (Actions to address risks and opportunities)
 - Adjacent Annex A: A.5.29 (Information security during disruption), A.5.30 (ICT readiness for business continuity), A.8.14 (Redundancy of information processing facilities), A.8.16 (Monitoring activities), A.8.24 (Use of cryptography), A.8.10 (Information deletion)
-- ISMS-P mapping: 2.9.3 Backup and recovery management
+- ISMS-P mapping: 2.9.3 Backup and Recovery Management
 - 2013 mapping: A.12.3.1 (Information backup)
 
 ## Evidence

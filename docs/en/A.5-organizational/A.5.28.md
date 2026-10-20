@@ -7,16 +7,16 @@
 | Control | A.5.28 Collection of evidence |
 | Control type (ref.) | Corrective |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.11.5 Incident response and recovery |
+| ISMS-P mapping | 2.11.5 Incident Response and Recovery |
 | 2013 mapping | A.16.1.7 (Collection of evidence) |
 
 ## Control objective
 
-This control is about how an organization finds, secures, and safeguards the material an incident leaves behind, so that it can still be relied on later for disciplinary action, litigation, regulatory reporting, and cause analysis. If the integrity and chain of custody of evidence are not maintained, then no matter how much material is gathered after an incident, it may lose its value as evidence in legal or disciplinary proceedings. The aim is therefore to prepare procedures, roles, tools, and external cooperation arrangements before an incident occurs, so that evidence can be secured promptly and in a defensible manner when one happens.
+This control is about how an organization finds, secures, and safeguards the material left behind by information security events (including those subsequently classified as incidents), so that it can still be relied on later for disciplinary action, litigation, regulatory reporting, and cause analysis. If the integrity and chain of custody of evidence are not maintained, then no matter how much material is gathered after an incident, it may lose its value as evidence in legal or disciplinary proceedings. The aim is therefore to prepare procedures, roles, tools, and external cooperation arrangements before an incident occurs, so that evidence can be secured promptly and in a defensible manner when one happens.
 
 ## Key checkpoints
 
-1. Are procedures for the identification/collection/acquisition/preservation of incident-related evidence documented, and do they reflect applicable laws and the evidence-admissibility criteria of the relevant jurisdiction?
+1. Are procedures for the identification/collection/acquisition/preservation of evidence related to information security events and incidents documented, and do they reflect applicable laws and the evidence-admissibility criteria of the relevant jurisdiction?
 2. Are a standard form and procedure in place to record and maintain the chain of custody, tracking acquisition time, handlers, and the movement/handover path?
 3. For digital evidence, are methods defined to preserve the integrity of the original (forensic imaging, hash generation and verification, write-blocking, and similar)?
 4. Are qualified internal staff or external specialists (forensic firms, law enforcement) designated in advance for collecting and handling evidence?
@@ -36,7 +36,7 @@ This control is about how an organization finds, secures, and safeguards the mat
 
 - ISO 27001 clauses: 8 (Operation), 9.1 (Monitoring, measurement, analysis and evaluation), 10.2 (Nonconformity and corrective action), 7.5 (Documented information)
 - Adjacent Annex A: A.5.24 (Information security incident management planning and preparation), A.5.25 (Assessment and decision on information security events), A.5.26 (Response to information security incidents), A.5.27 (Learning from information security incidents), A.8.15 (Logging), A.8.16 (Monitoring activities)
-- ISMS-P mapping: 2.11.5 Incident response and recovery (adjacent: 2.11.1 Establishment of incident prevention and response system, 2.9.4 Log and access record management)
+- ISMS-P mapping: 2.11.5 Incident Response and Recovery (adjacent: 2.11.1 Establishment of an Incident Prevention and Response System, 2.9.4 Log and Access Record Management)
 - 2013 mapping: A.16.1.7 (Collection of evidence)
 
 ## Evidence

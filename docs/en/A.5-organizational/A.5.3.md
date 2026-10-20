@@ -7,12 +7,12 @@
 | Control | A.5.3 Segregation of duties |
 | Control type (ref.) | Preventive |
 | Security properties (ref.) | Confidentiality / Integrity / Availability |
-| ISMS-P mapping | 2.2.2 Segregation of duties |
+| ISMS-P mapping | 2.2.2 Separation of Duties |
 | 2013 mapping | A.6.1.2 |
 
 ## Control objective
 
-This control separates conflicting duties and areas of responsibility so that no single person can carry a sensitive process end to end and then conceal it alone. When activities that should check one another, such as requesting, approving, executing, and reviewing, are concentrated in one individual, there is nothing left to catch fraud, error, or misuse of privileges. The control requires the organization to identify high-risk combinations of duties and separate them, and where the organization is too small for full separation, to put compensating controls in place so the checking function is preserved.
+This control separates conflicting duties and areas of responsibility so that no single person can carry a sensitive process end to end and then conceal it alone. When activities that should check one another, such as requesting, approving, executing, and reviewing, are concentrated in one individual, there is nothing left to catch fraud, error, or misuse of privileges. The control requires the organization to identify conflicting duties and areas of responsibility and segregate them. For an organization too small for full separation, ISO/IEC 27002 guidance recommends considering compensating controls. With compensating controls in place, the checking function is preserved even for duties that cannot be separated.
 
 ## Key checkpoints
 
@@ -35,7 +35,7 @@ This control separates conflicting duties and areas of responsibility so that no
 
 - ISO 27001 clauses: 5.3 (Organizational roles, responsibilities and authorities), 6.1 (Actions to address risks and opportunities), 8.1 (Operational planning and control)
 - Adjacent Annex A: A.5.2 (Information security roles and responsibilities), A.5.15 (Access control), A.5.18 (Access rights), A.8.2 (Privileged access rights), A.8.3 (Information access restriction)
-- ISMS-P mapping: 2.2.2 Segregation of duties
+- ISMS-P mapping: 2.2.2 Separation of Duties
 - 2013 mapping: A.6.1.2 (Segregation of duties)
 
 ## Evidence
