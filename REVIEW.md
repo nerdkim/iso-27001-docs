@@ -185,7 +185,10 @@ This record describes the control documents as they were reviewed on 2026-09-17.
 - 2026-10-20: a fact check of all 186 control documents corrected overstated requirements, wrong
   adjacent-control references, and Korean/English mismatches. The English titles of A.5.21, A.5.34
   and A.8.1 now keep the wording of Table A.1 in ISO/IEC 27001:2022 Annex A.
+- 2026-10-24: at the owner's request the repository applied the playbook migration that section 4
+  says was excluded, and moved to the v0.10.11 guard set. `tools/check_corpus.py` gained check
+  [13] with two regression tests, so the suite now has 13 tests. No control document changed.
 
 The digest in section 4 therefore identifies the 2026-09-17 snapshot, which commit 5495d78 holds,
-and does not match the current files. [UPDATES.md](UPDATES.md) sections 2.5 and 2.6 record these
+and does not match the current files. [UPDATES.md](UPDATES.md) sections 2.5 to 2.7 record these
 changes.

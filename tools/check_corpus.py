@@ -29,6 +29,9 @@ Checks
  [11] the skill routing table (skill/iso-27001-review/topic-index.json) names only controls that
       exist in the catalog, and every catalog control is reachable from at least one topic
  [12] AGENTS.md is a working symlink to CLAUDE.md, and the skill source files exist
+ [13] no control document carries one of the eight characters that playbook docs/16 2.1 forbids.
+      harness/conventions-exclude takes docs/ko/ out of harness/check-conventions.sh, and with it
+      out of that checker's forbidden-character check, so this check keeps the rule on the corpus
 
 Exit code 0 when the corpus is intact, 1 otherwise.
 
@@ -78,11 +81,34 @@ SOURCE_FOOTERS = {
     ),
 }
 
+# [13] The eight characters playbook docs/16 2.1 forbids in every file, built from their code points
+# so this file carries none of them. The conventions checker scans every file for them, but a path
+# listed in harness/conventions-exclude leaves that scan too, and docs/ko/ is listed there.
+FORBIDDEN_CHARACTERS = {
+    chr(0x2014): "em dash (U+2014)",
+    chr(0x2013): "en dash (U+2013)",
+    chr(0x2015): "horizontal bar (U+2015)",
+    chr(0x00B7): "middle dot (U+00B7)",
+    chr(0x2022): "bullet (U+2022)",
+    chr(0xFF0D): "fullwidth hyphen-minus (U+FF0D)",
+    chr(0x3000): "ideographic space (U+3000)",
+    chr(0x00A0): "no-break space (U+00A0)",
+}
+
 problems = []
 
 
 def fail(msg):
     problems.append(msg)
+
+
+def check_forbidden_characters(rel, text):
+    """[13] report each forbidden character of docs/16 2.1 with the line it sits on."""
+    for number, line in enumerate(text.split("\n"), 1):
+        found = [name for char, name in FORBIDDEN_CHARACTERS.items() if char in line]
+        if found:
+            fail(f"{rel}:{number}: forbidden character {', '.join(found)} (playbook docs/16 2.1); "
+                 "use an ASCII hyphen, a comma, parentheses or a plain space instead")
 
 
 def headings(text):
@@ -135,6 +161,9 @@ def check_document(path, lang, catalog_by_no):
 
     # [10] ISO main-body clause citations: uniform form, and one title per clause number.
     check_clause_citations(rel, lang, text)
+
+    # [13] The forbidden characters, which no exclusion may waive.
+    check_forbidden_characters(rel, text)
 
 
 COUNTED_SECTIONS = {

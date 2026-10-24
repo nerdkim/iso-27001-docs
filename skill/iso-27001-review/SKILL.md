@@ -65,7 +65,7 @@ Do not read all 93 documents. Route first:
    (`log` hits "the log is kept" and not "catalog"; `repository` and not "repo" inside
    "report"). Collect the `controls` of every topic that hits.
 2. Widen with `$root/extended/manifest.json`: scan the `name` of every item for the nouns in
-   the assertions (`운영 데이터`, `공용 계정`, `위탁`) and add the controls whose name matches. The
+   the assertions (`운영 데이터`, `공용 계정`, `위탁`) and add the controls whose name matches. The <!-- conventions-allow: quotes user phrasing verbatim as search terms -->
    manifest holds no neighbour lists; the neighbours of a control are visible only in its own
    `관련 통제 및 속성` / `Related controls and attributes` section once you read it, and go into the
    report's related-controls line.
@@ -261,7 +261,7 @@ authentication strength.
 
 One-line conclusion: 부적합 후보 4건, 확인 필요 0건, 문제 없음 0건(검토한 통제 4개), 범위 외 0건.
 Related controls: the secondary candidate A.8.5 안전한 인증, then the neighbours that the four
-documents name under 관련 통제 및 속성, such as A.8.1 사용자 엔드포인트 기기 and A.7.9 사외 자산
+documents name under 관련 통제 및 속성, such as A.8.1 사용자 엔드포인트 기기 and A.7.9 사외 자산 <!-- conventions-allow: quotes the catalog's Korean control title verbatim -->
 보안 from A.5.11.
 
 ## Do not
