@@ -172,10 +172,15 @@ Every row below was verified on the check date at the top of this document.
   forbidden characters, and two regression tests for it. `docs/en/` is not excluded. Whether to
   rewrite the Korean renderings into English is the owner's decision: doing so would also change
   the Korean control titles in the catalog and the names the manifest publishes.
-- The Korean meta documents now write IT terms in English where the term rule asks for it. The
-  license scope line of README.ko.md keeps its wording under a `conventions-allow` marker, and so
-  do the two lines where the review skill quotes Korean terms.
+- The Korean meta documents now write IT terms in English where the term rule asks for it. The two
+  lines where the review skill quotes Korean terms keep their wording under a `conventions-allow`
+  marker. The license scope line of README.ko.md had one too, until the license change of the same
+  day rewrote that line.
 - No control document, catalog entry, or generated index changed in this upgrade.
+- On 2026-10-25 the guard set moved on to v0.10.12. The security checker no longer reports the
+  Cloudflare Workers AI packages, and the managed block of `CLAUDE.md` says the owner picks the
+  branch model, with `main` alone as the default for a repository that is mostly documents (D68).
+  This repository keeps its single `main` branch.
 
 ## 3. Operating principle
 

@@ -191,7 +191,7 @@ git diff --check
 문서 규약 검사를 모두 받습니다. 자세한 이유는 [CLAUDE.md](CLAUDE.md)에 있습니다.
 
 확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. playbook guard set은
-v0.10.11입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.7절에 기록했습니다.
+v0.10.12입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.7절에 기록했습니다.
 
 ## 라이선스
 
