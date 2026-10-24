@@ -195,9 +195,14 @@ v0.10.11입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.7절에 �
 
 ## 라이선스
 
-- 코드와 도구: MIT. [LICENSE](LICENSE) 참고.
-- 자료집(원저작 설명 본문, `docs/` 편집과 구성, `extended/`의 생성 데이터, 메타 문서의 본문): <!-- conventions-allow: license scope wording kept verbatim until the owner's separate license change -->
-  CC BY 4.0. [LICENSE-CONTENT](LICENSE-CONTENT)와 [NOTICE](NOTICE) 참고.
+- 코드와 도구: PolyForm Noncommercial 1.0.0. [LICENSE](LICENSE) 참고.
+- 자료집(원저작 설명 본문, `docs/` 편집과 구성, `extended/`의 생성 data, 메타 문서의 본문):
+  CC BY-NC 4.0. [LICENSE-CONTENT](LICENSE-CONTENT)와 [NOTICE](NOTICE) 참고.
+
+두 라이선스 모두 비상업적 이용만 허락합니다. 상업적으로 이용하려면 NerdKim의 허락을 따로 받아야
+합니다. 상업적 이용을 막으므로 OSI가 정의한 open source 라이선스가 아니라 source-available 조건입니다.
+2026-10-24까지는 MIT와 CC BY 4.0으로 공개했고, 그 조건으로 받아 간 사본에는 그 조건이 그대로
+적용됩니다.
 
 위 라이선스는 본 프로젝트의 자체 저작물에만 적용됩니다. ISO/IEC 27001 표준 원문의 권리는 ISO와 IEC에
 있으며, 이 저장소는 그 원문을 재라이선스하거나 복제하거나 번역하지 않습니다.
