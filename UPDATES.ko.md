@@ -158,10 +158,13 @@ Annex A는 전혀 바뀌지 않았습니다. 93개 통제와 그 번호, 명칭,
   check [13]은 모든 통제 문서에서 금지 문자 8개를 찾습니다. `docs/en/`은 예외에 넣지 않았습니다. 한국어 IT
   용어를 English로 바꿀지는 repository 소유자가 정합니다. 바꾸면 카탈로그의 한국어 통제 명칭과
   manifest가 공개하는 이름도 함께 바뀝니다.
-- 한국어 메타 문서에서는 용어 규칙이 요구하는 곳의 IT 용어를 English로 바꿨습니다. README.ko.md의 라이선스
-  범위 문장은 문구를 그대로 두고 `conventions-allow` 표시를 붙였습니다. 검토 skill이 한국어 용어를 그대로
-  인용하는 두 줄에도 같은 표시를 붙였습니다.
+- 한국어 메타 문서에서는 용어 규칙이 요구하는 곳의 IT 용어를 English로 바꿨습니다. 검토 skill이 한국어
+  용어를 그대로 인용하는 두 줄은 문구를 그대로 두고 `conventions-allow` 표시를 붙였습니다. README.ko.md의
+  라이선스 범위 문장에도 같은 표시가 있었지만, 같은 날 라이선스를 바꾸면서 그 문장을 고쳐 표시를 뺐습니다.
 - 이번 갱신에서 통제 문서, 카탈로그, 생성 색인은 바뀌지 않았습니다.
+- 2026-10-25에는 guard set을 v0.10.12로 올렸습니다. 보안 검사기는 Cloudflare Workers AI package를 더 이상
+  보고하지 않습니다. `CLAUDE.md` 관리 block은 branch model을 대표님이 정한다고 적고, 주로 문서만 다루는
+  repository는 `main` 하나를 기본으로 둡니다(D68). 이 repository는 지금처럼 `main` branch 하나를 씁니다.
 
 ## 3. 운영 원칙
 
