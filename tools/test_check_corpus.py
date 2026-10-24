@@ -51,6 +51,20 @@ class DocumentBoundaryTests(unittest.TestCase):
                 self.assertTrue(self.check("en", lambda text: text.replace(
                     "\n---\n", f"\n## {title}\n\nExtra content.\n\n---\n")))
 
+    def test_forbidden_characters_cover_docs16(self):
+        # The eight code points of playbook docs/16 2.1. Dropping one would let it back into
+        # docs/ko/, which harness/conventions-exclude takes out of the conventions checker.
+        self.assertEqual({ord(char) for char in checker.FORBIDDEN_CHARACTERS},
+                         {0x2014, 0x2013, 0x2015, 0x00B7, 0x2022, 0xFF0D, 0x3000, 0x00A0})
+
+    def test_forbidden_character_fails(self):
+        for lang in checker.LANGS:
+            for char in checker.FORBIDDEN_CHARACTERS:
+                with self.subTest(lang=lang, char=f"U+{ord(char):04X}"):
+                    issues = self.check(lang, lambda text: text.replace(
+                        "\n## ", f"\nBefore{char}after\n## ", 1))
+                    self.assertTrue(any("forbidden character" in issue for issue in issues), issues)
+
 
 class AgentEntrypointTests(unittest.TestCase):
     def setUp(self):

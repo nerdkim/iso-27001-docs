@@ -5,7 +5,7 @@
 **ISO/IEC 27001:2022 Annex A**의 93개 통제를 통제 하나당 Markdown 파일 하나로 정리한 한국어/영어
 이중 언어 실무 참고 자료집입니다.
 
-이 저장소에는 문서만 있습니다. 애플리케이션도 빌드 산출물도 인프라도 없습니다. 자료집을 사용하는 쪽은
+이 repository에는 문서만 있습니다. 애플리케이션도 build 산출물도 infra도 없습니다. 자료집을 사용하는 쪽은
 [`extended/manifest.json`](extended/manifest.json)을 읽습니다. 그 파일이 공개 계약입니다.
 
 **범위: Annex A 한정.** 이 자료집은 Annex A 93개 통제만 다룹니다. ISMS 요구사항을 담은 본문 4장부터
@@ -24,9 +24,9 @@
 - 각 문서의 **설명 본문은 이 자료집을 위해 새로 작성한 원저작물**입니다. 통제 목적, 주요 확인사항, 이행 지침,
   관련 통제, 증적 예시, 부적합 사례가 여기에 해당합니다. ISO/IEC 27001:2022 및 27002:2022의 규범
   텍스트가 **아니며**, 그 텍스트의 번역도 아닙니다.
-- 각 문서 메타데이터 표의 `통제 유형(참고)`와 `보안 속성(참고)` 행은 **이 자료집이 정한 분류**입니다.
+- 각 문서 metadata 표의 `통제 유형(참고)`와 `보안 속성(참고)` 행은 **이 자료집이 정한 분류**입니다.
   ISO/IEC 27002:2022의 속성 값이 아니며 그 값과 다를 수 있으므로, ISO의 속성으로 인용하지 마십시오.
-- 표준의 규범 텍스트, 이행 지침, 속성 표, 제3자 해설은 이 저장소에서 **원문 그대로 옮기지
+- 표준의 규범 텍스트, 이행 지침, 속성 표, 제3자 해설은 이 repository에서 **원문 그대로 옮기지
   않습니다**.
 - 정본 대조가 필요하면 **라이선스를 갖춘 표준 원본**으로 확인하십시오. 모든 문서 하단에 이 고지가
   있으며, 고지가 누락된 문서가 있으면 CI가 실패합니다.
@@ -53,7 +53,7 @@
 
 `통제 목적` → `주요 확인사항` → `이행 지침` → `관련 통제 및 속성` → `증적자료` → `부적합 사례`
 
-## 디렉터리 구조
+## directory 구조
 
 ```
 docs/
@@ -73,14 +73,14 @@ extended/
 tools/
   build_index.py                 docs/에서 파생 색인 전체를 재생성
   check_corpus.py                읽기 전용 무결성 검사
-  test_check_corpus.py           문서 경계 및 AGENTS.md 링크 회귀 시험
-harness/
-  install-hooks.sh               clone에 git hook을 연결(최초 1회, 설치 절 참고)
+  test_check_corpus.py           문서 경계, AGENTS.md 링크, 금지 문자 회귀 시험
+harness/                         playbook guard set. playbook installer가 갱신하며 손으로 고치지 않음
+  bootstrap-hooks.sh             clone에 git hook을 연결(최초 1회, 설치 절 참고)
+  verify.sh                      guard 검사 전체를 실행(--self-tests를 붙이면 검사기 자체 시험까지)
   check-conventions.sh           문서 규약 검사기(playbook docs/16)
-  test-check-conventions.sh      위 검사기의 자체 시험. CI가 먼저 실행
-  check-infra-conformance.sh     infra 규약 검사기(이 저장소에는 대상이 없음)
+  conventions-exclude            이 repository가 직접 관리. 문서 규약 검사기가 건너뛰는 docs/ko/
   githooks/                      pre-commit, commit-msg, pre-push
-  gitmessage                     커밋 메시지 템플릿
+  gitmessage                     commit message template
 skill/
   iso-27001-review/              Claude Code skill: 전달받은 내용을 이 자료집으로 Annex A에 대조
     SKILL.md                     절차(routing, 읽기, 판정, 보고 형식)
@@ -122,28 +122,33 @@ skill/
 
 ## 설치
 
-이 저장소에는 문서만 있어서 패키지 관리자도, git hook 연결을 맡길 설치 단계도 없습니다.
-`core.hooksPath`는 clone과 함께 옮겨지지 않는 로컬 상태인 `.git/config`에 있으므로,
+이 repository에는 문서만 있어서 package manager도, git hook 연결을 맡길 설치 단계도 없습니다.
+`core.hooksPath`는 clone과 함께 옮겨지지 않는 local 상태인 `.git/config`에 있으므로,
 **clone마다 한 번씩** 다음을 실행하십시오.
 
 ```bash
-bash harness/install-hooks.sh
+bash harness/bootstrap-hooks.sh
 ```
 
-여러 번 실행해도 안전하고, hook 파일 세 개에 실행 권한을 주는 것 말고는 `.git/config` 밖에
-아무것도 쓰지 않습니다. `pre-commit`(문서 규약), `commit-msg`(커밋 메시지 규칙),
-`pre-push`(main 직접 푸시 차단)를 활성화합니다. hook은 우회할 수 있는
-편의용 안전장치이고, 최종 판정은 같은 검사기를 실행하는 CI(`.github/workflows/docs.yml`)가 맡습니다.
+여러 번 실행해도 안전하고, hook 파일에 실행 권한을 주는 것 말고는 `.git/config` 밖에 아무것도
+쓰지 않습니다. `pre-commit`(guard 무결성, 문서 규약, 보안 검사), `commit-msg`(commit message 규칙),
+`pre-push`(main 직접 push 차단)를 활성화하고 commit message template도 연결합니다. hook은 우회할 수
+있는 편의용 안전장치입니다. 최종 판정은 `main`이 required check로 요구하는 두 check가 맡습니다. 두
+check는 `docs-conventions`(`.github/workflows/conventions.yml`, 같은 guard 검사기)와
+`corpus-integrity`(`.github/workflows/docs.yml`, 아래 자료집 도구)입니다.
 
-나머지는 Python 3(표준 라이브러리만)과 bash만 있으면 됩니다.
+나머지는 Python 3(표준 library만), bash, `-P`를 지원하는 GNU grep만 있으면 됩니다. GNU grep은
+guard 검사기와 `commit-msg` hook에 필요합니다.
 
 ## Claude Code로 작업하기
 
-Claude Code는 이 저장소를 열 때 유일한 지침 원본인 [CLAUDE.md](CLAUDE.md)를 읽습니다.
+Claude Code는 이 repository를 열 때 유일한 지침 원본인 [CLAUDE.md](CLAUDE.md)를 읽습니다.
 [AGENTS.md](AGENTS.md)는 이 파일을 가리키는 symlink이므로 `AGENTS.md`를 읽는 agent도 같은
 규칙을 받습니다. `AGENTS.md`가 symlink가 아니게 되면 `tools/check_corpus.py`가 실패합니다.
+playbook installer는 `.claude/settings.json`도 씁니다. 이 파일에는 commit co-author, 한국어 작성 도구의
+hook, 변경에 필요한 문서를 되묻는 Stop hook이 들어 있습니다.
 
-사용자마다 skill 디렉터리를 `~/.claude/skills/`에 symlink로 연결해 검토 skill을 설치합니다. 다음
+사용자마다 skill directory를 `~/.claude/skills/`에 symlink로 연결해 검토 skill을 설치합니다. 다음
 명령을 자료집 최상위에서 한 번 실행하십시오. 기존 설치가 있으면 덮어쓰지 않습니다.
 
 ```bash
@@ -165,31 +170,33 @@ skill을 고르기도 합니다. skill은 이 symlink를 따라 자료집 최상
 python3 tools/build_index.py    # extended/와 docs/{ko,en}/INDEX.md 재생성
 python3 tools/check_corpus.py   # 읽기 전용 무결성 검사
 python3 -B -m unittest discover -s tools -p 'test_*.py'
-bash harness/test-check-conventions.sh
-bash harness/check-conventions.sh
-bash harness/check-infra-conformance.sh
+bash harness/verify.sh          # 문서 규약을 포함한 guard 검사 전체
 git diff --check
 ```
 
-`build_index.py`는 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, 커밋된
+`build_index.py`는 결정적이고 재현 가능합니다. CI가 재생성한 뒤 diff가 있으면 실패시키므로, commit된
 색인은 항상 자료집과 일치합니다.
 
-통제를 추가, 수정, 삭제할 때는 **같은 커밋에서 다른 언어 문서도 함께 고칩니다**. 대응 관계는 통제
+통제를 추가, 수정, 삭제할 때는 **같은 commit에서 다른 언어 문서도 함께 고칩니다**. 대응 관계는 통제
 번호로 정해집니다. 한국어만 또는 영어만 고친 상태는 결함입니다. `tools/check_corpus.py`는 한쪽
 언어에만 통제가 있거나 두 언어의 섹션 항목 수가 다르면 실패합니다. 항목 수가 같은 채로 문장만 바꾼
-경우는 CI가 아니라 리뷰에서 걸러집니다.
+경우는 CI가 아니라 review에서 걸러집니다.
 
 통제를 추가하면 `extended/catalog/controls.json`에도 추가해야 합니다. 카탈로그와 문서가 어느 방향으로든
 어긋나면 `check_corpus.py`가 실패합니다.
 
-확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. 적용된 playbook
-검사 도구의 기준 버전은 v0.1.6이며, v0.2.0 migration은 적용하지 않았습니다.
-확인한 참조본 및 상위 저장소의 커밋은 `CLAUDE.md`에 기록되어 있습니다.
+문서 규약 검사기는 `docs/ko/`를 건너뜁니다(`harness/conventions-exclude`). 한국어 통제 문서는 독자에게
+익숙한 한국어 IT 용어를 그대로 씁니다. playbook의 용어 규칙은 이 용어를 걸러 내므로 이 directory만
+예외로 두었습니다. 금지 문자는 `check_corpus.py`가 모든 통제 문서에서 계속 검사합니다. `docs/en/`은
+문서 규약 검사를 모두 받습니다. 자세한 이유는 [CLAUDE.md](CLAUDE.md)에 있습니다.
+
+확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. playbook guard set은
+v0.10.11입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.7절에 기록했습니다.
 
 ## 라이선스
 
 - 코드와 도구: MIT. [LICENSE](LICENSE) 참고.
-- 자료집(원저작 설명 본문, `docs/` 편집과 구성, `extended/`의 생성 데이터, 메타 문서의 본문):
+- 자료집(원저작 설명 본문, `docs/` 편집과 구성, `extended/`의 생성 데이터, 메타 문서의 본문): <!-- conventions-allow: license scope wording kept verbatim until the owner's separate license change -->
   CC BY 4.0. [LICENSE-CONTENT](LICENSE-CONTENT)와 [NOTICE](NOTICE) 참고.
 
 위 라이선스는 본 프로젝트의 자체 저작물에만 적용됩니다. ISO/IEC 27001 표준 원문의 권리는 ISO와 IEC에

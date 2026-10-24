@@ -81,12 +81,13 @@ extended/
 tools/
   build_index.py                 regenerate every derived index from docs/
   check_corpus.py                read-only integrity checks
-  test_check_corpus.py           regression tests for document boundaries and the AGENTS.md link
-harness/
-  install-hooks.sh               wire this clone to the git hooks (run once, see Setup)
+  test_check_corpus.py           regression tests for document boundaries, the AGENTS.md link,
+                                 and the forbidden characters
+harness/                         playbook guard set, refreshed by the playbook installer (not by hand)
+  bootstrap-hooks.sh             wire this clone to the git hooks (run once, see Setup)
+  verify.sh                      run every guard check (--self-tests adds the checkers' own tests)
   check-conventions.sh           documentation conventions checker (playbook docs/16)
-  test-check-conventions.sh      self-test for the checker above; CI runs it first
-  check-infra-conformance.sh     infra conformance checker (finds nothing here by design)
+  conventions-exclude            this repository's own file: docs/ko/, which the conventions checker skips
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     commit message template
 skill/
@@ -135,22 +136,27 @@ the git-hook wiring on. `core.hooksPath` lives in `.git/config`, which is local 
 travel with a clone, so run this **once per clone**:
 
 ```bash
-bash harness/install-hooks.sh
+bash harness/bootstrap-hooks.sh
 ```
 
 It is idempotent and writes nothing outside `.git/config`, apart from setting the executable bit
-on the three hook files. It activates `pre-commit` (documentation conventions), `commit-msg`
-(message rules), and `pre-push` (blocks a direct push to main). The
-hooks are a convenience guardrail and are bypassable; the authoritative gate is CI
-(`.github/workflows/docs.yml`), which runs the same checkers.
+on the hook files. It activates `pre-commit` (guard integrity, documentation conventions, security
+checks), `commit-msg` (message rules), and `pre-push` (blocks a direct push to main), and sets the
+commit message template. The hooks are a convenience guardrail and are bypassable. The
+authoritative gates are the two checks that `main` requires: `docs-conventions`
+(`.github/workflows/conventions.yml`, the same guard checkers) and `corpus-integrity`
+(`.github/workflows/docs.yml`, the corpus tools below).
 
-Everything else needs only Python 3 (standard library only) and bash.
+Everything else needs only Python 3 (standard library only), bash, and GNU grep with `-P` support
+(the guard checkers and the `commit-msg` hook use it).
 
 ## Working with Claude Code
 
 Open this repository in Claude Code. It reads [CLAUDE.md](CLAUDE.md), the single maintained
 instruction file. [AGENTS.md](AGENTS.md) is a symlink to it, so an agent that reads `AGENTS.md`
-receives the same rules; `tools/check_corpus.py` fails if it stops being a symlink.
+receives the same rules; `tools/check_corpus.py` fails if it stops being a symlink. The playbook
+installer also writes `.claude/settings.json`: the commit co-author, the Korean writing style hooks,
+and a Stop hook that asks for the documents a change needs.
 
 The review skill is installed per user by symlinking its directory into `~/.claude/skills/`. Run
 this once from the corpus root. It leaves any existing installation in place:
@@ -174,9 +180,7 @@ separate task governed by `CLAUDE.md`.
 python3 tools/build_index.py    # regenerate extended/ and the docs/{ko,en}/INDEX.md files
 python3 tools/check_corpus.py   # read-only integrity checks
 python3 -B -m unittest discover -s tools -p 'test_*.py'
-bash harness/test-check-conventions.sh
-bash harness/check-conventions.sh
-bash harness/check-infra-conformance.sh
+bash harness/verify.sh          # every guard check, conventions included
 git diff --check
 ```
 
@@ -192,9 +196,14 @@ equal is caught in review, not by CI.
 Adding a control also means adding it to `extended/catalog/controls.json`; `check_corpus.py` fails
 when the catalog and the documents disagree in either direction.
 
-The dated verification record and its limits are in [UPDATES.md](UPDATES.md). The installed
-playbook guard baseline is v0.1.6; v0.2.0 migration has not been applied. `CLAUDE.md` records
-the reference-checkout and upstream revisions checked.
+The documentation conventions checker skips `docs/ko/` (`harness/conventions-exclude`). The
+Korean control documents keep the Korean renderings of IT terms that their readers use, and the
+playbook term rule would otherwise report them. `check_corpus.py` still scans every control
+document for the forbidden characters, and `docs/en/` stays under every conventions check.
+[CLAUDE.md](CLAUDE.md) gives the reasoning.
+
+The dated verification record and its limits are in [UPDATES.md](UPDATES.md). The playbook guard
+set is v0.10.11 (`harness/ADOPTED`); section 2.7 of UPDATES.md records the upgrade.
 
 ## License
 

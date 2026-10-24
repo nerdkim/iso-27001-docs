@@ -118,6 +118,7 @@ Every row below was verified on the check date at the top of this document.
   Full v0.2.0 adoption includes incompatible language defaults and Claude-specific tooling.
   On 2026-09-17 the owner excluded that migration from this repository's current work.
   The installed baseline remains in place; the agent setup is separate from a guard upgrade.
+  The migration was applied on 2026-10-24; section 2.7 records it.
 
 ### 2.6 Fact check of 2026-10-20
 
@@ -147,6 +148,34 @@ Every row below was verified on the check date at the top of this document.
 - Limits: www.iso.org refused automated requests, so the ISO catalogue records were read through
   ISO's committee.iso.org mirror. No licensed copy of ISO/IEC 27001 or 27002 was used, so the
   Table A.1 wording rests on public reproductions (section 4).
+
+### 2.7 Playbook guard set of 2026-10-24
+
+- On 2026-10-24 the owner asked to bring the repositories to playbook v0.10.11.
+  `bash playbook/install-playbook.sh --existing` replaced the v0.1.6 guard set and its
+  repository-specific fixes with the v0.10.11 guard set: the checkers and their self-tests, the git
+  hooks and the commit template, `harness/verify.sh`, the conventions workflow that reports the
+  required check `docs-conventions`, the managed block in `CLAUDE.md`, the Claude Code settings,
+  and the Korean writing style (im-a-korean-ai-in-seoul v0.3.2). `harness/install-hooks.sh` gave
+  way to `harness/bootstrap-hooks.sh`. The infra conformance checker was removed: this repository
+  has no infrastructure, and the installer ships that checker only to repositories that do.
+- `.github/workflows/docs.yml` keeps only the `corpus-integrity` job, which now picks
+  GitHub-hosted runners for a public repository through the playbook's runner expression. Its
+  `docs-conventions` job was removed, because the playbook workflow reports that check and the
+  structure checker fails a second job of the same name.
+- The v0.10.11 term rule applies to every document, Korean ones included, so the earlier
+  repository-specific exemption of `docs/ko/` from the term check is gone. The rule reports 1,598
+  Korean renderings of IT terms in 90 of the 94 files under `docs/ko/`. This upgrade left the
+  corpus text unchanged and lists `docs/ko/` in `harness/conventions-exclude`. That exclusion also
+  takes those files out of the conventions checker's forbidden-character check, so
+  `tools/check_corpus.py` gained check [13], which scans every control document for the eight
+  forbidden characters, and two regression tests for it. `docs/en/` is not excluded. Whether to
+  rewrite the Korean renderings into English is the owner's decision: doing so would also change
+  the Korean control titles in the catalog and the names the manifest publishes.
+- The Korean meta documents now write IT terms in English where the term rule asks for it. The
+  license scope line of README.ko.md keeps its wording under a `conventions-allow` marker, and so
+  do the two lines where the review skill quotes Korean terms.
+- No control document, catalog entry, or generated index changed in this upgrade.
 
 ## 3. Operating principle
 

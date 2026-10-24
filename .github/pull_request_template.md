@@ -32,9 +32,9 @@
 ## Verification
 <!-- The exact commands you ran and their results; make it reproducible (playbook docs/20 5). -->
 - `python3 tools/check_corpus.py` → result:
+- `python3 -B -m unittest discover -s tools -p 'test_*.py'` → result:
 - `python3 tools/build_index.py` then `git status --porcelain -- extended docs` (must print nothing) → result:
-- `bash harness/test-check-conventions.sh` → result:
-- `bash harness/check-conventions.sh` → result:
+- `bash harness/verify.sh` (add `--self-tests` when the guard changed) → result:
 
 ## Consumer impact (the manifest contract)
 <!-- extended/manifest.json (schema corpus-manifest/v3) is a PUBLISHED CONTRACT read by consumers
