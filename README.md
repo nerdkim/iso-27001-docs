@@ -207,10 +207,15 @@ set is v0.10.11 (`harness/ADOPTED`); section 2.7 of UPDATES.md records the upgra
 
 ## License
 
-- Code and tooling: MIT. See [LICENSE](LICENSE).
+- Code and tooling: PolyForm Noncommercial 1.0.0. See [LICENSE](LICENSE).
 - The corpus (the original explanatory material, the compilation under `docs/`, the generated data
-  under `extended/`, and the prose of the meta documents): CC BY 4.0. See
+  under `extended/`, and the prose of the meta documents): CC BY-NC 4.0. See
   [LICENSE-CONTENT](LICENSE-CONTENT) and [NOTICE](NOTICE).
+
+Both licenses allow noncommercial use only; commercial use needs a separate permission from
+NerdKim. They are source-available terms, not open source licenses in the OSI sense. Until
+2026-10-24 the project was offered under MIT and CC BY 4.0, and copies obtained under those terms
+keep them.
 
 These licenses cover this project's own work only. The ISO/IEC 27001 standard text remains the
 property of ISO and IEC and is not relicensed, reproduced, or translated here.
