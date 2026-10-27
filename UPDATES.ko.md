@@ -179,7 +179,11 @@ Annex A는 전혀 바뀌지 않았습니다. 93개 통제와 그 번호, 명칭,
 - `docs/ko/`에 한국어로 적은 IT 용어는 그대로 둡니다. 그래서 카탈로그의 한국어 통제 명칭과 manifest가 공개하는
   이름도 바뀌지 않습니다. 2.7절이 미뤄 둔 소유자 결정, 곧 이 용어를 English로 바꿀지는 더 정하지 않아도
   됩니다.
-- 이번 갱신에서 통제 문서, 카탈로그, 생성 색인은 바뀌지 않았습니다.
+- 같은 날 guard set을 v0.10.14로 한 번 더 올렸습니다. installer가 구조 검사 T18과 그 시험을 더하고 manifest와
+  `CLAUDE.md` 관리 block을 새로 썼습니다. 관리 block에는 D72가 더해졌습니다. D72는 project가 따로 만든 workflow도
+  Linux job마다 표준 `runs-on` 식을 쓰는 규칙입니다. 이 repository의 workflow 두 개는 이미 그 식을 써서 T18이
+  보고할 것이 없습니다. repository가 public이므로 job은 계속 GitHub-hosted runner에서 돕니다.
+- 두 번의 갱신 모두 통제 문서, 카탈로그, 생성 색인을 바꾸지 않았습니다.
 
 ## 3. 운영 원칙
 

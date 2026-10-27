@@ -193,7 +193,7 @@ git diff --check
 [CLAUDE.md](CLAUDE.md)에 있습니다.
 
 확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. playbook guard set은
-v0.10.13입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.8절에 기록했습니다.
+v0.10.14입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.8절에 기록했습니다.
 
 ## 라이선스
 

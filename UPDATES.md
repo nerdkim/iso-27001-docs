@@ -197,7 +197,12 @@ Every row below was verified on the check date at the top of this document.
 - The Korean renderings of IT terms in `docs/ko/` stay as they are, so the catalog titles and the
   names the manifest publishes do not change. The owner decision that section 2.7 left open, whether
   to rewrite those renderings into English, is no longer needed.
-- No control document, catalog entry, or generated index changed in this upgrade.
+- Later the same day the guard set moved on to v0.10.14. The installer added the structure check
+  T18 with its tests and refreshed the manifest and the managed block of `CLAUDE.md`, which adds
+  D72 (every Linux job of a project's own workflow takes the standard `runs-on` expression). Both
+  workflows here already use that expression, so T18 reports nothing, and the repository is
+  public, so its jobs stay on GitHub-hosted runners.
+- No control document, catalog entry, or generated index changed in either upgrade.
 
 ## 3. Operating principle
 
