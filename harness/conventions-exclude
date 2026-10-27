@@ -1,24 +1,13 @@
 # Path prefixes that harness/check-conventions.sh skips (playbook docs/16 s6.2). This file belongs
 # to this repository; the playbook installer does not write or refresh it.
 #
-# What docs/ko/ is: this repository's Korean control documents. They are the project's own original
-# writing, NOT a reproduced external corpus, and the Korean and English sides are peers with neither
-# authoritative over the other (UPDATES.md section 2.2, and the copyright boundary in CLAUDE.md).
-# docs/16 s6.2 reserves this file for reproduced external corpora, so this entry is a recorded
-# exception to that rule, not an instance of it.
+# It lists no path. From 2026-10-24 to 2026-10-27 it listed docs/ko/, this repository's Korean
+# control documents: they keep the Korean renderings of IT terms that their readers use (log,
+# backup, network, data, service), and the term rule [2] of the playbook v0.10.11 checker reported
+# them 1,598 times in 90 of the 94 files. That entry took the files out of every check, [1]
+# forbidden unicode included, and docs/16 s6.2 reserves this file for reproduced external corpora.
 #
-# Why it is listed: the documents keep the Korean renderings of IT terms that their readers use
-# (log, backup, network, data, service), and the term rule [2] of the playbook v0.10.11 checker,
-# which no longer exempts Korean documents, reports them 1,598 times in 90 of the 94 files
-# (2026-10-24). The upgrade to v0.10.11 left the corpus text unchanged. Rewriting those renderings
-# into English would also change the Korean control titles in extended/catalog/controls.json and
-# so the names extended/manifest.json publishes, which makes removing this entry an owner decision.
-#
-# What it costs: the checker skips these files for every check, including [1] forbidden unicode.
-# tools/check_corpus.py check [13] scans every control document for the eight forbidden characters
-# of docs/16 s2.1 instead, and the corpus-integrity check in CI runs it.
-#
-# docs/en/ is deliberately NOT listed: it is clean on every check, so excluding it would waive
-# nothing and only widen the carve-out. docs/ko/ alone stays under the 40% limit of check [0], so
-# this repository declares no harness/corpus-repo either.
-docs/ko/
+# Playbook v0.10.13 gave such documents their own marker (D71): harness/korean-content lists
+# docs/ko/, so the checker skips only [2] there and runs every other check on it. The corpus text
+# and the Korean control titles stay as they are. tools/check_corpus.py check [13] still scans
+# every control document for the eight forbidden characters of docs/16 s2.1, as a second guard.

@@ -78,7 +78,8 @@ harness/                         playbook guard set. playbook installer가 갱�
   bootstrap-hooks.sh             clone에 git hook을 연결(최초 1회, 설치 절 참고)
   verify.sh                      guard 검사 전체를 실행(--self-tests를 붙이면 검사기 자체 시험까지)
   check-conventions.sh           문서 규약 검사기(playbook docs/16)
-  conventions-exclude            이 repository가 직접 관리. 문서 규약 검사기가 건너뛰는 docs/ko/
+  conventions-exclude            이 repository가 직접 관리. 지금은 적힌 경로가 없음
+  korean-content                 이 repository가 직접 관리. 용어 검사 [2]만 건너뛰는 한국어 독자용 docs/ko/
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     commit message template
 skill/
@@ -185,13 +186,14 @@ git diff --check
 통제를 추가하면 `extended/catalog/controls.json`에도 추가해야 합니다. 카탈로그와 문서가 어느 방향으로든
 어긋나면 `check_corpus.py`가 실패합니다.
 
-문서 규약 검사기는 `docs/ko/`를 건너뜁니다(`harness/conventions-exclude`). 한국어 통제 문서는 독자에게
-익숙한 한국어 IT 용어를 그대로 씁니다. playbook의 용어 규칙은 이 용어를 걸러 내므로 이 directory만
-예외로 두었습니다. 금지 문자는 `check_corpus.py`가 모든 통제 문서에서 계속 검사합니다. `docs/en/`은
-문서 규약 검사를 모두 받습니다. 자세한 이유는 [CLAUDE.md](CLAUDE.md)에 있습니다.
+한국어 통제 문서는 독자에게 익숙한 한국어 IT 용어를 그대로 씁니다. 그래서 `harness/korean-content`에
+`docs/ko/`를 한국어 독자용 문서로 적었습니다(playbook D71). 문서 규약 검사기는 이 directory에서 용어
+검사 [2]만 건너뛰고, 금지 문자를 포함한 나머지 검사는 모두 합니다. `check_corpus.py`도 모든 통제
+문서에서 금지 문자를 검사합니다. `docs/en/`은 문서 규약 검사를 모두 받습니다. 자세한 이유는
+[CLAUDE.md](CLAUDE.md)에 있습니다.
 
 확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. playbook guard set은
-v0.10.12입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.7절에 기록했습니다.
+v0.10.13입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.8절에 기록했습니다.
 
 ## 라이선스
 

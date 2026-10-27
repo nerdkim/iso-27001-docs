@@ -87,7 +87,8 @@ harness/                         playbook guard set, refreshed by the playbook i
   bootstrap-hooks.sh             wire this clone to the git hooks (run once, see Setup)
   verify.sh                      run every guard check (--self-tests adds the checkers' own tests)
   check-conventions.sh           documentation conventions checker (playbook docs/16)
-  conventions-exclude            this repository's own file: docs/ko/, which the conventions checker skips
+  conventions-exclude            this repository's own file: lists no path
+  korean-content                 this repository's own file: docs/ko/, Korean content spared only the term check [2]
   githooks/                      pre-commit, commit-msg, pre-push
   gitmessage                     commit message template
 skill/
@@ -196,14 +197,15 @@ equal is caught in review, not by CI.
 Adding a control also means adding it to `extended/catalog/controls.json`; `check_corpus.py` fails
 when the catalog and the documents disagree in either direction.
 
-The documentation conventions checker skips `docs/ko/` (`harness/conventions-exclude`). The
-Korean control documents keep the Korean renderings of IT terms that their readers use, and the
-playbook term rule would otherwise report them. `check_corpus.py` still scans every control
-document for the forbidden characters, and `docs/en/` stays under every conventions check.
+The Korean control documents keep the Korean renderings of IT terms that their readers use, so
+`harness/korean-content` lists `docs/ko/` as Korean content for Korean readers (playbook D71).
+The documentation conventions checker skips only its term check [2] there and runs every other
+check, the forbidden characters included. `check_corpus.py` also scans every control document for
+the forbidden characters, and `docs/en/` stays under every conventions check.
 [CLAUDE.md](CLAUDE.md) gives the reasoning.
 
 The dated verification record and its limits are in [UPDATES.md](UPDATES.md). The playbook guard
-set is v0.10.12 (`harness/ADOPTED`); section 2.7 of UPDATES.md records the upgrade.
+set is v0.10.13 (`harness/ADOPTED`); section 2.8 of UPDATES.md records the upgrade.
 
 ## License
 

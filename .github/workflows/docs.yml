@@ -8,8 +8,9 @@
 # Two gates, both dependency-free (the Python standard library only):
 #   1. corpus integrity: bilingual parity, six-section structure, catalog and manifest agreement,
 #      the mandatory source/limitation footer that carries the copyright boundary, and the
-#      forbidden characters of playbook docs/16 2.1 in every control document. The last one is
-#      here because harness/conventions-exclude takes docs/ko/ out of the conventions checker.
+#      forbidden characters of playbook docs/16 2.1 in every control document. The last one dates
+#      from when harness/conventions-exclude took docs/ko/ out of the conventions checker; since
+#      v0.10.13 that checker scans docs/ko/ for them too, and this gate stays as a second guard.
 #   2. generated-index drift: regenerating must produce no diff, so extended/ and the
 #      docs/{ko,en}/INDEX.md files always match the corpus committed alongside them
 #

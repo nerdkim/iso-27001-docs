@@ -52,8 +52,8 @@ class DocumentBoundaryTests(unittest.TestCase):
                     "\n---\n", f"\n## {title}\n\nExtra content.\n\n---\n")))
 
     def test_forbidden_characters_cover_docs16(self):
-        # The eight code points of playbook docs/16 2.1. Dropping one would let it back into
-        # docs/ko/, which harness/conventions-exclude takes out of the conventions checker.
+        # The eight code points of playbook docs/16 2.1. This check guards every control document
+        # next to the conventions checker, so it must cover all eight.
         self.assertEqual({ord(char) for char in checker.FORBIDDEN_CHARACTERS},
                          {0x2014, 0x2013, 0x2015, 0x00B7, 0x2022, 0xFF0D, 0x3000, 0x00A0})
 

@@ -166,6 +166,21 @@ Annex A는 전혀 바뀌지 않았습니다. 93개 통제와 그 번호, 명칭,
   보고하지 않습니다. `CLAUDE.md` 관리 block은 branch model을 대표님이 정한다고 적고, 주로 문서만 다루는
   repository는 `main` 하나를 기본으로 둡니다(D68). 이 repository는 지금처럼 `main` branch 하나를 씁니다.
 
+### 2.8 2026-10-27 playbook guard set 갱신
+
+- guard set을 playbook v0.10.13으로 올렸습니다. installer가 문서 검사기와 보안 검사기, 각 시험, manifest,
+  `CLAUDE.md` 관리 block을 새로 썼습니다. 관리 block에는 D70과 D71이 더해졌습니다. D70은 다른 repository의
+  문제를 그 repository에 PR로 알리는 규칙입니다. D71은 한국어 독자에게 내는 한국어 산출물이 독자가 쓰는
+  용어를 그대로 쓰고, 그 경로를 `harness/korean-content`에 적는 규칙입니다. 지울 infra checker는 없었습니다.
+- `docs/ko/`를 `harness/conventions-exclude`에서 `harness/korean-content`로 옮겼습니다(D71). 문서 규약 검사기는
+  이제 이 directory에서 용어 검사 [2]만 건너뛰고, 한국어 통제 문서에 금지 문자 검사 [1]과 [3]부터 [6]까지를
+  다시 합니다. 모두 통과했습니다. `harness/conventions-exclude`에는 적힌 경로가 없고, `tools/check_corpus.py`의
+  check [13]은 금지 문자를 한 번 더 검사하는 장치로 남겨 둡니다.
+- `docs/ko/`에 한국어로 적은 IT 용어는 그대로 둡니다. 그래서 카탈로그의 한국어 통제 명칭과 manifest가 공개하는
+  이름도 바뀌지 않습니다. 2.7절이 미뤄 둔 소유자 결정, 곧 이 용어를 English로 바꿀지는 더 정하지 않아도
+  됩니다.
+- 이번 갱신에서 통제 문서, 카탈로그, 생성 색인은 바뀌지 않았습니다.
+
 ## 3. 운영 원칙
 
 - **공개 통제 목록에 영향을 주는 ISO 개정**이 카탈로그 검토의 발동 조건입니다. 개정이 확인되면 먼저 `extended/catalog/controls.json`을
