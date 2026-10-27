@@ -205,7 +205,7 @@ the forbidden characters, and `docs/en/` stays under every conventions check.
 [CLAUDE.md](CLAUDE.md) gives the reasoning.
 
 The dated verification record and its limits are in [UPDATES.md](UPDATES.md). The playbook guard
-set is v0.10.13 (`harness/ADOPTED`); section 2.8 of UPDATES.md records the upgrade.
+set is v0.10.14 (`harness/ADOPTED`); section 2.8 of UPDATES.md records the upgrade.
 
 ## License
 
