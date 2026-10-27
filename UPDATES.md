@@ -182,6 +182,23 @@ Every row below was verified on the check date at the top of this document.
   branch model, with `main` alone as the default for a repository that is mostly documents (D68).
   This repository keeps its single `main` branch.
 
+### 2.8 Playbook guard set of 2026-10-27
+
+- The guard set moved to playbook v0.10.13. The installer refreshed the documentation and security
+  checkers with their tests, the manifest and the managed block of `CLAUDE.md`, which adds D70 (a
+  problem in another repository goes to that repository as a pull request) and D71 (Korean
+  deliverables for Korean readers keep the terms their readers use and are listed in
+  `harness/korean-content`). There was no leftover infra checker to remove.
+- `docs/ko/` moved from `harness/conventions-exclude` to `harness/korean-content` (D71). The
+  conventions checker now skips only its term check [2] there, and runs the forbidden-character
+  check [1] and checks [3] to [6] on the Korean control documents again. All of them pass.
+  `harness/conventions-exclude` lists no path any more, and `tools/check_corpus.py` check [13]
+  stays as a second guard for the forbidden characters.
+- The Korean renderings of IT terms in `docs/ko/` stay as they are, so the catalog titles and the
+  names the manifest publishes do not change. The owner decision that section 2.7 left open, whether
+  to rewrite those renderings into English, is no longer needed.
+- No control document, catalog entry, or generated index changed in this upgrade.
+
 ## 3. Operating principle
 
 - **An ISO revision affecting the public control list** triggers a catalog review. When one lands: update
