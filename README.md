@@ -157,7 +157,8 @@ Open this repository in Claude Code. It reads [CLAUDE.md](CLAUDE.md), the single
 instruction file. [AGENTS.md](AGENTS.md) is a symlink to it, so an agent that reads `AGENTS.md`
 receives the same rules; `tools/check_corpus.py` fails if it stops being a symlink. The playbook
 installer also writes `.claude/settings.json`: the commit co-author, the Korean writing style hooks,
-and a Stop hook that asks for the documents a change needs.
+a Stop hook that asks for the documents a change needs, and a design hook for screen files, which
+this repository does not have.
 
 The review skill is installed per user by symlinking its directory into `~/.claude/skills/`. Run
 this once from the corpus root. It leaves any existing installation in place:
@@ -205,7 +206,7 @@ the forbidden characters, and `docs/en/` stays under every conventions check.
 [CLAUDE.md](CLAUDE.md) gives the reasoning.
 
 The dated verification record and its limits are in [UPDATES.md](UPDATES.md). The playbook guard
-set is v0.10.14 (`harness/ADOPTED`); section 2.8 of UPDATES.md records the upgrade.
+set is v0.10.16 (`harness/ADOPTED`); section 2.9 of UPDATES.md records the upgrade.
 
 ## License
 

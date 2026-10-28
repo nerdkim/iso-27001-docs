@@ -163,7 +163,7 @@ Annex A는 전혀 바뀌지 않았습니다. 93개 통제와 그 번호, 명칭,
   라이선스 범위 문장에도 같은 표시가 있었지만, 같은 날 라이선스를 바꾸면서 그 문장을 고쳐 표시를 뺐습니다.
 - 이번 갱신에서 통제 문서, 카탈로그, 생성 색인은 바뀌지 않았습니다.
 - 2026-10-25에는 guard set을 v0.10.12로 올렸습니다. 보안 검사기는 Cloudflare Workers AI package를 더 이상
-  보고하지 않습니다. `CLAUDE.md` 관리 block은 branch model을 대표님이 정한다고 적고, 주로 문서만 다루는
+  보고하지 않습니다. `CLAUDE.md` 관리 block은 branch model을 사용자가 정한다고 적고, 주로 문서만 다루는
   repository는 `main` 하나를 기본으로 둡니다(D68). 이 repository는 지금처럼 `main` branch 하나를 씁니다.
 
 ### 2.8 2026-10-27 playbook guard set 갱신
@@ -184,6 +184,18 @@ Annex A는 전혀 바뀌지 않았습니다. 93개 통제와 그 번호, 명칭,
   Linux job마다 표준 `runs-on` 식을 쓰는 규칙입니다. 이 repository의 workflow 두 개는 이미 그 식을 써서 T18이
   보고할 것이 없습니다. repository가 public이므로 job은 계속 GitHub-hosted runner에서 돕니다.
 - 두 번의 갱신 모두 통제 문서, 카탈로그, 생성 색인을 바꾸지 않았습니다.
+
+### 2.9 2026-10-28 playbook guard set 갱신
+
+- guard set을 v0.10.15를 거쳐 playbook v0.10.16으로 올렸습니다. installer가 PreToolUse hook
+  `harness/ui-design-hook.sh`(D73), 보안 검사 W5, 구조 검사 T19와 각 시험을 더하고 manifest와 `CLAUDE.md` 관리
+  block을 새로 썼습니다.
+- D74에 따라 공개 repository에 commit하는 한국어 글은 사용자라는 호칭을 씁니다. 관리 block도 응대 호칭을
+  정하는 줄 말고는 사용자라고 씁니다. 관리 block 밖에서는 2.7절의 한 줄만 다른 호칭을 썼고, 이 줄도
+  사용자로 고쳤습니다.
+- W5와 design hook은 web, desktop, mobile app의 화면 파일만 봅니다. 그래서 이 repository에서는 보고하거나 막을
+  것이 없습니다.
+- 이번 갱신에서 통제 문서, 카탈로그, 생성 색인은 바뀌지 않았습니다.
 
 ## 3. 운영 원칙
 

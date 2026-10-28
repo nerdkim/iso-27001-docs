@@ -147,7 +147,8 @@ Claude Code는 이 repository를 열 때 유일한 지침 원본인 [CLAUDE.md](
 [AGENTS.md](AGENTS.md)는 이 파일을 가리키는 symlink이므로 `AGENTS.md`를 읽는 agent도 같은
 규칙을 받습니다. `AGENTS.md`가 symlink가 아니게 되면 `tools/check_corpus.py`가 실패합니다.
 playbook installer는 `.claude/settings.json`도 씁니다. 이 파일에는 commit co-author, 한국어 작성 도구의
-hook, 변경에 필요한 문서를 되묻는 Stop hook이 들어 있습니다.
+hook, 변경에 필요한 문서를 되묻는 Stop hook, 화면 파일을 고치기 전에 design skill을 부르게 하는 hook이
+들어 있습니다. 이 repository에는 화면 파일이 없어 마지막 hook은 막는 것이 없습니다.
 
 사용자마다 skill directory를 `~/.claude/skills/`에 symlink로 연결해 검토 skill을 설치합니다. 다음
 명령을 자료집 최상위에서 한 번 실행하십시오. 기존 설치가 있으면 덮어쓰지 않습니다.
@@ -193,7 +194,7 @@ git diff --check
 [CLAUDE.md](CLAUDE.md)에 있습니다.
 
 확인 날짜와 검증 범위의 한계는 [UPDATES.ko.md](UPDATES.ko.md)에 기록합니다. playbook guard set은
-v0.10.14입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.8절에 기록했습니다.
+v0.10.16입니다(`harness/ADOPTED`). 이번 갱신은 UPDATES.ko.md 2.9절에 기록했습니다.
 
 ## 라이선스
 
