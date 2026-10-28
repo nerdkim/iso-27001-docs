@@ -204,6 +204,18 @@ Every row below was verified on the check date at the top of this document.
   public, so its jobs stay on GitHub-hosted runners.
 - No control document, catalog entry, or generated index changed in either upgrade.
 
+### 2.9 Playbook guard set of 2026-10-28
+
+- The guard set moved to playbook v0.10.16, through v0.10.15. The installer added the PreToolUse
+  hook `harness/ui-design-hook.sh` (D73), the security check W5 and the structure check T19 with
+  their tests, and refreshed the manifest and the managed block of `CLAUDE.md`.
+- Under D74 the Korean text a public repository commits calls the owner 사용자, and so does the
+  managed block, except in the line that sets how a session replies. Outside the block only one
+  line used another form of address, in section 2.7 of UPDATES.ko.md, and it says 사용자 now.
+- W5 and the design hook look only at the screen files of web, desktop, and mobile apps, so they
+  have nothing to report or block here.
+- No control document, catalog entry, or generated index changed in this upgrade.
+
 ## 3. Operating principle
 
 - **An ISO revision affecting the public control list** triggers a catalog review. When one lands: update
